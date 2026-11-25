@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-25T23:12+00:00",
+ "aggiornato": "2026-11-25T23:16+00:00",
  "fonte": "ATMB e APRR (siti ufficiali)",
  "stato": "ok",
  "tunnel": "Traffico scorrevole",
@@ -9,87 +9,128 @@
    "testo": "",
    "tipo": "chiusura",
    "url": "https://www.atmb.com/atmb_event/a40-dans-les-deux-sens-de-circulation-%f0%9f%8c%99-fermeture-des-voies-entre-archamps-n13-1-et-annemasse-n14-la-nuit-du-jeudi-26-novembre-de-21h-a-6-h-le-lendemain-pour-renover-le-pon/",
-   "gestore": "ATMB"
+   "gestore": "ATMB",
+   "lat": 46.1354538,
+   "lon": 6.1332458,
+   "lat2": 46.1934005,
+   "lon2": 6.2341093
   },
   {
    "titolo": "🔔 del 1 novembre a 31 marzo: velocità ridotta di 130 km/h a 110 km/h",
-   "testo": "Del 1 novembre a 31 marzo, in le cadre dell’application del Plan di Protection dell’Atmosphère (PPA2) della valle dell’Arve, la limitation di velocità passe di 130 km/h a 110 km/h su l’A411 e l’A40 tra Vallard e Le Fayet. Plus d’informations: Rappel: del 1 novembre a 31 marzo, les équipements hivernaux […]",
+   "testo": "Del 1 novembre a 31 marzo, in le ambito dell’application del Plan di Protection dell’Atmosphère (PPA2) della valle dell’Arve, la limitation di velocità passe di 130 km/h a 110 km/h su l’A411 e l’A40 tra Vallard e Le Fayet. Plus d’informations: Rappel: del 1 novembre a 31 marzo, i équipements hivernaux […]",
    "tipo": "altro",
    "url": "https://www.atmb.com/atmb_event_info/hiver-vitesse-110/",
-   "gestore": "ATMB"
+   "gestore": "ATMB",
+   "lat": 46.1859095,
+   "lon": 6.2041728
   },
   {
    "titolo": "A40 · Ain · direzione MACON> GENEVE, nella zona di Bellegarde la notte del 25 novembre",
    "testo": "",
    "tipo": "lavori",
    "url": "https://voyage.aprr.fr/a40-ain-direction-macon-geneve-dans-le-secteur-de-bellegarde-la-nuit-du-25-novembre",
-   "gestore": "APRR"
+   "gestore": "APRR",
+   "lat": 46.1116515,
+   "lon": 5.8258037
   },
   {
    "titolo": "A43 · Savoie · percorso CHAMBERY<>LYON nella zona di galleria dell’Epine dal 23/11 al 27/11",
    "testo": "",
    "tipo": "lavori",
    "url": "https://voyage.aprr.fr/a43-savoie-itineraires-chamberylyon-dans-le-secteur-du-tunnel-de-lepine-du-2311-au-2711",
-   "gestore": "APRR"
+   "gestore": "APRR",
+   "lat": 45.5340649,
+   "lon": 5.8396718
   },
   {
    "titolo": "A5b (A105) · Seine e Marne · direzione Melun > Marne-la-Vallée, entrata all'altezza diEvry-Grégy n. 11",
    "testo": "",
    "tipo": "lavori",
    "url": "https://voyage.aprr.fr/a5b-a105-seine-et-marne-direction-melun-marne-la-vallee-entree-au-niveau-evry-gregy-ndeg-11",
-   "gestore": "APRR"
+   "gestore": "APRR",
+   "lat": 48.6531178,
+   "lon": 2.6380188
   },
   {
    "titolo": "A5b · Seine e Marne · direzione Marne-la-vallée > Provins, uscita all'altezza di Moissy-Cramayel n. 12b",
    "testo": "",
    "tipo": "lavori",
    "url": "https://voyage.aprr.fr/a5b-seine-et-marne-direction-marne-la-vallee-provins-sortie-au-niveau-de-moissy-cramayel-ndeg12b-0",
-   "gestore": "APRR"
+   "gestore": "APRR",
+   "lat": 48.6272298,
+   "lon": 2.5937073
   },
   {
    "titolo": "A41N · Haute-Savoie- direzione Genève >Annecy dal 16/11 al 02/12",
    "testo": "",
    "tipo": "lavori",
    "url": "https://voyage.aprr.fr/a41n-haute-savoie-direction-geneve-annecy-du-1611-au-0212",
-   "gestore": "APRR"
+   "gestore": "APRR",
+   "approx": true,
+   "lat": 46.3310543,
+   "lon": -0.474422,
+   "lat2": 45.8992348,
+   "lon2": 6.1288847
   },
   {
    "titolo": "A41N · Haute-Savoie- direzione Genève/Chamonix >Annecy il 1 dicembre",
    "testo": "",
    "tipo": "lavori",
    "url": "https://voyage.aprr.fr/a41n-haute-savoie-direction-genevechamonix-annecy-le-1er-decembre",
-   "gestore": "APRR"
+   "gestore": "APRR",
+   "approx": true,
+   "lat": 46.3310543,
+   "lon": -0.474422,
+   "lat2": 45.8992348,
+   "lon2": 6.1288847
   },
   {
    "titolo": "A41N · Savoie · direzione Aix-les-Bains > Chambéry, zona di Aix-les-Bains",
    "testo": "",
    "tipo": "lavori",
    "url": "https://voyage.aprr.fr/a41n-savoie-direction-aix-les-bains-chambery-secteur-de-aix-les-bains-0",
-   "gestore": "APRR"
+   "gestore": "APRR",
+   "lat": 45.6886292,
+   "lon": 5.9146362
   },
   {
    "titolo": "A65 · Landes · percorso PAU<>BORDEAUX dal 14/09 ore 7:00 al 26/11 ore 19:00",
    "testo": "",
    "tipo": "lavori",
    "url": "https://voyage.aprr.fr/a65-landes-itineraires-paubordeaux-du-1409-7h-au-2611-19h-0",
-   "gestore": "APRR"
+   "gestore": "APRR",
+   "approx": true,
+   "lat": 43.2957547,
+   "lon": -0.3685668,
+   "lat2": 44.841225,
+   "lon2": -0.5800364
   },
   {
    "titolo": "A65 · Landes · percorso PAU<>BORDEAUX dal 23/11 ore 19:00 al 26/11 ore 19:00",
    "testo": "",
    "tipo": "lavori",
    "url": "https://voyage.aprr.fr/a65-landes-itineraires-paubordeaux-du-lundi-2311-19h-au-jeudi-2611-19h",
-   "gestore": "APRR"
+   "gestore": "APRR",
+   "approx": true,
+   "lat": 43.2957547,
+   "lon": -0.3685668,
+   "lat2": 44.841225,
+   "lon2": -0.5800364
   },
   {
    "titolo": "A65 · Landes · percorso PAU<>BORDEAUX dal 14/09 ore 7:00 al 26/11 ore 19:00",
    "testo": "",
    "tipo": "lavori",
    "url": "https://voyage.aprr.fr/a65-landes-itineraires-paubordeaux-du-1409-7h-au-2611-19h",
-   "gestore": "APRR"
+   "gestore": "APRR",
+   "approx": true,
+   "lat": 43.2957547,
+   "lon": -0.3685668,
+   "lat2": 44.841225,
+   "lon2": -0.5800364
   },
   {
-   "titolo": "RN159 · chiusura del galleria Maurice Lemaire · les nuits del 2 e 3 dicembre dalle 21:00 alle 5:00",
+   "titolo": "RN159 · chiusura del galleria Maurice Lemaire · i notte del 2 e 3 dicembre dalle 21:00 alle 5:00",
    "testo": "",
    "tipo": "chiusura",
    "url": "https://voyage.aprr.fr/rn159-fermeture-du-tunnel-maurice-lemaire-les-nuits-du-2-et-3-decembre-de-21h-5h",
@@ -100,21 +141,27 @@
    "testo": "",
    "tipo": "lavori",
    "url": "https://voyage.aprr.fr/a432-ain-itineraire-villefranchegeneve-dans-le-secteur-de-beynost",
-   "gestore": "APRR"
+   "gestore": "APRR",
+   "lat": 45.8400182,
+   "lon": 5.0009242
   },
   {
    "titolo": "A480 · Isère · direzione Lyon > Sisteron, all'altezza di Rondeau",
    "testo": "",
    "tipo": "lavori",
    "url": "https://voyage.aprr.fr/a480-isere-direction-lyon-sisteron-au-niveau-du-rondeau-0",
-   "gestore": "APRR"
+   "gestore": "APRR",
+   "lat": 45.1648259,
+   "lon": 5.7109699
   },
   {
    "titolo": "A43 · Isère · direzione Chesnes <> Lyon, all'altezza di Chesnes",
    "testo": "",
    "tipo": "lavori",
    "url": "https://voyage.aprr.fr/a43-isere-direction-chesnes-lyon-au-niveau-de-chesnes",
-   "gestore": "APRR"
+   "gestore": "APRR",
+   "lat": 45.6663133,
+   "lon": 5.1022372
   }
  ],
  "aprr": "ok (18 lavori)"

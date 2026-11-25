@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-25T23:12+00:00",
+ "aggiornato": "2026-11-25T23:16+00:00",
  "fonte": "CCISS, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -7,6 +7,79 @@
   "Svizzera": "non attiva (manca la chiave)"
  },
  "eventi": [
+  {
+   "id": "28d247a8217669d0",
+   "strada": "A57 Tangenziale di Mestre",
+   "testo": "carreggiata chiusa tra Svincolo Terraglio e Allacciamento A27 Mestre-Belluno in direzione Allacciamento A57 est/A4 Venezia-Trieste",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T23:15:00Z",
+   "lat": 45.515075,
+   "lon": 12.2378066,
+   "da": "Terraglio",
+   "dirlat": 45.6496485,
+   "dirlon": 13.7772781,
+   "dir": "Trieste"
+  },
+  {
+   "id": "89348aff69d54f9d",
+   "strada": "A57 Tangenziale di Mestre",
+   "testo": "entrata chiusa a Svincolo Terraglio in direzione Allacciamento A57 est/A4 Venezia-Trieste",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T23:15:00Z",
+   "lat": 45.515075,
+   "lon": 12.2378066,
+   "da": "Terraglio",
+   "dirlat": 45.6496485,
+   "dirlon": 13.7772781,
+   "dir": "Trieste"
+  },
+  {
+   "id": "7abcf94b3920e424",
+   "strada": "A4 Milano-Brescia",
+   "testo": "veicolo fermo o in avaria dalle 00:13 del 26 novembre 2026 tra Svincolo Cormano e Svincolo Viale Monte Ceneri incrocio Viale Certosa in direzione Torino",
+   "tipo": "altro",
+   "quando": "2026-11-25T23:15:00Z",
+   "lat": 45.5445133,
+   "lon": 9.1676207,
+   "da": "Cormano",
+   "dirlat": 45.0677551,
+   "dirlon": 7.6824892,
+   "dir": "Torino"
+  },
+  {
+   "id": "e4c340c7ec10f388",
+   "strada": "A6 Torino-Savona",
+   "testo": "uscita chiusa causa lavori a Allacciamento Savona-Zinola-Vado-Allacciamento A10 Ge-Ventimiglia in direzione Savona",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T23:14:00Z"
+  },
+  {
+   "id": "fd55e4c3b1575e5f",
+   "strada": "A6 Torino-Savona",
+   "testo": "lavori in uscita a Allacciamento Savona-Zinola-Vado-Allacciamento A10 Ge-Ventimiglia in direzione Savona",
+   "tipo": "lavori",
+   "quando": "2026-11-25T23:14:00Z"
+  },
+  {
+   "id": "393bfd594b81f0ab",
+   "strada": "A6 Torino-Savona",
+   "testo": "lavori tra 12,4 km dopo Svincolo Altare e 384 m prima di Allacciamento Savona-Zinola-Vado-Allacciamento A10 Ge-Ventimiglia in direzione Savona",
+   "tipo": "lavori",
+   "quando": "2026-11-25T23:14:00Z",
+   "lat": 44.3359819,
+   "lon": 8.3399306,
+   "da": "Altare",
+   "dirlat": 44.2334238,
+   "dirlon": 8.2525727,
+   "dir": "Savona"
+  },
+  {
+   "id": "4a84a65a2c81af84",
+   "strada": "SS100 Di Gioia Del Colle",
+   "testo": "tratto chiuso a Incrocio Variante Di Gioa Del Colle",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T23:13:00Z"
+  },
   {
    "id": "af623b221c0066de",
    "strada": "SS336 Dell aeroporto Della Malpensa",
@@ -32,7 +105,10 @@
    "quando": "2026-11-25T23:10:00Z",
    "lat": 44.339838,
    "lon": 8.509353,
-   "da": "Albisola"
+   "da": "Albisola",
+   "dirlat": 43.7917623,
+   "dirlon": 7.6033131,
+   "dir": "Ventimiglia"
   },
   {
    "id": "4a4bc6587453bbea",
@@ -46,7 +122,10 @@
    "lat2": 43.3192056,
    "lon2": 10.5514765,
    "a": "Empoli",
-   "km": 0.0
+   "km": 0.0,
+   "dirlat": 42.7902379,
+   "dirlon": 10.3402239,
+   "dir": "Livorno"
   },
   {
    "id": "e1281c9c478e759b",
@@ -60,7 +139,10 @@
    "lat2": 43.0024988,
    "lon2": 11.957601,
    "a": "Chiusi-Chianciano",
-   "km": 14.2
+   "km": 14.2,
+   "dirlat": 41.8933203,
+   "dirlon": 12.4829321,
+   "dir": "Roma"
   },
   {
    "id": "9728a3dce5e97da1",
@@ -74,7 +156,10 @@
    "lat2": 42.0873475,
    "lon2": 13.0582574,
    "a": "Carsoli-Oricola",
-   "km": 18.2
+   "km": 18.2,
+   "dirlat": 41.8933203,
+   "dirlon": 12.4829321,
+   "dir": "Roma"
   },
   {
    "id": "5e18f33b9988faf7",
@@ -98,7 +183,10 @@
    "lat2": 41.1257843,
    "lon2": 16.8620293,
    "a": "Bari",
-   "km": 30.5
+   "km": 30.5,
+   "dirlat": 41.1257843,
+   "dirlon": 16.8620293,
+   "dir": "Bari"
   },
   {
    "id": "61d84449eea59a32",
@@ -112,7 +200,10 @@
    "lat2": 41.2537669,
    "lon2": 16.2929951,
    "a": "Andria-Barletta",
-   "km": 224.8
+   "km": 224.8,
+   "dirlat": 41.1257843,
+   "dirlon": 16.8620293,
+   "dir": "Bari"
   },
   {
    "id": "416bb7f63e063ebd",
@@ -122,7 +213,10 @@
    "quando": "2026-11-25T23:00:00Z",
    "lat": 44.6025583,
    "lon": 11.3735164,
-   "da": "Bologna Interporto"
+   "da": "Bologna Interporto",
+   "dirlat": 44.4938203,
+   "dirlon": 11.3426327,
+   "dir": "Bologna"
   },
   {
    "id": "781465ac44c071d3",
@@ -153,7 +247,10 @@
    "lat2": 43.4322677,
    "lon2": 13.6453279,
    "a": "Loreto-Porto Recanati",
-   "km": 41.8
+   "km": 41.8,
+   "dirlat": 42.3097631,
+   "dirlon": 13.9579989,
+   "dir": "Pescara"
   },
   {
    "id": "279e2bd3c714dea2",
@@ -163,7 +260,10 @@
    "quando": "2026-11-25T22:59:00Z",
    "lat": 44.5170964,
    "lon": 11.3742983,
-   "da": "Bologna Fiera"
+   "da": "Bologna Fiera",
+   "dirlat": 40.8358846,
+   "dirlon": 14.2487679,
+   "dir": "Napoli"
   },
   {
    "id": "f5297c6600902b9b",
@@ -177,7 +277,10 @@
    "lat2": 41.8914093,
    "lon2": 12.63108,
    "a": "Grottaminarda",
-   "km": 213.8
+   "km": 213.8,
+   "dirlat": 44.5535604,
+   "dirlon": 10.4119138,
+   "dir": "Canosa"
   },
   {
    "id": "52132a202c389562",
@@ -191,7 +294,10 @@
    "lat2": 40.8526983,
    "lon2": 14.2572961,
    "a": "Avellino",
-   "km": 213.8
+   "km": 213.8,
+   "dirlat": 40.8358846,
+   "dirlon": 14.2487679,
+   "dir": "Napoli"
   },
   {
    "id": "e8017c1c6ea3e5d7",
@@ -201,7 +307,10 @@
    "quando": "2026-11-25T22:57:00Z",
    "lat": 41.9305791,
    "lon": 12.5354416,
-   "da": "Passo Del Furlo"
+   "da": "Passo Del Furlo",
+   "dirlat": 42.262098,
+   "dirlon": 14.5002315,
+   "dir": "SS16 Adriatica"
   },
   {
    "id": "2015f1b247ed9afa",
@@ -221,7 +330,10 @@
    "quando": "2026-11-25T22:53:00Z",
    "lat": 42.6492756,
    "lon": 11.9711211,
-   "da": "3: SS2 Via Cassia"
+   "da": "3: SS2 Via Cassia",
+   "dirlat": 45.5994306,
+   "dirlon": 11.9423149,
+   "dir": "Aurelia"
   },
   {
    "id": "5013c8149cc8c1ff",
@@ -235,7 +347,10 @@
    "lat2": 41.8933203,
    "lon2": 12.4829321,
    "a": "Roma",
-   "km": 50.9
+   "km": 50.9,
+   "dirlat": 41.8933203,
+   "dirlon": 12.4829321,
+   "dir": "Roma"
   },
   {
    "id": "90298a5038ccabc8",
@@ -249,21 +364,10 @@
    "lat2": 43.3192056,
    "lon2": 10.5514765,
    "a": "Empoli",
-   "km": 0.0
-  },
-  {
-   "id": "80e4e6159895c8b2",
-   "strada": "A1 Milano-Bologna",
-   "testo": "veicolo fermo o in avaria dalle 23:48 del 25 novembre 2026 tra Svincolo Terre di Canossa - Campegine e Svincolo Reggio Emilia in direzione Bologna",
-   "tipo": "altro",
-   "quando": "2026-11-25T22:52:00Z",
-   "lat": 44.7827644,
-   "lon": 10.4883051,
-   "da": "Terre di Canossa - Campegine",
-   "lat2": 44.6086674,
-   "lon2": 10.5940667,
-   "a": "Reggio Emilia",
-   "km": 25.3
+   "km": 0.0,
+   "dirlat": 42.7902379,
+   "dirlon": 10.3402239,
+   "dir": "Livorno"
   },
   {
    "id": "99dabb5d951deec4",
@@ -273,7 +377,10 @@
    "quando": "2026-11-25T22:52:00Z",
    "lat2": 41.2648121,
    "lon2": 15.8996651,
-   "a": "Cerignola"
+   "a": "Cerignola",
+   "dirlat": 42.3097631,
+   "dirlon": 13.9579989,
+   "dir": "Pescara"
   },
   {
    "id": "9abde253a262918a",
@@ -283,7 +390,10 @@
    "quando": "2026-11-25T22:51:00Z",
    "lat": 43.7697955,
    "lon": 11.2556404,
-   "da": "Di Firenze"
+   "da": "Di Firenze",
+   "dirlat": 43.4714722,
+   "dirlon": 10.6797912,
+   "dir": "Pisa"
   },
   {
    "id": "90e57bb742697a78",
@@ -297,7 +407,10 @@
    "lat2": 44.3812645,
    "lon2": 9.0399213,
    "a": "Genova Nervi",
-   "km": 10.7
+   "km": 10.7,
+   "dirlat": 42.7902379,
+   "dirlon": 10.3402239,
+   "dir": "Livorno"
   },
   {
    "id": "e485c63d9d464e02",
@@ -311,7 +424,10 @@
    "lat2": 44.5151078,
    "lon2": 11.2846938,
    "a": "Bologna Borgo Panigale",
-   "km": 1.0
+   "km": 1.0,
+   "dirlat": 40.8358846,
+   "dirlon": 14.2487679,
+   "dir": "Napoli"
   },
   {
    "id": "4f54d80ef9ecacfc",
@@ -325,7 +441,10 @@
    "lat2": 45.5174285,
    "lon2": 9.2614901,
    "a": "Tangenziale Est Di Milano",
-   "km": 10.1
+   "km": 10.1,
+   "dirlat": 45.4641943,
+   "dirlon": 9.1896346,
+   "dir": "Milano"
   },
   {
    "id": "b7791dd47a4fcc36",
@@ -384,7 +503,10 @@
    "lat2": 45.1754481,
    "lon2": 11.7574007,
    "a": "Pisana",
-   "km": 457.0
+   "km": 457.0,
+   "dirlat": 45.5994306,
+   "dirlon": 11.9423149,
+   "dir": "Aurelia"
   },
   {
    "id": "153f3dd854e0bfb9",
@@ -405,7 +527,10 @@
    "lat2": 41.2537669,
    "lon2": 16.2929951,
    "a": "Andria-Barletta",
-   "km": 13.0
+   "km": 13.0,
+   "dirlat": 42.3097631,
+   "dirlon": 13.9579989,
+   "dir": "Pescara"
   },
   {
    "id": "ea2563f84743f23c",
@@ -432,7 +557,10 @@
    "quando": "2026-11-25T22:30:00Z",
    "lat2": 41.2648121,
    "lon2": 15.8996651,
-   "a": "Cerignola"
+   "a": "Cerignola",
+   "dirlat": 42.3097631,
+   "dirlon": 13.9579989,
+   "dir": "Pescara"
   },
   {
    "id": "b14bc239397ed11c",
@@ -446,7 +574,10 @@
    "lat2": 43.9740957,
    "lon2": 10.8687081,
    "a": "Pistoia",
-   "km": 22.3
+   "km": 22.3,
+   "dirlat": 43.4714722,
+   "dirlon": 10.6797912,
+   "dir": "Pisa"
   },
   {
    "id": "52452da8f415d5a7",
@@ -473,7 +604,10 @@
    "quando": "2026-11-25T22:21:00Z",
    "lat": 44.6025583,
    "lon": 11.3735164,
-   "da": "Bologna Interporto"
+   "da": "Bologna Interporto",
+   "dirlat": 44.4938203,
+   "dirlon": 11.3426327,
+   "dir": "Bologna"
   },
   {
    "id": "943064b015330a76",
@@ -511,7 +645,10 @@
    "quando": "2026-11-25T22:13:00Z",
    "lat": 42.0937524,
    "lon": 11.7922462,
-   "da": "Civitavecchia"
+   "da": "Civitavecchia",
+   "dirlat": 44.1125891,
+   "dirlon": 8.244297,
+   "dir": "S.s. 1 Aurelia"
   },
   {
    "id": "c4b7c87f6aa3d53e",
@@ -568,7 +705,10 @@
    "quando": "2026-11-25T22:04:00Z",
    "lat": 40.8397016,
    "lon": 14.1664792,
-   "da": "Agnano"
+   "da": "Agnano",
+   "dirlat": 40.822643,
+   "dirlon": 14.1219109,
+   "dir": "Pozzuoli"
   },
   {
    "id": "ecb2dc1ba07bff16",
@@ -612,20 +752,6 @@
    "km": 159.4
   },
   {
-   "id": "a285e9e131c62bdc",
-   "strada": "A14 Pescara-Bari",
-   "testo": "pioggia dalle 19:53 del 25 novembre 2026 tra Svincolo Termoli-Molise e Svincolo San Severo",
-   "tipo": "meteo",
-   "quando": "2026-11-25T22:00:00Z",
-   "lat": 41.9983273,
-   "lon": 14.9939366,
-   "da": "Termoli-Molise",
-   "lat2": 41.6897761,
-   "lon2": 15.3776211,
-   "a": "San Severo",
-   "km": 56.1
-  },
-  {
    "id": "881e1dc449c2585d",
    "strada": "A10 Genova-Ventimiglia",
    "testo": "perdita di carico dalle 22:55 del 25 novembre 2026 tra Svincolo Genova Aeroporto e Svincolo Genova Pegli in direzione Ventimiglia",
@@ -637,7 +763,10 @@
    "lat2": 44.4291772,
    "lon2": 8.8244543,
    "a": "Genova Pegli",
-   "km": 4.4
+   "km": 4.4,
+   "dirlat": 43.7917623,
+   "dirlon": 7.6033131,
+   "dir": "Ventimiglia"
   },
   {
    "id": "96e48e25b6acde0e",
@@ -658,7 +787,10 @@
    "lat2": 44.3463235,
    "lon2": 8.5444342,
    "a": "Celle Ligure",
-   "km": 3.4
+   "km": 3.4,
+   "dirlat": 43.7917623,
+   "dirlon": 7.6033131,
+   "dir": "Ventimiglia"
   },
   {
    "id": "df018c4475c6d12b",
@@ -675,7 +807,10 @@
    "quando": "2026-11-25T21:38:00Z",
    "lat": 44.5170964,
    "lon": 11.3742983,
-   "da": "Bologna Fiera"
+   "da": "Bologna Fiera",
+   "dirlat": 40.8358846,
+   "dirlon": 14.2487679,
+   "dir": "Napoli"
   },
   {
    "id": "2fd7838cd881e017",
@@ -685,7 +820,10 @@
    "quando": "2026-11-25T21:36:00Z",
    "lat": 44.428369,
    "lon": 8.7586939,
-   "da": "Genova Voltri"
+   "da": "Genova Voltri",
+   "dirlat": 44.40726,
+   "dirlon": 8.9338624,
+   "dir": "Genova"
   },
   {
    "id": "19ab8a5e4a83f4ae",
@@ -695,7 +833,10 @@
    "quando": "2026-11-25T21:36:00Z",
    "lat": 45.8062837,
    "lon": 8.9198273,
-   "da": "Brughiera"
+   "da": "Brughiera",
+   "dirlat": 45.4641943,
+   "dirlon": 9.1896346,
+   "dir": "Milano"
   },
   {
    "id": "1a9ab48f001cf514",
@@ -732,7 +873,10 @@
    "quando": "2026-11-25T21:31:00Z",
    "lat": 42.0320574,
    "lon": 13.7834637,
-   "da": "Cocullo"
+   "da": "Cocullo",
+   "dirlat": 42.6581008,
+   "dirlon": 13.6980117,
+   "dir": "Teramo"
   },
   {
    "id": "bda568902ef634df",
@@ -752,7 +896,10 @@
    "quando": "2026-11-25T21:22:00Z",
    "lat": 40.8213963,
    "lon": 14.4261967,
-   "da": "Vesuvio"
+   "da": "Vesuvio",
+   "dirlat": 44.5535604,
+   "dirlon": 10.4119138,
+   "dir": "Canosa"
   },
   {
    "id": "677f34fdaad4db51",
@@ -762,7 +909,10 @@
    "quando": "2026-11-25T21:22:00Z",
    "lat": 40.8213963,
    "lon": 14.4261967,
-   "da": "Vesuvio"
+   "da": "Vesuvio",
+   "dirlat": 44.5535604,
+   "dirlon": 10.4119138,
+   "dir": "Canosa"
   },
   {
    "id": "d8510ad4d2cc2632",
@@ -783,7 +933,10 @@
    "lat2": 44.2182308,
    "lon2": 9.5200465,
    "a": "Deiva Marina",
-   "km": 13.8
+   "km": 13.8,
+   "dirlat": 43.3879184,
+   "dirlon": 10.4381133,
+   "dir": "Rosignano"
   },
   {
    "id": "dc781251321ab470",
@@ -807,7 +960,10 @@
    "quando": "2026-11-25T21:13:00Z",
    "lat": 45.1146302,
    "lon": 7.6153903,
-   "da": "Savonera"
+   "da": "Savonera",
+   "dirlat": 45.7373075,
+   "dirlon": 7.3204025,
+   "dir": "Aosta"
   },
   {
    "id": "d40f18d97fa543bf",
@@ -821,7 +977,10 @@
    "lat2": 44.339838,
    "lon2": 8.509353,
    "a": "Albisola",
-   "km": 3.5
+   "km": 3.5,
+   "dirlat": 43.7917623,
+   "dirlon": 7.6033131,
+   "dir": "Ventimiglia"
   },
   {
    "id": "e88396d8961d22de",
@@ -835,7 +994,10 @@
    "lat2": 42.4153196,
    "lon2": 13.5071805,
    "a": "Assergi",
-   "km": 21.6
+   "km": 21.6,
+   "dirlat": 41.8933203,
+   "dirlon": 12.4829321,
+   "dir": "Roma"
   },
   {
    "id": "56d8cf36bff94ef8",
@@ -845,7 +1007,10 @@
    "quando": "2026-11-25T21:10:00Z",
    "lat": 44.3848902,
    "lon": 9.050996,
-   "da": "Sant Ilario"
+   "da": "Sant Ilario",
+   "dirlat": 44.40726,
+   "dirlon": 8.9338624,
+   "dir": "Genova"
   },
   {
    "id": "44ace57e8e5b6206",
@@ -896,7 +1061,10 @@
    "quando": "2026-11-25T21:08:00Z",
    "lat": 43.769813,
    "lon": 13.1370794,
-   "da": "Marotta-Mondolfo"
+   "da": "Marotta-Mondolfo",
+   "dirlat": 41.913637,
+   "dirlon": 12.5208131,
+   "dir": "da Bologna"
   },
   {
    "id": "018649c98410f83d",
@@ -920,7 +1088,10 @@
    "quando": "2026-11-25T21:04:00Z",
    "lat": 44.5013362,
    "lon": 8.7163481,
-   "da": "Masone"
+   "da": "Masone",
+   "dirlat": 44.40726,
+   "dirlon": 8.9338624,
+   "dir": "Genova"
   },
   {
    "id": "b44c1cf0b62cd73c",
@@ -934,7 +1105,10 @@
    "lat2": 42.9525328,
    "lon2": 13.8807144,
    "a": "San Benedetto Del Tronto",
-   "km": 5.2
+   "km": 5.2,
+   "dirlat": 42.3097631,
+   "dirlon": 13.9579989,
+   "dir": "Pescara"
   },
   {
    "id": "ad8bf1191ec3bc8f",
@@ -948,7 +1122,10 @@
    "lat2": 44.3812645,
    "lon2": 9.0399213,
    "a": "Genova Nervi",
-   "km": 10.2
+   "km": 10.2,
+   "dirlat": 44.40726,
+   "dirlon": 8.9338624,
+   "dir": "Genova"
   },
   {
    "id": "854985c160845395",
@@ -969,7 +1146,10 @@
    "lat2": 43.8310037,
    "lon2": 7.8490829,
    "a": "Arma Di Taggia",
-   "km": 7.4
+   "km": 7.4,
+   "dirlat": 44.40726,
+   "dirlon": 8.9338624,
+   "dir": "Genova"
   },
   {
    "id": "8a6d8edc13407e95",
@@ -979,7 +1159,10 @@
    "quando": "2026-11-25T21:02:00Z",
    "lat": 40.7472133,
    "lon": 14.6433202,
-   "da": "Nocera"
+   "da": "Nocera",
+   "dirlat": 40.8358846,
+   "dirlon": 14.2487679,
+   "dir": "da Napoli"
   },
   {
    "id": "2c900fbf61701285",
@@ -996,57 +1179,15 @@
    "quando": "2026-11-25T20:49:00Z",
    "lat": 38.1112268,
    "lon": 13.3524434,
-   "da": "Palermo"
-  },
-  {
-   "id": "91396740ec6ae7db",
-   "strada": "R06 Raccordo Bettolle-Perugia",
-   "testo": "carreggiata chiusa causa lavori tra 1,104 km dopo Svincolo Perugia Ovest-Ferro Di Cavallo e 1,673 km prima di Svincolo Perugia Est-Piscille in direzione Perugia",
-   "tipo": "chiusura",
-   "quando": "2026-11-25T20:39:00Z"
-  },
-  {
-   "id": "f423e9646951234a",
-   "strada": "SS4 Via Salaria",
-   "testo": "carreggiata chiusa causa lavori di manutenzione tra 2,187 km prima di Incrocio Rieti - SS578 Salto Cicolana e 25 m dopo Incrocio Maglianello in direzione Incrocio Piazza Fiume",
-   "tipo": "chiusura",
-   "quando": "2026-11-25T20:35:00Z"
-  },
-  {
-   "id": "9d9b47bac4ef76ef",
-   "strada": "SS85 Venafrana",
-   "testo": "allagamento a Incrocio Venafro",
-   "tipo": "altro",
-   "quando": "2026-11-25T20:33:00Z",
-   "lat": 41.4608416,
-   "lon": 14.0578504,
-   "da": "Venafro"
-  },
-  {
-   "id": "17fd3b781504aecb",
-   "strada": "A19 Palermo-Catania",
-   "testo": "corsia chiusa causa lavori di manutenzione tra 2,5 km dopo Svincolo Palermo e 1,7 km prima di Svincolo Villabate in direzione Catania",
-   "tipo": "chiusura",
-   "quando": "2026-11-25T20:33:00Z",
-   "lat": 38.1112268,
-   "lon": 13.3524434,
    "da": "Palermo",
-   "lat2": 38.0765278,
-   "lon2": 13.4436674,
-   "a": "Villabate",
-   "km": 10.6
-  },
-  {
-   "id": "67896fef22dabfc1",
-   "strada": "SS51 Di Alemagna",
-   "testo": "mezzi spargisale in azione tra 502 m dopo Incrocio Variante Di Longarone e 4,009 km prima di Incrocio Valle Di Cadore",
-   "tipo": "altro",
-   "quando": "2026-11-25T20:33:00Z"
+   "dirlat": 38.1112268,
+   "dirlon": 13.3524434,
+   "dir": "Palermo"
   },
   {
    "id": "1dccf2d487b894d9",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 12:38 del 13 gennaio 2026 · Uscita 1 verso D7 chiuso giorno e notte fino a 2027 · Causa cantiere · Da 2063 m a nord di Meudon centre fino a 170 m a sud di Pont-de-Sèvres · Su rampa di uscita · Direzione Sèvres (N10) (da Les Ulis (A10))",
+   "testo": "segnalazione dalle 12:38 del 13 gennaio 2026 · Uscita 1 verso D7 chiuso giorno e notte fino a 2027 · Causa cantiere · Da 2063 m a nord di Meudon centro fino a 170 m a sud di Pont-de-Sèvres · Su rampa di uscita · Direzione Sèvres (N10) (da i Ulis (A10))",
    "tipo": "altro",
    "quando": "2026-01-13T12:40:02.363+01:00",
    "corsie": "",
@@ -1132,7 +1273,7 @@
   {
    "id": "e4a7a8b5e94211c9",
    "strada": "N106 (Francia)",
-   "testo": "lavori dalle 23:00 del 26 aprile 2026 · Lavori di costruzione · Réfection d’un ouvrage hydraulique · Da 29283 m a l'ovest di Les Salles-du-Gardon fino a 21415 m a l'est di Florac centre",
+   "testo": "lavori dalle 23:00 del 26 aprile 2026 · Lavori di costruzione · Réfection d’un opera idraulica · Da 29283 m a ovest di i Salles-du-Gardon fino a 21415 m a est di Florac centro",
    "tipo": "lavori",
    "quando": "2026-04-24T15:04:24.085+02:00",
    "corsie": "",
@@ -1147,7 +1288,7 @@
   {
    "id": "a0645424f1f00d7b",
    "strada": "A34 (Francia)",
-   "testo": "segnalazione dalle 12:21 del 30 marzo 2026 · Arrêté n. T26–149AR · Da 1600 m a l'est di Villers fino a 381 m a l'ovest di Lumes · Direzione Belgique (da Reims)",
+   "testo": "segnalazione dalle 12:21 del 30 marzo 2026 · Arrêté n. T26–149AR · Da 1600 m a est di Villers fino a 381 m a ovest di Lumes · Direzione Belgique (da Reims)",
    "tipo": "altro",
    "quando": "2026-06-12T04:02:49.784+02:00",
    "corsie": "",
@@ -1162,7 +1303,7 @@
   {
    "id": "6638be8db636842e",
    "strada": "A34 (Francia)",
-   "testo": "segnalazione dalle 12:21 del 3 aprile 2026 · Da 1600 m a l'est di Villers fino a 381 m a l'ovest di Lumes · Direzione Belgique (da Reims)",
+   "testo": "segnalazione dalle 12:21 del 3 aprile 2026 · Da 1600 m a est di Villers fino a 381 m a ovest di Lumes · Direzione Belgique (da Reims)",
    "tipo": "altro",
    "quando": "2026-06-12T04:02:49.784+02:00",
    "corsie": "",
@@ -1192,7 +1333,7 @@
   {
    "id": "852c28f7a6abf21f",
    "strada": "N202 (Francia)",
-   "testo": "lavori dalle 06:00 del 31 agosto 2026 · Lavori di costruzione · Senso unico alternato manuel sécurisation OPCB · Da 5684 m a l'est di Les Scaffarels fino a 0 m a l'ovest di ponte di Gueydan",
+   "testo": "lavori dalle 06:00 del 31 agosto 2026 · Lavori di costruzione · Senso unico alternato manuale messa in sicurezza OPCB · Da 5684 m a est di i Scaffarels fino a 0 m a ovest di ponte di Gueydan",
    "tipo": "lavori",
    "quando": "2026-06-25T08:54:13.033+02:00",
    "corsie": "",
@@ -1207,7 +1348,7 @@
   {
    "id": "5d1667664bee93b1",
    "strada": "N106 (Francia)",
-   "testo": "segnalazione dalle 06:00 del 10 luglio 2026 · Ex RN 106, viadotto di Poumas accesso vietato a +3.5 T dés l entrata del délaissé · 14070 m a l'est di Florac centre · Direzione Alès (da Mende)",
+   "testo": "segnalazione dalle 06:00 del 10 luglio 2026 · Ex RN 106, viadotto di Poumas accesso vietato a +3.5 T dés l entrata del délaissé · 14070 m a est di Florac centro · Direzione Alès (da Mende)",
    "tipo": "altro",
    "quando": "2026-07-10T07:11:06.091+02:00",
    "corsie": "",
@@ -1233,7 +1374,7 @@
   {
    "id": "08bd878db01acfc8",
    "strada": "N20 (Francia)",
-   "testo": "lavori dalle 07:00 del 7 agosto 2026 · Lavori di costruzione · Mise en traffico provisoire del tronçon di la RN20 a Ussat les Bains e Ornolac-Ussat les Bains A-098-RN20-2026 · Da 1561 m a sud di Tarascon-sur-Ariège sud fino a 5062 m a nord di Les Cabannes",
+   "testo": "lavori dalle 07:00 del 7 agosto 2026 · Lavori di costruzione · Messa en traffico provisoire del tronçon di la RN20 a Ussat i Bains e Ornolac-Ussat i Bains A-098-RN20-2026 · Da 1561 m a sud di Tarascon-sur-Ariège sud fino a 5062 m a nord di i Cabannes",
    "tipo": "lavori",
    "quando": "2026-08-07T09:32:43.622+02:00",
    "corsie": "",
@@ -1248,7 +1389,7 @@
   {
    "id": "3a99d03aaefcf3b9",
    "strada": "N20 (Francia)",
-   "testo": "segnalazione dalle 07:00 del 7 agosto 2026 · Da 1561 m a sud di Tarascon-sur-Ariège sud fino a 5062 m a nord di Les Cabannes",
+   "testo": "segnalazione dalle 07:00 del 7 agosto 2026 · Da 1561 m a sud di Tarascon-sur-Ariège sud fino a 5062 m a nord di i Cabannes",
    "tipo": "altro",
    "quando": "2026-08-07T09:32:43.622+02:00",
    "corsie": "",
@@ -1263,7 +1404,7 @@
   {
    "id": "a99a0995609c6d06",
    "strada": "N20 (Francia)",
-   "testo": "segnalazione dalle 07:00 del 7 agosto 2026 · Da 1561 m a sud di Tarascon-sur-Ariège sud fino a 5062 m a nord di Les Cabannes",
+   "testo": "segnalazione dalle 07:00 del 7 agosto 2026 · Da 1561 m a sud di Tarascon-sur-Ariège sud fino a 5062 m a nord di i Cabannes",
    "tipo": "altro",
    "quando": "2026-08-07T09:32:43.622+02:00",
    "corsie": "",
@@ -1278,7 +1419,7 @@
   {
    "id": "22166a048ac14b53",
    "strada": "N113 (Francia)",
-   "testo": "lavori dalle 23:00 del 23 agosto 2026 · Da 2016 m a l'ovest di Codognan fino a 2581 m a l'est di Gallargues-le-Montueux",
+   "testo": "lavori dalle 23:00 del 23 agosto 2026 · Da 2016 m a ovest di Codognan fino a 2581 m a est di Gallargues-le-Montueux",
    "tipo": "lavori",
    "quando": "2026-08-11T09:43:39.581+02:00",
    "corsie": "",
@@ -1293,7 +1434,7 @@
   {
    "id": "9841cd2763451082",
    "strada": "N85 (Francia)",
-   "testo": "lavori dalle 07:45 del 31 agosto 2026 · Lavori di costruzione · Senso unico alternato manuel Aménagement RN85 · Da 8679 m a l'est di Malijai fino a 5208 m a l'ovest di R-P del 11 novembre",
+   "testo": "lavori dalle 07:45 del 31 agosto 2026 · Lavori di costruzione · Senso unico alternato manuale sistemazione RN85 · Da 8679 m a est di Malijai fino a 5208 m a ovest di R-P del 11 novembre",
    "tipo": "lavori",
    "quando": "2026-08-27T07:57:40.102+02:00",
    "corsie": "",
@@ -1308,7 +1449,7 @@
   {
    "id": "0060217ae942d018",
    "strada": "N106 (Francia)",
-   "testo": "lavori dalle 23:00 del 30 agosto 2026 · Lavori di protezione contro caduta massi · Da 22300 m a l'ovest di Les Salles-du-Gardon fino a 28438 m a l'est di Florac centre",
+   "testo": "lavori dalle 23:00 del 30 agosto 2026 · Lavori di protezione contro caduta massi · Da 22300 m a ovest di i Salles-du-Gardon fino a 28438 m a est di Florac centro",
    "tipo": "lavori",
    "quando": "2026-08-28T10:13:55.553+02:00",
    "corsie": "",
@@ -1323,7 +1464,7 @@
   {
    "id": "93fd4415f9c9dcef",
    "strada": "N106 (Francia)",
-   "testo": "segnalazione dalle 11:54 del 23 dicembre 2025 · Interdiction a la traffico dei véhicules di plus di 44 tonnellate senso unico alternato con semaforo · Da 42344 m a l'ovest di Les Salles-du-Gardon fino a 7610 m a l'est di Florac centre",
+   "testo": "segnalazione dalle 11:54 del 23 dicembre 2025 · Interdiction a la traffico dei veicoli di plus di 44 tonnellate senso unico alternato con semaforo · Da 42344 m a ovest di i Salles-du-Gardon fino a 7610 m a est di Florac centro",
    "tipo": "altro",
    "quando": "2026-09-01T06:29:30.929+02:00",
    "corsie": "corsie ridotte",
@@ -1338,7 +1479,7 @@
   {
    "id": "531b2d618fe7d874",
    "strada": "N202 (Francia)",
-   "testo": "lavori dalle 06:00 del 14 settembre 2026 · Lavori di costruzione · Senso unico alternato manuel Sécurisation dei ouvrages di protezione contro caduta massi · Da 5058 m a l'est di Saint-André centre fino a 2368 m a l'ovest di Saint-Julien-du-Verdon est",
+   "testo": "lavori dalle 06:00 del 14 settembre 2026 · Lavori di costruzione · Senso unico alternato manuale messa in sicurezza dei opera di protezione contro caduta massi · Da 5058 m a est di Saint-André centro fino a 2368 m a ovest di Saint-Julien-du-Verdon est",
    "tipo": "lavori",
    "quando": "2026-09-07T14:23:56.412+02:00",
    "corsie": "",
@@ -1353,7 +1494,7 @@
   {
    "id": "c1f5b068a4055a21",
    "strada": "N85 (Francia)",
-   "testo": "lavori dalle 07:45 del 14 settembre 2026 · Lavori di costruzione · Senso unico alternato manuel, confortement dei berges · Da 9717 m a l'est di Malijai fino a 4608 m a l'ovest di R-P del 11 novembre",
+   "testo": "lavori dalle 07:45 del 14 settembre 2026 · Lavori di costruzione · Senso unico alternato manuale, confortement dei berges · Da 9717 m a est di Malijai fino a 4608 m a ovest di R-P del 11 novembre",
    "tipo": "lavori",
    "quando": "2026-09-11T09:29:53.731+02:00",
    "corsie": "",
@@ -1368,7 +1509,7 @@
   {
    "id": "96edcd33f6633d5a",
    "strada": "N165 (Francia)",
-   "testo": "strada chiusa dalle 19:00 del 14 settembre 2026 · 819 m a l'est di Le Temple-de-Bretagne · Direzione Brest (da Nantes)",
+   "testo": "strada chiusa dalle 19:00 del 14 settembre 2026 · 819 m a est di Le Temple-de-Bretagne · Direzione Brest (da Nantes)",
    "tipo": "chiusura",
    "quando": "2026-09-14T06:37:51.866+02:00",
    "corsie": "",
@@ -1381,7 +1522,7 @@
   {
    "id": "d8961d72a87a75f2",
    "strada": "N165 (Francia)",
-   "testo": "segnalazione dalle 19:00 del 14 settembre 2026 · Da 399 m a l'ovest di Z.I. La Croix-Rouge fino a 319 m a l'est di Le Temple-de-Bretagne · Direzione Brest (da Nantes)",
+   "testo": "segnalazione dalle 19:00 del 14 settembre 2026 · Da 399 m a ovest di Z.I. La Croix-Rouge fino a 319 m a est di Le Temple-de-Bretagne · Direzione Brest (da Nantes)",
    "tipo": "altro",
    "quando": "2026-09-14T06:37:51.866+02:00",
    "corsie": "",
@@ -1396,7 +1537,7 @@
   {
    "id": "74aa51473c91c150",
    "strada": "N165 (Francia)",
-   "testo": "segnalazione dalle 19:00 del 14 settembre 2026 · 922 m a l'est di Le Temple-de-Bretagne · Direzione Brest (da Nantes)",
+   "testo": "segnalazione dalle 19:00 del 14 settembre 2026 · 922 m a est di Le Temple-de-Bretagne · Direzione Brest (da Nantes)",
    "tipo": "altro",
    "quando": "2026-09-14T06:37:51.866+02:00",
    "corsie": "",
@@ -1422,7 +1563,7 @@
   {
    "id": "ecfc00c4c7d69378",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 04:00 del 25 settembre 2026 · Causa cantiere · Da 1102 m a l'est di Valenton - Villeneuve-Saint-Ge fino a 404 m a l'ovest di Créteil centre · Su rampa di uscita · Direzione Rueil-Malmaison (da Versailles)",
+   "testo": "segnalazione dalle 04:00 del 25 settembre 2026 · Causa cantiere · Da 1102 m a est di Valenton - Villeneuve-Saint-Ge fino a 404 m a ovest di Créteil centro · Su rampa di uscita · Direzione Rueil-Malmaison (da Versailles)",
    "tipo": "altro",
    "quando": "2026-09-25T06:55:07.260+02:00",
    "corsie": "",
@@ -1435,7 +1576,7 @@
   {
    "id": "2bf35a54e319517b",
    "strada": "N85 (Francia)",
-   "testo": "lavori dalle 07:45 del 28 settembre 2026 · Lavori di costruzione · Senso unico alternato manuel, aménagement RN 85 · Da 6878 m a l'est di Malijai fino a 9014 m a l'ovest di R-P del 11 novembre",
+   "testo": "lavori dalle 07:45 del 28 settembre 2026 · Lavori di costruzione · Senso unico alternato manuale, sistemazione RN 85 · Da 6878 m a est di Malijai fino a 9014 m a ovest di R-P del 11 novembre",
    "tipo": "lavori",
    "quando": "2026-09-25T09:33:57.328+02:00",
    "corsie": "",
@@ -1450,7 +1591,7 @@
   {
    "id": "3b8735fea95b89de",
    "strada": "A83 (Francia)",
-   "testo": "lavori dalle 11:00 del 13 aprile 2026 · Lavori di élargissement · Da 820 m a nord di La Cour-Neuve fino a 526 m a sud di area di servizio di la Grassinière · Direzione Nantes (da Niort)",
+   "testo": "lavori dalle 11:00 del 13 aprile 2026 · Lavori di allargamento · Da 820 m a nord di La Cour-Neuve fino a 526 m a sud di area di servizio di la Grassinière · Direzione Nantes (da Niort)",
    "tipo": "lavori",
    "quando": "2026-09-25T11:18:59.079+02:00",
    "corsie": "",
@@ -1465,7 +1606,7 @@
   {
    "id": "119c166d88e7d781",
    "strada": "A83 (Francia)",
-   "testo": "segnalazione dalle 11:00 del 13 aprile 2026 · Causa cantiere · 22 m a sud di Les Sorinières · Direzione Nantes (da Niort)",
+   "testo": "segnalazione dalle 11:00 del 13 aprile 2026 · Causa cantiere · 22 m a sud di i Sorinières · Direzione Nantes (da Niort)",
    "tipo": "altro",
    "quando": "2026-09-25T11:18:59.079+02:00",
    "corsie": "",
@@ -1478,7 +1619,7 @@
   {
    "id": "9e90f4a7007fa89c",
    "strada": "A83 (Francia)",
-   "testo": "segnalazione dalle 11:00 del 13 aprile 2026 · Causa cantiere · Da 175 m a nord di Les Sorinières fino a 526 m a sud di area di servizio di la Grassinière · Direzione Nantes (da Niort)",
+   "testo": "segnalazione dalle 11:00 del 13 aprile 2026 · Causa cantiere · Da 175 m a nord di i Sorinières fino a 526 m a sud di area di servizio di la Grassinière · Direzione Nantes (da Niort)",
    "tipo": "altro",
    "quando": "2026-09-25T11:18:59.079+02:00",
    "corsie": "",
@@ -1508,7 +1649,7 @@
   {
    "id": "c7318faf3dc06fb7",
    "strada": "A83 (Francia)",
-   "testo": "segnalazione dalle 11:00 del 13 aprile 2026 · Réduction di la largeur delle corsie a 6.00 mètres con une largeur a 2.80 mètres per la corsia di sinistra e une largeur a 3.20 mètres per la corsia di destra, del PR 5+400G a PR 3+500G · Causa cantiere · 526 m a sud di area di servizio di ",
+   "testo": "segnalazione dalle 11:00 del 13 aprile 2026 · Réduction di la larghezza delle corsie a 6.00 metri con un larghezza a 2.80 metri per la corsia di sinistra e un larghezza a 3.20 metri per la corsia di destra, del PR 5+400G a PR 3+500G · Causa cantiere · 526 m a sud di area di servizio di",
    "tipo": "altro",
    "quando": "2026-09-25T11:18:59.079+02:00",
    "corsie": "",
@@ -1521,7 +1662,7 @@
   {
    "id": "5f5b74636a01cf60",
    "strada": "A83 (Francia)",
-   "testo": "lavori dalle 16:20 del 2 giugno 2026 · Da 1239 m a nord di Les Sorinières fino a 1123 m a sud di area di servizio di la Grassinière · Direzione Nantes (da Niort)",
+   "testo": "lavori dalle 16:20 del 2 giugno 2026 · Da 1239 m a nord di i Sorinières fino a 1123 m a sud di area di servizio di la Grassinière · Direzione Nantes (da Niort)",
    "tipo": "lavori",
    "quando": "2026-09-25T11:18:59.079+02:00",
    "corsie": "corsie ridotte",
@@ -1536,7 +1677,7 @@
   {
    "id": "0fa6ef6fe082dc87",
    "strada": "N19 (Francia)",
-   "testo": "segnalazione dalle 08:23 del 21 settembre 2026 · Senso unico alternato con semaforo tricolores auto-adaptatifs · Da 1642 m a l'est di Langres fino a 23836 m a l'ovest di Fayl-Billot",
+   "testo": "segnalazione dalle 08:23 del 21 settembre 2026 · Senso unico alternato con semaforo tricolores auto-adaptatifs · Da 1642 m a est di Langres fino a 23836 m a ovest di Fayl-Billot",
    "tipo": "altro",
    "quando": "2026-09-30T16:56:49.323+02:00",
    "corsie": "corsie ridotte",
@@ -1581,7 +1722,7 @@
   {
    "id": "f649af6600d7ba12",
    "strada": "N4 (Francia)",
-   "testo": "lavori dalle 02:03 del 2 ottobre 2026 · Lavori fino a 01/02/2027. Mise en 2x2 corsia · Da 19727 m a l'est di Vitry-le-François fino a 2669 m a l'ovest di Valcourt · GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Vitry-Le-François/CEI Saint-Dizier · Direzione Al",
+   "testo": "lavori dalle 02:03 del 2 ottobre 2026 · Lavori fino a 01/02/2027. messa en 2x2 corsia · Da 19727 m a est di Vitry-le-François fino a 2669 m a ovest di Valcourt · GE_DIRE/Service regionale d’gestione Grand Est (SREX)/District Vitry-Le-François/CEI Saint-Dizier · Direzione Allemagn",
    "tipo": "lavori",
    "quando": "2026-10-02T03:03:52.863+02:00",
    "corsie": "",
@@ -1596,7 +1737,7 @@
   {
    "id": "8b779abdec199c69",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 02:03 del 2 ottobre 2026 · Su 600 m a début di la rampa. lavori fino a 01/02/2027. Mise en 2x2 corsia · 2640 m a l'ovest di Valcourt · Hors corsia di traffico · GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Vitry-Le-François/CEI Saint-Dizier · Su ",
+   "testo": "segnalazione dalle 02:03 del 2 ottobre 2026 · Su 600 m a début di la rampa. lavori fino a 01/02/2027. messa en 2x2 corsia · 2640 m a ovest di Valcourt · Hors corsia di traffico · GE_DIRE/Service regionale d’gestione Grand Est (SREX)/District Vitry-Le-François/CEI Saint-Dizier · Su ramp",
    "tipo": "altro",
    "quando": "2026-10-02T03:03:52.863+02:00",
    "corsie": "",
@@ -1609,7 +1750,7 @@
   {
    "id": "e39da8d4512ecde2",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 02:03 del 2 ottobre 2026 · Su 400 m a 0 m di la fin di la rampa. lavori fino a 01/02/2027. Mise en 2x2 corsia · 21884 m a l'est di Vitry-le-François · Hors corsia di traffico · GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Vitry-Le-François/CEI Sa",
+   "testo": "segnalazione dalle 02:03 del 2 ottobre 2026 · Su 400 m a 0 m di la fin di la rampa. lavori fino a 01/02/2027. messa en 2x2 corsia · 21884 m a est di Vitry-le-François · Hors corsia di traffico · GE_DIRE/Service regionale d’gestione Grand Est (SREX)/District Vitry-Le-François/CEI Saint-",
    "tipo": "altro",
    "quando": "2026-10-02T03:03:52.863+02:00",
    "corsie": "",
@@ -1622,7 +1763,7 @@
   {
    "id": "f00026449eb1e00a",
    "strada": "N4 (Francia)",
-   "testo": "segnalazione dalle 02:03 del 2 ottobre 2026 · Deviazione sull'altra carreggiata del direzione Nancy verso Paris su le direzione opposé. lavori fino a 01/02/2027. Mise en 2x2 corsia · Da 68 m a l'ovest di Saint-Dizier fino a 20530 m a l'est di Vitry-le-François · GE_DIRE/Service régiona",
+   "testo": "segnalazione dalle 02:03 del 2 ottobre 2026 · Deviazione sull'altra carreggiata del direzione Nancy verso Paris su le direzione opposé. lavori fino a 01/02/2027. messa en 2x2 corsia · Da 68 m a ovest di Saint-Dizier fino a 20530 m a est di Vitry-le-François · GE_DIRE/Service regionale ",
    "tipo": "altro",
    "quando": "2026-10-02T03:03:52.863+02:00",
    "corsie": "doppio senso su una carreggiata",
@@ -1637,7 +1778,7 @@
   {
    "id": "640b35a8a095d937",
    "strada": "N164 (Francia)",
-   "testo": "lavori dalle 08:00 del 1 ottobre 2026 · 74 m a l'est di Loudéac - Trévé",
+   "testo": "lavori dalle 08:00 del 1 ottobre 2026 · 74 m a est di Loudéac - Trévé",
    "tipo": "lavori",
    "quando": "2026-10-02T05:54:29.213+02:00",
    "corsie": "",
@@ -1650,7 +1791,7 @@
   {
    "id": "b2ab5833da52d039",
    "strada": "N164 (Francia)",
-   "testo": "lavori dalle 08:00 del 1 ottobre 2026 · Da 254 m a l'ovest di Loudéac nord fino a 279 m a l'est di Loudéac - Trévé · Direzione Chateaulin (da Rennes)",
+   "testo": "lavori dalle 08:00 del 1 ottobre 2026 · Da 254 m a ovest di Loudéac nord fino a 279 m a est di Loudéac - Trévé · Direzione Chateaulin (da Rennes)",
    "tipo": "lavori",
    "quando": "2026-10-02T05:54:29.213+02:00",
    "corsie": "corsie ridotte",
@@ -1665,7 +1806,7 @@
   {
    "id": "f479dc88ef910ce3",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 08:00 del 1 ottobre 2026 · Causa cantiere · 267 m a l'est di Loudéac - Trévé · Su rampa di uscita · Direzione Chateaulin (da Rennes)",
+   "testo": "segnalazione dalle 08:00 del 1 ottobre 2026 · Causa cantiere · 267 m a est di Loudéac - Trévé · Su rampa di uscita · Direzione Chateaulin (da Rennes)",
    "tipo": "altro",
    "quando": "2026-10-02T05:54:29.213+02:00",
    "corsie": "",
@@ -1691,7 +1832,7 @@
   {
    "id": "c01e5b07a2f761b3",
    "strada": "N19 (Francia)",
-   "testo": "lavori dalle 06:59 del 12 ottobre 2026 alle 16:00 del 27 novembre 2026 · Carreggiata ristretta. Adaptez votre velocità · Da 2102 m a l'est di Fayl-Billot fino a 1091 m a l'ovest di Port-sur-Saône",
+   "testo": "lavori dalle 06:59 del 12 ottobre 2026 alle 16:00 del 27 novembre 2026 · Carreggiata ristretta. Adaptez vostro velocità · Da 2102 m a est di Fayl-Billot fino a 1091 m a ovest di Port-sur-Saône",
    "tipo": "lavori",
    "quando": "2026-10-12T08:26:26.281+02:00",
    "corsie": "",
@@ -1706,7 +1847,7 @@
   {
    "id": "4a29c2c185fbb2d6",
    "strada": "N19 (Francia)",
-   "testo": "lavori dalle 06:59 del 12 ottobre 2026 alle 16:00 del 27 novembre 2026 · Carreggiata ristretta. Adaptez votre velocità · Da 2904 m a l'est di Rolampont fino a 17946 m a l'ovest di Combeaufontaine",
+   "testo": "lavori dalle 06:59 del 12 ottobre 2026 alle 16:00 del 27 novembre 2026 · Carreggiata ristretta. Adaptez vostro velocità · Da 2904 m a est di Rolampont fino a 17946 m a ovest di Combeaufontaine",
    "tipo": "lavori",
    "quando": "2026-10-12T08:26:26.281+02:00",
    "corsie": "",
@@ -1721,7 +1862,7 @@
   {
    "id": "6a1ebbee9c643208",
    "strada": "A33 (Francia)",
-   "testo": "lavori dalle 07:02 del 13 ottobre 2026 · Da 1679 m a l'ovest di Rosières-au-Salines fino a 3286 m a l'est di Saint-Nicolas-de-Port · Hors corsia di traffico · GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Nancy/CEI Fléville · Direzione Nancy (da Lunéville)",
+   "testo": "lavori dalle 07:02 del 13 ottobre 2026 · Da 1679 m a ovest di Rosières-au-Salines fino a 3286 m a est di Saint-Nicolas-de-Port · Hors corsia di traffico · GE_DIRE/Service regionale d’gestione Grand Est (SREX)/District Nancy/CEI Fléville · Direzione Nancy (da Lunéville)",
    "tipo": "lavori",
    "quando": "2026-10-13T08:02:25.238+02:00",
    "corsie": "corsie ridotte",
@@ -1736,7 +1877,7 @@
   {
    "id": "5a71eb92b59c2385",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 09:32 del 13 ottobre 2026 · 187 m a sud di Pont-à-Mousson · GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Nancy/CEI Charmes · Su rampa di uscita · Direzione Luxembourg (da Lyon)",
+   "testo": "lavori dalle 09:32 del 13 ottobre 2026 · 187 m a sud di Pont-à-Mousson · GE_DIRE/Service regionale d’gestione Grand Est (SREX)/District Nancy/CEI Charmes · Su rampa di uscita · Direzione Luxembourg (da Lyon)",
    "tipo": "lavori",
    "quando": "2026-10-13T10:32:58.912+02:00",
    "corsie": "corsie ridotte",
@@ -1779,7 +1920,7 @@
   {
    "id": "28a0040058a2eb18",
    "strada": "N532 (Francia)",
-   "testo": "lavori dalle 12:43 del 13 ottobre 2026 · Da 904 m a l'est di Bourg-lès-Valence (Les Couleur fino a 3156 m a l'ovest di Route di Alixan · Direzione Grenoble (da Valence)",
+   "testo": "lavori dalle 12:43 del 13 ottobre 2026 · Da 904 m a est di Bourg-lès-Valence (i Couleur fino a 3156 m a ovest di Route di Alixan · Direzione Grenoble (da Valence)",
    "tipo": "lavori",
    "quando": "2026-10-13T13:44:50.175+02:00",
    "corsie": "",
@@ -1794,7 +1935,7 @@
   {
    "id": "0888bfd3f640283f",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 12:44 del 13 ottobre 2026 · 112 m a l'ovest di Saint-Marcel-lès-Valence ovest · Su rampa di uscita · Direzione Grenoble (da Valence)",
+   "testo": "segnalazione dalle 12:44 del 13 ottobre 2026 · 112 m a ovest di Saint-Marcel-lès-Valence ovest · Su rampa di uscita · Direzione Grenoble (da Valence)",
    "tipo": "altro",
    "quando": "2026-10-13T13:44:50.175+02:00",
    "corsie": "",
@@ -1807,7 +1948,7 @@
   {
    "id": "171dd4d65c590ca8",
    "strada": "N85 (Francia)",
-   "testo": "lavori dalle 07:00 del 19 ottobre 2026 alle 18:00 del 27 novembre 2026 · Senso unico alternato con semaforo ou manuel potatura alberi · Da 8569 m a sud di Digne fino a 98 m a nord di Barrême",
+   "testo": "lavori dalle 07:00 del 19 ottobre 2026 alle 18:00 del 27 novembre 2026 · Senso unico alternato con semaforo ou manuale potatura alberi · Da 8569 m a sud di Digne fino a 98 m a nord di Barrême",
    "tipo": "lavori",
    "quando": "2026-10-14T13:35:58.482+02:00",
    "corsie": "",
@@ -1852,7 +1993,7 @@
   {
    "id": "a89cba848bb9a89c",
    "strada": "A77 (Francia)",
-   "testo": "condizioni meteo dalle 09:10 del 17 settembre 2026 · Frana di un talus e di un mur anti-bruit · Da 1402 m a nord di Cosne-Cours-sur-Loire Sud fino a 975 m a sud di Cosne centre · Direzione Paris (da Nevers)",
+   "testo": "condizioni meteo dalle 09:10 del 17 settembre 2026 · Frana di un scarpata e di un muro anti-bruit · Da 1402 m a nord di Cosne-Cours-sur-Loire Sud fino a 975 m a sud di Cosne centro · Direzione Paris (da Nevers)",
    "tipo": "meteo",
    "quando": "2026-10-15T10:47:30.019+02:00",
    "corsie": "",
@@ -1867,7 +2008,7 @@
   {
    "id": "80b65456ee1ed12c",
    "strada": "A77 (Francia)",
-   "testo": "lavori dalle 09:10 del 17 settembre 2026 · Corsia di destra neutralisée,Jour e nuit,Week-end e festivi y compris rampa di uscita svincolo 23 chiuso · Da 163 m a nord di Cosne-Cours-sur-Loire Sud fino a 978 m a sud di Cosne centre · Direzione Paris (da Nevers)",
+   "testo": "lavori dalle 09:10 del 17 settembre 2026 · Corsia di destra chiusa,giorno e notte,Week-end e festivi y compresi rampa di uscita svincolo 23 chiuso · Da 163 m a nord di Cosne-Cours-sur-Loire Sud fino a 978 m a sud di Cosne centro · Direzione Paris (da Nevers)",
    "tipo": "lavori",
    "quando": "2026-10-15T10:47:30.019+02:00",
    "corsie": "corsie ridotte",
@@ -1882,7 +2023,7 @@
   {
    "id": "d2bbc94268016594",
    "strada": "N24 (Francia)",
-   "testo": "lavori dalle 19:00 del 6 luglio 2026 · Lavori di élargissement · Lavori aménagement corsia di trambus lavori RM · Da 899 m a l'ovest di Rennes Porte di Lorient fino a 1608 m a l'est di Le Rheu Les Landes di Apigné",
+   "testo": "lavori dalle 19:00 del 6 luglio 2026 · Lavori di allargamento · Lavori sistemazione corsia di trambus lavori RM · Da 899 m a ovest di Rennes Porte di Lorient fino a 1608 m a est di Le Rheu i Landes di Apigné",
    "tipo": "lavori",
    "quando": "2026-10-15T12:47:16.271+02:00",
    "corsie": "",
@@ -1940,7 +2081,7 @@
   {
    "id": "9bf9053b85f490f6",
    "strada": "N19 (Francia)",
-   "testo": "lavori dalle 10:02 del 17 settembre 2026 · Restrictions di velocità localisées · Da 2858 m a l'est di Héricourt fino a 919 m a l'ovest di Banvillars",
+   "testo": "lavori dalle 10:02 del 17 settembre 2026 · Restrictions di velocità locali · Da 2858 m a est di Héricourt fino a 919 m a ovest di Banvillars",
    "tipo": "lavori",
    "quando": "2026-10-20T13:07:25.049+02:00",
    "corsie": "",
@@ -1955,7 +2096,7 @@
   {
    "id": "d854a58a3f6c0671",
    "strada": "N19 (Francia)",
-   "testo": "lavori dalle 10:02 del 17 settembre 2026 · Restrictions di velocità localisées · Da 0 m a l'est di Banvillars fino a 1791 m a l'ovest di Sévenans",
+   "testo": "lavori dalle 10:02 del 17 settembre 2026 · Restrictions di velocità locali · Da 0 m a est di Banvillars fino a 1791 m a ovest di Sévenans",
    "tipo": "lavori",
    "quando": "2026-10-20T13:07:25.049+02:00",
    "corsie": "",
@@ -1970,7 +2111,7 @@
   {
    "id": "784d1780924d9c5a",
    "strada": "N19 (Francia)",
-   "testo": "lavori dalle 12:06 del 20 ottobre 2026 · In le cadre di la mise a 2x2 corsia di la N19 tra Héricourt e Sevenans différents systèmes di exploitation seront mise en place suivant le phasage dei lavori su la section courante e les svincolo: - Neutralisation di corsia, - chiusura di l",
+   "testo": "lavori dalle 12:06 del 20 ottobre 2026 · In le ambito di la messa a 2x2 corsia di la N19 tra Héricourt e Sevenans diversi sistemi di gestione saranno installazione seguente le fasi dei lavori su la tratto principale e i svincolo: - Neutralisation di corsia, - chiusura di la N19 co",
    "tipo": "lavori",
    "quando": "2026-10-20T13:07:25.049+02:00",
    "corsie": "corsie ridotte",
@@ -1985,7 +2126,7 @@
   {
    "id": "eca58dfcf7ce9e86",
    "strada": "N19 (Francia)",
-   "testo": "lavori dalle 12:06 del 20 ottobre 2026 · In le cadre di la mise a 2x2 corsia di la N19 tra Héricourt e Sevenans différents systèmes di exploitation seront mise en place suivant le phasage dei lavori su la section courante e les svincolo: - Neutralisation di corsia, - chiusura di l",
+   "testo": "lavori dalle 12:06 del 20 ottobre 2026 · In le ambito di la messa a 2x2 corsia di la N19 tra Héricourt e Sevenans diversi sistemi di gestione saranno installazione seguente le fasi dei lavori su la tratto principale e i svincolo: - Neutralisation di corsia, - chiusura di la N19 co",
    "tipo": "lavori",
    "quando": "2026-10-20T13:07:25.049+02:00",
    "corsie": "corsie ridotte",
@@ -2000,7 +2141,7 @@
   {
    "id": "3f46c84cea247480",
    "strada": "N19 (Francia)",
-   "testo": "segnalazione dalle 10:01 del 17 settembre 2026 · Da 2269 m a l'est di Banvillars fino a 1651 m a l'ovest di Sévenans",
+   "testo": "segnalazione dalle 10:01 del 17 settembre 2026 · Da 2269 m a est di Banvillars fino a 1651 m a ovest di Sévenans",
    "tipo": "altro",
    "quando": "2026-10-20T13:07:25.049+02:00",
    "corsie": "",
@@ -2030,7 +2171,7 @@
   {
    "id": "45df2c6afdb9f2f5",
    "strada": "N70 (Francia)",
-   "testo": "lavori dalle 08:24 del 19 novembre 2025 · Corsia di destra neutralisée jour e nuit, week-end e festivi y compris · Da 5127 m a sud di Montceau-les-Mines Blanzy fino a 8145 m a nord di 42096 · Direzione Paray-le-Monial (da Montceau-les-Mines)",
+   "testo": "lavori dalle 08:24 del 19 novembre 2025 · Corsia di destra chiusa giorno e notte, week-end e festivi y compresi · Da 5127 m a sud di Montceau-les-Mines Blanzy fino a 8145 m a nord di 42096 · Direzione Paray-le-Monial (da Montceau-les-Mines)",
    "tipo": "lavori",
    "quando": "2026-10-21T15:33:09.962+02:00",
    "corsie": "corsie ridotte",
@@ -2045,7 +2186,7 @@
   {
    "id": "c7b224cf8f657dae",
    "strada": "N70 (Francia)",
-   "testo": "lavori dalle 08:48 del 20 ottobre 2025 · Corsia di sinistra neutralisée, jour e nuit, week-end e festivi y compris · Da 4151 m a nord di 42096 fino a 7906 m a sud di Montceau-les-Mines Blanzy · Direzione Montceau-les-Mines (da Paray-le-Monial)",
+   "testo": "lavori dalle 08:48 del 20 ottobre 2025 · Corsia di sinistra chiusa, giorno e notte, week-end e festivi y compresi · Da 4151 m a nord di 42096 fino a 7906 m a sud di Montceau-les-Mines Blanzy · Direzione Montceau-les-Mines (da Paray-le-Monial)",
    "tipo": "lavori",
    "quando": "2026-10-21T15:33:09.962+02:00",
    "corsie": "corsie ridotte",
@@ -2075,7 +2216,7 @@
   {
    "id": "89848d6da7aaca13",
    "strada": "N135 (Francia)",
-   "testo": "lavori dalle 15:17 del 17 agosto 2026 · Chiusura di la RN135 in entrambe le direzioni, suite a lavori su ouvrage di art. Jusqu?a 25/11/2026 · Da 1373 m a l'est di Ligny-en-Barrois fino a 2067 m a l'ovest di Ligny-en-Barrois · GE_DIRE/Service régional d’exploitation Grand Est (SRE",
+   "testo": "lavori dalle 15:17 del 17 agosto 2026 · Chiusura di la RN135 in entrambe le direzioni, a seguito di lavori su ponte o viadotto. Jusqu?a 25/11/2026 · Da 1373 m a est di Ligny-en-Barrois fino a 2067 m a ovest di Ligny-en-Barrois · GE_DIRE/Service regionale d’gestione Grand Est (SRE",
    "tipo": "lavori",
    "quando": "2026-10-26T05:10:53.855+01:00",
    "corsie": "",
@@ -2090,7 +2231,7 @@
   {
    "id": "d3c8cd3a1fb6391c",
    "strada": "N135 (Francia)",
-   "testo": "lavori dalle 15:18 del 17 agosto 2026 · Da 2067 m a l'ovest di Ligny-en-Barrois fino a 1373 m a l'est di Ligny-en-Barrois · GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Vitry-Le-François/CEI Ligny-en-Barrois · Direzione Bar-le-Duc (da Ligny-en-Barrois)",
+   "testo": "lavori dalle 15:18 del 17 agosto 2026 · Da 2067 m a ovest di Ligny-en-Barrois fino a 1373 m a est di Ligny-en-Barrois · GE_DIRE/Service regionale d’gestione Grand Est (SREX)/District Vitry-Le-François/CEI Ligny-en-Barrois · Direzione Bar-le-Duc (da Ligny-en-Barrois)",
    "tipo": "lavori",
    "quando": "2026-10-26T05:10:53.855+01:00",
    "corsie": "",
@@ -2120,7 +2261,7 @@
   {
    "id": "986d97cfe5aeb26f",
    "strada": "N165 (Francia)",
-   "testo": "segnalazione dalle 18:00 del 27 ottobre 2026 · Da 1088 m a l'est di Quéven fino a 650 m a l'ovest di Locoyarn · Direzione Nantes (da Brest)",
+   "testo": "segnalazione dalle 18:00 del 27 ottobre 2026 · Da 1088 m a est di Quéven fino a 650 m a ovest di Locoyarn · Direzione Nantes (da Brest)",
    "tipo": "altro",
    "quando": "2026-10-27T18:08:27.967+01:00",
    "corsie": "",
@@ -2135,7 +2276,7 @@
   {
    "id": "4441b0782c1bc3e5",
    "strada": "N85 (Francia)",
-   "testo": "lavori dalle 00:00 del 9 novembre 2026 alle 23:59 del 11 dicembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo Création di une traversée hydraulique · Da 11633 m a sud di Châteauredon fino a 5432 m a nord di Barrême",
+   "testo": "lavori dalle 00:00 del 9 novembre 2026 alle 23:59 del 11 dicembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo Création di un attraversamento hydraulique · Da 11633 m a sud di Châteauredon fino a 5432 m a nord di Barrême",
    "tipo": "lavori",
    "quando": "2026-10-28T08:15:20.733+01:00",
    "corsie": "",
@@ -2165,7 +2306,7 @@
   {
    "id": "115c5aeea6045f17",
    "strada": "N330 (Francia)",
-   "testo": "segnalazione dalle 16:00 del 6 ottobre 2026 · Da 3911 m a nord di Limite Oise / Seine e Marne fino a 130 m a sud di Le Plessis-Belleville ovest",
+   "testo": "segnalazione dalle 16:00 del 6 ottobre 2026 · Da 3911 m a nord di limitata Oise / Seine e Marne fino a 130 m a sud di Le Plessis-Belleville ovest",
    "tipo": "altro",
    "quando": "2026-10-28T09:00:25.885+01:00",
    "corsie": "",
@@ -2180,7 +2321,7 @@
   {
    "id": "053e6f0a8e4c89a3",
    "strada": "N85 (Francia)",
-   "testo": "lavori dalle 08:00 del 9 novembre 2026 alle 18:00 del 27 novembre 2026 · Senso unico alternato con semaforo ou manuel pulizia condotte",
+   "testo": "lavori dalle 08:00 del 9 novembre 2026 alle 18:00 del 27 novembre 2026 · Senso unico alternato con semaforo ou manuale pulizia condotte",
    "tipo": "lavori",
    "quando": "2026-10-28T09:53:10.012+01:00",
    "corsie": "",
@@ -2210,7 +2351,7 @@
   {
    "id": "650e3c9b6807e2aa",
    "strada": "N113 (Francia)",
-   "testo": "lavori dalle 08:00 del 10 novembre 2026 alle 17:00 del 17 dicembre 2026 · Da 327 m a l'ovest di Mas-de-Saint-Pierre fino a 1471 m a l'est di Vendargues sud",
+   "testo": "lavori dalle 08:00 del 10 novembre 2026 alle 17:00 del 17 dicembre 2026 · Da 327 m a ovest di Mas-de-Saint-Pierre fino a 1471 m a est di Vendargues sud",
    "tipo": "lavori",
    "quando": "2026-10-29T10:17:06.240+01:00",
    "corsie": "",
@@ -2238,7 +2379,7 @@
   {
    "id": "cd98c1971aa219f0",
    "strada": "N134 (Francia)",
-   "testo": "segnalazione dalle 15:56 del 30 ottobre 2026 · Limitation di velocità a 70 km/h, su N134, tra les PR63+810 e PR 64+150, in i 2 direzione, fino a 04/01/27., a 17h · Da 2283 m a l'ovest di Herrère fino a 6388 m a l'est di Oloron-Sainte-Marie",
+   "testo": "segnalazione dalle 15:56 del 30 ottobre 2026 · Limitation di velocità a 70 km/h, su N134, tra i PR63+810 e PR 64+150, in i 2 direzione, fino a 04/01/27., a 17h · Da 2283 m a ovest di Herrère fino a 6388 m a est di Oloron-Sainte-Marie",
    "tipo": "altro",
    "quando": "2026-10-30T16:18:50.153+01:00",
    "corsie": "",
@@ -2253,7 +2394,7 @@
   {
    "id": "ec4ef0db99d8f40e",
    "strada": "N102 (Francia)",
-   "testo": "lavori dalle 13:57 del 21 ottobre 2026 alle 19:00 del 18 dicembre 2026 · Da 14776 m a l'ovest di passo di la Chavade fino a 808 m a l'est di Pradelles - La Pierre-Plantée · AURA_DIRMC/District Centre AURA/CEI Langogne (AURA)/PA Lanarce",
+   "testo": "lavori dalle 13:57 del 21 ottobre 2026 alle 19:00 del 18 dicembre 2026 · Da 14776 m a ovest di passo di la Chavade fino a 808 m a est di Pradelles - La Pierre-Plantée · AURA_DIRMC/District centro AURA/CEI Langogne (AURA)/PA Lanarce",
    "tipo": "lavori",
    "quando": "2026-11-02T06:21:10.179+01:00",
    "corsie": "",
@@ -2268,7 +2409,7 @@
   {
    "id": "db860654b84a1057",
    "strada": "N102 (Francia)",
-   "testo": "segnalazione dalle 14:39 del 21 ottobre 2026 alle 07:20 del 18 dicembre 2026 · Da 14776 m a l'ovest di passo di la Chavade fino a 808 m a l'est di Pradelles - La Pierre-Plantée · AURA_DIRMC/District Centre AURA/CEI Langogne (AURA)/PA Lanarce",
+   "testo": "segnalazione dalle 14:39 del 21 ottobre 2026 alle 07:20 del 18 dicembre 2026 · Da 14776 m a ovest di passo di la Chavade fino a 808 m a est di Pradelles - La Pierre-Plantée · AURA_DIRMC/District centro AURA/CEI Langogne (AURA)/PA Lanarce",
    "tipo": "altro",
    "quando": "2026-11-02T06:21:10.179+01:00",
    "corsie": "corsie ridotte",
@@ -2283,7 +2424,7 @@
   {
    "id": "81cb073754727687",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 05:40 del 5 giugno 2026 · Lavori di costruzione · 0 m a l'est di Colomiers Est · Hors corsia di traffico · Su rampa di entrata · Direzione Langon (da Toulouse)",
+   "testo": "lavori dalle 05:40 del 5 giugno 2026 · Lavori di costruzione · 0 m a est di Colomiers Est · Hors corsia di traffico · Su rampa di entrata · Direzione Langon (da Toulouse)",
    "tipo": "lavori",
    "quando": "2026-11-02T13:42:49.532+01:00",
    "corsie": "",
@@ -2296,7 +2437,7 @@
   {
    "id": "c7d7ed4d9119680c",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 05:41 del 5 giugno 2026 · 0 m a l'est di Colomiers Est · Hors corsia di traffico · Su rampa di entrata · Direzione Langon (da Toulouse)",
+   "testo": "segnalazione dalle 05:41 del 5 giugno 2026 · 0 m a est di Colomiers Est · Hors corsia di traffico · Su rampa di entrata · Direzione Langon (da Toulouse)",
    "tipo": "altro",
    "quando": "2026-11-02T13:42:49.532+01:00",
    "corsie": "",
@@ -2309,7 +2450,7 @@
   {
    "id": "51aa6a9704ee2d9c",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 05:40 del 5 giugno 2026 · Lavori di costruzione · 0 m a l'est di Colomiers Est · Hors corsia di traffico · Su rampa di entrata · Direzione Langon (da Toulouse)",
+   "testo": "lavori dalle 05:40 del 5 giugno 2026 · Lavori di costruzione · 0 m a est di Colomiers Est · Hors corsia di traffico · Su rampa di entrata · Direzione Langon (da Toulouse)",
    "tipo": "lavori",
    "quando": "2026-11-02T13:42:49.532+01:00",
    "corsie": "",
@@ -2322,7 +2463,7 @@
   {
    "id": "13c89b5726de6326",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 22:00 del 15 novembre 2026 · Da 2283 m a l'ovest di Bois di Boulogne fino a 37 m a l'est di Boulogne-Billancourt - Suresne · Su rampa di entrata · Direzione Cherbourg (da Paris)",
+   "testo": "segnalazione dalle 22:00 del 15 novembre 2026 · Da 2283 m a ovest di Bois di Boulogne fino a 37 m a est di Boulogne-Billancourt - Suresne · Su rampa di entrata · Direzione Cherbourg (da Paris)",
    "tipo": "altro",
    "quando": "2026-11-02T17:15:43.352+01:00",
    "corsie": "",
@@ -2335,7 +2476,7 @@
   {
    "id": "10859f8e875a8ca7",
    "strada": "N24 (Francia)",
-   "testo": "lavori dalle 09:00 del 27 novembre 2026 alle 16:00 del 27 novembre 2026 · Da 3689 m a l'est di Guéhenno fino a 29 m a l'ovest di Josselin · Direzione Rennes (da Lorient)",
+   "testo": "lavori dalle 09:00 del 27 novembre 2026 alle 16:00 del 27 novembre 2026 · Da 3689 m a est di Guéhenno fino a 29 m a ovest di Josselin · Direzione Rennes (da Lorient)",
    "tipo": "lavori",
    "quando": "2026-11-03T09:26:21.120+01:00",
    "corsie": "",
@@ -2350,7 +2491,7 @@
   {
    "id": "b7b9ca04470c4a77",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 09:00 del 27 novembre 2026 alle 16:00 del 27 novembre 2026 · Deviazione direzione Rennes a l' svincolo di \"Caradec\" PR 35+500. Suivre RD724, le rond point di la Rochette e la rue di la Rochette. Les usagers retrouvent leur percorso en s'insérant su la rampa di entrata dell’svincolo di \"La Mare St-Jul",
+   "testo": "segnalazione dalle 09:00 del 27 novembre 2026 alle 16:00 del 27 novembre 2026 · Deviazione direzione Rennes a l' svincolo di \"Caradec\" PR 35+500. Suivre RD724, le rond point di la Rochette e la rue di la Rochette. i usagers retrouvent leur percorso en s'insérant su la rampa di entrata dell’svincolo di \"La Mare St-Julie",
    "tipo": "altro",
    "quando": "2026-11-03T09:26:21.120+01:00",
    "corsie": "",
@@ -2363,7 +2504,7 @@
   {
    "id": "9f6aca3f52ced96a",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 09:00 del 27 novembre 2026 alle 16:00 del 27 novembre 2026 · Suivre deviazione · Causa cantiere · Da 3814 m a l'est di Guéhenno fino a 1048 m a l'ovest di Josselin · Su rampa di entrata · Direzione Rennes (da Lorient)",
+   "testo": "segnalazione dalle 09:00 del 27 novembre 2026 alle 16:00 del 27 novembre 2026 · Suivre deviazione · Causa cantiere · Da 3814 m a est di Guéhenno fino a 1048 m a ovest di Josselin · Su rampa di entrata · Direzione Rennes (da Lorient)",
    "tipo": "altro",
    "quando": "2026-11-03T09:26:21.120+01:00",
    "corsie": "",
@@ -2376,7 +2517,7 @@
   {
    "id": "3b6432c00b30e3c6",
    "strada": "N94 (Francia)",
-   "testo": "lavori dalle 07:30 del 5 novembre 2026 alle 17:30 del 27 novembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo ou manuel Maçonnerie su ouvrage di art · Da 2613 m a l'est di Châteauroux nord fino a 4732 m a l'ovest di Montdauphin",
+   "testo": "lavori dalle 07:30 del 5 novembre 2026 alle 17:30 del 27 novembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo ou manuale Maçonnerie su ponte o viadotto · Da 2613 m a est di Châteauroux nord fino a 4732 m a ovest di Montdauphin",
    "tipo": "lavori",
    "quando": "2026-11-04T08:53:34.450+01:00",
    "corsie": "",
@@ -2391,7 +2532,7 @@
   {
    "id": "f37ceadcb65d2b9b",
    "strada": "N24 (Francia)",
-   "testo": "lavori dalle 09:00 del 26 novembre 2026 alle 16:00 del 26 novembre 2026 · Per permettre le bon déroulement dei lavori di réfection di carreggiata ponctuelle (purges) tra le PR 85+000 e le PR 76+000 in le direzione Lorient-Rennes, il est nécessaire di réglementer la traffico · Da 5103 m a l'est di Hennebont est Sa",
+   "testo": "lavori dalle 09:00 del 26 novembre 2026 alle 16:00 del 26 novembre 2026 · Per permettere le buon svolgimento dei lavori di réfection di carreggiata ponctuelle (purges) tra le PR 85+000 e le PR 76+000 in le direzione Lorient-Rennes, il est necessario di regolare la traffico · Da 5103 m a est di Hennebont est Saint",
    "tipo": "lavori",
    "quando": "2026-11-04T16:33:35.449+01:00",
    "corsie": "",
@@ -2406,7 +2547,7 @@
   {
    "id": "e80c0bb29ea00098",
    "strada": "N24 (Francia)",
-   "testo": "segnalazione dalle 09:00 del 26 novembre 2026 alle 16:00 del 26 novembre 2026 · Da 5103 m a l'est di Hennebont est Saint-Gilles fino a 4925 m a l'ovest di Kermestre · Direzione Rennes (da Lorient)",
+   "testo": "segnalazione dalle 09:00 del 26 novembre 2026 alle 16:00 del 26 novembre 2026 · Da 5103 m a est di Hennebont est Saint-Gilles fino a 4925 m a ovest di Kermestre · Direzione Rennes (da Lorient)",
    "tipo": "altro",
    "quando": "2026-11-04T16:33:35.449+01:00",
    "corsie": "",
@@ -2421,7 +2562,7 @@
   {
    "id": "6babc77cb3451328",
    "strada": "N24 (Francia)",
-   "testo": "segnalazione dalle 09:00 del 26 novembre 2026 alle 16:00 del 26 novembre 2026 · Da 5103 m a l'est di Hennebont est Saint-Gilles fino a 4925 m a l'ovest di Kermestre · Direzione Rennes (da Lorient)",
+   "testo": "segnalazione dalle 09:00 del 26 novembre 2026 alle 16:00 del 26 novembre 2026 · Da 5103 m a est di Hennebont est Saint-Gilles fino a 4925 m a ovest di Kermestre · Direzione Rennes (da Lorient)",
    "tipo": "altro",
    "quando": "2026-11-04T16:33:35.449+01:00",
    "corsie": "",
@@ -2436,7 +2577,7 @@
   {
    "id": "872c4ff58b7074b9",
    "strada": "N24 (Francia)",
-   "testo": "segnalazione dalle 09:00 del 26 novembre 2026 alle 16:00 del 26 novembre 2026 · Transport exceptionnel les trasporto eccezionale sont interdits pendant cette période di lavori a regard dell’exploitation (deviazione RN 24), di une largeur supérieure a 3,50m e di une longueur supérieure à16,50m · Da 5103 m a l'est di Hen",
+   "testo": "segnalazione dalle 09:00 del 26 novembre 2026 alle 16:00 del 26 novembre 2026 · Trasporto eccezionale i trasporto eccezionale sono interdits pendant cette periodo di lavori a regard dell’gestione (deviazione RN 24), di un larghezza superiore a 3,50m e di un longueur superiore à16,50m · Da 5103 m a est di Hennebont est ",
    "tipo": "altro",
    "quando": "2026-11-04T16:33:35.449+01:00",
    "corsie": "",
@@ -2451,7 +2592,7 @@
   {
    "id": "835eb6289fbd23d4",
    "strada": "N94 (Francia)",
-   "testo": "lavori dalle 00:00 del 9 novembre 2026 alle 23:59 del 4 dicembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo, enfouissement di câbles · Da 8161 m a l'est di Le Cèdre fino a 3585 m a l'ovest di La Batie-Neuve est",
+   "testo": "lavori dalle 00:00 del 9 novembre 2026 alle 23:59 del 4 dicembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo, enfouissement di câbles · Da 8161 m a est di Le Cèdre fino a 3585 m a ovest di La Batie-Neuve est",
    "tipo": "lavori",
    "quando": "2026-11-05T08:59:23.490+01:00",
    "corsie": "",
@@ -2466,7 +2607,7 @@
   {
    "id": "c3cb87f6e3a7003d",
    "strada": "N85 (Francia)",
-   "testo": "lavori dalle 20:00 del 16 novembre 2026 alle 07:00 del 27 novembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo, aménagement RN 85 · Da 8379 m a l'est di Malijai fino a 6906 m a l'ovest di R-P del 11 novembre",
+   "testo": "lavori dalle 20:00 del 16 novembre 2026 alle 07:00 del 27 novembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo, sistemazione RN 85 · Da 8379 m a est di Malijai fino a 6906 m a ovest di R-P del 11 novembre",
    "tipo": "lavori",
    "quando": "2026-11-05T09:06:37.830+01:00",
    "corsie": "",
@@ -2481,7 +2622,7 @@
   {
    "id": "e6695d5ac6b16638",
    "strada": "N85 (Francia)",
-   "testo": "lavori dalle 08:00 del 16 novembre 2026 alle 18:00 del 27 novembre 2026 · Senso unico alternato con semaforo ou manuel, pose di garde corps",
+   "testo": "lavori dalle 08:00 del 16 novembre 2026 alle 18:00 del 27 novembre 2026 · Senso unico alternato con semaforo ou manuale, pose di garde corps",
    "tipo": "lavori",
    "quando": "2026-11-05T09:38:52.140+01:00",
    "corsie": "",
@@ -2496,7 +2637,7 @@
   {
    "id": "d8bad51bc6cbaf9e",
    "strada": "Strada (Francia)",
-   "testo": "condizioni meteo dalle 10:48 del 5 novembre 2026 · Chiusura invernale del passo del Mont-Cenis. di solito le passo est chiuso per la stagione hivernale del 2ème lunedì di novembre fino a 2ème venerdì di maggio · 13236 m a l'ovest di Frontière - Italie",
+   "testo": "condizioni meteo dalle 10:48 del 5 novembre 2026 · Chiusura invernale del passo del Mont-Cenis. di solito le passo est chiuso per la stagione invernale del 2ème lunedì di novembre fino a 2ème venerdì di maggio · 13236 m a ovest di Frontière - Italie",
    "tipo": "meteo",
    "quando": "2026-11-05T13:37:13.455+01:00",
    "corsie": "",
@@ -2509,7 +2650,7 @@
   {
    "id": "57375f3218efb494",
    "strada": "Strada (Francia)",
-   "testo": "strada chiusa dalle 10:48 del 5 novembre 2026 · Le passo del Mont-Cenis est chiuso per la période hivernale. di solito le passo est chiuso per la stagione hivernale del 2ème lunedì di novembre fino a 2ème venerdì di maggio · 13236 m a l'ovest di Frontière - Italie",
+   "testo": "strada chiusa dalle 10:48 del 5 novembre 2026 · Le passo del Mont-Cenis est chiuso per la periodo invernale. di solito le passo est chiuso per la stagione invernale del 2ème lunedì di novembre fino a 2ème venerdì di maggio · 13236 m a ovest di Frontière - Italie",
    "tipo": "chiusura",
    "quando": "2026-11-05T13:37:13.455+01:00",
    "corsie": "",
@@ -2522,7 +2663,7 @@
   {
    "id": "76c58c9d8b24095d",
    "strada": "Strada (Francia)",
-   "testo": "condizioni meteo dalle 13:37 del 5 novembre 2026 · Chiusura del passo del Petit St Bernard per la période hivernale. di solito le passo est chiuso per la stagione hivernale del 2ème lunedì di novembre fino a 2ème venerdì di maggio · 823 m a sud di passo del Petit Saint-Bernard",
+   "testo": "condizioni meteo dalle 13:37 del 5 novembre 2026 · Chiusura del passo del Petit St Bernard per la periodo invernale. di solito le passo est chiuso per la stagione invernale del 2ème lunedì di novembre fino a 2ème venerdì di maggio · 823 m a sud di passo del Petit Saint-Bernard",
    "tipo": "meteo",
    "quando": "2026-11-05T13:41:29.584+01:00",
    "corsie": "",
@@ -2535,7 +2676,7 @@
   {
    "id": "33fbc52f9d76ef1d",
    "strada": "Strada (Francia)",
-   "testo": "strada chiusa dalle 13:37 del 5 novembre 2026 · Chiusura del passo del Petit St Bernard per la période hivernale. di solito le passo est chiuso per la stagione hivernale del 2ème lunedì di novembre fino a 2ème venerdì di maggio · 823 m a sud di passo del Petit Saint-Bernard",
+   "testo": "strada chiusa dalle 13:37 del 5 novembre 2026 · Chiusura del passo del Petit St Bernard per la periodo invernale. di solito le passo est chiuso per la stagione invernale del 2ème lunedì di novembre fino a 2ème venerdì di maggio · 823 m a sud di passo del Petit Saint-Bernard",
    "tipo": "chiusura",
    "quando": "2026-11-05T13:41:29.584+01:00",
    "corsie": "",
@@ -2548,7 +2689,7 @@
   {
    "id": "ac6e1dab6a0bf1fe",
    "strada": "Strada (Francia)",
-   "testo": "condizioni meteo dalle 13:42 del 5 novembre 2026 · Chiusura del passo dell’Iseran per la période hivernale. di solito le passo est chiuso per la stagione hivernale del 1 lunedì di novembre fino a 2ème venerdì di giugno · 586 m a nord di passo dell’Iseran",
+   "testo": "condizioni meteo dalle 13:42 del 5 novembre 2026 · Chiusura del passo dell’Iseran per la periodo invernale. di solito le passo est chiuso per la stagione invernale del 1 lunedì di novembre fino a 2ème venerdì di giugno · 586 m a nord di passo dell’Iseran",
    "tipo": "meteo",
    "quando": "2026-11-05T13:48:49.702+01:00",
    "corsie": "",
@@ -2561,7 +2702,7 @@
   {
    "id": "914a6082c0c56995",
    "strada": "Strada (Francia)",
-   "testo": "strada chiusa dalle 13:42 del 5 novembre 2026 · Chiusura del passo dell’Iseran per la période hivernale. di solito le passo est chiuso per la stagione hivernale del 1 lunedì di novembre fino a 2ème venerdì di giugno · 586 m a nord di passo dell’Iseran",
+   "testo": "strada chiusa dalle 13:42 del 5 novembre 2026 · Chiusura del passo dell’Iseran per la periodo invernale. di solito le passo est chiuso per la stagione invernale del 1 lunedì di novembre fino a 2ème venerdì di giugno · 586 m a nord di passo dell’Iseran",
    "tipo": "chiusura",
    "quando": "2026-11-05T13:48:49.702+01:00",
    "corsie": "",
@@ -2574,7 +2715,7 @@
   {
    "id": "d25652a17539896e",
    "strada": "Strada (Francia)",
-   "testo": "condizioni meteo dalle 13:49 del 5 novembre 2026 · Chiusura del passo di la Croix di Fer per la période hivernale. di solito le passo est chiuso per la stagione hivernale del 2ème lunedì di novembre fino a 3ème venerdì di maggio · 181 m a l'est di Croix di Fer",
+   "testo": "condizioni meteo dalle 13:49 del 5 novembre 2026 · Chiusura del passo di la Croix di Fer per la periodo invernale. di solito le passo est chiuso per la stagione invernale del 2ème lunedì di novembre fino a 3ème venerdì di maggio · 181 m a est di Croix di Fer",
    "tipo": "meteo",
    "quando": "2026-11-05T13:54:36.960+01:00",
    "corsie": "",
@@ -2587,7 +2728,7 @@
   {
    "id": "ddc3c0f9c52e78ed",
    "strada": "Strada (Francia)",
-   "testo": "strada chiusa dalle 13:49 del 5 novembre 2026 · Chiusura del passo di la Croix di Fer per la période hivernale. di solito le passo est chiuso per la stagione hivernale del 2ème lunedì di novembre fino a 3ème venerdì di maggio · 181 m a l'est di Croix di Fer",
+   "testo": "strada chiusa dalle 13:49 del 5 novembre 2026 · Chiusura del passo di la Croix di Fer per la periodo invernale. di solito le passo est chiuso per la stagione invernale del 2ème lunedì di novembre fino a 3ème venerdì di maggio · 181 m a est di Croix di Fer",
    "tipo": "chiusura",
    "quando": "2026-11-05T13:54:36.960+01:00",
    "corsie": "",
@@ -2600,7 +2741,7 @@
   {
    "id": "31c2c39147eebc39",
    "strada": "N165 (Francia)",
-   "testo": "lavori dalle 10:00 del 1 dicembre 2026 alle 11:00 del 1 dicembre 2026 · Considérant qu’il convient di réglementer la traffico dei véhicules su la RN 165 per permettre le bon déroulement dei lavori di dépose di lignes aériennes a PR 65+800 in i 2 direzione di traffico, il est nécessaire per la sécurité dei usage",
+   "testo": "lavori dalle 10:00 del 1 dicembre 2026 alle 11:00 del 1 dicembre 2026 · Considérant qu’il convient di regolare la traffico dei veicoli su la RN 165 per permettere le buon svolgimento dei lavori di rimozione di linee aeree a PR 65+800 in i 2 direzione di traffico, il est necessario per la sicurezza dei usagers d",
    "tipo": "lavori",
    "quando": "2026-11-05T16:20:12.631+01:00",
    "corsie": "",
@@ -2613,7 +2754,7 @@
   {
    "id": "23bb774f54d30b12",
    "strada": "N165 (Francia)",
-   "testo": "strada chiusa dalle 10:00 del 1 dicembre 2026 alle 11:00 del 1 dicembre 2026 · Mesures di police e d’exploitation dei lavori di dépose di lignes électriques aériennes surplombant la RN 165 a PR 65+800 in i 2 direzione di traffico ont lieu le martedì 1 dicembre 2026. Lors di la dépose di chaque ligne électrique, la tra",
+   "testo": "strada chiusa dalle 10:00 del 1 dicembre 2026 alle 11:00 del 1 dicembre 2026 · Mesures di police e d’gestione dei lavori di rimozione di lignes électriques aériennes surplombant la RN 165 a PR 65+800 in i 2 direzione di traffico ont lieu le martedì 1 dicembre 2026. Lors di la rimozione di chaque ligne électrique, la t",
    "tipo": "chiusura",
    "quando": "2026-11-05T16:20:12.631+01:00",
    "corsie": "carreggiata chiusa",
@@ -2626,7 +2767,7 @@
   {
    "id": "f4d8d7cbf3ae9ad9",
    "strada": "N94 (Francia)",
-   "testo": "lavori dalle 08:00 del 16 novembre 2026 alle 17:00 del 4 dicembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo Maçonnerie su ouvrage di art · Da 1870 m a l'est di Châteauroux nord fino a 5032 m a l'ovest di Montdauphin",
+   "testo": "lavori dalle 08:00 del 16 novembre 2026 alle 17:00 del 4 dicembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo Maçonnerie su ponte o viadotto · Da 1870 m a est di Châteauroux nord fino a 5032 m a ovest di Montdauphin",
    "tipo": "lavori",
    "quando": "2026-11-06T08:39:54.417+01:00",
    "corsie": "",
@@ -2641,7 +2782,7 @@
   {
    "id": "e8101880915a966a",
    "strada": "N145 (Francia)",
-   "testo": "segnalazione dalle 07:07 del 20 ottobre 2026 alle 18:00 del 27 novembre 2026 · Da 21749 m a l'est di Gouzon fino a 6322 m a l'ovest di Quinssaines · Direzione Montluçon (da Bellac)",
+   "testo": "segnalazione dalle 07:07 del 20 ottobre 2026 alle 18:00 del 27 novembre 2026 · Da 21749 m a est di Gouzon fino a 6322 m a ovest di Quinssaines · Direzione Montluçon (da Bellac)",
    "tipo": "altro",
    "quando": "2026-11-06T14:32:49.527+01:00",
    "corsie": "corsie ridotte",
@@ -2656,7 +2797,7 @@
   {
    "id": "e14d3e586385e46a",
    "strada": "N158 (Francia)",
-   "testo": "lavori dalle 16:04 del 6 novembre 2026 · Joint di ouvrage viadotto dell’Ante dégradé su corsia di destra · Da 22306 m a sud di Garcelles - Rocquancourt fino a 407 m a nord di Falaise · Hors corsia di traffico · Direzione Falaise (da Caen)",
+   "testo": "lavori dalle 16:04 del 6 novembre 2026 · Joint di opera viadotto dell’Ante dégradé su corsia di destra · Da 22306 m a sud di Garcelles - Rocquancourt fino a 407 m a nord di Falaise · Hors corsia di traffico · Direzione Falaise (da Caen)",
    "tipo": "lavori",
    "quando": "2026-11-06T16:04:08.738+01:00",
    "corsie": "corsie ridotte",
@@ -2671,7 +2812,7 @@
   {
    "id": "e1edd6d343e1ba4a",
    "strada": "N113 (Francia)",
-   "testo": "lavori dalle 15:39 del 27 ottobre 2026 · Da 634 m a l'est di Boussard fino a 4751 m a l'ovest di Les Marais · Direzione Salon-de-Provence (da Montpellier)",
+   "testo": "lavori dalle 15:39 del 27 ottobre 2026 · Da 634 m a est di Boussard fino a 4751 m a ovest di i Marais · Direzione Salon-de-Provence (da Montpellier)",
    "tipo": "lavori",
    "quando": "2026-11-06T18:09:39.876+01:00",
    "corsie": "",
@@ -2686,7 +2827,7 @@
   {
    "id": "e00e9079ece5f510",
    "strada": "N113 (Francia)",
-   "testo": "lavori dalle 15:41 del 27 ottobre 2026 · Da 634 m a l'est di Boussard fino a 4751 m a l'ovest di Les Marais · Direzione Salon-de-Provence (da Montpellier)",
+   "testo": "lavori dalle 15:41 del 27 ottobre 2026 · Da 634 m a est di Boussard fino a 4751 m a ovest di i Marais · Direzione Salon-de-Provence (da Montpellier)",
    "tipo": "lavori",
    "quando": "2026-11-06T18:09:39.876+01:00",
    "corsie": "corsie ridotte",
@@ -2701,7 +2842,7 @@
   {
    "id": "765de5184a40fc9e",
    "strada": "A77 (Francia)",
-   "testo": "condizioni meteo dalle 06:30 del 2 novembre 2023 · Frana di un talus e di un mur anti bruit · Da 2178 m a sud di Cosne centre fino a 163 m a nord di Cosne-Cours-sur-Loire Sud · Direzione Nevers (da Paris)",
+   "testo": "condizioni meteo dalle 06:30 del 2 novembre 2023 · Frana di un scarpata e di un muro anti bruit · Da 2178 m a sud di Cosne centro fino a 163 m a nord di Cosne-Cours-sur-Loire Sud · Direzione Nevers (da Paris)",
    "tipo": "meteo",
    "quando": "2026-11-08T03:40:10.889+01:00",
    "corsie": "",
@@ -2716,7 +2857,7 @@
   {
    "id": "08adadc6500861ed",
    "strada": "A77 (Francia)",
-   "testo": "lavori dalle 06:30 del 2 novembre 2023 · Corsia di destra neutralisée jour e nuit fine settimana e jour férié y compris · Da 2178 m a sud di Cosne centre fino a 163 m a nord di Cosne-Cours-sur-Loire Sud · Direzione Nevers (da Paris)",
+   "testo": "lavori dalle 06:30 del 2 novembre 2023 · Corsia di destra chiusa giorno e notte fine settimana e giorno férié y compresi · Da 2178 m a sud di Cosne centro fino a 163 m a nord di Cosne-Cours-sur-Loire Sud · Direzione Nevers (da Paris)",
    "tipo": "lavori",
    "quando": "2026-11-08T03:40:10.889+01:00",
    "corsie": "corsie ridotte",
@@ -2836,7 +2977,7 @@
   {
    "id": "f5c773507a9a09fe",
    "strada": "N13 (Francia)",
-   "testo": "lavori dalle 16:26 del 29 ottobre 2026 · Da 1543 m a l'ovest di La Glacerie fino a 2402 m a l'est di Cherbourg · Direzione Cherbourg (da Paris)",
+   "testo": "lavori dalle 16:26 del 29 ottobre 2026 · Da 1543 m a ovest di La Glacerie fino a 2402 m a est di Cherbourg · Direzione Cherbourg (da Paris)",
    "tipo": "lavori",
    "quando": "2026-11-12T09:19:03.459+01:00",
    "corsie": "",
@@ -2851,7 +2992,7 @@
   {
    "id": "0c0489855d3fdd8b",
    "strada": "N13 (Francia)",
-   "testo": "segnalazione dalle 16:31 del 29 ottobre 2026 · Bande d?arrêt di urgence neutralisée · Da 2411 m a l'est di Cherbourg fino a 1541 m a l'ovest di La Glacerie · Hors corsia di traffico · Direzione Paris (da Cherbourg)",
+   "testo": "segnalazione dalle 16:31 del 29 ottobre 2026 · Bande d?arrêt di urgence chiusa · Da 2411 m a est di Cherbourg fino a 1541 m a ovest di La Glacerie · Hors corsia di traffico · Direzione Paris (da Cherbourg)",
    "tipo": "altro",
    "quando": "2026-11-12T09:19:03.459+01:00",
    "corsie": "corsie ridotte",
@@ -2866,7 +3007,7 @@
   {
    "id": "7851a407e5785bf3",
    "strada": "N13 (Francia)",
-   "testo": "segnalazione dalle 16:32 del 29 ottobre 2026 · Limitation 70 km/h · Da 1543 m a l'ovest di La Glacerie fino a 2402 m a l'est di Cherbourg · Direzione Cherbourg (da Paris)",
+   "testo": "segnalazione dalle 16:32 del 29 ottobre 2026 · Limitation 70 km/h · Da 1543 m a ovest di La Glacerie fino a 2402 m a est di Cherbourg · Direzione Cherbourg (da Paris)",
    "tipo": "altro",
    "quando": "2026-11-12T09:19:03.459+01:00",
    "corsie": "",
@@ -2881,7 +3022,7 @@
   {
    "id": "3d6a5f5f56092fcf",
    "strada": "N13 (Francia)",
-   "testo": "segnalazione dalle 16:35 del 29 ottobre 2026 · Limitation a 70 km/h · Da 2411 m a l'est di Cherbourg fino a 1541 m a l'ovest di La Glacerie · Direzione Paris (da Cherbourg)",
+   "testo": "segnalazione dalle 16:35 del 29 ottobre 2026 · Limitation a 70 km/h · Da 2411 m a est di Cherbourg fino a 1541 m a ovest di La Glacerie · Direzione Paris (da Cherbourg)",
    "tipo": "altro",
    "quando": "2026-11-12T09:19:03.459+01:00",
    "corsie": "",
@@ -2896,7 +3037,7 @@
   {
    "id": "e98fce0cc2d22d59",
    "strada": "N13 (Francia)",
-   "testo": "lavori dalle 16:29 del 29 ottobre 2026 · Da 1543 m a l'ovest di La Glacerie fino a 2402 m a l'est di Cherbourg · Direzione Cherbourg (da Paris)",
+   "testo": "lavori dalle 16:29 del 29 ottobre 2026 · Da 1543 m a ovest di La Glacerie fino a 2402 m a est di Cherbourg · Direzione Cherbourg (da Paris)",
    "tipo": "lavori",
    "quando": "2026-11-12T09:19:03.459+01:00",
    "corsie": "corsie ridotte",
@@ -2911,7 +3052,7 @@
   {
    "id": "14ecaa64fcd421a9",
    "strada": "N202 (Francia)",
-   "testo": "lavori dalle 00:00 del 14 novembre 2026 alle 23:59 del 27 novembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo ou manuel sécurisation dei ouvrages di protezione contro caduta massi · Da 656 m a l'est di Saint-Julien-du-Verdon est fino a 5040 m a l'ovest di passo di Toutes Aures",
+   "testo": "lavori dalle 00:00 del 14 novembre 2026 alle 23:59 del 27 novembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo ou manuale messa in sicurezza dei opera di protezione contro caduta massi · Da 656 m a est di Saint-Julien-du-Verdon est fino a 5040 m a ovest di passo di tutto Aures",
    "tipo": "lavori",
    "quando": "2026-11-12T10:18:37.323+01:00",
    "corsie": "",
@@ -2926,7 +3067,7 @@
   {
    "id": "9ef4fac68af4c538",
    "strada": "N85 (Francia)",
-   "testo": "lavori dalle 20:00 del 30 novembre 2026 alle 06:00 del 11 dicembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo Mise en œuvre di dispositifs di sécurité · Da 9817 m a l'est di Malijai fino a 4508 m a l'ovest di R-P del 11 novembre",
+   "testo": "lavori dalle 20:00 del 30 novembre 2026 alle 06:00 del 11 dicembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo messa en œuvre di dispositifs di sicurezza · Da 9817 m a est di Malijai fino a 4508 m a ovest di R-P del 11 novembre",
    "tipo": "lavori",
    "quando": "2026-11-12T10:26:09.665+01:00",
    "corsie": "",
@@ -2941,7 +3082,7 @@
   {
    "id": "fe441f2d41a1f97b",
    "strada": "N202 (Francia)",
-   "testo": "lavori dalle 07:00 del 30 novembre 2026 alle 18:00 del 4 dicembre 2026 · Lavori di costruzione · Senso unico alternato manuel Sécurisation dei ouvrages di protezione contro caduta massi · Da 5058 m a l'est di Saint-André centre fino a 2368 m a l'ovest di Saint-Julien-du-Verdon est",
+   "testo": "lavori dalle 07:00 del 30 novembre 2026 alle 18:00 del 4 dicembre 2026 · Lavori di costruzione · Senso unico alternato manuale messa in sicurezza dei opera di protezione contro caduta massi · Da 5058 m a est di Saint-André centro fino a 2368 m a ovest di Saint-Julien-du-Verdon est",
    "tipo": "lavori",
    "quando": "2026-11-12T10:29:48.485+01:00",
    "corsie": "",
@@ -2956,7 +3097,7 @@
   {
    "id": "d10ffb32fa740148",
    "strada": "N94 (Francia)",
-   "testo": "lavori dalle 08:00 del 16 novembre 2026 alle 17:00 del 4 dicembre 2026 · Senso unico alternato manuel Signalétique vélo · Da 15293 m a l'est di La Batie-Neuve est fino a 1982 m a l'ovest di Les Orres",
+   "testo": "lavori dalle 08:00 del 16 novembre 2026 alle 17:00 del 4 dicembre 2026 · Senso unico alternato manuale Signalétique vélo · Da 15293 m a est di La Batie-Neuve est fino a 1982 m a ovest di i Orres",
    "tipo": "lavori",
    "quando": "2026-11-12T10:34:03.468+01:00",
    "corsie": "",
@@ -3001,7 +3142,7 @@
   {
    "id": "5c6bc656b6260fd9",
    "strada": "N106 (Francia)",
-   "testo": "lavori dalle 08:00 del 16 novembre 2026 alle 16:00 del 26 novembre 2026 · Lavori di abattage e débroussaillage · Da 1576 m a l'ovest di Les Salles-du-Gardon fino a 41960 m a l'est di Florac centre",
+   "testo": "lavori dalle 08:00 del 16 novembre 2026 alle 16:00 del 26 novembre 2026 · Lavori di abbattimento e débroussaillage · Da 1576 m a ovest di i Salles-du-Gardon fino a 41960 m a est di Florac centro",
    "tipo": "lavori",
    "quando": "2026-11-13T15:16:21.443+01:00",
    "corsie": "",
@@ -3016,7 +3157,7 @@
   {
    "id": "ac43f77cbd6e0aa9",
    "strada": "N106 (Francia)",
-   "testo": "lavori dalle 00:00 del 23 novembre 2026 alle 23:59 del 17 dicembre 2026 · Lavori di protezione contro caduta massi · Da 4503 m a l'ovest di Les Salles-du-Gardon fino a 46592 m a l'est di Florac centre",
+   "testo": "lavori dalle 00:00 del 23 novembre 2026 alle 23:59 del 17 dicembre 2026 · Lavori di protezione contro caduta massi · Da 4503 m a ovest di i Salles-du-Gardon fino a 46592 m a est di Florac centro",
    "tipo": "lavori",
    "quando": "2026-11-13T15:39:09.075+01:00",
    "corsie": "",
@@ -3031,7 +3172,7 @@
   {
    "id": "63615a6babdbe39c",
    "strada": "N85 (Francia)",
-   "testo": "lavori dalle 08:00 del 16 novembre 2026 alle 19:00 del 18 dicembre 2026 · Lavori di costruzione · Senso unico alternato manuel di 200 mètres maximum, aménagement RN 85 · Da 4198 m a l'est di Malijai fino a 9477 m a l'ovest di R-P del 11 novembre",
+   "testo": "lavori dalle 08:00 del 16 novembre 2026 alle 19:00 del 18 dicembre 2026 · Lavori di costruzione · Senso unico alternato manuale di 200 metri maximum, sistemazione RN 85 · Da 4198 m a est di Malijai fino a 9477 m a ovest di R-P del 11 novembre",
    "tipo": "lavori",
    "quando": "2026-11-13T16:06:43.431+01:00",
    "corsie": "",
@@ -3059,7 +3200,7 @@
   {
    "id": "173d1f1a0d263172",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 04:00 del 16 novembre 2026 · Da 75 m a l'ovest di Paris - Porte di Auteuil fino a 475 m a l'est di Bois di Boulogne · Su rampa di entrata · Direzione Cherbourg (da Paris)",
+   "testo": "segnalazione dalle 04:00 del 16 novembre 2026 · Da 75 m a ovest di Paris - Porte di Auteuil fino a 475 m a est di Bois di Boulogne · Su rampa di entrata · Direzione Cherbourg (da Paris)",
    "tipo": "altro",
    "quando": "2026-11-13T17:52:42.129+01:00",
    "corsie": "",
@@ -3072,7 +3213,7 @@
   {
    "id": "f4662bfdd8bbdab4",
    "strada": "N24 (Francia)",
-   "testo": "lavori dalle 08:00 del 16 novembre 2026 alle 17:00 del 27 novembre 2026 · Da 2353 m a l'ovest di Kergilet fino a 70 m a l'est di La Chapelle-Neuve - Bonvallon · Direzione Lorient (da Rennes)",
+   "testo": "lavori dalle 08:00 del 16 novembre 2026 alle 17:00 del 27 novembre 2026 · Da 2353 m a ovest di Kergilet fino a 70 m a est di La Chapelle-Neuve - Bonvallon · Direzione Lorient (da Rennes)",
    "tipo": "lavori",
    "quando": "2026-11-16T09:35:48.389+01:00",
    "corsie": "",
@@ -3087,7 +3228,7 @@
   {
    "id": "24883748fee43ba5",
    "strada": "N24 (Francia)",
-   "testo": "lavori dalle 08:00 del 16 novembre 2026 alle 17:00 del 27 novembre 2026 · Causa cantiere · Da 1753 m a l'ovest di Kergilet fino a 5994 m a l'est di Kermestre · Direzione Lorient (da Rennes)",
+   "testo": "lavori dalle 08:00 del 16 novembre 2026 alle 17:00 del 27 novembre 2026 · Causa cantiere · Da 1753 m a ovest di Kergilet fino a 5994 m a est di Kermestre · Direzione Lorient (da Rennes)",
    "tipo": "lavori",
    "quando": "2026-11-16T09:35:48.389+01:00",
    "corsie": "corsie ridotte",
@@ -3102,7 +3243,7 @@
   {
    "id": "676c374d45b56987",
    "strada": "N24 (Francia)",
-   "testo": "segnalazione dalle 08:00 del 16 novembre 2026 alle 17:00 del 27 novembre 2026 · Causa cantiere · Da 1353 m a l'ovest di Kergilet fino a 5994 m a l'est di Kermestre · Direzione Lorient (da Rennes)",
+   "testo": "segnalazione dalle 08:00 del 16 novembre 2026 alle 17:00 del 27 novembre 2026 · Causa cantiere · Da 1353 m a ovest di Kergilet fino a 5994 m a est di Kermestre · Direzione Lorient (da Rennes)",
    "tipo": "altro",
    "quando": "2026-11-16T09:35:48.389+01:00",
    "corsie": "",
@@ -3132,7 +3273,7 @@
   {
    "id": "ee84144d2fec66ec",
    "strada": "A75 (Francia)",
-   "testo": "lavori dalle 08:00 del 30 novembre 2026 alle 17:25 del 4 dicembre 2026 · La velocità sera limitée a 90 km/h. le passage dei trasporto eccezionale sera vietato all'altezza di la zone di lavori durant toute la durée del cantiere in entrambe le direzioni si la largeur del convoi est supérieure a 4.20m · Da 4315 m a",
+   "testo": "lavori dalle 08:00 del 30 novembre 2026 alle 17:25 del 4 dicembre 2026 · La velocità sarà limitata a 90 km/h. le passaggio dei trasporto eccezionale sarà vietato all'altezza di la zona di lavori per tutta la durata del cantiere in entrambe le direzioni si la larghezza del convoglio est superiore a 4.20m · Da 431",
    "tipo": "lavori",
    "quando": "2026-11-16T17:26:31.437+01:00",
    "corsie": "",
@@ -3147,7 +3288,7 @@
   {
    "id": "f804d8fdb427f309",
    "strada": "A75 (Francia)",
-   "testo": "lavori dalle 08:00 del 30 novembre 2026 alle 17:25 del 4 dicembre 2026 · La velocità sera limitée a 90 km/h. le passage dei trasporto eccezionale sera vietato all'altezza di la zone di lavori durant toute la durée del cantiere in entrambe le direzioni si la largeur del convoi est supérieure a 4.20m · Da 4412 m a",
+   "testo": "lavori dalle 08:00 del 30 novembre 2026 alle 17:25 del 4 dicembre 2026 · La velocità sarà limitata a 90 km/h. le passaggio dei trasporto eccezionale sarà vietato all'altezza di la zona di lavori per tutta la durata del cantiere in entrambe le direzioni si la larghezza del convoglio est superiore a 4.20m · Da 441",
    "tipo": "lavori",
    "quando": "2026-11-16T17:26:31.437+01:00",
    "corsie": "",
@@ -3162,7 +3303,7 @@
   {
    "id": "362ff9e598780b87",
    "strada": "A68 (Francia)",
-   "testo": "segnalazione dalle 08:46 del 16 novembre 2026 · 493 m a l'ovest di Gaillac · Direzione Albi (da Toulouse)",
+   "testo": "segnalazione dalle 08:46 del 16 novembre 2026 · 493 m a ovest di Gaillac · Direzione Albi (da Toulouse)",
    "tipo": "altro",
    "quando": "2026-11-16T08:46:59.596+01:00",
    "corsie": "",
@@ -3175,7 +3316,7 @@
   {
    "id": "85016605da79be7c",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 04:00 del 16 novembre 2026 · Da 447 m a l'ovest di Vaucresson - Versailles fino a 252 m a l'est di A86 · Su rampa di uscita · Direzione Cherbourg (da Paris)",
+   "testo": "segnalazione dalle 04:00 del 16 novembre 2026 · Da 447 m a ovest di Vaucresson - Versailles fino a 252 m a est di A86 · Su rampa di uscita · Direzione Cherbourg (da Paris)",
    "tipo": "altro",
    "quando": "2026-11-17T10:11:23.294+01:00",
    "corsie": "",
@@ -3188,7 +3329,7 @@
   {
    "id": "54e6f3c7930f7f0a",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 04:00 del 16 novembre 2026 · Da 3163 m a l'ovest di Saint-Cloud - Ville di Avray fino a 78 m a l'est di Vaucresson - Versailles · Su rampa di uscita · Direzione Cherbourg (da Paris)",
+   "testo": "segnalazione dalle 04:00 del 16 novembre 2026 · Da 3163 m a ovest di Saint-Cloud - Ville di Avray fino a 78 m a est di Vaucresson - Versailles · Su rampa di uscita · Direzione Cherbourg (da Paris)",
    "tipo": "altro",
    "quando": "2026-11-17T10:11:23.294+01:00",
    "corsie": "",
@@ -3201,7 +3342,7 @@
   {
    "id": "3b192978a7c617a0",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 04:00 del 16 novembre 2026 · Da 447 m a l'ovest di Vaucresson - Versailles fino a 252 m a l'est di A86 · Su rampa di uscita · Direzione Cherbourg (da Paris)",
+   "testo": "segnalazione dalle 04:00 del 16 novembre 2026 · Da 447 m a ovest di Vaucresson - Versailles fino a 252 m a est di A86 · Su rampa di uscita · Direzione Cherbourg (da Paris)",
    "tipo": "altro",
    "quando": "2026-11-17T10:11:23.294+01:00",
    "corsie": "",
@@ -3214,7 +3355,7 @@
   {
    "id": "940e8d322cbb29aa",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 10:00 del 12 novembre 2026 · Da 281 m a sud di Meudon-la-Forêt fino a 683 m a nord di 14068 · Su rampa di entrata · Direzione Les Ulis (A10) (da Sèvres (N10))",
+   "testo": "lavori dalle 10:00 del 12 novembre 2026 · Da 281 m a sud di Meudon-la-Forêt fino a 683 m a nord di 14068 · Su rampa di entrata · Direzione i Ulis (A10) (da Sèvres (N10))",
    "tipo": "lavori",
    "quando": "2026-11-17T10:17:57.495+01:00",
    "corsie": "corsie ridotte",
@@ -3227,7 +3368,7 @@
   {
    "id": "94e6957bcad9a8a9",
    "strada": "N19 (Francia)",
-   "testo": "lavori dalle 10:59 del 17 novembre 2026 alle 16:00 del 4 dicembre 2026 · Restrictions di velocità localisées · Da 1178 m a l'est di Langres fino a 195 m a l'ovest di Langres · Direzione Delle - Suisse (da Paris)",
+   "testo": "lavori dalle 10:59 del 17 novembre 2026 alle 16:00 del 4 dicembre 2026 · Restrictions di velocità locali · Da 1178 m a est di Langres fino a 195 m a ovest di Langres · Direzione Delle - Suisse (da Paris)",
    "tipo": "lavori",
    "quando": "2026-11-17T11:12:01.496+01:00",
    "corsie": "",
@@ -3242,7 +3383,7 @@
   {
    "id": "111ec19f4a60be76",
    "strada": "N19 (Francia)",
-   "testo": "segnalazione dalle 11:01 del 17 novembre 2026 alle 16:00 del 4 dicembre 2026 · Da 1178 m a l'est di Langres fino a 195 m a l'ovest di Langres",
+   "testo": "segnalazione dalle 11:01 del 17 novembre 2026 alle 16:00 del 4 dicembre 2026 · Da 1178 m a est di Langres fino a 195 m a ovest di Langres",
    "tipo": "altro",
    "quando": "2026-11-17T11:12:01.496+01:00",
    "corsie": "corsie ridotte",
@@ -3270,7 +3411,7 @@
   {
    "id": "79781ff3d6e87775",
    "strada": "A620 (Francia)",
-   "testo": "segnalazione dalle 16:27 del 16 novembre 2026 · 1856 m a l'ovest di ponte dei Demoiselles · Hors corsia di traffico · Direzione Toulouse sud (da Toulouse nord)",
+   "testo": "segnalazione dalle 16:27 del 16 novembre 2026 · 1856 m a ovest di ponte dei Demoiselles · Hors corsia di traffico · Direzione Toulouse sud (da Toulouse nord)",
    "tipo": "altro",
    "quando": "2026-11-16T16:57:20.558+01:00",
    "corsie": "",
@@ -3283,7 +3424,7 @@
   {
    "id": "41d73f8bd64eb71b",
    "strada": "A624 (Francia)",
-   "testo": "segnalazione dalle 16:52 del 16 novembre 2026 · 695 m a l'est di Saint-Martin-du-Touch · Hors corsia di traffico · Direzione Colomiers (N124) (da Toulouse)",
+   "testo": "segnalazione dalle 16:52 del 16 novembre 2026 · 695 m a est di Saint-Martin-du-Touch · Hors corsia di traffico · Direzione Colomiers (N124) (da Toulouse)",
    "tipo": "altro",
    "quando": "2026-11-16T17:24:37.777+01:00",
    "corsie": "",
@@ -3296,7 +3437,7 @@
   {
    "id": "658592285c31c705",
    "strada": "Strada (Francia)",
-   "testo": "condizioni meteo dalle 11:47 del 18 novembre 2026 · Chiusura invernale del passo di la Madeleine. di solito le passo est chiuso per la stagione hivernale del 2ème lunedì di novembre fino a 4ème venerdì di maggio · 0 m a nord di passo di la Madeleine",
+   "testo": "condizioni meteo dalle 11:47 del 18 novembre 2026 · Chiusura invernale del passo di la Madeleine. di solito le passo est chiuso per la stagione invernale del 2ème lunedì di novembre fino a 4ème venerdì di maggio · 0 m a nord di passo di la Madeleine",
    "tipo": "meteo",
    "quando": "2026-11-18T11:53:03.291+01:00",
    "corsie": "",
@@ -3309,7 +3450,7 @@
   {
    "id": "fc27bed37177c284",
    "strada": "Strada (Francia)",
-   "testo": "strada chiusa dalle 11:47 del 18 novembre 2026 · Chiusura invernale del passo di la Madeleine. di solito le passo est chiuso per la stagione hivernale del 2ème lunedì di novembre fino a 4ème venerdì di maggio · 0 m a nord di passo di la Madeleine",
+   "testo": "strada chiusa dalle 11:47 del 18 novembre 2026 · Chiusura invernale del passo di la Madeleine. di solito le passo est chiuso per la stagione invernale del 2ème lunedì di novembre fino a 4ème venerdì di maggio · 0 m a nord di passo di la Madeleine",
    "tipo": "chiusura",
    "quando": "2026-11-18T11:53:03.291+01:00",
    "corsie": "",
@@ -3322,7 +3463,7 @@
   {
    "id": "c82b8e7f007f2f8f",
    "strada": "Strada (Francia)",
-   "testo": "condizioni meteo dalle 11:53 del 18 novembre 2026 · Chiusura invernale del Cormet di Roselend. di solito le passo est chiuso per la stagione hivernale del 2ème lunedì di novembre fino a 3ème venerdì di maggio · 159 m a l'ovest di Cormet di Roselend",
+   "testo": "condizioni meteo dalle 11:53 del 18 novembre 2026 · Chiusura invernale del Cormet di Roselend. di solito le passo est chiuso per la stagione invernale del 2ème lunedì di novembre fino a 3ème venerdì di maggio · 159 m a ovest di Cormet di Roselend",
    "tipo": "meteo",
    "quando": "2026-11-18T11:58:39.421+01:00",
    "corsie": "",
@@ -3335,7 +3476,7 @@
   {
    "id": "154c7e71fd728d9e",
    "strada": "Strada (Francia)",
-   "testo": "strada chiusa dalle 11:53 del 18 novembre 2026 · Chiusura invernale del Cormet di Roselend. di solito le passo est chiuso per la stagione hivernale del 2ème lunedì di novembre fino a 3ème venerdì di maggio · 159 m a l'ovest di Cormet di Roselend",
+   "testo": "strada chiusa dalle 11:53 del 18 novembre 2026 · Chiusura invernale del Cormet di Roselend. di solito le passo est chiuso per la stagione invernale del 2ème lunedì di novembre fino a 3ème venerdì di maggio · 159 m a ovest di Cormet di Roselend",
    "tipo": "chiusura",
    "quando": "2026-11-18T11:58:39.421+01:00",
    "corsie": "",
@@ -3348,7 +3489,7 @@
   {
    "id": "9814539f77a58a29",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 16:55 del 18 novembre 2026 · Mise en place di un senso unico alternato di traffico suite a un mouvement di carreggiata",
+   "testo": "segnalazione dalle 16:55 del 18 novembre 2026 · Installazione di un senso unico alternato di traffico a seguito di un mouvement di carreggiata",
    "tipo": "altro",
    "quando": "2026-11-18T18:01:52.565+01:00",
    "corsie": "",
@@ -3374,7 +3515,7 @@
   {
    "id": "a0d8a229db92b2ba",
    "strada": "A621 (Francia)",
-   "testo": "segnalazione dalle 17:57 del 17 novembre 2026 · 1055 m a l'ovest di Saint-Michel-du-Touch · Direzione Toulouse (da Aéroport Blagnac)",
+   "testo": "segnalazione dalle 17:57 del 17 novembre 2026 · 1055 m a ovest di Saint-Michel-du-Touch · Direzione Toulouse (da Aéroport Blagnac)",
    "tipo": "altro",
    "quando": "2026-11-17T18:30:30.257+01:00",
    "corsie": "",
@@ -3432,7 +3573,7 @@
   {
    "id": "381df68dd8b0448d",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 09:00 del 27 novembre 2026 alle 13:00 del 27 novembre 2026 · Rampa di uscita N157 verso D100 chiuso · 1205 m a l'est di Cesson - Porte di la Rigourdiè · Su rampa di uscita · Direzione Rennes (da Le Mans)",
+   "testo": "lavori dalle 09:00 del 27 novembre 2026 alle 13:00 del 27 novembre 2026 · Rampa di uscita N157 verso D100 chiuso · 1205 m a est di Cesson - Porte di la Rigourdiè · Su rampa di uscita · Direzione Rennes (da Le Mans)",
    "tipo": "lavori",
    "quando": "2026-11-19T13:26:07.006+01:00",
    "corsie": "",
@@ -3445,7 +3586,7 @@
   {
    "id": "8d17466e3cd2256f",
    "strada": "N85 (Francia)",
-   "testo": "lavori dalle 07:00 del 20 novembre 2026 alle 18:00 del 27 novembre 2026 · Senso unico alternato con semaforo ou manuel asfaltatura",
+   "testo": "lavori dalle 07:00 del 20 novembre 2026 alle 18:00 del 27 novembre 2026 · Senso unico alternato con semaforo ou manuale asfaltatura",
    "tipo": "lavori",
    "quando": "2026-11-19T13:26:31.854+01:00",
    "corsie": "",
@@ -3460,7 +3601,7 @@
   {
    "id": "08f830b858678eb5",
    "strada": "N202 (Francia)",
-   "testo": "lavori dalle 07:00 del 20 novembre 2026 alle 18:00 del 27 novembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo Création di un accés · Da 5444 m a l'est di passo di Toutes Aures fino a 4946 m a l'ovest di Les Scaffarels",
+   "testo": "lavori dalle 07:00 del 20 novembre 2026 alle 18:00 del 27 novembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo Création di un accés · Da 5444 m a est di passo di tutto Aures fino a 4946 m a ovest di i Scaffarels",
    "tipo": "lavori",
    "quando": "2026-11-19T13:29:42.724+01:00",
    "corsie": "",
@@ -3475,7 +3616,7 @@
   {
    "id": "f677fdad89166e43",
    "strada": "N85 (Francia)",
-   "testo": "lavori dalle 07:00 del 30 novembre 2026 alle 18:00 del 23 dicembre 2026 · Senso unico alternato con semaforo ou manuel pulizia condotte e nettoyage di buses",
+   "testo": "lavori dalle 07:00 del 30 novembre 2026 alle 18:00 del 23 dicembre 2026 · Senso unico alternato con semaforo ou manuale pulizia condotte e nettoyage di buses",
    "tipo": "lavori",
    "quando": "2026-11-19T13:40:35.654+01:00",
    "corsie": "",
@@ -3490,7 +3631,7 @@
   {
    "id": "e9a8d71c96c791a0",
    "strada": "N124 (Francia)",
-   "testo": "segnalazione dalle 23:27 del 18 novembre 2026 · 0 m a l'est di Colomiers Est · Direzione Langon (da Toulouse)",
+   "testo": "segnalazione dalle 23:27 del 18 novembre 2026 · 0 m a est di Colomiers Est · Direzione Langon (da Toulouse)",
    "tipo": "altro",
    "quando": "2026-11-19T00:10:28.411+01:00",
    "corsie": "",
@@ -3503,7 +3644,7 @@
   {
    "id": "267842d8527265ce",
    "strada": "A68 (Francia)",
-   "testo": "lavori dalle 13:49 del 3 agosto 2026 · Da 3566 m a l'est di Lisle-sur-Tarn fino a 2633 m a l'ovest di Gaillac · Direzione Albi (da Toulouse)",
+   "testo": "lavori dalle 13:49 del 3 agosto 2026 · Da 3566 m a est di Lisle-sur-Tarn fino a 2633 m a ovest di Gaillac · Direzione Albi (da Toulouse)",
    "tipo": "lavori",
    "quando": "2026-11-20T05:10:58.225+01:00",
    "corsie": "",
@@ -3533,7 +3674,7 @@
   {
    "id": "4cfcf71865228f5c",
    "strada": "A68 (Francia)",
-   "testo": "segnalazione dalle 13:49 del 3 agosto 2026 · Da 3566 m a l'est di Lisle-sur-Tarn fino a 2633 m a l'ovest di Gaillac · Direzione Albi (da Toulouse)",
+   "testo": "segnalazione dalle 13:49 del 3 agosto 2026 · Da 3566 m a est di Lisle-sur-Tarn fino a 2633 m a ovest di Gaillac · Direzione Albi (da Toulouse)",
    "tipo": "altro",
    "quando": "2026-11-20T05:10:58.225+01:00",
    "corsie": "",
@@ -3623,7 +3764,7 @@
   {
    "id": "023b00816c8af20b",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 09:00 del 14 dicembre 2026 alle 16:30 del 18 dicembre 2026 · 1736 m a l'ovest di Josselin · Su rampa di uscita · Direzione Rennes (da Lorient)",
+   "testo": "lavori dalle 09:00 del 14 dicembre 2026 alle 16:30 del 18 dicembre 2026 · 1736 m a ovest di Josselin · Su rampa di uscita · Direzione Rennes (da Lorient)",
    "tipo": "lavori",
    "quando": "2026-11-20T13:06:09.152+01:00",
    "corsie": "",
@@ -3636,7 +3777,7 @@
   {
    "id": "0ecdfabe947f06dc",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 09:00 del 14 dicembre 2026 alle 16:30 del 18 dicembre 2026 · 1736 m a l'ovest di Josselin · Su rampa di uscita · Direzione Rennes (da Lorient)",
+   "testo": "segnalazione dalle 09:00 del 14 dicembre 2026 alle 16:30 del 18 dicembre 2026 · 1736 m a ovest di Josselin · Su rampa di uscita · Direzione Rennes (da Lorient)",
    "tipo": "altro",
    "quando": "2026-11-20T13:06:09.152+01:00",
    "corsie": "",
@@ -3649,7 +3790,7 @@
   {
    "id": "43eaf8953bbbf183",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 19:30 del 23 novembre 2026 alle 06:30 del 27 novembre 2026 · 749 m a l'est di Porte di Sainte-Luce · Su rampa di uscita · Direzione Nantes Porte di Orvault (da Nantes Porte di Anjou)",
+   "testo": "segnalazione dalle 19:30 del 23 novembre 2026 alle 06:30 del 27 novembre 2026 · 749 m a est di Porte di Sainte-Luce · Su rampa di uscita · Direzione Nantes Porte di Orvault (da Nantes Porte di Anjou)",
    "tipo": "altro",
    "quando": "2026-11-20T14:24:54.495+01:00",
    "corsie": "",
@@ -3662,7 +3803,7 @@
   {
    "id": "27499966f68ce596",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 19:30 del 23 novembre 2026 alle 06:30 del 27 novembre 2026 · 1340 m a l'ovest di Nantes Porte di Anjou [C844] · Su rampa di entrata · Direzione Nantes Porte di Anjou (da Nantes Porte di Orvault)",
+   "testo": "segnalazione dalle 19:30 del 23 novembre 2026 alle 06:30 del 27 novembre 2026 · 1340 m a ovest di Nantes Porte di Anjou [C844] · Su rampa di entrata · Direzione Nantes Porte di Anjou (da Nantes Porte di Orvault)",
    "tipo": "altro",
    "quando": "2026-11-20T14:24:54.495+01:00",
    "corsie": "",
@@ -3675,7 +3816,7 @@
   {
    "id": "025b9e10a657d915",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 19:30 del 23 novembre 2026 alle 06:30 del 27 novembre 2026 · 1340 m a l'ovest di Nantes Porte di Anjou [C844] · Su rampa di entrata · Direzione Nantes Porte di Anjou (da Nantes Porte di Orvault)",
+   "testo": "segnalazione dalle 19:30 del 23 novembre 2026 alle 06:30 del 27 novembre 2026 · 1340 m a ovest di Nantes Porte di Anjou [C844] · Su rampa di entrata · Direzione Nantes Porte di Anjou (da Nantes Porte di Orvault)",
    "tipo": "altro",
    "quando": "2026-11-20T14:24:54.495+01:00",
    "corsie": "",
@@ -3793,7 +3934,7 @@
   {
    "id": "1009a42ff9a3f180",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 17:30 del 22 novembre 2026 · RD1212 Coulée di boue in les Gorges dell’Arly all'altezza di PR9",
+   "testo": "segnalazione dalle 17:30 del 22 novembre 2026 · RD1212 Coulée di boue in i Gorges dell’Arly all'altezza di PR9",
    "tipo": "altro",
    "quando": "2026-11-23T00:37:19.855+01:00",
    "corsie": "",
@@ -3806,7 +3947,7 @@
   {
    "id": "486e4c7482fc2109",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 19:37 del 22 novembre 2026 · RD1212 suite a plusieurs débordements di ruisseaux e ai conditions météorologiques défavorables, les Gorges dell’Arly sont chiuso per une durée indéterminée",
+   "testo": "segnalazione dalle 19:37 del 22 novembre 2026 · RD1212 a seguito di plusieurs débordements di ruisseaux e ai conditions météorologiques défavorables, i Gorges dell’Arly sono chiuso per un durata indéterminée",
    "tipo": "altro",
    "quando": "2026-11-23T00:37:19.855+01:00",
    "corsie": "",
@@ -3819,7 +3960,7 @@
   {
    "id": "2b9acefe3a19f9ad",
    "strada": "N5 (Francia)",
-   "testo": "lavori dalle 08:12 del 17 novembre 2026 alle 16:00 del 27 novembre 2026 · Restrictions di velocità localisées. cantiere non levé di notte e levé le week-end · Direzione Poligny (da Suisse - Nyon)",
+   "testo": "lavori dalle 08:12 del 17 novembre 2026 alle 16:00 del 27 novembre 2026 · Restrictions di velocità locali. cantiere non rimossa di notte e rimossa le week-end · Direzione Poligny (da Suisse - Nyon)",
    "tipo": "lavori",
    "quando": "2026-11-23T08:27:00.729+01:00",
    "corsie": "",
@@ -3849,7 +3990,7 @@
   {
    "id": "0ab2787842d181fd",
    "strada": "N19 (Francia)",
-   "testo": "lavori dalle 08:07 del 23 novembre 2026 alle 16:00 del 27 novembre 2026 · Restrictions di velocità localisées · Da 5972 m a l'est di Port-sur-Saône fino a 149 m a l'ovest di Vesoul",
+   "testo": "lavori dalle 08:07 del 23 novembre 2026 alle 16:00 del 27 novembre 2026 · Restrictions di velocità locali · Da 5972 m a est di Port-sur-Saône fino a 149 m a ovest di Vesoul",
    "tipo": "lavori",
    "quando": "2026-11-23T08:27:02.521+01:00",
    "corsie": "",
@@ -3864,7 +4005,7 @@
   {
    "id": "ee14b6e2d62e434b",
    "strada": "N19 (Francia)",
-   "testo": "lavori dalle 08:08 del 23 novembre 2026 alle 16:00 del 27 novembre 2026 · Corsia chiusa a destra suivant l'avancement del cantiere · Da 5972 m a l'est di Port-sur-Saône fino a 149 m a l'ovest di Vesoul",
+   "testo": "lavori dalle 08:08 del 23 novembre 2026 alle 16:00 del 27 novembre 2026 · Corsia chiusa a destra seguente l'avancement del cantiere · Da 5972 m a est di Port-sur-Saône fino a 149 m a ovest di Vesoul",
    "tipo": "lavori",
    "quando": "2026-11-23T08:27:02.521+01:00",
    "corsie": "corsie ridotte",
@@ -3879,7 +4020,7 @@
   {
    "id": "e1f2e8313e3b7cef",
    "strada": "N5 (Francia)",
-   "testo": "lavori dalle 08:42 del 23 novembre 2026 alle 16:00 del 27 novembre 2026 · Adaptez votre velocità · Da 128 m a sud di Champagnole fino a 18220 m a nord di Saint-Laurent-en-Grandvaux",
+   "testo": "lavori dalle 08:42 del 23 novembre 2026 alle 16:00 del 27 novembre 2026 · Adaptez vostro velocità · Da 128 m a sud di Champagnole fino a 18220 m a nord di Saint-Laurent-en-Grandvaux",
    "tipo": "lavori",
    "quando": "2026-11-23T08:43:17.749+01:00",
    "corsie": "",
@@ -3924,7 +4065,7 @@
   {
    "id": "356c71cbfa31514c",
    "strada": "N83 (Francia)",
-   "testo": "lavori dalle 09:25 del 23 novembre 2026 alle 16:00 del 27 novembre 2026 · Restrictions di velocità localisées · Da 7019 m a nord di Quingey fino a 4954 m a sud di Larnod · Direzione nord (da Sud)",
+   "testo": "lavori dalle 09:25 del 23 novembre 2026 alle 16:00 del 27 novembre 2026 · Restrictions di velocità locali · Da 7019 m a nord di Quingey fino a 4954 m a sud di Larnod · Direzione nord (da Sud)",
    "tipo": "lavori",
    "quando": "2026-11-23T09:27:24.031+01:00",
    "corsie": "",
@@ -3984,7 +4125,7 @@
   {
    "id": "2dcac07592bdc403",
    "strada": "A21 (Francia)",
-   "testo": "segnalazione dalle 12:02 del 23 novembre 2026 alle 12:00 del 30 novembre 2026 · Da 717 m a l'est di Escaudain fino a 0 m a l'ovest di Douchy-les-Mines · Direzione Douchy-les-Mines (A2) (da Aix-Noulette (A26))",
+   "testo": "segnalazione dalle 12:02 del 23 novembre 2026 alle 12:00 del 30 novembre 2026 · Da 717 m a est di Escaudain fino a 0 m a ovest di Douchy-les-Mines · Direzione Douchy-les-Mines (A2) (da Aix-Noulette (A26))",
    "tipo": "altro",
    "quando": "2026-11-23T12:06:41.286+01:00",
    "corsie": "",
@@ -3999,7 +4140,7 @@
   {
    "id": "6016482cac166247",
    "strada": "A21 (Francia)",
-   "testo": "segnalazione dalle 12:02 del 23 novembre 2026 alle 12:00 del 30 novembre 2026 · Da 165 m a l'ovest di Douchy-les-Mines fino a 282 m a l'est di Denain · Direzione Aix-Noulette (A26) (da Douchy-les-Mines (A2))",
+   "testo": "segnalazione dalle 12:02 del 23 novembre 2026 alle 12:00 del 30 novembre 2026 · Da 165 m a ovest di Douchy-les-Mines fino a 282 m a est di Denain · Direzione Aix-Noulette (A26) (da Douchy-les-Mines (A2))",
    "tipo": "altro",
    "quando": "2026-11-23T12:06:41.286+01:00",
    "corsie": "",
@@ -4014,7 +4155,7 @@
   {
    "id": "7e99757266171202",
    "strada": "N19 (Francia)",
-   "testo": "lavori dalle 14:04 del 23 novembre 2026 alle 15:15 del 4 dicembre 2026 · Restrictions di velocità localisées · Da 20051 m a l'est di Fayl-Billot fino a 11814 m a l'ovest di Port-sur-Saône",
+   "testo": "lavori dalle 14:04 del 23 novembre 2026 alle 15:15 del 4 dicembre 2026 · Restrictions di velocità locali · Da 20051 m a est di Fayl-Billot fino a 11814 m a ovest di Port-sur-Saône",
    "tipo": "lavori",
    "quando": "2026-11-23T14:17:49.135+01:00",
    "corsie": "",
@@ -4029,7 +4170,7 @@
   {
    "id": "2fd8aa51692feeba",
    "strada": "N19 (Francia)",
-   "testo": "segnalazione dalle 14:16 del 23 novembre 2026 alle 15:15 del 4 dicembre 2026 · Da 20051 m a l'est di Fayl-Billot fino a 11814 m a l'ovest di Port-sur-Saône",
+   "testo": "segnalazione dalle 14:16 del 23 novembre 2026 alle 15:15 del 4 dicembre 2026 · Da 20051 m a est di Fayl-Billot fino a 11814 m a ovest di Port-sur-Saône",
    "tipo": "altro",
    "quando": "2026-11-23T14:17:49.135+01:00",
    "corsie": "corsie ridotte",
@@ -4070,7 +4211,7 @@
   {
    "id": "692f109ee3b03fc6",
    "strada": "A75 (Francia)",
-   "testo": "lavori dalle 07:33 del 23 novembre 2026 alle 05:59 del 27 novembre 2026 · Le passage dei transports exceptionnels est vietato: direzione Clermont-Ferrand ->Béziers, si la largeur del convoi est supérieur a 4,20m; direzione Béziers -> Clermont-Ferrand, si la largeur del convoi est supérieur a 3.50 m ou si sa longu",
+   "testo": "lavori dalle 07:33 del 23 novembre 2026 alle 05:59 del 27 novembre 2026 · Le passaggio dei trasporto eccezionale est vietato: direzione Clermont-Ferrand ->Béziers, si la larghezza del convoglio est superiore a 4,20m; direzione Béziers -> Clermont-Ferrand, si la larghezza del convoglio est superiore a 3.50 m ou si",
    "tipo": "lavori",
    "quando": "2026-11-23T19:56:34.044+01:00",
    "corsie": "",
@@ -4085,7 +4226,7 @@
   {
    "id": "37c0ee364fcc0a13",
    "strada": "A75 (Francia)",
-   "testo": "lavori dalle 07:42 del 23 novembre 2026 · Le passage dei transports exceptionnels est vietato: direzione Béziers -> Clermont-Ferrand, si la largeur del convoi est supérieur a 4,20m; direzione Clermont-Ferrand ->Béziers, si la largeur del convoi est supérieur a 3.50 m ou si sa longu",
+   "testo": "lavori dalle 07:42 del 23 novembre 2026 · Le passaggio dei trasporto eccezionale est vietato: direzione Béziers -> Clermont-Ferrand, si la larghezza del convoglio est superiore a 4,20m; direzione Clermont-Ferrand ->Béziers, si la larghezza del convoglio est superiore a 3.50 m ou si",
    "tipo": "lavori",
    "quando": "2026-11-23T19:56:34.044+01:00",
    "corsie": "",
@@ -4100,7 +4241,7 @@
   {
    "id": "3681bac93aff0b2c",
    "strada": "A75 (Francia)",
-   "testo": "segnalazione dalle 19:56 del 23 novembre 2026 · Nuits del 23 a 24 e 24 a 25 novembre dalle 20:00 alle 06:00: la traffico in le direzione Sud/nord sera basculé su le direzione nord/Sud tra les ITPC situés ai PR 261+580 e 262+640 · Da 1738 m a sud di Pas dell’Escalette fino a 4242 m a nord",
+   "testo": "segnalazione dalle 19:56 del 23 novembre 2026 · Notte del 23 a 24 e 24 a 25 novembre dalle 20:00 alle 06:00: la traffico in le direzione Sud/nord sarà deviato su le direzione nord/Sud tra i ITPC situati ai PR 261+580 e 262+640 · Da 1738 m a sud di Pas dell’Escalette fino a 4242 m a nord ",
    "tipo": "altro",
    "quando": "2026-11-23T19:56:34.044+01:00",
    "corsie": "doppio senso su una carreggiata",
@@ -4115,7 +4256,7 @@
   {
    "id": "9f866d2d8d128b21",
    "strada": "A75 (Francia)",
-   "testo": "segnalazione dalle 20:00 del 25 novembre 2026 alle 06:00 del 27 novembre 2026 · Nuits del 23 a 24 e 24 a 25 novembre dalle 20:00 alle 06:00: la traffico in le direzione nord/Sud sera basculé su le direzione Sud/nord tra les ITPC situés ai PR 261+580 e 262+640 · Da 4237 m a nord di Pégairolles-de-l'Escalette fino a 1720",
+   "testo": "segnalazione dalle 20:00 del 25 novembre 2026 alle 06:00 del 27 novembre 2026 · Notte del 23 a 24 e 24 a 25 novembre dalle 20:00 alle 06:00: la traffico in le direzione nord/Sud sarà deviato su le direzione Sud/nord tra i ITPC situati ai PR 261+580 e 262+640 · Da 4237 m a nord di Pégairolles-de-l'Escalette fino a 1720 ",
    "tipo": "altro",
    "quando": "2026-11-23T19:56:34.044+01:00",
    "corsie": "doppio senso su una carreggiata",
@@ -4216,7 +4357,7 @@
   {
    "id": "552782d53de37428",
    "strada": "A13 (Francia)",
-   "testo": "segnalazione dalle 22:00 del 10 novembre 2026 · Da 495 m a l'est di Vaucresson - Versailles fino a 1449 m a l'ovest di Saint-Cloud - Ville di Avray · Direzione Paris (da Cherbourg)",
+   "testo": "segnalazione dalle 22:00 del 10 novembre 2026 · Da 495 m a est di Vaucresson - Versailles fino a 1449 m a ovest di Saint-Cloud - Ville di Avray · Direzione Paris (da Cherbourg)",
    "tipo": "altro",
    "quando": "2026-11-24T06:09:57.594+01:00",
    "corsie": "",
@@ -4231,7 +4372,7 @@
   {
    "id": "1aaa6a485131af53",
    "strada": "A13 (Francia)",
-   "testo": "segnalazione dalle 22:00 del 10 novembre 2026 · Da 495 m a l'est di Vaucresson - Versailles fino a 1449 m a l'ovest di Saint-Cloud - Ville di Avray · Direzione Paris (da Cherbourg)",
+   "testo": "segnalazione dalle 22:00 del 10 novembre 2026 · Da 495 m a est di Vaucresson - Versailles fino a 1449 m a ovest di Saint-Cloud - Ville di Avray · Direzione Paris (da Cherbourg)",
    "tipo": "altro",
    "quando": "2026-11-24T06:09:57.594+01:00",
    "corsie": "",
@@ -4276,7 +4417,7 @@
   {
    "id": "9e34597132c06316",
    "strada": "N57 (Francia)",
-   "testo": "lavori dalle 08:13 del 17 agosto 2026 · Restrictions di velocità localisées · Da 12519 m a sud di Rioz fino a 5515 m a nord di École-Valentin",
+   "testo": "lavori dalle 08:13 del 17 agosto 2026 · Restrictions di velocità locali · Da 12519 m a sud di Rioz fino a 5515 m a nord di École-Valentin",
    "tipo": "lavori",
    "quando": "2026-11-24T08:11:22.287+01:00",
    "corsie": "",
@@ -4366,7 +4507,7 @@
   {
    "id": "9ab6f196b6d9b99e",
    "strada": "A750 (Francia)",
-   "testo": "lavori dalle 08:00 del 26 novembre 2026 alle 17:59 del 26 novembre 2026 · Da 595 m a l'ovest di Saint-André-de-Sangonis fino a 558 m a l'est di 40 · Hors corsia di traffico · Direzione Clermont l'Hérault (da Montpellier)",
+   "testo": "lavori dalle 08:00 del 26 novembre 2026 alle 17:59 del 26 novembre 2026 · Da 595 m a ovest di Saint-André-de-Sangonis fino a 558 m a est di 40 · Hors corsia di traffico · Direzione Clermont l'Hérault (da Montpellier)",
    "tipo": "lavori",
    "quando": "2026-11-24T13:38:59.397+01:00",
    "corsie": "",
@@ -4381,7 +4522,7 @@
   {
    "id": "5a66d195b9e0ad02",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 08:00 del 26 novembre 2026 alle 17:59 del 26 novembre 2026 · 843 m a l'est di 40 · Hors corsia di traffico · Su rampa di entrata · Direzione Clermont l'Hérault (da Montpellier)",
+   "testo": "segnalazione dalle 08:00 del 26 novembre 2026 alle 17:59 del 26 novembre 2026 · 843 m a est di 40 · Hors corsia di traffico · Su rampa di entrata · Direzione Clermont l'Hérault (da Montpellier)",
    "tipo": "altro",
    "quando": "2026-11-24T13:38:59.397+01:00",
    "corsie": "",
@@ -4394,7 +4535,7 @@
   {
    "id": "dfb6a4061555bf58",
    "strada": "A20 (Francia)",
-   "testo": "segnalazione dalle 09:58 del 16 novembre 2026 alle 18:00 del 27 novembre 2026 · Basculement total delle corsie · La traffico del direzione Toulouse verso Paris est basculée su le direzione Paris verso Toulouse · Causa cantiere · Da 637 m a nord di Brive Terrasson fino a 580 m a sud di Brive Cana - Objat · Direzione Par",
+   "testo": "segnalazione dalle 09:58 del 16 novembre 2026 alle 18:00 del 27 novembre 2026 · Basculement total delle corsie · La traffico del direzione Toulouse verso Paris est deviato su le direzione Paris verso Toulouse · Causa cantiere · Da 637 m a nord di Brive Terrasson fino a 580 m a sud di Brive Cana - Objat · Direzione Pari",
    "tipo": "altro",
    "quando": "2026-11-24T14:24:03.861+01:00",
    "corsie": "doppio senso su una carreggiata",
@@ -4467,7 +4608,7 @@
   {
    "id": "d9025ad310d60ad8",
    "strada": "N24 (Francia)",
-   "testo": "lavori dalle 08:30 del 23 novembre 2026 alle 17:00 del 27 novembre 2026 · Da 463 m a l'ovest di Saint-Thurial - Monterfil fino a 2351 m a l'est di Plélan-le-Grand · Direzione Lorient (da Rennes)",
+   "testo": "lavori dalle 08:30 del 23 novembre 2026 alle 17:00 del 27 novembre 2026 · Da 463 m a ovest di Saint-Thurial - Monterfil fino a 2351 m a est di Plélan-le-Grand · Direzione Lorient (da Rennes)",
    "tipo": "lavori",
    "quando": "2026-11-24T16:13:19.479+01:00",
    "corsie": "",
@@ -4482,7 +4623,7 @@
   {
    "id": "33ad98cc7dedc01f",
    "strada": "N80 (Francia)",
-   "testo": "lavori dalle 08:42 del 26 novembre 2026 alle 17:00 del 26 novembre 2026 · Da 4197 m a l'est di 42131 fino a 857 m a l'ovest di Chalon-sur-Saône · Direzione Chalon-sur-Saône (da Autun)",
+   "testo": "lavori dalle 08:42 del 26 novembre 2026 alle 17:00 del 26 novembre 2026 · Da 4197 m a est di 42131 fino a 857 m a ovest di Chalon-sur-Saône · Direzione Chalon-sur-Saône (da Autun)",
    "tipo": "lavori",
    "quando": "2026-11-24T16:16:13.194+01:00",
    "corsie": "",
@@ -4497,7 +4638,7 @@
   {
    "id": "8bfeda0ea3775ac5",
    "strada": "N80 (Francia)",
-   "testo": "lavori dalle 08:42 del 26 novembre 2026 alle 17:00 del 26 novembre 2026 · Da 4197 m a l'est di 42131 fino a 857 m a l'ovest di Chalon-sur-Saône · Direzione Chalon-sur-Saône (da Autun)",
+   "testo": "lavori dalle 08:42 del 26 novembre 2026 alle 17:00 del 26 novembre 2026 · Da 4197 m a est di 42131 fino a 857 m a ovest di Chalon-sur-Saône · Direzione Chalon-sur-Saône (da Autun)",
    "tipo": "lavori",
    "quando": "2026-11-24T16:16:13.194+01:00",
    "corsie": "corsie ridotte",
@@ -4512,7 +4653,7 @@
   {
    "id": "4ec3c3b5b96b62bb",
    "strada": "N12 (Francia)",
-   "testo": "lavori dalle 09:00 del 23 novembre 2026 alle 16:30 del 27 novembre 2026 · Lavori di fognature · Da 17203 m a l'ovest di Ernée fino a 3435 m a l'est di Romagnié",
+   "testo": "lavori dalle 09:00 del 23 novembre 2026 alle 16:30 del 27 novembre 2026 · Lavori di fognature · Da 17203 m a ovest di Ernée fino a 3435 m a est di Romagnié",
    "tipo": "lavori",
    "quando": "2026-11-24T16:39:06.621+01:00",
    "corsie": "",
@@ -4527,7 +4668,7 @@
   {
    "id": "3d5cf0c3bd1e68fb",
    "strada": "N157 (Francia)",
-   "testo": "lavori dalle 15:00 del 24 novembre 2026 alle 17:00 del 26 novembre 2026 · Da 0 m a l'ovest di Limite Ille-et-Villaine / Maye fino a 1420 m a l'est di Mont Moré",
+   "testo": "lavori dalle 15:00 del 24 novembre 2026 alle 17:00 del 26 novembre 2026 · Da 0 m a ovest di limitata Ille-et-Villaine / Maye fino a 1420 m a est di Mont Moré",
    "tipo": "lavori",
    "quando": "2026-11-24T16:40:45.226+01:00",
    "corsie": "",
@@ -4617,7 +4758,7 @@
   {
    "id": "dbeb956e712b04b6",
    "strada": "N20 (Francia)",
-   "testo": "lavori dalle 09:50 del 24 novembre 2026 alle 17:00 del 27 novembre 2026 · Cantiere D’ENROBÉS · Da 5949 m a sud di Tarascon-sur-Ariège sud fino a 1251 m a nord di Les Cabannes",
+   "testo": "lavori dalle 09:50 del 24 novembre 2026 alle 17:00 del 27 novembre 2026 · Cantiere D’ENROBÉS · Da 5949 m a sud di Tarascon-sur-Ariège sud fino a 1251 m a nord di i Cabannes",
    "tipo": "lavori",
    "quando": "2026-11-25T06:15:03.027+01:00",
    "corsie": "",
@@ -4632,7 +4773,7 @@
   {
    "id": "f5a75fe06e9df6df",
    "strada": "N20 (Francia)",
-   "testo": "segnalazione dalle 09:50 del 24 novembre 2026 alle 17:00 del 27 novembre 2026 · Da 5948 m a sud di Tarascon-sur-Ariège sud fino a 1251 m a nord di Les Cabannes",
+   "testo": "segnalazione dalle 09:50 del 24 novembre 2026 alle 17:00 del 27 novembre 2026 · Da 5948 m a sud di Tarascon-sur-Ariège sud fino a 1251 m a nord di i Cabannes",
    "tipo": "altro",
    "quando": "2026-11-25T06:15:03.027+01:00",
    "corsie": "corsie ridotte",
@@ -4647,7 +4788,7 @@
   {
    "id": "57137cb10a42ee5a",
    "strada": "N20 (Francia)",
-   "testo": "lavori dalle 09:50 del 24 novembre 2026 alle 17:00 del 27 novembre 2026 · Corsia di sinistra NEUTRALISÉE · Da 3288 m a sud di Tarascon-sur-Ariège sud fino a 2255 m a nord di Les Cabannes · Direzione Bourg-Madame - Espagne (da Pamiers)",
+   "testo": "lavori dalle 09:50 del 24 novembre 2026 alle 17:00 del 27 novembre 2026 · Corsia di sinistra chiusa · Da 3288 m a sud di Tarascon-sur-Ariège sud fino a 2255 m a nord di i Cabannes · Direzione Bourg-Madame - Espagne (da Pamiers)",
    "tipo": "lavori",
    "quando": "2026-11-25T06:15:03.027+01:00",
    "corsie": "corsie ridotte",
@@ -4752,7 +4893,7 @@
   {
    "id": "9431b64bec79f0f2",
    "strada": "N569 (Francia)",
-   "testo": "segnalazione dalle 21:00 del 25 novembre 2026 alle 05:00 del 26 novembre 2026 · Da 3226 m a l'ovest di Istres sud fino a 971 m a l'est di Fos-sur-Mer · Direzione Fos-sur-Mer (N568) (da Salon-de-Provence (N113))",
+   "testo": "segnalazione dalle 21:00 del 25 novembre 2026 alle 05:00 del 26 novembre 2026 · Da 3226 m a ovest di Istres sud fino a 971 m a est di Fos-sur-Mer · Direzione Fos-sur-Mer (N568) (da Salon-de-Provence (N113))",
    "tipo": "altro",
    "quando": "2026-11-25T07:42:18.791+01:00",
    "corsie": "corsie ridotte",
@@ -4767,7 +4908,7 @@
   {
    "id": "91649e62c8dc2412",
    "strada": "N569 (Francia)",
-   "testo": "lavori dalle 21:00 del 25 novembre 2026 alle 05:00 del 26 novembre 2026 · Senso unico alternato con semaforo · Da 3226 m a l'ovest di Istres sud fino a 971 m a l'est di Fos-sur-Mer · Direzione Fos-sur-Mer (N568) (da Salon-de-Provence (N113))",
+   "testo": "lavori dalle 21:00 del 25 novembre 2026 alle 05:00 del 26 novembre 2026 · Senso unico alternato con semaforo · Da 3226 m a ovest di Istres sud fino a 971 m a est di Fos-sur-Mer · Direzione Fos-sur-Mer (N568) (da Salon-de-Provence (N113))",
    "tipo": "lavori",
    "quando": "2026-11-25T07:42:18.791+01:00",
    "corsie": "",
@@ -4855,7 +4996,7 @@
   {
    "id": "aa7a97113d0b68dd",
    "strada": "A25 (Francia)",
-   "testo": "segnalazione dalle 08:30 del 25 novembre 2026 · 931 m a l'est di Méteren - Cassel · Direzione Dunkerque (da Lille)",
+   "testo": "segnalazione dalle 08:30 del 25 novembre 2026 · 931 m a est di Méteren - Cassel · Direzione Dunkerque (da Lille)",
    "tipo": "altro",
    "quando": "2026-11-25T08:30:46.330+01:00",
    "corsie": "",
@@ -4896,7 +5037,7 @@
   {
    "id": "d41a3230f8d62b99",
    "strada": "N569 (Francia)",
-   "testo": "lavori dalle 21:00 del 25 novembre 2026 alle 05:00 del 26 novembre 2026 · 971 m a l'est di Fos-sur-Mer · Direzione Fos-sur-Mer (N568) (da Salon-de-Provence (N113))",
+   "testo": "lavori dalle 21:00 del 25 novembre 2026 alle 05:00 del 26 novembre 2026 · 971 m a est di Fos-sur-Mer · Direzione Fos-sur-Mer (N568) (da Salon-de-Provence (N113))",
    "tipo": "lavori",
    "quando": "2026-11-25T08:49:21.949+01:00",
    "corsie": "corsie ridotte",
@@ -4909,7 +5050,7 @@
   {
    "id": "f206e34f51cb6de9",
    "strada": "N569 (Francia)",
-   "testo": "lavori dalle 21:00 del 25 novembre 2026 alle 05:00 del 26 novembre 2026 · NEUTRALISATION di LA BAU · Da 3226 m a l'ovest di Istres sud fino a 971 m a l'est di Fos-sur-Mer · Direzione Fos-sur-Mer (N568) (da Salon-de-Provence (N113))",
+   "testo": "lavori dalle 21:00 del 25 novembre 2026 alle 05:00 del 26 novembre 2026 · NEUTRALISATION di LA BAU · Da 3226 m a ovest di Istres sud fino a 971 m a est di Fos-sur-Mer · Direzione Fos-sur-Mer (N568) (da Salon-de-Provence (N113))",
    "tipo": "lavori",
    "quando": "2026-11-25T08:49:21.949+01:00",
    "corsie": "",
@@ -4924,7 +5065,7 @@
   {
    "id": "e3d79ebd193795b1",
    "strada": "N12 (Francia)",
-   "testo": "lavori dalle 08:49 del 25 novembre 2026 · Da 8370 m a l'est di La Jarretière fino a 575 m a l'ovest di Tourouvre · Hors corsia di traffico · Direzione Paris (da Rennes)",
+   "testo": "lavori dalle 08:49 del 25 novembre 2026 · Da 8370 m a est di La Jarretière fino a 575 m a ovest di Tourouvre · Hors corsia di traffico · Direzione Paris (da Rennes)",
    "tipo": "lavori",
    "quando": "2026-11-25T08:50:00.021+01:00",
    "corsie": "",
@@ -4939,7 +5080,7 @@
   {
    "id": "8c34dc15dde77f26",
    "strada": "N12 (Francia)",
-   "testo": "lavori dalle 08:53 del 25 novembre 2026 · Da 3714 m a l'est di Verneuil est fino a 5567 m a l'ovest di Tillières nord · Hors corsia di traffico · Direzione Paris (da Rennes)",
+   "testo": "lavori dalle 08:53 del 25 novembre 2026 · Da 3714 m a est di Verneuil est fino a 5567 m a ovest di Tillières nord · Hors corsia di traffico · Direzione Paris (da Rennes)",
    "tipo": "lavori",
    "quando": "2026-11-25T08:53:26.702+01:00",
    "corsie": "",
@@ -5074,7 +5215,7 @@
   {
    "id": "5b00c795b29f139d",
    "strada": "N94 (Francia)",
-   "testo": "lavori dalle 08:00 del 30 novembre 2026 alle 17:00 del 4 dicembre 2026 · Senso unico alternato con semaforo lavori di ouverture di chambre · Da 7188 m a l'est di Châteauroux nord fino a 13164 m a l'ovest di La Bessée sud",
+   "testo": "lavori dalle 08:00 del 30 novembre 2026 alle 17:00 del 4 dicembre 2026 · Senso unico alternato con semaforo lavori di apertura di pozzetto · Da 7188 m a est di Châteauroux nord fino a 13164 m a ovest di La Bessée sud",
    "tipo": "lavori",
    "quando": "2026-11-25T10:31:36.028+01:00",
    "corsie": "",
@@ -5104,7 +5245,7 @@
   {
    "id": "d0bec1765606cc1b",
    "strada": "N19 (Francia)",
-   "testo": "lavori dalle 08:18 del 23 novembre 2026 alle 15:45 del 27 novembre 2026 · Restrictions di velocità localisées · Da 1541 m a l'est di Frotey-lès-Vesoul fino a 19463 m a l'ovest di Couthenans · Direzione Delle - Suisse (da Paris)",
+   "testo": "lavori dalle 08:18 del 23 novembre 2026 alle 15:45 del 27 novembre 2026 · Restrictions di velocità locali · Da 1541 m a est di Frotey-lès-Vesoul fino a 19463 m a ovest di Couthenans · Direzione Delle - Suisse (da Paris)",
    "tipo": "lavori",
    "quando": "2026-11-25T11:07:16.538+01:00",
    "corsie": "",
@@ -5119,7 +5260,7 @@
   {
    "id": "aa744c5d64e652e2",
    "strada": "N19 (Francia)",
-   "testo": "lavori dalle 08:19 del 23 novembre 2026 alle 15:45 del 27 novembre 2026 · Corsia di destra neutralisée · Da 1541 m a l'est di Frotey-lès-Vesoul fino a 19463 m a l'ovest di Couthenans · Direzione Delle - Suisse (da Paris)",
+   "testo": "lavori dalle 08:19 del 23 novembre 2026 alle 15:45 del 27 novembre 2026 · Corsia di destra chiusa · Da 1541 m a est di Frotey-lès-Vesoul fino a 19463 m a ovest di Couthenans · Direzione Delle - Suisse (da Paris)",
    "tipo": "lavori",
    "quando": "2026-11-25T11:07:16.538+01:00",
    "corsie": "corsie ridotte",
@@ -5134,7 +5275,7 @@
   {
    "id": "aa330bae6eb681b8",
    "strada": "N94 (Francia)",
-   "testo": "lavori dalle 08:30 del 30 novembre 2026 alle 17:00 del 2 dicembre 2026 · Senso unico alternato manuel Ouverture di chambre · Da 10427 m a l'est di Montdauphin fino a 2464 m a l'ovest di La Bessée sud",
+   "testo": "lavori dalle 08:30 del 30 novembre 2026 alle 17:00 del 2 dicembre 2026 · Senso unico alternato manuale apertura di pozzetto · Da 10427 m a est di Montdauphin fino a 2464 m a ovest di La Bessée sud",
    "tipo": "lavori",
    "quando": "2026-11-25T11:09:47.055+01:00",
    "corsie": "",
@@ -5149,7 +5290,7 @@
   {
    "id": "b767642a137645b2",
    "strada": "N94 (Francia)",
-   "testo": "lavori dalle 08:30 del 30 novembre 2026 alle 17:00 del 17 dicembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo Dévoiement del réseau · Da 866 m a l'est di La Bessée nord fino a 377 m a l'ovest di Belvédère-du-Pelvoux",
+   "testo": "lavori dalle 08:30 del 30 novembre 2026 alle 17:00 del 17 dicembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo Dévoiement del réseau · Da 866 m a est di La Bessée nord fino a 377 m a ovest di Belvédère-du-Pelvoux",
    "tipo": "lavori",
    "quando": "2026-11-25T11:15:37.821+01:00",
    "corsie": "",
@@ -5164,7 +5305,7 @@
   {
    "id": "b72045a9a7da22e4",
    "strada": "N202 (Francia)",
-   "testo": "lavori dalle 07:00 del 2 dicembre 2026 alle 18:00 del 18 dicembre 2026 · Lavori di fognature · Senso unico alternato con semaforo ou manuel Curage di un ouvrage di art · Da 3466 m a l'est di Les Scaffarels fino a 2954 m a l'ovest di ponte di Gueydan",
+   "testo": "lavori dalle 07:00 del 2 dicembre 2026 alle 18:00 del 18 dicembre 2026 · Lavori di fognature · Senso unico alternato con semaforo ou manuale Curage di un ponte o viadotto · Da 3466 m a est di i Scaffarels fino a 2954 m a ovest di ponte di Gueydan",
    "tipo": "lavori",
    "quando": "2026-11-25T11:19:32.034+01:00",
    "corsie": "",
@@ -5179,7 +5320,7 @@
   {
    "id": "c7bd10bab578fca1",
    "strada": "N94 (Francia)",
-   "testo": "lavori dalle 08:00 del 3 dicembre 2026 alle 17:00 del 4 dicembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo ou manuel Maçonnerie su un ouvrage di art · Da 5785 m a l'est di La Batie-Neuve est fino a 10594 m a l'ovest di Le Sauze",
+   "testo": "lavori dalle 08:00 del 3 dicembre 2026 alle 17:00 del 4 dicembre 2026 · Lavori di costruzione · Senso unico alternato con semaforo ou manuale Maçonnerie su un ponte o viadotto · Da 5785 m a est di La Batie-Neuve est fino a 10594 m a ovest di Le Sauze",
    "tipo": "lavori",
    "quando": "2026-11-25T11:23:21.162+01:00",
    "corsie": "",
@@ -5194,7 +5335,7 @@
   {
    "id": "735b6c2858cd43c6",
    "strada": "N57 (Francia)",
-   "testo": "lavori dalle 10:30 del 30 novembre 2026 alle 15:45 del 4 dicembre 2026 · Corsia di destra neutralisée · Da 3914 m a sud di Vesoul (Boulevard Charles di G fino a 10205 m a nord di Rioz",
+   "testo": "lavori dalle 10:30 del 30 novembre 2026 alle 15:45 del 4 dicembre 2026 · Corsia di destra chiusa · Da 3914 m a sud di Vesoul (Boulevard Charles di G fino a 10205 m a nord di Rioz",
    "tipo": "lavori",
    "quando": "2026-11-25T11:30:13.467+01:00",
    "corsie": "corsie ridotte",
@@ -5209,7 +5350,7 @@
   {
    "id": "37f8dd933f112a01",
    "strada": "N57 (Francia)",
-   "testo": "lavori dalle 10:30 del 30 novembre 2026 alle 15:45 del 4 dicembre 2026 · Restrictions di velocità localisées · Da 3914 m a sud di Vesoul (Boulevard Charles di G fino a 10205 m a nord di Rioz",
+   "testo": "lavori dalle 10:30 del 30 novembre 2026 alle 15:45 del 4 dicembre 2026 · Restrictions di velocità locali · Da 3914 m a sud di Vesoul (Boulevard Charles di G fino a 10205 m a nord di Rioz",
    "tipo": "lavori",
    "quando": "2026-11-25T11:30:13.467+01:00",
    "corsie": "",
@@ -5224,7 +5365,7 @@
   {
    "id": "888e4343de01c929",
    "strada": "N57 (Francia)",
-   "testo": "lavori dalle 08:30 del 30 novembre 2026 alle 16:00 del 30 novembre 2026 · Carreggiata ristretta a droit del cantiere. Adaptez votre velocità · Da 1124 m a sud di Saulx fino a 524 m a nord di Frotey-lès-Vesoul",
+   "testo": "lavori dalle 08:30 del 30 novembre 2026 alle 16:00 del 30 novembre 2026 · Carreggiata ristretta a destra del cantiere. Adaptez vostro velocità · Da 1124 m a sud di Saulx fino a 524 m a nord di Frotey-lès-Vesoul",
    "tipo": "lavori",
    "quando": "2026-11-25T11:40:12.513+01:00",
    "corsie": "",
@@ -5239,7 +5380,7 @@
   {
    "id": "abbda04906b3f542",
    "strada": "N19 (Francia)",
-   "testo": "lavori dalle 08:30 del 1 dicembre 2026 alle 15:45 del 4 dicembre 2026 · Carreggiata ristretta a droit del cantiere. Adaptez votre velocità · Da 1011 m a l'est di Frotey-lès-Vesoul fino a 1489 m a l'ovest di Frotey-lès-Vesoul",
+   "testo": "lavori dalle 08:30 del 1 dicembre 2026 alle 15:45 del 4 dicembre 2026 · Carreggiata ristretta a destra del cantiere. Adaptez vostro velocità · Da 1011 m a est di Frotey-lès-Vesoul fino a 1489 m a ovest di Frotey-lès-Vesoul",
    "tipo": "lavori",
    "quando": "2026-11-25T11:43:26.158+01:00",
    "corsie": "",
@@ -5314,7 +5455,7 @@
   {
    "id": "6288e7efc0dc78bd",
    "strada": "N13 (Francia)",
-   "testo": "lavori dalle 09:37 del 25 novembre 2026 · Da 1688 m a l'est di Mosles fino a 5242 m a l'ovest di Damigny · Hors corsia di traffico · Direzione Paris (da Cherbourg)",
+   "testo": "lavori dalle 09:37 del 25 novembre 2026 · Da 1688 m a est di Mosles fino a 5242 m a ovest di Damigny · Hors corsia di traffico · Direzione Paris (da Cherbourg)",
    "tipo": "lavori",
    "quando": "2026-11-25T14:04:54.983+01:00",
    "corsie": "",
@@ -5404,7 +5545,7 @@
   {
    "id": "f2a1d0b160b4880e",
    "strada": "N134 (Francia)",
-   "testo": "condizioni meteo dalle 15:18 del 25 novembre 2026 · Traitement en cours · Da 3524 m a sud di passo del Somport - Espagne fino a 1108 m a nord di Urdos",
+   "testo": "condizioni meteo dalle 15:18 del 25 novembre 2026 · Traitement in corso · Da 3524 m a sud di passo del Somport - Espagne fino a 1108 m a nord di Urdos",
    "tipo": "meteo",
    "quando": "2026-11-25T15:18:15.394+01:00",
    "corsie": "",
@@ -5419,7 +5560,7 @@
   {
    "id": "8f70bd01015b9f9f",
    "strada": "N134 (Francia)",
-   "testo": "condizioni meteo dalle 15:18 del 25 novembre 2026 · Traitement en cours · Da 1054 m a sud di Urdos fino a 3532 m a nord di galleria del Somport",
+   "testo": "condizioni meteo dalle 15:18 del 25 novembre 2026 · Traitement in corso · Da 1054 m a sud di Urdos fino a 3532 m a nord di galleria del Somport",
    "tipo": "meteo",
    "quando": "2026-11-25T15:18:16.195+01:00",
    "corsie": "",
@@ -5434,7 +5575,7 @@
   {
    "id": "be035992d7727b31",
    "strada": "N134 (Francia)",
-   "testo": "condizioni meteo dalle 15:18 del 25 novembre 2026 · Traitement en cours · Da 4496 m a sud di Les Forges-d'Abel fino a 12816 m a nord di Accous",
+   "testo": "condizioni meteo dalle 15:18 del 25 novembre 2026 · Traitement in corso · Da 4496 m a sud di i Forges-d'Abel fino a 12816 m a nord di Accous",
    "tipo": "meteo",
    "quando": "2026-11-25T15:18:16.906+01:00",
    "corsie": "",
@@ -5449,7 +5590,7 @@
   {
    "id": "b660adb3b3a96e76",
    "strada": "A55 (Francia)",
-   "testo": "condizioni meteo dalle 15:32 del 25 novembre 2026 · 1722 m a l'ovest di La Mède ovest · Direzione Marseille (da Martigues)",
+   "testo": "condizioni meteo dalle 15:32 del 25 novembre 2026 · 1722 m a ovest di La Mède ovest · Direzione Marseille (da Martigues)",
    "tipo": "meteo",
    "quando": "2026-11-25T15:32:51.378+01:00",
    "corsie": "",
@@ -5462,7 +5603,7 @@
   {
    "id": "ecd2cce98716b114",
    "strada": "N580 (Francia)",
-   "testo": "lavori dalle 09:00 del 25 novembre 2026 alle 16:00 del 2 dicembre 2026 · Lavori di Pose di panneaux d’information, avertisseurs connectés e Capteurs con caméra per la détection di la traversée d’animaux · Da 3440 m a sud di Bagnols-sur-Cèze centre fino a 5951 m a nord dell’Ardoise centre",
+   "testo": "lavori dalle 09:00 del 25 novembre 2026 alle 16:00 del 2 dicembre 2026 · Lavori di Pose di panneaux d’information, avertisseurs connectés e Capteurs con caméra per la détection di la attraversamento d’animaux · Da 3440 m a sud di Bagnols-sur-Cèze centro fino a 5951 m a nord dell’Ardoise centro",
    "tipo": "lavori",
    "quando": "2026-11-25T15:48:09.440+01:00",
    "corsie": "",
@@ -5477,7 +5618,7 @@
   {
    "id": "484d1b66b8416d0e",
    "strada": "N100 (Francia)",
-   "testo": "lavori dalle 09:00 del 26 novembre 2026 alle 16:00 del 2 dicembre 2026 · Potatura alberi e abattage di arbres",
+   "testo": "lavori dalle 09:00 del 26 novembre 2026 alle 16:00 del 2 dicembre 2026 · Potatura alberi e abbattimento di arbres",
    "tipo": "lavori",
    "quando": "2026-11-25T15:56:01.148+01:00",
    "corsie": "",
@@ -5492,7 +5633,7 @@
   {
    "id": "18cf89d8a95098ed",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 20:30 del 7 dicembre 2026 alle 06:00 del 8 dicembre 2026 · Da 251 m a sud di Porte del Vignoble fino a 1685 m a nord di Porte di Goulaine · Par messagerie · Su rampa di entrata · Direzione Nantes Porte di Anjou (da Nantes Porte di Orvault)",
+   "testo": "lavori dalle 20:30 del 7 dicembre 2026 alle 06:00 del 8 dicembre 2026 · Da 251 m a sud di Porte del Vignoble fino a 1685 m a nord di Porte di Goulaine · Par pannelli · Su rampa di entrata · Direzione Nantes Porte di Anjou (da Nantes Porte di Orvault)",
    "tipo": "lavori",
    "quando": "2026-11-25T16:11:02.854+01:00",
    "corsie": "",
@@ -5505,7 +5646,7 @@
   {
    "id": "fbb2acbe5395978e",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 20:30 del 7 dicembre 2026 alle 06:00 del 8 dicembre 2026 · Da 251 m a sud di Porte del Vignoble fino a 1685 m a nord di Porte di Goulaine · Par messagerie · Su rampa di entrata · Direzione Nantes Porte di Anjou (da Nantes Porte di Orvault)",
+   "testo": "segnalazione dalle 20:30 del 7 dicembre 2026 alle 06:00 del 8 dicembre 2026 · Da 251 m a sud di Porte del Vignoble fino a 1685 m a nord di Porte di Goulaine · Par pannelli · Su rampa di entrata · Direzione Nantes Porte di Anjou (da Nantes Porte di Orvault)",
    "tipo": "altro",
    "quando": "2026-11-25T16:11:02.854+01:00",
    "corsie": "",
@@ -5557,7 +5698,7 @@
   {
    "id": "66db93d874cdd7d9",
    "strada": "Strada (Francia)",
-   "testo": "incidente dalle 16:17 del 25 novembre 2026 · 260 m a l'est di Pacé - Vezin · Su rampa di uscita · Direzione Brest (da Paris)",
+   "testo": "incidente dalle 16:17 del 25 novembre 2026 · 260 m a est di Pacé - Vezin · Su rampa di uscita · Direzione Brest (da Paris)",
    "tipo": "incidente",
    "quando": "2026-11-25T16:38:32.770+01:00",
    "corsie": "",
@@ -5570,7 +5711,7 @@
   {
    "id": "f932ad040f2ce2fe",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 16:55 del 25 novembre 2026 alle 16:53 del 31 dicembre 2026 · La RD 62 est chiuso in entrambe le direzioni suite a un affaissement di carreggiata. un deviazione locale est mise en place par la RD 911 e RD 912",
+   "testo": "segnalazione dalle 16:55 del 25 novembre 2026 alle 16:53 del 31 dicembre 2026 · La RD 62 est chiuso in entrambe le direzioni a seguito di un affaissement di carreggiata. un deviazione locale est installazione par la RD 911 e RD 912",
    "tipo": "altro",
    "quando": "2026-11-25T16:57:52.489+01:00",
    "corsie": "",
@@ -5585,7 +5726,7 @@
   {
    "id": "84e097beb42a9223",
    "strada": "N12 (Francia)",
-   "testo": "lavori dalle 08:30 del 24 novembre 2026 alle 17:00 del 27 novembre 2026 · Da 451 m a l'est di 13615 fino a 6608 m a l'ovest di Saint-Gilles · Direzione Paris (da Brest)",
+   "testo": "lavori dalle 08:30 del 24 novembre 2026 alle 17:00 del 27 novembre 2026 · Da 451 m a est di 13615 fino a 6608 m a ovest di Saint-Gilles · Direzione Paris (da Brest)",
    "tipo": "lavori",
    "quando": "2026-11-25T17:11:13.106+01:00",
    "corsie": "",
@@ -5600,7 +5741,7 @@
   {
    "id": "bb804720b2757879",
    "strada": "N11 (Francia)",
-   "testo": "segnalazione dalle 17:22 del 25 novembre 2026 · Da 5550 m a l'est di Courçon fino a 5659 m a l'ovest di Mauzé-sur-le-Mignon · Direzione Niort sud (A10) (da La Rochelle)",
+   "testo": "segnalazione dalle 17:22 del 25 novembre 2026 · Da 5550 m a est di Courçon fino a 5659 m a ovest di Mauzé-sur-le-Mignon · Direzione Niort sud (A10) (da La Rochelle)",
    "tipo": "altro",
    "quando": "2026-11-25T17:23:10.382+01:00",
    "corsie": "",
@@ -5615,7 +5756,7 @@
   {
    "id": "54b69dbb0354351b",
    "strada": "N11 (Francia)",
-   "testo": "segnalazione dalle 17:23 del 25 novembre 2026 · Da 5659 m a l'ovest di Mauzé-sur-le-Mignon fino a 5547 m a l'est di Courçon · Direzione La Rochelle (da Niort sud (A10))",
+   "testo": "segnalazione dalle 17:23 del 25 novembre 2026 · Da 5659 m a ovest di Mauzé-sur-le-Mignon fino a 5547 m a est di Courçon · Direzione La Rochelle (da Niort sud (A10))",
    "tipo": "altro",
    "quando": "2026-11-25T17:23:10.382+01:00",
    "corsie": "",
@@ -5729,7 +5870,7 @@
   {
    "id": "0b138213907adc42",
    "strada": "N145 (Francia)",
-   "testo": "lavori dalle 08:15 del 25 novembre 2026 alle 18:00 del 30 novembre 2026 · Da 3799 m a l'est di Guéret est fino a 8462 m a l'ovest di Jarnages · Direzione Montluçon (da Bellac)",
+   "testo": "lavori dalle 08:15 del 25 novembre 2026 alle 18:00 del 30 novembre 2026 · Da 3799 m a est di Guéret est fino a 8462 m a ovest di Jarnages · Direzione Montluçon (da Bellac)",
    "tipo": "lavori",
    "quando": "2026-11-25T17:43:09.064+01:00",
    "corsie": "",
@@ -5744,7 +5885,7 @@
   {
    "id": "c80d3b59c164adca",
    "strada": "N145 (Francia)",
-   "testo": "lavori dalle 08:15 del 25 novembre 2026 alle 18:00 del 30 novembre 2026 · Causa cantiere · Da 3959 m a l'est di Guéret est fino a 7962 m a l'ovest di Jarnages · Direzione Montluçon (da Bellac)",
+   "testo": "lavori dalle 08:15 del 25 novembre 2026 alle 18:00 del 30 novembre 2026 · Causa cantiere · Da 3959 m a est di Guéret est fino a 7962 m a ovest di Jarnages · Direzione Montluçon (da Bellac)",
    "tipo": "lavori",
    "quando": "2026-11-25T17:43:09.064+01:00",
    "corsie": "corsie ridotte",
@@ -5759,7 +5900,7 @@
   {
    "id": "3fc44f9bee244501",
    "strada": "N113 (Francia)",
-   "testo": "incidente dalle 17:31 del 25 novembre 2026 · 2753 m a l'est di Thomassy · Direzione Montpellier (da Salon-de-Provence)",
+   "testo": "incidente dalle 17:31 del 25 novembre 2026 · 2753 m a est di Thomassy · Direzione Montpellier (da Salon-de-Provence)",
    "tipo": "incidente",
    "quando": "2026-11-25T17:53:26.573+01:00",
    "corsie": "",
@@ -5772,7 +5913,7 @@
   {
    "id": "11d4e84cb103166a",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 21:32 del 22 luglio 2026 · Suite a une reconnaissance del site all'altezza didell’incendie, réouverture di la RD915 accès a Planay con mise en place di un senso unico alternato di traffico. del venerdì 27 novembre a venerdì 4 dicembre à12h.La traffico sera sous senso",
+   "testo": "segnalazione dalle 21:32 del 22 luglio 2026 · A seguito di un reconnaissance del site all'altezza didell’incendie, réouverture di la RD915 accès a Planay con installazione di un senso unico alternato di traffico. del venerdì 27 novembre a venerdì 4 dicembre à12h.La traffico sarà sous s",
    "tipo": "altro",
    "quando": "2026-11-25T18:12:58.939+01:00",
    "corsie": "",
@@ -5965,7 +6106,7 @@
   {
    "id": "424e6480f311ee98",
    "strada": "N22 (Francia)",
-   "testo": "condizioni meteo dalle 20:11 del 25 novembre 2026 · Da 1614 m a l'ovest dell’Hospitalet fino a 0 m a l'est di Pas di la Case",
+   "testo": "condizioni meteo dalle 20:11 del 25 novembre 2026 · Da 1614 m a ovest dell’Hospitalet fino a 0 m a est di Pas di la Case",
    "tipo": "meteo",
    "quando": "2026-11-25T20:11:54.666+01:00",
    "corsie": "",
@@ -5980,7 +6121,7 @@
   {
    "id": "a4e1fd055fc3da0e",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 20:19 del 25 novembre 2026 · 778 m a l'est di Givors centre · Hors corsia di traffico · Su rampa di entrata · Direzione Saint-Étienne (da Lyon)",
+   "testo": "segnalazione dalle 20:19 del 25 novembre 2026 · 778 m a est di Givors centro · Hors corsia di traffico · Su rampa di entrata · Direzione Saint-Étienne (da Lyon)",
    "tipo": "altro",
    "quando": "2026-11-25T20:19:41.414+01:00",
    "corsie": "",
@@ -5993,7 +6134,7 @@
   {
    "id": "e67d4103f163a074",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 20:20 del 25 novembre 2026 · 295 m a l'est di Givors · Hors corsia di traffico · Su rampa di entrata · Direzione Saint-Étienne (da Lyon)",
+   "testo": "segnalazione dalle 20:20 del 25 novembre 2026 · 295 m a est di Givors · Hors corsia di traffico · Su rampa di entrata · Direzione Saint-Étienne (da Lyon)",
    "tipo": "altro",
    "quando": "2026-11-25T20:20:08.201+01:00",
    "corsie": "",
@@ -6006,7 +6147,7 @@
   {
    "id": "9a7fd53446cda17a",
    "strada": "A47 (Francia)",
-   "testo": "lavori dalle 20:46 del 23 novembre 2026 alle 06:00 del 27 novembre 2026 · Da 768 m a l'ovest di Givors fino a 2778 m a l'est di Givors ovest · Direzione Saint-Étienne (da Lyon)",
+   "testo": "lavori dalle 20:46 del 23 novembre 2026 alle 06:00 del 27 novembre 2026 · Da 768 m a ovest di Givors fino a 2778 m a est di Givors ovest · Direzione Saint-Étienne (da Lyon)",
    "tipo": "lavori",
    "quando": "2026-11-25T20:27:40.944+01:00",
    "corsie": "",
@@ -6021,7 +6162,7 @@
   {
    "id": "6411eeb8454a24b5",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 20:27 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · 494 m a l'est di Givors-Châtelaine · Hors corsia di traffico · Su rampa di entrata · Direzione Saint-Étienne (da Lyon)",
+   "testo": "segnalazione dalle 20:27 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · 494 m a est di Givors-Châtelaine · Hors corsia di traffico · Su rampa di entrata · Direzione Saint-Étienne (da Lyon)",
    "tipo": "altro",
    "quando": "2026-11-25T20:27:40.944+01:00",
    "corsie": "",
@@ -6034,7 +6175,7 @@
   {
    "id": "cceab549e9405227",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 20:27 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · 159 m a l'est di Givors centre · Hors corsia di traffico · Su rampa di entrata · Direzione Saint-Étienne (da Lyon)",
+   "testo": "segnalazione dalle 20:27 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · 159 m a est di Givors centro · Hors corsia di traffico · Su rampa di entrata · Direzione Saint-Étienne (da Lyon)",
    "tipo": "altro",
    "quando": "2026-11-25T20:27:40.944+01:00",
    "corsie": "",
@@ -6047,7 +6188,7 @@
   {
    "id": "d4c667f911345dc9",
    "strada": "N94 (Francia)",
-   "testo": "strada chiusa dalle 20:28 del 25 novembre 2026 · Chiusura del passo di MONTGENEVRE in i 2 direzione di CIRCUALTION · Da 2536 m a l'est di Briançon fino a 34 m a l'ovest di Montgenèvre Italie",
+   "testo": "strada chiusa dalle 20:28 del 25 novembre 2026 · Chiusura del passo di MONTGENEVRE in i 2 direzione di CIRCUALTION · Da 2536 m a est di Briançon fino a 34 m a ovest di Montgenèvre Italie",
    "tipo": "chiusura",
    "quando": "2026-11-25T20:31:09.337+01:00",
    "corsie": "carreggiata chiusa",
@@ -6062,7 +6203,7 @@
   {
    "id": "b0d7a1a0cbf5edde",
    "strada": "N10 (Francia)",
-   "testo": "lavori dalle 20:24 del 25 novembre 2026 · Da 5 m a sud di Angoulême centre fino a 335 m a nord di La Couronne · Direzione Bordeaux (da Paris)",
+   "testo": "lavori dalle 20:24 del 25 novembre 2026 · Da 5 m a sud di Angoulême centro fino a 335 m a nord di La Couronne · Direzione Bordeaux (da Paris)",
    "tipo": "lavori",
    "quando": "2026-11-25T20:32:50.525+01:00",
    "corsie": "",
@@ -6077,7 +6218,7 @@
   {
    "id": "2f62a7f13b3b3709",
    "strada": "N10 (Francia)",
-   "testo": "lavori dalle 20:25 del 25 novembre 2026 · Da 5 m a sud di Angoulême centre fino a 335 m a nord di La Couronne · Hors corsia di traffico · Direzione Bordeaux (da Paris)",
+   "testo": "lavori dalle 20:25 del 25 novembre 2026 · Da 5 m a sud di Angoulême centro fino a 335 m a nord di La Couronne · Hors corsia di traffico · Direzione Bordeaux (da Paris)",
    "tipo": "lavori",
    "quando": "2026-11-25T20:32:50.525+01:00",
    "corsie": "corsie ridotte",
@@ -6105,7 +6246,7 @@
   {
    "id": "f5e5f21dc013d2fb",
    "strada": "A630 (Francia)",
-   "testo": "lavori dalle 20:33 del 25 novembre 2026 · Da 2313 m a l'est di Bordeaux - Lac fino a 273 m a l'ovest di Lormont - Carbon-Blanc",
+   "testo": "lavori dalle 20:33 del 25 novembre 2026 · Da 2313 m a est di Bordeaux - Lac fino a 273 m a ovest di Lormont - Carbon-Blanc",
    "tipo": "lavori",
    "quando": "2026-11-25T20:34:58.485+01:00",
    "corsie": "",
@@ -6120,7 +6261,7 @@
   {
    "id": "77be41d81e567f11",
    "strada": "A630 (Francia)",
-   "testo": "lavori dalle 20:34 del 25 novembre 2026 · Da 277 m a l'ovest di Lormont - Carbon-Blanc fino a 2313 m a l'est di Bordeaux - Lac",
+   "testo": "lavori dalle 20:34 del 25 novembre 2026 · Da 277 m a ovest di Lormont - Carbon-Blanc fino a 2313 m a est di Bordeaux - Lac",
    "tipo": "lavori",
    "quando": "2026-11-25T20:34:58.485+01:00",
    "corsie": "",
@@ -6180,7 +6321,7 @@
   {
    "id": "fea52d774ab36cc9",
    "strada": "N814 (Francia)",
-   "testo": "lavori dalle 20:39 del 25 novembre 2026 · Lavori di costruzione · Da 335 m a l'est di Caen Côte di Nacre fino a 112 m a l'ovest di Caen Montalivet",
+   "testo": "lavori dalle 20:39 del 25 novembre 2026 · Lavori di costruzione · Da 335 m a est di Caen Côte di Nacre fino a 112 m a ovest di Caen Montalivet",
    "tipo": "lavori",
    "quando": "2026-11-25T20:39:38.117+01:00",
    "corsie": "",
@@ -6195,7 +6336,7 @@
   {
    "id": "05fd47fbd4c15a6c",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 20:39 del 25 novembre 2026 · 248 m a l'ovest di Caen Route di Lion-sur-Mer · Hors corsia di traffico · Su rampa di entrata",
+   "testo": "segnalazione dalle 20:39 del 25 novembre 2026 · 248 m a ovest di Caen Route di Lion-sur-Mer · Hors corsia di traffico · Su rampa di entrata",
    "tipo": "altro",
    "quando": "2026-11-25T20:39:44.249+01:00",
    "corsie": "",
@@ -6208,7 +6349,7 @@
   {
    "id": "82ce25eea3222698",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 20:39 del 25 novembre 2026 · 427 m a l'ovest di Caen Pierre Heuzé · Hors corsia di traffico · Su rampa di entrata",
+   "testo": "segnalazione dalle 20:39 del 25 novembre 2026 · 427 m a ovest di Caen Pierre Heuzé · Hors corsia di traffico · Su rampa di entrata",
    "tipo": "altro",
    "quando": "2026-11-25T20:39:48.485+01:00",
    "corsie": "",
@@ -6221,7 +6362,7 @@
   {
    "id": "e1b34bc83bc47f28",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 20:39 del 25 novembre 2026 · 94 m a l'ovest di Caen Porte di Angleterre · Hors corsia di traffico · Su rampa di entrata",
+   "testo": "segnalazione dalle 20:39 del 25 novembre 2026 · 94 m a ovest di Caen Porte di Angleterre · Hors corsia di traffico · Su rampa di entrata",
    "tipo": "altro",
    "quando": "2026-11-25T20:39:51.636+01:00",
    "corsie": "",
@@ -6234,7 +6375,7 @@
   {
    "id": "5ec4f51ecb9774ac",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 20:40 del 25 novembre 2026 · 620 m a l'ovest di Caen Porte di Angleterre · Hors corsia di traffico · Su rampa di entrata",
+   "testo": "segnalazione dalle 20:40 del 25 novembre 2026 · 620 m a ovest di Caen Porte di Angleterre · Hors corsia di traffico · Su rampa di entrata",
    "tipo": "altro",
    "quando": "2026-11-25T20:40:05.751+01:00",
    "corsie": "",
@@ -6247,7 +6388,7 @@
   {
    "id": "ce795f2c57553dba",
    "strada": "N814 (Francia)",
-   "testo": "segnalazione dalle 20:40 del 25 novembre 2026 · 858 m a l'ovest di viadotto di Calix",
+   "testo": "segnalazione dalle 20:40 del 25 novembre 2026 · 858 m a ovest di viadotto di Calix",
    "tipo": "altro",
    "quando": "2026-11-25T20:40:09.872+01:00",
    "corsie": "",
@@ -6260,7 +6401,7 @@
   {
    "id": "0f0c8e8e39bdda66",
    "strada": "N136 (Francia)",
-   "testo": "lavori dalle 20:00 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · Da 2634 m a l'est di Rennes - Porte di Nantes - Por fino a 1856 m a l'ovest di Rennes - Porte di Beaulieu",
+   "testo": "lavori dalle 20:00 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · Da 2634 m a est di Rennes - Porte di Nantes - Por fino a 1856 m a ovest di Rennes - Porte di Beaulieu",
    "tipo": "lavori",
    "quando": "2026-11-25T20:40:44.700+01:00",
    "corsie": "",
@@ -6275,7 +6416,7 @@
   {
    "id": "b2327c90c55fe328",
    "strada": "A50 (Francia)",
-   "testo": "strada chiusa dalle 20:43 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · Da 0 m a l'est di Menpenti fino a 407 m a l'ovest di Aubagne · Direzione Toulon (da Marseille)",
+   "testo": "strada chiusa dalle 20:43 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · Da 0 m a est di Menpenti fino a 407 m a ovest di Aubagne · Direzione Toulon (da Marseille)",
    "tipo": "chiusura",
    "quando": "2026-11-25T20:44:14.756+01:00",
    "corsie": "carreggiata chiusa",
@@ -6290,7 +6431,7 @@
   {
    "id": "7f2578d2347623c8",
    "strada": "A50 (Francia)",
-   "testo": "lavori dalle 20:44 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · Chiusura di LA traffico · Da 0 m a l'est di Menpenti fino a 407 m a l'ovest di Aubagne · Direzione Toulon (da Marseille)",
+   "testo": "lavori dalle 20:44 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · Chiusura di LA traffico · Da 0 m a est di Menpenti fino a 407 m a ovest di Aubagne · Direzione Toulon (da Marseille)",
    "tipo": "lavori",
    "quando": "2026-11-25T20:44:14.756+01:00",
    "corsie": "",
@@ -6335,7 +6476,7 @@
   {
    "id": "5817c0596aaa3222",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 20:30 del 23 novembre 2026 alle 06:00 del 27 novembre 2026 · Lavori di rénovation del galleria di ponte di Claix. chiusura di la N85 in i 2 direzione di traffico dal 23/11 al 27/11, les nuits dalle 20:30 alle 06:00",
+   "testo": "lavori dalle 20:30 del 23 novembre 2026 alle 06:00 del 27 novembre 2026 · Lavori di rénovation del galleria di ponte di Claix. chiusura di la N85 in i 2 direzione di traffico dal 23/11 al 27/11, i notte dalle 20:30 alle 06:00",
    "tipo": "lavori",
    "quando": "2026-11-25T20:46:15.498+01:00",
    "corsie": "",
@@ -6380,7 +6521,7 @@
   {
    "id": "ee01ed9ce223495f",
    "strada": "A47 (Francia)",
-   "testo": "lavori dalle 20:41 del 25 novembre 2026 · Da 0 m a l'ovest di Ternay fino a 132 m a l'est di Givors · Direzione Saint-Étienne (da Lyon)",
+   "testo": "lavori dalle 20:41 del 25 novembre 2026 · Da 0 m a ovest di Ternay fino a 132 m a est di Givors · Direzione Saint-Étienne (da Lyon)",
    "tipo": "lavori",
    "quando": "2026-11-25T20:46:47.040+01:00",
    "corsie": "",
@@ -6395,7 +6536,7 @@
   {
    "id": "08f82a5ec23cac15",
    "strada": "A47 (Francia)",
-   "testo": "strada chiusa dalle 20:46 del 25 novembre 2026 · 132 m a l'est di Givors · Direzione Saint-Étienne (da Lyon)",
+   "testo": "strada chiusa dalle 20:46 del 25 novembre 2026 · 132 m a est di Givors · Direzione Saint-Étienne (da Lyon)",
    "tipo": "chiusura",
    "quando": "2026-11-25T20:46:47.040+01:00",
    "corsie": "carreggiata chiusa",
@@ -6423,7 +6564,7 @@
   {
    "id": "d817b08956fb9808",
    "strada": "N4 (Francia)",
-   "testo": "lavori dalle 20:50 del 25 novembre 2026 · Da 0 m a l'est di Vitry-le-François fino a 380 m a l'ovest di Vitry-le-François · GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Vitry-Le-François/CEI Frignicourt · Direzione Allemagne - Freiburg-im-Breisgau (da Paris)",
+   "testo": "lavori dalle 20:50 del 25 novembre 2026 · Da 0 m a est di Vitry-le-François fino a 380 m a ovest di Vitry-le-François · GE_DIRE/Service regionale d’gestione Grand Est (SREX)/District Vitry-Le-François/CEI Frignicourt · Direzione Allemagne - Freiburg-im-Breisgau (da Paris)",
    "tipo": "lavori",
    "quando": "2026-11-25T20:50:56.328+01:00",
    "corsie": "",
@@ -6453,7 +6594,7 @@
   {
    "id": "555a73c213de9407",
    "strada": "A86 (Francia)",
-   "testo": "lavori dalle 20:58 del 25 novembre 2026 · Da 949 m a l'est di Nanterre Université fino a 992 m a l'ovest di Gennevilliers centre · Direzione Versailles (da Rueil-Malmaison)",
+   "testo": "lavori dalle 20:58 del 25 novembre 2026 · Da 949 m a est di Nanterre Université fino a 992 m a ovest di Gennevilliers centro · Direzione Versailles (da Rueil-Malmaison)",
    "tipo": "lavori",
    "quando": "2026-11-25T20:59:05.011+01:00",
    "corsie": "",
@@ -6468,7 +6609,7 @@
   {
    "id": "7be29bc1c8c669c6",
    "strada": "A86 (Francia)",
-   "testo": "lavori dalle 20:58 del 25 novembre 2026 · Da 949 m a l'est di Nanterre Université fino a 992 m a l'ovest di Gennevilliers centre · Direzione Versailles (da Rueil-Malmaison)",
+   "testo": "lavori dalle 20:58 del 25 novembre 2026 · Da 949 m a est di Nanterre Université fino a 992 m a ovest di Gennevilliers centro · Direzione Versailles (da Rueil-Malmaison)",
    "tipo": "lavori",
    "quando": "2026-11-25T20:59:05.011+01:00",
    "corsie": "",
@@ -6483,7 +6624,7 @@
   {
    "id": "36336c92662c9c53",
    "strada": "A86 (Francia)",
-   "testo": "strada chiusa dalle 20:59 del 25 novembre 2026 · Da 23 m a l'est di Nanterre Université fino a 543 m a l'ovest di Colombes - Bezons · Direzione Versailles (da Rueil-Malmaison)",
+   "testo": "strada chiusa dalle 20:59 del 25 novembre 2026 · Da 23 m a est di Nanterre Université fino a 543 m a ovest di Colombes - Bezons · Direzione Versailles (da Rueil-Malmaison)",
    "tipo": "chiusura",
    "quando": "2026-11-25T21:00:04.691+01:00",
    "corsie": "carreggiata chiusa",
@@ -6498,7 +6639,7 @@
   {
    "id": "12d79de21bad5e27",
    "strada": "A86 (Francia)",
-   "testo": "lavori dalle 20:59 del 25 novembre 2026 · Da 23 m a l'est di Nanterre Université fino a 543 m a l'ovest di Colombes - Bezons · Direzione Versailles (da Rueil-Malmaison)",
+   "testo": "lavori dalle 20:59 del 25 novembre 2026 · Da 23 m a est di Nanterre Université fino a 543 m a ovest di Colombes - Bezons · Direzione Versailles (da Rueil-Malmaison)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:00:04.691+01:00",
    "corsie": "",
@@ -6513,7 +6654,7 @@
   {
    "id": "c99bed48c4da46e6",
    "strada": "A86 (Francia)",
-   "testo": "strada chiusa dalle 21:00 del 25 novembre 2026 · Da 416 m a l'est di Argenteuil fino a 18 m a l'ovest di Gennevilliers · Direzione Versailles (da Rueil-Malmaison)",
+   "testo": "strada chiusa dalle 21:00 del 25 novembre 2026 · Da 416 m a est di Argenteuil fino a 18 m a ovest di Gennevilliers · Direzione Versailles (da Rueil-Malmaison)",
    "tipo": "chiusura",
    "quando": "2026-11-25T21:01:04.097+01:00",
    "corsie": "carreggiata chiusa",
@@ -6528,7 +6669,7 @@
   {
    "id": "f8c213e58f8d419b",
    "strada": "A86 (Francia)",
-   "testo": "lavori dalle 20:59 del 25 novembre 2026 · Da 416 m a l'est di Argenteuil fino a 18 m a l'ovest di Gennevilliers · Direzione Versailles (da Rueil-Malmaison)",
+   "testo": "lavori dalle 20:59 del 25 novembre 2026 · Da 416 m a est di Argenteuil fino a 18 m a ovest di Gennevilliers · Direzione Versailles (da Rueil-Malmaison)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:01:04.097+01:00",
    "corsie": "",
@@ -6614,7 +6755,7 @@
   {
    "id": "892145b86fed00b2",
    "strada": "N136 (Francia)",
-   "testo": "lavori dalle 20:36 del 25 novembre 2026 · Da 2634 m a l'est di Rennes - Porte di Nantes - Por fino a 1856 m a l'ovest di Rennes - Porte di Beaulieu",
+   "testo": "lavori dalle 20:36 del 25 novembre 2026 · Da 2634 m a est di Rennes - Porte di Nantes - Por fino a 1856 m a ovest di Rennes - Porte di Beaulieu",
    "tipo": "lavori",
    "quando": "2026-11-25T21:15:04.622+01:00",
    "corsie": "",
@@ -6629,7 +6770,7 @@
   {
    "id": "cd21b44b41e2af2a",
    "strada": "N136 (Francia)",
-   "testo": "lavori dalle 21:14 del 25 novembre 2026 · Da 181 m a l'est di Rennes - Porte dei Loges fino a 320 m a l'ovest di Rennes - Porte di Valette",
+   "testo": "lavori dalle 21:14 del 25 novembre 2026 · Da 181 m a est di Rennes - Porte dei Loges fino a 320 m a ovest di Rennes - Porte di Valette",
    "tipo": "lavori",
    "quando": "2026-11-25T21:15:04.622+01:00",
    "corsie": "corsie ridotte",
@@ -6644,7 +6785,7 @@
   {
    "id": "9295f8e29e753f47",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 20:54 del 25 novembre 2026 · 1355 m a l'ovest di Rennes - Porte dei Loges · Hors corsia di traffico · Su rampa di entrata",
+   "testo": "segnalazione dalle 20:54 del 25 novembre 2026 · 1355 m a ovest di Rennes - Porte dei Loges · Hors corsia di traffico · Su rampa di entrata",
    "tipo": "altro",
    "quando": "2026-11-25T21:15:04.622+01:00",
    "corsie": "",
@@ -6657,7 +6798,7 @@
   {
    "id": "9455e8c454c66700",
    "strada": "N136 (Francia)",
-   "testo": "strada chiusa dalle 20:37 del 25 novembre 2026 · Da 2634 m a l'est di Rennes - Porte di Nantes - Por fino a 1856 m a l'ovest di Rennes - Porte di Beaulieu",
+   "testo": "strada chiusa dalle 20:37 del 25 novembre 2026 · Da 2634 m a est di Rennes - Porte di Nantes - Por fino a 1856 m a ovest di Rennes - Porte di Beaulieu",
    "tipo": "chiusura",
    "quando": "2026-11-25T21:15:04.622+01:00",
    "corsie": "carreggiata chiusa",
@@ -6672,7 +6813,7 @@
   {
    "id": "518e31f7101fdc17",
    "strada": "N31 (Francia)",
-   "testo": "lavori dalle 18:00 del 11 dicembre 2025 · Arrêté n. T26-605 AI annule e remplace l'Arrêté n. T 26-332 AI · Da 4910 m a l'est di Sermoise est fino a 3856 m a l'ovest di Bazoches-sur-Vesle",
+   "testo": "lavori dalle 18:00 del 11 dicembre 2025 · Arrêté n. T26-605 AI annule e remplace l'Arrêté n. T 26-332 AI · Da 4910 m a est di Sermoise est fino a 3856 m a ovest di Bazoches-sur-Vesle",
    "tipo": "lavori",
    "quando": "2026-11-25T21:21:38.636+01:00",
    "corsie": "corsie ridotte",
@@ -6687,7 +6828,7 @@
   {
    "id": "f6ac0660cc55db52",
    "strada": "N31 (Francia)",
-   "testo": "segnalazione dalle 17:25 del 12 dicembre 2025 · Da 4910 m a l'est di Sermoise est fino a 3856 m a l'ovest di Bazoches-sur-Vesle · Direzione Reims (da Beauvais)",
+   "testo": "segnalazione dalle 17:25 del 12 dicembre 2025 · Da 4910 m a est di Sermoise est fino a 3856 m a ovest di Bazoches-sur-Vesle · Direzione Reims (da Beauvais)",
    "tipo": "altro",
    "quando": "2026-11-25T21:21:38.636+01:00",
    "corsie": "",
@@ -6702,7 +6843,7 @@
   {
    "id": "25481fa6c29d1eb4",
    "strada": "N31 (Francia)",
-   "testo": "lavori dalle 17:25 del 12 dicembre 2025 · Da 3856 m a l'ovest di Bazoches-sur-Vesle fino a 4910 m a l'est di Sermoise est · Direzione Beauvais (da Reims)",
+   "testo": "lavori dalle 17:25 del 12 dicembre 2025 · Da 3856 m a ovest di Bazoches-sur-Vesle fino a 4910 m a est di Sermoise est · Direzione Beauvais (da Reims)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:21:38.636+01:00",
    "corsie": "corsie ridotte",
@@ -6837,7 +6978,7 @@
   {
    "id": "86bf68e5469f5424",
    "strada": "A86 (Francia)",
-   "testo": "lavori dalle 21:23 del 25 novembre 2026 · Da 26 m a l'est di La Belle Épine fino a 879 m a l'ovest di Sénia - Thiais · Direzione Rueil-Malmaison (da Versailles)",
+   "testo": "lavori dalle 21:23 del 25 novembre 2026 · Da 26 m a est di La Belle Épine fino a 879 m a ovest di Sénia - Thiais · Direzione Rueil-Malmaison (da Versailles)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:25:35.404+01:00",
    "corsie": "",
@@ -6867,7 +7008,7 @@
   {
    "id": "3190871beffae642",
    "strada": "A86 (Francia)",
-   "testo": "lavori dalle 21:23 del 25 novembre 2026 · Da 467 m a l'est di Sénia - Thiais fino a 58 m a l'ovest di Valenton - Villeneuve-Saint-Ge · Direzione Rueil-Malmaison (da Versailles)",
+   "testo": "lavori dalle 21:23 del 25 novembre 2026 · Da 467 m a est di Sénia - Thiais fino a 58 m a ovest di Valenton - Villeneuve-Saint-Ge · Direzione Rueil-Malmaison (da Versailles)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:25:35.404+01:00",
    "corsie": "",
@@ -6882,7 +7023,7 @@
   {
    "id": "135e1547275e8d65",
    "strada": "N406 (Francia)",
-   "testo": "lavori dalle 21:23 del 25 novembre 2026 · Da 0 m a l'ovest di Carrefour Pompadour fino a 0 m a l'est di A86 Créteil · Direzione Créteil (da Boissy-Saint-Léger (N19))",
+   "testo": "lavori dalle 21:23 del 25 novembre 2026 · Da 0 m a ovest di Carrefour Pompadour fino a 0 m a est di A86 Créteil · Direzione Créteil (da Boissy-Saint-Léger (N19))",
    "tipo": "lavori",
    "quando": "2026-11-25T21:25:35.404+01:00",
    "corsie": "",
@@ -6897,7 +7038,7 @@
   {
    "id": "cdf3d0b74e813282",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 21:23 del 25 novembre 2026 · Da 0 m a l'ovest di A86 Créteil fino a 0 m a l'est di A86 Créteil · Direzione Créteil (da Boissy-Saint-Léger (N19))",
+   "testo": "lavori dalle 21:23 del 25 novembre 2026 · Da 0 m a ovest di A86 Créteil fino a 0 m a est di A86 Créteil · Direzione Créteil (da Boissy-Saint-Léger (N19))",
    "tipo": "lavori",
    "quando": "2026-11-25T21:25:35.404+01:00",
    "corsie": "",
@@ -6910,7 +7051,7 @@
   {
    "id": "9b140adf7aefafb7",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 21:23 del 25 novembre 2026 · Da 95 m a l'est di Maisons-Alfort fino a 546 m a l'ovest di viadotto di la Marne · Su rampa di entrata · Direzione Rueil-Malmaison (da Versailles)",
+   "testo": "lavori dalle 21:23 del 25 novembre 2026 · Da 95 m a est di Maisons-Alfort fino a 546 m a ovest di viadotto di la Marne · Su rampa di entrata · Direzione Rueil-Malmaison (da Versailles)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:25:35.404+01:00",
    "corsie": "",
@@ -6923,7 +7064,7 @@
   {
    "id": "bfd6d7e0d23a18bf",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 21:23 del 25 novembre 2026 · Da 1370 m a l'ovest di A4 / A86 (Créteil) fino a 1208 m a l'est di Alfortville · Direzione Paris (da Strasbourg)",
+   "testo": "lavori dalle 21:23 del 25 novembre 2026 · Da 1370 m a ovest di A4 / A86 (Créteil) fino a 1208 m a est di Alfortville · Direzione Paris (da Strasbourg)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:25:35.404+01:00",
    "corsie": "",
@@ -6936,7 +7077,7 @@
   {
    "id": "b4b42e6e7289d559",
    "strada": "A86 (Francia)",
-   "testo": "lavori dalle 21:23 del 25 novembre 2026 · Da 2443 m a l'est di Choisy-le-Roi fino a 0 m a l'ovest di viadotto di la Marne · Direzione Rueil-Malmaison (da Versailles)",
+   "testo": "lavori dalle 21:23 del 25 novembre 2026 · Da 2443 m a est di Choisy-le-Roi fino a 0 m a ovest di viadotto di la Marne · Direzione Rueil-Malmaison (da Versailles)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:25:35.404+01:00",
    "corsie": "",
@@ -6979,7 +7120,7 @@
   {
    "id": "621fe780fbe2f99c",
    "strada": "N28 (Francia)",
-   "testo": "lavori dalle 21:25 del 25 novembre 2026 · Da 19 m a sud di Les-Hauts-de-Rouen fino a 200 m a nord di Rouen Saint-Paul centre Ville · Direzione Rouen (da Isneauville)",
+   "testo": "lavori dalle 21:25 del 25 novembre 2026 · Da 19 m a sud di Les-Hauts-de-Rouen fino a 200 m a nord di Rouen Saint-Paul centro Ville · Direzione Rouen (da Isneauville)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:26:24.464+01:00",
    "corsie": "",
@@ -6994,7 +7135,7 @@
   {
    "id": "142a84400170d3b4",
    "strada": "N28 (Francia)",
-   "testo": "lavori dalle 21:26 del 25 novembre 2026 · Da 200 m a nord di Rouen Saint-Paul centre Ville fino a 10 m a sud di Les-Hauts-de-Rouen · Direzione Isneauville (da Rouen)",
+   "testo": "lavori dalle 21:26 del 25 novembre 2026 · Da 200 m a nord di Rouen Saint-Paul centro Ville fino a 10 m a sud di Les-Hauts-de-Rouen · Direzione Isneauville (da Rouen)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:26:24.464+01:00",
    "corsie": "",
@@ -7037,7 +7178,7 @@
   {
    "id": "3825953d2f089d2a",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 21:30 del 25 novembre 2026 · Da 110 m a l'ovest di Bonneuil-sur-Marne fino a 424 m a l'est di Valenton · Direzione Créteil (da Boissy-Saint-Léger (N19))",
+   "testo": "lavori dalle 21:30 del 25 novembre 2026 · Da 110 m a ovest di Bonneuil-sur-Marne fino a 424 m a est di Valenton · Direzione Créteil (da Boissy-Saint-Léger (N19))",
    "tipo": "lavori",
    "quando": "2026-11-25T21:32:10.070+01:00",
    "corsie": "",
@@ -7050,7 +7191,7 @@
   {
    "id": "6f395e54fafa8fe0",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 21:30 del 25 novembre 2026 · Da 110 m a l'ovest di Bonneuil-sur-Marne fino a 424 m a l'est di Valenton · Su rampa di entrata · Direzione Créteil (da Boissy-Saint-Léger (N19))",
+   "testo": "lavori dalle 21:30 del 25 novembre 2026 · Da 110 m a ovest di Bonneuil-sur-Marne fino a 424 m a est di Valenton · Su rampa di entrata · Direzione Créteil (da Boissy-Saint-Léger (N19))",
    "tipo": "lavori",
    "quando": "2026-11-25T21:32:10.070+01:00",
    "corsie": "",
@@ -7063,7 +7204,7 @@
   {
    "id": "f8332fa68cb26974",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 21:30 del 25 novembre 2026 · Da 1018 m a l'ovest di Valenton fino a 295 m a l'est di Valenton · Su rampa di entrata · Direzione Créteil (da Boissy-Saint-Léger (N19))",
+   "testo": "lavori dalle 21:30 del 25 novembre 2026 · Da 1018 m a ovest di Valenton fino a 295 m a est di Valenton · Su rampa di entrata · Direzione Créteil (da Boissy-Saint-Léger (N19))",
    "tipo": "lavori",
    "quando": "2026-11-25T21:32:10.070+01:00",
    "corsie": "",
@@ -7076,7 +7217,7 @@
   {
    "id": "5cb5a6a7f8072f72",
    "strada": "N406 (Francia)",
-   "testo": "lavori dalle 21:30 del 25 novembre 2026 · Da 110 m a l'ovest di Bonneuil-sur-Marne fino a 0 m a l'est di A86 Créteil · Direzione Créteil (da Boissy-Saint-Léger (N19))",
+   "testo": "lavori dalle 21:30 del 25 novembre 2026 · Da 110 m a ovest di Bonneuil-sur-Marne fino a 0 m a est di A86 Créteil · Direzione Créteil (da Boissy-Saint-Léger (N19))",
    "tipo": "lavori",
    "quando": "2026-11-25T21:32:10.070+01:00",
    "corsie": "",
@@ -7091,7 +7232,7 @@
   {
    "id": "412abdaf26acc089",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 21:30 del 25 novembre 2026 · Da 188 m a l'est di Valenton fino a 346 m a l'ovest di Bonneuil-sur-Marne · Su rampa di entrata · Direzione Boissy-Saint-Léger (N19) (da Créteil)",
+   "testo": "lavori dalle 21:30 del 25 novembre 2026 · Da 188 m a est di Valenton fino a 346 m a ovest di Bonneuil-sur-Marne · Su rampa di entrata · Direzione Boissy-Saint-Léger (N19) (da Créteil)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:32:18.730+01:00",
    "corsie": "",
@@ -7104,7 +7245,7 @@
   {
    "id": "a2b8d12e2f538456",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 21:30 del 25 novembre 2026 · Da 445 m a l'est di Valenton fino a 868 m a l'ovest di Valenton · Su rampa di entrata · Direzione Boissy-Saint-Léger (N19) (da Créteil)",
+   "testo": "lavori dalle 21:30 del 25 novembre 2026 · Da 445 m a est di Valenton fino a 868 m a ovest di Valenton · Su rampa di entrata · Direzione Boissy-Saint-Léger (N19) (da Créteil)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:32:18.730+01:00",
    "corsie": "",
@@ -7117,7 +7258,7 @@
   {
    "id": "482da4f96bbe85b7",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 21:30 del 25 novembre 2026 · Da 194 m a l'est di Carrefour Pompadour fino a 425 m a l'ovest di Valenton · Su rampa di entrata · Direzione Boissy-Saint-Léger (N19) (da Créteil)",
+   "testo": "lavori dalle 21:30 del 25 novembre 2026 · Da 194 m a est di Carrefour Pompadour fino a 425 m a ovest di Valenton · Su rampa di entrata · Direzione Boissy-Saint-Léger (N19) (da Créteil)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:32:18.730+01:00",
    "corsie": "",
@@ -7130,7 +7271,7 @@
   {
    "id": "92ca9131fc2fecc9",
    "strada": "N406 (Francia)",
-   "testo": "lavori dalle 21:30 del 25 novembre 2026 · Da 0 m a l'est di Carrefour Pompadour fino a 110 m a l'ovest di Bonneuil-sur-Marne · Direzione Boissy-Saint-Léger (N19) (da Créteil)",
+   "testo": "lavori dalle 21:30 del 25 novembre 2026 · Da 0 m a est di Carrefour Pompadour fino a 110 m a ovest di Bonneuil-sur-Marne · Direzione Boissy-Saint-Léger (N19) (da Créteil)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:32:18.730+01:00",
    "corsie": "",
@@ -7145,7 +7286,7 @@
   {
    "id": "6cd1811162864de9",
    "strada": "N406 (Francia)",
-   "testo": "lavori dalle 21:30 del 25 novembre 2026 · Da 0 m a l'est di A86 Créteil fino a 0 m a l'ovest di Carrefour Pompadour · Direzione Boissy-Saint-Léger (N19) (da Créteil)",
+   "testo": "lavori dalle 21:30 del 25 novembre 2026 · Da 0 m a est di A86 Créteil fino a 0 m a ovest di Carrefour Pompadour · Direzione Boissy-Saint-Léger (N19) (da Créteil)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:32:18.730+01:00",
    "corsie": "",
@@ -7175,7 +7316,7 @@
   {
    "id": "a41523e30ee6e9f2",
    "strada": "N141 (Francia)",
-   "testo": "lavori dalle 21:39 del 25 novembre 2026 · Da 1027 m a l'ovest di Cognac fino a 17 m a l'est di Cognac · Hors corsia di traffico · Direzione Saintes (da Limoges)",
+   "testo": "lavori dalle 21:39 del 25 novembre 2026 · Da 1027 m a ovest di Cognac fino a 17 m a est di Cognac · Hors corsia di traffico · Direzione Saintes (da Limoges)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:39:59.413+01:00",
    "corsie": "",
@@ -7190,7 +7331,7 @@
   {
    "id": "3ceacae56e43b118",
    "strada": "N141 (Francia)",
-   "testo": "segnalazione dalle 21:39 del 25 novembre 2026 · Da 1027 m a l'ovest di Cognac fino a 17 m a l'est di Cognac · Hors corsia di traffico · Direzione Saintes (da Limoges)",
+   "testo": "segnalazione dalle 21:39 del 25 novembre 2026 · Da 1027 m a ovest di Cognac fino a 17 m a est di Cognac · Hors corsia di traffico · Direzione Saintes (da Limoges)",
    "tipo": "altro",
    "quando": "2026-11-25T21:39:59.413+01:00",
    "corsie": "corsie ridotte",
@@ -7220,7 +7361,7 @@
   {
    "id": "53daa58e832d925f",
    "strada": "A86 (Francia)",
-   "testo": "lavori dalle 21:39 del 25 novembre 2026 · Da 1310 m a l'ovest di Bonneuil-sur-Marne fino a 1438 m a l'est di Choisy-le-Roi · Direzione Versailles (da Rueil-Malmaison)",
+   "testo": "lavori dalle 21:39 del 25 novembre 2026 · Da 1310 m a ovest di Bonneuil-sur-Marne fino a 1438 m a est di Choisy-le-Roi · Direzione Versailles (da Rueil-Malmaison)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:41:13.560+01:00",
    "corsie": "",
@@ -7235,7 +7376,7 @@
   {
    "id": "0d69fa40d7fb6781",
    "strada": "A86 (Francia)",
-   "testo": "lavori dalle 21:39 del 25 novembre 2026 · Da 1310 m a l'ovest di Bonneuil-sur-Marne fino a 1438 m a l'est di Choisy-le-Roi · Direzione Versailles (da Rueil-Malmaison)",
+   "testo": "lavori dalle 21:39 del 25 novembre 2026 · Da 1310 m a ovest di Bonneuil-sur-Marne fino a 1438 m a est di Choisy-le-Roi · Direzione Versailles (da Rueil-Malmaison)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:41:13.560+01:00",
    "corsie": "",
@@ -7250,7 +7391,7 @@
   {
    "id": "e52e36b1e4a6f07e",
    "strada": "A86 (Francia)",
-   "testo": "lavori dalle 21:39 del 25 novembre 2026 · Da 1738 m a l'ovest di Bonneuil-sur-Marne fino a 778 m a l'est di Choisy-le-Roi · Direzione Versailles (da Rueil-Malmaison)",
+   "testo": "lavori dalle 21:39 del 25 novembre 2026 · Da 1738 m a ovest di Bonneuil-sur-Marne fino a 778 m a est di Choisy-le-Roi · Direzione Versailles (da Rueil-Malmaison)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:41:13.560+01:00",
    "corsie": "",
@@ -7265,7 +7406,7 @@
   {
    "id": "a04dffc688929170",
    "strada": "A86 (Francia)",
-   "testo": "lavori dalle 21:39 del 25 novembre 2026 · Da 2398 m a l'ovest di Bonneuil-sur-Marne fino a 3306 m a l'est di Sénia - Thiais · Direzione Versailles (da Rueil-Malmaison)",
+   "testo": "lavori dalle 21:39 del 25 novembre 2026 · Da 2398 m a ovest di Bonneuil-sur-Marne fino a 3306 m a est di Sénia - Thiais · Direzione Versailles (da Rueil-Malmaison)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:41:13.560+01:00",
    "corsie": "",
@@ -7295,7 +7436,7 @@
   {
    "id": "c88de9bf9d5567b1",
    "strada": "A86 (Francia)",
-   "testo": "lavori dalle 21:39 del 25 novembre 2026 · Entretien galleria · Da 50 m a l'ovest di Choisy-le-Roi fino a 0 m a l'est di La Belle Épine · Direzione Versailles (da Rueil-Malmaison)",
+   "testo": "lavori dalle 21:39 del 25 novembre 2026 · Entretien galleria · Da 50 m a ovest di Choisy-le-Roi fino a 0 m a est di La Belle Épine · Direzione Versailles (da Rueil-Malmaison)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:41:13.560+01:00",
    "corsie": "",
@@ -7310,7 +7451,7 @@
   {
    "id": "9da951d83d259349",
    "strada": "N94 (Francia)",
-   "testo": "condizioni meteo dalle 21:49 del 25 novembre 2026 · Da 10273 m a l'est di Belvédère-du-Pelvoux fino a 0 m a l'ovest di Montgenèvre Italie",
+   "testo": "condizioni meteo dalle 21:49 del 25 novembre 2026 · Da 10273 m a est di Belvédère-du-Pelvoux fino a 0 m a ovest di Montgenèvre Italie",
    "tipo": "meteo",
    "quando": "2026-11-25T21:50:04.774+01:00",
    "corsie": "",
@@ -7338,7 +7479,7 @@
   {
    "id": "cb0c49df04c90643",
    "strada": "A2 (Francia)",
-   "testo": "lavori dalle 20:55 del 25 novembre 2026 · Da 28 m a l'ovest di Saint-Saulve fino a 938 m a l'est di Z.I. Marly 1 · Direzione Paris (da Belgique - Bruxelles)",
+   "testo": "lavori dalle 20:55 del 25 novembre 2026 · Da 28 m a ovest di Saint-Saulve fino a 938 m a est di Z.I. Marly 1 · Direzione Paris (da Belgique - Bruxelles)",
    "tipo": "lavori",
    "quando": "2026-11-25T21:52:20.472+01:00",
    "corsie": "",
@@ -7353,7 +7494,7 @@
   {
    "id": "36f59a48c9e34a14",
    "strada": "A55 (Francia)",
-   "testo": "lavori dalle 22:11 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · Chiusura di LA traffico · Da 5708 m a sud di Les Pennes Mirabeau fino a 1026 m a nord di La Calade · Direzione Marseille (da Martigues)",
+   "testo": "lavori dalle 22:11 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · Chiusura di LA traffico · Da 5708 m a sud di i Pennes Mirabeau fino a 1026 m a nord di La Calade · Direzione Marseille (da Martigues)",
    "tipo": "lavori",
    "quando": "2026-11-25T22:12:05.106+01:00",
    "corsie": "",
@@ -7368,7 +7509,7 @@
   {
    "id": "6251f12ac639cba7",
    "strada": "A55 (Francia)",
-   "testo": "strada chiusa dalle 22:11 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · Da 6690 m a sud di Les Pennes Mirabeau fino a 1026 m a nord di La Calade · Direzione Marseille (da Martigues)",
+   "testo": "strada chiusa dalle 22:11 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · Da 6690 m a sud di i Pennes Mirabeau fino a 1026 m a nord di La Calade · Direzione Marseille (da Martigues)",
    "tipo": "chiusura",
    "quando": "2026-11-25T22:12:05.106+01:00",
    "corsie": "carreggiata chiusa",
@@ -7424,7 +7565,7 @@
   {
    "id": "1ce865dc8c7aca79",
    "strada": "N814 (Francia)",
-   "testo": "lavori dalle 22:20 del 25 novembre 2026 · Da 1303 m a l'ovest di Caen Suisse Normande fino a 263 m a l'est di Caen Éterville",
+   "testo": "lavori dalle 22:20 del 25 novembre 2026 · Da 1303 m a ovest di Caen Suisse Normande fino a 263 m a est di Caen Éterville",
    "tipo": "lavori",
    "quando": "2026-11-25T22:20:04.598+01:00",
    "corsie": "",
@@ -7506,7 +7647,7 @@
   {
    "id": "f8c6b836adc22f57",
    "strada": "N12 (Francia)",
-   "testo": "lavori dalle 22:54 del 25 novembre 2026 · Da 1439 m a l'ovest di 13600 fino a 2371 m a l'est di Carrefour dell’Espérance · Direzione Brest (da Paris)",
+   "testo": "lavori dalle 22:54 del 25 novembre 2026 · Da 1439 m a ovest di 13600 fino a 2371 m a est di Carrefour dell’Espérance · Direzione Brest (da Paris)",
    "tipo": "lavori",
    "quando": "2026-11-25T22:55:05.229+01:00",
    "corsie": "",
@@ -7521,7 +7662,7 @@
   {
    "id": "f788857e93829320",
    "strada": "N12 (Francia)",
-   "testo": "lavori dalle 22:54 del 25 novembre 2026 · Da 1439 m a l'ovest di 13600 fino a 2371 m a l'est di Carrefour dell’Espérance · Direzione Brest (da Paris)",
+   "testo": "lavori dalle 22:54 del 25 novembre 2026 · Da 1439 m a ovest di 13600 fino a 2371 m a est di Carrefour dell’Espérance · Direzione Brest (da Paris)",
    "tipo": "lavori",
    "quando": "2026-11-25T22:55:05.229+01:00",
    "corsie": "",
@@ -7592,7 +7733,7 @@
   {
    "id": "3155719f7febe55c",
    "strada": "N141 (Francia)",
-   "testo": "incidente dalle 20:32 del 25 novembre 2026 · 2343 m a l'est di Nieul - Fontafié · Direzione Angoulême (da Limoges)",
+   "testo": "incidente dalle 20:32 del 25 novembre 2026 · 2343 m a est di Nieul - Fontafié · Direzione Angoulême (da Limoges)",
    "tipo": "incidente",
    "quando": "2026-11-25T23:00:30.546+01:00",
    "corsie": "",
@@ -7605,7 +7746,7 @@
   {
    "id": "13e234be79b04833",
    "strada": "N141 (Francia)",
-   "testo": "strada chiusa dalle 22:43 del 25 novembre 2026 · Da 723 m a l'ovest di Chabanais fino a 2343 m a l'est di Nieul - Fontafié · Direzione Angoulême (da Limoges)",
+   "testo": "strada chiusa dalle 22:43 del 25 novembre 2026 · Da 723 m a ovest di Chabanais fino a 2343 m a est di Nieul - Fontafié · Direzione Angoulême (da Limoges)",
    "tipo": "chiusura",
    "quando": "2026-11-25T23:00:30.546+01:00",
    "corsie": "carreggiata chiusa",
@@ -7620,7 +7761,7 @@
   {
    "id": "068e5e6af0e54241",
    "strada": "N141 (Francia)",
-   "testo": "segnalazione dalle 22:43 del 25 novembre 2026 · Uscita n. 70 obligatoire · 14419 m a l'est di Nieul - Fontafié · Direzione Angoulême (da Limoges)",
+   "testo": "segnalazione dalle 22:43 del 25 novembre 2026 · Uscita n. 70 obligatoire · 14419 m a est di Nieul - Fontafié · Direzione Angoulême (da Limoges)",
    "tipo": "altro",
    "quando": "2026-11-25T23:00:30.546+01:00",
    "corsie": "",
@@ -7633,7 +7774,7 @@
   {
    "id": "c4e4e45f6d628c84",
    "strada": "N141 (Francia)",
-   "testo": "segnalazione dalle 22:43 del 25 novembre 2026 · Da 723 m a l'ovest di Chabanais fino a 2343 m a l'est di Nieul - Fontafié · Direzione Angoulême (da Limoges)",
+   "testo": "segnalazione dalle 22:43 del 25 novembre 2026 · Da 723 m a ovest di Chabanais fino a 2343 m a est di Nieul - Fontafié · Direzione Angoulême (da Limoges)",
    "tipo": "altro",
    "quando": "2026-11-25T23:00:30.546+01:00",
    "corsie": "",
@@ -7661,7 +7802,7 @@
   {
    "id": "6e93bd12f102b1d3",
    "strada": "N89 (Francia)",
-   "testo": "lavori dalle 23:10 del 25 novembre 2026 · Da 217 m a l'est di Beychac-et-Caillau fino a 1507 m a l'ovest di 63070 · Direzione Libourne (da Bordeaux)",
+   "testo": "lavori dalle 23:10 del 25 novembre 2026 · Da 217 m a est di Beychac-et-Caillau fino a 1507 m a ovest di 63070 · Direzione Libourne (da Bordeaux)",
    "tipo": "lavori",
    "quando": "2026-11-25T23:11:43.557+01:00",
    "corsie": "",
@@ -7676,7 +7817,7 @@
   {
    "id": "6c2bb22d0aee03f1",
    "strada": "N89 (Francia)",
-   "testo": "lavori dalle 23:11 del 25 novembre 2026 · Da 217 m a l'est di Beychac-et-Caillau fino a 1507 m a l'ovest di 63070 · Direzione Libourne (da Bordeaux)",
+   "testo": "lavori dalle 23:11 del 25 novembre 2026 · Da 217 m a est di Beychac-et-Caillau fino a 1507 m a ovest di 63070 · Direzione Libourne (da Bordeaux)",
    "tipo": "lavori",
    "quando": "2026-11-25T23:11:43.557+01:00",
    "corsie": "corsie ridotte",
@@ -7691,7 +7832,7 @@
   {
    "id": "5d4eb016b9152862",
    "strada": "A31 (Francia)",
-   "testo": "incidente dalle 23:12 del 25 novembre 2026 · 231 m a nord di Thionville - Terville · Hors corsia di traffico · GE_DIRE/Service régional d’exploitation Grand Est (SREX)/District Metz/CEI Fameck · Direzione Lyon (da Luxembourg)",
+   "testo": "incidente dalle 23:12 del 25 novembre 2026 · 231 m a nord di Thionville - Terville · Hors corsia di traffico · GE_DIRE/Service regionale d’gestione Grand Est (SREX)/District Metz/CEI Fameck · Direzione Lyon (da Luxembourg)",
    "tipo": "incidente",
    "quando": "2026-11-25T23:12:55.279+01:00",
    "corsie": "",
@@ -7704,7 +7845,7 @@
   {
    "id": "4f885b04731d0a6d",
    "strada": "N118 (Francia)",
-   "testo": "incidente dalle 23:18 del 25 novembre 2026 · Su 0 m · 463 m a nord di 14068 · Direzione Les Ulis (A10) (da Sèvres (N10))",
+   "testo": "incidente dalle 23:18 del 25 novembre 2026 · Su 0 m · 463 m a nord di 14068 · Direzione i Ulis (A10) (da Sèvres (N10))",
    "tipo": "incidente",
    "quando": "2026-11-25T23:19:03.385+01:00",
    "corsie": "",
@@ -7717,7 +7858,7 @@
   {
    "id": "3c947d23b714568d",
    "strada": "N122 (Francia)",
-   "testo": "condizioni meteo dalle 23:23 del 25 novembre 2026 · 29602 m a l'ovest di Massiac · AURA_DIRMC/District Centre AURA/CEI Murat",
+   "testo": "condizioni meteo dalle 23:23 del 25 novembre 2026 · 29602 m a ovest di Massiac · AURA_DIRMC/District centro AURA/CEI Murat",
    "tipo": "meteo",
    "quando": "2026-11-25T23:23:47.267+01:00",
    "corsie": "",

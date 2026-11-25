@@ -1169,5 +1169,103 @@
 "Ponte Sul Castrocucco - SS585|15.3,40.4,16.0,39.7": null,
 "Dell aeroporto Della Malpensa": null,
 "Gallarate - SS341 Gallaratese": null,
-"S.G.C. per Giulianova|12.1,43.0,14.0,41.5": null
+"S.G.C. per Giulianova|12.1,43.0,14.0,41.5": null,
+"Trieste": [
+45.6496485,
+13.7772781
+],
+"Viale Monte Ceneri incrocio Viale Certosa|8.8,46.1,10.8,45.1": null,
+"Variante Di Gioa Del Colle|16.6,41.1,17.3,40.4": null,
+"Livorno": [
+42.7902379,
+10.3402239
+],
+"SS16 Adriatica": [
+42.262098,
+14.5002315
+],
+"Svincolo SS33 del Sempione": null,
+"RA02": null,
+"S.s. 1 Aurelia": [
+44.1125891,
+8.244297
+],
+"SS126 Sud Occ. Sarda": null,
+"Pozzuoli": [
+40.822643,
+14.1219109
+],
+"Aosta": [
+45.7373075,
+7.3204025
+],
+"Svincolo A2 Raccordo di Reggio Calabria": null,
+"da Bologna": [
+41.913637,
+12.5208131
+],
+"da Napoli": [
+40.8358846,
+14.2487679
+],
+"FR|Archamps|": [
+46.1354538,
+6.1332458
+],
+"FR|Annemasse|": [
+46.1934005,
+6.2341093
+],
+"FR|Vallard|": [
+46.1859095,
+6.2041728
+],
+"FR|Bellegarde|Ain": [
+46.1116515,
+5.8258037
+],
+"FR|tunnel de L'Epine|Savoie": [
+45.5340649,
+5.8396718
+],
+"FR|Evry-Grégy|": [
+48.6531178,
+2.6380188
+],
+"FR|Moissy-Cramayel|Seine et Marne": [
+48.6272298,
+2.5937073
+],
+"FR|Genève|": [
+46.3310543,
+-0.474422
+],
+"FR|Annecy|": [
+45.8992348,
+6.1288847
+],
+"FR|Aix-les-Bains|Savoie": [
+45.6886292,
+5.9146362
+],
+"FR|Pau|": [
+43.2957547,
+-0.3685668
+],
+"FR|Bordeaux|": [
+44.841225,
+-0.5800364
+],
+"FR|Beynost|AIN": [
+45.8400182,
+5.0009242
+],
+"FR|Rondeau|Isère": [
+45.1648259,
+5.7109699
+],
+"FR|Chesnes|Isère": [
+45.6663133,
+5.1022372
+]
 }
