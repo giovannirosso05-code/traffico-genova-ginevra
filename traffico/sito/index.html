@@ -108,7 +108,7 @@ details[open]{padding-bottom:12px}
   </div>
 
   <div class="card" id="atmb" hidden>
-    <div><b>A40 Ginevra–Chamonix e Traforo del Monte Bianco</b> <span class="muted">· autostrade francesi a pagamento (ATMB)</span></div>
+    <div><b>Autostrade francesi a pagamento</b> <span class="muted">· A40, A41, A43, A6, Traforo del Monte Bianco e altre (ATMB, APRR)</span></div>
     <div id="atmbbody"></div>
   </div>
 
@@ -332,15 +332,18 @@ $('from').addEventListener('input',()=>{if($('from').value!=='La mia posizione')
   $('upd').textContent='Dati aggiornati '+t.toLocaleString('it-IT',{dateStyle:'short',timeStyle:'short'})+' · aggiornamento ogni ora · Fonti: '+Object.entries(d.fonti||{Italia:'ok'}).map(([k,v])=>k+' '+(String(v).startsWith('ok')?'✓':'✗ ('+v+')')).join(', ')+'.';
   const live=EV.filter(e=>fase(e)!=='terminato');
   drawEvents(live);listEvents(live,'Tutti i problemi segnalati');
-  fetch('atmb.json?'+Date.now()).then(r=>r.json()).then(a=>{
+  let showAll=false;const drawFR=a=>{
    const ev=a.eventi||[],ch=ev.filter(x=>x.tipo==='chiusura');
    let b=a.tunnel?`<div>Traforo del Monte Bianco: <b>${esc(a.tunnel)}</b></div>`:'';
-   b+=ev.length?ev.map(x=>`<div class="ev"><div><span class="pill ${x.tipo==='chiusura'?'ko':'mid'}">${esc(x.tipo)}</span> ${hl(x.titolo)}</div>${x.testo?`<div class="muted">${esc(x.testo)}</div>`:''}<div><a href="${/^https:\/\//.test(x.url)?esc(x.url):'#'}" target="_blank" rel="noopener">Apri su ATMB</a></div></div>`).join(''):'<div class="muted">Nessun avviso pubblicato da ATMB.</div>';
-   if(a.stato!=='ok')b+=`<div class="err">Lettura ATMB non riuscita (${esc(a.stato)}): controlla il sito ufficiale.</div>`;
-   b+=`<div class="muted">Letto dal sito ATMB alle ${new Date(a.aggiornato).toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'})}.</div>`;
+   b+=ev.length?[...ev].sort((p,q)=>(q.tipo==='chiusura')-(p.tipo==='chiusura')).slice(0,showAll?999:6).map(x=>`<div class="ev"><div><span class="pill ${x.tipo==='chiusura'?'ko':'mid'}">${esc(x.tipo)}</span> <span class="muted">${esc(x.gestore||'')}</span> ${hl(x.titolo)}</div>${x.testo?`<div class="muted">${esc(x.testo)}</div>`:''}<div><a href="${/^https:\/\//.test(x.url)?esc(x.url):'#'}" target="_blank" rel="noopener">Apri sul sito ufficiale</a></div></div>`).join(''):'<div class="muted">Nessun avviso pubblicato da ATMB.</div>';
+   if(a.stato!=='ok')b+=`<div class="err">Lettura non riuscita (${esc(a.stato)}): controlla il sito ufficiale.</div>`;
+   b+=`<div class="muted">Letto dai siti ATMB e APRR alle ${new Date(a.aggiornato).toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'})}.</div>`;
+   if(ev.length>6&&!showAll)b+=`<button type="button" class="ghost" id="atmbmore">Mostra tutti (${ev.length})</button>`;
    $('atmbbody').innerHTML=b;$('atmb').hidden=false;
+   const mb=$('atmbmore');if(mb)mb.onclick=()=>{showAll=true;drawFR(a)};
    if(ch.length)$('atmb').style.borderColor=css('--bad');
-  }).catch(()=>{});
+  };
+  fetch('atmb.json?'+Date.now()).then(r=>r.json()).then(drawFR).catch(()=>{});
   let s=null;try{s=JSON.parse(localStorage.getItem('viaggio'))}catch(e){}
   if(s&&s.f&&s.t&&s.f!=='La mia posizione'){$('from').value=s.f;$('to').value=s.t;route()}
  }catch(e){$('upd').textContent='Dati sul traffico non disponibili al momento.'}

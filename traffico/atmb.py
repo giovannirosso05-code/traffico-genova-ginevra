@@ -24,7 +24,7 @@ def meta(h, nome):
     return html.unescape(m.group(1)).strip() if m else ""
 
 risultato = {"aggiornato": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
-             "fonte": "ATMB (www.atmb.com)", "stato": "ok", "tunnel": "", "eventi": []}
+             "fonte": "ATMB e APRR (siti ufficiali)", "stato": "ok", "tunnel": "", "eventi": []}
 try:
     home = leggi(PAGINE[0])
     t = pulito(home)
@@ -48,7 +48,29 @@ try:
         testo = (titolo + " " + descr).lower()
         tipo = "chiusura" if re.search(r"fermeture|coupure|ferm[ée]|interruption", testo) else \
                "lavori" if re.search(r"travaux|chantier|r[ée]nov", testo) else "altro"
-        risultato["eventi"].append({"titolo": titolo_it, "testo": descr_it if descr_it != titolo_it else "", "tipo": tipo, "url": u})
+        risultato["eventi"].append({"titolo": titolo_it, "testo": descr_it if descr_it != titolo_it else "", "tipo": tipo, "url": u, "gestore": "ATMB"})
+    # --- APRR / AREA: elenco dei lavori programmati (A40 Mâcon–Ginevra, A41, A43, A6, A39…) ---
+    try:
+        visti = set()
+        for pg in range(8):
+            h = leggi(f"https://voyage.aprr.fr/travaux/previsions-travaux?page={pg}")
+            card = re.findall(r'aprr-news-card__footer-title"><a href="(/[^"]+)">(.*?)</a>', h, re.S)
+            nuovi = [(u, t) for u, t in card if u not in visti]
+            if not nuovi: break
+            for u, t in nuovi:
+                visti.add(u)
+                t = pulito(t)
+                desc = ""
+                if len(visti) <= 40:
+                    try: desc = meta(leggi("https://voyage.aprr.fr" + u), "og:description") or ""
+                    except Exception: pass
+                blob = (t + " " + desc).lower()
+                tipo = "chiusura" if re.search(r"fermeture|ferm[ée]|coupure|interdit", blob) else "lavori"
+                risultato["eventi"].append({"titolo": traduci(t.replace(" - ", " · ")), "testo": traduci(desc)[:300] if desc else "",
+                                            "tipo": tipo, "url": "https://voyage.aprr.fr" + u, "gestore": "APRR"})
+        risultato["aprr"] = f"ok ({len(visti)} lavori)"
+    except Exception as e:
+        risultato["aprr"] = f"errore: {type(e).__name__}"
     if not risultato["eventi"] and not risultato["tunnel"]:
         risultato["stato"] = "nessun dato riconosciuto: forse il sito ATMB è cambiato"
 except Exception as e:
