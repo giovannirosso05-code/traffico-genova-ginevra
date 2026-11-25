@@ -86,6 +86,8 @@ def da_datex(xml_bytes, paese):
             commento = testo_di(gc, "value") or ""
             if commento: break
         commento = re.sub(r"\s+", " ", commento)[:240]
+        if tipo in ("altro", "lavori") and re.search(r"\b(ferm[ée]e?s?|fermeture|coup[ée]e?|barr[ée]e?|gesperrt|Sperrung)\b", commento, re.I):
+            tipo, frase = "chiusura", "strada chiusa"
         testo = f"{frase} {periodo(rec)}".strip()
         if commento:
             testo += f" · {commento}"
