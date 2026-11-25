@@ -1,7 +1,155 @@
 {
- "aggiornato": "2026-11-25T20:19+00:00",
+ "aggiornato": "2026-11-25T20:29+00:00",
  "fonte": "CCISS (feed ufficiale)",
  "eventi": [
+  {
+   "id": "fffc5524f3883d89",
+   "strada": "A24 Roma-Teramo",
+   "testo": "impianto di distribuzione carburante chiuso dalle 21:23 del 25 alle 06:00 del 26 novembre 2026 a Area di servizio Valle Aterno in direzione Teramo",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T20:24:00Z",
+   "lat": 42.3466405,
+   "lon": 13.3546469,
+   "da": "Valle Aterno"
+  },
+  {
+   "id": "5495b87145f95bef",
+   "strada": "A4 Milano-Brescia",
+   "testo": "veicolo fermo o in avaria dalle 21:21 del 25 novembre 2026 tra Svincolo Cormano e Svincolo Sesto San Giovanni-Viale Zara in direzione Brescia",
+   "tipo": "altro",
+   "quando": "2026-11-25T20:23:00Z",
+   "lat": 45.5445133,
+   "lon": 9.1676207,
+   "da": "Cormano"
+  },
+  {
+   "id": "721e3e6f31bd272c",
+   "strada": "A56 Tangenziale Di Napoli",
+   "testo": "veicolo fermo o in avaria dalle 21:20 del 25 novembre 2026 tra Svincolo Camaldoli e Svincolo Zona Ospedaliera in direzione allacciamento diramazione Capodichino",
+   "tipo": "altro",
+   "quando": "2026-11-25T20:23:00Z",
+   "lat": 40.8561991,
+   "lon": 14.2205639,
+   "da": "Camaldoli",
+   "lat2": 40.8618613,
+   "lon2": 14.2333492,
+   "a": "Zona Ospedaliera",
+   "km": 1.5
+  },
+  {
+   "id": "8091d0c781831471",
+   "strada": "A14 Bologna-Ancona",
+   "testo": "pioggia dalle 21:19 del 25 novembre 2026 tra Svincolo Bologna San Lazzaro e Svincolo Imola",
+   "tipo": "meteo",
+   "quando": "2026-11-25T20:21:00Z",
+   "lat": 44.4805687,
+   "lon": 11.4243695,
+   "da": "Bologna San Lazzaro",
+   "lat2": 44.3535145,
+   "lon2": 11.7141233,
+   "a": "Imola",
+   "km": 32.4
+  },
+  {
+   "id": "dd70d3e89f4711af",
+   "strada": "A14 Bologna-Ancona",
+   "testo": "perdita di carico dalle 21:16 del 25 novembre 2026 tra Svincolo Cattolica e Svincolo Riccione in direzione Bologna",
+   "tipo": "altro",
+   "quando": "2026-11-25T20:20:00Z",
+   "lat": 43.9639933,
+   "lon": 12.7441515,
+   "da": "Cattolica",
+   "lat2": 43.998274,
+   "lon2": 12.6474368,
+   "a": "Riccione",
+   "km": 10.4
+  },
+  {
+   "id": "a064d0a501e6cb43",
+   "strada": "SS71 Umbro Casentinese Romagnola",
+   "testo": "nebbia tra 943 m dopo Incrocio Saiaccio e 4,798 km prima di Incrocio Sarsina",
+   "tipo": "meteo",
+   "quando": "2026-11-25T20:19:00Z"
+  },
+  {
+   "id": "605e2645df7e81cf",
+   "strada": "SS54 Del Friuli",
+   "testo": "mezzi spargisale in azione tra 47,238 km dopo Incrocio Valico Di Stupizza - Confine Con La Slovenia e Incrocio Ratece/Confine Con La Slovenia",
+   "tipo": "altro",
+   "quando": "2026-11-25T20:19:00Z"
+  },
+  {
+   "id": "492489019dba5621",
+   "strada": "A56 Tangenziale Di Napoli",
+   "testo": "veicolo fermo o in avaria dalle 21:15 del 25 novembre 2026 a Svincolo Zona Ospedaliera in direzione da Pozzuoli",
+   "tipo": "altro",
+   "quando": "2026-11-25T20:19:00Z",
+   "lat": 40.8618613,
+   "lon": 14.2333492,
+   "da": "Zona Ospedaliera"
+  },
+  {
+   "id": "d3582936c7fae6d4",
+   "strada": "A14 Bologna-Ancona",
+   "testo": "personale su strada causa lavori dalle 21:16 alle 22:00 del 25 novembre 2026 tra Svincolo Bologna San Lazzaro e Svincolo Bologna Fiera in direzione autostrada Milano-Napoli",
+   "tipo": "lavori",
+   "quando": "2026-11-25T20:18:00Z",
+   "lat": 44.4805687,
+   "lon": 11.4243695,
+   "da": "Bologna San Lazzaro",
+   "lat2": 44.5170964,
+   "lon2": 11.3742983,
+   "a": "Bologna Fiera",
+   "km": 6.8
+  },
+  {
+   "id": "673ca3f0dcd0e528",
+   "strada": "A21 Torino-Brescia",
+   "testo": "lavori tra 4,032 km prima di Svincolo Asti Ovest e 13,923 km dopo Barriera Di Villanova D asti in direzione Torino",
+   "tipo": "lavori",
+   "quando": "2026-11-25T20:18:00Z",
+   "lat": 44.8260126,
+   "lon": 8.2026863,
+   "da": "Asti",
+   "lat2": 44.9418888,
+   "lon2": 7.9375025,
+   "a": "Di Villanova D asti",
+   "km": 29.5
+  },
+  {
+   "id": "5f5fcc0206ae9f1d",
+   "strada": "A21 Torino-Brescia",
+   "testo": "GPL esaurito a Area di servizio Crocetta in direzione Brescia",
+   "tipo": "altro",
+   "quando": "2026-11-25T20:18:00Z",
+   "lat": 44.9712297,
+   "lon": 9.2847102,
+   "da": "Crocetta"
+  },
+  {
+   "id": "ec268da440912dba",
+   "strada": "A21 Torino-Brescia",
+   "testo": "lavori tra 3,591 km prima di Allacciamento A21-A1 e 15,654 km dopo Svincolo Castel S.Giovanni in direzione Torino",
+   "tipo": "lavori",
+   "quando": "2026-11-25T20:18:00Z",
+   "lat2": 45.0590671,
+   "lon2": 9.4341783,
+   "a": "Castel S.Giovanni"
+  },
+  {
+   "id": "b205ac573b2a0ddf",
+   "strada": "A21 Torino-Brescia",
+   "testo": "lavori tra 11,61 km prima di Svincolo Castel S.Giovanni e 1,105 km dopo Svincolo Broni-Stradella in direzione Torino",
+   "tipo": "lavori",
+   "quando": "2026-11-25T20:18:00Z",
+   "lat": 45.0590671,
+   "lon": 9.4341783,
+   "da": "Castel S.Giovanni",
+   "lat2": 45.0798506,
+   "lon2": 9.2772235,
+   "a": "Broni-Stradella",
+   "km": 15.0
+  },
   {
    "id": "0e6f44b3e0ea55fd",
    "strada": "A26 Genova-Gravellona Toce",
@@ -10,7 +158,21 @@
    "quando": "2026-11-25T20:17:00Z",
    "lat": 44.8349534,
    "lon": 8.7450304,
-   "da": "Alessandria"
+   "da": "Alessandria",
+   "lat2": 44.7668421,
+   "lon2": 8.6556607,
+   "a": "Predosa-Bettole",
+   "km": 12.4
+  },
+  {
+   "id": "74340b3b9c35cea2",
+   "strada": "A14 Bologna-Ancona",
+   "testo": "veicolo fermo o in avaria dalle 21:14 del 25 novembre 2026 tra Svincolo Bologna Borgo Panigale e Allacciamento A1 Milano-Napoli in direzione autostrada Milano-Napoli",
+   "tipo": "altro",
+   "quando": "2026-11-25T20:17:00Z",
+   "lat": 44.5151078,
+   "lon": 11.2846938,
+   "da": "Bologna Borgo Panigale"
   },
   {
    "id": "d8624d6e0226ff17",
@@ -27,18 +189,173 @@
    "km": 3.4
   },
   {
+   "id": "0bcd0ff526fb89d7",
+   "strada": "SS162 Della Valle Caudina",
+   "testo": "traffico rallentato causa allagamento a Incrocio Quagliano in direzione Incrocio Arienzo - SS7 Appia",
+   "tipo": "code",
+   "quando": "2026-11-25T20:15:00Z"
+  },
+  {
+   "id": "5e88812850ad69f5",
+   "strada": "A1 Firenze-Roma",
+   "testo": "veicolo fermo o in avaria dalle 21:13 del 25 novembre 2026 tra Svincolo Firenze Scandicci e Svincolo Firenze Impruneta in direzione Roma",
+   "tipo": "altro",
+   "quando": "2026-11-25T20:15:00Z",
+   "lat": 43.7766615,
+   "lon": 11.1617049,
+   "da": "Firenze Scandicci",
+   "lat2": 43.7248143,
+   "lon2": 11.2193808,
+   "a": "Firenze Impruneta",
+   "km": 8.9
+  },
+  {
+   "id": "c99a7e33b97516c9",
+   "strada": "A12 Genova-Rosignano",
+   "testo": "pioggia tra Svincolo Versilia e Svincolo Livorno - Raccordo Per Livorno",
+   "tipo": "meteo",
+   "quando": "2026-11-25T20:13:00Z",
+   "lat": 43.9538018,
+   "lon": 10.2026201,
+   "da": "Versilia"
+  },
+  {
+   "id": "701225bdaed2ce36",
+   "strada": "A11 Diramazione Lucca-Viareggio",
+   "testo": "pioggia tra Svincolo A11 Firenze-Pisa Nord e Svincolo Massarosa",
+   "tipo": "meteo",
+   "quando": "2026-11-25T20:13:00Z",
+   "lat2": 43.8676499,
+   "lon2": 10.3397157,
+   "a": "Massarosa"
+  },
+  {
+   "id": "67415d4d7fb55734",
+   "strada": "A1 Firenze-Roma",
+   "testo": "veicolo fermo o in avaria dalle 21:09 del 25 novembre 2026 tra Svincolo Fabro e Svincolo Orvieto in direzione Roma",
+   "tipo": "altro",
+   "quando": "2026-11-25T20:13:00Z",
+   "lat": 42.8634804,
+   "lon": 12.0128824,
+   "da": "Fabro",
+   "lat2": 42.7186152,
+   "lon2": 12.1087907,
+   "a": "Orvieto",
+   "km": 21.5
+  },
+  {
+   "id": "6c2ded15c1f2cfd2",
+   "strada": "A1 Milano-Bologna",
+   "testo": "incidente dalle 20:29 del 25 novembre 2026 tra Svincolo Melegnano - SP40 e Svincolo Binasco in direzione Bologna",
+   "tipo": "incidente",
+   "quando": "2026-11-25T20:13:00Z",
+   "lat": 45.362127,
+   "lon": 9.3144924,
+   "da": "Melegnano - SP40",
+   "lat2": 45.3319695,
+   "lon2": 9.0999868,
+   "a": "Binasco",
+   "km": 20.5
+  },
+  {
+   "id": "3876c4ab51cf4557",
+   "strada": "A1 Diramazione Per Capodichino",
+   "testo": "personale su strada causa lavori dalle 21:11 del 25 novembre 2026 tra Svincolo Casoria:strada Provinciale 1 e Svincolo Capodichino in direzione tangenziale",
+   "tipo": "lavori",
+   "quando": "2026-11-25T20:13:00Z",
+   "lat": 40.9035454,
+   "lon": 14.314573,
+   "da": "Casoria:strada Provinciale 1",
+   "lat2": 40.8717992,
+   "lon2": 14.2830666,
+   "a": "Capodichino",
+   "km": 5.3
+  },
+  {
    "id": "130e42fa001a1fbb",
    "strada": "A7 Milano-Genova",
    "testo": "lavori tra Allacciamento Diramazione Predosa-Bettole e Svincolo Serravalle Scrivia in direzione Genova",
    "tipo": "lavori",
    "quando": "2026-11-25T20:13:00Z",
-   "lat": 44.830028,
-   "lon": 8.813473,
-   "da": "Diramazione Predosa-Bettole",
+   "lat": 44.7659933,
+   "lon": 8.6534295,
+   "da": "Predosa-Bettole",
    "lat2": 44.7255798,
    "lon2": 8.8547001,
    "a": "Serravalle Scrivia",
-   "km": 14.5
+   "km": 19.8
+  },
+  {
+   "id": "57786d332e19136a",
+   "strada": "A24 Roma-Teramo",
+   "testo": "code causa incidente dalle 18:39 del 25 novembre 2026 tra Allacciamento A25 Torano-Pescara e Svincolo Carsoli-Oricola in direzione Roma",
+   "tipo": "incidente",
+   "quando": "2026-11-25T20:12:00Z",
+   "lat2": 42.0873475,
+   "lon2": 13.0582574,
+   "a": "Carsoli-Oricola"
+  },
+  {
+   "id": "05fed79dfd7bbae3",
+   "strada": "SS13 Pontebbana",
+   "testo": "mezzi spargisale in azione tra 154,506 km dopo Incrocio Godega Di S.Urbano e Incrocio Thorl/Confine Con L austria",
+   "tipo": "altro",
+   "quando": "2026-11-25T20:11:00Z"
+  },
+  {
+   "id": "34ee2a0f13678000",
+   "strada": "A14 Pescara-Bari",
+   "testo": "personale su strada causa lavori dalle 21:09 alle 21:54 del 25 novembre 2026 tra Svincolo Canosa e Svincolo Andria-Barletta in direzione Bari",
+   "tipo": "lavori",
+   "quando": "2026-11-25T20:10:00Z",
+   "lat": 40.900879,
+   "lon": 14.1076359,
+   "da": "Canosa",
+   "lat2": 41.2537669,
+   "lon2": 16.2929951,
+   "a": "Andria-Barletta",
+   "km": 224.8
+  },
+  {
+   "id": "e1632ebbf609fbd9",
+   "strada": "TG-CT Tangenziale Di Catania",
+   "testo": "corsia chiusa causa lavori di manutenzione tra 1,418 km prima di Svincolo S.Giovanni Galermo e 3 km dopo Svincolo Catania Centro-S.Gregorio-A18 Diramazione in direzione Svincolo Catania Centro-S.Gregorio-A18 Diramazione",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T20:09:00Z",
+   "lat": 37.551853,
+   "lon": 15.050426,
+   "da": "S.Giovanni Galermo"
+  },
+  {
+   "id": "39550579a1b50d0a",
+   "strada": "R06 Raccordo Bettolle-Perugia",
+   "testo": "carreggiata chiusa causa lavori tra 2,07 km prima di Svincolo Ponte S.Giovanni-SS3 Bis-Raccordo Orte-Ra e 1,533 km dopo Svincolo Perugia Staz.-San Faustino in direzione Raccordo Bettolle",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T20:09:00Z"
+  },
+  {
+   "id": "61e38156282bb72b",
+   "strada": "A8 Milano-Varese",
+   "testo": "rampa di accesso chiusa causa lavori dalle 21:08 del 25 alle 05:00 del 26 novembre 2026 a Svincolo Gallarate in direzione Varese",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T20:09:00Z",
+   "lat": 45.6598951,
+   "lon": 8.7932013,
+   "da": "Gallarate"
+  },
+  {
+   "id": "3d8bc1ef6fb4d5ea",
+   "strada": "A1 Firenze-Roma",
+   "testo": "personale su strada causa lavori dalle 21:06 alle 21:51 del 25 novembre 2026 tra Svincolo Orvieto e Svincolo Fabro in direzione Firenze",
+   "tipo": "lavori",
+   "quando": "2026-11-25T20:08:00Z",
+   "lat": 42.7186152,
+   "lon": 12.1087907,
+   "da": "Orvieto",
+   "lat2": 42.8634804,
+   "lon2": 12.0128824,
+   "a": "Fabro",
+   "km": 21.5
   },
   {
    "id": "622ab1fba0376e7f",
@@ -51,7 +368,7 @@
    "da": "Vercelli",
    "lat2": 45.2544918,
    "lon2": 8.443617,
-   "a": "Diramazione Stroppiana-Santhia",
+   "a": "Stroppiana-Santhia",
    "km": 41.2
   },
   {
@@ -60,8 +377,8 @@
    "testo": "area di servizio chiusa causa tratto chiuso dalle 21:05 del 25 alle 05:00 del 26 novembre 2026 a Area di servizio Stura in direzione Genova Voltri",
    "tipo": "chiusura",
    "quando": "2026-11-25T20:07:00Z",
-   "lat": 45.31515,
-   "lon": 7.305909,
+   "lat": 45.1102897,
+   "lon": 8.3133545,
    "da": "Stura"
   },
   {
@@ -75,14 +392,196 @@
    "da": "Albisola"
   },
   {
+   "id": "d9249b087e0429e0",
+   "strada": "A24 Roma-Teramo",
+   "testo": "veicolo fermo o in avaria dalle 20:58 del 25 novembre 2026 tra Allacciamento A25 Torano-Pescara e Svincolo Tagliacozzo in direzione Roma",
+   "tipo": "altro",
+   "quando": "2026-11-25T20:07:00Z",
+   "lat2": 42.0645685,
+   "lon2": 13.2394936,
+   "a": "Tagliacozzo"
+  },
+  {
+   "id": "7841a6b9d3c9ce15",
+   "strada": "A1 Milano-Bologna",
+   "testo": "veicoli lenti dalle 20:37 del 25 novembre 2026 tra Svincolo Fidenza e Svincolo Piacenza Nord in direzione Milano",
+   "tipo": "altro",
+   "quando": "2026-11-25T20:07:00Z",
+   "lat": 44.866522,
+   "lon": 10.0611939,
+   "da": "Fidenza",
+   "lat2": 44.8476352,
+   "lon2": 9.6665313,
+   "a": "Piacenza",
+   "km": 37.4
+  },
+  {
+   "id": "94bbaf5b7b2b7c38",
+   "strada": "A24 Roma-Teramo",
+   "testo": "vento forte dalle 21:04 del 25 novembre 2026 tra Barriera Di Roma Est e Svincolo Tivoli",
+   "tipo": "meteo",
+   "quando": "2026-11-25T20:06:00Z",
+   "lat": 41.8933203,
+   "lon": 12.4829321,
+   "da": "Di Roma",
+   "lat2": 41.960922,
+   "lon2": 12.798884,
+   "a": "Tivoli",
+   "km": 32.6
+  },
+  {
    "id": "5d260a19cf4a02f7",
    "strada": "A26 Genova-Gravellona Toce",
    "testo": "tratto chiuso causa lavori dalle 21:04 del 25 alle 05:00 del 26 novembre 2026 tra Allacciamento Diram. Predosa-Bettole e Svincolo Masone in direzione Genova Voltri",
    "tipo": "chiusura",
    "quando": "2026-11-25T20:06:00Z",
+   "lat": 44.7668421,
+   "lon": 8.6556607,
+   "da": "Predosa-Bettole",
    "lat2": 44.5013362,
    "lon2": 8.7163481,
-   "a": "Masone"
+   "a": "Masone",
+   "km": 35.9
+  },
+  {
+   "id": "135d838e35fe8d53",
+   "strada": "A8 Milano-Varese",
+   "testo": "rampa di accesso chiusa causa lavori dalle 21:04 del 25 alle 05:00 del 26 novembre 2026 a Svincolo Solbiate Arno",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T20:06:00Z",
+   "lat": 45.7190562,
+   "lon": 8.8143443,
+   "da": "Solbiate Arno"
+  },
+  {
+   "id": "28b331d2e2146941",
+   "strada": "S01 Strada Grande Comunicazione Fi-Pi-Li (per Livorno)",
+   "testo": "veicolo fermo o in avaria dalle 21:04 del 25 novembre 2026 tra Svincolo Centro Intermodale Est e Svincolo A12 Genova Rosignano in direzione Firenze",
+   "tipo": "altro",
+   "quando": "2026-11-25T20:06:00Z"
+  },
+  {
+   "id": "8ffb2532af3c364d",
+   "strada": "A14 Bologna-Ancona",
+   "testo": "personale su strada causa lavori dalle 21:04 alle 21:49 del 25 novembre 2026 tra Allacciamento Fano - Raccordo Per Fossombrone e Svincolo Senigallia in direzione Ancona",
+   "tipo": "lavori",
+   "quando": "2026-11-25T20:06:00Z",
+   "lat2": 43.6773749,
+   "lon2": 13.2105712,
+   "a": "Senigallia"
+  },
+  {
+   "id": "9d9b47bac4ef76ef",
+   "strada": "SS85 Venafrana",
+   "testo": "allagamento a Incrocio Venafro",
+   "tipo": "altro",
+   "quando": "2026-11-25T20:05:00Z",
+   "lat": 41.4608416,
+   "lon": 14.0578504,
+   "da": "Venafro"
+  },
+  {
+   "id": "f89a9ea28633e205",
+   "strada": "SS340dir Diramazione Regina",
+   "testo": "corsia chiusa causa lavori di manutenzione tra 3,884 km dopo Incrocio Acquaseria e 2,259 km prima di Incrocio Pianello Lario",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T20:05:00Z"
+  },
+  {
+   "id": "c12f9bcae4627bb1",
+   "strada": "A8 Milano-Varese",
+   "testo": "tratto chiuso causa lavori dalle 21:04 del 25 alle 05:00 del 26 novembre 2026 tra Svincolo Solbiate Arno e Svincolo Castronno in direzione Varese",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T20:05:00Z",
+   "lat": 45.7190562,
+   "lon": 8.8143443,
+   "da": "Solbiate Arno",
+   "lat2": 45.7468305,
+   "lon2": 8.8141625,
+   "a": "Castronno",
+   "km": 3.7
+  },
+  {
+   "id": "ef55250885dd4aa4",
+   "strada": "A24 Roma-Teramo",
+   "testo": "pioggia dalle 21:03 del 25 novembre 2026 tra Allacciamento G.R.A. e Svincolo Tivoli",
+   "tipo": "meteo",
+   "quando": "2026-11-25T20:05:00Z",
+   "lat": 41.8577092,
+   "lon": 12.3767694,
+   "da": "G.R.A",
+   "lat2": 41.960922,
+   "lon2": 12.798884,
+   "a": "Tivoli",
+   "km": 44.1
+  },
+  {
+   "id": "89348aff69d54f9d",
+   "strada": "A57 Tangenziale di Mestre",
+   "testo": "entrata chiusa a Svincolo Terraglio in direzione Allacciamento A57 est/A4 Venezia-Trieste",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T20:05:00Z",
+   "lat": 45.515075,
+   "lon": 12.2378066,
+   "da": "Terraglio"
+  },
+  {
+   "id": "28d247a8217669d0",
+   "strada": "A57 Tangenziale di Mestre",
+   "testo": "carreggiata chiusa tra Svincolo Terraglio e Allacciamento A27 Mestre-Belluno in direzione Allacciamento A57 est/A4 Venezia-Trieste",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T20:05:00Z",
+   "lat": 45.515075,
+   "lon": 12.2378066,
+   "da": "Terraglio"
+  },
+  {
+   "id": "53336afbb96c61cb",
+   "strada": "A57 Tangenziale di Mestre",
+   "testo": "carreggiata chiusa tra Allacciamento A27 Mestre-Belluno e Svincolo Terraglio in direzione Allacciamento A57/A4 Venezia-Padova",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T20:05:00Z",
+   "lat2": 45.515075,
+   "lon2": 12.2378066,
+   "a": "Terraglio"
+  },
+  {
+   "id": "68af61cb477d2870",
+   "strada": "A57 Tangenziale di Mestre",
+   "testo": "chiusura area di servizio nell area di sosta causa evento straordinario a Area di servizio Bazzera in direzione Allacciamento A57 est/A4 Venezia-Trieste",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T20:05:00Z",
+   "lat": 45.4979912,
+   "lon": 12.3308015,
+   "da": "Bazzera"
+  },
+  {
+   "id": "ab32b06c65e274d0",
+   "strada": "A27 Mestre-Belluno",
+   "testo": "tratto chiuso causa lavori dalle 21:02 del 25 alle 06:00 del 26 novembre 2026 tra Svincolo Pian Di Vedoia-SS51 Di Alemagna e Svincolo Fadalto-Lago Di S.Croce in direzione Venezia",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T20:04:00Z",
+   "lat": 46.1987776,
+   "lon": 12.2865915,
+   "da": "Pian Di Vedoia-SS51 Di Alemagna",
+   "lat2": 46.0740572,
+   "lon2": 12.3397433,
+   "a": "Fadalto-Lago Di S.Croce",
+   "km": 17.4
+  },
+  {
+   "id": "395191fc4cde0d6c",
+   "strada": "A14 Pescara-Bari",
+   "testo": "personale su strada causa lavori dalle 21:02 alle 21:47 del 25 novembre 2026 tra Svincolo Ortona e Svincolo Pescara Sud-Francavilla in direzione Pescara",
+   "tipo": "lavori",
+   "quando": "2026-11-25T20:04:00Z",
+   "lat": 42.349643,
+   "lon": 14.403913,
+   "da": "Ortona",
+   "lat2": 42.3998286,
+   "lon2": 14.2841245,
+   "a": "Pescara Sud-Francavilla",
+   "km": 13.6
   },
   {
    "id": "481b2724702240ee",
@@ -90,9 +589,23 @@
    "testo": "chiusura notturna, chiusura nodo causa lavori di manutenzione dalle 21:04 del 25 alle 05:00 del 26 novembre 2026 a Allacciamento Diramazione Predosa-Bettole in direzione A26 provenendo da Milano e da Genova",
    "tipo": "chiusura",
    "quando": "2026-11-25T20:04:00Z",
-   "lat": 44.830028,
-   "lon": 8.813473,
-   "da": "Diramazione Predosa-Bettole"
+   "lat": 44.7659933,
+   "lon": 8.6534295,
+   "da": "Predosa-Bettole"
+  },
+  {
+   "id": "9d05a55412758274",
+   "strada": "A14 Bologna-Ancona",
+   "testo": "personale su strada causa lavori dalle 21:01 alle 22:15 del 25 novembre 2026 tra Svincolo Cattolica e Svincolo Pesaro-Urbino in direzione Ancona",
+   "tipo": "lavori",
+   "quando": "2026-11-25T20:03:00Z",
+   "lat": 43.9639933,
+   "lon": 12.7441515,
+   "da": "Cattolica",
+   "lat2": 43.6941127,
+   "lon2": 12.7014437,
+   "a": "Pesaro-Urbino",
+   "km": 36.2
   },
   {
    "id": "066665c85ace3ede",
@@ -105,11 +618,133 @@
    "da": "Marengo"
   },
   {
+   "id": "0936c6f3a6fd9aea",
+   "strada": "A24 Roma-Teramo",
+   "testo": "tratto chiuso causa incidente dalle 19:07 del 25 novembre 2026 tra Svincolo Valle Del Salto e Svincolo Tagliacozzo in direzione Roma",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T20:02:00Z",
+   "lat": 42.1729201,
+   "lon": 13.280131,
+   "da": "Valle Del Salto",
+   "lat2": 42.0645685,
+   "lon2": 13.2394936,
+   "a": "Tagliacozzo",
+   "km": 15.0
+  },
+  {
    "id": "b33a73d66f3a5116",
    "strada": "A26 Diramazione Predosa-Bettole",
    "testo": "tratto chiuso causa trasporto eccezionale dalle 21:01 del 25 alle 05:00 del 26 novembre 2026 tra Allacciamento A7 Milano-Genova e Allacciamento A26 Ge Voltri-Gravellona T. in direzione A26 Genova Voltri-Gravellona Toce",
    "tipo": "chiusura",
    "quando": "2026-11-25T20:02:00Z"
+  },
+  {
+   "id": "0f77d398fb78cca0",
+   "strada": "A14 Bologna-Ancona",
+   "testo": "veicolo fermo o in avaria dalle 20:56 del 25 novembre 2026 tra Svincolo Castel S.Pietro e Svincolo Bologna San Lazzaro in direzione Bologna",
+   "tipo": "altro",
+   "quando": "2026-11-25T20:00:00Z",
+   "lat": 43.3197151,
+   "lon": 13.1301735,
+   "da": "Castel S.Pietro",
+   "lat2": 44.4805687,
+   "lon2": 11.4243695,
+   "a": "Bologna San Lazzaro",
+   "km": 225.6
+  },
+  {
+   "id": "3170db13f8e426af",
+   "strada": "A1 Milano-Bologna",
+   "testo": "veicolo fermo o in avaria dalle 20:55 del 25 novembre 2026 tra Svincolo Casalpusterlengo - Ospedaletto Lodigiano e Svincolo Piacenza Nord in direzione Bologna",
+   "tipo": "altro",
+   "quando": "2026-11-25T19:59:00Z",
+   "lat": 45.1799711,
+   "lon": 9.5793471,
+   "da": "Casalpusterlengo - Ospedaletto Lodigiano",
+   "lat2": 44.8476352,
+   "lon2": 9.6665313,
+   "a": "Piacenza",
+   "km": 45.1
+  },
+  {
+   "id": "14958bcd4a39cd84",
+   "strada": "A1 Firenze-Roma",
+   "testo": "malore dalle 20:57 del 25 novembre 2026 a Area di servizio Arno Ovest in direzione Roma",
+   "tipo": "altro",
+   "quando": "2026-11-25T19:59:00Z",
+   "lat": 43.7664527,
+   "lon": 11.2573196,
+   "da": "Arno"
+  },
+  {
+   "id": "df0b94c3c5e89fbd",
+   "strada": "A14 Pescara-Bari",
+   "testo": "personale su strada causa lavori dalle 20:57 alle 21:42 del 25 novembre 2026 tra Svincolo Lanciano e Svincolo Val Di Sangro",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:59:00Z",
+   "lat": 42.2305316,
+   "lon": 14.3907794,
+   "da": "Lanciano",
+   "lat2": 42.2096794,
+   "lon2": 14.4943769,
+   "a": "Val Di Sangro",
+   "km": 10.6
+  },
+  {
+   "id": "aeb74d5f5122311b",
+   "strada": "A16 Napoli-Canosa",
+   "testo": "personale su strada causa lavori dalle 20:56 del 25 novembre 2026 tra Svincolo Grottaminarda e Svincolo Avellino Est in direzione Napoli",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:58:00Z",
+   "lat": 41.8914093,
+   "lon": 12.63108,
+   "da": "Grottaminarda",
+   "lat2": 40.8526983,
+   "lon2": 14.2572961,
+   "a": "Avellino",
+   "km": 213.8
+  },
+  {
+   "id": "e5c53eb996e7e75a",
+   "strada": "A32 Torino-Bardonecchia",
+   "testo": "neve tra Barriera Di Salbertrand e Svincolo Circonvallazione Oulx",
+   "tipo": "meteo",
+   "quando": "2026-11-25T19:57:00Z",
+   "lat": 45.07204,
+   "lon": 6.883205,
+   "da": "Di Salbertrand",
+   "lat2": 45.0336113,
+   "lon2": 6.7719692,
+   "a": "Circonvallazione Oulx",
+   "km": 11.7
+  },
+  {
+   "id": "f674d8ecf0666705",
+   "strada": "A16 Napoli-Canosa",
+   "testo": "personale su strada causa lavori dalle 20:55 del 25 novembre 2026 tra Svincolo Avellino Est e Svincolo Grottaminarda in direzione Canosa",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:56:00Z",
+   "lat": 40.8526983,
+   "lon": 14.2572961,
+   "da": "Avellino",
+   "lat2": 41.8914093,
+   "lon2": 12.63108,
+   "a": "Grottaminarda",
+   "km": 213.8
+  },
+  {
+   "id": "92ce4b333eb65ae9",
+   "strada": "A14 Pescara-Bari",
+   "testo": "personale su strada causa ripristino incidente dalle 20:51 del 25 novembre 2026 tra Svincolo Pescara Ovest-Chieti e Svincolo Pescara Sud-Francavilla in direzione Bari",
+   "tipo": "incidente",
+   "quando": "2026-11-25T19:53:00Z",
+   "lat": 42.3975379,
+   "lon": 14.1685884,
+   "da": "Pescara Ovest-Chieti",
+   "lat2": 42.3998286,
+   "lon2": 14.2841245,
+   "a": "Pescara Sud-Francavilla",
+   "km": 11.4
   },
   {
    "id": "a796380e27f4c260",
@@ -126,6 +761,34 @@
    "km": 4.8
   },
   {
+   "id": "f62ded6be3bff150",
+   "strada": "A8 Diramazione Per Gallarate-Gattico",
+   "testo": "personale su strada causa lavori dalle 20:50 alle 21:34 del 25 novembre 2026 tra Svincolo Sesto Calende-Vergiate e Svincolo Besnate in direzione autostrada Milano-Varese",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:51:00Z",
+   "lat": 45.7181671,
+   "lon": 8.6678485,
+   "da": "Sesto Calende-Vergiate",
+   "lat2": 45.7001654,
+   "lon2": 8.7683151,
+   "a": "Besnate",
+   "km": 9.7
+  },
+  {
+   "id": "d40bec558cea0e1c",
+   "strada": "A1 Firenze-Roma",
+   "testo": "veicolo fermo o in avaria dalle 20:47 del 25 novembre 2026 tra Svincolo Firenze Sud e Svincolo Incisa - Reggello in direzione Roma",
+   "tipo": "altro",
+   "quando": "2026-11-25T19:51:00Z",
+   "lat": 43.7697955,
+   "lon": 11.2556404,
+   "da": "Firenze",
+   "lat2": 43.6640794,
+   "lon2": 11.4598357,
+   "a": "Incisa - Reggello",
+   "km": 24.2
+  },
+  {
    "id": "e08914183b2df52f",
    "strada": "A7 Milano-Genova",
    "testo": "lavori tra Svincolo Serravalle Scrivia e Svincolo Tortona in direzione Milano",
@@ -138,6 +801,26 @@
    "lon2": 8.8641282,
    "a": "Tortona",
    "km": 22.8
+  },
+  {
+   "id": "429108f884c49ee6",
+   "strada": "A16 Napoli-Canosa",
+   "testo": "veicolo fermo o in avaria dalle 20:46 del 25 novembre 2026 tra Incrocio Via Ludovico il Moro corrispondenza Cavalcavia Don Lorenzo Milani e Svincolo Baiano in direzione Canosa",
+   "tipo": "altro",
+   "quando": "2026-11-25T19:48:00Z",
+   "lat2": 42.7226613,
+   "lon2": 12.6766606,
+   "a": "Baiano"
+  },
+  {
+   "id": "ed01f3b3b0c6dbe7",
+   "strada": "SS24 Del Monginevro",
+   "testo": "neve tra 8,485 km dopo Incrocio Oulx - SS335 Di Bardonecchia e 80 m prima di Incrocio Colle Di Monginevro/Confine Con La Francia",
+   "tipo": "meteo",
+   "quando": "2026-11-25T19:43:00Z",
+   "lat": 45.0447892,
+   "lon": 6.7733048,
+   "da": "Oulx - SS335 Di Bardonecchia"
   },
   {
    "id": "a67376b874c241eb",
@@ -154,6 +837,20 @@
    "km": 3.4
   },
   {
+   "id": "18f0dc738eea25ed",
+   "strada": "A14 Ancona-Pescara",
+   "testo": "personale su strada causa lavori dalle 20:39 alle 21:24 del 25 novembre 2026 tra Svincolo Pedaso e Svincolo Grottammare in direzione Pescara",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:41:00Z",
+   "lat": 43.099164,
+   "lon": 13.8407771,
+   "da": "Pedaso",
+   "lat2": 42.9836864,
+   "lon2": 13.8487843,
+   "a": "Grottammare",
+   "km": 15.4
+  },
+  {
    "id": "a234f11d59f1b391",
    "strada": "A12 Genova-Rosignano",
    "testo": "personale su strada causa lavori dalle 20:37 alle 21:22 del 25 novembre 2026 tra Svincolo Genova Nervi e Allacciamento A7 Milano-Genova in direzione Genova",
@@ -162,6 +859,16 @@
    "lat": 44.3812645,
    "lon": 9.0399213,
    "da": "Genova Nervi"
+  },
+  {
+   "id": "2f466a4aed8af408",
+   "strada": "A25 Torano-Pescara",
+   "testo": "tratto chiuso causa incidente dalle 19:08 del 25 novembre 2026 tra Svincolo Magliano De Marsi e Allacciamento A24 Roma-Teramo in direzione autostrada Roma-Teramo",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T19:40:00Z",
+   "lat": 42.091529,
+   "lon": 13.363794,
+   "da": "Magliano De Marsi"
   },
   {
    "id": "745755cbd3380b9e",
@@ -188,24 +895,144 @@
    "km": 11.8
   },
   {
+   "id": "f26fee584cb78117",
+   "strada": "A12 Genova-Rosignano",
+   "testo": "veicolo in avaria a Svincolo Pisa Centro in direzione Rosignano",
+   "tipo": "altro",
+   "quando": "2026-11-25T19:39:00Z",
+   "lat": 43.4714722,
+   "lon": 10.6797912,
+   "da": "Pisa"
+  },
+  {
    "id": "0146771b4b29364a",
    "strada": "A7 Milano-Genova",
    "testo": "lavori a Allacciamento Diramazione Predosa-Bettole in direzione Milano",
    "tipo": "lavori",
    "quando": "2026-11-25T19:39:00Z",
-   "lat": 44.830028,
-   "lon": 8.813473,
-   "da": "Diramazione Predosa-Bettole"
+   "lat": 44.7659933,
+   "lon": 8.6534295,
+   "da": "Predosa-Bettole"
   },
   {
    "id": "ae8df464ddc7c5da",
    "strada": "A10 Genova-Ventimiglia",
    "testo": "vento forte dalle 15:20 del 25 novembre 2026 tra Svincolo Varazze e Allacciamento A10 - A06 al Km 45",
-   "tipo": "altro",
+   "tipo": "meteo",
    "quando": "2026-11-25T19:39:00Z",
    "lat": 44.3592996,
    "lon": 8.5753273,
    "da": "Varazze"
+  },
+  {
+   "id": "9f45201092fce526",
+   "strada": "A27 Mestre-Belluno",
+   "testo": "pioggia dalle 20:20 del 24 novembre 2026 tra Allacciamento A57 Torino-Trieste/Raccordo Per Tessera e Svincolo Pian Di Vedoia-SS51 Di Alemagna",
+   "tipo": "meteo",
+   "quando": "2026-11-25T19:39:00Z",
+   "lat2": 46.1987776,
+   "lon2": 12.2865915,
+   "a": "Pian Di Vedoia-SS51 Di Alemagna"
+  },
+  {
+   "id": "a0f7fbf022635520",
+   "strada": "A1 Milano-Bologna",
+   "testo": "veicoli lenti dalle 20:37 del 25 novembre 2026 tra Svincolo Piacenza Nord e Allacciamento Fiorenzuola in direzione Bologna",
+   "tipo": "altro",
+   "quando": "2026-11-25T19:39:00Z",
+   "lat": 44.8476352,
+   "lon": 9.6665313,
+   "da": "Piacenza",
+   "lat2": 44.9287295,
+   "lon2": 9.9173645,
+   "a": "Fiorenzuola",
+   "km": 26.1
+  },
+  {
+   "id": "04deae03814d31ac",
+   "strada": "A14 Diramazione Per Ravenna",
+   "testo": "veicoli scortati per maltempo causa incidente dalle 20:35 del 25 novembre 2026 tra Allacciamento A14 Bologna-Taranto e Svincolo Ravenna in direzione Ravenna",
+   "tipo": "incidente",
+   "quando": "2026-11-25T19:38:00Z",
+   "lat2": 44.3640607,
+   "lon2": 12.0590095,
+   "a": "Ravenna"
+  },
+  {
+   "id": "e3719bbc715f20d6",
+   "strada": "A12 Genova-Rosignano",
+   "testo": "personale su strada causa lavori dalle 20:35 alle 21:20 del 25 novembre 2026 tra Svincolo Rapallo e Svincolo Recco in direzione Genova",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:38:00Z",
+   "lat": 44.3492083,
+   "lon": 9.2316102,
+   "da": "Rapallo",
+   "lat2": 44.3618483,
+   "lon2": 9.1433114,
+   "a": "Recco",
+   "km": 8.6
+  },
+  {
+   "id": "8c78a3f1ca7f3094",
+   "strada": "TG-MO Tangenziale Di Modena",
+   "testo": "fondo stradale dissestato tra 1,238 km dopo Svincolo Modena - SS413 e 735 m prima di Svincolo Via Della Barchetta in direzione Svincolo Modena Nord - A1 Milano-Napoli",
+   "tipo": "altro",
+   "quando": "2026-11-25T19:37:00Z",
+   "lat": 44.678818,
+   "lon": 10.8943242,
+   "da": "Modena - SS413"
+  },
+  {
+   "id": "db3d1737b6e3391f",
+   "strada": "A14 Pescara-Bari",
+   "testo": "personale su strada causa lavori dalle 20:35 alle 21:20 del 25 novembre 2026 tra Svincolo Val Di Sangro e Svincolo Vasto Nord-Casalbordino",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:37:00Z",
+   "lat": 42.2096794,
+   "lon": 14.4943769,
+   "da": "Val Di Sangro",
+   "lat2": 42.1602518,
+   "lon2": 14.637772,
+   "a": "Vasto Nord-Casalbordino",
+   "km": 15.6
+  },
+  {
+   "id": "c7570ea9bbdda648",
+   "strada": "A1 Milano-Bologna",
+   "testo": "veicolo fermo o in avaria dalle 20:33 del 25 novembre 2026 tra Svincolo Casalpusterlengo - Ospedaletto Lodigiano e Svincolo Lodi in direzione Milano",
+   "tipo": "altro",
+   "quando": "2026-11-25T19:37:00Z",
+   "lat": 45.1799711,
+   "lon": 9.5793471,
+   "da": "Casalpusterlengo - Ospedaletto Lodigiano",
+   "lat2": 45.2613104,
+   "lon2": 9.4916781,
+   "a": "Lodi",
+   "km": 13.6
+  },
+  {
+   "id": "df7c9150d7f40a1e",
+   "strada": "S01 Strada Grande Comunicazione Fi-Pi-Li (per Livorno)",
+   "testo": "pioggia dalle 20:22 del 25 novembre 2026 tra Svincolo Firenze e Svincolo Livorno Centro",
+   "tipo": "meteo",
+   "quando": "2026-11-25T19:36:00Z",
+   "lat": 43.7787687,
+   "lon": 10.3392398,
+   "da": "Firenze",
+   "lat2": 43.5507317,
+   "lon2": 10.3091256,
+   "a": "Livorno",
+   "km": 30.6
+  },
+  {
+   "id": "89f170b0433fe726",
+   "strada": "A14 Pescara-Bari",
+   "testo": "personale su strada causa lavori dalle 19:29 alle 22:14 del 25 novembre 2026 tra Svincolo Pescara N. Citta S.Angelo e Allacciamento A25 Torano-Pescara",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:36:00Z",
+   "lat": 42.5237485,
+   "lon": 14.1328701,
+   "da": "Pescara N. Citta S.Angelo"
   },
   {
    "id": "b199c305408bea89",
@@ -222,14 +1049,120 @@
    "km": 10.4
   },
   {
+   "id": "511a69e6935bacdd",
+   "strada": "A24 Roma-Teramo",
+   "testo": "veicolo fermo o in avaria dalle 20:07 del 25 novembre 2026 a Svincolo L aquila Est",
+   "tipo": "altro",
+   "quando": "2026-11-25T19:34:00Z",
+   "lat": 42.1368853,
+   "lon": 13.610341,
+   "da": "L aquila"
+  },
+  {
+   "id": "a4ed0522d4fa5179",
+   "strada": "A14 Pescara-Bari",
+   "testo": "personale su strada causa lavori dalle 20:32 alle 21:17 del 25 novembre 2026 tra Svincolo Lanciano e Svincolo Vasto Nord-Casalbordino",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:34:00Z",
+   "lat": 42.2305316,
+   "lon": 14.3907794,
+   "da": "Lanciano",
+   "lat2": 42.1602518,
+   "lon2": 14.637772,
+   "a": "Vasto Nord-Casalbordino",
+   "km": 26.2
+  },
+  {
+   "id": "9a2d9c902ac19d71",
+   "strada": "A27 Mestre-Belluno",
+   "testo": "personale su strada dalle 20:31 del 25 novembre 2026 tra Svincolo Pian Di Vedoia-SS51 Di Alemagna e Svincolo Fadalto-Lago Di S.Croce in direzione Venezia",
+   "tipo": "altro",
+   "quando": "2026-11-25T19:33:00Z",
+   "lat": 46.1987776,
+   "lon": 12.2865915,
+   "da": "Pian Di Vedoia-SS51 Di Alemagna",
+   "lat2": 46.0740572,
+   "lon2": 12.3397433,
+   "a": "Fadalto-Lago Di S.Croce",
+   "km": 17.4
+  },
+  {
    "id": "120b8634843aa07d",
    "strada": "A5 Torino-Courmayeur",
    "testo": "pioggia dalle 22:15 del 24 novembre 2026 tra Incrocio Controllo Merci AO / A5 e Svincolo Entrata Courmayeur Sud",
-   "tipo": "altro",
+   "tipo": "meteo",
    "quando": "2026-11-25T19:32:00Z",
    "lat2": 45.8316548,
    "lon2": 6.9461565,
    "a": "Courmayeur"
+  },
+  {
+   "id": "4f458ca0d9640ca1",
+   "strada": "SS16 Adriatica",
+   "testo": "lavori di manutenzione a Incrocio Ba-Villa De Lilla in direzione Incrocio Otranto - SS173 Delle Terme Salentine",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:31:00Z"
+  },
+  {
+   "id": "9ead5928ce5a7bc7",
+   "strada": "SS126 Sud Occidentale Sarda",
+   "testo": "traffico rallentato causa allagamento a Incrocio Gonnesa",
+   "tipo": "code",
+   "quando": "2026-11-25T19:31:00Z",
+   "lat": 39.2666261,
+   "lon": 8.4717404,
+   "da": "Gonnesa"
+  },
+  {
+   "id": "80e05e2934179163",
+   "strada": "S03 Strada Grande Comunicazione Fi-Pi-Li (diramazione per Pisa)",
+   "testo": "pioggia dalle 20:29 del 25 novembre 2026 tra Svincolo Gello - Allacciamento Fi-Pi-Li per Livorno e Svincolo Pisa Centro - A12 Genova-Rosignano",
+   "tipo": "meteo",
+   "quando": "2026-11-25T19:31:00Z"
+  },
+  {
+   "id": "bee4947654deee8a",
+   "strada": "A14 Pescara-Bari",
+   "testo": "personale su strada causa lavori dalle 20:28 alle 21:13 del 25 novembre 2026 tra Svincolo Trani e Svincolo Andria-Barletta in direzione Pescara",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:31:00Z",
+   "lat": 41.2781809,
+   "lon": 16.4186056,
+   "da": "Trani",
+   "lat2": 41.2537669,
+   "lon2": 16.2929951,
+   "a": "Andria-Barletta",
+   "km": 13.0
+  },
+  {
+   "id": "975c7df98e794deb",
+   "strada": "A52 Tangenziale Nord Di Milano",
+   "testo": "entrata chiusa causa lavori a Svincolo Monza-S.Alessandro in direzione Svincolo SP44 Milano-Meda: Lentate-Bruzzano",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T19:31:00Z",
+   "lat": 45.563163,
+   "lon": 9.2773252,
+   "da": "Monza-S.Alessandro"
+  },
+  {
+   "id": "b569f41032837f41",
+   "strada": "A23 Palmanova-Tarvisio",
+   "testo": "pioggia dalle 18:44 del 25 novembre 2026 tra Svincolo Udine Sud-Tangenziale e Svincolo Dogana Di Coccau-Confine Di Stato",
+   "tipo": "meteo",
+   "quando": "2026-11-25T19:29:00Z",
+   "lat": 46.0135146,
+   "lon": 13.2263668,
+   "da": "Udine Sud-Tangenziale"
+  },
+  {
+   "id": "25730aadb52a4c1a",
+   "strada": "A51 Tangenziale Est Di Milano",
+   "testo": "code per 1 km causa incidente tra Svincolo Gobba: Treviglio-Vimodrone e Svincolo Cologno Monzese: S.S.Giovanni Sud in direzione Svincolo Lecco",
+   "tipo": "incidente",
+   "quando": "2026-11-25T19:29:00Z",
+   "lat2": 45.5316209,
+   "lon2": 9.2625738,
+   "a": "Cologno Monzese: S.S.Giovanni"
   }
  ]
 }
