@@ -1,4 +1,5 @@
 <!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>*{box-sizing:border-box}body{margin:0;font-size:14px}[hidden]{display:none!important}img{max-width:100%}</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <title>Cruscotto Viaggio Genova–Ginevra</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap">
 <style>
@@ -36,6 +37,14 @@ th{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mu
 .bar{border-radius:3px 3px 0 0;position:relative}
 .axis{display:grid;grid-template-columns:repeat(24,1fr);gap:3px;font-size:.65rem;color:var(--muted);text-align:center;font-variant-numeric:tabular-nums}
 .best{font-size:1.1rem}
+#mapbox{position:relative;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+#map{width:100%;height:auto;display:block;min-height:420px}
+#lmap{height:min(78vh,720px);width:100%}
+.legend{position:absolute;top:10px;right:10px;z-index:500;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:.8rem;display:grid;gap:4px;max-width:200px;box-shadow:0 2px 8px rgb(0 0 0/.12)}
+.legend i{display:inline-block;width:18px;height:5px;border-radius:3px;margin-right:6px;vertical-align:middle}
+.legend .note{font-size:.72rem}
+#map line.seg{cursor:pointer}
+@media (max-width:520px){.legend{position:static;max-width:none;border-width:1px 0 0;border-radius:0;box-shadow:none;grid-template-columns:1fr 1fr}}
 </style>
 
 </head><body>
@@ -48,8 +57,12 @@ th{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mu
 <section aria-labelledby="s1">
   <h2 id="s1">1 · Chiusure e cantieri sul tragitto</h2>
   <div class="row">
-    <label>Partenza<input id="a" value="Genova"></label>
-    <label>Arrivo<input id="b" value="Ginevra"></label>
+    <label>Via di partenza<input id="av" placeholder="es. Via XX Settembre 10"></label>
+    <label>Città di partenza<input id="a" value="Genova"></label>
+  </div>
+  <div class="row">
+    <label>Via di arrivo<input id="bv" placeholder="es. Rue du Rhône 50"></label>
+    <label>Città di arrivo<input id="b" value="Ginevra"></label>
     <button id="go1" type="button">Mostra fonti per questo tragitto</button>
   </div>
   <div id="live">
@@ -65,8 +78,17 @@ th{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mu
 <section aria-labelledby="sm">
   <h2 id="sm">Mappa del tragitto</h2>
   <div class="row" id="rsel" style="gap:6px"></div>
-  <div class="tw"><svg id="map" viewBox="0 0 640 560" role="img" aria-label="Mappa dei tre percorsi Genova–Ginevra" style="width:100%;min-width:320px;max-width:100%;display:block"></svg></div>
-  <p class="note">Tratti colorati in base agli eventi dell'ultimo aggiornamento: <b class="ko">rosso</b> chiusura o incidente, <b class="mid">arancione</b> lavori, code o meteo. Mappa schematica in scala reale, senza dettaglio stradale: per la navigazione usa Google Maps.</p>
+  <div id="mapbox">
+    <div id="lmap" hidden></div>
+    <svg id="map" viewBox="0 0 640 560" role="img" aria-label="Mappa dei tre percorsi Genova–Ginevra"></svg>
+    <div class="legend" aria-label="Legenda">
+      <div><i style="background:var(--bad)"></i>Chiusura o incidente</div>
+      <div><i style="background:var(--warn)"></i>Lavori, code, meteo</div>
+      <div><i style="background:var(--good)"></i>Nessun evento</div>
+      <div class="note" id="mapnote">Passa sopra un tratto per i dettagli</div>
+    </div>
+  </div>
+  <div id="segdet" class="note"></div>
 </section>
 
 <section aria-labelledby="s2">
@@ -144,7 +166,9 @@ function calc(){
  const da=[$('cv').value.trim(),c].filter(Boolean).join(', '),aa=[$('dv').value.trim(),dd].filter(Boolean).join(', ');
  $('gm').innerHTML=`<a class="lk" href="https://www.google.com/maps/dir/?api=1&travelmode=driving&origin=${enc(da)}&destination=${enc(aa)}" target="_blank" rel="noopener"><b>Apri in Google Maps</b><span>${esc(da)} → ${esc(aa)}<br>Imposta "Parti alle ${best}:00" per il traffico previsto</span></a><a class="lk" href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=${enc(aa)}" target="_blank" rel="noopener"><b>Dalla mia posizione</b><span>Sul telefono parte da dove ti trovi verso ${esc(aa)}</span></a><a class="lk" href="https://www.waze.com/ul?q=${enc(aa)}&navigate=yes" target="_blank" rel="noopener"><b>Apri in Waze</b><span>Navigazione verso ${esc(aa)} con segnalazioni in diretta</span></a>`;
 }
-$('go1').onclick=()=>links($('a').value||'Genova',$('b').value||'Ginevra');
+const full=(v,c)=>[$(v).value.trim(),$(c).value.trim()].filter(Boolean).join(', ');
+$('go1').onclick=()=>links(full('av','a')||'Genova',full('bv','b')||'Ginevra');
+['av','a','bv','b'].forEach(k=>$(k).addEventListener('keydown',e=>{if(e.key==='Enter')$('go1').click()}));
 $('go2').onclick=calc;
 ['cv','c','dv','d'].forEach(k=>$(k).addEventListener('keydown',e=>{if(e.key==='Enter')calc()}));
 links('Genova','Ginevra');calc();
@@ -186,7 +210,7 @@ function drawMap(){
  [['ITALIA',[44.9,7.6]],['SVIZZERA',[46.55,7.6]],['FRANCIA',[45.6,6.25]]].forEach(([t,p])=>{const[a,b]=xy(p);s+=`<text x="${a}" y="${b}" font-size="12" letter-spacing="3" fill="var(--muted)" opacity=".6">${t}</text>`});
  SEG.forEach(([a,b,road,re,rr])=>{if(rr.includes(RS))return;const[x1,y1]=xy(P[a]),[x2,y2]=xy(P[b]);s+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="var(--line)" stroke-width="3" stroke-dasharray="4 4"/>`});
  SEG.forEach(([a,b,road,re,rr])=>{if(!rr.includes(RS))return;const[x1,y1]=xy(P[a]),[x2,y2]=xy(P[b]);const[c,e]=segState(re);
-  s+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="var(${c})" stroke-width="7" stroke-linecap="round"><title>${esc(road)}: ${e.length?e.length+' eventi':'nessun evento'}</title></line>`;
+  s+=`<line class="seg" data-a="${a}" data-b="${b}" x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="var(${c})" stroke-width="9" stroke-linecap="round"><title>${esc(road)}: ${e.length?e.length+' eventi':'nessun evento'}</title></line>`;
   s+=`<text x="${(x1+x2)/2+8}" y="${(y1+y2)/2}" font-size="10" font-weight="600" fill="var(--fg)">${esc(road)}${e.length?' · '+e.length:''}</text>`});
  const used=new Set(SEG.filter(z=>z[4].includes(RS)).flatMap(z=>[z[0],z[1]]));
  Object.entries(P).forEach(([n,p])=>{const[x,y]=xy(p);const on=used.has(n),big=n==='Genova'||n==='Ginevra';
@@ -194,6 +218,37 @@ function drawMap(){
   const west=p[1]<7.1;
   if(on||big)s+=`<text x="${west?x+10:x-6}" y="${y-9}" text-anchor="${west?'start':'end'}" font-size="${big?14:11}" font-weight="${big?700:500}" fill="var(--fg)" paint-order="stroke" stroke="var(--bg)" stroke-width="3">${n}</text>`});
  $('map').innerHTML=s;
+ $('map').querySelectorAll('line.seg').forEach(l=>{const z=SEG.find(q=>q[0]===l.dataset.a&&q[1]===l.dataset.b);l.onclick=()=>showSeg(z)});
+ if(window.L)drawLeaflet();
+}
+function showSeg(z){
+ const[a,b,road,re]=z,e=segState(re)[1];
+ $('segdet').innerHTML=`<b>${esc(road)} · ${esc(a)} → ${esc(b)}</b>: `+(e.length?'<ul style="margin:4px 0 0;padding-left:18px">'+e.map(x=>`<li><span class="pill ${TCLS[x.tipo]||''}">${esc(x.tipo)}</span> ${esc(x.strada)}: ${esc(x.testo)}</li>`).join('')+'</ul>':'nessun evento segnalato.');
+}
+// Mappa reale (solo sul sito GitHub, dove Leaflet e le mappe OpenStreetMap sono caricabili)
+let LM,LL,GEO={},TOK=0;
+async function routeGeo(a,b){
+ const k=a+'|'+b;if(GEO[k])return GEO[k];
+ try{const[pa,pb]=[P[a],P[b]];const r=await fetch(`https://router.project-osrm.org/route/v1/driving/${pa[1]},${pa[0]};${pb[1]},${pb[0]}?overview=simplified&geometries=geojson`);const j=await r.json();
+  GEO[k]=j.routes[0].geometry.coordinates.map(([lo,la])=>[la,lo]);}catch(e){GEO[k]=[P[a],P[b]]}
+ return GEO[k];
+}
+async function drawLeaflet(){
+ $('map').hidden=true;$('lmap').hidden=false;$('mapnote').textContent='Tocca un tratto per i dettagli. Zoom con due dita o la rotella.';
+ if(!LM){LM=L.map('lmap',{scrollWheelZoom:true}).setView([45.4,7.6],8);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(LM);}
+ const tok=++TOK,segs=SEG.filter(q=>q[4].includes(RS));
+ const geos=await Promise.all(segs.map(z=>routeGeo(z[0],z[1])));
+ if(tok!==TOK)return;
+ if(LL)LL.remove();LL=L.layerGroup().addTo(LM);
+ const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+ const all=[];
+ for(const[i,z]of segs.entries()){
+  const[a,b,road,re]=z,[c,e]=segState(re),g=geos[i];all.push(...g);
+  L.polyline(g,{color:css(c),weight:7,opacity:.9}).bindTooltip(`${road} · ${e.length?e.length+' eventi':'nessun evento'}`,{sticky:true}).on('click',()=>{showSeg(z);$('segdet').scrollIntoView({behavior:'smooth',block:'nearest'})}).addTo(LL);
+ }
+ Object.entries(P).forEach(([n,p])=>{if(all.some(q=>Math.abs(q[0]-p[0])<.02&&Math.abs(q[1]-p[1])<.02)||n==='Genova'||n==='Ginevra')L.circleMarker(p,{radius:n==='Genova'||n==='Ginevra'?8:5,color:'#17201b',weight:2,fillColor:'#fff',fillOpacity:1}).bindTooltip(n,{permanent:n==='Genova'||n==='Ginevra',direction:'top'}).addTo(LL)});
+ if(all.length)LM.fitBounds(all,{padding:[30,30]});
 }
 drawMap();
 
