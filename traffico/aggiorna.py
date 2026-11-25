@@ -73,6 +73,12 @@ for it in root.iter("item"):
         if ca: e.update(lat=ca[0], lon=ca[1], da=a)
         if cb: e.update(lat2=cb[0], lon2=cb[1], a=b)
         if ca and cb: e["km"] = round(km(ca, cb) * 1.2, 1)
+        m = re.search(r"\bin direzione\s+(.+?)(?:\s+provenendo|\s*<|$)", testo)
+        if m and (ca or cb):
+            dn = re.sub(r"^(A|SS|RA|T)\s?\d+\s*", "", m.group(1)).split("-")[-1].strip(" .")
+            dn = re.sub(r"\b(Voltri|Centro|Nord|Sud|Est|Ovest)$", "", dn).strip() or dn
+            cd = cerca(dn) if len(dn) > 2 else None
+            if cd: e.update(dirlat=cd[0], dirlon=cd[1], dir=dn)
     out.append(e)
 fonti = {"Italia": f"ok ({len(out)} eventi)"}
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

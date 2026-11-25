@@ -33,10 +33,10 @@ Sito: https://giovannirosso05-code.github.io/traffico-genova-ginevra/
 
 ## Cose da migliorare (in ordine di utilità)
 
-1. **Puntini per ATMB/APRR**: cercare le coordinate dei luoghi nei titoli (Bellegarde, Archamps…) per metterli sulla mappa.
+1. ~~Puntini per ATMB/APRR~~ ✅ fatto 26/11 (posizione dai luoghi nel titolo; se c'è solo la direzione è indicativa).
 2. **Notifiche sul telefono** (ntfy) quando c'è una chiusura sul percorso salvato: già pronte, basta la variabile `NTFY_TOPIC`.
-3. **Assegnare gli eventi al percorso in modo più preciso**: oggi entro 2 km dalla strada; può prendere eventi della carreggiata opposta o di una strada vicina.
-4. **Traduzione francese**: aggiungere al dizionario le parole che restano in francese (mandare screenshot).
+3. ~~Eventi sul percorso più precisi~~ ✅ fatto 26/11 (entro 1,5 km, esclusa la carreggiata opposta quando la fonte indica la direzione).
+4. ~~Traduzione francese~~ ✅ ampliata 26/11 (~70 parole in più); mandare screenshot delle frasi ancora strane.
 5. **Tempi con traffico**: oggi i tempi sono "senza traffico"; il tempo reale resta su Google Maps.
 6. **Vinci Autoroutes**: servirebbe un browser simulato su GitHub; fragile, da fare solo se serve davvero.
 7. **Nome dell'indirizzo**: il sito si chiama ancora `traffico-genova-ginevra`; si può rinominare il repository (cambia il link).

@@ -170,6 +170,8 @@ function popup(e){
   <div>${hl(e.testo)}</div>
   ${carrTxt(e)?`<div><b>Carreggiata:</b> <span class="${/chiusa/.test(carr(e))?'ko':''}">${esc(carrTxt(e))}</span></div>`:''}
   ${e.da?`<div><b>Tratto:</b> ${esc(e.da)}${e.a?' → '+esc(e.a):''}</div>`:''}
+  ${e.url&&/^https:\/\//.test(e.url)?`<div><a href="${esc(e.url)}" target="_blank" rel="noopener">Apri sul sito ufficiale</a></div>`:''}
+  ${e.approx?'<div class="muted">Posizione indicativa: la fonte indica solo la direzione</div>':''}
   <div><b>Lunghezza:</b> ${typeof e.km==='number'?'circa '+e.km+' km':(e.da&&!e.a?'punto singolo':'non indicata')}</div>
  </div>`;
 }
@@ -181,7 +183,7 @@ const lyrRoutes=L.layerGroup().addTo(map),lyrEv=L.layerGroup().addTo(map),lyrPin
 function drawEvents(list){
  lyrEv.clearLayers();
  list.filter(e=>typeof e.lat==='number').forEach(e=>{
-  if(typeof e.lat2==='number')L.polyline([[e.lat,e.lon],[e.lat2,e.lon2]],{color:col(e),weight:5,opacity:.8,dashArray:'6 6'}).addTo(lyrEv);
+  if(typeof e.lat2==='number'&&!e.approx)L.polyline([[e.lat,e.lon],[e.lat2,e.lon2]],{color:col(e),weight:5,opacity:.8,dashArray:'6 6'}).addTo(lyrEv);
   L.circleMarker([e.lat,e.lon],{radius:grave(e)?11:9,color:'#fff',weight:3,fillColor:col(e),fillOpacity:1})
    .bindPopup(popup(e),{maxWidth:290}).bindTooltip(e.tipo+' · '+e.strada).addTo(lyrEv);
  });
@@ -201,7 +203,24 @@ function distKm(p,line){
  }
  return best;
 }
-const onRoute=(e,line)=>typeof e.lat==='number'&&(distKm([e.lat,e.lon],line)<2||(typeof e.lat2==='number'&&distKm([e.lat2,e.lon2],line)<2));
+// indice del punto del percorso più vicino
+function nearIdx(p,line){let bi=0,bd=1e9;for(let i=0;i<line.length;i+=1){const d=(line[i][0]-p[0])**2+((line[i][1]-p[1])*Math.cos(p[0]*Math.PI/180))**2;if(d<bd){bd=d;bi=i}}return bi}
+const km2=(a,b)=>Math.hypot((a[0]-b[0])*110.6,(a[1]-b[1])*111.3*Math.cos(a[0]*Math.PI/180));
+// true = sul percorso e nella stessa direzione; 'opposto' = stessa strada ma carreggiata opposta
+function onRoute(e,line){
+ if(typeof e.lat!=='number')return false;
+ const A=[e.lat,e.lon],B=typeof e.lat2==='number'?[e.lat2,e.lon2]:null;
+ if(e.approx){ // si conosce solo la direzione (città → città): il percorso deve passare vicino a entrambe, nell'ordine giusto
+  if(!B)return false;return distKm(A,line)<6&&distKm(B,line)<6&&nearIdx(A,line)<nearIdx(B,line);
+ }
+ if(!(distKm(A,line)<1.5||(B&&distKm(B,line)<1.5)))return false;
+ if(typeof e.dirlat==='number'){
+  const D=[e.dirlat,e.dirlon],P=distKm(A,line)<1.5?A:B,i=nearIdx(P,line);
+  let j=i;while(j<line.length-1&&km2(line[i],line[j])<3)j++;
+  if(j>i&&km2(D,line[i])>4){ if(km2(D,line[j])>km2(D,line[i])+0.3)return'opposto'; }
+ }
+ return true;
+}
 
 // percorso
 const PICK={};
@@ -237,7 +256,7 @@ async function route(){
   const r=await fetch(`https://router.project-osrm.org/route/v1/driving/${a[1]},${a[0]};${b[1]},${b[0]}?alternatives=3&overview=full&geometries=geojson`);
   const j=await r.json();if(!j.routes||!j.routes.length)throw new Error('Nessun percorso stradale trovato.');
   ROUTES=j.routes.map(x=>({line:x.geometry.coordinates.map(([lo,la])=>[la,lo]),km:x.distance/1000,min:x.duration/60}));
-  ROUTES.forEach(R=>{R.ev=EV.filter(e=>onRoute(e,R.line)&&fase(e)!=='terminato');R.bad=R.ev.filter(grave).length});
+  ROUTES.forEach(R=>{const live=EV.filter(e=>fase(e)!=='terminato');R.ev=live.filter(e=>onRoute(e,R.line)===true);R.opp=live.filter(e=>onRoute(e,R.line)==='opposto').length;R.bad=R.ev.filter(grave).length});
   SEL=0;lyrPins.clearLayers();
   L.circleMarker(a,{radius:9,color:'#fff',weight:3,fillColor:css('--sign'),fillOpacity:1}).bindTooltip('Partenza').addTo(lyrPins);
   L.circleMarker(b,{radius:9,color:'#fff',weight:3,fillColor:'#17201b',fillOpacity:1}).bindTooltip('Arrivo').addTo(lyrPins);
@@ -256,7 +275,7 @@ function showRoutes(fit){
  drawEvents(R.ev);
  if(fit)map.fitBounds(R.line,{padding:[30,30]});
  const now=R.ev.filter(e=>grave(e)&&fase(e)==='in corso').length,prog=R.ev.filter(e=>grave(e)&&fase(e)==='programmato').length,alt=R.ev.length-now-prog;
- $('status').innerHTML=(now?`<b class="ko">⛔ ${now} chiusure o incidenti adesso</b>`:prog?`<b class="mid">Aperto, ma ${prog} chiusure programmate</b>`:`<b class="ok">Nessuna chiusura</b>`)+' sul percorso scelto'+(alt>0?` · ${alt} tra lavori, code e meteo`:'');
+ $('status').innerHTML=(now?`<b class="ko">⛔ ${now} chiusure o incidenti adesso</b>`:prog?`<b class="mid">Aperto, ma ${prog} chiusure programmate</b>`:`<b class="ok">Nessuna chiusura</b>`)+' sul percorso scelto'+(alt>0?` · ${alt} tra lavori, code e meteo`:'')+(R.opp?`<div class="muted">Esclusi ${R.opp} avvisi sulla carreggiata opposta.</div>`:'');
  $('routes').innerHTML=ROUTES.map((x,i)=>`<button type="button" class="rt ${i===SEL?'on':''}" data-i="${i}"><span class="pill ${x.bad?'ko':x.ev.length?'mid':'ok'}">${x.bad?x.bad+' chius.':x.ev.length?x.ev.length+' avvisi':'libero'}</span><span><b class="num">${hm(x.min)}</b> <span class="muted num">· ${Math.round(x.km)} km</span><br><span class="muted">${i===0?'Percorso più rapido':'Alternativa '+i} · tempo senza traffico</span></span><span class="muted">${i===SEL?'scelto':'scegli'}</span></button>`).join('');
  $('routes').querySelectorAll('.rt').forEach(b=>b.onclick=()=>{SEL=+b.dataset.i;showRoutes()});
  $('res').hidden=false;
@@ -331,7 +350,10 @@ $('from').addEventListener('input',()=>{if($('from').value!=='La mia posizione')
   $('updbig').innerHTML=`Ultimo aggiornamento: <b>${t.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'})}</b> del ${t.toLocaleDateString('it-IT')} <span class="muted">(${min<1?'adesso':min<60?min+' min fa':Math.floor(min/60)+' h fa'})</span><br><span class="muted">Si aggiorna da solo <b style="font-size:inherit">ogni ora</b>. Ricarica la pagina per vedere i dati nuovi.</span>`;
   $('upd').textContent='Dati aggiornati '+t.toLocaleString('it-IT',{dateStyle:'short',timeStyle:'short'})+' · aggiornamento ogni ora · Fonti: '+Object.entries(d.fonti||{Italia:'ok'}).map(([k,v])=>k+' '+(String(v).startsWith('ok')?'✓':'✗ ('+v+')')).join(', ')+'.';
   const live=EV.filter(e=>fase(e)!=='terminato');
-  drawEvents(live);listEvents(live,'Tutti i problemi segnalati');
+  let fr=null;try{fr=await (await fetch('atmb.json?'+Date.now())).json()}catch(e){}
+  if(fr&&fr.eventi)fr.eventi.forEach((x,i)=>{if(typeof x.lat==='number')EV.push({id:'fr'+i,strada:(x.titolo.match(/^A\d+\w*/)||[''])[0]+' ('+x.gestore+')',testo:x.titolo+(x.testo?' · '+x.testo:''),tipo:x.tipo,lat:x.lat,lon:x.lon,lat2:x.lat2,lon2:x.lon2,approx:x.approx,url:x.url,paese:'Francia'})});
+  const live2=EV.filter(e=>fase(e)!=='terminato');
+  drawEvents(live2);listEvents(live2,'Tutti i problemi segnalati');
   let showAll=false;const drawFR=a=>{
    const ev=a.eventi||[],ch=ev.filter(x=>x.tipo==='chiusura');
    let b=a.tunnel?`<div>Traforo del Monte Bianco: <b>${esc(a.tunnel)}</b></div>`:'';
@@ -343,7 +365,7 @@ $('from').addEventListener('input',()=>{if($('from').value!=='La mia posizione')
    const mb=$('atmbmore');if(mb)mb.onclick=()=>{showAll=true;drawFR(a)};
    if(ch.length)$('atmb').style.borderColor=css('--bad');
   };
-  fetch('atmb.json?'+Date.now()).then(r=>r.json()).then(drawFR).catch(()=>{});
+  if(fr)drawFR(fr);
   let s=null;try{s=JSON.parse(localStorage.getItem('viaggio'))}catch(e){}
   if(s&&s.f&&s.t&&s.f!=='La mia posizione'){$('from').value=s.f;$('to').value=s.t;route()}
  }catch(e){$('upd').textContent='Dati sul traffico non disponibili al momento.'}
