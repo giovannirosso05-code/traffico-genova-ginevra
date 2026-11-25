@@ -21,6 +21,7 @@ jobs:
         run: |
           GEOCODE=1 python3 traffico/aggiorna.py > /tmp/dati.json && mv /tmp/dati.json traffico/sito/dati.json
           python3 traffico/storico.py
+          python3 traffico/atmb.py || true
       - name: Salva dati
         run: |
           git config user.name "aggiornamento-traffico"
