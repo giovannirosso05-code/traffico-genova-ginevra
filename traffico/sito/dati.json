@@ -1,7 +1,14 @@
 {
- "aggiornato": "2026-11-25T20:12+00:00",
+ "aggiornato": "2026-11-25T20:13+00:00",
  "fonte": "CCISS (feed ufficiale)",
  "eventi": [
+  {
+   "id": "0e6f44b3e0ea55fd",
+   "strada": "A26 Genova-Gravellona Toce",
+   "testo": "veicolo fermo o in avaria dalle 21:12 del 25 novembre 2026 tra Svincolo Alessandria Sud e Allacciamento Diram. Predosa-Bettole in direzione Genova Voltri",
+   "tipo": "altro",
+   "quando": "2026-11-25T20:13:00Z"
+  },
   {
    "id": "622ab1fba0376e7f",
    "strada": "A26 Genova-Gravellona Toce",
