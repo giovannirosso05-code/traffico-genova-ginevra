@@ -43,6 +43,7 @@ try:
         titolo = meta(h, "og:title") or (re.search(r"(?is)<h1[^>]*>(.*?)</h1>", h) or [None, ""])[1]
         titolo = re.sub(r"\s*[-|–]\s*ATMB.*$", "", pulito(titolo or ""))
         descr = meta(h, "og:description") or meta(h, "description")
+        if re.match(r"(?i)^ATMB\b", descr): descr = ""      # descrizione generica del sito, non dell'evento
         titolo_it, descr_it = traduci(titolo.replace("|", ",")), traduci(descr.replace("|", ","))
         testo = (titolo + " " + descr).lower()
         tipo = "chiusura" if re.search(r"fermeture|coupure|ferm[ée]|interruption", testo) else \
