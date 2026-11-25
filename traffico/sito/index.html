@@ -236,7 +236,17 @@ async function routeGeo(a,b){
 async function drawLeaflet(){
  $('map').hidden=true;$('lmap').hidden=false;$('mapnote').textContent='Tocca un tratto per i dettagli. Zoom con due dita o la rotella.';
  if(!LM){LM=L.map('lmap',{scrollWheelZoom:true}).setView([45.4,7.6],8);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(LM);}
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(LM);
+  if(navigator.geolocation){const btn=document.createElement('button');btn.type='button';btn.textContent='📍 La mia posizione';btn.style.cssText='margin-top:4px;padding:6px 8px;font-size:.78rem';
+   $('mapnote').after(btn);let me,acc,wid;
+   btn.onclick=()=>{btn.textContent='Cerco la posizione…';
+    if(wid!=null)navigator.geolocation.clearWatch(wid);
+    wid=navigator.geolocation.watchPosition(p=>{const ll=[p.coords.latitude,p.coords.longitude];
+      if(!me){me=L.circleMarker(ll,{radius:9,color:'#fff',weight:3,fillColor:'#2563eb',fillOpacity:1}).bindTooltip('Sei qui').addTo(LM);acc=L.circle(ll,{radius:p.coords.accuracy,color:'#2563eb',weight:1,fillOpacity:.1}).addTo(LM);LM.setView(ll,11)}
+      else{me.setLatLng(ll);acc.setLatLng(ll).setRadius(p.coords.accuracy)}
+      btn.textContent='📍 Centra su di me';btn.onclick=()=>LM.setView(me.getLatLng(),12);},
+     e=>{btn.textContent=e.code===1?'Posizione non permessa: abilitala nelle impostazioni del browser':'Posizione non disponibile, riprova'},
+     {enableHighAccuracy:true,maximumAge:30000,timeout:20000});};}}
  const tok=++TOK,segs=SEG.filter(q=>q[4].includes(RS));
  const geos=await Promise.all(segs.map(z=>routeGeo(z[0],z[1])));
  if(tok!==TOK)return;
