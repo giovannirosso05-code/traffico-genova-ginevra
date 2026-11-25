@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-25T23:09+00:00",
+ "aggiornato": "2026-11-25T23:10+00:00",
  "fonte": "CCISS, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -7,6 +7,30 @@
   "Svizzera": "non attiva (manca la chiave)"
  },
  "eventi": [
+  {
+   "id": "ce14eb4cbac39b1d",
+   "strada": "A10 Genova-Ventimiglia",
+   "testo": "personale su strada causa lavori dalle 00:08 alle 00:53 del 26 novembre 2026 tra Svincolo Albisola e Svincolo A10 - A06 al Km 44 in direzione Ventimiglia",
+   "tipo": "lavori",
+   "quando": "2026-11-25T23:10:00Z",
+   "lat": 44.339838,
+   "lon": 8.509353,
+   "da": "Albisola"
+  },
+  {
+   "id": "4a4bc6587453bbea",
+   "strada": "S01 Strada Grande Comunicazione Fi-Pi-Li (per Livorno)",
+   "testo": "veicoli scortati per maltempo causa perdita di carico dalle 00:07 del 26 novembre 2026 tra Svincolo Empoli e Svincolo Empoli Ovest in direzione Livorno",
+   "tipo": "altro",
+   "quando": "2026-11-25T23:09:00Z",
+   "lat": 43.3192056,
+   "lon": 10.5514765,
+   "da": "Empoli",
+   "lat2": 43.3192056,
+   "lon2": 10.5514765,
+   "a": "Empoli",
+   "km": 0.0
+  },
   {
    "id": "e1281c9c478e759b",
    "strada": "A1 Firenze-Roma",
@@ -975,20 +999,6 @@
    "quando": "2026-11-25T20:39:00Z"
   },
   {
-   "id": "ef79f2f2cbf91d45",
-   "strada": "A24 Roma-Teramo",
-   "testo": "pioggia dalle 21:38 del 25 novembre 2026 tra Svincolo Carsoli-Oricola e Svincolo Valle Del Salto",
-   "tipo": "meteo",
-   "quando": "2026-11-25T20:39:00Z",
-   "lat": 42.0873475,
-   "lon": 13.0582574,
-   "da": "Carsoli-Oricola",
-   "lat2": 42.1729201,
-   "lon2": 13.280131,
-   "a": "Valle Del Salto",
-   "km": 24.7
-  },
-  {
    "id": "f423e9646951234a",
    "strada": "SS4 Via Salaria",
    "testo": "carreggiata chiusa causa lavori di manutenzione tra 2,187 km prima di Incrocio Rieti - SS578 Salto Cicolana e 25 m dopo Incrocio Maglianello in direzione Incrocio Piazza Fiume",
@@ -1039,16 +1049,6 @@
    "lon2": 12.8839166,
    "a": "Tangenziale",
    "km": 37.2
-  },
-  {
-   "id": "fffc5524f3883d89",
-   "strada": "A24 Roma-Teramo",
-   "testo": "impianto di distribuzione carburante chiuso dalle 21:23 del 25 alle 06:00 del 26 novembre 2026 a Area di servizio Valle Aterno in direzione Teramo",
-   "tipo": "chiusura",
-   "quando": "2026-11-25T20:24:00Z",
-   "lat": 42.3466405,
-   "lon": 13.3546469,
-   "da": "Valle Aterno"
   },
   {
    "id": "1dccf2d487b894d9",
@@ -1124,7 +1124,7 @@
   {
    "id": "dc3bea9a989f7baa",
    "strada": "N51 (Francia)",
-   "testo": "segnalazione dalle 13:48 del 28 aprile 2025 · Arrêté n°T 26-152/08 · Da 3730 m a sud di Chatelet-sur-Retourne fino a 4065 m a nord di Bazancourt Village",
+   "testo": "segnalazione dalle 13:48 del 28 aprile 2025 · Arrêté n. T 26-152/08 · Da 3730 m a sud di Chatelet-sur-Retourne fino a 4065 m a nord di Bazancourt Village",
    "tipo": "altro",
    "quando": "2026-04-10T15:55:32.143+02:00",
    "corsie": "",
@@ -1154,7 +1154,7 @@
   {
    "id": "a0645424f1f00d7b",
    "strada": "A34 (Francia)",
-   "testo": "segnalazione dalle 12:21 del 30 marzo 2026 · Da 1600 m a l'est di Villers fino a 381 m a l'ovest di Lumes · Direzione Belgique (da Reims)",
+   "testo": "segnalazione dalle 12:21 del 30 marzo 2026 · Arrêté n. T26–149AR · Da 1600 m a l'est di Villers fino a 381 m a l'ovest di Lumes · Direzione Belgique (da Reims)",
    "tipo": "altro",
    "quando": "2026-06-12T04:02:49.784+02:00",
    "corsie": "",
@@ -2157,7 +2157,7 @@
   {
    "id": "c4d98c0060e6a6cc",
    "strada": "N330 (Francia)",
-   "testo": "segnalazione dalle 16:00 del 6 ottobre 2026 · Arrêté n°T 26 – 538 O · Da 70 m a nord di Le Plessis-Belleville ovest fino a 23 m a sud di Ermenonville sud",
+   "testo": "segnalazione dalle 16:00 del 6 ottobre 2026 · Arrêté n. T 26 – 538 O · Da 70 m a nord di Le Plessis-Belleville ovest fino a 23 m a sud di Ermenonville sud",
    "tipo": "altro",
    "quando": "2026-10-28T09:00:25.885+01:00",
    "corsie": "",
@@ -2202,7 +2202,7 @@
   {
    "id": "8cf1dfe138975aef",
    "strada": "N2 (Francia)",
-   "testo": "segnalazione dalle 11:50 del 25 novembre 2024 · Arrêté n° T 24-481 AI (Prorogation dell’arrêté T 23-548 AI) · Da 4591 m a nord di 27202 fino a 957 m a sud di Marle",
+   "testo": "segnalazione dalle 11:50 del 25 novembre 2024 · Arrêté n. T 24-481 AI (Prorogation dell’arrêté T 23-548 AI) · Da 4591 m a nord di 27202 fino a 957 m a sud di Marle",
    "tipo": "altro",
    "quando": "2026-10-28T16:31:21.709+01:00",
    "corsie": "",
@@ -2357,7 +2357,7 @@
   {
    "id": "b7b9ca04470c4a77",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 09:00 del 27 novembre 2026 alle 16:00 del 27 novembre 2026 · Deviazione direction Rennes a l' svincolo di \"Caradec\" PR 35+500. Suivre RD724, le rond point di la Rochette e la rue di la Rochette. Les usagers retrouvent leur itinéraire en s'insérant su la rampa di entrata dell’svincolo di \"La Mare St-J",
+   "testo": "segnalazione dalle 09:00 del 27 novembre 2026 alle 16:00 del 27 novembre 2026 · Deviazione direction Rennes a l' svincolo di \"Caradec\" PR 35+500. Suivre RD724, le rond point di la Rochette e la rue di la Rochette. Les usagers retrouvent leur percorso en s'insérant su la rampa di entrata dell’svincolo di \"La Mare St-Jul",
    "tipo": "altro",
    "quando": "2026-11-03T09:26:21.120+01:00",
    "corsie": "",
@@ -3139,7 +3139,7 @@
   {
    "id": "ee84144d2fec66ec",
    "strada": "A75 (Francia)",
-   "testo": "lavori dalle 08:00 del 30 novembre 2026 alle 17:25 del 4 dicembre 2026 · La velocità sera limitée a 90 km/h. le passage dei trasporto eccezionale sera vietato a niveau di la zone di lavori durant toute la durée del cantiere in entrambe le direzioni si la largeur del convoi est supérieure a 4.20m · Da 4315 m a no",
+   "testo": "lavori dalle 08:00 del 30 novembre 2026 alle 17:25 del 4 dicembre 2026 · La velocità sera limitée a 90 km/h. le passage dei trasporto eccezionale sera vietato all'altezza di la zone di lavori durant toute la durée del cantiere in entrambe le direzioni si la largeur del convoi est supérieure a 4.20m · Da 4315 m a",
    "tipo": "lavori",
    "quando": "2026-11-16T17:26:31.437+01:00",
    "corsie": "",
@@ -3154,7 +3154,7 @@
   {
    "id": "f804d8fdb427f309",
    "strada": "A75 (Francia)",
-   "testo": "lavori dalle 08:00 del 30 novembre 2026 alle 17:25 del 4 dicembre 2026 · La velocità sera limitée a 90 km/h. le passage dei trasporto eccezionale sera vietato a niveau di la zone di lavori durant toute la durée del cantiere in entrambe le direzioni si la largeur del convoi est supérieure a 4.20m · Da 4412 m a no",
+   "testo": "lavori dalle 08:00 del 30 novembre 2026 alle 17:25 del 4 dicembre 2026 · La velocità sera limitée a 90 km/h. le passage dei trasporto eccezionale sera vietato all'altezza di la zone di lavori durant toute la durée del cantiere in entrambe le direzioni si la largeur del convoi est supérieure a 4.20m · Da 4412 m a",
    "tipo": "lavori",
    "quando": "2026-11-16T17:26:31.437+01:00",
    "corsie": "",
@@ -3800,7 +3800,7 @@
   {
    "id": "1009a42ff9a3f180",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 17:30 del 22 novembre 2026 · RD1212 Coulée di boue in les Gorges dell’Arly a niveau del PR9",
+   "testo": "segnalazione dalle 17:30 del 22 novembre 2026 · RD1212 Coulée di boue in les Gorges dell’Arly all'altezza di PR9",
    "tipo": "altro",
    "quando": "2026-11-23T00:37:19.855+01:00",
    "corsie": "",
@@ -5779,7 +5779,7 @@
   {
    "id": "11d4e84cb103166a",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 21:32 del 22 luglio 2026 · Suite a une reconnaissance del site a niveau dell’incendie, réouverture di la RD915 accès a Planay con mise en place di un senso unico alternato di traffico. del venerdì 27 novembre a venerdì 4 dicembre à12h.La traffico sera sous senso unic",
+   "testo": "segnalazione dalle 21:32 del 22 luglio 2026 · Suite a une reconnaissance del site all'altezza didell’incendie, réouverture di la RD915 accès a Planay con mise en place di un senso unico alternato di traffico. del venerdì 27 novembre a venerdì 4 dicembre à12h.La traffico sera sous senso",
    "tipo": "altro",
    "quando": "2026-11-25T18:12:58.939+01:00",
    "corsie": "",
@@ -5824,7 +5824,7 @@
   {
    "id": "a37eb64ea6deb92b",
    "strada": "A20 (Francia)",
-   "testo": "segnalazione dalle 18:45 del 25 novembre 2026 alle 06:00 del 11 dicembre 2026 · Uscita N°28 chiuso · Causa cantiere · Da 990 m a sud di area di servizio di Beaune-les-Mines fino a 946 m a nord di Beaubreuil · Direzione Toulouse (da Paris)",
+   "testo": "segnalazione dalle 18:45 del 25 novembre 2026 alle 06:00 del 11 dicembre 2026 · Uscita n. 28 chiuso · Causa cantiere · Da 990 m a sud di area di servizio di Beaune-les-Mines fino a 946 m a nord di Beaubreuil · Direzione Toulouse (da Paris)",
    "tipo": "altro",
    "quando": "2026-11-25T18:48:14.663+01:00",
    "corsie": "",
@@ -6342,7 +6342,7 @@
   {
    "id": "5817c0596aaa3222",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 20:30 del 23 novembre 2026 alle 06:00 del 27 novembre 2026 · Lavori di rénovation del galleria di ponte di Claix. chiusura di la N85 in i 2 direzione di traffico del 23/11 a 27/11, les nuits dalle 20:30 alle 06:00",
+   "testo": "lavori dalle 20:30 del 23 novembre 2026 alle 06:00 del 27 novembre 2026 · Lavori di rénovation del galleria di ponte di Claix. chiusura di la N85 in i 2 direzione di traffico dal 23/11 al 27/11, les nuits dalle 20:30 alle 06:00",
    "tipo": "lavori",
    "quando": "2026-11-25T20:46:15.498+01:00",
    "corsie": "",
@@ -6357,7 +6357,7 @@
   {
    "id": "257405c8860bbd67",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 20:32 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · Chiusura di la N85 direzione Grenoble - Vizille tra l'svincolo n°8 dell’A480 e le giratoire di Champagnier",
+   "testo": "segnalazione dalle 20:32 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · Chiusura di la N85 direzione Grenoble - Vizille tra l'svincolo n. 8 dell’A480 e le giratoire di Champagnier",
    "tipo": "altro",
    "quando": "2026-11-25T20:46:15.498+01:00",
    "corsie": "",
@@ -6372,7 +6372,7 @@
   {
    "id": "1a86c70690d5de30",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 20:46 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · Chiusura di la N85 direzione Vizille -Grenoble tra le giratoire di Champagnier e l'svincolo n°8 dell’A480",
+   "testo": "segnalazione dalle 20:46 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · Chiusura di la N85 direzione Vizille -Grenoble tra le giratoire di Champagnier e l'svincolo n. 8 dell’A480",
    "tipo": "altro",
    "quando": "2026-11-25T20:46:15.498+01:00",
    "corsie": "",
@@ -6679,7 +6679,7 @@
   {
    "id": "518e31f7101fdc17",
    "strada": "N31 (Francia)",
-   "testo": "lavori dalle 18:00 del 11 dicembre 2025 · AI annule e remplace l'Arrêté n° T 26-332 AI · Da 4910 m a l'est di Sermoise est fino a 3856 m a l'ovest di Bazoches-sur-Vesle",
+   "testo": "lavori dalle 18:00 del 11 dicembre 2025 · Arrêté n. T26-605 AI annule e remplace l'Arrêté n. T 26-332 AI · Da 4910 m a l'est di Sermoise est fino a 3856 m a l'ovest di Bazoches-sur-Vesle",
    "tipo": "lavori",
    "quando": "2026-11-25T21:21:38.636+01:00",
    "corsie": "corsie ridotte",
@@ -6754,7 +6754,7 @@
   {
    "id": "a6222c2893f83fbc",
    "strada": "N20 (Francia)",
-   "testo": "lavori dalle 20:30 del 24 novembre 2026 alle 06:00 del 11 dicembre 2026 · Lavori di manutenzione (di pulizia condotte) (QUINQUIES) RN20-2026 · Da 49 m a sud di Saint-Jean-de-Verges fino a 2738 m a nord di Saint-Paul-de-Jarrat",
+   "testo": "lavori dalle 20:30 del 24 novembre 2026 alle 06:00 del 11 dicembre 2026 · Lavori di manutenzione (di pulizia condotte) ARRÊTÉ n. A-094 (QUINQUIES) RN20-2026 · Da 49 m a sud di Saint-Jean-de-Verges fino a 2738 m a nord di Saint-Paul-de-Jarrat",
    "tipo": "lavori",
    "quando": "2026-11-25T21:23:47.677+01:00",
    "corsie": "",
@@ -7627,7 +7627,7 @@
   {
    "id": "068e5e6af0e54241",
    "strada": "N141 (Francia)",
-   "testo": "segnalazione dalle 22:43 del 25 novembre 2026 · Uscita N°70 obligatoire · 14419 m a l'est di Nieul - Fontafié · Direzione Angoulême (da Limoges)",
+   "testo": "segnalazione dalle 22:43 del 25 novembre 2026 · Uscita n. 70 obligatoire · 14419 m a l'est di Nieul - Fontafié · Direzione Angoulême (da Limoges)",
    "tipo": "altro",
    "quando": "2026-11-25T23:00:30.546+01:00",
    "corsie": "",
