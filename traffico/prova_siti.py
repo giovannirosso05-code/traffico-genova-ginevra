@@ -1,8 +1,7 @@
 """Prova temporanea: com'è fatto il sito traffico di Vinci e APRR."""
 import json, re, html, urllib.request
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120 Safari/537.36", "Accept-Language": "fr-FR,fr;q=0.9"}
-URL = ["https://www.vinci-autoroutes.com/fr/trafic", "https://www.vinci-autoroutes.com/fr/info-trafic", "https://www.vinci-autoroutes.com",
-       "https://voyage.aprr.fr", "https://voyage.aprr.fr/trafic", "https://voyage.aprr.fr/info-trafic", "https://www.aprr.fr"]
+URL = ["https://www.vinci-autoroutes.com/fr/infos-travaux/", "https://voyage.aprr.fr/travaux-et-operations", "https://voyage.aprr.fr/travaux/previsions-travaux", "https://voyage.aprr.fr/information-trafic"]
 rep = {}
 for u in URL:
     try:
@@ -13,5 +12,5 @@ for u in URL:
     rep[u] = {"stato": st, "len": len(h), "testo_len": len(t),
               "link": sorted(set(re.findall(r'href="([^"]*(?:trafic|chantier|travaux|fermeture|evenement|event)[^"]*)"', h, re.I)))[:25],
               "api": sorted(set(re.findall(r'["\']((?:https?:)?/[^"\']*(?:api|json|graphql|datex|ajax)[^"\']*)["\']', h, re.I)))[:25],
-              "estratti": [t[max(0, m.start()-100):m.start()+220] for m in re.finditer(r"(?i)fermeture|travaux|chantier|coupure", t)][:4]}
+              "estratti": [t[max(0, m.start()-100):m.start()+220] for m in re.finditer(r"(?i)fermeture|coupure|ferm[ée]e|nuit|A\d{1,3}\b", t)][:4]}
 json.dump(rep, open("traffico/sito/prova_siti.json", "w"), ensure_ascii=False, indent=1)
