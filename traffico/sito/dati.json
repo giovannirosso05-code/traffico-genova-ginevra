@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-25T20:14+00:00",
+ "aggiornato": "2026-11-25T20:16+00:00",
  "fonte": "CCISS (feed ufficiale)",
  "eventi": [
   {
@@ -7,56 +7,88 @@
    "strada": "A26 Genova-Gravellona Toce",
    "testo": "veicolo fermo o in avaria dalle 21:12 del 25 novembre 2026 tra Svincolo Alessandria Sud e Allacciamento Diram. Predosa-Bettole in direzione Genova Voltri",
    "tipo": "altro",
-   "quando": "2026-11-25T20:13:00Z"
+   "quando": "2026-11-25T20:13:00Z",
+   "lat": 44.8349534,
+   "lon": 8.7450304,
+   "da": "Alessandria"
   },
   {
    "id": "130e42fa001a1fbb",
    "strada": "A7 Milano-Genova",
    "testo": "lavori tra Allacciamento Diramazione Predosa-Bettole e Svincolo Serravalle Scrivia in direzione Genova",
    "tipo": "lavori",
-   "quando": "2026-11-25T20:13:00Z"
+   "quando": "2026-11-25T20:13:00Z",
+   "lat": 44.830028,
+   "lon": 8.813473,
+   "da": "Diramazione Predosa-Bettole",
+   "lat2": 44.7255798,
+   "lon2": 8.8547001,
+   "a": "Serravalle Scrivia",
+   "km": 14.5
   },
   {
    "id": "622ab1fba0376e7f",
    "strada": "A26 Genova-Gravellona Toce",
    "testo": "personale su strada causa lavori dalle 21:07 alle 21:52 del 25 novembre 2026 tra Svincolo Vercelli Est e Allacciamento Diramazione Stroppiana-Santhia in direzione Genova Voltri",
    "tipo": "lavori",
-   "quando": "2026-11-25T20:08:00Z"
+   "quando": "2026-11-25T20:08:00Z",
+   "lat": 45.5553827,
+   "lon": 8.3462837,
+   "da": "Vercelli",
+   "lat2": 45.2544918,
+   "lon2": 8.443617,
+   "a": "Diramazione Stroppiana-Santhia",
+   "km": 41.2
   },
   {
    "id": "c8d9c2c0b02b1ec7",
    "strada": "A26 Genova-Gravellona Toce",
    "testo": "area di servizio chiusa causa tratto chiuso dalle 21:05 del 25 alle 05:00 del 26 novembre 2026 a Area di servizio Stura in direzione Genova Voltri",
    "tipo": "chiusura",
-   "quando": "2026-11-25T20:07:00Z"
+   "quando": "2026-11-25T20:07:00Z",
+   "lat": 45.31515,
+   "lon": 7.305909,
+   "da": "Stura"
   },
   {
    "id": "16803231966b69d2",
    "strada": "A10 Genova-Ventimiglia",
    "testo": "personale su strada causa lavori dalle 21:06 alle 21:50 del 25 novembre 2026 tra Svincolo Albisola e Svincolo A10 - A06 al Km 44 in direzione Ventimiglia",
    "tipo": "lavori",
-   "quando": "2026-11-25T20:07:00Z"
+   "quando": "2026-11-25T20:07:00Z",
+   "lat": 44.339838,
+   "lon": 8.509353,
+   "da": "Albisola"
   },
   {
    "id": "5d260a19cf4a02f7",
    "strada": "A26 Genova-Gravellona Toce",
    "testo": "tratto chiuso causa lavori dalle 21:04 del 25 alle 05:00 del 26 novembre 2026 tra Allacciamento Diram. Predosa-Bettole e Svincolo Masone in direzione Genova Voltri",
    "tipo": "chiusura",
-   "quando": "2026-11-25T20:06:00Z"
+   "quando": "2026-11-25T20:06:00Z",
+   "lat2": 44.5013362,
+   "lon2": 8.7163481,
+   "a": "Masone"
   },
   {
    "id": "481b2724702240ee",
    "strada": "A7 Milano-Genova",
    "testo": "chiusura notturna, chiusura nodo causa lavori di manutenzione dalle 21:04 del 25 alle 05:00 del 26 novembre 2026 a Allacciamento Diramazione Predosa-Bettole in direzione A26 provenendo da Milano e da Genova",
    "tipo": "chiusura",
-   "quando": "2026-11-25T20:04:00Z"
+   "quando": "2026-11-25T20:04:00Z",
+   "lat": 44.830028,
+   "lon": 8.813473,
+   "da": "Diramazione Predosa-Bettole"
   },
   {
    "id": "066665c85ace3ede",
    "strada": "A26 Diramazione Predosa-Bettole",
    "testo": "area di servizio chiusa causa tratto chiuso dalle 21:01 del 25 alle 05:00 del 26 novembre 2026 a Area di servizio Marengo in direzione A26 Genova Voltri-Gravellona Toce",
    "tipo": "chiusura",
-   "quando": "2026-11-25T20:03:00Z"
+   "quando": "2026-11-25T20:03:00Z",
+   "lat": 44.8961073,
+   "lon": 8.6692993,
+   "da": "Marengo"
   },
   {
    "id": "b33a73d66f3a5116",
@@ -70,77 +102,134 @@
    "strada": "A4 Torino-Milano",
    "testo": "lavori tra 2,3 km prima di Svincolo Chivasso Est e 564 m dopo Svincolo Brandizzo in direzione Torino",
    "tipo": "lavori",
-   "quando": "2026-11-25T19:52:00Z"
+   "quando": "2026-11-25T19:52:00Z",
+   "lat": 45.1898322,
+   "lon": 7.8860277,
+   "da": "Chivasso",
+   "lat2": 45.1766065,
+   "lon2": 7.8380043,
+   "a": "Brandizzo",
+   "km": 4.8
   },
   {
    "id": "e08914183b2df52f",
    "strada": "A7 Milano-Genova",
    "testo": "lavori tra Svincolo Serravalle Scrivia e Svincolo Tortona in direzione Milano",
    "tipo": "lavori",
-   "quando": "2026-11-25T19:49:00Z"
+   "quando": "2026-11-25T19:49:00Z",
+   "lat": 44.7255798,
+   "lon": 8.8547001,
+   "da": "Serravalle Scrivia",
+   "lat2": 44.89666,
+   "lon2": 8.8641282,
+   "a": "Tortona",
+   "km": 22.8
   },
   {
    "id": "a67376b874c241eb",
    "strada": "A10 Genova-Ventimiglia",
    "testo": "personale su strada causa lavori dalle 20:40 alle 21:25 del 25 novembre 2026 tra Svincolo Celle Ligure e Svincolo Varazze in direzione Genova",
    "tipo": "lavori",
-   "quando": "2026-11-25T19:42:00Z"
+   "quando": "2026-11-25T19:42:00Z",
+   "lat": 44.3463235,
+   "lon": 8.5444342,
+   "da": "Celle Ligure",
+   "lat2": 44.3592996,
+   "lon2": 8.5753273,
+   "a": "Varazze",
+   "km": 3.4
   },
   {
    "id": "a234f11d59f1b391",
    "strada": "A12 Genova-Rosignano",
    "testo": "personale su strada causa lavori dalle 20:37 alle 21:22 del 25 novembre 2026 tra Svincolo Genova Nervi e Allacciamento A7 Milano-Genova in direzione Genova",
    "tipo": "lavori",
-   "quando": "2026-11-25T19:40:00Z"
+   "quando": "2026-11-25T19:40:00Z",
+   "lat": 44.3812645,
+   "lon": 9.0399213,
+   "da": "Genova Nervi"
   },
   {
    "id": "745755cbd3380b9e",
    "strada": "A10 Genova-Ventimiglia",
    "testo": "personale su strada causa lavori dalle 20:38 alle 21:22 del 25 novembre 2026 tra Svincolo Arenzano e Allacciamento A26 Ge Voltri-Gravellona T. in direzione Genova",
    "tipo": "lavori",
-   "quando": "2026-11-25T19:40:00Z"
+   "quando": "2026-11-25T19:40:00Z",
+   "lat": 44.4025183,
+   "lon": 8.6831317,
+   "da": "Arenzano"
   },
   {
    "id": "826512509dbd046e",
    "strada": "A10 Genova-Ventimiglia",
    "testo": "personale su strada causa lavori dalle 20:38 alle 21:23 del 25 novembre 2026 tra Svincolo Arenzano e Svincolo Varazze in direzione Ventimiglia",
    "tipo": "lavori",
-   "quando": "2026-11-25T19:40:00Z"
+   "quando": "2026-11-25T19:40:00Z",
+   "lat": 44.4025183,
+   "lon": 8.6831317,
+   "da": "Arenzano",
+   "lat2": 44.3592996,
+   "lon2": 8.5753273,
+   "a": "Varazze",
+   "km": 11.8
   },
   {
    "id": "0146771b4b29364a",
    "strada": "A7 Milano-Genova",
    "testo": "lavori a Allacciamento Diramazione Predosa-Bettole in direzione Milano",
    "tipo": "lavori",
-   "quando": "2026-11-25T19:39:00Z"
+   "quando": "2026-11-25T19:39:00Z",
+   "lat": 44.830028,
+   "lon": 8.813473,
+   "da": "Diramazione Predosa-Bettole"
   },
   {
    "id": "ae8df464ddc7c5da",
    "strada": "A10 Genova-Ventimiglia",
    "testo": "vento forte dalle 15:20 del 25 novembre 2026 tra Svincolo Varazze e Allacciamento A10 - A06 al Km 45",
    "tipo": "altro",
-   "quando": "2026-11-25T19:39:00Z"
+   "quando": "2026-11-25T19:39:00Z",
+   "lat": 44.3592996,
+   "lon": 8.5753273,
+   "da": "Varazze"
   },
   {
    "id": "b199c305408bea89",
    "strada": "A4 Torino-Milano",
    "testo": "lavori tra 1 km dopo Svincolo Volpiano Sud e 1,165 km prima di Svincolo Chivasso in direzione Milano",
    "tipo": "lavori",
-   "quando": "2026-11-25T19:35:00Z"
+   "quando": "2026-11-25T19:35:00Z",
+   "lat": 45.2016957,
+   "lon": 7.7770311,
+   "da": "Volpiano",
+   "lat2": 45.1898322,
+   "lon2": 7.8860277,
+   "a": "Chivasso",
+   "km": 10.4
   },
   {
    "id": "120b8634843aa07d",
    "strada": "A5 Torino-Courmayeur",
    "testo": "pioggia dalle 22:15 del 24 novembre 2026 tra Incrocio Controllo Merci AO / A5 e Svincolo Entrata Courmayeur Sud",
    "tipo": "altro",
-   "quando": "2026-11-25T19:32:00Z"
+   "quando": "2026-11-25T19:32:00Z",
+   "lat2": 45.8316548,
+   "lon2": 6.9461565,
+   "a": "Courmayeur"
   },
   {
    "id": "1924d17535417e4f",
    "strada": "A7 Milano-Genova",
    "testo": "lavori tra Svincolo Tortona e Allacciamento Diramazione Predosa-Bettole in direzione Genova",
    "tipo": "lavori",
-   "quando": "2026-11-25T19:13:00Z"
+   "quando": "2026-11-25T19:13:00Z",
+   "lat": 44.89666,
+   "lon": 8.8641282,
+   "da": "Tortona",
+   "lat2": 44.830028,
+   "lon2": 8.813473,
+   "a": "Diramazione Predosa-Bettole",
+   "km": 10.1
   }
  ]
 }
