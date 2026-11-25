@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-25T22:57+00:00",
+ "aggiornato": "2026-11-25T22:58+00:00",
  "fonte": "CCISS, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -7,6 +7,16 @@
   "Svizzera": "non attiva (manca la chiave)"
  },
  "eventi": [
+  {
+   "id": "e8017c1c6ea3e5d7",
+   "strada": "SS3 Via Flaminia",
+   "testo": "fondo stradale dissestato a Incrocio Passo Del Furlo in direzione Incrocio Fano - SS16 Adriatica",
+   "tipo": "altro",
+   "quando": "2026-11-25T22:57:00Z",
+   "lat": 41.9305791,
+   "lon": 12.5354416,
+   "da": "Passo Del Furlo"
+  },
   {
    "id": "2015f1b247ed9afa",
    "strada": "A6 Torino-Savona",
@@ -1003,20 +1013,6 @@
    "quando": "2026-11-25T20:19:00Z"
   },
   {
-   "id": "673ca3f0dcd0e528",
-   "strada": "A21 Torino-Brescia",
-   "testo": "lavori tra 4,032 km prima di Svincolo Asti Ovest e 13,923 km dopo Barriera Di Villanova D asti in direzione Torino",
-   "tipo": "lavori",
-   "quando": "2026-11-25T20:18:00Z",
-   "lat": 44.8260126,
-   "lon": 8.2026863,
-   "da": "Asti",
-   "lat2": 44.9418888,
-   "lon2": 7.9375025,
-   "a": "Di Villanova D asti",
-   "km": 29.5
-  },
-  {
    "id": "5f5fcc0206ae9f1d",
    "strada": "A21 Torino-Brescia",
    "testo": "GPL esaurito a Area di servizio Crocetta in direzione Brescia",
@@ -1053,8 +1049,8 @@
   {
    "id": "1dccf2d487b894d9",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 12:38 del 13 gennaio 2026 · Sortie 1 vers D7 fermée 24h/24 jusqu'en 2027",
-   "tipo": "altro",
+   "testo": "strada chiusa dalle 12:38 del 13 gennaio 2026 · Sortie 1 vers D7 fermée 24h/24 jusqu'en 2027",
+   "tipo": "chiusura",
    "quando": "2026-01-13T12:40:02.363+01:00",
    "inizio": "2026-01-13T12:38:00.504000+01:00",
    "fine": "2027-01-13T12:00:00+01:00",
@@ -1817,8 +1813,8 @@
   {
    "id": "80b65456ee1ed12c",
    "strada": "A77 (Francia)",
-   "testo": "lavori dalle 09:10 del 17 settembre 2026 · Voie de droite neutralisée,Jour et nuit,Week-end et jours fériés y compris Bretelle de sortie échangeur 23 fermée",
-   "tipo": "lavori",
+   "testo": "strada chiusa dalle 09:10 del 17 settembre 2026 · Voie de droite neutralisée,Jour et nuit,Week-end et jours fériés y compris Bretelle de sortie échangeur 23 fermée",
+   "tipo": "chiusura",
    "quando": "2026-10-15T10:47:30.019+02:00",
    "inizio": "2026-09-17T09:10:00+01:00",
    "fine": "2026-12-31T18:00:00+01:00",
@@ -3273,8 +3269,8 @@
   {
    "id": "381df68dd8b0448d",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 09:00 del 27 novembre 2026 alle 13:00 del 27 novembre 2026 · bretelle de sortie N157 vers D100 fermée",
-   "tipo": "lavori",
+   "testo": "strada chiusa dalle 09:00 del 27 novembre 2026 alle 13:00 del 27 novembre 2026 · bretelle de sortie N157 vers D100 fermée",
+   "tipo": "chiusura",
    "quando": "2026-11-19T13:26:07.006+01:00",
    "inizio": "2026-11-27T09:00:00+01:00",
    "fine": "2026-11-27T13:00:00+01:00",
@@ -3621,8 +3617,8 @@
   {
    "id": "486e4c7482fc2109",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 19:37 del 22 novembre 2026 · RD1212 suite à plusieurs débordements de ruisseaux et aux conditions météorologiques défavorables, les Gorges de l'Arly sont fermées pour une durée indéterminée. La mesure est obligatoire",
-   "tipo": "altro",
+   "testo": "strada chiusa dalle 19:37 del 22 novembre 2026 · RD1212 suite à plusieurs débordements de ruisseaux et aux conditions météorologiques défavorables, les Gorges de l'Arly sont fermées pour une durée indéterminée. La mesure est obligatoire",
+   "tipo": "chiusura",
    "quando": "2026-11-23T00:37:19.855+01:00",
    "inizio": "2026-11-22T19:37:05.084000+01:00",
    "fine": "",
@@ -3855,8 +3851,8 @@
   {
    "id": "22d46aaca6e65a05",
    "strada": "A620 (Francia)",
-   "testo": "lavori dalle 14:00 del 6 novembre 2026 · Station TOTAL fermée",
-   "tipo": "lavori",
+   "testo": "strada chiusa dalle 14:00 del 6 novembre 2026 · Station TOTAL fermée",
+   "tipo": "chiusura",
    "quando": "2026-11-23T17:25:59.842+01:00",
    "inizio": "2026-11-06T14:00:29.295000+01:00",
    "fine": "2027-02-04T06:59:57.826000+01:00",
@@ -5265,8 +5261,8 @@
   {
    "id": "f932ad040f2ce2fe",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 16:55 del 25 novembre 2026 alle 16:53 del 31 dicembre 2026 · La RD 62 est fermée dans les deux sens de circulation suite à un affaissement de chaussée. un déviation locale est mise en place par la RD 911 et RD 912. La mesure est obligatoire",
-   "tipo": "altro",
+   "testo": "strada chiusa dalle 16:55 del 25 novembre 2026 alle 16:53 del 31 dicembre 2026 · La RD 62 est fermée dans les deux sens de circulation suite à un affaissement de chaussée. un déviation locale est mise en place par la RD 911 et RD 912. La mesure est obligatoire",
+   "tipo": "chiusura",
    "quando": "2026-11-25T16:57:52.489+01:00",
    "inizio": "2026-11-25T16:55:40.727000+01:00",
    "fine": "2026-12-31T16:53:43.272000+01:00",
@@ -5495,8 +5491,8 @@
   {
    "id": "a37eb64ea6deb92b",
    "strada": "A20 (Francia)",
-   "testo": "segnalazione dalle 18:45 del 25 novembre 2026 alle 06:00 del 11 dicembre 2026 · Sortie N°28 Fermée.",
-   "tipo": "altro",
+   "testo": "strada chiusa dalle 18:45 del 25 novembre 2026 alle 06:00 del 11 dicembre 2026 · Sortie N°28 Fermée.",
+   "tipo": "chiusura",
    "quando": "2026-11-25T18:48:14.663+01:00",
    "inizio": "2026-11-25T18:45:00+01:00",
    "fine": "2026-12-11T06:00:00+01:00",
@@ -5977,8 +5973,8 @@
   {
    "id": "5817c0596aaa3222",
    "strada": "Strada (Francia)",
-   "testo": "lavori dalle 20:30 del 23 novembre 2026 alle 06:00 del 27 novembre 2026 · travaux de rénovation du tunnel de Pont de Claix. Fermeture de la N85 dans les 2 sens de circulation du 23/11 au 27/11 , les nuits de 20h30 à 06h00",
-   "tipo": "lavori",
+   "testo": "strada chiusa dalle 20:30 del 23 novembre 2026 alle 06:00 del 27 novembre 2026 · travaux de rénovation du tunnel de Pont de Claix. Fermeture de la N85 dans les 2 sens de circulation du 23/11 au 27/11 , les nuits de 20h30 à 06h00",
+   "tipo": "chiusura",
    "quando": "2026-11-25T20:46:15.498+01:00",
    "inizio": "2026-11-23T20:30:50.131000+01:00",
    "fine": "2026-11-27T06:00:00+01:00",
@@ -5991,8 +5987,8 @@
   {
    "id": "257405c8860bbd67",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 20:32 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · Fermeture de la N85 sens Grenoble - Vizille entre l'échangeur n°8 de l'A480 et le giratoire de Champagnier La mesure est obligatoire",
-   "tipo": "altro",
+   "testo": "strada chiusa dalle 20:32 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · Fermeture de la N85 sens Grenoble - Vizille entre l'échangeur n°8 de l'A480 et le giratoire de Champagnier La mesure est obligatoire",
+   "tipo": "chiusura",
    "quando": "2026-11-25T20:46:15.498+01:00",
    "inizio": "2026-11-25T20:32:25.641000+01:00",
    "fine": "2026-11-26T06:00:00+01:00",
@@ -6005,8 +6001,8 @@
   {
    "id": "1a86c70690d5de30",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 20:46 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · Fermeture de la N85 sens Vizille -Grenoble entre le giratoire de Champagnier et l'échangeur n°8 de l'A480 La mesure est obligatoire",
-   "tipo": "altro",
+   "testo": "strada chiusa dalle 20:46 del 25 novembre 2026 alle 06:00 del 26 novembre 2026 · Fermeture de la N85 sens Vizille -Grenoble entre le giratoire de Champagnier et l'échangeur n°8 de l'A480 La mesure est obligatoire",
+   "tipo": "chiusura",
    "quando": "2026-11-25T20:46:15.498+01:00",
    "inizio": "2026-11-25T20:46:11.687000+01:00",
    "fine": "2026-11-26T06:00:00+01:00",
