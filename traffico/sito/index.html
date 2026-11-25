@@ -305,7 +305,11 @@ function links(f,t){
   ['Autostrade per l\'Italia','Cantieri e chiusure programmate','https://www.autostrade.it/it/infoviabilita/cantieri-previsti'],
   ['CCISS','Viabilità italiana in tempo reale','https://www.cciss.it'],
   ['Traforo Monte Bianco','Chiusure e orari','https://www.tunnelmb.net/it'],
-  ['TCS Svizzera','Traffico e lavori in Svizzera','https://www.tcs.ch/it/tools/info-traffico/']];
+  ['TCS Svizzera','Traffico e lavori in Svizzera','https://www.tcs.ch/it/tools/info-traffico/'],
+  ['ATMB · A40 e Monte Bianco','Autostrada Ginevra–Chamonix e traforo (Francia, a pagamento)','https://www.atmb.com'],
+  ['Bison Futé · mappa Francia','Mappa ufficiale con anche le autostrade a pagamento','https://www.bison-fute.gouv.fr'],
+  ['Vinci Autoroutes','A7, A8, A9 e altre autostrade francesi a pagamento','https://www.vinci-autoroutes.com/fr/trafic'],
+  ['APRR · AREA','A6, A43, A41 e Alpi francesi','https://voyage.aprr.fr']];
  $('links').innerHTML=L.map(([a,b,u])=>`<a class="lk" href="${u}" target="_blank" rel="noopener"><b>${a}</b><span>${b}</span></a>`).join('');
 }
 links('','');
