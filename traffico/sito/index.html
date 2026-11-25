@@ -132,6 +132,7 @@ function hl(t){
 const grave=e=>e.tipo==='chiusura'||e.tipo==='incidente';
 const col=e=>grave(e)?css('--bad'):e.tipo==='altro'?'#8a948d':css('--warn');
 function fase(e){
+ if(e.inizio){const a=new Date(e.inizio),b=e.fine?new Date(e.fine):null,n=new Date();if(a>n)return'programmato';if(b&&b<n)return'terminato';return'in corso'}
  const m=e.testo.match(/dalle (\d{1,2}):(\d{2})(?: del (\d{1,2}))?.*?(?:alle (\d{1,2}):(\d{2})(?: del (\d{1,2}))?)?/i);
  if(!m)return'in corso';
  const now=new Date(),d=(g,hh,mm)=>{const x=new Date(now);if(g)x.setDate(+g);x.setHours(+hh,+mm,0,0);return x};

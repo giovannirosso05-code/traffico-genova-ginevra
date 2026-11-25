@@ -73,8 +73,18 @@ def da_datex(xml_bytes, paese):
         p1, p2 = coordinate(rec)
         if not p1:
             continue
+        a, b = ora(testo_di(rec, "overallStartTime") or ""), ora(testo_di(rec, "overallEndTime") or "")
+        adesso = datetime.datetime.now(datetime.timezone.utc)
+        if b and b < adesso:
+            continue                      # già finito
+        if a and not b and (adesso - a).days > 120 and tipo in ("altro", "meteo", "code", "incidente"):
+            continue                      # segnalazione vecchia senza fine: probabilmente scaduta
         strada = testo_di(rec, "roadNumber") or testo_di(rec, "roadName") or "Strada"
-        commento = testo_di(rec, "value") or ""
+        strada = re.sub(r"^([ANDM])0*(\d)", r"\1\2", strada)
+        commento = ""
+        for gc in figli(rec, "generalPublicComment"):
+            commento = testo_di(gc, "value") or ""
+            if commento: break
         commento = re.sub(r"\s+", " ", commento)[:240]
         testo = f"{frase} {periodo(rec)}".strip()
         if commento:
@@ -82,6 +92,7 @@ def da_datex(xml_bytes, paese):
         e = {"id": hashlib.sha1((paese + (rec.get("id") or testo)).encode()).hexdigest()[:16],
              "strada": f"{strada} ({paese})", "testo": testo, "tipo": tipo,
              "quando": testo_di(rec, "situationRecordVersionTime") or "",
+             "inizio": a.isoformat() if a else "", "fine": b.isoformat() if b else "",
              "lat": round(p1[0], 5), "lon": round(p1[1], 5), "paese": paese}
         if p2:
             e.update(lat2=round(p2[0], 5), lon2=round(p2[1], 5))
