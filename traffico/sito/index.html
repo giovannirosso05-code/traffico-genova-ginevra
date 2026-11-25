@@ -235,7 +235,7 @@ function locate(useAsStart){
  },err=>{
   $('loc').textContent='📍 Dove sono';
   $('msg').innerHTML=err.code===1
-   ?'<span class="err">Il telefono non dà la posizione a questo sito.</span> <b>iPhone:</b> Impostazioni → Privacy e sicurezza → Localizzazione → attiva; poi scorri fino a “Siti web Safari” (o Chrome) → “Mentre usi l\'app”. Poi in Safari tocca “aA” accanto all\'indirizzo → Impostazioni sito web → Posizione → Consenti. Ricarica la pagina e riprova. <b>Android:</b> tocca il lucchetto accanto all\'indirizzo → Autorizzazioni → Posizione → Consenti.'
+   ?'<span class="err">Il telefono non dà la posizione a questo sito.</span> <b>iPhone con Safari:</b> Impostazioni → App → Safari → Posizione → <b>Chiedi</b> o <b>Consenti</b>; poi Impostazioni → Privacy e sicurezza → Localizzazione → Siti web Safari → <b>Mentre usi l\'app</b>. <b>iPhone con Chrome:</b> Impostazioni → App → Chrome → Posizione → <b>Mentre usi l\'app</b>. Poi ricarica la pagina. <b>Android:</b> lucchetto accanto all\'indirizzo → Autorizzazioni → Posizione → Consenti.'
    :'<span class="err">Posizione non disponibile adesso, riprova tra poco.</span>';
   $('msg').scrollIntoView({behavior:'smooth',block:'center'});
  },{enableHighAccuracy:true,maximumAge:30000,timeout:20000});
