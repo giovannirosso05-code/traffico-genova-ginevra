@@ -107,6 +107,11 @@ details[open]{padding-bottom:12px}
     <div class="routes" id="routes"></div>
   </div>
 
+  <div class="card" id="atmb" hidden>
+    <div><b>A40 Ginevra–Chamonix e Traforo del Monte Bianco</b> <span class="muted">· autostrade francesi a pagamento (ATMB)</span></div>
+    <div id="atmbbody"></div>
+  </div>
+
   <details id="evbox"><summary id="evsum">Elenco dei problemi</summary><div id="evlist"></div></details>
 
   <h2 id="s2">2 · Quando partire</h2>
@@ -327,6 +332,15 @@ $('from').addEventListener('input',()=>{if($('from').value!=='La mia posizione')
   $('upd').textContent='Dati aggiornati '+t.toLocaleString('it-IT',{dateStyle:'short',timeStyle:'short'})+' · aggiornamento ogni ora · Fonti: '+Object.entries(d.fonti||{Italia:'ok'}).map(([k,v])=>k+' '+(String(v).startsWith('ok')?'✓':'✗ ('+v+')')).join(', ')+'.';
   const live=EV.filter(e=>fase(e)!=='terminato');
   drawEvents(live);listEvents(live,'Tutti i problemi segnalati');
+  fetch('atmb.json?'+Date.now()).then(r=>r.json()).then(a=>{
+   const ev=a.eventi||[],ch=ev.filter(x=>x.tipo==='chiusura');
+   let b=a.tunnel?`<div>Traforo del Monte Bianco: <b>${esc(a.tunnel)}</b></div>`:'';
+   b+=ev.length?ev.map(x=>`<div class="ev"><div><span class="pill ${x.tipo==='chiusura'?'ko':'mid'}">${esc(x.tipo)}</span> ${hl(x.titolo)}</div>${x.testo?`<div class="muted">${esc(x.testo)}</div>`:''}<div><a href="${/^https:\/\//.test(x.url)?esc(x.url):'#'}" target="_blank" rel="noopener">Apri su ATMB</a></div></div>`).join(''):'<div class="muted">Nessun avviso pubblicato da ATMB.</div>';
+   if(a.stato!=='ok')b+=`<div class="err">Lettura ATMB non riuscita (${esc(a.stato)}): controlla il sito ufficiale.</div>`;
+   b+=`<div class="muted">Letto dal sito ATMB alle ${new Date(a.aggiornato).toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'})}.</div>`;
+   $('atmbbody').innerHTML=b;$('atmb').hidden=false;
+   if(ch.length)$('atmb').style.borderColor=css('--bad');
+  }).catch(()=>{});
   let s=null;try{s=JSON.parse(localStorage.getItem('viaggio'))}catch(e){}
   if(s&&s.f&&s.t&&s.f!=='La mia posizione'){$('from').value=s.f;$('to').value=s.t;route()}
  }catch(e){$('upd').textContent='Dati sul traffico non disponibili al momento.'}

@@ -1,25 +1,56 @@
-"""Legge le info traffico di ATMB (A40, A41 Nord, Traforo del Monte Bianco) e le salva in sito/atmb.json."""
-import json, re, html, sys, datetime, urllib.request
+"""Legge le info traffico di ATMB (A40, A41 Nord, RN205, Traforo del Monte Bianco) e le salva in sito/atmb.json.
+
+ATMB non pubblica dati aperti: leggo le sue pagine web. Se cambiano struttura, il file segnala l'errore
+invece di dire "nessun problema".
+"""
+import json, re, os, sys, html, datetime, urllib.request
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from estero import traduci
+
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120 Safari/537.36", "Accept-Language": "fr-FR,fr;q=0.9"}
-CANDIDATI = ["https://www.atmb.com", "https://www.atmb.com/infos-trafic", "https://www.atmb.com/fr/infos-trafic",
-             "https://www.atmb.com/trafic", "https://www.atmb.com/fr/trafic-en-temps-reel", "https://www.tunnelmb.net/fr",
-             "https://www.tunnelmb.net/it", "https://www.tunnelmb.net/fr/info-trafic"]
+PAGINE = ["https://www.atmb.com", "https://www.atmb.com/info-trafic-a40-rn205/"]
+OUT = "traffico/sito/atmb.json"
+
 def leggi(u):
-    try:
-        r = urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=25)
-        return r.status, r.read().decode("utf-8", "replace")
-    except Exception as e:
-        return getattr(e, "code", 0) or str(e)[:80], ""
-def testo(h):
+    return urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=25).read().decode("utf-8", "replace")
+
+def pulito(h):
     h = re.sub(r"(?is)<(script|style|noscript|svg)[^>]*>.*?</\1>", " ", h)
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", h))).strip()
-rapporto = {}
-for u in CANDIDATI:
-    st, h = leggi(u)
-    t = testo(h)
-    link = sorted(set(re.findall(r'href="([^"]*(?:trafic|traffic|travaux|chantier|fermeture|info)[^"]*)"', h, re.I)))[:40]
-    idx = [m.start() for m in re.finditer(r"(?i)fermeture|travaux|chantier|circulation|basculement|alternat", t)][:6]
-    rapporto[u] = {"stato": st, "lunghezza": len(h), "link": link, "estratti": [t[max(0, i-120):i+260] for i in idx],
-                   "json_api": sorted(set(re.findall(r'["\'](/[^"\']*(?:api|json|ajax)[^"\']*)["\']', h)))[:20]}
-json.dump({"aggiornato": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"), "debug": rapporto},
-          open("traffico/sito/atmb_debug.json", "w"), ensure_ascii=False, indent=1)
+
+def meta(h, nome):
+    m = re.search(r'<meta[^>]+(?:property|name)="%s"[^>]+content="([^"]*)"' % re.escape(nome), h) or \
+        re.search(r'<meta[^>]+content="([^"]*)"[^>]+(?:property|name)="%s"' % re.escape(nome), h)
+    return html.unescape(m.group(1)).strip() if m else ""
+
+risultato = {"aggiornato": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
+             "fonte": "ATMB (www.atmb.com)", "stato": "ok", "tunnel": "", "eventi": []}
+try:
+    home = leggi(PAGINE[0])
+    t = pulito(home)
+    m = re.search(r"TUNNEL\s+(Le trafic est [^.]{3,40}?|Trafic [^.]{3,40}?|Circulation [^.]{3,60}?)\s+En savoir", t, re.I)
+    if m: risultato["tunnel"] = traduci(m.group(1).replace("Le trafic est", "traffico"))
+    link = set(re.findall(r'href="(https://www\.atmb\.com/atmb_event(?:_info)?/[^"]+)"', home))
+    try:
+        link |= set(re.findall(r'href="(https://www\.atmb\.com/atmb_event(?:_info)?/[^"]+)"', leggi(PAGINE[1])))
+    except Exception:
+        pass
+    for u in sorted(link)[:15]:
+        try:
+            h = leggi(u)
+        except Exception:
+            continue
+        titolo = meta(h, "og:title") or (re.search(r"(?is)<h1[^>]*>(.*?)</h1>", h) or [None, ""])[1]
+        titolo = re.sub(r"\s*[-|–]\s*ATMB.*$", "", pulito(titolo or ""))
+        descr = meta(h, "og:description") or meta(h, "description")
+        titolo_it, descr_it = traduci(titolo.replace("|", ",")), traduci(descr.replace("|", ","))
+        testo = (titolo + " " + descr).lower()
+        tipo = "chiusura" if re.search(r"fermeture|coupure|ferm[ée]|interruption", testo) else \
+               "lavori" if re.search(r"travaux|chantier|r[ée]nov", testo) else "altro"
+        risultato["eventi"].append({"titolo": titolo_it, "testo": descr_it if descr_it != titolo_it else "", "tipo": tipo, "url": u})
+    if not risultato["eventi"] and not risultato["tunnel"]:
+        risultato["stato"] = "nessun dato riconosciuto: forse il sito ATMB è cambiato"
+except Exception as e:
+    risultato["stato"] = f"errore nella lettura: {type(e).__name__}"
+json.dump(risultato, open(OUT, "w"), ensure_ascii=False, indent=1)
+print(risultato["stato"], len(risultato["eventi"]), "eventi ATMB", file=sys.stderr)

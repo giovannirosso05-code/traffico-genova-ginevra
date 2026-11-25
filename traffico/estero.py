@@ -15,7 +15,11 @@ CH_ACTION = "http://opentransportdata.swiss/TDP/Soap_Datex2/Pull/v1/pullTrafficM
 # --- Traduzione dal francese: frasi e parole ricorrenti; i nomi di luogo restano in francese ---
 FRASI = [
     (r"^De (.+?) vers (.+)$", lambda m: f"Direzione {m.group(2)} (da {m.group(1)})"),
-    (r"\bcomme\b", "come"), (r"^Cause\b", "Causa"), (r"\bnord\b", "nord"),
+    (r"(?<![\w-])la nuit du\b", "la notte di"), (r"\bde (\d{1,2})\s?h(\d{2})?\s+[àa]\s+(\d{1,2})\s?h(\d{2})?", lambda m: f"dalle {m.group(1)}:{m.group(2) or '00'} alle {m.group(3)}:{m.group(4) or '00'}"),
+    (r"\ble lendemain\b", "del giorno dopo"), (r"\bfermeture des voies\b", "chiusura delle corsie"), (r"\bdes voies\b", "delle corsie"),
+    (r"\ble pont\b", "il ponte"), (r"(?<![\w-])de l[’']", "dell’"), (r"(?<![\w-])l[’']A(\d)", r"l’A\1"), (r"\bdans les deux sens( de circulation)?\b", "in entrambe le direzioni"),
+    (r"\bpour r[ée]nover\b", "per rinnovare"), (r"\bdit de\b", "detto"), (r"\bnuits? de fermeture\b", "notti di chiusura"),
+    (r"\bjeudi\b", "giovedì"), (r"\bcomme\b", "come"), (r"^Cause\b", "Causa"), (r"\bnord\b", "nord"),
     (r"Point particulier\s*:\s*", ""),
     (r"d[ée]but\s*:\s*situ[ée]\s+", "da "), (r",?\s*fin\s*:\s*situ[ée]\s+", " fino a "), (r"\bsitu[ée]e?\s+", ""),
     (r"\b(\d[\d.,]*)\s*m\s+au\s+(nord|sud)\s+de\s+", lambda m: f"{m.group(1)} m a {m.group(2)} di "),
