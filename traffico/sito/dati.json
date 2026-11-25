@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-25T23:02+00:00",
+ "aggiornato": "2026-11-25T23:03+00:00",
  "fonte": "CCISS, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -7,6 +7,20 @@
   "Svizzera": "non attiva (manca la chiave)"
  },
  "eventi": [
+  {
+   "id": "61d84449eea59a32",
+   "strada": "A14 Pescara-Bari",
+   "testo": "personale su strada causa lavori dalle 00:00 alle 00:45 del 26 novembre 2026 tra Svincolo Canosa e Svincolo Andria-Barletta in direzione Bari",
+   "tipo": "lavori",
+   "quando": "2026-11-25T23:02:00Z",
+   "lat": 40.900879,
+   "lon": 14.1076359,
+   "da": "Canosa",
+   "lat2": 41.2537669,
+   "lon2": 16.2929951,
+   "a": "Andria-Barletta",
+   "km": 224.8
+  },
   {
    "id": "416bb7f63e063ebd",
    "strada": "A13 Bologna-Padova",
@@ -595,34 +609,6 @@
    "quando": "2026-11-25T21:43:00Z"
   },
   {
-   "id": "e5c53eb996e7e75a",
-   "strada": "A32 Torino-Bardonecchia",
-   "testo": "neve tra Barriera Di Salbertrand e Svincolo Circonvallazione Oulx",
-   "tipo": "meteo",
-   "quando": "2026-11-25T21:41:00Z",
-   "lat": 45.07204,
-   "lon": 6.883205,
-   "da": "Di Salbertrand",
-   "lat2": 45.0336113,
-   "lon2": 6.7719692,
-   "a": "Circonvallazione Oulx",
-   "km": 11.7
-  },
-  {
-   "id": "3087717d3638527c",
-   "strada": "A32 Torino-Bardonecchia",
-   "testo": "neve tra Svincolo Circonvallazione Oulx e Svincolo Bardonecchia",
-   "tipo": "meteo",
-   "quando": "2026-11-25T21:40:00Z",
-   "lat": 45.0336113,
-   "lon": 6.7719692,
-   "da": "Circonvallazione Oulx",
-   "lat2": 45.078339,
-   "lon2": 6.703205,
-   "a": "Bardonecchia",
-   "km": 8.8
-  },
-  {
    "id": "df51807944f236c6",
    "strada": "A14 Bologna-Ancona",
    "testo": "personale su strada dalle 22:36 del 25 novembre 2026 tra Svincolo Bologna Fiera e Allacciamento A1 Milano-Napoli in direzione autostrada Milano-Napoli",
@@ -1042,6 +1028,20 @@
    "testo": "nebbia tra 943 m dopo Incrocio Saiaccio e 4,798 km prima di Incrocio Sarsina",
    "tipo": "meteo",
    "quando": "2026-11-25T20:19:00Z"
+  },
+  {
+   "id": "b205ac573b2a0ddf",
+   "strada": "A21 Torino-Brescia",
+   "testo": "lavori tra 11,61 km prima di Svincolo Castel S.Giovanni e 1,105 km dopo Svincolo Broni-Stradella in direzione Torino",
+   "tipo": "lavori",
+   "quando": "2026-11-25T20:18:00Z",
+   "lat": 45.0590671,
+   "lon": 9.4341783,
+   "da": "Castel S.Giovanni",
+   "lat2": 45.0798506,
+   "lon2": 9.2772235,
+   "a": "Broni-Stradella",
+   "km": 15.0
   },
   {
    "id": "1dccf2d487b894d9",
