@@ -15,7 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Leggi CCISS
+      - name: Leggi le fonti
+        env:
+          OTD_TOKEN: ${{ secrets.OTD_TOKEN }}
         run: |
           GEOCODE=1 python3 traffico/aggiorna.py > /tmp/dati.json && mv /tmp/dati.json traffico/sito/dati.json
           python3 traffico/storico.py

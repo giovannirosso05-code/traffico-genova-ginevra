@@ -81,7 +81,7 @@ details[open]{padding-bottom:12px}
       <button class="ghost" type="button" data-f="Ginevra, Svizzera" data-t="Genova">Ginevra → Genova</button>
       <button class="ghost" type="button" id="useme">📍 Parti da dove sei</button>
     </div>
-    <div id="msg" class="muted">Scrivi partenza e arrivo, oppure tocca una scorciatoia. Intanto la mappa mostra tutti i problemi segnalati in Italia: tocca un puntino per i dettagli.</div>
+    <div id="msg" class="muted">Scrivi partenza e arrivo, oppure tocca una scorciatoia. Intanto la mappa mostra tutti i problemi segnalati in Italia, Francia e Svizzera: tocca un puntino per i dettagli.</div>
   </div>
 
   <div class="mapwrap">
@@ -149,7 +149,7 @@ function popup(e){
 }
 
 // mappa
-const map=L.map('map').setView([44.2,10.5],6);
+const map=L.map('map').setView([45.6,8],6);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
 const lyrRoutes=L.layerGroup().addTo(map),lyrEv=L.layerGroup().addTo(map),lyrPins=L.layerGroup().addTo(map);
 function drawEvents(list){
@@ -280,9 +280,9 @@ $('from').addEventListener('input',()=>{if($('from').value!=='La mia posizione')
  try{
   const r=await fetch('dati.json?'+Date.now());const d=await r.json();EV=d.eventi||[];
   const t=new Date(d.aggiornato);
-  $('upd').textContent='Dati aggiornati '+t.toLocaleString('it-IT',{dateStyle:'short',timeStyle:'short'})+' · fonte CCISS (feed ufficiale), aggiornamento ogni ora · Solo strade italiane: per Svizzera e Francia usa i link della sezione 2.';
+  $('upd').textContent='Dati aggiornati '+t.toLocaleString('it-IT',{dateStyle:'short',timeStyle:'short'})+' · aggiornamento ogni ora · Fonti: '+Object.entries(d.fonti||{Italia:'ok'}).map(([k,v])=>k+' '+(String(v).startsWith('ok')?'✓':'✗ ('+v+')')).join(', ')+'.';
   const live=EV.filter(e=>fase(e)!=='terminato');
-  drawEvents(live);listEvents(live,'Tutti i problemi in Italia');
+  drawEvents(live);listEvents(live,'Tutti i problemi segnalati');
   let s=null;try{s=JSON.parse(localStorage.getItem('viaggio'))}catch(e){}
   if(s&&s.f&&s.t&&s.f!=='La mia posizione'){$('from').value=s.f;$('to').value=s.t;route()}
  }catch(e){$('upd').textContent='Dati sul traffico non disponibili al momento.'}

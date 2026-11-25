@@ -74,7 +74,20 @@ for it in root.iter("item"):
         if cb: e.update(lat2=cb[0], lon2=cb[1], a=b)
         if ca and cb: e["km"] = round(km(ca, cb) * 1.2, 1)
     out.append(e)
+fonti = {"Italia": f"ok ({len(out)} eventi)"}
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import estero
+for nome, fn in [("Francia", estero.francia), ("Svizzera", estero.svizzera)]:
+    try:
+        ev = fn()
+        if ev is None:
+            fonti[nome] = "non attiva (manca la chiave)"
+        else:
+            out.extend(ev); fonti[nome] = f"ok ({len(ev)} eventi)"
+    except Exception as ex:
+        fonti[nome] = f"errore: {type(ex).__name__}"
+        print(f"{nome}: {ex}", file=sys.stderr)
 if os.environ.get("GEOCODE") == "1":
     json.dump(luoghi, open(CACHE, "w"), ensure_ascii=False, indent=0)
 now = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes")
-json.dump({"aggiornato": now, "fonte": "CCISS (feed ufficiale)", "eventi": out}, sys.stdout, ensure_ascii=False, indent=1)
+json.dump({"aggiornato": now, "fonte": "CCISS, Bison Futé, opentransportdata.swiss", "fonti": fonti, "eventi": out}, sys.stdout, ensure_ascii=False, indent=1)
