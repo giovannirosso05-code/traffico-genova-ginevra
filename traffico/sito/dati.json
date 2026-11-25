@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-25T23:10+00:00",
+ "aggiornato": "2026-11-25T23:12+00:00",
  "fonte": "CCISS, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -7,6 +7,23 @@
   "Svizzera": "non attiva (manca la chiave)"
  },
  "eventi": [
+  {
+   "id": "af623b221c0066de",
+   "strada": "SS336 Dell aeroporto Della Malpensa",
+   "testo": "traffico rallentato causa incidente a Incrocio Gallarate - SS341 Gallaratese in direzione Incrocio Casello Busto Arsizio A8 Milano-Varese",
+   "tipo": "incidente",
+   "quando": "2026-11-25T23:11:00Z"
+  },
+  {
+   "id": "5510fc5d1ef517b5",
+   "strada": "A24 Roma-Teramo",
+   "testo": "pioggia dalle 21:03 del 25 novembre 2026 tra Allacciamento G.R.A. e Svincolo S.G.C. per Giulianova",
+   "tipo": "meteo",
+   "quando": "2026-11-25T23:11:00Z",
+   "lat": 41.8577092,
+   "lon": 12.3767694,
+   "da": "G.R.A"
+  },
   {
    "id": "ce14eb4cbac39b1d",
    "strada": "A10 Genova-Ventimiglia",
@@ -316,16 +333,6 @@
    "testo": "temporale tra Allacciamento A12 Genova-Rosignano e Svincolo La Spezia Porto est -Via Valdilocchi-Interc.Lerici",
    "tipo": "altro",
    "quando": "2026-11-25T22:44:00Z"
-  },
-  {
-   "id": "4765fbe4eafd96f0",
-   "strada": "A14 Pescara-Bari",
-   "testo": "personale su strada causa lavori dalle 23:41 del 25 alle 00:26 del 26 novembre 2026 tra Svincolo Atri-Pineto e Allacciamento A25 Torano-Pescara in direzione Bari",
-   "tipo": "lavori",
-   "quando": "2026-11-25T22:42:00Z",
-   "lat": 42.6077451,
-   "lon": 14.0689833,
-   "da": "Atri-Pineto"
   },
   {
    "id": "71adc67af77a12a2",
@@ -1035,20 +1042,6 @@
    "testo": "mezzi spargisale in azione tra 502 m dopo Incrocio Variante Di Longarone e 4,009 km prima di Incrocio Valle Di Cadore",
    "tipo": "altro",
    "quando": "2026-11-25T20:33:00Z"
-  },
-  {
-   "id": "b2557e09ab6cd6dd",
-   "strada": "A24 Tratto Urbano",
-   "testo": "pioggia dalle 21:31 del 25 novembre 2026 tra Allacciamento G.R.A. e Svincolo Tangenziale Est",
-   "tipo": "meteo",
-   "quando": "2026-11-25T20:32:00Z",
-   "lat": 42.0860732,
-   "lon": 13.0489388,
-   "da": "G.R.A",
-   "lat2": 41.836095,
-   "lon2": 12.8839166,
-   "a": "Tangenziale",
-   "km": 37.2
   },
   {
    "id": "1dccf2d487b894d9",
@@ -2357,7 +2350,7 @@
   {
    "id": "b7b9ca04470c4a77",
    "strada": "Strada (Francia)",
-   "testo": "segnalazione dalle 09:00 del 27 novembre 2026 alle 16:00 del 27 novembre 2026 · Deviazione direction Rennes a l' svincolo di \"Caradec\" PR 35+500. Suivre RD724, le rond point di la Rochette e la rue di la Rochette. Les usagers retrouvent leur percorso en s'insérant su la rampa di entrata dell’svincolo di \"La Mare St-Jul",
+   "testo": "segnalazione dalle 09:00 del 27 novembre 2026 alle 16:00 del 27 novembre 2026 · Deviazione direzione Rennes a l' svincolo di \"Caradec\" PR 35+500. Suivre RD724, le rond point di la Rochette e la rue di la Rochette. Les usagers retrouvent leur percorso en s'insérant su la rampa di entrata dell’svincolo di \"La Mare St-Jul",
    "tipo": "altro",
    "quando": "2026-11-03T09:26:21.120+01:00",
    "corsie": "",
