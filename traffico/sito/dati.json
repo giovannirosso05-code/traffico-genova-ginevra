@@ -1,7 +1,21 @@
 {
- "aggiornato": "2026-11-25T20:03+00:00",
+ "aggiornato": "2026-11-25T20:06+00:00",
  "fonte": "CCISS (feed ufficiale)",
  "eventi": [
+  {
+   "id": "5d260a19cf4a02f7",
+   "strada": "A26 Genova-Gravellona Toce",
+   "testo": "tratto chiuso causa lavori dalle 21:04 del 25 alle 05:00 del 26 novembre 2026 tra Allacciamento Diram. Predosa-Bettole e Svincolo Masone in direzione Genova Voltri",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T20:06:00Z"
+  },
+  {
+   "id": "481b2724702240ee",
+   "strada": "A7 Milano-Genova",
+   "testo": "chiusura notturna, chiusura nodo causa lavori di manutenzione dalle 21:04 del 25 alle 05:00 del 26 novembre 2026 a Allacciamento Diramazione Predosa-Bettole in direzione A26 provenendo da Milano e da Genova",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T20:04:00Z"
+  },
   {
    "id": "066665c85ace3ede",
    "strada": "A26 Diramazione Predosa-Bettole",
