@@ -1,0 +1,206 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>*{box-sizing:border-box}body{margin:0;font-size:14px}[hidden]{display:none!important}img{max-width:100%}</style>
+<title>Cruscotto Viaggio Genova–Ginevra</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: segnaletica autostradale — banda verde, due pannelli impilati */
+:root{--bg:#f3f5f2;--panel:#fff;--fg:#17201b;--muted:#5b675f;--line:#d6ddd7;--sign:#0b6b3a;--signfg:#fff;--warn:#b45309;--bad:#b91c1c;--good:#15803d;
+--display:"Barlow Condensed","Arial Narrow",sans-serif;--body:Inter,system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1512;--panel:#18211c;--fg:#e6ece8;--muted:#9aa89f;--line:#2b3830;--sign:#1f8a52;--signfg:#fff;--warn:#f59e0b;--bad:#f87171;--good:#4ade80;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1512;--panel:#18211c;--fg:#e6ece8;--muted:#9aa89f;--line:#2b3830;--sign:#1f8a52;--signfg:#fff;--warn:#f59e0b;--bad:#f87171;--good:#4ade80;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);line-height:1.5}
+.wrap{max-width:980px;margin:0 auto;padding-block:24px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:24px}
+header{background:var(--sign);color:var(--signfg);border-radius:10px;padding:18px 20px;border:3px solid var(--signfg);outline:2px solid var(--sign)}
+h1,h2{font-family:var(--display);text-wrap:balance;margin:0;letter-spacing:.01em}
+h1{font-size:2.2rem}h2{font-size:1.6rem}
+header p{margin:4px 0 0;opacity:.9}
+section{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;gap:16px;min-width:0}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:end}
+label{display:grid;gap:4px;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);flex:1 1 180px}
+input,select{font:inherit;font-size:1rem;padding:9px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);text-transform:none;letter-spacing:0}
+button{font:inherit;font-weight:600;padding:10px 16px;border-radius:6px;border:0;background:var(--sign);color:var(--signfg);cursor:pointer}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--warn);outline-offset:2px}
+a{color:var(--sign)}
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.lk{display:grid;gap:2px;padding:12px;border:1px solid var(--line);border-radius:8px;text-decoration:none;color:var(--fg)}
+.lk b{color:var(--sign)}.lk span{font-size:.85rem;color:var(--muted)}
+.note{font-size:.85rem;color:var(--muted);margin:0}
+.alert{border-left:4px solid var(--warn);padding:8px 12px;background:color-mix(in srgb,var(--warn) 10%,transparent);font-size:.9rem}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+.tw{overflow-x:auto}
+th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.pill{display:inline-block;font-size:.75rem;font-weight:600;padding:1px 8px;border-radius:99px;border:1px solid currentColor}
+.ok{color:var(--good)}.mid{color:var(--warn)}.ko{color:var(--bad)}
+.bars{display:grid;grid-template-columns:repeat(24,1fr);gap:3px;align-items:end;height:140px}
+.bar{border-radius:3px 3px 0 0;position:relative}
+.axis{display:grid;grid-template-columns:repeat(24,1fr);gap:3px;font-size:.65rem;color:var(--muted);text-align:center;font-variant-numeric:tabular-nums}
+.best{font-size:1.1rem}
+</style>
+
+</head><body>
+<div class="wrap">
+<header>
+  <h1>Genova → Ginevra</h1>
+  <p>Cantieri, chiusure e orario migliore di partenza, in un posto solo.</p>
+</header>
+
+<section aria-labelledby="s1">
+  <h2 id="s1">1 · Chiusure e cantieri sul tragitto</h2>
+  <div class="row">
+    <label>Partenza<input id="a" value="Genova"></label>
+    <label>Arrivo<input id="b" value="Ginevra"></label>
+    <button id="go1" type="button">Mostra fonti per questo tragitto</button>
+  </div>
+  <div id="live">
+    <div class="row" style="justify-content:space-between;align-items:center"><h3 style="margin:0;font-family:var(--display);font-size:1.3rem">Situazione sul corridoio adesso</h3><span class="note" id="upd">Carico i dati…</span></div>
+    <div class="row" id="filt" style="gap:6px"></div>
+    <div class="tw"><table><thead><tr><th>Tipo</th><th>Strada</th><th>Dove e quando</th></tr></thead><tbody id="ev"><tr><td colspan="3" class="note">I dati arrivano dall'aggiornamento automatico (feed ufficiale CCISS): A26, A4 Torino, A5 Aosta, A10/A7 Genova, trafori Monte Bianco e Gran San Bernardo, Sempione.</td></tr></tbody></table></div>
+  </div>
+  <div class="alert"><b>Traforo del Monte Bianco:</b> nel 2025–2026 ha avuto chiusure totali programmate per il rifacimento della volta (anche di notte e per settimane in autunno). Controlla sempre prima di scegliere la via A5–Chamonix.</div>
+  <div class="links" id="links"></div>
+  <p class="note">La tabella sopra viene dal feed ufficiale CCISS e si aggiorna in automatico. Per il Traforo del Monte Bianco e il calendario completo dei cantieri apri le pagine ufficiali qui sopra.</p>
+</section>
+
+<section aria-labelledby="sm">
+  <h2 id="sm">Mappa del tragitto</h2>
+  <div class="row" id="rsel" style="gap:6px"></div>
+  <div class="tw"><svg id="map" viewBox="0 0 640 560" role="img" aria-label="Mappa dei tre percorsi Genova–Ginevra" style="width:100%;min-width:320px;max-width:100%;display:block"></svg></div>
+  <p class="note">Tratti colorati in base agli eventi dell'ultimo aggiornamento: <b class="ko">rosso</b> chiusura o incidente, <b class="mid">arancione</b> lavori, code o meteo. Mappa schematica in scala reale, senza dettaglio stradale: per la navigazione usa Google Maps.</p>
+</section>
+
+<section aria-labelledby="s2">
+  <h2 id="s2">2 · Percorso migliore e ora di partenza</h2>
+  <div class="row">
+    <label>Da<input id="c" value="Genova"></label>
+    <label>A<input id="d" value="Ginevra"></label>
+    <label>Giorno<input id="day" type="date"></label>
+    <button id="go2" type="button">Calcola</button>
+  </div>
+  <div id="routes"></div>
+  <div>
+    <p class="best" id="best"></p>
+    <div class="bars" id="bars" aria-label="Traffico atteso per ora di partenza"></div>
+    <div class="axis" id="axis"></div>
+    <p class="note">Indice di traffico stimato sulle abitudini tipiche delle autostrade italiane e svizzere (ore di punta, esodi del venerdì e della domenica sera, festivi). È una stima, non un dato live: prima di partire apri Google Maps con il link qui sotto, che usa il traffico previsto all'ora che scegli.</p>
+    <div class="links" id="gm"></div>
+  </div>
+</section>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const enc=encodeURIComponent;
+const today=new Date();$('day').value=today.toISOString().slice(0,10);
+
+const ROUTES=[
+ {n:'A26 → A5 Aosta → Traforo Monte Bianco → Chamonix',km:370,h:'≈ 4h',cost:'≈ 30 € pedaggi IT + ≈ 55 € traforo',note:'Più veloce, ma soggetta a chiusure del traforo.',r:'mid',roads:['A26','A4','A5','T1 Monte Bianco','A40 (Francia)']},
+ {n:'A26 → A5 Aosta → Traforo Gran San Bernardo → Martigny → A9',km:420,h:'≈ 4h45',cost:'≈ 25 € pedaggi IT + ≈ 35 € traforo + vignetta CH 40 CHF',note:'Alternativa se il Monte Bianco è chiuso. Strada di montagna sul versante svizzero.',r:'ok',roads:['A26','A4','A5','SS27','A9 (Svizzera)']},
+ {n:'A26 → Gravellona → Passo del Sempione → Briga → A9',km:440,h:'≈ 5h15',cost:'≈ 20 € pedaggi IT + vignetta CH',note:'Niente trafori a pagamento, ma passo alpino: neve d\'inverno.',r:'mid',roads:['A26','SS33 Sempione','A9 (Svizzera)']}
+];
+
+function links(a,b){
+ const L=[
+  ['Autostrade per l\'Italia','Cantieri e chiusure programmate sulla rete italiana','https://www.autostrade.it/it/il-viaggio/viabilita/chiusure'],
+  ['Autostrade · traffico in tempo reale','Mappa con code, incidenti e cantieri attivi','https://www.autostrade.it/it/il-viaggio/viabilita/traffico-in-tempo-reale'],
+  ['Traforo del Monte Bianco','Orari, chiusure notturne e calendario lavori','https://www.tunnelmb.net/it'],
+  ['Traforo Gran San Bernardo','Stato del traforo e transiti','https://www.letunnel.com'],
+  ['Svizzera · TCS traffico','Code e lavori su A9 / A1 svizzere','https://www.tcs.ch/it/tools/info-traffico/'],
+  ['CCISS Viaggiare informati','Tutta la viabilità italiana, anche strade statali','https://www.cciss.it'],
+  ['Google Maps · dalla mia posizione → '+b,'Sul telefono parte dal punto in cui ti trovi','https://www.google.com/maps/dir/?api=1&travelmode=driving&destination='+enc(b)],
+  ['Google Maps · '+a+' → '+b,'Percorso con traffico attuale','https://www.google.com/maps/dir/?api=1&travelmode=driving&origin='+enc(a)+'&destination='+enc(b)]
+ ];
+ $('links').innerHTML=L.map(([t,s,u])=>`<a class="lk" href="${u}" target="_blank" rel="noopener"><b>${t}</b><span>${s}</span></a>`).join('');
+}
+
+// Indice traffico 0–100 per ora di partenza (stima)
+function profile(date){
+ const d=date.getDay(); // 0 dom
+ const base=[8,5,4,4,6,14,32,62,70,48,40,42,46,44,42,50,62,74,70,48,30,22,16,11];
+ return base.map((v,h)=>{
+  let x=v;
+  if(d===0||d===6){x=v*0.55; if(d===6&&h>=8&&h<=12)x+=28; if(d===0&&h>=15&&h<=20)x+=40;}
+  if(d===5&&h>=13&&h<=20)x+=22;
+  if(d===1&&h>=6&&h<=9)x+=8;
+  return Math.min(100,Math.round(x));
+ });
+}
+function calc(){
+ const c=$('c').value.trim()||'Partenza',dd=$('d').value.trim()||'Arrivo';
+ const isGG=/genov/i.test(c)&&/ginev|gen[eè]v/i.test(dd);
+ $('routes').innerHTML=isGG?`<div class="tw"><table><thead><tr><th>Percorso</th><th>Km</th><th>Tempo</th><th>Costi</th><th>Note</th></tr></thead><tbody>${ROUTES.map((r,i)=>`<tr><td><b>${r.n}</b>${i===0?' <span class="pill ok">consigliato se aperto</span>':''}</td><td class="num">${r.km}</td><td class="num">${r.h}</td><td>${r.cost}</td><td><span class="pill ${r.r}">${r.r==='ok'?'affidabile':'verifica'}</span> ${r.note}</td></tr>`).join('')}</tbody></table></div>`
+ :`<p class="note">Per tragitti diversi da Genova–Ginevra il confronto dei percorsi viene da Google Maps (link sotto), che mostra le alternative con i tempi.</p>`;
+ const date=new Date($('day').value+'T12:00');
+ const p=profile(date);
+ let best=6,bv=999;for(let h=5;h<=21;h++){const s=p[h]+(p[h+1]||0)+(p[h+2]||0)+(p[h+3]||0);if(s<bv){bv=s;best=h}}
+ const days=['domenica','lunedì','martedì','mercoledì','giovedì','venerdì','sabato'];
+ $('best').innerHTML=`Partenza consigliata ${days[date.getDay()]}: <b>${String(best).padStart(2,'0')}:00</b> — da evitare: <b>${String(p.indexOf(Math.max(...p))).padStart(2,'0')}:00</b>`;
+ $('bars').innerHTML=p.map((v,h)=>`<div class="bar" title="${h}:00 · indice ${v}" style="height:${Math.max(4,v)}%;background:var(${h===best?'--sign':v>60?'--bad':v>35?'--warn':'--good'})"></div>`).join('');
+ $('axis').innerHTML=p.map((_,h)=>`<span>${h%3===0?h:''}</span>`).join('');
+ const t=Math.floor(new Date($('day').value+'T'+String(best).padStart(2,'0')+':00').getTime()/1000);
+ $('gm').innerHTML=`<a class="lk" href="https://www.google.com/maps/dir/?api=1&travelmode=driving&origin=${enc(c)}&destination=${enc(dd)}" target="_blank" rel="noopener"><b>Apri in Google Maps</b><span>Imposta "Parti alle ${best}:00" per il traffico previsto</span></a><a class="lk" href="https://www.waze.com/ul?q=${enc(dd)}&navigate=yes" target="_blank" rel="noopener"><b>Apri in Waze</b><span>Navigazione con segnalazioni in diretta</span></a>`;
+}
+$('go1').onclick=()=>links($('a').value||'Genova',$('b').value||'Ginevra');
+$('go2').onclick=calc;
+links('Genova','Ginevra');calc();
+
+const TCLS={chiusura:'ko',incidente:'ko',code:'mid',lavori:'mid',meteo:'mid',altro:''};
+let EV=[],F='tutti';
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function renderEv(){
+ const tipi=['tutti',...new Set(EV.map(e=>e.tipo))];
+ $('filt').innerHTML=tipi.map(t=>`<button type="button" data-t="${esc(t)}" style="padding:4px 10px;font-size:.8rem;${t===F?'':'background:transparent;color:var(--fg);border:1px solid var(--line)'}">${esc(t)} (${t==='tutti'?EV.length:EV.filter(e=>e.tipo===t).length})</button>`).join('');
+ $('filt').querySelectorAll('button').forEach(b=>b.onclick=()=>{F=b.dataset.t;renderEv()});
+ const L=EV.filter(e=>F==='tutti'||e.tipo===F);
+ $('ev').innerHTML=L.length?L.map(e=>`<tr><td><span class="pill ${TCLS[e.tipo]||''}">${esc(e.tipo)}</span></td><td><b>${esc(e.strada)}</b></td><td>${esc(e.testo)}</td></tr>`).join(''):'<tr><td colspan="3" class="note">Nessun evento segnalato su queste strade all\'ultimo aggiornamento.</td></tr>';
+}
+// --- Mappa SVG (coordinate reali, proiezione equirettangolare) ---
+const P={Genova:[44.41,8.93],Ovada:[44.64,8.64],Alessandria:[44.91,8.61],Biandrate:[45.45,8.47],Santhià:[45.37,8.17],Ivrea:[45.47,7.88],Aosta:[45.74,7.32],Courmayeur:[45.79,6.97],Chamonix:[45.92,6.87],Ginevra:[46.20,6.14],'Gran S. Bernardo':[45.87,7.17],Martigny:[46.10,7.07],Losanna:[46.52,6.63],Gravellona:[45.93,8.43],Domodossola:[46.11,8.29],Sempione:[46.25,8.03],Briga:[46.32,7.99],Sion:[46.23,7.36]};
+const LAT0=44.25,LAT1=46.65,LON0=5.6,LON1=9.4,K=Math.cos(45.4*Math.PI/180);
+const sx=620/((LON1-LON0)*K),sy=540/(LAT1-LAT0),S=Math.min(sx,sy);
+const OX=(640-(LON1-LON0)*K*S)/2;
+const xy=([la,lo])=>[(lo-LON0)*K*S+OX,(LAT1-la)*S+10];
+const SEG=[ // [da,a,strada,regex eventi,percorsi]
+ ['Genova','Ovada','A26',/A26/i,[0,1,2]],['Ovada','Alessandria','A26',/A26/i,[0,1,2]],['Alessandria','Biandrate','A26',/A26/i,[0,1,2]],
+ ['Biandrate','Santhià','A4',/A4 Torino/i,[0,1]],['Santhià','Ivrea','A5',/A5/i,[0,1]],['Ivrea','Aosta','A5',/A5/i,[0,1]],
+ ['Aosta','Courmayeur','A5',/A5/i,[0]],['Courmayeur','Chamonix','T1 Monte Bianco',/T1|Monte Bianco/i,[0]],['Chamonix','Ginevra','A40',/A40/i,[0]],
+ ['Aosta','Gran S. Bernardo','SS27',/SS ?27|T2|Gran San Bernardo/i,[1]],['Gran S. Bernardo','Martigny','T2 / H21',/T2|Gran San Bernardo/i,[1]],
+ ['Martigny','Losanna','A9',/A9/i,[1,2]],['Losanna','Ginevra','A1',/^A1 (?!Milano)/i,[1,2]],
+ ['Biandrate','Gravellona','A26',/A26/i,[2]],['Gravellona','Domodossola','SS33',/SS ?33/i,[2]],['Domodossola','Sempione','SS33',/SS ?33|Sempione/i,[2]],
+ ['Sempione','Briga','Sempione',/Sempione/i,[2]],['Briga','Sion','A9',/A9/i,[2]],['Sion','Martigny','A9',/A9/i,[2]]];
+const RN=['Monte Bianco','Gran San Bernardo','Sempione'];let RS=0;
+function segState(re){const e=EV.filter(x=>re.test(x.strada+' '+x.testo));if(e.some(x=>x.tipo==='chiusura'||x.tipo==='incidente'))return['--bad',e];if(e.length)return['--warn',e];return['--good',e]}
+function drawMap(){
+ $('rsel').innerHTML=RN.map((n,i)=>`<button type="button" data-r="${i}" style="padding:4px 10px;font-size:.8rem;${i===RS?'':'background:transparent;color:var(--fg);border:1px solid var(--line)'}">Via ${n}</button>`).join('');
+ $('rsel').querySelectorAll('button').forEach(b=>b.onclick=()=>{RS=+b.dataset.r;drawMap()});
+ let s=`<rect width="640" height="560" fill="var(--bg)"/>`;
+ // Lago Lemano e confini indicativi
+ const LAKE=[[46.21,6.15],[46.27,6.17],[46.33,6.20],[46.38,6.25],[46.42,6.33],[46.46,6.40],[46.50,6.55],[46.51,6.65],[46.49,6.75],[46.46,6.85],[46.40,6.92],[46.38,6.85],[46.39,6.75],[46.40,6.62],[46.38,6.50],[46.35,6.40],[46.30,6.30],[46.25,6.22],[46.21,6.17]];
+ s+=`<polygon points="${LAKE.map(p=>xy(p).join(',')).join(' ')}" fill="color-mix(in srgb,#3b82f6 30%,var(--bg))"/>`;
+ s+=`<text x="${xy([46.43,6.45])[0]}" y="${xy([46.43,6.45])[1]}" font-size="11" fill="var(--muted)" font-style="italic">Lago Lemano</text>`;
+ [['ITALIA',[44.9,7.6]],['SVIZZERA',[46.55,7.6]],['FRANCIA',[45.6,6.25]]].forEach(([t,p])=>{const[a,b]=xy(p);s+=`<text x="${a}" y="${b}" font-size="12" letter-spacing="3" fill="var(--muted)" opacity=".6">${t}</text>`});
+ SEG.forEach(([a,b,road,re,rr])=>{if(rr.includes(RS))return;const[x1,y1]=xy(P[a]),[x2,y2]=xy(P[b]);s+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="var(--line)" stroke-width="3" stroke-dasharray="4 4"/>`});
+ SEG.forEach(([a,b,road,re,rr])=>{if(!rr.includes(RS))return;const[x1,y1]=xy(P[a]),[x2,y2]=xy(P[b]);const[c,e]=segState(re);
+  s+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="var(${c})" stroke-width="7" stroke-linecap="round"><title>${esc(road)}: ${e.length?e.length+' eventi':'nessun evento'}</title></line>`;
+  s+=`<text x="${(x1+x2)/2+8}" y="${(y1+y2)/2}" font-size="10" font-weight="600" fill="var(--fg)">${esc(road)}${e.length?' · '+e.length:''}</text>`});
+ const used=new Set(SEG.filter(z=>z[4].includes(RS)).flatMap(z=>[z[0],z[1]]));
+ Object.entries(P).forEach(([n,p])=>{const[x,y]=xy(p);const on=used.has(n),big=n==='Genova'||n==='Ginevra';
+  s+=`<circle cx="${x}" cy="${y}" r="${big?8:on?4.5:3}" fill="${big?'var(--sign)':'var(--panel)'}" stroke="var(${on?'--fg':'--line'})" stroke-width="2"/>`;
+  const west=p[1]<7.1;
+  if(on||big)s+=`<text x="${west?x+10:x-6}" y="${y-9}" text-anchor="${west?'start':'end'}" font-size="${big?14:11}" font-weight="${big?700:500}" fill="var(--fg)" paint-order="stroke" stroke="var(--bg)" stroke-width="3">${n}</text>`});
+ $('map').innerHTML=s;
+}
+drawMap();
+
+(async()=>{
+ try{
+  const r=await fetch('dati.json?'+Date.now());if(!r.ok)throw 0;
+  const d=await r.json();EV=Array.isArray(d.eventi)?d.eventi:[];
+  const t=new Date(d.aggiornato);
+  $('upd').textContent='Aggiornato '+(isNaN(t)?'':t.toLocaleString('it-IT',{dateStyle:'short',timeStyle:'short'}))+' · fonte '+(d.fonte||'CCISS');
+  renderEv();drawMap();
+ }catch(e){$('upd').textContent='Dati non disponibili al momento: usa i link sotto.'}
+})();
+</script>
+
+</body></html>

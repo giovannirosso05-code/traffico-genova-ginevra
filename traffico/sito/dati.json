@@ -1,0 +1,97 @@
+{
+ "aggiornato": "2026-11-25T20:03+00:00",
+ "fonte": "CCISS (feed ufficiale)",
+ "eventi": [
+  {
+   "id": "066665c85ace3ede",
+   "strada": "A26 Diramazione Predosa-Bettole",
+   "testo": "area di servizio chiusa causa tratto chiuso dalle 21:01 del 25 alle 05:00 del 26 novembre 2026 a Area di servizio Marengo in direzione A26 Genova Voltri-Gravellona Toce",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T20:03:00Z"
+  },
+  {
+   "id": "b33a73d66f3a5116",
+   "strada": "A26 Diramazione Predosa-Bettole",
+   "testo": "tratto chiuso causa trasporto eccezionale dalle 21:01 del 25 alle 05:00 del 26 novembre 2026 tra Allacciamento A7 Milano-Genova e Allacciamento A26 Ge Voltri-Gravellona T. in direzione A26 Genova Voltri-Gravellona Toce",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T20:02:00Z"
+  },
+  {
+   "id": "a796380e27f4c260",
+   "strada": "A4 Torino-Milano",
+   "testo": "lavori tra 2,3 km prima di Svincolo Chivasso Est e 564 m dopo Svincolo Brandizzo in direzione Torino",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:52:00Z"
+  },
+  {
+   "id": "e08914183b2df52f",
+   "strada": "A7 Milano-Genova",
+   "testo": "lavori tra Svincolo Serravalle Scrivia e Svincolo Tortona in direzione Milano",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:49:00Z"
+  },
+  {
+   "id": "a67376b874c241eb",
+   "strada": "A10 Genova-Ventimiglia",
+   "testo": "personale su strada causa lavori dalle 20:40 alle 21:25 del 25 novembre 2026 tra Svincolo Celle Ligure e Svincolo Varazze in direzione Genova",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:42:00Z"
+  },
+  {
+   "id": "a234f11d59f1b391",
+   "strada": "A12 Genova-Rosignano",
+   "testo": "personale su strada causa lavori dalle 20:37 alle 21:22 del 25 novembre 2026 tra Svincolo Genova Nervi e Allacciamento A7 Milano-Genova in direzione Genova",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:40:00Z"
+  },
+  {
+   "id": "745755cbd3380b9e",
+   "strada": "A10 Genova-Ventimiglia",
+   "testo": "personale su strada causa lavori dalle 20:38 alle 21:22 del 25 novembre 2026 tra Svincolo Arenzano e Allacciamento A26 Ge Voltri-Gravellona T. in direzione Genova",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:40:00Z"
+  },
+  {
+   "id": "826512509dbd046e",
+   "strada": "A10 Genova-Ventimiglia",
+   "testo": "personale su strada causa lavori dalle 20:38 alle 21:23 del 25 novembre 2026 tra Svincolo Arenzano e Svincolo Varazze in direzione Ventimiglia",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:40:00Z"
+  },
+  {
+   "id": "0146771b4b29364a",
+   "strada": "A7 Milano-Genova",
+   "testo": "lavori a Allacciamento Diramazione Predosa-Bettole in direzione Milano",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:39:00Z"
+  },
+  {
+   "id": "ae8df464ddc7c5da",
+   "strada": "A10 Genova-Ventimiglia",
+   "testo": "vento forte dalle 15:20 del 25 novembre 2026 tra Svincolo Varazze e Allacciamento A10 - A06 al Km 45",
+   "tipo": "altro",
+   "quando": "2026-11-25T19:39:00Z"
+  },
+  {
+   "id": "b199c305408bea89",
+   "strada": "A4 Torino-Milano",
+   "testo": "lavori tra 1 km dopo Svincolo Volpiano Sud e 1,165 km prima di Svincolo Chivasso in direzione Milano",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:35:00Z"
+  },
+  {
+   "id": "120b8634843aa07d",
+   "strada": "A5 Torino-Courmayeur",
+   "testo": "pioggia dalle 22:15 del 24 novembre 2026 tra Incrocio Controllo Merci AO / A5 e Svincolo Entrata Courmayeur Sud",
+   "tipo": "altro",
+   "quando": "2026-11-25T19:32:00Z"
+  },
+  {
+   "id": "1924d17535417e4f",
+   "strada": "A7 Milano-Genova",
+   "testo": "lavori tra Svincolo Tortona e Allacciamento Diramazione Predosa-Bettole in direzione Genova",
+   "tipo": "lavori",
+   "quando": "2026-11-25T19:13:00Z"
+  }
+ ]
+}
