@@ -1,7 +1,14 @@
 {
- "aggiornato": "2026-11-25T20:08+00:00",
+ "aggiornato": "2026-11-25T20:12+00:00",
  "fonte": "CCISS (feed ufficiale)",
  "eventi": [
+  {
+   "id": "622ab1fba0376e7f",
+   "strada": "A26 Genova-Gravellona Toce",
+   "testo": "personale su strada causa lavori dalle 21:07 alle 21:52 del 25 novembre 2026 tra Svincolo Vercelli Est e Allacciamento Diramazione Stroppiana-Santhia in direzione Genova Voltri",
+   "tipo": "lavori",
+   "quando": "2026-11-25T20:08:00Z"
+  },
   {
    "id": "c8d9c2c0b02b1ec7",
    "strada": "A26 Genova-Gravellona Toce",
