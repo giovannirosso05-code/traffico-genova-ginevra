@@ -222,6 +222,13 @@ links('Genova','Ginevra');
 
 const TCLS={chiusura:'ko',incidente:'ko',code:'mid',lavori:'mid',meteo:'mid',altro:''};
 let EV=[],F='tutti';
+function hl(t){
+ let s=esc(t);
+ s=s.replace(/^(.*?)(?=\s+(?:causa|dalle|tra|a|presso|per)\s|$)/,'<b>$1</b>');
+ s=s.replace(/\b(dalle|alle) (\d{1,2}:\d{2})/g,'$1 <b>$2</b>');
+ s=s.replace(/\b(tra|a|presso) ((?:\d[\d,.]*\s*k?m\s+(?:prima|dopo)\s+(?:di\s+)?)?(?:Svincolo|Allacciamento|Area di servizio|Incrocio|Barriera|Diram)[^]*?)(?=\s+in direzione|\s+provenendo|$)/,'$1 <b>$2</b>');
+ return s;
+}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function renderEv(){
  const tipi=['tutti',...new Set(EV.map(e=>e.tipo))];
@@ -230,7 +237,7 @@ function renderEv(){
  const L=EV.filter(e=>F==='tutti'||e.tipo===F);
  const nc=EV.filter(e=>e.tipo==='chiusura'||e.tipo==='incidente').length,nl=EV.filter(e=>e.tipo==='lavori').length;
  $('evsum').innerHTML=nc?`<b class="ko">⛔ ${nc} chiusure o incidenti</b> e ${nl} cantieri sul corridoio. Tocca i puntini sulla mappa.`:`<b class="ok">Nessuna chiusura</b> · ${nl} cantieri sul corridoio.`;
- $('ev').innerHTML=L.length?L.map(e=>`<tr><td><span class="pill ${TCLS[e.tipo]||''}">${esc(e.tipo)}</span></td><td><b>${esc(e.strada)}</b></td><td>${esc(e.testo)}</td></tr>`).join(''):'<tr><td colspan="3" class="note">Nessun evento segnalato su queste strade all\'ultimo aggiornamento.</td></tr>';
+ $('ev').innerHTML=L.length?L.map(e=>`<tr><td><span class="pill ${TCLS[e.tipo]||''}">${esc(e.tipo)}</span></td><td><b>${esc(e.strada)}</b></td><td>${hl(e.testo)}</td></tr>`).join(''):'<tr><td colspan="3" class="note">Nessun evento segnalato su queste strade all\'ultimo aggiornamento.</td></tr>';
 }
 // --- Mappa SVG (coordinate reali, proiezione equirettangolare) ---
 const P={Genova:[44.41,8.93],Ovada:[44.64,8.64],Alessandria:[44.91,8.61],Biandrate:[45.45,8.47],Santhià:[45.37,8.17],Ivrea:[45.47,7.88],Aosta:[45.74,7.32],Courmayeur:[45.79,6.97],Chamonix:[45.92,6.87],Ginevra:[46.20,6.14],'Gran S. Bernardo':[45.87,7.17],Martigny:[46.10,7.07],Losanna:[46.52,6.63],Gravellona:[45.93,8.43],Domodossola:[46.11,8.29],Sempione:[46.25,8.03],Briga:[46.32,7.99],Sion:[46.23,7.36]};
@@ -287,7 +294,7 @@ function evInfo(e){
  const tratto=e.da?(esc(e.da)+(e.a?' → '+esc(e.a):'')):'';
  return `<div style="display:grid;gap:4px;min-width:200px;max-width:280px">
   <div><span class="pill ${TCLS[e.tipo]||''}">${esc(e.tipo)}</span> <b>${esc(e.strada)}</b></div>
-  <div>${esc(e.testo)}</div>
+  <div>${hl(e.testo)}</div>
   ${tratto?`<div><b>Tratto:</b> ${tratto}</div>`:''}
   <div><b>Lunghezza:</b> ${lung}</div>
   ${o?`<div><b>Orario:</b> dalle ${esc(o[1])}${o[3]?' alle '+esc(o[3]):' (fine non indicata)'}</div>`:''}
@@ -296,7 +303,7 @@ function evInfo(e){
 }
 function showSeg(z){
  const[a,b,road,re]=z,e=segState(re)[1];
- $('segdet').innerHTML=`<b>${esc(road)} · ${esc(a)} → ${esc(b)}</b>: `+(e.length?'<ul style="margin:4px 0 0;padding-left:18px">'+e.map(x=>`<li><span class="pill ${TCLS[x.tipo]||''}">${esc(x.tipo)}</span> ${esc(x.strada)}: ${esc(x.testo)}</li>`).join('')+'</ul>':'nessun evento segnalato.');
+ $('segdet').innerHTML=`<b>${esc(road)} · ${esc(a)} → ${esc(b)}</b>: `+(e.length?'<ul style="margin:4px 0 0;padding-left:18px">'+e.map(x=>`<li><span class="pill ${TCLS[x.tipo]||''}">${esc(x.tipo)}</span> ${esc(x.strada)}: ${hl(x.testo)}</li>`).join('')+'</ul>':'nessun evento segnalato.');
 }
 // Mappa reale (solo sul sito GitHub, dove Leaflet e le mappe OpenStreetMap sono caricabili)
 let LM,LL,GEO={},TOK=0;
