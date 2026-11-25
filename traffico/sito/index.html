@@ -72,8 +72,12 @@ th{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mu
 <section aria-labelledby="s2">
   <h2 id="s2">2 · Percorso migliore e ora di partenza</h2>
   <div class="row">
-    <label>Da<input id="c" value="Genova"></label>
-    <label>A<input id="d" value="Ginevra"></label>
+    <label>Via di partenza<input id="cv" placeholder="es. Via XX Settembre 10" autocomplete="street-address"></label>
+    <label>Città di partenza<input id="c" value="Genova"></label>
+  </div>
+  <div class="row">
+    <label>Via di arrivo<input id="dv" placeholder="es. Rue du Rhône 50" autocomplete="street-address"></label>
+    <label>Città di arrivo<input id="d" value="Ginevra"></label>
     <label>Giorno<input id="day" type="date"></label>
     <button id="go2" type="button">Calcola</button>
   </div>
@@ -137,11 +141,12 @@ function calc(){
  $('best').innerHTML=`Partenza consigliata ${days[date.getDay()]}: <b>${String(best).padStart(2,'0')}:00</b> — da evitare: <b>${String(p.indexOf(Math.max(...p))).padStart(2,'0')}:00</b>`;
  $('bars').innerHTML=p.map((v,h)=>`<div class="bar" title="${h}:00 · indice ${v}" style="height:${Math.max(4,v)}%;background:var(${h===best?'--sign':v>60?'--bad':v>35?'--warn':'--good'})"></div>`).join('');
  $('axis').innerHTML=p.map((_,h)=>`<span>${h%3===0?h:''}</span>`).join('');
- const t=Math.floor(new Date($('day').value+'T'+String(best).padStart(2,'0')+':00').getTime()/1000);
- $('gm').innerHTML=`<a class="lk" href="https://www.google.com/maps/dir/?api=1&travelmode=driving&origin=${enc(c)}&destination=${enc(dd)}" target="_blank" rel="noopener"><b>Apri in Google Maps</b><span>Imposta "Parti alle ${best}:00" per il traffico previsto</span></a><a class="lk" href="https://www.waze.com/ul?q=${enc(dd)}&navigate=yes" target="_blank" rel="noopener"><b>Apri in Waze</b><span>Navigazione con segnalazioni in diretta</span></a>`;
+ const da=[$('cv').value.trim(),c].filter(Boolean).join(', '),aa=[$('dv').value.trim(),dd].filter(Boolean).join(', ');
+ $('gm').innerHTML=`<a class="lk" href="https://www.google.com/maps/dir/?api=1&travelmode=driving&origin=${enc(da)}&destination=${enc(aa)}" target="_blank" rel="noopener"><b>Apri in Google Maps</b><span>${esc(da)} → ${esc(aa)}<br>Imposta "Parti alle ${best}:00" per il traffico previsto</span></a><a class="lk" href="https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=${enc(aa)}" target="_blank" rel="noopener"><b>Dalla mia posizione</b><span>Sul telefono parte da dove ti trovi verso ${esc(aa)}</span></a><a class="lk" href="https://www.waze.com/ul?q=${enc(aa)}&navigate=yes" target="_blank" rel="noopener"><b>Apri in Waze</b><span>Navigazione verso ${esc(aa)} con segnalazioni in diretta</span></a>`;
 }
 $('go1').onclick=()=>links($('a').value||'Genova',$('b').value||'Ginevra');
 $('go2').onclick=calc;
+['cv','c','dv','d'].forEach(k=>$(k).addEventListener('keydown',e=>{if(e.key==='Enter')calc()}));
 links('Genova','Ginevra');calc();
 
 const TCLS={chiusura:'ko',incidente:'ko',code:'mid',lavori:'mid',meteo:'mid',altro:''};
