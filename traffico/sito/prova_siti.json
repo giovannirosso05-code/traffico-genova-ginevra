@@ -1,0 +1,109 @@
+{
+ "https://www.vinci-autoroutes.com/fr/trafic": {
+  "stato": 404,
+  "len": 0,
+  "testo_len": 0,
+  "link": [],
+  "api": [],
+  "estratti": []
+ },
+ "https://www.vinci-autoroutes.com/fr/info-trafic": {
+  "stato": 404,
+  "len": 0,
+  "testo_len": 0,
+  "link": [],
+  "api": [],
+  "estratti": []
+ },
+ "https://www.vinci-autoroutes.com": {
+  "stato": 200,
+  "len": 533884,
+  "testo_len": 3743,
+  "link": [
+   "#__info-trafic-a",
+   "/fr/conseils/ecomobilite/conseils-pour-se-recharger-les-jours-de-fort-trafic/",
+   "/fr/infos-travaux/",
+   "/fr/previsions-trafic/"
+  ],
+  "api": [],
+  "estratti": [
+   "incipal Accéder au contenu principal Accéder au pied de page Info trafic Info trafic en direct Info travaux Prévisions trafic Itinéraire et services Mon trajet Aires et services Actualités Conseils Découvertes Corporate L'entreprise Ambition environnement 2030 Carrières Espace Presse Espace client Bien Voyager VINCI AU",
+   "ge Météo France Vigilance météo Source MéteoFrance Consulter la carte #BienVoyager Info trafic Info travaux Prévisions trafic Mon trajet Aires et services Aide & Contact FAQ Nous contacter Offres d'emploi Accessibilité : partiellement conforme Version accessible À propos Communiqués de presse Nos principes éthiques Men",
+   " Suivez-nous sur Facebook Instagram X TikTok Threads LinkedIn YouTube #BienVoyager Info trafic Info travaux Prévisions trafic Mon trajet Aires et services Aide & Contact FAQ Nous contacter Offres d'emploi Accessibilité : partiellement conforme Version accessible À propos Communiqués de presse Nos principes éthiques Men"
+  ]
+ },
+ "https://voyage.aprr.fr": {
+  "stato": 200,
+  "len": 38214,
+  "testo_len": 1897,
+  "link": [
+   "/travaux/previsions-travaux",
+   "https://voyage.aprr.fr/information-trafic",
+   "https://voyage.aprr.fr/prevision-trafic",
+   "https://voyage.aprr.fr/travaux-et-operations"
+  ],
+  "api": [
+   "/core/misc/ajax.js?v=10.5.3",
+   "/sites/default/files/styles/home_quick_access/public/2022-05/travaux-rapide.png?itok=0OQfVplJ",
+   "/sites/default/files/styles/home_quick_access/public/2025-11/accesrapide_2025.png?itok=-IK1CIPl"
+  ],
+  "estratti": [
+   "pal fr Menu Information trafic Trafic en temps réel Toutes nos webcams Les prévisions de trafic Nos chantiers Carte des chantiers Opérations en cours Tarifs Tarifs de péage Classes de véhicule Les services sur aires Aide et Contact Nous contacter Foire Aux Questions Accès malentendant Le péage réinventé Télépéage et ca",
+   "ion trafic Trafic en temps réel Toutes nos webcams Les prévisions de trafic Nos chantiers Carte des chantiers Opérations en cours Tarifs Tarifs de péage Classes de véhicule Les services sur aires Aide et Contact Nous contacter Foire Aux Questions Accès malentendant Le péage réinventé Télépéage et carte de recharge Full",
+   "n réagir en cas de réception d'un SMS frauduleux ? Les conseils de Fulli Paragraphes Nos actualités travaux A40 - Ain - Direction MACON> GENEVE, dans le secteur de Bellegarde la nuit du 25 novembre A43 - Savoie - Itinéraires CHAMBERY<>LYON dans le secteur du tunnel de L'Epine du 23/11 au 27/11 A5b (A105) - Seine et Mar",
+   "Seine et Marne - Direction Melun > Marne-la-Vallée, entrée au niveau Evry-Grégy n° 11 Voir tous les chantiers Nos dernières actualités 23 novembre Idées reçues sur l’autoroute : on démêle le vrai du faux - Saison 2, épisode 3 Par Autoroute INFO 26 octobre Les idées reçues sur l’autoroute : on démêle le vrai du faux - S"
+  ]
+ },
+ "https://voyage.aprr.fr/trafic": {
+  "stato": 404,
+  "len": 0,
+  "testo_len": 0,
+  "link": [],
+  "api": [],
+  "estratti": []
+ },
+ "https://voyage.aprr.fr/info-trafic": {
+  "stato": 200,
+  "len": 37913,
+  "testo_len": 2764,
+  "link": [
+   "/information-trafic",
+   "http://voyage.aprr.fr/information-trafic",
+   "https://voyage.aprr.fr/information-trafic",
+   "https://voyage.aprr.fr/prevision-trafic",
+   "https://voyage.aprr.fr/travaux-et-operations"
+  ],
+  "api": [
+   "/core/misc/ajax.js?v=10.5.3",
+   "/sites/default/files/css/css_SmLyLd5LhmlXWt70wKqZ8RYUNuFLevuP0FXzR8fZExk.css?delta=0&amp;language=fr&amp;theme=aprr&amp;include=eJxFyEEOgCAMBMAPIX3TIg1gKjQtJPJ7T8Y5DtSMiowEOXxuab2EcxhTtqWQiAtPUBiKQat__U9cXVeS5pVz8O2Tb0pwfgETDSK6",
+   "/sites/default/files/css/css_gL__PE4893mzkmkaJ40AHzMK43OeHW-sRUSi-wSdGj8.css?delta=1&amp;language=fr&amp;theme=aprr&amp;include=eJxFyEEOgCAMBMAPIX3TIg1gKjQtJPJ7T8Y5DtSMiowEOXxuab2EcxhTtqWQiAtPUBiKQat__U9cXVeS5pVz8O2Tb0pwfgETDSK6"
+  ],
+  "estratti": [
+   " Info trafic en temps réel : Travaux, Accident, Météo, Aires Aller au contenu principal fr Menu Information trafic Trafic en temps réel Toutes nos webcams Les prévisions de trafic Nos chantiers Carte des chantiers Opérations en cours Tarifs Tarifs d",
+   "pal fr Menu Information trafic Trafic en temps réel Toutes nos webcams Les prévisions de trafic Nos chantiers Carte des chantiers Opérations en cours Tarifs Tarifs de péage Classes de véhicule Les services sur aires Aide et Contact Nous contacter Foire Aux Questions Accès malentendant Le péage réinventé Télépéage et ca",
+   "ion trafic Trafic en temps réel Toutes nos webcams Les prévisions de trafic Nos chantiers Carte des chantiers Opérations en cours Tarifs Tarifs de péage Classes de véhicule Les services sur aires Aide et Contact Nous contacter Foire Aux Questions Accès malentendant Le péage réinventé Télépéage et carte de recharge Full"
+  ]
+ },
+ "https://www.aprr.fr": {
+  "stato": 200,
+  "len": 38214,
+  "testo_len": 1897,
+  "link": [
+   "/travaux/previsions-travaux",
+   "https://voyage.aprr.fr/information-trafic",
+   "https://voyage.aprr.fr/prevision-trafic",
+   "https://voyage.aprr.fr/travaux-et-operations"
+  ],
+  "api": [
+   "/core/misc/ajax.js?v=10.5.3",
+   "/sites/default/files/styles/home_quick_access/public/2022-05/travaux-rapide.png?itok=0OQfVplJ",
+   "/sites/default/files/styles/home_quick_access/public/2025-11/accesrapide_2025.png?itok=-IK1CIPl"
+  ],
+  "estratti": [
+   "pal fr Menu Information trafic Trafic en temps réel Toutes nos webcams Les prévisions de trafic Nos chantiers Carte des chantiers Opérations en cours Tarifs Tarifs de péage Classes de véhicule Les services sur aires Aide et Contact Nous contacter Foire Aux Questions Accès malentendant Le péage réinventé Télépéage et ca",
+   "ion trafic Trafic en temps réel Toutes nos webcams Les prévisions de trafic Nos chantiers Carte des chantiers Opérations en cours Tarifs Tarifs de péage Classes de véhicule Les services sur aires Aide et Contact Nous contacter Foire Aux Questions Accès malentendant Le péage réinventé Télépéage et carte de recharge Full",
+   "n réagir en cas de réception d'un SMS frauduleux ? Les conseils de Fulli Paragraphes Nos actualités travaux A40 - Ain - Direction MACON> GENEVE, dans le secteur de Bellegarde la nuit du 25 novembre A43 - Savoie - Itinéraires CHAMBERY<>LYON dans le secteur du tunnel de L'Epine du 23/11 au 27/11 A5b (A105) - Seine et Mar",
+   "Seine et Marne - Direction Melun > Marne-la-Vallée, entrée au niveau Evry-Grégy n° 11 Voir tous les chantiers Nos dernières actualités 23 novembre Idées reçues sur l’autoroute : on démêle le vrai du faux - Saison 2, épisode 3 Par Autoroute INFO 26 octobre Les idées reçues sur l’autoroute : on démêle le vrai du faux - S"
+  ]
+ }
+}
