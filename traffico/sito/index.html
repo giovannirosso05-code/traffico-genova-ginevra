@@ -17,7 +17,8 @@ header p{margin:4px 0 0;opacity:.9}
 section{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;gap:16px;min-width:0}
 .row{display:flex;flex-wrap:wrap;gap:10px;align-items:end}
 label{display:grid;gap:4px;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);flex:1 1 180px}
-input,select{font:inherit;font-size:1rem;padding:9px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);text-transform:none;letter-spacing:0}
+label{min-width:0}
+input,select{width:100%;min-width:0;font:inherit;font-size:1rem;padding:9px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);text-transform:none;letter-spacing:0}
 button{font:inherit;font-weight:600;padding:10px 16px;border-radius:6px;border:0;background:var(--sign);color:var(--signfg);cursor:pointer}
 button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--warn);outline-offset:2px}
 a{color:var(--sign)}
@@ -37,6 +38,19 @@ th{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mu
 .bar{border-radius:3px 3px 0 0;position:relative}
 .axis{display:grid;grid-template-columns:repeat(24,1fr);gap:3px;font-size:.65rem;color:var(--muted);text-align:center;font-variant-numeric:tabular-nums}
 .best{font-size:1.1rem}
+details.fold{border:1px solid var(--line);border-radius:8px;padding:0 12px}
+details.fold>summary{cursor:pointer;padding:10px 0;font-weight:600;color:var(--sign);list-style-position:inside}
+details.fold[open]{padding-bottom:12px}
+@media (max-width:640px){
+ h1{font-size:1.7rem}h2{font-size:1.3rem}
+ header p{display:none}
+ section{padding:14px;gap:12px}
+ .wrap{gap:14px;padding-block:12px 32px}
+ #lmap{height:62vh}
+ .bars{height:90px}
+ .tw table th:nth-child(2),.tw table td:nth-child(2),.tw table th:nth-child(4),.tw table td:nth-child(4){display:none}
+ .legend .note{display:none}
+}
 #mapbox{position:relative;border:1px solid var(--line);border-radius:8px;overflow:hidden}
 #map{width:100%;height:auto;display:block;min-height:420px}
 #lmap{height:min(78vh,720px);width:100%}
@@ -68,11 +82,14 @@ th{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mu
   <div id="live">
     <div class="row" style="justify-content:space-between;align-items:center"><h3 style="margin:0;font-family:var(--display);font-size:1.3rem">Situazione sul corridoio adesso</h3><span class="note" id="upd">Carico i dati…</span></div>
     <div class="row" id="filt" style="gap:6px"></div>
-    <div class="tw"><table><thead><tr><th>Tipo</th><th>Strada</th><th>Dove e quando</th></tr></thead><tbody id="ev"><tr><td colspan="3" class="note">I dati arrivano dall'aggiornamento automatico (feed ufficiale CCISS): A26, A4 Torino, A5 Aosta, A10/A7 Genova, trafori Monte Bianco e Gran San Bernardo, Sempione.</td></tr></tbody></table></div>
+    <div id="evsum" class="note"></div>
+    <details class="fold" data-open-desktop><summary>Elenco completo degli eventi</summary><div class="tw"><table><thead><tr><th>Tipo</th><th>Strada</th><th>Dove e quando</th></tr></thead><tbody id="ev"><tr><td colspan="3" class="note">I dati arrivano dall'aggiornamento automatico (feed ufficiale CCISS): A26, A4 Torino, A5 Aosta, A10/A7 Genova, trafori Monte Bianco e Gran San Bernardo, Sempione.</td></tr></tbody></table></div></details>
   </div>
+  <details class="fold" data-open-desktop><summary>Fonti ufficiali e link</summary>
   <div class="alert"><b>Traforo del Monte Bianco:</b> nel 2025–2026 ha avuto chiusure totali programmate per il rifacimento della volta (anche di notte e per settimane in autunno). Controlla sempre prima di scegliere la via A5–Chamonix.</div>
   <div class="links" id="links"></div>
   <p class="note">La tabella sopra viene dal feed ufficiale CCISS e si aggiorna in automatico. Per il Traforo del Monte Bianco e il calendario completo dei cantieri apri le pagine ufficiali qui sopra.</p>
+  </details>
 </section>
 
 <section aria-labelledby="sm">
@@ -107,15 +124,18 @@ th{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mu
   <div id="routes"></div>
   <div>
     <p class="best" id="best"></p>
+    <details class="fold" data-open-desktop><summary>Traffico ora per ora</summary>
     <div class="bars" id="bars" aria-label="Traffico atteso per ora di partenza"></div>
     <div class="axis" id="axis"></div>
     <p class="note">Indice di traffico stimato sulle abitudini tipiche delle autostrade italiane e svizzere (ore di punta, esodi del venerdì e della domenica sera, festivi). È una stima, non un dato live: prima di partire apri Google Maps con il link qui sotto, che usa il traffico previsto all'ora che scegli.</p>
+    </details>
     <div class="links" id="gm"></div>
   </div>
 </section>
 </div>
 
 <script>
+if(matchMedia('(min-width:641px)').matches)document.querySelectorAll('details[data-open-desktop]').forEach(d=>d.open=true);
 const $=id=>document.getElementById(id);
 const enc=encodeURIComponent;
 const today=new Date();$('day').value=today.toISOString().slice(0,10);
@@ -152,10 +172,34 @@ function profile(date){
   return Math.min(100,Math.round(x));
  });
 }
+
+// Stato reale di ogni percorso dagli eventi dell'ultimo aggiornamento
+function fase(e){
+ const m=e.testo.match(/dalle (\d{1,2}):(\d{2})(?: del (\d{1,2}))?.*?(?:alle (\d{1,2}):(\d{2})(?: del (\d{1,2}))?)?/i);
+ if(!m)return'in corso';
+ const now=new Date(),d=(g,hh,mm)=>{const x=new Date(now);if(g)x.setDate(+g);x.setHours(+hh,+mm,0,0);return x};
+ const s=d(m[3],m[1],m[2]);let f=m[4]?d(m[6]||m[3],m[4],m[5]):null;if(f&&f<s)f.setDate(f.getDate()+1);
+ if(s>now)return'programmato';if(f&&f<now)return'terminato';return'in corso';
+}
+function routeStatus(ri){
+ if(!EV.length)return'<span class="pill">dati in arrivo</span>';
+ const segs=SEG.filter(z=>z[4].includes(ri)),seen=new Set(),G={};
+ segs.forEach(z=>EV.forEach(e=>{if(seen.has(e.id)||!z[3].test(e.strada+' '+e.testo))return;seen.add(e.id);
+  const f=fase(e);if(f==='terminato')return;
+  const grave=e.tipo==='chiusura'||e.tipo==='incidente',road=e.strada.split(' ')[0];
+  const k=road+'|'+(grave?(e.tipo==='incidente'?'incidente':'chiuso'):'lavori')+'|'+f;
+  const o=e.testo.match(/dalle (\d{1,2}:\d{2})/);
+  (G[k]=G[k]||{road,grave,lab:k.split('|')[1],f,n:0,ore:[]}).n++;if(o)G[k].ore.push(o[1]);
+ }));
+ const L=Object.values(G).sort((a,b)=>(b.grave-a.grave)||(a.f==='in corso'?-1:1));
+ const head=L.some(r=>r.grave&&r.f==='in corso')?'<span class="pill ko">⛔ chiuso adesso</span>':L.some(r=>r.grave)?'<span class="pill mid">chiusura programmata</span>':L.length?'<span class="pill mid">aperto, con lavori</span>':'<span class="pill ok">libero</span>';
+ const rows=L.slice(0,3).map(r=>`<div style="font-size:.82rem"><b class="${r.grave?'ko':'mid'}">${esc(r.road)}</b> ${r.n>1?r.n+'× ':''}${r.lab} ${r.f}${r.ore.length?' dalle '+esc(r.ore.sort()[0]):''}</div>`).join('');
+ return `<div style="display:grid;gap:2px">${head}${rows}${ri===0?'<div class="note">Traforo M. Bianco: verifica sul sito ufficiale</div>':''}</div>`;
+}
 function calc(){
  const c=$('c').value.trim()||'Partenza',dd=$('d').value.trim()||'Arrivo';
  const isGG=/genov/i.test(c)&&/ginev|gen[eè]v/i.test(dd);
- $('routes').innerHTML=isGG?`<div class="tw"><table><thead><tr><th>Percorso</th><th>Km</th><th>Tempo</th><th>Costi</th><th>Note</th></tr></thead><tbody>${ROUTES.map((r,i)=>`<tr><td><b>${r.n}</b>${i===0?' <span class="pill ok">consigliato se aperto</span>':''}</td><td class="num">${r.km}</td><td class="num">${r.h}</td><td>${r.cost}</td><td><span class="pill ${r.r}">${r.r==='ok'?'affidabile':'verifica'}</span> ${r.note}</td></tr>`).join('')}</tbody></table></div>`
+ $('routes').innerHTML=isGG?`<div class="tw"><table><thead><tr><th>Percorso</th><th>Km</th><th>Tempo</th><th>Costi</th><th>Note</th></tr></thead><tbody>${ROUTES.map((r,i)=>`<tr><td><b>${r.n}</b>${i===0?' <span class="pill ok">consigliato se aperto</span>':''}</td><td class="num">${r.km}</td><td class="num">${r.h}</td><td>${r.cost}</td><td>${routeStatus(i)}<div class="note" style="margin-top:4px">${r.note}</div></td></tr>`).join('')}</tbody></table></div>`
  :`<p class="note">Per tragitti diversi da Genova–Ginevra il confronto dei percorsi viene da Google Maps (link sotto), che mostra le alternative con i tempi.</p>`;
  const date=new Date($('day').value+'T12:00');
  const p=profile(date);
@@ -172,7 +216,7 @@ $('go1').onclick=()=>links(full('av','a')||'Genova',full('bv','b')||'Ginevra');
 ['av','a','bv','b'].forEach(k=>$(k).addEventListener('keydown',e=>{if(e.key==='Enter')$('go1').click()}));
 $('go2').onclick=calc;
 ['cv','c','dv','d'].forEach(k=>$(k).addEventListener('keydown',e=>{if(e.key==='Enter')calc()}));
-links('Genova','Ginevra');calc();
+links('Genova','Ginevra');
 
 const TCLS={chiusura:'ko',incidente:'ko',code:'mid',lavori:'mid',meteo:'mid',altro:''};
 let EV=[],F='tutti';
@@ -182,6 +226,8 @@ function renderEv(){
  $('filt').innerHTML=tipi.map(t=>`<button type="button" data-t="${esc(t)}" style="padding:4px 10px;font-size:.8rem;${t===F?'':'background:transparent;color:var(--fg);border:1px solid var(--line)'}">${esc(t)} (${t==='tutti'?EV.length:EV.filter(e=>e.tipo===t).length})</button>`).join('');
  $('filt').querySelectorAll('button').forEach(b=>b.onclick=()=>{F=b.dataset.t;renderEv()});
  const L=EV.filter(e=>F==='tutti'||e.tipo===F);
+ const nc=EV.filter(e=>e.tipo==='chiusura'||e.tipo==='incidente').length,nl=EV.filter(e=>e.tipo==='lavori').length;
+ $('evsum').innerHTML=nc?`<b class="ko">⛔ ${nc} chiusure o incidenti</b> e ${nl} cantieri sul corridoio. Tocca i puntini sulla mappa.`:`<b class="ok">Nessuna chiusura</b> · ${nl} cantieri sul corridoio.`;
  $('ev').innerHTML=L.length?L.map(e=>`<tr><td><span class="pill ${TCLS[e.tipo]||''}">${esc(e.tipo)}</span></td><td><b>${esc(e.strada)}</b></td><td>${esc(e.testo)}</td></tr>`).join(''):'<tr><td colspan="3" class="note">Nessun evento segnalato su queste strade all\'ultimo aggiornamento.</td></tr>';
 }
 // --- Mappa SVG (coordinate reali, proiezione equirettangolare) ---
@@ -284,11 +330,11 @@ async function drawLeaflet(){
  }
  Object.entries(P).forEach(([n,p])=>{if(all.some(q=>Math.abs(q[0]-p[0])<.02&&Math.abs(q[1]-p[1])<.02)||n==='Genova'||n==='Ginevra')L.circleMarker(p,{radius:n==='Genova'||n==='Ginevra'?8:5,color:'#17201b',weight:2,fillColor:'#fff',fillOpacity:1}).bindTooltip(n,{permanent:n==='Genova'||n==='Ginevra',direction:'top'}).addTo(LL)});
  EV.forEach((e,i)=>{const p=evPos(e,i);if(!p)return;const col=css(evCol(e));
-  if(typeof e.lat2==='number')L.polyline([[e.lat,e.lon],[e.lat2,e.lon2]],{color:col,weight:4,dashArray:'6 6'}).addTo(LL);
+  if(typeof e.lat==='number'&&typeof e.lat2==='number')L.polyline([[e.lat,e.lon],[e.lat2,e.lon2]],{color:col,weight:4,dashArray:'6 6'}).addTo(LL);
   L.circleMarker(p,{radius:10,color:'#fff',weight:3,fillColor:col,fillOpacity:1}).bindPopup(evInfo(e),{maxWidth:300,autoPanPaddingTopLeft:[10,180]}).bindTooltip(e.tipo+' · '+e.strada).addTo(LL);});
- if(all.length)LM.fitBounds(all,{padding:[30,30]});
+ LM.invalidateSize();if(all.length)LM.fitBounds(all,{padding:[30,30]});
 }
-drawMap();
+drawMap();calc();
 
 (async()=>{
  try{
@@ -296,8 +342,8 @@ drawMap();
   const d=await r.json();EV=Array.isArray(d.eventi)?d.eventi:[];
   const t=new Date(d.aggiornato);
   $('upd').textContent='Aggiornato '+(isNaN(t)?'':t.toLocaleString('it-IT',{dateStyle:'short',timeStyle:'short'}))+' · fonte '+(d.fonte||'CCISS');
-  renderEv();drawMap();
- }catch(e){$('upd').textContent='Dati non disponibili al momento: usa i link sotto.'}
+  renderEv();drawMap();calc();
+ }catch(e){console.error(e);$('upd').textContent='Dati non disponibili al momento: usa i link sotto.'}
 })();
 </script>
 
