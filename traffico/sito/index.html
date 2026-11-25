@@ -85,6 +85,7 @@ th{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mu
       <div><i style="background:var(--bad)"></i>Chiusura o incidente</div>
       <div><i style="background:var(--warn)"></i>Lavori, code, meteo</div>
       <div><i style="background:var(--good)"></i>Nessun evento</div>
+      <div><b style="display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--bad);margin:0 9px 0 3px;vertical-align:middle"></b>Tocca il puntino: problema, tratto, lunghezza</div>
       <div class="note" id="mapnote">Passa sopra un tratto per i dettagli</div>
     </div>
   </div>
@@ -217,9 +218,33 @@ function drawMap(){
   s+=`<circle cx="${x}" cy="${y}" r="${big?8:on?4.5:3}" fill="${big?'var(--sign)':'var(--panel)'}" stroke="var(${on?'--fg':'--line'})" stroke-width="2"/>`;
   const west=p[1]<7.1;
   if(on||big)s+=`<text x="${west?x+10:x-6}" y="${y-9}" text-anchor="${west?'start':'end'}" font-size="${big?14:11}" font-weight="${big?700:500}" fill="var(--fg)" paint-order="stroke" stroke="var(--bg)" stroke-width="3">${n}</text>`});
+ EV.forEach((e,i)=>{const p=evPos(e,i);if(!p)return;const[x,y]=xy(p);
+  s+=`<circle class="evd" data-i="${i}" cx="${x}" cy="${y}" r="8" fill="var(${evCol(e)})" stroke="var(--panel)" stroke-width="2.5" style="cursor:pointer"><title>${esc(e.tipo)}: ${esc(e.strada)}</title></circle>`});
  $('map').innerHTML=s;
  $('map').querySelectorAll('line.seg').forEach(l=>{const z=SEG.find(q=>q[0]===l.dataset.a&&q[1]===l.dataset.b);l.onclick=()=>showSeg(z)});
+ $('map').querySelectorAll('circle.evd').forEach(c=>c.onclick=()=>{$('segdet').innerHTML=evInfo(EV[+c.dataset.i])});
  if(window.L)drawLeaflet();
+}
+// --- Puntini degli eventi ---
+const evCol=e=>(e.tipo==='chiusura'||e.tipo==='incidente')?'--bad':(e.tipo==='altro'?'--muted':'--warn');
+function evPos(e,i){
+ if(typeof e.lat==='number'&&typeof e.lon==='number')return[e.lat,e.lon];
+ const z=SEG.find(q=>q[3].test(e.strada+' '+e.testo));if(!z)return null;
+ const t=.25+((i*37)%50)/100,[a,b]=[P[z[0]],P[z[1]]];
+ return[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t];
+}
+function evInfo(e){
+ const o=e.testo.match(/dalle (\d{1,2}:\d{2})(?: del ([^a-z]*?\d{4}|\d+))?(?: alle (\d{1,2}:\d{2})(?: del ([\w ]+?\d{4}))?)?/i);
+ const lung=typeof e.km==='number'?`circa ${e.km} km`:(e.da&&!e.a?'punto singolo':'non indicata');
+ const tratto=e.da?(esc(e.da)+(e.a?' → '+esc(e.a):'')):'';
+ return `<div style="display:grid;gap:4px;min-width:200px;max-width:280px">
+  <div><span class="pill ${TCLS[e.tipo]||''}">${esc(e.tipo)}</span> <b>${esc(e.strada)}</b></div>
+  <div>${esc(e.testo)}</div>
+  ${tratto?`<div><b>Tratto:</b> ${tratto}</div>`:''}
+  <div><b>Lunghezza:</b> ${lung}</div>
+  ${o?`<div><b>Orario:</b> dalle ${esc(o[1])}${o[3]?' alle '+esc(o[3]):' (fine non indicata)'}</div>`:''}
+  ${e.lat?'':'<div class="note">Posizione indicativa sul tratto</div>'}
+ </div>`;
 }
 function showSeg(z){
  const[a,b,road,re]=z,e=segState(re)[1];
@@ -258,6 +283,9 @@ async function drawLeaflet(){
   L.polyline(g,{color:css(c),weight:7,opacity:.9}).bindTooltip(`${road} · ${e.length?e.length+' eventi':'nessun evento'}`,{sticky:true}).on('click',()=>{showSeg(z);$('segdet').scrollIntoView({behavior:'smooth',block:'nearest'})}).addTo(LL);
  }
  Object.entries(P).forEach(([n,p])=>{if(all.some(q=>Math.abs(q[0]-p[0])<.02&&Math.abs(q[1]-p[1])<.02)||n==='Genova'||n==='Ginevra')L.circleMarker(p,{radius:n==='Genova'||n==='Ginevra'?8:5,color:'#17201b',weight:2,fillColor:'#fff',fillOpacity:1}).bindTooltip(n,{permanent:n==='Genova'||n==='Ginevra',direction:'top'}).addTo(LL)});
+ EV.forEach((e,i)=>{const p=evPos(e,i);if(!p)return;const col=css(evCol(e));
+  if(typeof e.lat2==='number')L.polyline([[e.lat,e.lon],[e.lat2,e.lon2]],{color:col,weight:4,dashArray:'6 6'}).addTo(LL);
+  L.circleMarker(p,{radius:10,color:'#fff',weight:3,fillColor:col,fillOpacity:1}).bindPopup(evInfo(e),{maxWidth:300,autoPanPaddingTopLeft:[10,180]}).bindTooltip(e.tipo+' · '+e.strada).addTo(LL);});
  if(all.length)LM.fitBounds(all,{padding:[30,30]});
 }
 drawMap();
