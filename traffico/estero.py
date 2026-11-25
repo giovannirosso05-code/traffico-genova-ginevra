@@ -14,6 +14,8 @@ CH_ACTION = "http://opentransportdata.swiss/TDP/Soap_Datex2/Pull/v1/pullTrafficM
 
 # --- Traduzione dal francese: frasi e parole ricorrenti; i nomi di luogo restano in francese ---
 FRASI = [
+    (r"^De (.+?) vers (.+)$", lambda m: f"Direzione {m.group(2)} (da {m.group(1)})"),
+    (r"\bcomme\b", "come"), (r"^Cause\b", "Causa"), (r"\bnord\b", "nord"),
     (r"Point particulier\s*:\s*", ""),
     (r"d[ée]but\s*:\s*situ[ée]\s+", "da "), (r",?\s*fin\s*:\s*situ[ée]\s+", " fino a "), (r"\bsitu[ée]e?\s+", ""),
     (r"\b(\d[\d.,]*)\s*m\s+au\s+(nord|sud)\s+de\s+", lambda m: f"{m.group(1)} m a {m.group(2)} di "),
@@ -43,8 +45,8 @@ FRASI = [
     (r"\b24h/24\b", "giorno e notte"), (r"\bde nuit\b", "di notte"), (r"\bla nuit\b", "di notte"), (r"\bde jour\b", "di giorno"), (r"\bweek-?end\b", "fine settimana"),
     (r"\bjours? f[ée]ri[ée]s\b", "festivi"), (r"\bhabituellement\b", "di solito"), (r"\bsaison\b", "stagione"), (r"\bcirculation\b", "traffico"),
     (r"\bvoies?\b", "corsia"), (r"\bet\b", "e"), (r"\bsur\b", "su"), (r"\bpour\b", "per"), (r"\bavec\b", "con"), (r"\bdans\b", "in"),
-    (r"\btonnes\b", "tonnellate"), (r"\bancienne\b", "ex"), (r"\bau\b", "a"), (r"\baux\b", "ai"), (r"\bde\b", "di"), (r"\bd'", "di "),
-    (r"\bde la\b", "della"), (r"\bdes\b", "dei"), (r"\bdu\b", "del"), (r"\bles\b", "i"),
+    (r"\bouest\b", "ovest"), (r"\btonnes\b", "tonnellate"), (r"\bancienne\b", "ex"), (r"\bau\b", "a"), (r"\baux\b", "ai"), (r"\bde\b", "di"), (r"\bd'", "di "),
+    (r"\bde la\b", "della"), (r"\bdes\b", "dei"), (r"\bdu\b", "del"), (r"\bles\b(?!\s+[A-ZÀ-Ý])", "i"), (r"\bde la\b(?=\s+[A-ZÀ-Ý])", "de la"),
     (r"\blundi\b", "lunedì"), (r"\bmardi\b", "martedì"), (r"\bmercredi\b", "mercoledì"), (r"\bjeudi\b", "giovedì"), (r"\bvendredi\b", "venerdì"), (r"\bsamedi\b", "sabato"), (r"\bdimanche\b", "domenica"),
     (r"\bjanvier\b", "gennaio"), (r"\bf[ée]vrier\b", "febbraio"), (r"\bmars\b", "marzo"), (r"\bavril\b", "aprile"), (r"\bmai\b", "maggio"), (r"\bjuin\b", "giugno"),
     (r"\bjuillet\b", "luglio"), (r"\bao[ûu]t\b", "agosto"), (r"\bseptembre\b", "settembre"), (r"\boctobre\b", "ottobre"), (r"\bnovembre\b", "novembre"), (r"\bd[ée]cembre\b", "dicembre"),
@@ -129,7 +131,9 @@ def da_datex(xml_bytes, paese):
         commento = ""
         parti = []
         for gc in figli(rec, "generalPublicComment"):
-            v = traduci(re.sub(r"\s+", " ", testo_di(gc, "value") or ""))
+            v = re.sub(r"\s+", " ", testo_di(gc, "value") or "")
+            if re.match(r"^(DIR |District |CEI |SREI)", v): continue   # nome dell'ufficio che gestisce, non serve
+            v = traduci(v)
             if v and v not in parti: parti.append(v)
         commento = " · ".join(parti)
         commento = re.sub(r"\s+", " ", commento)[:240]
