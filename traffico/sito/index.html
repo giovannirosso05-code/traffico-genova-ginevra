@@ -58,6 +58,13 @@ details[open]{padding-bottom:12px}
 .best{font-size:1.05rem}
 .leaflet-popup-content{font:14px/1.45 var(--body);margin:12px 14px}
 .err{color:var(--bad);font-size:.9rem}
+.updbig{background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--sign);border-radius:10px;padding:10px 12px;font-size:1.05rem}
+.updbig b{font-size:1.25rem}
+.ac{position:relative}
+.sug{position:absolute;left:0;right:0;top:100%;z-index:1200;background:var(--panel);border:1px solid var(--line);border-radius:8px;margin-top:4px;box-shadow:0 6px 18px rgb(0 0 0/.18);max-height:260px;overflow:auto}
+.sug button{display:block;width:100%;text-align:left;background:transparent;color:var(--fg);border:0;border-bottom:1px solid var(--line);border-radius:0;padding:9px 11px;font-weight:400}
+.sug button:last-child{border-bottom:0}
+.sug small{display:block;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -68,11 +75,12 @@ details[open]{padding-bottom:12px}
 </nav>
 
 <div class="wrap">
+  <div class="updbig" id="updbig">Carico i dati…</div>
   <h2 id="s1">1 · Mappa e chiusure</h2>
   <div class="card">
     <div class="trip">
-      <input id="from" placeholder="Partenza: via e città" aria-label="Partenza">
-      <input id="to" placeholder="Arrivo: via e città" aria-label="Arrivo">
+      <div class="ac"><input id="from" placeholder="Partenza: via, luogo o città" aria-label="Partenza" autocomplete="off"><div class="sug" id="sug-from" hidden></div></div>
+      <div class="ac"><input id="to" placeholder="Arrivo: es. Stadio San Siro" aria-label="Arrivo" autocomplete="off"><div class="sug" id="sug-to" hidden></div></div>
       <button id="go" type="button">Calcola</button>
     </div>
     <div class="chips">
@@ -129,6 +137,17 @@ function hl(t){
  s=s.replace(/\b(tra|a|presso) ((?:\d[\d,.]*\s*k?m\s+(?:prima|dopo)\s+(?:di\s+)?)?(?:Svincolo|Allacciamento|Area di servizio|Incrocio|Barriera|Diram)[^]*?)(?=\s+in direzione|\s+provenendo|$)/,'$1 <b>$2</b>');
  return s;
 }
+function carr(e){
+ const t=e.testo.toLowerCase();
+ if(e.corsie)return e.corsie;
+ if(/carreggiata chiusa|tratto chiuso|strada chiusa|chiusura (?:totale|notturna)|chiusura nodo/.test(t))return'carreggiata chiusa';
+ if(/senso unico alternato/.test(t))return'senso unico alternato';
+ if(/doppio senso|scambio di carreggiata|deviazion\w+ (?:sulla|in) carreggiata/.test(t))return'doppio senso su una carreggiata';
+ if(/corsi[ae] (?:di sorpasso |di marcia |d'emergenza )?chius|corsi[ae] ridott|restringiment|carreggiata ridotta/.test(t))return'corsie ridotte';
+ if(/personale su strada/.test(t))return'traffico aperto, personale al lavoro sul bordo';
+ return'';
+}
+const carrTxt=e=>{const c=carr(e);return c?c:(e.tipo==='lavori'?'non indicato dalla fonte':'')};
 const grave=e=>e.tipo==='chiusura'||e.tipo==='incidente';
 const col=e=>grave(e)?css('--bad'):e.tipo==='altro'?'#8a948d':css('--warn');
 function fase(e){
@@ -144,6 +163,7 @@ function popup(e){
   <div><span class="pill ${grave(e)?'ko':'mid'}">${esc(e.tipo)} · ${fase(e)}</span></div>
   <div><b>${esc(e.strada)}</b></div>
   <div>${hl(e.testo)}</div>
+  ${carrTxt(e)?`<div><b>Carreggiata:</b> <span class="${/chiusa/.test(carr(e))?'ko':''}">${esc(carrTxt(e))}</span></div>`:''}
   ${e.da?`<div><b>Tratto:</b> ${esc(e.da)}${e.a?' → '+esc(e.a):''}</div>`:''}
   <div><b>Lunghezza:</b> ${typeof e.km==='number'?'circa '+e.km+' km':(e.da&&!e.a?'punto singolo':'non indicata')}</div>
  </div>`;
@@ -164,7 +184,7 @@ function drawEvents(list){
 function listEvents(list,title){
  const L2=[...list].sort((a,b)=>grave(b)-grave(a));
  $('evsum').textContent=`${title} (${L2.length})`;
- $('evlist').innerHTML=L2.length?L2.map(e=>`<div class="ev"><div><span class="pill ${grave(e)?'ko':'mid'}">${esc(e.tipo)} · ${fase(e)}</span> <b>${esc(e.strada)}</b></div><div>${hl(e.testo)}</div></div>`).join(''):'<div class="ev muted">Nessun problema segnalato.</div>';
+ $('evlist').innerHTML=L2.length?L2.map(e=>`<div class="ev"><div><span class="pill ${grave(e)?'ko':'mid'}">${esc(e.tipo)} · ${fase(e)}</span> <b>${esc(e.strada)}</b></div><div>${hl(e.testo)}</div>${carrTxt(e)?`<div><b>Carreggiata:</b> ${esc(carrTxt(e))}</div>`:''}</div>`).join(''):'<div class="ev muted">Nessun problema segnalato.</div>';
 }
 // distanza (km) di un punto da una linea
 function distKm(p,line){
@@ -179,8 +199,26 @@ function distKm(p,line){
 const onRoute=(e,line)=>typeof e.lat==='number'&&(distKm([e.lat,e.lon],line)<2||(typeof e.lat2==='number'&&distKm([e.lat2,e.lon2],line)<2));
 
 // percorso
-async function geocode(q){
+const PICK={};
+function suggest(id){
+ const inp=$(id),box=$('sug-'+id);let tm,ctl;
+ inp.addEventListener('input',()=>{delete PICK[id];clearTimeout(tm);const q=inp.value.trim();if(q.length<3||q==='La mia posizione'){box.hidden=true;return}
+  tm=setTimeout(async()=>{try{ctl?.abort();ctl=new AbortController();
+   const c=map.getCenter(),r=await fetch(`https://photon.komoot.io/api/?q=${encodeURIComponent(q)}&limit=6&lang=it&lat=${c.lat}&lon=${c.lng}`,{signal:ctl.signal});
+   const j=await r.json(),F=(j.features||[]);
+   if(!F.length){box.hidden=true;return}
+   box.innerHTML=F.map((f,i)=>{const p=f.properties,t=[p.name,p.street&&(p.street+(p.housenumber?' '+p.housenumber:''))].filter(Boolean)[0]||p.city||'',sub=[p.city||p.town||p.village,p.state,p.country].filter(x=>x&&x!==t).join(', ');return`<button type="button" data-i="${i}">${esc(t)}<small>${esc(sub)}</small></button>`}).join('');
+   box.querySelectorAll('button').forEach(b=>b.onclick=()=>{const f=F[+b.dataset.i],p=f.properties;
+    inp.value=[p.name,p.street&&(p.street+(p.housenumber?' '+p.housenumber:'')),p.city||p.town||p.village].filter((x,k,a)=>x&&a.indexOf(x)===k).join(', ');
+    PICK[id]=[f.geometry.coordinates[1],f.geometry.coordinates[0]];box.hidden=true;
+    if($('from').value&&$('to').value)route();else $(id==='from'?'to':'from').focus()});
+   box.hidden=false}catch(e){}},300)});
+ inp.addEventListener('blur',()=>setTimeout(()=>box.hidden=true,200));
+}
+suggest('from');suggest('to');
+async function geocode(q,id){
  if(q==='La mia posizione'&&FROMPT)return FROMPT;
+ if(id&&PICK[id])return PICK[id];
  const r=await fetch('https://nominatim.openstreetmap.org/search?format=json&limit=1&accept-language=it&q='+encodeURIComponent(q));
  const j=await r.json();if(!j.length)throw new Error('Non trovo "'+q+'". Prova ad aggiungere la città.');
  return[+j[0].lat,+j[0].lon];
@@ -190,7 +228,7 @@ async function route(){
  if(!f||!t){$('msg').innerHTML='<span class="err">Scrivi sia la partenza sia l\'arrivo.</span>';return}
  $('msg').textContent='Calcolo il percorso…';$('go').disabled=true;
  try{
-  const[a,b]=await Promise.all([geocode(f),geocode(t)]);
+  const[a,b]=await Promise.all([geocode(f,'from'),geocode(t,'to')]);
   const r=await fetch(`https://router.project-osrm.org/route/v1/driving/${a[1]},${a[0]};${b[1]},${b[0]}?alternatives=3&overview=full&geometries=geojson`);
   const j=await r.json();if(!j.routes||!j.routes.length)throw new Error('Nessun percorso stradale trovato.');
   ROUTES=j.routes.map(x=>({line:x.geometry.coordinates.map(([lo,la])=>[la,lo]),km:x.distance/1000,min:x.duration/60}));
@@ -273,14 +311,15 @@ function links(f,t){
 links('','');
 
 // avvio
-document.querySelectorAll('[data-f]').forEach(b=>b.onclick=()=>{$('from').value=b.dataset.f;$('to').value=b.dataset.t;FROMPT=null;route()});
+document.querySelectorAll('[data-f]').forEach(b=>b.onclick=()=>{$('from').value=b.dataset.f;$('to').value=b.dataset.t;FROMPT=null;delete PICK.from;delete PICK.to;route()});
 $('go').onclick=route;
 ['from','to'].forEach(k=>$(k).addEventListener('keydown',e=>{if(e.key==='Enter')route()}));
 $('from').addEventListener('input',()=>{if($('from').value!=='La mia posizione')FROMPT=null});
 (async()=>{
  try{
   const r=await fetch('dati.json?'+Date.now());const d=await r.json();EV=d.eventi||[];
-  const t=new Date(d.aggiornato);
+  const t=new Date(d.aggiornato),min=Math.round((Date.now()-t)/60000);
+  $('updbig').innerHTML=`Ultimo aggiornamento: <b>${t.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'})}</b> del ${t.toLocaleDateString('it-IT')} <span class="muted">(${min<1?'adesso':min<60?min+' min fa':Math.floor(min/60)+' h fa'})</span><br><span class="muted">Si aggiorna da solo <b style="font-size:inherit">ogni ora</b>. Ricarica la pagina per vedere i dati nuovi.</span>`;
   $('upd').textContent='Dati aggiornati '+t.toLocaleString('it-IT',{dateStyle:'short',timeStyle:'short'})+' · aggiornamento ogni ora · Fonti: '+Object.entries(d.fonti||{Italia:'ok'}).map(([k,v])=>k+' '+(String(v).startsWith('ok')?'✓':'✗ ('+v+')')).join(', ')+'.';
   const live=EV.filter(e=>fase(e)!=='terminato');
   drawEvents(live);listEvents(live,'Tutti i problemi segnalati');

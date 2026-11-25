@@ -88,13 +88,18 @@ def da_datex(xml_bytes, paese):
         commento = re.sub(r"\s+", " ", commento)[:240]
         if tipo in ("altro", "lavori") and re.search(r"\b(ferm[ée]e?s?|fermeture|coup[ée]e?|barr[ée]e?|gesperrt|Sperrung)\b", commento, re.I):
             tipo, frase = "chiusura", "strada chiusa"
+        tipi = " ".join((x.text or "") for x in rec.iter() if loc(x) in ("roadOrCarriagewayOrLaneManagementType", "roadMaintenanceType", "constructionWorkType")).lower()
+        if "carriagewayclosures" in tipi or "roadclosed" in tipi: corsie = "carreggiata chiusa"
+        elif "laneclosures" in tipi or "narrowlanes" in tipi or "singlealternatelinetraffic" in tipi: corsie = "corsie ridotte"
+        elif "contraflow" in tipi: corsie = "doppio senso su una carreggiata"
+        else: corsie = ""
         testo = f"{frase} {periodo(rec)}".strip()
         if commento:
             testo += f" · {commento}"
         e = {"id": hashlib.sha1((paese + (rec.get("id") or testo)).encode()).hexdigest()[:16],
              "strada": f"{strada} ({paese})", "testo": testo, "tipo": tipo,
              "quando": testo_di(rec, "situationRecordVersionTime") or "",
-             "inizio": a.isoformat() if a else "", "fine": b.isoformat() if b else "",
+             "corsie": corsie, "inizio": a.isoformat() if a else "", "fine": b.isoformat() if b else "",
              "lat": round(p1[0], 5), "lon": round(p1[1], 5), "paese": paese}
         if p2:
             e.update(lat2=round(p2[0], 5), lon2=round(p2[1], 5))
