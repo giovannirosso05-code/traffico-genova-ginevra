@@ -1,18 +1,18 @@
 {
- "aggiornato": "2026-11-25T23:06+00:00",
+ "aggiornato": "2026-11-25T23:07+00:00",
  "fonte": "ATMB (www.atmb.com)",
  "stato": "ok",
- "tunnel": "Traffico fluide",
+ "tunnel": "Traffico scorrevole",
  "eventi": [
   {
    "titolo": "A40 in entrambe le direzioni, 🌙 chiusura delle corsie tra Archamps n°13.1 e Annemasse n°14, la notte di giovedì 26 novembre dalle 21:00 alle 6:00 del giorno dopo, per rinnovare il ponte dell’A40, detto \"Combe\"",
-   "testo": "ATMB - Autoroutes e galleria del Mont Blanc",
+   "testo": "",
    "tipo": "chiusura",
    "url": "https://www.atmb.com/atmb_event/a40-dans-les-deux-sens-de-circulation-%f0%9f%8c%99-fermeture-des-voies-entre-archamps-n13-1-et-annemasse-n14-la-nuit-du-jeudi-26-novembre-de-21h-a-6-h-le-lendemain-pour-renover-le-pon/"
   },
   {
-   "titolo": "🔔 del 1er novembre a 31 marzo: vitesse réduite di 130 km/h à 110 km/h",
-   "testo": "Del 1er novembre a 31 marzo, in le cadre dell’application del Plan di Protection dell’Atmosphère (PPA2) di la Vallée dell’Arve, la limite di velocità passe di 130 km/h à 110 km/h su l’A411 e l’A40 tra Vallard e Le Fayet. Plus d’informations: Rappel: del 1er novembre a 31 marzo, les équipements hivernaux […]",
+   "titolo": "🔔 del 1 novembre a 31 marzo: velocità ridotta di 130 km/h a 110 km/h",
+   "testo": "Del 1 novembre a 31 marzo, in le cadre dell’application del Plan di Protection dell’Atmosphère (PPA2) della valle dell’Arve, la limitation di velocità passe di 130 km/h a 110 km/h su l’A411 e l’A40 tra Vallard e Le Fayet. Plus d’informations: Rappel: del 1 novembre a 31 marzo, les équipements hivernaux […]",
    "tipo": "altro",
    "url": "https://www.atmb.com/atmb_event_info/hiver-vitesse-110/"
   }
