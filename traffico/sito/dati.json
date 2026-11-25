@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-25T20:13+00:00",
+ "aggiornato": "2026-11-25T20:14+00:00",
  "fonte": "CCISS (feed ufficiale)",
  "eventi": [
   {
@@ -7,6 +7,13 @@
    "strada": "A26 Genova-Gravellona Toce",
    "testo": "veicolo fermo o in avaria dalle 21:12 del 25 novembre 2026 tra Svincolo Alessandria Sud e Allacciamento Diram. Predosa-Bettole in direzione Genova Voltri",
    "tipo": "altro",
+   "quando": "2026-11-25T20:13:00Z"
+  },
+  {
+   "id": "130e42fa001a1fbb",
+   "strada": "A7 Milano-Genova",
+   "testo": "lavori tra Allacciamento Diramazione Predosa-Bettole e Svincolo Serravalle Scrivia in direzione Genova",
+   "tipo": "lavori",
    "quando": "2026-11-25T20:13:00Z"
   },
   {
