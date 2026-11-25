@@ -234,7 +234,7 @@ async function routeGeo(a,b){
  return GEO[k];
 }
 async function drawLeaflet(){
- $('map').hidden=true;$('lmap').hidden=false;$('mapnote').textContent='Tocca un tratto per i dettagli. Zoom con due dita o la rotella.';
+ $('map').style.display='none';$('lmap').hidden=false;$('mapnote').textContent='Tocca un tratto per i dettagli. Zoom con due dita o la rotella.';
  if(!LM){LM=L.map('lmap',{scrollWheelZoom:true}).setView([45.4,7.6],8);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(LM);
   if(navigator.geolocation){const btn=document.createElement('button');btn.type='button';btn.textContent='📍 La mia posizione';btn.style.cssText='margin-top:4px;padding:6px 8px;font-size:.78rem';
