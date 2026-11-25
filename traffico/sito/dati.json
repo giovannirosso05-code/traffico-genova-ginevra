@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-25T20:16+00:00",
+ "aggiornato": "2026-11-25T20:18+00:00",
  "fonte": "CCISS (feed ufficiale)",
  "eventi": [
   {
@@ -7,10 +7,24 @@
    "strada": "A26 Genova-Gravellona Toce",
    "testo": "veicolo fermo o in avaria dalle 21:12 del 25 novembre 2026 tra Svincolo Alessandria Sud e Allacciamento Diram. Predosa-Bettole in direzione Genova Voltri",
    "tipo": "altro",
-   "quando": "2026-11-25T20:13:00Z",
+   "quando": "2026-11-25T20:17:00Z",
    "lat": 44.8349534,
    "lon": 8.7450304,
    "da": "Alessandria"
+  },
+  {
+   "id": "d8624d6e0226ff17",
+   "strada": "A10 Genova-Ventimiglia",
+   "testo": "personale su strada causa lavori dalle 21:14 alle 21:59 del 25 novembre 2026 tra Svincolo Varazze e Svincolo Celle Ligure in direzione Ventimiglia",
+   "tipo": "lavori",
+   "quando": "2026-11-25T20:16:00Z",
+   "lat": 44.3592996,
+   "lon": 8.5753273,
+   "da": "Varazze",
+   "lat2": 44.3463235,
+   "lon2": 8.5444342,
+   "a": "Celle Ligure",
+   "km": 3.4
   },
   {
    "id": "130e42fa001a1fbb",
@@ -216,20 +230,6 @@
    "lat2": 45.8316548,
    "lon2": 6.9461565,
    "a": "Courmayeur"
-  },
-  {
-   "id": "1924d17535417e4f",
-   "strada": "A7 Milano-Genova",
-   "testo": "lavori tra Svincolo Tortona e Allacciamento Diramazione Predosa-Bettole in direzione Genova",
-   "tipo": "lavori",
-   "quando": "2026-11-25T19:13:00Z",
-   "lat": 44.89666,
-   "lon": 8.8641282,
-   "da": "Tortona",
-   "lat2": 44.830028,
-   "lon2": 8.813473,
-   "a": "Diramazione Predosa-Bettole",
-   "km": 10.1
   }
  ]
 }
