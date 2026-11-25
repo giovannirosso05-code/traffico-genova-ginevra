@@ -57,9 +57,19 @@ try:
             card = re.findall(r'aprr-news-card__footer-title"><a href="(/[^"]+)">(.*?)</a>', h, re.S)
             nuovi = [(u, t) for u, t in card if u not in visti]
             if not nuovi: break
+            oggi = datetime.date.today()
             for u, t in nuovi:
                 visti.add(u)
                 t = pulito(t)
+                date = [(int(d), int(mm)) for d, mm in re.findall(r"\b(\d{1,2})/(\d{1,2})\b", t) if 1 <= int(mm) <= 12 and 1 <= int(d) <= 31]
+                if date:
+                    d, mm = date[-1]
+                    try:
+                        fine = datetime.date(oggi.year, mm, d)
+                        if fine < oggi and (oggi - fine).days < 200:
+                            continue                      # lavoro già finito
+                    except ValueError:
+                        pass
                 desc = ""
                 if len(visti) <= 40:
                     try: desc = meta(leggi("https://voyage.aprr.fr" + u), "og:description") or ""

@@ -14,6 +14,9 @@ CH_ACTION = "http://opentransportdata.swiss/TDP/Soap_Datex2/Pull/v1/pullTrafficM
 
 # --- Traduzione dal francese: frasi e parole ricorrenti; i nomi di luogo restano in francese ---
 FRASI = [
+    (r"\bdu (?:\w+di |lundi |mardi |mercredi |jeudi |vendredi |samedi |dimanche )?(\d{1,2}/\d{1,2}) [àa] (\d{1,2})h(\d{2})? (?:au|[àa]) (?:\w+ )?(\d{1,2}/\d{1,2}) [àa] (\d{1,2})h(\d{2})?",
+     lambda m: f"dal {m.group(1)} ore {m.group(2)}:{m.group(3) or '00'} al {m.group(4)} ore {m.group(5)}:{m.group(6) or '00'}"),
+    (r"\bDirection\b", "direzione"), (r"\bsecteur\b", "zona"), (r"\ble (\d{1,2}) ", r"il \1 "),
     (r"^De (.+?) vers (.+)$", lambda m: f"Direzione {m.group(2)} (da {m.group(1)})"),
     (r"(?<![\w-])la nuit du\b", "la notte di"), (r"\bde (\d{1,2})\s?h(\d{2})?\s+[àa]\s+(\d{1,2})\s?h(\d{2})?", lambda m: f"dalle {m.group(1)}:{m.group(2) or '00'} alle {m.group(3)}:{m.group(4) or '00'}"),
     (r"\ble lendemain\b", "del giorno dopo"), (r"\bfermeture des voies\b", "chiusura delle corsie"), (r"\bdes voies\b", "delle corsie"),
