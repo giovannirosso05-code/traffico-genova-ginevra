@@ -1,7 +1,21 @@
 {
- "aggiornato": "2026-11-25T20:06+00:00",
+ "aggiornato": "2026-11-25T20:08+00:00",
  "fonte": "CCISS (feed ufficiale)",
  "eventi": [
+  {
+   "id": "c8d9c2c0b02b1ec7",
+   "strada": "A26 Genova-Gravellona Toce",
+   "testo": "area di servizio chiusa causa tratto chiuso dalle 21:05 del 25 alle 05:00 del 26 novembre 2026 a Area di servizio Stura in direzione Genova Voltri",
+   "tipo": "chiusura",
+   "quando": "2026-11-25T20:07:00Z"
+  },
+  {
+   "id": "16803231966b69d2",
+   "strada": "A10 Genova-Ventimiglia",
+   "testo": "personale su strada causa lavori dalle 21:06 alle 21:50 del 25 novembre 2026 tra Svincolo Albisola e Svincolo A10 - A06 al Km 44 in direzione Ventimiglia",
+   "tipo": "lavori",
+   "quando": "2026-11-25T20:07:00Z"
+  },
   {
    "id": "5d260a19cf4a02f7",
    "strada": "A26 Genova-Gravellona Toce",
