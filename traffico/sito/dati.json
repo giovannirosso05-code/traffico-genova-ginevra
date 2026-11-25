@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-25T23:03+00:00",
+ "aggiornato": "2026-11-25T23:05+00:00",
  "fonte": "CCISS, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -7,6 +7,20 @@
   "Svizzera": "non attiva (manca la chiave)"
  },
  "eventi": [
+  {
+   "id": "814d6e79d954ac42",
+   "strada": "A14 Bari-Taranto",
+   "testo": "personale su strada causa lavori dalle 00:02 alle 00:47 del 26 novembre 2026 tra Svincolo Acquaviva Delle Fonti e Svincolo Bari Sud in direzione Bari",
+   "tipo": "lavori",
+   "quando": "2026-11-25T23:04:00Z",
+   "lat": 40.897829,
+   "lon": 16.842487,
+   "da": "Acquaviva Delle Fonti",
+   "lat2": 41.1257843,
+   "lon2": 16.8620293,
+   "a": "Bari",
+   "km": 30.5
+  },
   {
    "id": "61d84449eea59a32",
    "strada": "A14 Pescara-Bari",
@@ -191,16 +205,6 @@
    "lat": 43.7697955,
    "lon": 11.2556404,
    "da": "Di Firenze"
-  },
-  {
-   "id": "683e69339bd37699",
-   "strada": "A14 Pescara-Bari",
-   "testo": "personale su strada causa lavori dalle 23:47 del 25 alle 00:32 del 26 novembre 2026 tra Svincolo Bitonto e Allacciamento Bari Nord - Raccordo Per La Tangenziale in direzione Taranto",
-   "tipo": "lavori",
-   "quando": "2026-11-25T22:48:00Z",
-   "lat": 41.0497743,
-   "lon": 16.5728773,
-   "da": "Bitonto"
   },
   {
    "id": "90e57bb742697a78",
