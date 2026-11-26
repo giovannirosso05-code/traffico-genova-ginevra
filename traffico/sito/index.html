@@ -182,22 +182,27 @@ function popup(e){
 const map=L.map('map').setView([45.6,8],6);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
 const lyrRoutes=L.layerGroup().addTo(map),lyrEv=L.layerGroup().addTo(map),lyrPins=L.layerGroup().addTo(map);
+const MK={};
 function drawEvents(list,line){
- lyrEv.clearLayers();
+ lyrEv.clearLayers();for(const k in MK)delete MK[k];
  list.filter(e=>typeof e.lat==='number').forEach(e=>{
   // tratto interessato: lo coloro SOPRA il percorso, seguendo la strada (niente più linee dritte tra due svincoli)
   if(line&&typeof e.lat2==='number'&&!e.approx&&distKm([e.lat,e.lon],line)<2&&distKm([e.lat2,e.lon2],line)<2){
    let i=nearIdx([e.lat,e.lon],line),j=nearIdx([e.lat2,e.lon2],line);if(i>j)[i,j]=[j,i];
    if(j>i)L.polyline(line.slice(i,j+1),{color:col(e),weight:9,opacity:.85}).bindPopup(popup(e),{maxWidth:290}).addTo(lyrEv);
   }
-  L.circleMarker([e.lat,e.lon],{radius:grave(e)?11:9,color:'#fff',weight:3,fillColor:col(e),fillOpacity:1})
+  MK[e.id]=L.circleMarker([e.lat,e.lon],{radius:grave(e)?11:9,color:'#fff',weight:3,fillColor:col(e),fillOpacity:1})
    .bindPopup(popup(e),{maxWidth:290}).bindTooltip(e.tipo+' · '+e.strada).addTo(lyrEv);
  });
 }
 function listEvents(list,title){
  const L2=[...list].sort((a,b)=>grave(b)-grave(a));
  $('evsum').textContent=`${title} (${L2.length})`;
- $('evlist').innerHTML=L2.length?L2.map(e=>`<div class="ev"><div><span class="pill ${grave(e)?'ko':'mid'}">${esc(e.tipo)} · ${fase(e)}</span> <b>${esc(e.strada)}</b></div><div>${hl(e.testo)}</div>${carrTxt(e)?`<div><b>Carreggiata:</b> ${esc(carrTxt(e))}</div>`:''}</div>`).join(''):'<div class="ev muted">Nessun problema segnalato.</div>';
+ $('evlist').innerHTML=L2.length?L2.map(e=>`<div class="ev" data-id="${esc(e.id)}" role="button" tabindex="0" style="cursor:pointer"><div><span class="pill ${grave(e)?'ko':'mid'}">${esc(e.tipo)} · ${fase(e)}</span> <b>${esc(e.strada)}</b></div><div>${hl(e.testo)}</div>${carrTxt(e)?`<div><b>Carreggiata:</b> ${esc(carrTxt(e))}</div>`:''}<div class="muted">${typeof e.lat==='number'?'📍 Tocca per vederlo sulla mappa':'Posizione non disponibile per questo avviso'}</div></div>`).join(''):'<div class="ev muted">Nessun problema segnalato.</div>';
+ $('evlist').querySelectorAll('.ev[data-id]').forEach(d=>{const vai=()=>{const m=MK[d.dataset.id];if(!m)return;
+  $('map').scrollIntoView({behavior:'smooth',block:'center'});
+  setTimeout(()=>{map.setView(m.getLatLng(),13);m.openPopup()},350)};
+  d.onclick=vai;d.onkeydown=k=>{if(k.key==='Enter')vai()}});
 }
 // distanza (km) di un punto da una linea
 function distKm(p,line){
