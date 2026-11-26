@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-26T18:03+00:00",
+ "aggiornato": "2026-11-26T18:06+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -9,17 +9,74 @@
  },
  "eventi": [
   {
-   "id": "976d997f03bca938",
-   "strada": "A4 Milano-Brescia",
-   "testo": "code a tratti causa traffico intenso dalle 15:54 del 26 novembre 2026 tra Barriera Di Milano Est e Svincolo Viale Monte Ceneri incrocio Viale Certosa in direzione Torino",
-   "tipo": "code",
-   "quando": "2026-11-26T18:03:00Z",
-   "lat": 45.55581,
-   "lon": 9.26861,
-   "da": "Milano Est",
-   "dirlat": 45.0677551,
-   "dirlon": 7.6824892,
-   "dir": "Torino"
+   "id": "9a696734c6ac8142",
+   "strada": "SS151 Della Valle Del Tavo",
+   "testo": "lavori di manutenzione a Incrocio Cappelle Sul Tavo - SS16 Bis Adriatica in direzione Incrocio Cappelle Sul Tavo - SS16 Bis Adriatica",
+   "tipo": "lavori",
+   "quando": "2026-11-26T18:05:00Z"
+  },
+  {
+   "id": "25b5e01d1b00d139",
+   "strada": "SS191 Di Pietraperzia",
+   "testo": "incidente a Incrocio Rastrello",
+   "tipo": "incidente",
+   "quando": "2026-11-26T18:05:00Z",
+   "lat": 37.4701174,
+   "lon": 14.2525081,
+   "da": "Rastrello",
+   "indicativo": true
+  },
+  {
+   "id": "896eb2ac63780cac",
+   "strada": "A14 Ancona-Pescara",
+   "testo": "traffico rallentato causa lavori dalle 19:04 del 26 novembre 2026 tra Svincolo Grottammare e Svincolo Pedaso in direzione Ancona",
+   "tipo": "lavori",
+   "quando": "2026-11-26T18:05:00Z",
+   "lat": 42.9823,
+   "lon": 13.8621,
+   "da": "Grottammare",
+   "lat2": 43.0948,
+   "lon2": 13.83754,
+   "a": "Pedaso",
+   "km": 15.2,
+   "dirlat": 43.4801189,
+   "dirlon": 13.2187279,
+   "dir": "Ancona"
+  },
+  {
+   "id": "1976822ec6428936",
+   "strada": "A1 Milano-Bologna",
+   "testo": "code causa incidente dalle 18:37 del 26 novembre 2026 tra Svincolo Reggio Emilia e Svincolo Modena Sud in direzione Bologna",
+   "tipo": "incidente",
+   "quando": "2026-11-26T18:04:00Z",
+   "lat": 44.72938,
+   "lon": 10.62759,
+   "da": "Reggio Emilia",
+   "lat2": 44.57894,
+   "lon2": 10.98035,
+   "a": "Modena Sud",
+   "km": 39.0,
+   "dirlat": 44.4938203,
+   "dirlon": 11.3426327,
+   "dir": "Bologna"
+  },
+  {
+   "id": "365a366d239e5912",
+   "strada": "A14 Ancona-Pescara",
+   "testo": "code causa lavori dalle 17:12 del 26 novembre 2026 tra Svincolo Roseto Degli Abruzzi e Svincolo Pescara N. Citta S.Angelo in direzione Pescara",
+   "tipo": "lavori",
+   "quando": "2026-11-26T18:04:00Z",
+   "lat": 42.64946,
+   "lon": 13.97101,
+   "da": "Roseto Degli Abruzzi",
+   "lat2": 42.5237485,
+   "lon2": 14.1328701,
+   "a": "Pescara N. Citta S.Angelo",
+   "indicativo": true,
+   "km": 23.1,
+   "dirlat": 42.3097631,
+   "dirlon": 13.9579989,
+   "dir": "Pescara"
   },
   {
    "id": "3a8ab3ec1a9bd164",
@@ -115,23 +172,17 @@
    "quando": "2026-11-26T18:01:00Z"
   },
   {
-   "id": "c29205768d5d4009",
-   "strada": "A1 Milano-Bologna",
-   "testo": "code causa incidente dalle 18:37 del 26 novembre 2026 tra Allacciamento A22 Modena-Brennero e Svincolo Modena Sud in direzione Bologna",
-   "tipo": "incidente",
-   "quando": "2026-11-26T18:01:00Z",
-   "lat2": 44.57894,
-   "lon2": 10.98035,
-   "a": "Modena Sud",
-   "dirlat": 44.4938203,
-   "dirlon": 11.3426327,
-   "dir": "Bologna"
-  },
-  {
    "id": "99d4c17c6b01422d",
    "strada": "A52 Tangenziale Nord Di Milano",
    "testo": "veicolo in avaria a Svincolo Sesto S.Giovanni Sud: Cologno M. in direzione Svincolo SP44 Milano-Meda: Lentate-Bruzzano",
    "tipo": "altro",
+   "quando": "2026-11-26T18:00:00Z"
+  },
+  {
+   "id": "e67950910563424f",
+   "strada": "SS62 Della Cisa",
+   "testo": "senso unico alternato causa lavori dalle 07:00 del 12 ottobre 2026 alle 19:00 del 18 dicembre 2026 tra Incrocio Montelungo e Incrocio Passo Della Cisa",
+   "tipo": "lavori",
    "quando": "2026-11-26T18:00:00Z"
   },
   {
@@ -247,23 +298,6 @@
    "testo": "lavori di manutenzione tra Incrocio Paola - SS18 Tirrena Inferiore e 4,134 km prima di Incrocio S.Fili",
    "tipo": "lavori",
    "quando": "2026-11-26T17:55:00Z"
-  },
-  {
-   "id": "ab598b667171d9f1",
-   "strada": "A4 Milano-Brescia",
-   "testo": "pedoni dalle 18:53 del 26 novembre 2026 tra Svincolo Bergamo e Svincolo Dalmine in direzione Milano",
-   "tipo": "altro",
-   "quando": "2026-11-26T17:55:00Z",
-   "lat": 45.73836,
-   "lon": 9.75989,
-   "da": "Bergamo",
-   "lat2": 45.6476,
-   "lon2": 9.62611,
-   "a": "Dalmine",
-   "km": 17.4,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
   },
   {
    "id": "6723e579150a9a2e",
@@ -620,23 +654,6 @@
    "dir": "Via di Torrenova"
   },
   {
-   "id": "141d0ce235a7dc42",
-   "strada": "A14 Pescara-Bari",
-   "testo": "code causa lavori dalle 18:35 del 26 novembre 2026 tra Svincolo Val Di Sangro e Svincolo Ortona in direzione Pescara",
-   "tipo": "lavori",
-   "quando": "2026-11-26T17:37:00Z",
-   "lat": 42.20968,
-   "lon": 14.49438,
-   "da": "Val Di Sangro",
-   "lat2": 42.32894,
-   "lon2": 14.38399,
-   "a": "Ortona",
-   "km": 19.3,
-   "dirlat": 42.3097631,
-   "dirlon": 13.9579989,
-   "dir": "Pescara"
-  },
-  {
    "id": "2aedee15312a5dee",
    "strada": "A23 Palmanova-Tarvisio",
    "testo": "veicolo fermo o in avaria dalle 18:33 del 26 novembre 2026 tra Svincolo Carnia e Svincolo Pontebba in direzione Tarvisio",
@@ -792,24 +809,6 @@
    "dirlat": 41.8933203,
    "dirlon": 12.4829321,
    "dir": "Roma"
-  },
-  {
-   "id": "365a366d239e5912",
-   "strada": "A14 Ancona-Pescara",
-   "testo": "code causa lavori dalle 17:12 del 26 novembre 2026 tra Svincolo Roseto Degli Abruzzi e Svincolo Pescara N. Citta S.Angelo in direzione Pescara",
-   "tipo": "lavori",
-   "quando": "2026-11-26T17:26:00Z",
-   "lat": 42.64946,
-   "lon": 13.97101,
-   "da": "Roseto Degli Abruzzi",
-   "lat2": 42.5237485,
-   "lon2": 14.1328701,
-   "a": "Pescara N. Citta S.Angelo",
-   "indicativo": true,
-   "km": 23.1,
-   "dirlat": 42.3097631,
-   "dirlon": 13.9579989,
-   "dir": "Pescara"
   },
   {
    "id": "b5532221aea7f80d",
@@ -1053,23 +1052,6 @@
    "quando": "2026-11-26T17:11:00Z"
   },
   {
-   "id": "19808c456cbd413f",
-   "strada": "A12 Genova-Rosignano",
-   "testo": "perdita di carico dalle 18:09 del 26 novembre 2026 tra Svincolo Recco e Svincolo Genova Nervi in direzione Genova",
-   "tipo": "altro",
-   "quando": "2026-11-26T17:11:00Z",
-   "lat": 44.37668,
-   "lon": 9.14547,
-   "da": "Recco",
-   "lat2": 44.39564,
-   "lon2": 9.01026,
-   "a": "Genova Nervi",
-   "km": 13.1,
-   "dirlat": 44.40726,
-   "dirlon": 8.9338624,
-   "dir": "Genova"
-  },
-  {
    "id": "f3f869f19b0d6980",
    "strada": "A1 Milano-Bologna",
    "testo": "traffico rallentato causa traffico intenso dalle 18:09 del 26 novembre 2026 tra Svincolo Modena Sud e Svincolo Modena Nord in direzione Milano",
@@ -1085,23 +1067,6 @@
    "dirlat": 45.4641943,
    "dirlon": 9.1896346,
    "dir": "Milano"
-  },
-  {
-   "id": "bf88ff682c36857e",
-   "strada": "A1 Firenze-Roma",
-   "testo": "personale su strada causa lavori dalle 18:05 alle 18:50 del 26 novembre 2026 tra Svincolo Ponzano Romano-Soratte e Allacciamento Diramazione Roma Nord in direzione Roma",
-   "tipo": "lavori",
-   "quando": "2026-11-26T17:07:00Z",
-   "lat": 42.27501,
-   "lon": 12.54327,
-   "da": "Ponzano Romano-Soratte",
-   "lat2": 42.16898,
-   "lon2": 12.61242,
-   "a": "Roma Nord",
-   "km": 15.7,
-   "dirlat": 41.8933203,
-   "dirlon": 12.4829321,
-   "dir": "Roma"
   },
   {
    "id": "b2e29183c26837a5",
@@ -1195,23 +1160,6 @@
    "testo": "traffico rallentato a Incrocio Masseria - Sgc Nola-Domitio - SS162 Dir in direzione Incrocio Arienzo - SS7 Appia",
    "tipo": "code",
    "quando": "2026-11-26T16:57:00Z"
-  },
-  {
-   "id": "7ebe9c40ab2aabdc",
-   "strada": "A1 Milano-Bologna",
-   "testo": "code a tratti causa traffico intenso dalle 17:56 del 26 novembre 2026 tra Svincolo Reggio Emilia e Svincolo Modena Sud in direzione Bologna",
-   "tipo": "code",
-   "quando": "2026-11-26T16:57:00Z",
-   "lat": 44.72938,
-   "lon": 10.62759,
-   "da": "Reggio Emilia",
-   "lat2": 44.57894,
-   "lon2": 10.98035,
-   "a": "Modena Sud",
-   "km": 39.0,
-   "dirlat": 44.4938203,
-   "dirlon": 11.3426327,
-   "dir": "Bologna"
   },
   {
    "id": "f9391d2e40a6b7ec",
@@ -1352,6 +1300,30 @@
    "testo": "incidente traffico rallentato a Via del Casale delle Pantanelle",
    "tipo": "incidente",
    "quando": "2026-11-26T16:35:00Z"
+  },
+  {
+   "id": "2f1f0bb269c18922",
+   "strada": "Roma Via Vercelli",
+   "testo": "incidente traffico rallentato a Largo Vercelli",
+   "tipo": "incidente",
+   "quando": "2026-11-26T16:34:00Z"
+  },
+  {
+   "id": "892e168736ef5f6b",
+   "strada": "A11 Firenze-Pisa",
+   "testo": "veicolo fermo o in avaria dalle 17:31 del 26 novembre 2026 tra Svincolo Prato Ovest e Svincolo Prato Est in direzione Firenze",
+   "tipo": "altro",
+   "quando": "2026-11-26T16:33:00Z",
+   "lat": 43.87863,
+   "lon": 11.03288,
+   "da": "Prato Ovest",
+   "lat2": 43.85342,
+   "lon2": 11.11794,
+   "a": "Prato Est",
+   "km": 8.8,
+   "dirlat": 43.7697955,
+   "dirlon": 11.2556404,
+   "dir": "Firenze"
   },
   {
    "id": "aspi553903",
