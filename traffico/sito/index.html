@@ -157,12 +157,9 @@ const utile=e=>e.tipo!=='altro'&&!/avaria|veicolo fermo|en panne|panne/i.test(e.
 const grave=e=>e.tipo==='chiusura'||e.tipo==='incidente';
 const col=e=>grave(e)?css('--bad'):e.tipo==='altro'?'#8a948d':css('--warn');
 function fase(e){
- if(e.inizio){const a=new Date(e.inizio),b=e.fine?new Date(e.fine):null,n=new Date();if(a>n)return'programmato';if(b&&b<n)return'terminato';return'in corso'}
- const m=e.testo.match(/dalle (\d{1,2}):(\d{2})(?: del (\d{1,2}))?.*?(?:alle (\d{1,2}):(\d{2})(?: del (\d{1,2}))?)?/i);
- if(!m)return'in corso';
- const now=new Date(),d=(g,hh,mm)=>{const x=new Date(now);if(g)x.setDate(+g);x.setHours(+hh,+mm,0,0);return x};
- const s=d(m[3],m[1],m[2]);let f=m[4]?d(m[6]||m[3],m[4],m[5]):null;if(f&&f<s)f.setDate(f.getDate()+1);
- if(s>now)return'programmato';if(f&&f<now)return'terminato';return'in corso';
+ // stessa lettura degli orari usata da "Quando partire", così le due parti non si contraddicono
+ const w=finestra(e);if(!w||!w[0])return'in corso';
+ const n=new Date();if(w[0]>n)return'programmato';if(w[1]&&w[1]<n)return'terminato';return'in corso';
 }
 function popup(e){
  return `<div style="display:grid;gap:5px;max-width:270px">
@@ -333,7 +330,7 @@ function when(){
  const R=ROUTES[SEL],dur=R?Math.max(1,Math.ceil(R.min/60)):3;
  // chiusure gravi del percorso con orario: blocco le ore in cui il viaggio le incrocerebbe
  const blocchi=[];
- if(R)R.ev.filter(grave).forEach(e=>{const w=finestra(e);if(w&&w[0])blocchi.push({e,s:w[0],f:w[1]||new Date(w[0].getTime()+6*3600e3)})});
+ if(R)R.ev.filter(grave).forEach(e=>{const w=finestra(e);if(w&&w[0]&&!(w[1]&&w[1]<new Date()))blocchi.push({e,s:w[0],f:w[1]||new Date(w[0].getTime()+6*3600e3)})});
  const ora=h=>new Date(date.getTime()+h*3600e3);
  const chiuso=h=>blocchi.filter(b=>ora(h)<b.f&&ora(h+dur)>b.s);
  const score=p.map((_,h)=>{let s=0;for(let k=0;k<dur;k++)s+=p[(h+k)%24];return s/dur+(chiuso(h).length?200:0)});
