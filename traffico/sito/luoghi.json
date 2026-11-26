@@ -3723,5 +3723,44 @@ false
 "Aeroporto Caselle": [
 45.2009688,
 7.6489751
+],
+"da Genova": [
+41.8994358,
+12.4918271
+],
+"Dei Giovi": [
+45.3415238,
+9.1001184
+],
+"v2|Pietrabissarra|8.8,45.7,9.5,45.0": null,
+"Iglesiente": [
+39.1735178,
+8.6002257
+],
+"v2|Cagliari - SS391 Di Elmas|8.3,39.5,9.0,38.8": null,
+"Del Vesuvio": [
+40.8213963,
+14.4261967
+],
+"v2|Bereguardo - Allacciamento Raccordo Bereguardo-Pv|8.6,45.8,9.5,44.1": null,
+"v2|S.Ippolito|12.7,44.2,13.4,43.5": [
+43.6218595,
+13.1558983,
+false
+],
+"Fano": [
+43.8424173,
+13.0146632
+],
+"v2|Staz. Di Vairano - SS6 Casilina - SS608|13.8,41.9,14.5,41.2": null,
+"v2|Venafro|13.8,41.9,14.5,41.2": [
+41.4608416,
+14.0578504,
+false
+],
+"v2|Casalpusterlengo - Ospedaletto Lodigiano|8.8,45.8,11.7,44.1": [
+45.1799711,
+9.5793471,
+true
 ]
 }
