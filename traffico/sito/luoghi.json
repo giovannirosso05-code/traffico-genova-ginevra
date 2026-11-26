@@ -4908,5 +4908,20 @@ false
 42.0722175,
 14.7610009,
 false
-]
+],
+"v2|Santena - Tangenziale Sud Torino|7.3,46.1,10.8,44.7": [
+44.9594996,
+7.7772308,
+true
+],
+"v2|Asti Est - E74 - A33 Cuneo|7.3,46.1,10.8,44.7": null,
+"da Brescia": [
+40.8818802,
+14.1352393
+],
+"Variante Formia Garigliano": [
+41.2408142,
+13.7784668
+],
+"v2|Ponte Sul Garigliano - SS7 - SS7 Quater|13.4,41.6,14.1,40.9": null
 }
