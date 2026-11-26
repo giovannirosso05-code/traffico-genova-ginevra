@@ -31,7 +31,7 @@ def cantieri(cerca=None, dati=None):
     """Restituisce gli eventi nel formato del sito. `cerca` trova le coordinate di una città (per la direzione)."""
     adesso = datetime.datetime.now(datetime.timezone.utc).timestamp() * 1000
     visti, out = set(), []
-    for nome in ("cantieri_imm", "cantieri"):
+    for nome in ("cantieri", "cantieri_imm"):  # prima la versione della loro pagina "cantieri previsti"
         lista = dati[nome] if dati else scarica(nome)
         for c in lista:
             idc = c.get("n_prg_can")
@@ -55,8 +55,11 @@ def cantieri(cerca=None, dati=None):
             lav = (c.get("t_des_lav") or "").strip().lower()
             vel = c.get("n_vel_max")
             def ora(ms):
-                return datetime.datetime.fromtimestamp(ms / 1000, datetime.timezone.utc).astimezone(ROMA).strftime("%d/%m %H:%M") if ms else "?"
-            testo = f"cantiere tra {tratto.title()} in direzione {dirn.title()}: {sgn.lower()}" + \
+                return datetime.datetime.fromtimestamp(ms / 1000, datetime.timezone.utc).astimezone(ROMA).strftime(
+                    "%d/%m" + ("/%Y" if abs(ms - adesso) > 150 * 864e5 else "") + " %H:%M") if ms else "?"
+            ki, kf = c.get("n_prg_km_ini"), c.get("n_prg_km_fin")
+            kmtxt = f" (dal km {ki} al km {kf})" if isinstance(ki, (int, float)) and isinstance(kf, (int, float)) and ki != kf else ""
+            testo = f"cantiere tra {tratto.title()}{kmtxt} in direzione {dirn.title()}: {sgn.lower()}" + \
                     (f" ({lav})" if lav else "") + (f", limite {vel} km/h" if vel else "") + \
                     f" · dal {ora(inizio)} al {ora(fine)}"
             e = {"id": f"aspi{idc}", "strada": f"{s} {nome_str} (Autostrade)".replace("  ", " "), "testo": testo,
