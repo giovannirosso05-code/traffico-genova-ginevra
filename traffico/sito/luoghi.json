@@ -1948,5 +1948,238 @@
 "PASSO SAN MARCO": [
 46.047194,
 9.6227781
-]
+],
+"Vignate - Liscate|9.3,45.9,10.0,45.2": [
+45.4838816,
+9.3708917
+],
+"Castellanza|8.4,46.2,9.5,45.1": [
+45.6115567,
+8.8996853
+],
+"Busto Arsizio|8.4,46.2,9.5,45.1": [
+45.611932,
+8.8518269
+],
+"Montecatini|10.3,44.1,11.6,43.1": [
+43.883179,
+10.7709533
+],
+"Vallata|10.1,44.9,14.6,40.5": [
+41.186171,
+14.2929638
+],
+"Abbadia Lariana": [
+45.9000453,
+9.3340562
+],
+"Bellano": [
+46.0432065,
+9.304131
+],
+"Incrocio Passo Dello Spluga/Confine Con La Svizzera": null,
+"Certaldese I": [
+43.6430389,
+11.1597862
+],
+"Ponte Rotto|10.8,44.0,11.5,43.3": [
+43.6447087,
+11.1659475
+],
+"San Casciano in Val di Pesa|10.8,44.0,11.5,43.3": [
+43.6569596,
+11.1856679
+],
+"Cavallo Di Albenga - SS582 Colle S. Bernardo|11.9,42.3,12.6,41.6": null,
+"Andora|11.9,42.3,12.6,41.6": [
+41.859958,
+12.2039757
+],
+"Napoli|13.9,41.2,14.6,40.5": [
+40.8358846,
+14.2487679
+],
+"Lamezia Terme|15.9,40.0,16.6,39.3": null,
+"Falerna-Lamezia Terme|15.9,40.0,16.6,39.3": null,
+"Rho|7.3,45.8,9.5,44.7": [
+45.5310355,
+9.0463469
+],
+"Arluno|7.3,45.8,9.5,44.7": [
+45.50507,
+8.941541
+],
+"Via Ardeatina": [
+41.4661509,
+12.6109108
+],
+"Via di Santa Fumia|12.3,41.8,13.0,41.1": [
+41.7341788,
+12.5845009
+],
+"Via di Spregamore|12.3,41.8,13.0,41.1": [
+41.7339701,
+12.5598813
+],
+"Orientale Sicula": [
+37.3718049,
+15.0808081
+],
+"Catania/Simeto - Tangenziale Di Catania|14.7,37.7,15.4,37.0": null,
+"Telesina": [
+41.1710854,
+14.7606758
+],
+"Pietravairano|14.4,41.5,15.1,40.8": null,
+"Foglianise|14.4,41.5,15.1,40.8": [
+41.1601328,
+14.6713224
+],
+"Tangenziale Sud Di Torino": [
+45.0184678,
+7.6008296
+],
+"Corso Iv Novembre|7.3,45.4,8.0,44.7": [
+45.0507592,
+7.6541656
+],
+"Candiolo": [
+44.959244,
+7.601722
+],
+"Orbassano": [
+45.0072629,
+7.5369192
+],
+"Di Val Bormida": null,
+"Acqui Terme/Incrocio SS456 Del Turchino": null,
+"Variante Di Terzo": [
+43.8520865,
+10.7928927
+],
+"Asti Est - E74 - A33 Cuneo|7.3,46.1,10.8,44.7": null,
+"Dell abetone E Del Brennero": [
+45.9773762,
+11.1135664
+],
+"Campotrentino - Uscita 7 Tang. di TN|10.8,46.3,11.5,45.6": null,
+"Trento Nord Gardolo - Uscita 9 Tang. di TN|10.8,46.3,11.5,45.6": null,
+"Manerbio|7.3,46.1,10.8,44.7": [
+45.3522237,
+10.1404663
+],
+"Pontevico Robecco|7.3,46.1,10.8,44.7": [
+45.2693604,
+10.128456
+],
+"Rimini - SS72 Di San Marino|11.7,45.4,12.4,44.7": null,
+"Masseria Falcione - SS157 Valle Del Biferno|11.7,45.4,12.4,44.7": null,
+"Termoli - SS87 Sannitica|11.7,45.4,12.4,44.7": null,
+"Follonica|11.9,42.3,12.6,41.6": [
+41.8514104,
+12.2021162
+],
+"Incrocio Roma": [
+41.9308761,
+12.5227038
+],
+"Di Genova|8.6,45.8,9.5,44.1": [
+44.40726,
+8.9338624
+],
+"Maccarese-Fregene|11.4,42.4,12.8,41.5": [
+41.8790477,
+12.237473
+],
+"Ginestra Fiorentina|10.1,44.0,10.8,43.3": null,
+"Firenze Viadotto Indiano|10.1,44.0,10.8,43.3": null,
+"Di Macugnaga": [
+45.9959028,
+7.9190626
+],
+"Borca|7.6,46.3,8.3,45.6": [
+45.9610393,
+7.9895203
+],
+"Pestarena|7.6,46.3,8.3,45.6": [
+45.9595552,
+8.0127447
+],
+"Candela|10.1,44.9,14.6,40.5": [
+41.8891429,
+12.577415
+],
+"Via Soella": [
+45.6630433,
+11.6440182
+],
+"Via Bassanese Superiore|11.3,46.0,12.0,45.3": [
+45.6654111,
+11.6655665
+],
+"Via Don Giulio Dall Olmo|11.3,46.0,12.0,45.3": [
+45.6622662,
+11.6661263
+],
+"Marsicana": [
+42.063128,
+13.339194
+],
+"Pescasseroli|13.0,42.4,13.7,41.7": null,
+"Barrea|13.0,42.4,13.7,41.7": [
+42.3451614,
+13.4142804
+],
+"Sarzanese Valdera": [
+43.672195,
+10.6510577
+],
+"Camaiore|10.3,44.0,11.0,43.3": [
+43.9380611,
+10.3039553
+],
+"Carraia|10.3,44.0,11.0,43.3": [
+43.8246761,
+10.5561141
+],
+"Incrocio SP158": null,
+"Borgo Trevi|12.1,42.3,12.8,41.6": null,
+"Via Fiorentini|12.6,42.4,13.3,41.7": [
+41.7468824,
+12.9155615
+],
+"tangenziale": [
+45.5801845,
+11.5096396
+],
+"Atri-Pineto|12.9,43.8,14.3,42.0": [
+42.6077451,
+14.0689833
+],
+"Cavalcavia Don Lorenzo Milani|11.7,46.6,12.6,45.1": null,
+"Di Venezia|11.7,46.6,12.6,45.1": [
+45.4371908,
+12.3345898
+],
+"Padana Superiore": [
+45.1844682,
+7.8595983
+],
+"Desenzano - Centenaro|7.5,45.5,8.2,44.8": null,
+"Di Val Di Trebbia": [
+46.518918,
+10.6584577
+],
+"Loco|10.3,46.9,11.0,46.2": [
+46.4277267,
+10.3561294
+],
+"Piazzale Lato Italiano|6.6,46.2,7.3,45.5": null,
+"La Palud - SS26 Diramazione Della V. D aosta|6.6,46.2,7.3,45.5": null,
+"Di Villa Stellone": null,
+"Vallongo": [
+44.9027842,
+7.7508583
+],
+"Borgo Salsasio - SS20 Del Colle Di Tenda": null
 }
