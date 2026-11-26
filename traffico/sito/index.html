@@ -172,7 +172,7 @@ function popup(e){
   ${carrTxt(e)?`<div><b>Carreggiata:</b> <span class="${/chiusa/.test(carr(e))?'ko':''}">${esc(carrTxt(e))}</span></div>`:''}
   ${e.da?`<div><b>Tratto:</b> ${esc(e.da)}${e.a?' → '+esc(e.a):''}</div>`:''}
   ${e.url&&/^https:\/\//.test(e.url)?`<div><a href="${esc(e.url)}" target="_blank" rel="noopener">Apri sul sito ufficiale</a></div>`:''}
-  ${e.approx?'<div class="muted">Posizione indicativa: la fonte indica solo la direzione</div>':''}
+  ${e.approx?'<div class="muted">Posizione indicativa: la fonte indica solo la direzione</div>':''}${e.indicativo?'<div class="muted">Posizione indicativa: è il paese, non lo svincolo esatto</div>':''}
   <div><b>Lunghezza:</b> ${typeof e.km==='number'?'circa '+e.km+' km':(e.da&&!e.a?'punto singolo':'non indicata')}</div>
  </div>`;
 }
@@ -215,6 +215,8 @@ function onRoute(e,line){
   if(!B)return false;return distKm(A,line)<6&&distKm(B,line)<6&&nearIdx(A,line)<nearIdx(B,line);
  }
  if(!(distKm(A,line)<1.5||(B&&distKm(B,line)<1.5)))return false;
+ // posizione del paese, non dello svincolo: se cade vicino a partenza o arrivo è quasi sempre il centro città, non l'autostrada
+ if(e.indicativo){const s=line[0],f=line[line.length-1];if(km2(A,s)<5||km2(A,f)<5)return false}
  if(typeof e.dirlat==='number'){
   const D=[e.dirlat,e.dirlon],P=distKm(A,line)<1.5?A:B,i=nearIdx(P,line);
   let j=i;while(j<line.length-1&&km2(line[i],line[j])<3)j++;

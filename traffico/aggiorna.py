@@ -15,10 +15,11 @@ def tipo(t):
     return "altro"
 
 def pulisci(n):
+    """Nome dello svincolo: tolgo 'Svincolo', 'Barriera'... ma tengo Nord/Sud/Est/Ovest, che servono a trovarlo."""
     n = re.sub(r"^\d[\d,.]*\s*k?m\s+(?:prima|dopo)\s+(?:di\s+)?", "", (n or "").strip())
     n = re.sub(r"^(Svincolo|Allacciamento|Area di servizio|Barriera|Incrocio|Uscita|Entrata|Diramazione|Diram\.)\s+", "", n, flags=re.I)
     n = re.sub(r"^(Entrata|Uscita|Diramazione|Diram\.)\s+", "", n, flags=re.I)
-    n = re.sub(r"\s+(Est|Ovest|Nord|Sud|Centro)$", "", n).strip(" -/.")
+    n = re.sub(r"^(di|del|della)\s+", "", n, flags=re.I).strip(" -/.")
     if re.match(r"^(A|SS|SP|RA|T)\s?\d+\b", n): return None
     return n or None
 
@@ -29,19 +30,47 @@ def luoghi_di(testo):
     m = re.search(r"\b(?:a|presso)\s+((?:Svincolo|Allacciamento|Area di servizio|Barriera|Incrocio|Diram).+)$", t)
     return (pulisci(m.group(1)), None) if m else (None, None)
 
+def nominatim(q, box=None, limit=1):
+    par = {"q": q, "format": "json", "limit": limit, "countrycodes": "it"}
+    if box: par.update(viewbox=f"{box[0]},{box[1]},{box[2]},{box[3]}", bounded=1)
+    r = urllib.request.Request("https://nominatim.openstreetmap.org/search?" + urllib.parse.urlencode(par), headers=UA)
+    j = json.loads(urllib.request.urlopen(r, timeout=20).read())
+    time.sleep(1.1)
+    return j
+
 def cerca(q, box=None):
+    """Una città o un luogo qualsiasi (per i nomi delle strade e le direzioni)."""
     key = q + ("|" + ",".join(f"{x:.1f}" for x in box) if box else "")
     if key in luoghi: return luoghi[key]
-    par = {"q": q, "format": "json", "limit": 1, "countrycodes": "it"}
-    if box: par.update(viewbox=f"{box[0]},{box[1]},{box[2]},{box[3]}", bounded=1)
     try:
-        r = urllib.request.Request("https://nominatim.openstreetmap.org/search?" + urllib.parse.urlencode(par), headers=UA)
-        j = json.loads(urllib.request.urlopen(r, timeout=20).read())
+        j = nominatim(q, box)
         luoghi[key] = [float(j[0]["lat"]), float(j[0]["lon"])] if j else None
     except Exception:
         return None
-    time.sleep(1.1)
     return luoghi[key]
+
+PRIORITA = [("highway", "motorway_junction"), ("barrier", "toll_booth"), ("highway", "services"), ("amenity", "fuel"),
+            ("highway", "rest_area"), ("highway", "motorway_link")]
+def cerca_svincolo(nome, box=None):
+    """Prima cerco lo svincolo o il casello vero; se non c'è, il paese (posizione meno precisa).
+    Restituisce [lat, lon, preciso]."""
+    key = "v2|" + nome + ("|" + ",".join(f"{x:.1f}" for x in box) if box else "")
+    if key in luoghi: return luoghi[key]
+    trovato = None
+    try:
+        for q in [nome, nome + " casello", "uscita " + nome]:
+            for r in nominatim(q, box, limit=8):
+                if (r.get("class"), r.get("type")) in PRIORITA:
+                    trovato = [float(r["lat"]), float(r["lon"]), True]; break
+            if trovato: break
+        if not trovato:
+            semplice = re.sub(r"\s+(Est|Ovest|Nord|Sud|Centro|Voltri)$", "", nome).strip()
+            j = nominatim(semplice, box)
+            if j: trovato = [float(j[0]["lat"]), float(j[0]["lon"]), False]
+    except Exception:
+        return None
+    luoghi[key] = trovato
+    return trovato
 
 def box_strada(titolo):
     """Riquadro attorno alle città che danno il nome alla strada (es. 'A26 Genova-Gravellona Toce')."""
@@ -68,11 +97,12 @@ for it in root.iter("item"):
     if os.environ.get("GEOCODE") == "1":
         a, b = luoghi_di(testo)
         box = box_strada(title) if (a or b) else None
-        ca = cerca(a, box) if a else None
-        cb = cerca(b, box) if b else None
+        ca = cerca_svincolo(a, box) if a else None
+        cb = cerca_svincolo(b, box) if b else None
         if ca: e.update(lat=ca[0], lon=ca[1], da=a)
         if cb: e.update(lat2=cb[0], lon2=cb[1], a=b)
-        if ca and cb: e["km"] = round(km(ca, cb) * 1.2, 1)
+        if (ca and not ca[2]) or (cb and not cb[2]): e["indicativo"] = True
+        if ca and cb: e["km"] = round(km(ca[:2], cb[:2]) * 1.2, 1)
         m = re.search(r"\bin direzione\s+(.+?)(?:\s+provenendo|\s*<|$)", testo)
         if m and (ca or cb):
             dn = re.sub(r"^(A|SS|RA|T)\s?\d+\s*", "", m.group(1)).split("-")[-1].strip(" .")
