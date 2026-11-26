@@ -3762,5 +3762,90 @@ false
 45.1799711,
 9.5793471,
 true
+],
+"v2|Via Cristoforo Colombo|12.1,42.2,12.8,41.5": [
+41.8163635,
+12.4618273,
+false
+],
+"v2|Grande Raccordo Anulare|12.1,42.2,12.8,41.5": [
+41.990859,
+12.5028948,
+false
+],
+"Del Caffaro": [
+45.8837724,
+10.4541334
+],
+"v2|Sarche|10.1,46.2,10.8,45.5": [
+46.0501873,
+10.7869036,
+false
+],
+"v2|Sarche - SS45 Bis Gardesana Occidentale|10.1,46.2,10.8,45.5": null,
+"Via Del Mare": [
+41.8335692,
+12.4544854
+],
+"v2|Vitinia|12.1,42.2,12.8,41.5": [
+41.7910805,
+12.4080482,
+false
+],
+"SS8bis E SS601": null,
+"v2|Moscardo": [
+46.5547759,
+13.0116293,
+false
+],
+"v2|Passo M.Te Croce Carnico/Confine Con L austria": null,
+"v2|Castello Di Cisterna|10.7,44.2,11.4,43.5": null,
+"v2|Agrate B.: Sp13 Melzo-Monza-Dogana|9.0,45.9,9.7,45.2": null,
+"Via dei Concei": [
+45.9053112,
+10.7298028
+],
+"v2|Via dell Albertóca|10.4,46.3,11.1,45.6": [
+45.9126551,
+10.7281544,
+false
+],
+"v2|Via del Bò|10.4,46.3,11.1,45.6": [
+45.9084328,
+10.7282025,
+false
+],
+"Brennero": [
+46.9659522,
+11.3218296
+],
+"Modena": [
+44.5384728,
+10.9359609
+],
+"v2|Chiusa-Valgardena|10.6,47.3,11.7,44.2": null,
+"v2|Brennero - Confine Di Stato|10.6,47.3,11.7,44.2": [
+47.0057606,
+11.4941564,
+false
+],
+"Raccordo Pistoia": [
+43.950592,
+10.8967911
+],
+"SS66": [
+44.0381072,
+10.8694441
+],
+"v2|Spinetta Marengo - SS35 Bis Dei Giovi|9.4,45.4,10.1,44.7": null,
+"v2|Roncone|10.1,46.2,10.8,45.5": [
+45.9836589,
+10.6708823,
+false
+],
+"v2|Bondo|10.1,46.2,10.8,45.5": [
+46.000298,
+10.691971,
+false
 ]
 }
