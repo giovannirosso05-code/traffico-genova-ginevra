@@ -84,6 +84,8 @@ details[open]{padding-bottom:12px}
     <div class="trip">
       <div class="ac"><input id="from" placeholder="Partenza: via, luogo o città" aria-label="Partenza" autocomplete="off"><div class="sug" id="sug-from" hidden></div></div>
       <div class="ac"><input id="to" placeholder="Arrivo: es. Stadio San Siro" aria-label="Arrivo" autocomplete="off"><div class="sug" id="sug-to" hidden></div></div>
+      <label class="muted" for="quando" style="margin-top:2px">Quando parti <span style="font-weight:400">(vuoto = adesso)</span></label>
+      <div style="display:flex;gap:8px"><input id="quando" type="datetime-local" aria-label="Data e ora di partenza"><button class="ghost" type="button" id="adesso" style="flex:none">Adesso</button></div>
       <button id="go" type="button">Calcola</button>
     </div>
     <div class="chips">
@@ -92,6 +94,7 @@ details[open]{padding-bottom:12px}
       <button class="ghost" type="button" data-f="Ginevra, Svizzera" data-t="Genova">Ginevra → Genova</button>
       <button class="ghost" type="button" id="useme">📍 Parti da dove sei</button>
     </div>
+    <div id="qinfo" class="mid" style="font-weight:600" hidden></div>
     <div id="msg" class="muted">Scrivi partenza e arrivo, oppure tocca una scorciatoia. Intanto la mappa mostra tutti i problemi segnalati in Italia, Francia e Svizzera: tocca un puntino per i dettagli.</div>
   </div>
 
@@ -161,10 +164,20 @@ const grave=e=>e.tipo==='chiusura'||e.tipo==='incidente';
 // un colore ben distinto per ogni tipo (il blu è riservato al percorso)
 const COLORI={chiusura:'#d61f1f',incidente:'#111111',lavori:'#f5b400',code:'#8b3fd1',meteo:'#0f9d8a'};
 const col=e=>COLORI[e.tipo]||'#8a948d';
+// partenza scelta dall'utente (null = adesso) e durata del viaggio: gli avvisi si valutano su quella finestra
+let PARTENZA=null,DURATA=3;
 function fase(e){
  // stessa lettura degli orari usata da "Quando partire", così le due parti non si contraddicono
- const w=finestra(e);if(!w||!w[0])return'in corso';
- const n=new Date();if(w[0]>n)return'programmato';if(w[1]&&w[1]<n)return'terminato';return'in corso';
+ const w=finestra(e),n=PARTENZA||new Date(),fine=new Date(n.getTime()+DURATA*3600e3);
+ if(!w||!w[0]){
+  // code e incidenti senza orario durano poco: se parti tra più di 3 ore non contano
+  if(PARTENZA&&(e.tipo==='code'||e.tipo==='incidente')&&PARTENZA-Date.now()>3*3600e3)return'terminato';
+  return'in corso';
+ }
+ if(w[1]&&w[1]<n)return'terminato';
+ if(PARTENZA&&w[0]>fine)return'terminato'; // inizia dopo che sei già passato
+ if(w[0]>n)return PARTENZA?'inizia durante il viaggio':'programmato';
+ return PARTENZA?'attivo quando passi':'in corso';
 }
 function popup(e){
  return `<div style="display:grid;gap:5px;max-width:270px">
@@ -270,6 +283,7 @@ async function route(){
   const r=await fetch(`https://router.project-osrm.org/route/v1/driving/${a[1]},${a[0]};${b[1]},${b[0]}?alternatives=3&overview=full&geometries=geojson`);
   const j=await r.json();if(!j.routes||!j.routes.length)throw new Error('Nessun percorso stradale trovato.');
   ROUTES=j.routes.map(x=>({line:x.geometry.coordinates.map(([lo,la])=>[la,lo]),km:x.distance/1000,min:x.duration/60}));
+  DURATA=Math.max(...ROUTES.map(x=>x.min))/60;
   ROUTES.forEach(R=>{const live=EV.filter(e=>fase(e)!=='terminato');R.ev=live.filter(e=>onRoute(e,R.line)===true);R.opp=live.filter(e=>onRoute(e,R.line)==='opposto').length;R.bad=R.ev.filter(grave).length});
   SEL=0;lyrPins.clearLayers();
   L.circleMarker(a,{radius:9,color:'#fff',weight:3,fillColor:css('--sign'),fillOpacity:1}).bindTooltip('Partenza').addTo(lyrPins);
@@ -288,8 +302,8 @@ function showRoutes(fit){
  L.polyline(R.line,{color:css('--route'),weight:7,opacity:.9}).addTo(lyrRoutes);
  drawEvents(R.ev,R.line);
  if(fit)map.fitBounds(R.line,{padding:[30,30]});
- const now=R.ev.filter(e=>grave(e)&&fase(e)==='in corso').length,prog=R.ev.filter(e=>grave(e)&&fase(e)==='programmato').length,alt=R.ev.length-now-prog;
- $('status').innerHTML=(now?`<b class="ko">⛔ ${now} chiusure o incidenti adesso</b>`:prog?`<b class="mid">Aperto, ma ${prog} chiusure programmate</b>`:`<b class="ok">Nessuna chiusura</b>`)+' sul percorso scelto'+(alt>0?` · ${alt} tra lavori, code e meteo`:'')+(R.opp?`<div class="muted">Esclusi ${R.opp} avvisi sulla carreggiata opposta.</div>`:'');
+ const now=R.ev.filter(e=>grave(e)&&/^(in corso|attivo)/.test(fase(e))).length,prog=R.ev.filter(e=>grave(e)&&/^(programmato|inizia)/.test(fase(e))).length,alt=R.ev.length-now-prog;
+ $('status').innerHTML=(now?`<b class="ko">⛔ ${now} chiusure o incidenti ${PARTENZA?'alla tua partenza':'adesso'}</b>`:prog?`<b class="mid">Aperto, ma ${prog} chiusure ${PARTENZA?'che iniziano durante il viaggio':'programmate'}</b>`:`<b class="ok">Nessuna chiusura</b>`)+' sul percorso scelto'+(alt>0?` · ${alt} tra lavori, code e meteo`:'')+(R.opp?`<div class="muted">Esclusi ${R.opp} avvisi sulla carreggiata opposta.</div>`:'');
  $('routes').innerHTML=ROUTES.map((x,i)=>`<button type="button" class="rt ${i===SEL?'on':''}" data-i="${i}"><span class="pill ${x.bad?'ko':x.ev.length?'mid':'ok'}">${x.bad?x.bad+' chius.':x.ev.length?x.ev.length+(x.ev.length===1?' avviso':' avvisi'):'libero'}</span><span><b class="num">${hm(x.min)}</b> <span class="muted num">· ${Math.round(x.km)} km</span><br><span class="muted">${i===0?'Percorso più rapido':'Alternativa '+i} · tempo senza traffico</span></span><span class="muted">${i===SEL?'scelto':'scegli'}</span></button>`).join('');
  $('routes').querySelectorAll('.rt').forEach(b=>b.onclick=()=>{SEL=+b.dataset.i;showRoutes()});
  $('res').hidden=false;
@@ -397,6 +411,18 @@ function when(){
  $('bars').innerHTML=score.map((v,h)=>{const c=chiuso(h).length,n=incroci(h).length;return`<div class="bar" title="${h}:00${c?' – incrocia una chiusura':n?' – '+n+' episodi nei giorni passati':''}" style="height:${c?100:Math.max(4,v/mx*100)}%;background:${c?'repeating-linear-gradient(45deg,var(--bad) 0 4px,transparent 4px 8px)':`var(${h===best?'--route':v/mx>.66?'--bad':v/mx>.4?'--warn':'--good'})`}"></div>`}).join('');
  $('axis').innerHTML=p.map((_,h)=>`<span>${h%3===0?h:''}</span>`).join('');
 }
+function leggiQuando(){
+ const v=$('quando').value;PARTENZA=v?new Date(v):null;
+ if(PARTENZA&&PARTENZA<new Date())PARTENZA=null;
+ const d=PARTENZA||new Date();$('day').value=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+ const txt=PARTENZA?'Avvisi validi per la partenza di '+PARTENZA.toLocaleString('it-IT',{weekday:'long',day:'numeric',month:'long',hour:'2-digit',minute:'2-digit'})+': chiusure e lavori programmati per quel momento. Code e incidenti di adesso non contano se parti tra più di 3 ore.':'';
+ $('qinfo').textContent=txt;$('qinfo').hidden=!txt;
+ const live=EV.filter(e=>fase(e)!=='terminato');
+ if(ROUTES.length){ROUTES.forEach(R=>{R.ev=live.filter(e=>onRoute(e,R.line)===true);R.opp=live.filter(e=>onRoute(e,R.line)==='opposto').length;R.bad=R.ev.filter(grave).length});showRoutes(false)}
+ else{drawEvents(live);listEvents(live,PARTENZA?'Problemi previsti alla tua partenza':'Tutti i problemi segnalati')}
+}
+$('quando').onchange=leggiQuando;
+$('adesso').onclick=()=>{$('quando').value='';leggiQuando()};
 {const d=new Date();$('day').value=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}$('day').onchange=when;when();
 
 // link utili
@@ -428,7 +454,7 @@ async function carica(){
   let fr=null;try{fr=await (await fetch('atmb.json?'+Date.now())).json()}catch(e){}
   if(fr&&fr.eventi)fr.eventi.forEach((x,i)=>{if(typeof x.lat==='number'&&x.tipo!=='altro')EV.push({id:'fr'+i,strada:(x.titolo.match(/^A\d+\w*/)||[''])[0]+' ('+x.gestore+')',testo:x.titolo,tipo:x.tipo,lat:x.lat,lon:x.lon,lat2:x.lat2,lon2:x.lon2,approx:x.approx,url:x.url,paese:'Francia'})});
   const live2=EV.filter(e=>fase(e)!=='terminato');
-  drawEvents(live2);listEvents(live2,'Tutti i problemi segnalati');
+  drawEvents(live2);listEvents(live2,PARTENZA?'Problemi previsti alla tua partenza':'Tutti i problemi segnalati');
   // il riquadro completo delle autostrade francesi è nella pagina francia.html
   let s=null;try{s=JSON.parse(localStorage.getItem('viaggio'))}catch(e){}
   if(PRIMA){PRIMA=false;if(s&&s.f&&s.t&&s.f!=='La mia posizione'){$('from').value=s.f;$('to').value=s.t;route()}}
