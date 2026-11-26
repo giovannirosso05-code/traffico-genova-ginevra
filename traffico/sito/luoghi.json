@@ -4454,5 +4454,52 @@ false
 14.0042832
 ],
 "v2|Cappelle Sul Tavo - SS16 Bis Adriatica|13.7,42.8,14.4,42.1": null,
-"v2|Montelungo|10.6,46.3,11.3,45.6": null
+"v2|Montelungo|10.6,46.3,11.3,45.6": null,
+"Di San Marino": [
+42.8240054,
+12.1689183
+],
+"v2|Falciano/Confine Con La Repubblica Di S.Marino|11.8,43.2,12.5,42.5": null,
+"v2|4: Ospedale S.Andrea|11.6,45.9,14.2,42.6": null,
+"Uscita 8 Tang. di TN": null,
+"Mezzolombardo Nord": [
+46.2163722,
+11.0875178
+],
+"v2|Interporto Sud|10.7,46.6,11.4,45.9": [
+46.1181803,
+11.0887048,
+true
+],
+"v2|8 Tang. di TN|10.7,46.6,11.4,45.9": null,
+"Incrocio Uscita 8 Tang. di TN": null,
+"v2|Galleria Giovanni XXIII|10.7,45.8,11.4,45.1": null,
+"Incrocio Piazzale degli Eroi": null,
+"Ternana": [
+42.2327323,
+12.6478777
+],
+"v2|Mola Di Bernardo|12.3,42.6,13.0,41.9": [
+42.5471855,
+12.6681462,
+false
+],
+"Barese": [
+41.1011972,
+16.7158389
+],
+"v2|Rieti - SS578 Salto Cicolana|12.2,42.4,12.9,41.7": null,
+"v2|Maglianello|12.2,42.4,12.9,41.7": null,
+"Pozzuoli, Italia": [
+40.822643,
+14.1219109
+],
+"G.R.A., Italia": [
+41.8577092,
+12.3767694
+],
+"Tangenziale, Italia": [
+45.58182,
+11.5079375
+]
 }
