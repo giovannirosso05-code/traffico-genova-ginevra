@@ -4308,5 +4308,143 @@ true
 false
 ],
 "v2|Passo Genna Arramene|9.3,40.4,10.0,39.7": null,
-"v2|Pontericcioli - SS452 Della Contessa|12.1,42.3,12.8,41.6": null
+"v2|Pontericcioli - SS452 Della Contessa|12.1,42.3,12.8,41.6": null,
+"v2|Sesto S.Giovanni|8.9,45.9,9.6,45.2": [
+45.5347926,
+9.2371764,
+false
+],
+"Bruzzano": [
+45.5286902,
+9.1735008
+],
+"Silana Crotonese": [
+39.1183081,
+17.0891312
+],
+"v2|Paola - SS18 Tirrena Inferiore|16.7,39.5,17.4,38.8": null,
+"v2|S.Fili|16.7,39.5,17.4,38.8": null,
+"v2|Montopoli In Val D arno|10.1,44.0,10.8,43.3": [
+43.6702986,
+10.7608316,
+false
+],
+"Milano, Italia": [
+45.4641943,
+9.1896346
+],
+"Bologna, Italia": [
+44.4938203,
+11.3426327
+],
+"Trieste, Italia": [
+45.6496485,
+13.7772781
+],
+"Genova, Italia": [
+44.40726,
+8.9338624
+],
+"Taranto, Italia": [
+40.5488156,
+17.0805801
+],
+"Napoli, Italia": [
+40.8358846,
+14.2487679
+],
+"Salerno, Italia": [
+40.4194416,
+15.3106085
+],
+"Torino, Italia": [
+45.0677551,
+7.6824892
+],
+"Firenze, Italia": [
+43.7697955,
+11.2556404
+],
+"Gravellona Toce, Italia": [
+45.930175,
+8.431222
+],
+"Canosa, Italia": [
+44.5535604,
+10.4119138
+],
+"Padova, Italia": [
+45.391408,
+11.8058487
+],
+"Pisa, Italia": [
+43.4714722,
+10.6797912
+],
+"Genova Voltri, Italia": [
+44.428369,
+8.7586939
+],
+"Ventimiglia, Italia": [
+43.7917623,
+7.6033131
+],
+"Roma, Italia": [
+41.8933203,
+12.4829321
+],
+"Confine Di Stato, Italia": [
+45.9263785,
+9.0368772
+],
+"Rosignano, Italia": [
+43.3879184,
+10.4381133
+],
+"Venezia, Italia": [
+45.4371908,
+12.3345898
+],
+"Ravenna, Italia": [
+44.3640607,
+12.0590095
+],
+"Ss1 Aurelia, Italia": [
+42.0387539,
+11.917814
+],
+"Allacc. Diramazione Capodichino, Italia": null,
+"Entrambe, Italia": [
+45.3222859,
+8.4063736
+],
+"Caserta, Italia": [
+41.2035193,
+14.1168624
+],
+"Svizzera, Italia": [
+44.1590056,
+11.075407
+],
+"Ss51 Alemagna, Italia": [
+46.5678708,
+12.1202361
+],
+"Autostrade A8/A4, Italia": null,
+"Lainate, Italia": [
+45.57093,
+9.0270637
+],
+"Tangenziale Est Di Milano, Italia": [
+45.5332024,
+9.2744087
+],
+"Varese, Italia": [
+45.8399103,
+8.754179
+],
+"Monte Bianco, Italia": [
+44.2472592,
+7.5206967
+]
 }
