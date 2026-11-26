@@ -4013,5 +4013,71 @@ false
 45.9686186,
 10.996214
 ],
-"v2|Passo Della Cisa|10.6,46.3,11.3,45.6": null
+"v2|Passo Della Cisa|10.6,46.3,11.3,45.6": null,
+"v2|Sanremo Ovest|7.3,44.8,9.3,43.4": [
+43.8170397,
+7.7750646,
+false
+],
+"v2|Autoporto S.I.T.O|7.3,45.4,8.0,44.7": null,
+"v2|Interconnessione Tangenziale Nord|7.3,45.4,8.0,44.7": null,
+"Ramo Verde Tangenziale Di Bologna": [
+44.5265141,
+11.2637281
+],
+"Bologna Borgo Panigale": [
+44.5150159,
+11.2848133
+],
+"v2|Concorezzo: Agrate Nord|9.0,45.9,9.7,45.2": [
+45.5867133,
+9.3403308,
+false
+],
+"v2|Vimercate Sud: Torri Bianche|9.0,45.9,9.7,45.2": [
+45.6015773,
+9.3637677,
+true
+],
+"Di Pietraperzia": [
+37.4215639,
+14.1370261
+],
+"v2|Rastrello|13.8,37.8,14.5,37.1": [
+37.4701174,
+14.2525081,
+false
+],
+"Corridonia Maceratese": [
+43.2758785,
+13.5045759
+],
+"v2|Piediripa|13.2,43.6,13.9,42.9": [
+43.2753092,
+13.4857788,
+false
+],
+"v2|Sforzacosta - SS77 Della Val Di Chienti|13.2,43.6,13.9,42.9": [
+43.2419255,
+13.4142211,
+true
+],
+"SS77 Della Val Di Chienti": [
+43.2792282,
+13.6657751
+],
+"v2|Selvanizza|10.0,46.0,10.7,45.3": null,
+"v2|Passo Di Lagastrello - SS665Diramazione Massese|10.0,46.0,10.7,45.3": null,
+"v2|Interconnessione A21|10.1,46.1,12.2,45.0": [
+45.5093125,
+11.6172207,
+true
+],
+"Della Valle D aosta": [
+45.9568184,
+7.6812583
+],
+"v2|Rochefort|7.3,46.3,8.0,45.6": null,
+"v2|Casello Morgex A5 Torino-Courmayeur|7.3,46.3,8.0,45.6": null,
+"v2|Villeneuve|7.3,46.3,8.0,45.6": null
 }
