@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-26T19:49+00:00",
+ "aggiornato": "2026-11-26T19:51+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -8,6 +8,90 @@
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "0cabd07f8aceccdc",
+   "strada": "A10 Genova-Ventimiglia",
+   "testo": "personale su strada causa lavori dalle 20:49 alle 21:34 del 26 novembre 2026 tra Svincolo Varazze e Svincolo Arenzano in direzione Genova",
+   "tipo": "lavori",
+   "quando": "2026-11-26T19:50:00Z",
+   "lat": 44.36659,
+   "lon": 8.60075,
+   "da": "Varazze",
+   "lat2": 44.40006,
+   "lon2": 8.66522,
+   "a": "Arenzano",
+   "km": 7.6,
+   "dirlat": 44.40726,
+   "dirlon": 8.9338624,
+   "dir": "Genova"
+  },
+  {
+   "id": "4b4116b9a928957e",
+   "strada": "A4 Milano-Brescia",
+   "testo": "code causa traffico intenso dalle 20:49 del 26 novembre 2026 tra Svincolo Viale Monte Ceneri incrocio Viale Certosa e Svincolo Sesto San Giovanni-Viale Zara in direzione Brescia",
+   "tipo": "code",
+   "quando": "2026-11-26T19:50:00Z"
+  },
+  {
+   "id": "5b4ef2051dbd34c1",
+   "strada": "A10 Genova-Ventimiglia",
+   "testo": "personale su strada causa lavori dalle 20:48 alle 21:33 del 26 novembre 2026 tra Svincolo Varazze e Svincolo Arenzano in direzione Genova",
+   "tipo": "lavori",
+   "quando": "2026-11-26T19:50:00Z",
+   "lat": 44.36659,
+   "lon": 8.60075,
+   "da": "Varazze",
+   "lat2": 44.40006,
+   "lon2": 8.66522,
+   "a": "Arenzano",
+   "km": 7.6,
+   "dirlat": 44.40726,
+   "dirlon": 8.9338624,
+   "dir": "Genova"
+  },
+  {
+   "id": "ff689096c6ea2239",
+   "strada": "A9 Lainate-Chiasso",
+   "testo": "veicolo fermo o in avaria dalle 20:41 del 26 novembre 2026 a Svincolo Saronno in direzione da Como",
+   "tipo": "altro",
+   "quando": "2026-11-26T19:49:00Z",
+   "lat": 45.62147,
+   "lon": 9.01345,
+   "da": "Saronno",
+   "dirlat": 38.2525372,
+   "dirlon": 15.7118677,
+   "dir": "da Como"
+  },
+  {
+   "id": "b65eccb0f93e4da5",
+   "strada": "A14 Ancona-Pescara",
+   "testo": "veicolo fermo o in avaria dalle 20:48 del 26 novembre 2026 tra Svincolo Grottammare e Svincolo Pedaso in direzione Ancona",
+   "tipo": "altro",
+   "quando": "2026-11-26T19:49:00Z",
+   "lat": 42.9823,
+   "lon": 13.8621,
+   "da": "Grottammare",
+   "lat2": 43.0948,
+   "lon2": 13.83754,
+   "a": "Pedaso",
+   "km": 15.2,
+   "dirlat": 43.4801189,
+   "dirlon": 13.2187279,
+   "dir": "Ancona"
+  },
+  {
+   "id": "da6413d35fbd7c63",
+   "strada": "A14 Ramo Casalecchio",
+   "testo": "personale su strada causa lavori dalle 20:48 alle 21:33 del 26 novembre 2026 tra Svincolo Bologna Casalecchio e Allacciamento A14 Bologna-Taranto in direzione autostrada Bologna-Taranto",
+   "tipo": "lavori",
+   "quando": "2026-11-26T19:49:00Z",
+   "lat": 44.48958,
+   "lon": 11.26905,
+   "da": "Bologna Casalecchio",
+   "dirlat": 40.5488156,
+   "dirlon": 17.0805801,
+   "dir": "Taranto"
+  },
   {
    "id": "f88d4ad8d5897673",
    "strada": "A1 Firenze-Roma",
@@ -230,19 +314,6 @@
    "lon2": 12.22421,
    "a": "Cesena Nord",
    "km": 14.9
-  },
-  {
-   "id": "ff689096c6ea2239",
-   "strada": "A9 Lainate-Chiasso",
-   "testo": "veicolo fermo o in avaria dalle 20:41 del 26 novembre 2026 a Svincolo Saronno in direzione da Como",
-   "tipo": "altro",
-   "quando": "2026-11-26T19:43:00Z",
-   "lat": 45.62147,
-   "lon": 9.01345,
-   "da": "Saronno",
-   "dirlat": 38.2525372,
-   "dirlon": 15.7118677,
-   "dir": "da Como"
   },
   {
    "id": "d7a4499eb8f15a6f",
@@ -737,23 +808,6 @@
    "dir": "Roma"
   },
   {
-   "id": "854bf8a37f608420",
-   "strada": "A14 Bologna-Ancona",
-   "testo": "veicolo fermo o in avaria dalle 20:09 del 26 novembre 2026 tra Svincolo Riccione e Svincolo Rimini Sud in direzione Bologna",
-   "tipo": "altro",
-   "quando": "2026-11-26T19:26:00Z",
-   "lat": 43.98734,
-   "lon": 12.6355,
-   "da": "Riccione",
-   "lat2": 44.03793,
-   "lon2": 12.5659,
-   "a": "Rimini Sud",
-   "km": 9.5,
-   "dirlat": 44.4938203,
-   "dirlon": 11.3426327,
-   "dir": "Bologna"
-  },
-  {
    "id": "d2f7b00adb09bf4e",
    "strada": "SS36 Del Lago Di Como E Dello Spluga",
    "testo": "corsia chiusa tra 17,26 km dopo Incrocio Abbadia Lariana e 171 m prima di Incrocio Piona in direzione Incrocio Passo Dello Spluga/Confine Con La Svizzera",
@@ -783,19 +837,6 @@
    "dirlat": 44.4938203,
    "dirlon": 11.3426327,
    "dir": "Bologna"
-  },
-  {
-   "id": "e7596f6e495662e5",
-   "strada": "A14 Ramo Casalecchio",
-   "testo": "personale su strada causa lavori dalle 20:23 alle 21:08 del 26 novembre 2026 tra Svincolo Bologna Casalecchio e Allacciamento A14 Bologna-Taranto in direzione autostrada Bologna-Taranto",
-   "tipo": "lavori",
-   "quando": "2026-11-26T19:25:00Z",
-   "lat": 44.48958,
-   "lon": 11.26905,
-   "da": "Bologna Casalecchio",
-   "dirlat": 40.5488156,
-   "dirlon": 17.0805801,
-   "dir": "Taranto"
   },
   {
    "id": "d0f8e085229b0f2a",
@@ -1336,23 +1377,6 @@
    "dir": "Padova"
   },
   {
-   "id": "53615e74675e2141",
-   "strada": "A1 Roma-Napoli",
-   "testo": "personale su strada causa lavori dalle 20:01 alle 20:45 del 26 novembre 2026 tra Svincolo Anagni - Fiuggi e Svincolo Ferentino in direzione Napoli",
-   "tipo": "lavori",
-   "quando": "2026-11-26T19:03:00Z",
-   "lat": 41.72172,
-   "lon": 13.11652,
-   "da": "Anagni - Fiuggi",
-   "lat2": 41.64453,
-   "lon2": 13.25583,
-   "a": "Ferentino",
-   "km": 17.3,
-   "dirlat": 40.8358846,
-   "dirlon": 14.2487679,
-   "dir": "Napoli"
-  },
-  {
    "id": "3d4938e2c1bf1cd6",
    "strada": "A1 Roma-Napoli",
    "testo": "personale su strada causa lavori dalle 20:00 alle 20:45 del 26 novembre 2026 tra Svincolo Frosinone e Svincolo Ceprano in direzione Napoli",
@@ -1447,33 +1471,6 @@
    "lon2": 12.01636,
    "a": "Fabro",
    "km": 19.8
-  },
-  {
-   "id": "8fc6ad1897e2dd10",
-   "strada": "A16 Napoli-Canosa",
-   "testo": "veicolo fermo o in avaria dalle 19:53 del 26 novembre 2026 tra Svincolo Avellino Est e Svincolo Benevento - Raccordo Di Benevento in direzione Canosa",
-   "tipo": "meteo",
-   "quando": "2026-11-26T18:57:00Z",
-   "lat": 40.94849,
-   "lon": 14.83345,
-   "da": "Avellino Est",
-   "dirlat": 44.5535604,
-   "dirlon": 10.4119138,
-   "dir": "Canosa"
-  },
-  {
-   "id": "74364f3d2aa4fe9e",
-   "strada": "A1 Firenze-Roma",
-   "testo": "traffico rallentato causa traffico intenso dalle 19:42 del 26 novembre 2026 tra Svincolo Incisa - Reggello e Svincolo Arezzo",
-   "tipo": "code",
-   "quando": "2026-11-26T18:57:00Z",
-   "lat": 43.66408,
-   "lon": 11.45984,
-   "da": "Incisa - Reggello",
-   "lat2": 43.42591,
-   "lon2": 11.95163,
-   "a": "Arezzo",
-   "km": 57.2
   },
   {
    "id": "aspi553903",
