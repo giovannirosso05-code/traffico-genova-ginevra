@@ -4680,5 +4680,38 @@ false
 11.9769068,
 false
 ],
-"v2|Viale Gabriele D Annunzio incrocio ZTL Via Gaetano Ronzoni|12.9,43.8,14.3,42.0": null
+"v2|Viale Gabriele D Annunzio incrocio ZTL Via Gaetano Ronzoni|12.9,43.8,14.3,42.0": null,
+"v2|Salerno - Raccordo Salerno-Avellino|13.8,41.6,15.7,40.1": [
+40.7810263,
+14.7818498,
+false
+],
+"v2|Mercato S.Severino|13.8,41.6,15.7,40.1": [
+40.7831498,
+14.7557301,
+false
+],
+"v2|Gallarate Nord|8.4,46.2,9.5,45.1": [
+45.6598951,
+8.7932013,
+false
+],
+"Di Paganico": [
+43.1322906,
+13.1158756
+],
+"v2|Ponte Macereto|12.8,43.5,13.5,42.8": null,
+"v2|Marina Di Ginosa - SS580 Di Ginosa|16.1,38.7,16.8,38.0": null,
+"v2|Eraclea - SS598 Di Fondo Valle D agri|16.1,38.7,16.8,38.0": null,
+"Tangenziale Est Di Verona": [
+45.4565219,
+11.0314958
+],
+"v2|Poiano|10.7,45.8,11.4,45.1": [
+45.471485,
+11.015498,
+false
+],
+"Allacciamento Verona": null,
+"v2|Marcallo inizio Mesero|7.3,45.8,9.5,44.7": null
 }
