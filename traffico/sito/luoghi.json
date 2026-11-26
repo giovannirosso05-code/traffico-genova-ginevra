@@ -4821,5 +4821,37 @@ false
 false
 ],
 "v2|Pozzuoli-SS7 Quater - SS Domitiana|13.9,41.2,14.6,40.5": null,
-"v2|Secondigliano-Raccordo A1 Capodichino|13.9,41.2,14.6,40.5": null
+"v2|Secondigliano-Raccordo A1 Capodichino|13.9,41.2,14.6,40.5": null,
+"v2|Libero Aosta Ovest|6.6,46.2,8.0,44.7": null,
+"v2|Casello Castellammare Di Stabia A3 Na-Sa|14.1,41.0,14.8,40.3": null,
+"v2|Vico Equense - SS269 Del Faito|14.1,41.0,14.8,40.3": [
+40.6702342,
+14.4695178,
+false
+],
+"v2|Castel Bolognese|12.1,42.3,12.8,41.6": [
+41.8756574,
+12.4686702,
+false
+],
+"Tangenziale Como": [
+45.7700112,
+9.0429749
+],
+"v2|Ravenna - SS309Diramazione Romea|11.9,44.9,12.6,44.2": null,
+"v2|Marina Romea|11.9,44.9,12.6,44.2": [
+44.5139861,
+12.2729458,
+false
+],
+"v2|2a: Casal Del Marmo|11.6,45.9,14.2,42.6": null,
+"v2|Castel S. Giorgio|13.8,41.6,15.7,40.1": [
+40.7844003,
+14.6993869,
+false
+],
+"Piazzale Corvetto": [
+45.4450954,
+9.2235656
+]
 }
