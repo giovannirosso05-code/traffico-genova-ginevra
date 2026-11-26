@@ -1,7 +1,8 @@
 name: Aggiorna traffico
 on:
   schedule:
-    - cron: "17 * * * *"
+    # ogni 15 minuti: GitHub spesso ritarda o salta i giri programmati, così ne arrivano comunque di più
+    - cron: "4,19,34,49 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -13,6 +14,7 @@ concurrency: { group: traffico, cancel-in-progress: false }
 jobs:
   aggiorna:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - name: Leggi le fonti
@@ -20,20 +22,27 @@ jobs:
           OTD_TOKEN: ${{ secrets.OTD_TOKEN }}
         run: |
           GEOCODE=1 python3 traffico/aggiorna.py > /tmp/dati.json && mv /tmp/dati.json traffico/sito/dati.json
-          python3 traffico/storico.py
+          python3 traffico/storico.py || true
           python3 traffico/atmb.py || true
       - name: Salva dati
         run: |
           git config user.name "aggiornamento-traffico"
           git config user.email "actions@users.noreply.github.com"
-          git add traffico/sito/*.json traffico/svincoli.json 2>/dev/null; git add traffico/sito/*.json
-          git diff --cached --quiet || (git commit -m "Dati traffico $(date -u +%FT%H:%M)" && git push)
+          git add traffico/sito/*.json
+          [ -f traffico/svincoli.json ] && git add traffico/svincoli.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Dati traffico $(date -u +%FT%H:%M)"
+          for i in 1 2 3; do git pull --rebase -X theirs origin main && git push && exit 0; sleep 5; done
+          echo "Salvataggio dei dati non riuscito: il sito viene pubblicato comunque con i dati nuovi"
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with: { path: traffico/sito }
-      - uses: actions/deploy-pages@v4
-      - name: Notifica chiusure (ntfy)
-        if: ${{ vars.NTFY_TOPIC != '' }}
-        run: |
-          MSG=$(python3 -c "import json;e=[x for x in json.load(open('traffico/sito/dati.json'))['eventi'] if x['tipo'] in('chiusura','incidente')];print('\n'.join(x['strada']+': '+x['testo'] for x in e))")
-          [ -n "$MSG" ] && curl -s -H "Title: Genova-Ginevra: chiusure o incidenti" -d "$MSG" "https://ntfy.sh/${{ vars.NTFY_TOPIC }}" || true
+  pubblica:
+    # job separato: è lo schema ufficiale di GitHub ed evita l'errore "No artifacts named github-pages"
+    needs: aggiorna
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: { name: github-pages, url: "${{ steps.deploy.outputs.page_url }}" }
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

@@ -91,10 +91,24 @@ def km(a, b):
     k = math.pi / 180
     return 6371 * math.acos(min(1, math.sin(a[0]*k)*math.sin(b[0]*k) + math.cos(a[0]*k)*math.cos(b[0]*k)*math.cos((b[1]-a[1])*k)))
 
-req = urllib.request.Request("https://www.cciss.it/rss", headers={"User-Agent": "Mozilla/5.0"})
-root = ET.fromstring(urllib.request.urlopen(req, timeout=30).read())
+# Se il CCISS non risponde riprovo, e se proprio non va tengo gli eventi italiani dell'aggiornamento precedente
+root, errore_it = None, ""
+for tentativo in range(3):
+    try:
+        req = urllib.request.Request("https://www.cciss.it/rss", headers={"User-Agent": "Mozilla/5.0"})
+        root = ET.fromstring(urllib.request.urlopen(req, timeout=30).read())
+        break
+    except Exception as ex:
+        errore_it = f"{type(ex).__name__} {getattr(ex, 'code', '')}".strip()
+        time.sleep(10)
 out = []
-for it in root.iter("item"):
+if root is None:
+    try:
+        vecchi = json.load(open("traffico/sito/dati.json"))["eventi"]
+        out = [e for e in vecchi if not e.get("paese")]
+    except Exception:
+        out = []
+for it in (root.iter("item") if root is not None else []):
     title = (it.findtext("title") or "").strip()
     desc = re.sub(r"<[^>]+>", " ", html.unescape(it.findtext("description") or ""))
     desc = re.sub(r"\(Fonte:[^)]*\)", "", re.sub(r"\s+", " ", desc)).strip()
@@ -117,7 +131,7 @@ for it in root.iter("item"):
             cd = cerca(dn) if len(dn) > 2 else None
             if cd: e.update(dirlat=cd[0], dirlon=cd[1], dir=dn)
     out.append(e)
-fonti = {"Italia": f"ok ({len(out)} eventi)"}
+fonti = {"Italia": f"ok ({len(out)} eventi)" if root is not None else f"errore: {errore_it}, mostro i dati precedenti"}
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import estero
 for nome, fn in [("Francia", estero.francia), ("Svizzera", estero.svizzera)]:
