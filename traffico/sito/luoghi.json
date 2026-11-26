@@ -4532,5 +4532,26 @@ false
 13.5003065
 ],
 "v2|Corleone|13.2,37.8,13.9,37.0": null,
-"v2|Corleone - SS188dir/C Centro Occ. Sicula|13.2,37.8,13.9,37.0": null
+"v2|Corleone - SS188dir/C Centro Occ. Sicula|13.2,37.8,13.9,37.0": null,
+"v2|Torino - Corso Giulio Cesare|7.3,45.8,9.5,44.7": [
+45.0794066,
+7.685363,
+false
+],
+"SS133 Di Palau": [
+41.1711898,
+9.3422843
+],
+"v2|Colli Di Fontanelle - SS145 Sorrentina|8.9,45.8,9.6,45.1": null,
+"v2|Positano|8.9,45.8,9.6,45.1": [
+45.5059371,
+9.2228967,
+false
+],
+"v2|Ferriera|6.6,45.6,7.3,44.9": null,
+"v2|Bussoleno|6.6,45.6,7.3,44.9": [
+45.1392706,
+7.1477166,
+false
+]
 }
