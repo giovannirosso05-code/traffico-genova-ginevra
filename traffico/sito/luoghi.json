@@ -4501,5 +4501,36 @@ false
 "Tangenziale, Italia": [
 45.58182,
 11.5079375
-]
+],
+"v2|Interscambio Drosso|7.3,45.4,8.0,44.7": null,
+"v2|Monte Petrosu|9.3,40.4,10.0,39.7": null,
+"v2|Modugno - SS98 Andriese Coratina|16.4,41.5,17.1,40.8": [
+41.092465,
+16.7553823,
+false
+],
+"Del Passo Di Aprica": [
+46.1531856,
+10.1558978
+],
+"v2|Aprica|9.8,46.5,10.5,45.8": [
+46.1268281,
+10.1470677,
+false
+],
+"v2|Edolo - SS42 Del Tonale E Della Mendola|9.8,46.5,10.5,45.8": null,
+"v2|Macomer - SS129 Trasversale Sarda|8.8,39.6,9.5,38.9": null,
+"v2|Macomer - SS129 Bis Trasversale Sarda|8.8,39.6,9.5,38.9": null,
+"Tangenziale Di Pavia": [
+45.1814705,
+9.2090632
+],
+"SS35 Dei Giovi (direzione Genova)": null,
+"v2|Guardiaregia - SS158 Dir|13.4,42.6,14.7,41.0": null,
+"Corleonese": [
+37.4259815,
+13.5003065
+],
+"v2|Corleone|13.2,37.8,13.9,37.0": null,
+"v2|Corleone - SS188dir/C Centro Occ. Sicula|13.2,37.8,13.9,37.0": null
 }
