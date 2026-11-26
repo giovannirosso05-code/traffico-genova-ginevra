@@ -263,7 +263,7 @@ async function route(){
   $('msg').textContent='';
   try{localStorage.setItem('viaggio',JSON.stringify({f,t}))}catch(e){}
   showRoutes(true);links(f,t);
- }catch(e){$('msg').innerHTML='<span class="err">'+esc(e.message||'Servizio di percorso non raggiungibile, riprova tra poco.')+'</span>'}
+ }catch(e){$('msg').innerHTML='<span class="err">'+esc(e instanceof TypeError||!e.message?'Il servizio che calcola il percorso non risponde: riprova tra un minuto.':e.message)+'</span>'}
  $('go').disabled=false;
 }
 const hm=m=>{m=Math.round(m);return Math.floor(m/60)+' h '+String(m%60).padStart(2,'0')+' min'};
@@ -345,7 +345,7 @@ function when(){
  $('bars').innerHTML=p.map((v,h)=>{const c=chiuso(h).length;return`<div class="bar" title="${h}:00${c?' – incrocia una chiusura':''}" style="height:${c?100:Math.max(4,v)}%;background:${c?'repeating-linear-gradient(45deg,var(--bad) 0 4px,transparent 4px 8px)':`var(${h===best?'--route':v>60?'--bad':v>35?'--warn':'--good'})`}"></div>`}).join('');
  $('axis').innerHTML=p.map((_,h)=>`<span>${h%3===0?h:''}</span>`).join('');
 }
-$('day').value=new Date().toISOString().slice(0,10);$('day').onchange=when;when();
+{const d=new Date();$('day').value=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}$('day').onchange=when;when();
 
 // link utili
 function links(f,t){
@@ -356,11 +356,7 @@ function links(f,t){
   ['CCISS','Viabilità italiana in tempo reale','https://www.cciss.it'],
   ['Traforo Monte Bianco','Chiusure e orari','https://www.tunnelmb.net/it'],
   ['Autostrade francesi a pagamento','Tutti gli avvisi ATMB e APRR (A40, A41, A43, Monte Bianco): pagina a parte','francia.html'],
-  ['TCS Svizzera','Traffico e lavori in Svizzera','https://www.tcs.ch/it/tools/info-traffico/'],
-  ['ATMB · A40 e Monte Bianco','Autostrada Ginevra–Chamonix e traforo (Francia, a pagamento)','https://www.atmb.com'],
-  ['Bison Futé · mappa Francia','Mappa ufficiale con anche le autostrade a pagamento','https://www.bison-fute.gouv.fr'],
-  ['Vinci Autoroutes','A7, A8, A9 e altre autostrade francesi a pagamento','https://www.vinci-autoroutes.com/fr/trafic'],
-  ['APRR · AREA','A6, A43, A41 e Alpi francesi','https://voyage.aprr.fr']];
+  ['TCS Svizzera','Traffico e lavori in Svizzera','https://www.tcs.ch/it/tools/info-traffico/']];
  $('links').innerHTML=L.map(([a,b,u])=>`<a class="lk" href="${u}"${u.startsWith('http')?' target="_blank" rel="noopener"':''}><b>${a}</b><span>${b}</span></a>`).join('');
 }
 links('','');
@@ -370,22 +366,26 @@ document.querySelectorAll('[data-f]').forEach(b=>b.onclick=()=>{$('from').value=
 $('go').onclick=route;
 ['from','to'].forEach(k=>$(k).addEventListener('keydown',e=>{if(e.key==='Enter')route()}));
 $('from').addEventListener('input',()=>{if($('from').value!=='La mia posizione')FROMPT=null});
-(async()=>{
+let PRIMA=true;
+async function carica(){
  try{
   const r=await fetch('dati.json?'+Date.now());const d=await r.json();EV=(d.eventi||[]).filter(utile);
   const t=new Date(d.aggiornato),min=Math.round((Date.now()-t)/60000);
-  $('updbig').innerHTML=`Ultimo aggiornamento: <b>${t.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'})}</b> del ${t.toLocaleDateString('it-IT')} <span class="muted">(${min<1?'adesso':min<60?min+' min fa':Math.floor(min/60)+' h fa'})</span><br><span class="muted">Si aggiorna da solo <b style="font-size:inherit">ogni ora</b>. Ricarica la pagina per vedere i dati nuovi.</span>`;
-  $('upd').textContent='Dati aggiornati '+t.toLocaleString('it-IT',{dateStyle:'short',timeStyle:'short'})+' · aggiornamento ogni ora · Fonti: '+Object.entries(d.fonti||{Italia:'ok'}).map(([k,v])=>k+' '+(String(v).startsWith('ok')?'✓':'✗ ('+v+')')).join(', ')+'.';
-  const live=EV.filter(e=>fase(e)!=='terminato');
+  $('updbig').innerHTML=`Ultimo aggiornamento: <b>${t.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'})}</b> del ${t.toLocaleDateString('it-IT')} <span class="muted">(${min<1?'adesso':min<60?min+' min fa':Math.floor(min/60)+' h fa'})</span><br><span class="muted">Si aggiorna da solo <b style="font-size:inherit">ogni 15 minuti</b> circa (GitHub a volte ritarda). La pagina ricarica i dati da sola.</span>`;
+  $('upd').textContent='Dati aggiornati '+t.toLocaleString('it-IT',{dateStyle:'short',timeStyle:'short'})+' · aggiornamento ogni 15 minuti circa · Fonti: '+Object.entries(d.fonti||{Italia:'ok'}).map(([k,v])=>k+' '+(String(v).startsWith('ok')?'✓':'✗ ('+v+')')).join(', ')+'.';
   let fr=null;try{fr=await (await fetch('atmb.json?'+Date.now())).json()}catch(e){}
   if(fr&&fr.eventi)fr.eventi.forEach((x,i)=>{if(typeof x.lat==='number'&&x.tipo!=='altro')EV.push({id:'fr'+i,strada:(x.titolo.match(/^A\d+\w*/)||[''])[0]+' ('+x.gestore+')',testo:x.titolo,tipo:x.tipo,lat:x.lat,lon:x.lon,lat2:x.lat2,lon2:x.lon2,approx:x.approx,url:x.url,paese:'Francia'})});
   const live2=EV.filter(e=>fase(e)!=='terminato');
   drawEvents(live2);listEvents(live2,'Tutti i problemi segnalati');
   // il riquadro completo delle autostrade francesi è nella pagina francia.html
   let s=null;try{s=JSON.parse(localStorage.getItem('viaggio'))}catch(e){}
-  if(s&&s.f&&s.t&&s.f!=='La mia posizione'){$('from').value=s.f;$('to').value=s.t;route()}
+  if(PRIMA){PRIMA=false;if(s&&s.f&&s.t&&s.f!=='La mia posizione'){$('from').value=s.f;$('to').value=s.t;route()}}
+  else if(ROUTES.length){ROUTES.forEach(R=>{const lv=EV.filter(e=>fase(e)!=='terminato');R.ev=lv.filter(e=>onRoute(e,R.line)===true);R.opp=lv.filter(e=>onRoute(e,R.line)==='opposto').length;R.bad=R.ev.filter(grave).length});showRoutes(false)}
  }catch(e){$('upd').textContent='Dati sul traffico non disponibili al momento.'}
-})();
+}
+carica();
+setInterval(()=>{if(!document.hidden)carica()},5*60*1000);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)carica()});
 </script>
 </body>
 </html>
