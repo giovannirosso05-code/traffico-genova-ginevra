@@ -134,6 +134,13 @@ for it in (root.iter("item") if root is not None else []):
 fonti = {"Italia": f"ok ({len(out)} eventi)" if root is not None else f"errore: {errore_it}, mostro i dati precedenti"}
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import estero
+import autostrade
+try:
+    ev = autostrade.cantieri(cerca if os.environ.get("GEOCODE") == "1" else None)
+    out.extend(ev); fonti["Autostrade (cantieri)"] = f"ok ({len(ev)} cantieri)"
+except Exception as ex:
+    fonti["Autostrade (cantieri)"] = f"errore: {type(ex).__name__} {str(ex)[:120]}"
+    print(f"Autostrade: {ex}", file=sys.stderr)
 for nome, fn in [("Francia", estero.francia), ("Svizzera", estero.svizzera)]:
     try:
         ev = fn()
@@ -153,4 +160,4 @@ for nome, fn in [("Francia", estero.francia), ("Svizzera", estero.svizzera)]:
 if os.environ.get("GEOCODE") == "1":
     json.dump(luoghi, open(CACHE, "w"), ensure_ascii=False, indent=0)
 now = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes")
-json.dump({"aggiornato": now, "fonte": "CCISS, Bison Futé, opentransportdata.swiss", "fonti": fonti, "eventi": out}, sys.stdout, ensure_ascii=False, indent=1)
+json.dump({"aggiornato": now, "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss", "fonti": fonti, "eventi": out}, sys.stdout, ensure_ascii=False, indent=1)
