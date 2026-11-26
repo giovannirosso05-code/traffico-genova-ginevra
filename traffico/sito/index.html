@@ -26,7 +26,7 @@ h2{font:700 1.3rem var(--display);margin:6px 0 0;letter-spacing:.01em}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;display:grid;gap:10px;min-width:0}
 .trip{display:grid;grid-template-columns:1fr 1fr auto;gap:8px}
 @media (max-width:640px){.trip{grid-template-columns:1fr}}
-input{width:100%;min-width:0;font:inherit;font-size:16px;padding:10px 11px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg)}
+input{width:100%;max-width:100%;min-width:0;-webkit-appearance:none;appearance:none;display:block;font:inherit;font-size:16px;padding:10px 11px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg)}
 button{font:inherit;font-weight:600;padding:10px 14px;border-radius:8px;border:0;background:var(--sign);color:var(--signfg);cursor:pointer}
 button:disabled{opacity:.6}
 button.ghost{background:transparent;color:var(--fg);border:1px solid var(--line);padding:6px 10px;font-size:.85rem;font-weight:500}
@@ -284,6 +284,7 @@ function showRoutes(fit){
  $('res').hidden=false;
  listEvents(R.ev,'Chiusure e lavori sul percorso');
  $('evbox').open=R.ev.length>0;
+ when();
  $('atmb').hidden=!(FRREADY&&R.line.some(p=>p[1]<7.05&&p[0]>45.3));
 }
 
@@ -315,12 +316,37 @@ function profile(date){
  const d=date.getDay(),base=[8,5,4,4,6,14,32,62,70,48,40,42,46,44,42,50,62,74,70,48,30,22,16,11];
  return base.map((v,h)=>{let x=v;if(d===0||d===6){x=v*.55;if(d===6&&h>=8&&h<=12)x+=28;if(d===0&&h>=15&&h<=20)x+=40}if(d===5&&h>=13&&h<=20)x+=22;if(d===1&&h>=6&&h<=9)x+=8;return Math.min(100,Math.round(x))});
 }
+// finestra oraria reale di un evento (inizio, fine) dal testo o dai campi della fonte
+const MESI={gennaio:0,febbraio:1,marzo:2,aprile:3,maggio:4,giugno:5,luglio:6,agosto:7,settembre:8,ottobre:9,novembre:10,dicembre:11};
+function finestra(e){
+ if(e.inizio)return[new Date(e.inizio),e.fine?new Date(e.fine):null];
+ const m=e.testo.match(/dalle (\d{1,2}):(\d{2})(?: del (\d{1,2})(?: (gennaio|febbraio|marzo|aprile|maggio|giugno|luglio|agosto|settembre|ottobre|novembre|dicembre))?(?: (\d{4}))?)?(?: alle (\d{1,2}):(\d{2})(?: del (\d{1,2})(?: (gennaio|febbraio|marzo|aprile|maggio|giugno|luglio|agosto|settembre|ottobre|novembre|dicembre))?(?: (\d{4}))?)?)?/i);
+ if(!m)return null;
+ const now=new Date(),mese=MESI[(m[9]||m[4]||'').toLowerCase()],anno=+(m[10]||m[5]||now.getFullYear());
+ const mk=(g,mm,hh,mi)=>{const x=new Date(now);x.setFullYear(anno);if(mm!=null)x.setMonth(mm);if(g)x.setDate(+g);x.setHours(+hh,+mi,0,0);return x};
+ const s=mk(m[3]||m[8],MESI[(m[4]||m[9]||'').toLowerCase()]??mese,m[1],m[2]);
+ let f=m[6]?mk(m[8]||m[3],MESI[(m[9]||'').toLowerCase()]??mese,m[6],m[7]):null;
+ if(f&&f<s)f.setDate(f.getDate()+1);
+ return[s,f];
+}
 function when(){
- const date=new Date($('day').value+'T12:00'),p=profile(date);
- let best=6,bv=1e9;for(let h=5;h<=21;h++){const s=p[h]+(p[h+1]||0)+(p[h+2]||0)+(p[h+3]||0);if(s<bv){bv=s;best=h}}
- const days=['domenica','lunedì','martedì','mercoledì','giovedì','venerdì','sabato'];
- $('best').innerHTML=`Partenza consigliata ${days[date.getDay()]}: <b>${String(best).padStart(2,'0')}:00</b> · da evitare: <b>${String(p.indexOf(Math.max(...p))).padStart(2,'0')}:00</b>`;
- $('bars').innerHTML=p.map((v,h)=>`<div class="bar" title="${h}:00" style="height:${Math.max(4,v)}%;background:var(${h===best?'--route':v>60?'--bad':v>35?'--warn':'--good'})"></div>`).join('');
+ const date=new Date($('day').value+'T00:00'),p=profile(new Date($('day').value+'T12:00'));
+ const R=ROUTES[SEL],dur=R?Math.max(1,Math.ceil(R.min/60)):3;
+ // chiusure gravi del percorso con orario: blocco le ore in cui il viaggio le incrocerebbe
+ const blocchi=[];
+ if(R)R.ev.filter(grave).forEach(e=>{const w=finestra(e);if(w&&w[0])blocchi.push({e,s:w[0],f:w[1]||new Date(w[0].getTime()+6*3600e3)})});
+ const ora=h=>new Date(date.getTime()+h*3600e3);
+ const chiuso=h=>blocchi.filter(b=>ora(h)<b.f&&ora(h+dur)>b.s);
+ const score=p.map((_,h)=>{let s=0;for(let k=0;k<dur;k++)s+=p[(h+k)%24];return s/dur+(chiuso(h).length?200:0)});
+ let best=6,bv=1e9;for(let h=5;h<=22;h++)if(score[h]<bv){bv=score[h];best=h}
+ const days=['domenica','lunedì','martedì','mercoledì','giovedì','venerdì','sabato'],hh=x=>String(x).padStart(2,'0')+':00';
+ const peg=score.indexOf(Math.max(...score.map((v,i)=>chiuso(i).length?0:v)));
+ let t=`Partenza consigliata ${days[date.getDay()]}: <b>${hh(best)}</b> · da evitare: <b>${hh(peg)}</b>`;
+ t+=R?`<div class="muted">Calcolato sul percorso scelto (circa ${dur} h di viaggio)${blocchi.length?' e sulle sue chiusure programmate':''}.</div>`:'<div class="muted">Calcola un percorso nella sezione 1 per tenere conto delle chiusure e della durata del viaggio.</div>';
+ const bc=[...new Set(blocchi.filter(b=>b.f>date&&b.s<ora(24+dur)).map(b=>`${b.e.strada.split(' ')[0]} chiusa dalle ${b.s.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'})} alle ${b.f.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'})}`))];
+ if(bc.length)t+=`<div class="ko" style="font-size:.9rem;margin-top:4px">⛔ ${bc.slice(0,4).map(esc).join(' · ')}: le ore barrate incrocerebbero queste chiusure.</div>`;
+ $('best').innerHTML=t;
+ $('bars').innerHTML=p.map((v,h)=>{const c=chiuso(h).length;return`<div class="bar" title="${h}:00${c?' – incrocia una chiusura':''}" style="height:${c?100:Math.max(4,v)}%;background:${c?'repeating-linear-gradient(45deg,var(--bad) 0 4px,transparent 4px 8px)':`var(${h===best?'--route':v>60?'--bad':v>35?'--warn':'--good'})`}"></div>`}).join('');
  $('axis').innerHTML=p.map((_,h)=>`<span>${h%3===0?h:''}</span>`).join('');
 }
 $('day').value=new Date().toISOString().slice(0,10);$('day').onchange=when;when();
