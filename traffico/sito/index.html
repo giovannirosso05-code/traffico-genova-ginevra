@@ -20,7 +20,8 @@ body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.45 var(--body)}
 .top h1{font:700 1.25rem var(--display);margin:0 auto 0 0;letter-spacing:.02em}
 .top a{color:var(--signfg);text-decoration:none;font-weight:600;font-size:.85rem;padding:6px 10px;border:1px solid rgb(255 255 255/.5);border-radius:99px;white-space:nowrap}
 .top a:hover,.top a:focus-visible{background:rgb(255 255 255/.15)}
-.wrap{max-width:980px;margin:0 auto;padding:10px max(12px,env(safe-area-inset-left)) 40px max(12px,env(safe-area-inset-right));display:grid;gap:12px}
+.wrap{max-width:980px;margin:0 auto;padding:10px max(12px,env(safe-area-inset-left)) 40px max(12px,env(safe-area-inset-right));display:grid;gap:22px}
+#res,#evbox{margin-top:4px}
 h2{font:700 1.3rem var(--display);margin:6px 0 0;letter-spacing:.01em}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;display:grid;gap:10px;min-width:0}
 .trip{display:grid;grid-template-columns:1fr 1fr auto;gap:8px}
@@ -33,7 +34,8 @@ button:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{o
 .chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .muted{color:var(--muted);font-size:.85rem}
 #map{height:58vh;min-height:340px;border-radius:12px;border:1px solid var(--line)}
-.mapwrap{position:relative}
+.mapwrap{position:relative;isolation:isolate;z-index:0}
+.leaflet-top,.leaflet-bottom{z-index:400!important}
 .legend{position:absolute;top:10px;right:10px;z-index:500;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:7px 9px;font-size:.75rem;display:grid;gap:3px;box-shadow:0 2px 8px rgb(0 0 0/.15)}
 .dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px;vertical-align:-1px;border:2px solid #fff;box-shadow:0 0 0 1px rgb(0 0 0/.2)}
 .locbtn{position:absolute;left:10px;bottom:22px;z-index:500;box-shadow:0 2px 8px rgb(0 0 0/.25)}
@@ -107,12 +109,13 @@ details[open]{padding-bottom:12px}
     <div class="routes" id="routes"></div>
   </div>
 
+
+  <details id="evbox"><summary id="evsum">Chiusure e lavori</summary><div id="evlist"></div></details>
+
   <div class="card" id="atmb" hidden>
     <div><b>Autostrade francesi a pagamento</b> <span class="muted">· A40, A41, A43, A6, Traforo del Monte Bianco e altre (ATMB, APRR)</span></div>
     <div id="atmbbody"></div>
   </div>
-
-  <details id="evbox"><summary id="evsum">Elenco dei problemi</summary><div id="evlist"></div></details>
 
   <h2 id="s2">2 · Quando partire</h2>
   <div class="card">
@@ -132,7 +135,7 @@ details[open]{padding-bottom:12px}
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
-let EV=[],ROUTES=[],SEL=0,ME=null,FROMPT=null;
+let EV=[],ROUTES=[],SEL=0,ME=null,FROMPT=null,FRREADY=false;
 
 // testo evento con le parti principali in grassetto
 function hl(t){
@@ -276,11 +279,12 @@ function showRoutes(fit){
  if(fit)map.fitBounds(R.line,{padding:[30,30]});
  const now=R.ev.filter(e=>grave(e)&&fase(e)==='in corso').length,prog=R.ev.filter(e=>grave(e)&&fase(e)==='programmato').length,alt=R.ev.length-now-prog;
  $('status').innerHTML=(now?`<b class="ko">⛔ ${now} chiusure o incidenti adesso</b>`:prog?`<b class="mid">Aperto, ma ${prog} chiusure programmate</b>`:`<b class="ok">Nessuna chiusura</b>`)+' sul percorso scelto'+(alt>0?` · ${alt} tra lavori, code e meteo`:'')+(R.opp?`<div class="muted">Esclusi ${R.opp} avvisi sulla carreggiata opposta.</div>`:'');
- $('routes').innerHTML=ROUTES.map((x,i)=>`<button type="button" class="rt ${i===SEL?'on':''}" data-i="${i}"><span class="pill ${x.bad?'ko':x.ev.length?'mid':'ok'}">${x.bad?x.bad+' chius.':x.ev.length?x.ev.length+' avvisi':'libero'}</span><span><b class="num">${hm(x.min)}</b> <span class="muted num">· ${Math.round(x.km)} km</span><br><span class="muted">${i===0?'Percorso più rapido':'Alternativa '+i} · tempo senza traffico</span></span><span class="muted">${i===SEL?'scelto':'scegli'}</span></button>`).join('');
+ $('routes').innerHTML=ROUTES.map((x,i)=>`<button type="button" class="rt ${i===SEL?'on':''}" data-i="${i}"><span class="pill ${x.bad?'ko':x.ev.length?'mid':'ok'}">${x.bad?x.bad+' chius.':x.ev.length?x.ev.length+(x.ev.length===1?' avviso':' avvisi'):'libero'}</span><span><b class="num">${hm(x.min)}</b> <span class="muted num">· ${Math.round(x.km)} km</span><br><span class="muted">${i===0?'Percorso più rapido':'Alternativa '+i} · tempo senza traffico</span></span><span class="muted">${i===SEL?'scelto':'scegli'}</span></button>`).join('');
  $('routes').querySelectorAll('.rt').forEach(b=>b.onclick=()=>{SEL=+b.dataset.i;showRoutes()});
  $('res').hidden=false;
- listEvents(R.ev,'Problemi sul percorso');
- $('evbox').open=R.ev.some(grave);
+ listEvents(R.ev,'Chiusure e lavori sul percorso');
+ $('evbox').open=R.ev.length>0;
+ $('atmb').hidden=!(FRREADY&&R.line.some(p=>p[1]<7.05&&p[0]>45.3));
 }
 
 // posizione
@@ -361,7 +365,7 @@ $('from').addEventListener('input',()=>{if($('from').value!=='La mia posizione')
    if(a.stato!=='ok')b+=`<div class="err">Lettura non riuscita (${esc(a.stato)}): controlla il sito ufficiale.</div>`;
    b+=`<div class="muted">Letto dai siti ATMB e APRR alle ${new Date(a.aggiornato).toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'})}.</div>`;
    if(ev.length>6&&!showAll)b+=`<button type="button" class="ghost" id="atmbmore">Mostra tutti (${ev.length})</button>`;
-   $('atmbbody').innerHTML=b;$('atmb').hidden=false;
+   $('atmbbody').innerHTML=b;FRREADY=true;$('atmb').hidden=!(ROUTES[SEL]&&ROUTES[SEL].line.some(p=>p[1]<7.05&&p[0]>45.3));
    const mb=$('atmbmore');if(mb)mb.onclick=()=>{showAll=true;drawFR(a)};
    if(ch.length)$('atmb').style.borderColor=css('--bad');
   };
