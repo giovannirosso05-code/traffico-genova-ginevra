@@ -11,11 +11,12 @@ Sito: https://giovannirosso05-code.github.io/traffico-genova-ginevra/
 | ATMB (Francia, a pagamento) | ✅ funziona (lettura del sito) | A40 Ginevra–Chamonix, A41 Nord, RN205, Traforo Monte Bianco: solo nel riquadro, niente puntini |
 | APRR / AREA (Francia, a pagamento) | ✅ funziona (lettura del sito) | ~18 lavori programmati (A40 Mâcon–Ginevra, A41, A43, A6…): solo nel riquadro |
 | Vinci Autoroutes (Francia) | ❌ non leggibile | il sito carica i dati con codice: solo link |
-| Svizzera (opentransportdata.swiss) | ⏸ manca la chiave | codice pronto ma mai provato |
+| Svizzera (opentransportdata.swiss) | ⏳ chiave salvata 26/11, accesso in attesa di approvazione (errore 403) | codice mai provato con dati veri |
 
 ## Da fare – Giovanni
 
-1. **Chiave Svizzera**: registrarsi gratis su https://opentransportdata.swiss → creare una chiave per "Traffic Situations".
+1. ~~Chiave Svizzera~~ ✅ salvata 26/11. **Ora**: aspettare l'approvazione di "traffic situations" (sparisce "Pending access" su api-manager.opentransportdata.swiss), poi scrivere a Claude per controllare.
+   Vecchie istruzioni: registrarsi gratis su https://opentransportdata.swiss → creare una chiave per "Traffic Situations".
    Poi GitHub → https://github.com/giovannirosso05-code/traffico-genova-ginevra/settings/secrets/actions
    → New repository secret → Name `OTD_TOKEN` → incollare la chiave. NON incollarla in chat.
 2. **Posizione sul telefono**: Impostazioni → App → Safari (o Chrome) → Posizione → Consenti/Chiedi;
@@ -24,7 +25,7 @@ Sito: https://giovannirosso05-code.github.io/traffico-genova-ginevra/
    - suggerimenti mentre scrivi (es. "San siro" → Stadio San Siro) – mai provato col servizio vero
    - tasto Calcola con un percorso vero (es. Genova → Ginevra) – mai provato col servizio vero
    - puntini sulla mappa: tocco → problema, tratto, lunghezza, carreggiata
-4. **Decidere**: eliminare il vecchio portale Claude e il suo aggiornamento automatico ogni 3 ore (consigliato).
+4. ~~Eliminare vecchio portale Claude~~ ✅ fatto 26/11.
 
 ## Da fare – Claude, appena c'è la chiave o un riscontro
 
