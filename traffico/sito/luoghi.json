@@ -4576,5 +4576,57 @@ false
 ],
 "v2|Bari/Svincolo SS271 Di Cassano|11.7,45.4,12.4,44.7": null,
 "v2|Mungivacca/Svincolo SS100 Di Gioia Del Colle|11.7,45.4,12.4,44.7": null,
-"v2|Monza Centro: 1 Maggio|8.9,45.9,9.6,45.2": null
+"v2|Monza Centro: 1 Maggio|8.9,45.9,9.6,45.2": null,
+"v2|Bari Nord - Raccordo Per La Tangenziale|13.6,42.7,17.2,40.8": null,
+"v2|Tresenda - SS38 Dello Stelvio|9.8,46.5,10.5,45.8": null,
+"v2|Cortenedolo|9.8,46.5,10.5,45.8": [
+46.1741543,
+10.2773573,
+false
+],
+"v2|Pian Di Vedoia-SS51 Di Alemagna|11.7,46.6,12.6,45.1": [
+46.1987776,
+12.2865915,
+false
+],
+"v2|Cadola-Svincolo Di Belluno|11.7,46.6,12.6,45.1": null,
+"v2|Per Ravenna|11.0,44.8,13.6,43.1": [
+44.4107202,
+12.1078116,
+false
+],
+"Della Valle Dell aveto": [
+44.5279836,
+9.3929655
+],
+"v2|Prati Di Mezzanego|9.0,44.9,9.7,44.2": [
+44.3824724,
+9.3756036,
+false
+],
+"v2|Carasco - SS225 Della Fontanabuona|9.0,44.9,9.7,44.2": [
+44.3546068,
+9.3432499,
+false
+],
+"v2|Montebruno|10.3,46.9,11.0,46.2": null,
+"v2|Loco|10.3,46.9,11.0,46.2": [
+46.4277267,
+10.3561294,
+false
+],
+"v2|Salerno M.S.Severino|13.8,41.6,15.7,40.1": [
+40.0890661,
+15.3462762,
+false
+],
+"Como": [
+45.9395857,
+9.1493609
+],
+"v2|Padova Zona Industriale-Interporto|11.0,45.7,12.2,44.1": [
+45.3848726,
+11.9305881,
+false
+]
 }
