@@ -152,6 +152,8 @@ function carr(e){
  return'';
 }
 const carrTxt=e=>{const c=carr(e);return c?c:(e.tipo==='lavori'?'non indicato dalla fonte':'')};
+// mostro solo ciò che rallenta o blocca: niente avvisi generici né veicoli in avaria
+const utile=e=>e.tipo!=='altro'&&!/avaria|veicolo fermo|en panne|panne/i.test(e.testo||'');
 const grave=e=>e.tipo==='chiusura'||e.tipo==='incidente';
 const col=e=>grave(e)?css('--bad'):e.tipo==='altro'?'#8a948d':css('--warn');
 function fase(e){
@@ -371,13 +373,13 @@ $('go').onclick=route;
 $('from').addEventListener('input',()=>{if($('from').value!=='La mia posizione')FROMPT=null});
 (async()=>{
  try{
-  const r=await fetch('dati.json?'+Date.now());const d=await r.json();EV=d.eventi||[];
+  const r=await fetch('dati.json?'+Date.now());const d=await r.json();EV=(d.eventi||[]).filter(utile);
   const t=new Date(d.aggiornato),min=Math.round((Date.now()-t)/60000);
   $('updbig').innerHTML=`Ultimo aggiornamento: <b>${t.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'})}</b> del ${t.toLocaleDateString('it-IT')} <span class="muted">(${min<1?'adesso':min<60?min+' min fa':Math.floor(min/60)+' h fa'})</span><br><span class="muted">Si aggiorna da solo <b style="font-size:inherit">ogni ora</b>. Ricarica la pagina per vedere i dati nuovi.</span>`;
   $('upd').textContent='Dati aggiornati '+t.toLocaleString('it-IT',{dateStyle:'short',timeStyle:'short'})+' · aggiornamento ogni ora · Fonti: '+Object.entries(d.fonti||{Italia:'ok'}).map(([k,v])=>k+' '+(String(v).startsWith('ok')?'✓':'✗ ('+v+')')).join(', ')+'.';
   const live=EV.filter(e=>fase(e)!=='terminato');
   let fr=null;try{fr=await (await fetch('atmb.json?'+Date.now())).json()}catch(e){}
-  if(fr&&fr.eventi)fr.eventi.forEach((x,i)=>{if(typeof x.lat==='number')EV.push({id:'fr'+i,strada:(x.titolo.match(/^A\d+\w*/)||[''])[0]+' ('+x.gestore+')',testo:x.titolo,tipo:x.tipo,lat:x.lat,lon:x.lon,lat2:x.lat2,lon2:x.lon2,approx:x.approx,url:x.url,paese:'Francia'})});
+  if(fr&&fr.eventi)fr.eventi.forEach((x,i)=>{if(typeof x.lat==='number'&&x.tipo!=='altro')EV.push({id:'fr'+i,strada:(x.titolo.match(/^A\d+\w*/)||[''])[0]+' ('+x.gestore+')',testo:x.titolo,tipo:x.tipo,lat:x.lat,lon:x.lon,lat2:x.lat2,lon2:x.lon2,approx:x.approx,url:x.url,paese:'Francia'})});
   const live2=EV.filter(e=>fase(e)!=='terminato');
   drawEvents(live2);listEvents(live2,'Tutti i problemi segnalati');
   // il riquadro completo delle autostrade francesi è nella pagina francia.html
