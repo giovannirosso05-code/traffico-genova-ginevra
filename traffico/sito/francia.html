@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Autostrade francesi · Strada Libera</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f3f5f2;--panel:#fff;--fg:#17201b;--muted:#5b675f;--line:#d6ddd7;--sign:#0b6b3a;--signfg:#fff;--warn:#c2410c;--bad:#c81e1e;--good:#15803d;
+--display:"Barlow Condensed","Arial Narrow",sans-serif;--body:Inter,system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1512;--panel:#18211c;--fg:#e6ece8;--muted:#9aa89f;--line:#2b3830;--sign:#1f8a52;--warn:#f59e0b;--bad:#f87171;--good:#4ade80;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.45 var(--body)}
+.top{position:sticky;top:0;z-index:10;background:var(--sign);color:var(--signfg);padding:10px max(12px,env(safe-area-inset-left));padding-top:calc(10px + env(safe-area-inset-top));display:flex;gap:10px;align-items:center}
+.top a{color:var(--signfg);text-decoration:none;font-weight:600;padding:6px 12px;border:1px solid rgb(255 255 255/.5);border-radius:99px;white-space:nowrap}
+.top h1{font:700 1.25rem var(--display);margin:0}
+.wrap{max-width:860px;margin:0 auto;padding:14px max(12px,env(safe-area-inset-left)) 40px max(12px,env(safe-area-inset-right));display:grid;gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:grid;gap:4px}
+h2{font:700 1.2rem var(--display);margin:6px 0 0}
+.pill{display:inline-block;font-size:.75rem;font-weight:600;padding:1px 8px;border-radius:99px;border:1px solid currentColor;white-space:nowrap}
+.ko{color:var(--bad)}.mid{color:var(--warn)}.ok{color:var(--good)}
+.muted{color:var(--muted);font-size:.85rem}
+.ev{padding:10px 0;border-top:1px solid var(--line);display:grid;gap:4px}
+.ev:first-child{border-top:0}
+a{color:var(--sign)}
+.tunnel{font-size:1.1rem}
+</style>
+</head>
+<body>
+<nav class="top"><a href="./">← Percorso</a><h1>Autostrade francesi a pagamento</h1></nav>
+<div class="wrap">
+  <div class="muted">A40, A41, A43, A6, RN205 e Traforo del Monte Bianco. Letti dai siti ufficiali di ATMB e APRR ogni ora: queste società non pubblicano dati aperti. Gli avvisi che hanno una posizione compaiono anche sulla mappa del percorso.</div>
+  <div class="card tunnel" id="tunnel">Carico…</div>
+  <h2>ATMB · A40 Ginevra–Chamonix, A41 Nord, Monte Bianco</h2>
+  <div class="card" id="atmb"></div>
+  <h2>APRR / AREA · lavori programmati</h2>
+  <div class="card" id="aprr"></div>
+  <div class="muted" id="upd"></div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safe=u=>/^https:\/\//.test(u||'')?esc(u):'#';
+function lista(ev){
+ if(!ev.length)return'<div class="muted">Nessun avviso pubblicato.</div>';
+ return [...ev].sort((a,b)=>(b.tipo==='chiusura')-(a.tipo==='chiusura')).map(x=>`<div class="ev">
+  <div><span class="pill ${x.tipo==='chiusura'?'ko':'mid'}">${esc(x.tipo)}</span>${typeof x.lat==='number'?' <span class="muted">· sulla mappa</span>':''}</div>
+  <div><b>${esc(x.titolo)}</b></div>
+  ${x.testo?`<div class="muted">${esc(x.testo.length>220?x.testo.slice(0,220)+'…':x.testo)}</div>`:''}
+  <div><a href="${safe(x.url)}" target="_blank" rel="noopener">Apri sul sito ufficiale</a></div></div>`).join('');
+}
+fetch('atmb.json?'+Date.now()).then(r=>r.json()).then(a=>{
+ const ev=a.eventi||[];
+ $('tunnel').innerHTML=a.tunnel?`Traforo del Monte Bianco: <b>${esc(a.tunnel)}</b>`:'Stato del Traforo del Monte Bianco non disponibile: <a href="https://www.tunnelmb.net/it" target="_blank" rel="noopener">sito ufficiale</a>';
+ $('atmb').innerHTML=lista(ev.filter(x=>x.gestore==='ATMB'));
+ $('aprr').innerHTML=lista(ev.filter(x=>x.gestore==='APRR'));
+ const t=new Date(a.aggiornato);
+ $('upd').innerHTML=`Letto alle ${t.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'})} del ${t.toLocaleDateString('it-IT')}.`+(a.stato!=='ok'?` <span class="ko">Lettura non riuscita (${esc(a.stato)}).</span>`:'');
+}).catch(()=>{$('tunnel').textContent='Dati non disponibili al momento.'});
+</script>
+</body>
+</html>
