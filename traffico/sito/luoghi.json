@@ -4224,5 +4224,88 @@ false
 "VAR": [
 43.4233688,
 11.9715497
-]
+],
+"Via Appia Nuova": [
+41.7491279,
+12.6360202
+],
+"v2|Via Appia Pignatelli|12.3,42.1,13.0,41.4": [
+41.8474558,
+12.5344386,
+false
+],
+"v2|Via di Casal Rotondo|12.3,42.1,13.0,41.4": [
+41.8236498,
+12.5614352,
+false
+],
+"GRA": [
+41.8856873,
+12.3839852
+],
+"Raccordo Sistiana": [
+45.7595746,
+13.6701924
+],
+"v2|Opicina-Fernetti|13.3,46.1,14.1,45.3": [
+45.6967587,
+13.8055652,
+true
+],
+"v2|Gallarate-Gattico|8.1,46.3,9.3,44.1": [
+45.6855609,
+8.7872799,
+false
+],
+"Bis Centrale Sicula": null,
+"v2|Misericordia - SS121 Catanese": [
+37.5800184,
+14.2805954,
+false
+],
+"v2|Enna - SS192 Della Valle Del Dittaino": [
+37.5644419,
+14.4624523,
+false
+],
+"v2|Usmate-Velate Nord: Merate-Lecco Tangenziale Est Di Milano|9.0,45.9,9.7,45.2": null,
+"v2|Urbania|12.7,44.2,13.4,43.5": [
+43.9090577,
+12.895191,
+false
+],
+"Via Marmorata": [
+41.8788269,
+12.4791318
+],
+"v2|Via Giovanni Branca|12.1,42.2,12.8,41.5": [
+41.8792111,
+12.4733327,
+false
+],
+"v2|Via Galvani|12.1,42.2,12.8,41.5": [
+41.8785952,
+12.4788509,
+false
+],
+"Via Galvani": [
+41.8785952,
+12.4788509
+],
+"v2|Catenanuova A19 Palermo-Catania|14.1,37.9,14.8,37.2": [
+37.5599703,
+14.6843807,
+true
+],
+"v2|Via di Torrenova|12.3,41.8,13.0,41.1": null,
+"Via di Torrenova": [
+41.8823318,
+12.6176687
+],
+"v2|Baunei|9.3,40.4,10.0,39.7": [
+40.0323613,
+9.6634049,
+false
+],
+"v2|Passo Genna Arramene|9.3,40.4,10.0,39.7": null
 }
