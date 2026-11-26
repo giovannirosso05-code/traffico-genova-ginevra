@@ -4125,5 +4125,69 @@ false
 41.9353525,
 12.422849,
 false
+],
+"v2|Ramo Casalecchio|8.8,45.8,11.7,44.1": [
+44.5106595,
+11.2761027,
+false
+],
+"Raccordo Chieti": [
+42.3837218,
+14.1515035
+],
+"v2|Zona Industriale Di Pescara|13.6,42.7,14.5,42.0": [
+42.2317734,
+13.9209313,
+false
+],
+"v2|Modena - SS255 Di S.Matteo Decima|12.1,42.3,12.8,41.6": null,
+"v2|Catania Sud-Allacciamento A19 Palermo-Catania|14.7,37.8,15.4,37.1": null,
+"v2|Masseria - Sgc Nola-Domitio - SS162 Dir|14.3,41.4,15.0,40.7": null,
+"v2|Italia 90 Comune Di Napoli|13.9,41.2,14.6,40.5": null,
+"Via Prenestina": [
+41.8215076,
+12.9261226
+],
+"v2|Via dell Acqua Vergine|12.6,42.2,13.3,41.5": [
+41.9004654,
+12.6246067,
+false
+],
+"Via dell Acqua Vergine": [
+41.9004654,
+12.6246067
+],
+"v2|7 Bis Per Ferrara|11.1,44.8,11.8,44.1": [
+44.794613,
+11.560734,
+false
+],
+"v2|8 Fiera-Via Michelino|11.1,44.8,11.8,44.1": null,
+"Roma Nord": [
+42.1569522,
+12.6152515
+],
+"v2|Via Andrea Millevoi|12.3,41.8,13.0,41.1": [
+41.7771877,
+12.5505062,
+false
+],
+"Via Laurentina": [
+41.8022918,
+12.481661
+],
+"v2|Via Celine|12.1,42.2,12.8,41.5": [
+41.8092818,
+12.4840586,
+false
+],
+"v2|Via di Vallerano|12.1,42.2,12.8,41.5": [
+41.7841676,
+12.4684835,
+false
+],
+"Via di Vallerano": [
+41.7858273,
+12.4769997
 ]
 }

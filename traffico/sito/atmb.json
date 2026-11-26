@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-26T16:49+00:00",
+ "aggiornato": "2026-11-26T17:05+00:00",
  "fonte": "ATMB e APRR (siti ufficiali)",
  "stato": "ok",
  "tunnel": "Traffico scorrevole",
@@ -85,18 +85,6 @@
    "lon": 5.9146362
   },
   {
-   "titolo": "A65 · Landes · percorso PAU<>BORDEAUX dal 14/09 ore 7:00 al 26/11 ore 19:00",
-   "testo": "",
-   "tipo": "lavori",
-   "url": "https://voyage.aprr.fr/a65-landes-itineraires-paubordeaux-du-1409-7h-au-2611-19h-0",
-   "gestore": "APRR",
-   "approx": true,
-   "lat": 43.2957547,
-   "lon": -0.3685668,
-   "lat2": 44.841225,
-   "lon2": -0.5800364
-  },
-  {
    "titolo": "A65 · Landes · percorso PAU<>BORDEAUX dal 23/11 ore 19:00 al 26/11 ore 19:00",
    "testo": "",
    "tipo": "lavori",
@@ -164,5 +152,5 @@
    "lon": 5.1022372
   }
  ],
- "aprr": "ok (18 lavori)"
+ "aprr": "ok (17 lavori)"
 }
