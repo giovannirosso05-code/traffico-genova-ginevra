@@ -4713,5 +4713,36 @@ false
 false
 ],
 "Allacciamento Verona": null,
-"v2|Marcallo inizio Mesero|7.3,45.8,9.5,44.7": null
+"v2|Marcallo inizio Mesero|7.3,45.8,9.5,44.7": null,
+"v2|3 Allacciamento Ramo Verde-Via Emilia|11.1,44.8,11.8,44.1": null,
+"Incrocio Bari": [
+41.0589513,
+16.8827901
+],
+"v2|Ponte S.Giovanni-SS3 Bis-Raccordo Orte-Ra|11.4,43.6,12.8,42.8": null,
+"v2|Perugia Staz.-San Faustino|11.4,43.6,12.8,42.8": null,
+"v2|S.S.16 Adriatica|11.8,44.8,12.5,44.1": [
+44.5960601,
+11.8743483,
+false
+],
+"da Lainate": [
+45.5725037,
+9.0204531
+],
+"v2|S. Giorgio Canavese|6.6,46.2,8.0,44.7": [
+45.334155,
+7.796819,
+false
+],
+"v2|Casoria:strada Provinciale 1": [
+40.9035454,
+14.314573,
+false
+],
+"v2|Asse Supporto|12.1,42.2,14.6,40.5": [
+40.953738,
+14.4888929,
+false
+]
 }
