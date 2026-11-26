@@ -4744,5 +4744,67 @@ false
 40.953738,
 14.4888929,
 false
+],
+"v2|Galleria Inzio Traforo - versante Italiano": null,
+"v2|Galleria Inzio Traforo - versante Francese": null,
+"Centrale Umbra": [
+43.0586974,
+12.555265
+],
+"v2|Bastia Centro/Torgiano/Loc. S.Lucia|12.2,43.4,12.9,42.7": null,
+"v2|S.Maria Degli Angeli|12.2,43.4,12.9,42.7": [
+43.0579901,
+12.5776896,
+false
+],
+"SS3 Flaminia": [
+42.5303871,
+12.5471995
+],
+"v2|Firenze-Peretola|10.3,44.1,11.6,43.1": [
+43.7973619,
+11.1966117,
+false
+],
+"v2|S.Giovanni Galermo|14.7,37.8,15.4,37.1": [
+37.551853,
+15.050426,
+false
+],
+"v2|Catania Centro-S.Gregorio-A18 Diramazione|14.7,37.8,15.4,37.1": null,
+"A18 Diramazione": [
+41.1641518,
+15.296459
+],
+"Transpolesana": [
+45.3842631,
+11.0294545
+],
+"v2|Fratta Polesine E Pincara|10.7,45.7,11.4,45.0": null,
+"v2|Corne|10.7,45.7,11.4,45.0": [
+45.4993478,
+10.7845474,
+false
+],
+"Pedemontana Lombarda": [
+45.6354385,
+9.3664594
+],
+"v2|Rotatoria Lazzate|9.0,46.0,9.7,45.3": null,
+"v2|9 San Donato|11.1,44.8,11.8,44.1": [
+44.4920228,
+11.3737911,
+false
+],
+"v2|10 Zona Industriale Roveri|11.1,44.8,11.8,44.1": null,
+"v2|Cogno|10.9,46.8,11.6,46.1": [
+46.0925441,
+11.4296394,
+false
+],
+"v2|Castel S.Giovanni|7.3,46.1,10.8,44.7": [
+45.0590671,
+9.4341783,
+false
 ]
 }
