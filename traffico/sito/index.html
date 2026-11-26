@@ -97,9 +97,11 @@ details[open]{padding-bottom:12px}
   <div class="mapwrap">
     <div id="map"></div>
     <div class="legend">
-      <div><span class="dot" style="background:var(--bad)"></span>Chiusura o incidente</div>
-      <div><span class="dot" style="background:var(--warn)"></span>Lavori, code, meteo</div>
-      <div><span class="dot" style="background:#8a948d"></span>Altro</div>
+      <div><span class="dot" style="background:#d61f1f"></span>Chiusura</div>
+      <div><span class="dot" style="background:#111111"></span>Incidente</div>
+      <div><span class="dot" style="background:#f5b400"></span>Lavori</div>
+      <div><span class="dot" style="background:#8b3fd1"></span>Code</div>
+      <div><span class="dot" style="background:#0f9d8a"></span>Neve, ghiaccio, nebbia</div>
     </div>
     <button class="locbtn" type="button" id="loc">📍 Dove sono</button>
   </div>
@@ -155,7 +157,9 @@ const carrTxt=e=>{const c=carr(e);return c?c:(e.tipo==='lavori'?'non indicato da
 // mostro solo ciò che rallenta o blocca: niente avvisi generici né veicoli in avaria
 const utile=e=>e.tipo!=='altro'&&!/avaria|veicolo fermo|en panne|panne/i.test(e.testo||'');
 const grave=e=>e.tipo==='chiusura'||e.tipo==='incidente';
-const col=e=>grave(e)?css('--bad'):e.tipo==='altro'?'#8a948d':css('--warn');
+// un colore ben distinto per ogni tipo (il blu è riservato al percorso)
+const COLORI={chiusura:'#d61f1f',incidente:'#111111',lavori:'#f5b400',code:'#8b3fd1',meteo:'#0f9d8a'};
+const col=e=>COLORI[e.tipo]||'#8a948d';
 function fase(e){
  // stessa lettura degli orari usata da "Quando partire", così le due parti non si contraddicono
  const w=finestra(e);if(!w||!w[0])return'in corso';
