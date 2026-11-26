@@ -4079,5 +4079,51 @@ true
 ],
 "v2|Rochefort|7.3,46.3,8.0,45.6": null,
 "v2|Casello Morgex A5 Torino-Courmayeur|7.3,46.3,8.0,45.6": null,
-"v2|Villeneuve|7.3,46.3,8.0,45.6": null
+"v2|Villeneuve|7.3,46.3,8.0,45.6": null,
+"v2|Pontedera Ovest-Ponsacco|10.1,44.0,10.8,43.3": null,
+"Allacciamento Interconnessione Tangenziale": null,
+"Padova Sud": [
+45.3447133,
+11.8481243
+],
+"autostrada Bologna Padova": [
+44.5337835,
+11.3623
+],
+"v2|Predosa-Bettole|8.1,46.3,9.3,44.1": [
+44.7632379,
+8.647828,
+true
+],
+"v2|Ravenna - S.Vitale|11.8,44.8,12.5,44.1": [
+44.4176734,
+12.1992379,
+false
+],
+"v2|Fiorenza-Allacciamento A4 (milano V.Le Certosa)|8.4,46.2,9.5,45.1": null,
+"v2|Baggio-Cusago: Via Zurigo-Zona Ind|8.7,45.9,9.4,45.2": null,
+"Viadotto della Magliana": [
+41.8420858,
+12.4715633
+],
+"v2|Viale Isacco Newton|12.1,42.2,12.8,41.5": [
+41.8394304,
+12.44785,
+false
+],
+"Tangenziale Di Bologna": [
+44.4839326,
+11.4117231
+],
+"v2|2 Bologna Centro-Bo Borgo Panigale|11.1,44.8,11.8,44.1": null,
+"v2|1 Bologna Casalecchio|11.1,44.8,11.8,44.1": [
+44.4883922,
+11.2946119,
+false
+],
+"v2|Pieve Ligure|11.9,42.3,12.6,41.6": [
+41.9353525,
+12.422849,
+false
+]
 }
