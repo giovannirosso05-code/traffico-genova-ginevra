@@ -4923,5 +4923,29 @@ true
 41.2408142,
 13.7784668
 ],
-"v2|Ponte Sul Garigliano - SS7 - SS7 Quater|13.4,41.6,14.1,40.9": null
+"v2|Ponte Sul Garigliano - SS7 - SS7 Quater|13.4,41.6,14.1,40.9": null,
+"v2|Limone": [
+45.5745375,
+10.4550721,
+false
+],
+"v2|Fanghetto/Confine Con La Francia": null,
+"v2|32: Via Della Pisana|11.6,45.9,14.2,42.6": [
+43.3351319,
+12.9068729,
+false
+],
+"v2|3: SS2 Via Cassia|11.6,45.9,14.2,42.6": [
+42.6502801,
+11.9666253,
+false
+],
+"v2|Montesilvano Marina|11.7,45.4,12.4,44.7": null,
+"v2|Scerne Di Pineto|11.7,45.4,12.4,44.7": null,
+"v2|Vallecrosia|11.9,42.3,12.6,41.6": null,
+"v2|Pozzuoli Arco Felice - Cuma|13.9,41.2,14.6,40.5": [
+40.8414458,
+14.0932335,
+true
+]
 }

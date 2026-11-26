@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-26T21:49+00:00",
+ "aggiornato": "2026-11-26T22:05+00:00",
  "fonte": "ATMB e APRR (siti ufficiali)",
  "stato": "ok",
  "tunnel": "Traffico scorrevole",
@@ -85,30 +85,6 @@
    "lon": 5.9146362
   },
   {
-   "titolo": "A65 · Landes · percorso PAU<>BORDEAUX dal 23/11 ore 19:00 al 26/11 ore 19:00",
-   "testo": "",
-   "tipo": "lavori",
-   "url": "https://voyage.aprr.fr/a65-landes-itineraires-paubordeaux-du-lundi-2311-19h-au-jeudi-2611-19h",
-   "gestore": "APRR",
-   "approx": true,
-   "lat": 43.2957547,
-   "lon": -0.3685668,
-   "lat2": 44.841225,
-   "lon2": -0.5800364
-  },
-  {
-   "titolo": "A65 · Landes · percorso PAU<>BORDEAUX dal 14/09 ore 7:00 al 26/11 ore 19:00",
-   "testo": "",
-   "tipo": "lavori",
-   "url": "https://voyage.aprr.fr/a65-landes-itineraires-paubordeaux-du-1409-7h-au-2611-19h",
-   "gestore": "APRR",
-   "approx": true,
-   "lat": 43.2957547,
-   "lon": -0.3685668,
-   "lat2": 44.841225,
-   "lon2": -0.5800364
-  },
-  {
    "titolo": "RN159 · chiusura del galleria Maurice Lemaire · i notte del 2 e 3 dicembre dalle 21:00 alle 5:00",
    "testo": "",
    "tipo": "chiusura",
@@ -152,5 +128,5 @@
    "lon": 5.1022372
   }
  ],
- "aprr": "ok (17 lavori)"
+ "aprr": "ok (11 lavori)"
 }
