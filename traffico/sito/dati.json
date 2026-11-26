@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-26T17:50+00:00",
+ "aggiornato": "2026-11-26T17:53+00:00",
  "fonte": "CCISS, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -7,6 +7,96 @@
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "dca357a487fb9cc2",
+   "strada": "SS3 Via Flaminia",
+   "testo": "tratto chiuso causa lavori tra 4,428 km dopo Incrocio Pontericcioli - SS452 Della Contessa e 4,564 km prima di Incrocio Cagli in direzione Incrocio Fano - SS16 Adriatica",
+   "tipo": "chiusura",
+   "quando": "2026-11-26T17:51:00Z",
+   "lat2": 43.55242,
+   "lon2": 12.64354,
+   "a": "Cagli",
+   "dirlat": 42.262098,
+   "dirlon": 14.5002315,
+   "dir": "SS16 Adriatica"
+  },
+  {
+   "id": "1d519c27f6487469",
+   "strada": "A1 Milano-Bologna",
+   "testo": "veicoli scortati per maltempo dalle 18:45 del 26 novembre 2026 tra Svincolo Reggio Emilia e Svincolo Modena Nord in direzione Bologna",
+   "tipo": "altro",
+   "quando": "2026-11-26T17:50:00Z",
+   "lat": 44.72938,
+   "lon": 10.62759,
+   "da": "Reggio Emilia",
+   "lat2": 44.65823,
+   "lon2": 10.86015,
+   "a": "Modena Nord",
+   "km": 24.0,
+   "dirlat": 44.4938203,
+   "dirlon": 11.3426327,
+   "dir": "Bologna"
+  },
+  {
+   "id": "e374b6e20e411897",
+   "strada": "A30 Caserta-Salerno",
+   "testo": "personale su strada causa lavori dalle 18:48 alle 19:33 del 26 novembre 2026 tra Allacciamento A16 Napoli-Canosa e Svincolo Palma Campania in direzione Salerno",
+   "tipo": "lavori",
+   "quando": "2026-11-26T17:49:00Z",
+   "lat2": 40.8455,
+   "lon2": 14.54639,
+   "a": "Palma Campania",
+   "dirlat": 40.4194416,
+   "dirlon": 15.3106085,
+   "dir": "Salerno"
+  },
+  {
+   "id": "95ea5ba1640c00d5",
+   "strada": "A30 Caserta-Salerno",
+   "testo": "personale su strada causa lavori dalle 18:47 alle 19:32 del 26 novembre 2026 tra Svincolo Sarno e Allacciamento A16 Napoli-Canosa in direzione Caserta",
+   "tipo": "lavori",
+   "quando": "2026-11-26T17:49:00Z",
+   "lat": 40.80951,
+   "lon": 14.59563,
+   "da": "Sarno",
+   "dirlat": 41.2035193,
+   "dirlon": 14.1168624,
+   "dir": "Caserta"
+  },
+  {
+   "id": "ef121c4ee1aad15b",
+   "strada": "A4 Brescia-Padova",
+   "testo": "code per 2 km causa veicolo in avaria tra Svincolo Brescia Est e Svincolo Desenzano in direzione Padova",
+   "tipo": "code",
+   "quando": "2026-11-26T17:49:00Z",
+   "lat": 45.48084,
+   "lon": 10.329,
+   "da": "Brescia Est",
+   "lat2": 45.44951,
+   "lon2": 10.52225,
+   "a": "Desenzano",
+   "km": 18.6,
+   "dirlat": 45.391408,
+   "dirlon": 11.8058487,
+   "dir": "Padova"
+  },
+  {
+   "id": "9691eef3348ab797",
+   "strada": "A4 Brescia-Padova",
+   "testo": "veicolo in avaria tra Svincolo Brescia Est e Svincolo Desenzano in direzione Padova",
+   "tipo": "altro",
+   "quando": "2026-11-26T17:48:00Z",
+   "lat": 45.48084,
+   "lon": 10.329,
+   "da": "Brescia Est",
+   "lat2": 45.44951,
+   "lon2": 10.52225,
+   "a": "Desenzano",
+   "km": 18.6,
+   "dirlat": 45.391408,
+   "dirlon": 11.8058487,
+   "dir": "Padova"
+  },
   {
    "id": "6b113209befb0468",
    "strada": "A1 Milano-Bologna",
@@ -56,23 +146,6 @@
    "dirlat": 42.7902379,
    "dirlon": 10.3402239,
    "dir": "Livorno"
-  },
-  {
-   "id": "accfe1432937a22b",
-   "strada": "A1 Milano-Bologna",
-   "testo": "veicoli scortati per maltempo causa veicolo fermo o in avaria dalle 18:45 del 26 novembre 2026 tra Svincolo Reggio Emilia e Svincolo Modena Nord in direzione Bologna",
-   "tipo": "altro",
-   "quando": "2026-11-26T17:46:00Z",
-   "lat": 44.72938,
-   "lon": 10.62759,
-   "da": "Reggio Emilia",
-   "lat2": 44.65823,
-   "lon2": 10.86015,
-   "a": "Modena Nord",
-   "km": 24.0,
-   "dirlat": 44.4938203,
-   "dirlon": 11.3426327,
-   "dir": "Bologna"
   },
   {
    "id": "66678049e2da9f1b",
@@ -359,19 +432,6 @@
    "dirlat": 41.8823318,
    "dirlon": 12.6176687,
    "dir": "Via di Torrenova"
-  },
-  {
-   "id": "8c408d79ff022bcb",
-   "strada": "S03 Strada Grande Comunicazione Fi-Pi-Li (diramazione per Pisa)",
-   "testo": "code causa viabilità esterna non riceve dalle 18:35 del 26 novembre 2026 a Svincolo Cascina in direzione da Pisa",
-   "tipo": "code",
-   "quando": "2026-11-26T17:37:00Z",
-   "lat": 43.66684,
-   "lon": 10.52943,
-   "da": "Cascina",
-   "dirlat": 41.8774661,
-   "dirlon": 12.537525,
-   "dir": "da Pisa"
   },
   {
    "id": "141d0ce235a7dc42",
@@ -724,19 +784,6 @@
    "dir": "Livorno"
   },
   {
-   "id": "b850528d562b7945",
-   "strada": "A1 Milano-Bologna",
-   "testo": "veicolo fermo o in avaria dalle 18:20 del 26 novembre 2026 tra Allacciamento A22 Modena-Brennero e Svincolo Modena Nord in direzione Bologna",
-   "tipo": "altro",
-   "quando": "2026-11-26T17:22:00Z",
-   "lat2": 44.65823,
-   "lon2": 10.86015,
-   "a": "Modena Nord",
-   "dirlat": 44.4938203,
-   "dirlon": 11.3426327,
-   "dir": "Bologna"
-  },
-  {
    "id": "60f092927c02b8b8",
    "strada": "A14 Bologna-Ancona",
    "testo": "pioggia dalle 18:18 del 26 novembre 2026 tra Allacciamento Fano - Raccordo Per Fossombrone e Svincolo Marotta-Mondolfo",
@@ -813,13 +860,6 @@
    "quando": "2026-11-26T17:18:00Z"
   },
   {
-   "id": "a79a3b63bfab4b83",
-   "strada": "SS5 Via Tiburtina Valeria",
-   "testo": "senso unico alternato causa incidente a Incrocio Staz. Villa S.Sebastiano - SS579 Palentina in direzione Incrocio Viale Regina Margherita",
-   "tipo": "incidente",
-   "quando": "2026-11-26T17:18:00Z"
-  },
-  {
    "id": "688353da5f7cd4b9",
    "strada": "A35 VAR",
    "testo": "chiusura notturna, tratto chiuso causa lavori dalle 22:00 del 26 alle 05:00 del 27 novembre 2026 tra Melzo e A58 in direzione A58",
@@ -885,16 +925,6 @@
    "dir": "Genova"
   },
   {
-   "id": "e4fb8894941ed797",
-   "strada": "A14 Bologna-Ancona",
-   "testo": "code causa traffico intenso dalle 18:11 del 26 novembre 2026 a Svincolo Forli",
-   "tipo": "code",
-   "quando": "2026-11-26T17:12:00Z",
-   "lat": 44.2508,
-   "lon": 12.09554,
-   "da": "Forli"
-  },
-  {
    "id": "4698d73a13f5efe9",
    "strada": "SS16 Adriatica",
    "testo": "incidente a Incrocio Molfetta Sud in direzione Incrocio Padova",
@@ -947,19 +977,6 @@
    "dirlat": 45.4641943,
    "dirlon": 9.1896346,
    "dir": "Milano"
-  },
-  {
-   "id": "28963422c0fbba13",
-   "strada": "A1 Bologna-Firenze",
-   "testo": "incidente dalle 18:07 del 26 novembre 2026 tra Svincolo Firenze Scandicci e Allacciamento A11 Firenze-Pisa Nord in direzione Bologna",
-   "tipo": "incidente",
-   "quando": "2026-11-26T17:10:00Z",
-   "lat": 43.77747,
-   "lon": 11.16126,
-   "da": "Firenze Scandicci",
-   "dirlat": 44.4938203,
-   "dirlon": 11.3426327,
-   "dir": "Bologna"
   },
   {
    "id": "7445fad6312681ed",
@@ -1107,20 +1124,6 @@
    "dirlat": 44.297035,
    "dirlon": 8.4287456,
    "dir": "A6 To Sv"
-  },
-  {
-   "id": "4c96a8426d5cf2a8",
-   "strada": "A14 Bologna-Ancona",
-   "testo": "traffico rallentato causa traffico intenso dalle 18:01 del 26 novembre 2026 tra Allacciamento Ramo Casalecchio e Allacciamento A13 Bologna-Padova in direzione Ancona",
-   "tipo": "code",
-   "quando": "2026-11-26T17:03:00Z",
-   "lat": 44.5106595,
-   "lon": 11.2761027,
-   "da": "Ramo Casalecchio",
-   "indicativo": true,
-   "dirlat": 43.4801189,
-   "dirlon": 13.2187279,
-   "dir": "Ancona"
   },
   {
    "id": "afa6df170881b056",
@@ -1341,18 +1344,11 @@
    "km": 3.4
   },
   {
-   "id": "e4b3eb0aa8797265",
-   "strada": "TG-BO Tangenziale Di Bologna",
-   "testo": "code causa traffico intenso dalle 17:35 del 26 novembre 2026 tra Svincolo 2 Bologna Centro-Bo Borgo Panigale e Svincolo 1 Bologna Casalecchio in direzione autostrada Milano-Napoli",
-   "tipo": "code",
-   "quando": "2026-11-26T16:36:00Z",
-   "lat2": 44.4883922,
-   "lon2": 11.2946119,
-   "a": "1 Bologna Casalecchio",
-   "indicativo": true,
-   "dirlat": 40.8358846,
-   "dirlon": 14.2487679,
-   "dir": "Napoli"
+   "id": "55137464adfc5c99",
+   "strada": "Roma Piazza Augusto Lorenzini",
+   "testo": "incidente traffico rallentato a Viale Prospero Colonna",
+   "tipo": "incidente",
+   "quando": "2026-11-26T16:35:00Z"
   },
   {
    "id": "46b44ecf30b44f2a",
@@ -1360,6 +1356,19 @@
    "testo": "incidente traffico rallentato a Via del Casale delle Pantanelle",
    "tipo": "incidente",
    "quando": "2026-11-26T16:35:00Z"
+  },
+  {
+   "id": "c1a8fd88c2d848ea",
+   "strada": "A4 Milano-Brescia",
+   "testo": "code causa traffico intenso dalle 17:33 del 26 novembre 2026 a Svincolo Capriate in direzione da Milano",
+   "tipo": "code",
+   "quando": "2026-11-26T16:34:00Z",
+   "lat": 45.61165,
+   "lon": 9.54821,
+   "da": "Capriate",
+   "dirlat": 45.4641669,
+   "dirlon": 9.1916121,
+   "dir": "da Milano"
   },
   {
    "id": "1dccf2d487b894d9",
