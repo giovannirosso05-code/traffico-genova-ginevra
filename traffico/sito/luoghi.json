@@ -3927,5 +3927,91 @@ false
 45.1601789,
 8.5924532
 ],
-"v2|Cerniago|8.2,45.5,8.9,44.8": null
+"v2|Cerniago|8.2,45.5,8.9,44.8": null,
+"v2|Licciana Nardi|10.0,46.0,10.7,45.3": null,
+"v2|Dragoni - SS158 Della Valle Del Volturno|14.4,41.5,15.1,40.8": null,
+"Vela": [
+46.0822099,
+11.1020056
+],
+"SP84": [
+44.9303907,
+8.7275918
+],
+"Berlonga": [
+46.0072464,
+10.9851268
+],
+"v2|Sardagna|8.4,46.4,11.5,44.6": [
+46.0631331,
+11.096654,
+false
+],
+"v2|SP85dir-Candriai|8.4,46.4,11.5,44.6": null,
+"v2|Rovigo Sud - Villa Marzana|11.0,45.7,12.2,44.1": null,
+"v2|Monza-S.Alessandro|8.9,45.9,9.6,45.2": [
+45.5895331,
+9.268338,
+false
+],
+"Della Val Vigezzo": [
+46.1322774,
+8.4807608
+],
+"v2|Pianezza-Collegno - SS24 Del Monginevro|7.3,45.5,8.0,44.8": null,
+"Di Valle Antigorio E Val Formazza": [
+46.4591211,
+8.4520921
+],
+"v2|Crevoladossola - SS33 Del Sempione|8.1,46.8,8.8,46.1": [
+46.15065,
+8.3121228,
+true
+],
+"Appula Fortorina": [
+41.4814946,
+15.0434392
+],
+"v2|Volturara Appula - SS17 Dell app. Abb|14.7,41.8,15.4,41.1": null,
+"v2|S.Marco Dei Cavoti|14.7,41.8,15.4,41.1": [
+41.3106067,
+14.8789437,
+false
+],
+"v2|Campiello di Levico|8.9,45.9,9.6,45.2": null,
+"v2|Galleria Tenna|8.9,45.9,9.6,45.2": null,
+"NSA27": [
+42.7419786,
+12.8255344
+],
+"Delle Tre Valli Umbre": [
+42.7542031,
+12.7130105
+],
+"v2|Piedipaterno - SS395|12.4,43.1,13.2,42.4": [
+42.7679828,
+12.8614022,
+false
+],
+"v2|Tangenziale Nord Milano|9.0,45.9,9.7,45.2": [
+45.5608521,
+9.175548,
+true
+],
+"Svincolo Lecco": [
+45.8494152,
+9.4155496
+],
+"v2|Tenna|8.9,45.9,9.6,45.2": null,
+"v2|San Cristoforo al Lago - SP1|8.9,45.9,9.6,45.2": null,
+"v2|Stroppiana-Santhia|8.1,46.3,9.3,44.1": [
+45.2544918,
+8.443617,
+false
+],
+"Della Cisa": [
+45.9686186,
+10.996214
+],
+"v2|Passo Della Cisa|10.6,46.3,11.3,45.6": null
 }
