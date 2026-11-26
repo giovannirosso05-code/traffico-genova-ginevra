@@ -24,12 +24,14 @@ jobs:
           GEOCODE=1 python3 traffico/aggiorna.py > /tmp/dati.json && mv /tmp/dati.json traffico/sito/dati.json
           python3 traffico/storico.py || true
           python3 traffico/atmb.py || true
+          python3 traffico/velox.py || true
       - name: Salva dati
         run: |
           git config user.name "aggiornamento-traffico"
           git config user.email "actions@users.noreply.github.com"
           git add traffico/sito/*.json
           [ -f traffico/svincoli.json ] && git add traffico/svincoli.json
+          [ -f traffico/sito/velox.json ] && git add traffico/sito/velox.json
           git diff --cached --quiet && exit 0
           git commit -m "Dati traffico $(date -u +%FT%H:%M)"
           for i in 1 2 3; do git pull --rebase -X theirs origin main && git push && exit 0; sleep 5; done

@@ -107,6 +107,7 @@ details[open]{padding-bottom:12px}
       <div><span class="dot" style="background:#f5b400"></span>Lavori</div>
       <div><span class="dot" style="background:#8b3fd1"></span>Code</div>
       <div><span class="dot" style="background:#0f9d8a"></span>Neve, ghiaccio, nebbia</div>
+      <label style="display:flex;gap:4px;align-items:center;cursor:pointer"><input type="checkbox" id="vxon" checked style="width:auto;margin:0"><span class="dot" style="background:#1e40af;width:8px;height:8px"></span>Autovelox fissi</label>
     </div>
     <button class="locbtn" type="button" id="loc">📍 Dove sono</button>
   </div>
@@ -114,6 +115,7 @@ details[open]{padding-bottom:12px}
   <div class="card" id="res" hidden>
     <div id="status"></div>
     <div class="routes" id="routes"></div>
+    <div class="muted" id="vxn"></div>
   </div>
 
 
@@ -198,6 +200,23 @@ const map=L.map('map').setView([45.6,8],6);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
 const lyrRoutes=L.layerGroup().addTo(map),lyrEv=L.layerGroup().addTo(map),lyrPins=L.layerGroup().addTo(map);
 const MK={};
+// autovelox fissi (OpenStreetMap): puntini blu piccoli, solo lungo il percorso o quando sei abbastanza vicino
+const lyrVx=L.layerGroup().addTo(map);let VX=[];
+fetch('velox.json?'+Math.floor(Date.now()/864e5)).then(r=>r.json()).then(v=>{VX=v;mostraVelox()}).catch(()=>{});
+function vxMarker(v){return L.circleMarker([v[0],v[1]],{radius:4,color:'#fff',weight:1.5,fillColor:'#1e40af',fillOpacity:1}).bindTooltip('Autovelox fisso'+(v[2]?' · limite '+v[2]+' km/h':''))}
+function mostraVelox(){
+ lyrVx.clearLayers();if(!VX.length||!$('vxon').checked)return;
+ const R=ROUTES[SEL];
+ if(R){
+  let a=90,b=-90,c=180,d=-180;R.line.forEach(([la,lo])=>{a=Math.min(a,la);b=Math.max(b,la);c=Math.min(c,lo);d=Math.max(d,lo)});
+  const vicini=VX.filter(v=>v[0]>a-.02&&v[0]<b+.02&&v[1]>c-.03&&v[1]<d+.03&&distKm([v[0],v[1]],R.line)<0.08);
+  vicini.forEach(v=>vxMarker(v).addTo(lyrVx));
+  const n=$('vxn');if(n)n.textContent=vicini.length?`${vicini.length} autovelox fissi sul percorso (puntini blu).`:'Nessun autovelox fisso noto sul percorso.';
+ }else if(map.getZoom()>=11){
+  const B=map.getBounds();VX.filter(v=>B.contains([v[0],v[1]])).slice(0,800).forEach(v=>vxMarker(v).addTo(lyrVx));
+ }
+}
+map.on('moveend',()=>{if(!ROUTES.length)mostraVelox()});
 function drawEvents(list,line){
  lyrEv.clearLayers();for(const k in MK)delete MK[k];
  list.filter(e=>typeof e.lat==='number').forEach(e=>{
@@ -301,7 +320,7 @@ function showRoutes(fit){
  ROUTES.forEach((R,i)=>{if(i!==SEL)L.polyline(R.line,{color:'#8a948d',weight:5,opacity:.7}).on('click',()=>{SEL=i;showRoutes()}).addTo(lyrRoutes)});
  const R=ROUTES[SEL];
  L.polyline(R.line,{color:css('--route'),weight:7,opacity:.9}).addTo(lyrRoutes);
- drawEvents(R.ev,R.line);
+ drawEvents(R.ev,R.line);mostraVelox();
  if(fit)map.fitBounds(R.line,{padding:[30,30]});
  const now=R.ev.filter(e=>grave(e)&&/^(in corso|attivo)/.test(fase(e))).length,prog=R.ev.filter(e=>grave(e)&&/^(programmato|inizia)/.test(fase(e))).length,alt=R.ev.length-now-prog;
  $('status').innerHTML=(now?`<b class="ko">⛔ ${now} chiusure o incidenti ${PARTENZA?'alla tua partenza':'adesso'}</b>`:prog?`<b class="mid">Aperto, ma ${prog} chiusure ${PARTENZA?'che iniziano durante il viaggio':'programmate'}</b>`:`<b class="ok">Nessuna chiusura</b>`)+' sul percorso scelto'+(alt>0?` · ${alt} tra lavori, code e meteo`:'')+(R.opp?`<div class="muted">Esclusi ${R.opp} avvisi sulla carreggiata opposta.</div>`:'');
@@ -423,6 +442,7 @@ function leggiQuando(){
  else{drawEvents(live);listEvents(live,PARTENZA?'Problemi previsti alla tua partenza':'Tutti i problemi segnalati')}
 }
 $('quando').onchange=leggiQuando;
+$('vxon').onchange=mostraVelox;
 $('adesso').onclick=()=>{$('quando').value='';leggiQuando()};
 {const d=new Date();$('day').value=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}$('day').onchange=when;when();
 
