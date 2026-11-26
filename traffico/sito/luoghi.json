@@ -4853,5 +4853,40 @@ false
 "Piazzale Corvetto": [
 45.4450954,
 9.2235656
-]
+],
+"v2|Variante Di Maglie Nord|11.7,45.4,12.4,44.7": null,
+"v2|Maglie - SS275 Di S.Maria Di Leuca|11.7,45.4,12.4,44.7": null,
+"Incrocio Acerra": null,
+"v2|C.A.M.M.: Monlue|9.0,45.9,9.7,45.2": [
+45.4494219,
+9.2587212,
+true
+],
+"v2|Paterno - SS284 Occidentale Etnea|14.5,37.2,15.2,36.5": null,
+"SS114 Orientale Sicula": [
+37.3578659,
+15.0819966
+],
+"v2|S.Teodoro - SS125 Orientale Sarda": [
+40.7691858,
+9.6543165,
+false
+],
+"Linate": [
+45.4442614,
+9.2755075
+],
+"v2|Limpiddu - SS125 Orientale Sarda": [
+40.6925582,
+9.7177459,
+false
+],
+"v2|29: Parco dei Medici|11.6,45.9,14.3,40.8": null,
+"v2|27: Via C.Colombo|11.6,45.9,14.3,40.8": [
+45.230345,
+11.7466767,
+false
+],
+"v2|Terminal 1 - Aeroporto Malpensa|8.4,46.2,9.5,45.1": null,
+"v2|Aosta Ovest-Aymavilles|6.6,46.2,8.0,44.7": null
 }
