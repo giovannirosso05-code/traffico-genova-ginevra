@@ -4639,5 +4639,46 @@ false
 44.4805687,
 11.4243695,
 true
-]
+],
+"v2|Predosa-Bettole|8.6,45.8,9.5,44.1": [
+44.7632379,
+8.647828,
+true
+],
+"v2|Serravalle Scrivia|8.6,45.8,9.5,44.1": [
+44.7255798,
+8.8547001,
+false
+],
+"v2|Tangenziale Nord Di Milano|8.8,46.1,10.8,45.1": [
+45.56706,
+9.2294133,
+false
+],
+"v2|Ugovizza-Tarvisio|13.0,46.9,13.9,45.6": [
+46.502968,
+13.4951477,
+false
+],
+"Del Verbano Orientale": [
+45.997147,
+7.927574
+],
+"v2|Mercallo|7.6,46.3,8.3,45.6": null,
+"v2|Travedona-Monate|7.6,46.3,8.3,45.6": null,
+"da Como": [
+38.2525372,
+15.7118677
+],
+"v2|S. Ninfa|12.2,38.5,13.7,37.3": [
+37.771342,
+12.877639,
+false
+],
+"v2|S.Piero In Bagno|11.9,44.5,12.6,43.8": [
+43.8576286,
+11.9769068,
+false
+],
+"v2|Viale Gabriele D Annunzio incrocio ZTL Via Gaetano Ronzoni|12.9,43.8,14.3,42.0": null
 }
