@@ -29,7 +29,7 @@ jobs:
           git add traffico/sito/*.json
           git diff --cached --quiet || (git commit -m "Dati traffico $(date -u +%FT%H:%M)" && git push)
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with: { path: traffico/sito }
       - uses: actions/deploy-pages@v4
       - name: Notifica chiusure (ntfy)
