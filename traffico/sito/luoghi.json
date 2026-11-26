@@ -4888,5 +4888,25 @@ false
 false
 ],
 "v2|Terminal 1 - Aeroporto Malpensa|8.4,46.2,9.5,45.1": null,
-"v2|Aosta Ovest-Aymavilles|6.6,46.2,8.0,44.7": null
+"v2|Aosta Ovest-Aymavilles|6.6,46.2,8.0,44.7": null,
+"v2|Bargagli|10.3,46.9,11.0,46.2": null,
+"Di Fornovo": [
+44.6938299,
+10.1018169
+],
+"v2|Felegara|9.8,45.0,10.5,44.3": [
+44.725112,
+10.112324,
+false
+],
+"v2|S.Salvo Est|14.4,42.4,15.1,41.7": [
+42.0477408,
+14.7425273,
+false
+],
+"v2|S.Salvo Marina - SS16 Adriatica|14.4,42.4,15.1,41.7": [
+42.0722175,
+14.7610009,
+false
+]
 }
