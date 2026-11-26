@@ -91,7 +91,13 @@ for nome, fn in [("Francia", estero.francia), ("Svizzera", estero.svizzera)]:
         else:
             out.extend(ev); fonti[nome] = f"ok ({len(ev)} eventi)"
     except Exception as ex:
-        fonti[nome] = f"errore: {type(ex).__name__}"
+        dett = ""
+        if hasattr(ex, "code"):
+            try: corpo = ex.read().decode("utf-8", "replace")
+            except Exception: corpo = ""
+            corpo = re.sub(r"<[^>]+>", " ", corpo)
+            dett = f" {ex.code} {re.sub(chr(92)+'s+', ' ', corpo)[:160].strip()}"
+        fonti[nome] = f"errore: {type(ex).__name__}{dett}"
         print(f"{nome}: {ex}", file=sys.stderr)
 if os.environ.get("GEOCODE") == "1":
     json.dump(luoghi, open(CACHE, "w"), ensure_ascii=False, indent=0)
