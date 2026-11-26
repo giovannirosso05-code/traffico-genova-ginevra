@@ -3847,5 +3847,85 @@ false
 46.000298,
 10.691971,
 false
-]
+],
+"v2|Ospedalone-San Francesco|11.9,44.5,12.6,43.8": null,
+"Incrocio Ravenna": null,
+"v2|Cervia - SS254 Di Cervia|11.7,45.4,12.4,44.7": null,
+"v2|Pinarella - SS71 Bis Umbro Casent. Rom|11.7,45.4,12.4,44.7": null,
+"v2|Valli Di Lanzo-Borgaro|7.3,45.5,8.0,44.8": [
+45.1551662,
+7.6550811,
+false
+],
+"v2|Interconnessione Tangenziale Sud|7.3,45.5,8.0,44.8": null,
+"Del Tonale E Della Mendola": [
+46.4155612,
+11.2124561
+],
+"v2|Bozzana|10.9,46.8,11.6,46.1": [
+46.3889075,
+10.9880798,
+false
+],
+"v2|Ponte Mostizzolo - SS43 Della Val Di Non|10.9,46.8,11.6,46.1": [
+46.39318,
+11.0132015,
+false
+],
+"Della Val Di Non": [
+46.3091924,
+11.0629593
+],
+"v2|Ponte Mostizzolo - SS42 Del Tonale|10.7,46.7,11.4,46.0": null,
+"v2|Dres - SP139|10.7,46.7,11.4,46.0": [
+46.3750495,
+11.0341923,
+false
+],
+"SS45bis": [
+45.4890956,
+10.2166228
+],
+"Vezzano": [
+46.0787914,
+10.9994069
+],
+"Dro": [
+45.9864208,
+10.9262986
+],
+"v2|SP84dir-Padergnone|9.9,46.4,11.3,45.1": [
+46.0601328,
+10.985688,
+false
+],
+"v2|Taio Sud|10.7,46.7,11.4,46.0": [
+46.3205899,
+11.0668144,
+false
+],
+"v2|SS ex SS43 per Sabino|10.7,46.7,11.4,46.0": null,
+"Della Valle Del Dittaino": [
+37.5644419,
+14.4624523
+],
+"v2|Scillato Sud|13.0,38.5,15.4,37.2": [
+37.8567237,
+13.9068535,
+false
+],
+"Dei Monti Martani": [
+42.9679509,
+12.6970288
+],
+"Gallaratese": [
+45.4957237,
+9.1149555
+],
+"v2|Casello Lago Varese A8 Mi-Va - SS431 Di Velate|8.8,45.8,9.5,45.1": null,
+"Della Lomellina": [
+45.1601789,
+8.5924532
+],
+"v2|Cerniago|8.2,45.5,8.9,44.8": null
 }
