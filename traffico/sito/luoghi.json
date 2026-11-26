@@ -4628,5 +4628,16 @@ false
 45.3848726,
 11.9305881,
 false
+],
+"v2|S.Giovanni-Zona Industriale|13.9,41.2,15.7,40.1": [
+40.8340915,
+14.3050915,
+false
+],
+"v2|7 Bologna Centro-V.Stalingrado|11.1,44.8,11.8,44.1": null,
+"v2|Bologna S.Lazzaro|11.1,44.8,11.8,44.1": [
+44.4805687,
+11.4243695,
+true
 ]
 }
