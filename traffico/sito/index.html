@@ -182,10 +182,14 @@ function popup(e){
 const map=L.map('map').setView([45.6,8],6);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
 const lyrRoutes=L.layerGroup().addTo(map),lyrEv=L.layerGroup().addTo(map),lyrPins=L.layerGroup().addTo(map);
-function drawEvents(list){
+function drawEvents(list,line){
  lyrEv.clearLayers();
  list.filter(e=>typeof e.lat==='number').forEach(e=>{
-  if(typeof e.lat2==='number'&&!e.approx)L.polyline([[e.lat,e.lon],[e.lat2,e.lon2]],{color:col(e),weight:5,opacity:.8,dashArray:'6 6'}).addTo(lyrEv);
+  // tratto interessato: lo coloro SOPRA il percorso, seguendo la strada (niente più linee dritte tra due svincoli)
+  if(line&&typeof e.lat2==='number'&&!e.approx&&distKm([e.lat,e.lon],line)<2&&distKm([e.lat2,e.lon2],line)<2){
+   let i=nearIdx([e.lat,e.lon],line),j=nearIdx([e.lat2,e.lon2],line);if(i>j)[i,j]=[j,i];
+   if(j>i)L.polyline(line.slice(i,j+1),{color:col(e),weight:9,opacity:.85}).bindPopup(popup(e),{maxWidth:290}).addTo(lyrEv);
+  }
   L.circleMarker([e.lat,e.lon],{radius:grave(e)?11:9,color:'#fff',weight:3,fillColor:col(e),fillOpacity:1})
    .bindPopup(popup(e),{maxWidth:290}).bindTooltip(e.tipo+' · '+e.strada).addTo(lyrEv);
  });
@@ -276,7 +280,7 @@ function showRoutes(fit){
  ROUTES.forEach((R,i)=>{if(i!==SEL)L.polyline(R.line,{color:'#8a948d',weight:5,opacity:.7}).on('click',()=>{SEL=i;showRoutes()}).addTo(lyrRoutes)});
  const R=ROUTES[SEL];
  L.polyline(R.line,{color:css('--route'),weight:7,opacity:.9}).addTo(lyrRoutes);
- drawEvents(R.ev);
+ drawEvents(R.ev,R.line);
  if(fit)map.fitBounds(R.line,{padding:[30,30]});
  const now=R.ev.filter(e=>grave(e)&&fase(e)==='in corso').length,prog=R.ev.filter(e=>grave(e)&&fase(e)==='programmato').length,alt=R.ev.length-now-prog;
  $('status').innerHTML=(now?`<b class="ko">⛔ ${now} chiusure o incidenti adesso</b>`:prog?`<b class="mid">Aperto, ma ${prog} chiusure programmate</b>`:`<b class="ok">Nessuna chiusura</b>`)+' sul percorso scelto'+(alt>0?` · ${alt} tra lavori, code e meteo`:'')+(R.opp?`<div class="muted">Esclusi ${R.opp} avvisi sulla carreggiata opposta.</div>`:'');
