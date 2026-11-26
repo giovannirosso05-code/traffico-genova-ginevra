@@ -4189,5 +4189,26 @@ false
 "Via di Vallerano": [
 41.7858273,
 12.4769997
+],
+"v2|Cadine|9.7,45.5,10.4,44.8": null,
+"v2|Controllo Merci AO / A5|6.6,46.2,8.0,44.7": null,
+"v2|San Miniato Basso|10.1,44.0,10.8,43.3": [
+43.6928368,
+10.8430038,
+false
+],
+"Per Moncalieri": [
+45.0132435,
+7.6845538
+],
+"v2|S.Paolo|7.3,45.4,8.0,44.7": [
+44.9518739,
+7.9725637,
+false
+],
+"v2|Torino-C.So Unita D italia-A6 To Sv|7.3,45.4,8.0,44.7": null,
+"A6 To Sv": [
+44.297035,
+8.4287456
 ]
 }
