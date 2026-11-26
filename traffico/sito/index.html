@@ -58,6 +58,7 @@ details[open]{padding-bottom:12px}
 .bar{border-radius:3px 3px 0 0}
 .axis{display:grid;grid-template-columns:repeat(24,1fr);gap:2px;font-size:.62rem;color:var(--muted);text-align:center}
 .best{font-size:1.05rem}
+.perche{margin:6px 0 0;padding-left:18px;font-size:.92rem;display:grid;gap:3px}
 .leaflet-popup-content{font:14px/1.45 var(--body);margin:12px 14px}
 .err{color:var(--bad);font-size:.9rem}
 .updbig{background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--sign);border-radius:10px;padding:10px 12px;font-size:1.05rem}
@@ -122,7 +123,7 @@ details[open]{padding-bottom:12px}
     <div class="best" id="best"></div>
     <div class="bars" id="bars" aria-label="Traffico atteso ora per ora"></div>
     <div class="axis" id="axis"></div>
-    <div class="muted">Stima basata sulle abitudini del traffico (ore di punta, esodi del venerdì e della domenica sera). Per il traffico previsto all'ora esatta apri Google Maps qui sotto e imposta l'orario di partenza.</div>
+    <div class="muted">Barre più alte = partenza peggiore. Conta: ore di punta tipiche del giorno, code e incidenti visti nei giorni passati nei punti del percorso dove saresti, chiusure programmate. Per il traffico previsto da Google apri Google Maps qui sotto e imposta l'orario.</div>
     <div class="links" id="links"></div>
   </div>
 
@@ -338,24 +339,62 @@ function finestra(e){
  if(f&&f<s)f.setDate(f.getDate()+1);
  return[s,f];
 }
+// ---- previsione: simulo il viaggio per ogni ora di partenza ----
+// Per ogni coda/incidente visto nei giorni passati sul tuo percorso calcolo a che ora ci passeresti
+// (dipende da dove si trova lungo il percorso) e se a quell'ora, di solito, c'era.
+let STORICO=null;
+async function caricaStorico(){try{const r=await fetch('storico_eventi.json?'+Math.floor(Date.now()/9e5));STORICO=Object.values(await r.json())}catch(e){STORICO=[]}}
+const PESO={code:1,incidente:1.3,chiusura:2};
+function storicoPercorso(R){
+ if(!STORICO||!R)return{lista:[],giorni:0};
+ let t0=Infinity,t1=0;
+ const lista=STORICO.filter(e=>onRoute(e,R.line)===true).map(e=>{
+  const i=new Date(e.i),f=new Date(Math.max(new Date(e.f),new Date(e.i).getTime()+15*60e3));t0=Math.min(t0,i);t1=Math.max(t1,f);
+  const ore=new Set();for(let x=new Date(i);x<=f;x=new Date(x.getTime()+30*60e3))ore.add(x.getHours());
+  const frac=nearIdx([e.lat,e.lon],R.line)/Math.max(1,R.line.length-1);
+  return{e,ore,quando:i,dopo:frac*R.min/60};
+ });
+ STORICO.forEach(e=>{t0=Math.min(t0,new Date(e.i));t1=Math.max(t1,new Date(e.f))});
+ return{lista,giorni:t1>t0?Math.max(1,Math.round((t1-t0)/864e5)):0};
+}
 function when(){
  const date=new Date($('day').value+'T00:00'),p=profile(new Date($('day').value+'T12:00'));
  const R=ROUTES[SEL],dur=R?Math.max(1,Math.ceil(R.min/60)):3;
- // chiusure gravi del percorso con orario: blocco le ore in cui il viaggio le incrocerebbe
  const blocchi=[];
  if(R)R.ev.filter(grave).forEach(e=>{const w=finestra(e);if(w&&w[0]&&!(w[1]&&w[1]<new Date()))blocchi.push({e,s:w[0],f:w[1]||new Date(w[0].getTime()+6*3600e3)})});
  const ora=h=>new Date(date.getTime()+h*3600e3);
  const chiuso=h=>blocchi.filter(b=>ora(h)<b.f&&ora(h+dur)>b.s);
- const score=p.map((_,h)=>{let s=0;for(let k=0;k<dur;k++)s+=p[(h+k)%24];return s/dur+(chiuso(h).length?200:0)});
+ const H=storicoPercorso(R);
+ const incroci=h=>H.lista.filter(x=>x.ore.has(Math.floor(h+x.dopo)%24));
+ const score=p.map((_,h)=>{let s=0;for(let k=0;k<dur;k++)s+=p[(h+k)%24];s/=dur;
+  s+=incroci(h).reduce((a,x)=>a+25*(PESO[x.e.tipo]||1),0);
+  if(h<6||h+dur>23)s+=20; // a parità di traffico preferisco non farti guidare di notte
+  return s+(chiuso(h).length?400:0)});
  let best=6,bv=1e9;for(let h=5;h<=22;h++)if(score[h]<bv){bv=score[h];best=h}
- const days=['domenica','lunedì','martedì','mercoledì','giovedì','venerdì','sabato'],hh=x=>String(x).padStart(2,'0')+':00';
- const peg=score.indexOf(Math.max(...score.map((v,i)=>chiuso(i).length?0:v)));
+ let peg=6,pv=-1;for(let h=5;h<=22;h++)if(!chiuso(h).length&&score[h]>pv){pv=score[h];peg=h}
+ const days=['domenica','lunedì','martedì','mercoledì','giovedì','venerdì','sabato'],hh=x=>String(x%24).padStart(2,'0')+':00';
  let t=`Partenza consigliata ${days[date.getDay()]}: <b>${hh(best)}</b> · da evitare: <b>${hh(peg)}</b>`;
- t+=R?`<div class="muted">Calcolato sul percorso scelto (circa ${dur} h di viaggio)${blocchi.length?' e sulle sue chiusure programmate':''}.</div>`:'<div class="muted">Calcola un percorso nella sezione 1 per tenere conto delle chiusure e della durata del viaggio.</div>';
+ // ---- perché ----
+ const perche=[];
+ if(R){
+  const arr=hh(best+dur);perche.push(`Partendo alle ${hh(best)} arrivi verso le ${arr} (circa ${dur} h di viaggio senza traffico).`);
+  const punta=[];for(let k=0;k<dur;k++){if(p[(best+k)%24]>60)punta.push(hh(best+k))}
+  perche.push(punta.length?`Il viaggio tocca comunque un'ora di punta (${punta.join(', ')}): non c'è una fascia migliore quel giorno.`:`Il viaggio evita le ore di punta di ${days[date.getDay()]}.`);
+  const ib=incroci(best),ip=incroci(peg);
+  if(H.giorni){
+   perche.push(ib.length?`${H.giorni>1?`Negli ultimi ${H.giorni} giorni di dati`:'Nell\'ultimo giorno di dati'}, nei punti dove saresti, a quell'ora ci sono stati ${ib.length} episodi di code o incidenti: è comunque l'ora con meno problemi.`:`${H.giorni>1?`Negli ultimi ${H.giorni} giorni di dati`:'Nell\'ultimo giorno di dati'}, nei punti del percorso dove ti troveresti a quell'ora non si sono viste code né incidenti.`);
+   if(ip.length){const c={};ip.forEach(x=>{const k=x.e.strada.split(' ')[0]+(x.e.da?' zona '+x.e.da.replace(/^(di|del|della) /i,''):'');c[k]=(c[k]||0)+1});
+    perche.push(`Partendo alle ${hh(peg)} incroceresti i punti dove di solito ci sono problemi: `+Object.entries(c).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([k,n])=>`${k} (${n} volt${n>1?'e':'a'})`).join(', ')+'.');}
+  }
+  if(blocchi.length)perche.push('Le ore barrate incrocerebbero una chiusura programmata.');
+ }
+ t+=R?`<ul class="perche">${perche.map(x=>'<li>'+esc(x)+'</li>').join('')}</ul>`:'<div class="muted">Calcola un percorso nella sezione 1: la previsione simula il viaggio su quel percorso, con le sue chiusure e le code dei giorni passati.</div>';
  const bc=[...new Set(blocchi.filter(b=>b.f>date&&b.s<ora(24+dur)).map(b=>`${b.e.strada.split(' ')[0]} chiusa dalle ${b.s.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'})} alle ${b.f.toLocaleTimeString('it-IT',{hour:'2-digit',minute:'2-digit'})}`))];
- if(bc.length)t+=`<div class="ko" style="font-size:.9rem;margin-top:4px">⛔ ${bc.slice(0,4).map(esc).join(' · ')}: le ore barrate incrocerebbero queste chiusure.</div>`;
+ if(bc.length)t+=`<div class="ko" style="font-size:.9rem;margin-top:4px">⛔ ${bc.slice(0,4).map(esc).join(' · ')}</div>`;
+ if(R)t+=`<div class="muted" style="margin-top:4px">${H.giorni?`Basato su ${H.giorni} giorn${H.giorni>1?'i':'o'} di dati raccolti (${H.lista.length} episodi sul percorso). Più giorni passano, più la previsione diventa affidabile.`:'Dati storici ancora in raccolta: per ora conta solo la stima delle ore di punta e le chiusure.'}</div>`;
  $('best').innerHTML=t;
- $('bars').innerHTML=p.map((v,h)=>{const c=chiuso(h).length;return`<div class="bar" title="${h}:00${c?' – incrocia una chiusura':''}" style="height:${c?100:Math.max(4,v)}%;background:${c?'repeating-linear-gradient(45deg,var(--bad) 0 4px,transparent 4px 8px)':`var(${h===best?'--route':v>60?'--bad':v>35?'--warn':'--good'})`}"></div>`}).join('');
+ const mx=Math.max(...score.map((v,h)=>chiuso(h).length?0:v),1);
+ $('bars').innerHTML=score.map((v,h)=>{const c=chiuso(h).length,n=incroci(h).length;return`<div class="bar" title="${h}:00${c?' – incrocia una chiusura':n?' – '+n+' episodi nei giorni passati':''}" style="height:${c?100:Math.max(4,v/mx*100)}%;background:${c?'repeating-linear-gradient(45deg,var(--bad) 0 4px,transparent 4px 8px)':`var(${h===best?'--route':v/mx>.66?'--bad':v/mx>.4?'--warn':'--good'})`}"></div>`}).join('');
  $('axis').innerHTML=p.map((_,h)=>`<span>${h%3===0?h:''}</span>`).join('');
 }
 {const d=new Date();$('day').value=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}$('day').onchange=when;when();
@@ -396,6 +435,7 @@ async function carica(){
   else if(ROUTES.length){ROUTES.forEach(R=>{const lv=EV.filter(e=>fase(e)!=='terminato');R.ev=lv.filter(e=>onRoute(e,R.line)===true);R.opp=lv.filter(e=>onRoute(e,R.line)==='opposto').length;R.bad=R.ev.filter(grave).length});showRoutes(false)}
  }catch(e){$('upd').textContent='Dati sul traffico non disponibili al momento.'}
 }
+caricaStorico().then(()=>{if(ROUTES.length)when()});
 carica();
 setInterval(()=>{if(!document.hidden)carica()},5*60*1000);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)carica()});

@@ -1,0 +1,28 @@
+name: Orologio
+# GitHub salta spesso i giri programmati: questo job resta acceso ~5h50 e avvia l'aggiornamento ogni 15 minuti,
+# poi riavvia sé stesso. Con un repository pubblico i minuti di GitHub Actions sono gratuiti.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "7 */6 * * *"   # paracadute: se l'orologio si è fermato, lo riaccende
+permissions:
+  actions: write
+concurrency: { group: orologio, cancel-in-progress: true }
+jobs:
+  tic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 358
+    steps:
+      - name: Avvia l'aggiornamento ogni 15 minuti
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          avvia() { curl -s -o /dev/null -w "%{http_code} $1\n" -X POST -H "Authorization: Bearer $GH_TOKEN" \
+                     -H "Accept: application/vnd.github+json" \
+                     "https://api.github.com/repos/$REPO/actions/workflows/$1/dispatches" -d '{"ref":"main"}'; }
+          for i in $(seq 1 23); do
+            avvia traffico.yml
+            sleep 900
+          done
+          avvia orologio.yml
