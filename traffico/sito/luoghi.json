@@ -1267,5 +1267,156 @@
 "FR|Chesnes|Isère": [
 45.6663133,
 5.1022372
+],
+"Casale Monferrato|8.1,46.3,9.3,44.1": [
+45.1362661,
+8.4498127
+],
+"Fornovo|9.3,45.0,10.4,43.9": [
+44.6937087,
+10.1019419
+],
+"Cassino|12.1,42.2,14.6,40.5": [
+41.4925576,
+13.8305297
+],
+"Pontecorvo|12.1,42.2,14.6,40.5": [
+41.4616237,
+13.6667039
+],
+"Teramo-Giulianova-Mosciano|12.9,43.8,14.3,42.0": [
+42.7472178,
+13.9489149
+],
+"Roseto Degli Abruzzi|12.9,43.8,14.3,42.0": [
+42.677577,
+14.0144636
+],
+"Millesimo|7.3,45.4,8.6,43.9": [
+44.367536,
+8.201746
+],
+"Acquaviva Delle Fonti|13.6,42.7,17.2,40.8": [
+40.897829,
+16.842487
+],
+"Parma|8.8,45.8,11.7,44.1": [
+44.6952006,
+10.0979869
+],
+"Bis Carnica": null,
+"Moscardo": [
+46.5547759,
+13.0116293
+],
+"Passo M.Te Croce Carnico/Confine Con L austria": null,
+"Lacedonia|10.1,44.9,14.6,40.5": [
+41.8939582,
+12.6290646
+],
+"Carnica": [
+46.1442786,
+13.5402921
+],
+"Cima Gogna - SS48 Delle Dolomiti|13.2,46.5,13.9,45.8": null,
+"Passo Di Monte Croce Comelico|13.2,46.5,13.9,45.8": null,
+"Scerne Di Pineto|11.7,45.4,12.4,44.7": null,
+"Tangenziale Sud Di Torino - DirMoncalieri|7.3,45.4,8.6,43.9": null,
+"Vomero|13.9,41.2,14.6,40.5": [
+40.8462231,
+14.2160861
+],
+"Via Casilina": [
+41.8630011,
+12.6147241
+],
+"S.Pietro Infine - SS6 Diramazione Via Casilina|12.3,42.2,13.0,41.5": null,
+"Attigliano|10.9,44.1,12.8,41.5": [
+42.5143337,
+12.2925076
+],
+"Di Fondo Valle Trigno": [
+42.0448796,
+14.7597073
+],
+"Isernia - SS17 Dell app. Abr. E App. Sann|14.4,42.4,15.1,41.7": null,
+"Pescolanciano - SS651 Di Pescolanciano|14.4,42.4,15.1,41.7": null,
+"Del Passo Di Gavia": [
+45.5384895,
+10.1935998
+],
+"Uzza|9.8,45.9,10.5,45.2": null,
+"S.Antonio|9.8,45.9,10.5,45.2": [
+45.3518413,
+10.5308038
+],
+"Carrara|8.6,44.8,10.8,43.0": [
+44.0796519,
+10.0977529
+],
+"Del Sempione": [
+45.9352687,
+8.57378
+],
+"Sempione/Svizzera|8.2,46.3,8.9,45.6": null,
+"Amalfitana": [
+45.481675,
+9.2197565
+],
+"Colli Di Fontanelle - SS145 Sorrentina|8.9,45.8,9.6,45.1": null,
+"Positano|8.9,45.8,9.6,45.1": [
+45.5059371,
+9.2228967
+],
+"Pozzuoli-SS7 Quater - SS Domitiana|13.9,41.2,14.6,40.5": null,
+"Secondigliano-Raccordo A1 Capodichino|13.9,41.2,14.6,40.5": null,
+"Foggia|13.6,42.7,17.2,40.8": [
+41.5028106,
+15.4528939
+],
+"Venezia": [
+45.4371908,
+12.3345898
+],
+"Bis tiberina (e45)": [
+44.1109769,
+12.2049767
+],
+"San Gemini|11.9,44.5,12.6,43.8": null,
+"Spotorno|7.3,44.8,9.3,43.4": [
+44.2272571,
+8.4191772
+],
+"Orco Feglino|7.3,44.8,9.3,43.4": [
+44.2343146,
+8.3253719
+],
+"Finale Ligure|7.3,44.8,9.3,43.4": [
+44.1691474,
+8.3435917
+],
+"Pietra Ligure|7.3,44.8,9.3,43.4": [
+44.1489097,
+8.2837044
+],
+"Via Tommaso Campanella": [
+41.9103987,
+12.4509777
+],
+"Via Girolamo Savonarola|12.1,42.3,12.8,41.6": [
+41.9105177,
+12.4515874
+],
+"Via Giordano Bruno|12.1,42.3,12.8,41.6": [
+41.9104037,
+12.452915
+],
+"Alessandria|7.3,46.1,10.8,44.7": [
+44.8349534,
+8.7450304
+],
+"Cantalupa|8.6,45.8,9.5,44.1": [
+45.4175688,
+9.1550282
 ]
 }
