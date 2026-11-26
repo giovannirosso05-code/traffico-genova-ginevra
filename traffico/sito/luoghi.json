@@ -3482,5 +3482,274 @@ false
 45.6517609,
 13.7831307,
 false
-]
+],
+"v2|Milano Est|8.8,46.1,10.8,45.1": [
+45.4375343,
+9.2552812,
+true
+],
+"v2|Guardialfiera|14.6,42.3,15.3,41.6": [
+41.8018015,
+14.7933545,
+false
+],
+"v2|Monte Peloso|14.6,42.3,15.3,41.6": null,
+"v2|Monte San Savino|10.9,44.1,12.8,41.5": [
+43.3434908,
+11.6993695,
+false
+],
+"da Firenze": [
+41.9271375,
+12.7340204
+],
+"Largo Don Francesco Bonifacio": [
+45.6514694,
+13.7779864
+],
+"v2|Viale 20 Settembre|13.4,46.0,14.1,45.3": [
+45.6531506,
+13.7863981,
+false
+],
+"v2|Via Cesare Battisti|13.4,46.0,14.1,45.3": [
+45.6516644,
+13.777765,
+false
+],
+"Viale Venti Settembre": [
+45.6516479,
+13.7789553
+],
+"v2|Via Domenico Rossetti|13.4,46.0,14.1,45.3": [
+45.6410921,
+13.79372,
+false
+],
+"v2|Piazza dei Volontari Giuliani|13.4,46.0,14.1,45.3": [
+45.654212,
+13.7892951,
+false
+],
+"Via Ugo Polonio": [
+44.4534753,
+8.8935828
+],
+"v2|Via Cesare Battisti|8.5,44.8,9.2,44.1": [
+44.3960491,
+8.9527645,
+false
+],
+"v2|Viale 20 Settembre|8.5,44.8,9.2,44.1": null,
+"v2|Genova Bolzaneto|8.6,45.8,9.5,44.1": [
+44.4701626,
+8.9095416,
+true
+],
+"Via Giosuè Carducci": [
+41.3555693,
+16.0864513
+],
+"v2|Via Cesare Battisti|15.7,41.7,16.4,41.0": [
+41.3152311,
+16.2720305,
+false
+],
+"v2|Via Francesco Crispi|15.7,41.7,16.4,41.0": [
+41.3205775,
+16.276079,
+false
+],
+"Massese": [
+45.6707039,
+10.3947663
+],
+"v2|Boschetto|10.0,46.0,10.7,45.3": [
+45.8981413,
+10.0744678,
+false
+],
+"v2|Antognola|10.0,46.0,10.7,45.3": null,
+"v2|Casalpusterlengo|12.1,42.3,12.8,41.6": [
+41.9488767,
+12.3922752,
+false
+],
+"v2|Zorlesco|12.1,42.3,12.8,41.6": null,
+"Via Domenico Rossetti": [
+45.6410921,
+13.79372
+],
+"Bis Di Terra Di Lavoro": null,
+"v2|Nola A30 Ce-Sa - Sgc Nola-Domitio": null,
+"da Pisa": [
+41.8774661,
+12.537525
+],
+"v2|Vittorio Veneto Nord|11.7,46.6,12.6,45.1": [
+46.0194169,
+12.288685,
+true
+],
+"v2|Vittorio Veneto Sud|11.7,46.6,12.6,45.1": [
+45.9599259,
+12.2890396,
+true
+],
+"Via dell Ospizio": [
+44.5181417,
+12.0920063
+],
+"v2|Via della Provvidenza|11.7,44.9,12.4,44.2": null,
+"v2|Via dell Anguillara|11.7,44.9,12.4,44.2": null,
+"v2|Via Giuseppe Lorenzo Gatteri|13.4,46.0,14.1,45.3": [
+45.6508026,
+13.7831769,
+false
+],
+"v2|Secugnago|12.1,42.3,12.8,41.6": [
+42.0306138,
+12.4506506,
+false
+],
+"v2|Muzza Piacentina|12.1,42.3,12.8,41.6": null,
+"v2|Corso di Francia|10.7,45.8,11.4,45.1": null,
+"v2|Via dei Campi Sportivi|10.7,45.8,11.4,45.1": null,
+"v2|Bucchi|16.1,38.7,16.8,38.0": null,
+"v2|Staz. Strongoli/Incrocio SS492 Di Savelli|16.1,38.7,16.8,38.0": null,
+"Asolana": [
+45.2634996,
+10.3558974
+],
+"v2|Casalmoro|10.0,45.6,10.7,44.9": [
+45.259577,
+10.404478,
+false
+],
+"v2|Acquafredda|10.0,45.6,10.7,44.9": [
+45.3074622,
+10.4115548,
+false
+],
+"Via Lucrezia Borgia": [
+44.8399038,
+11.6288645
+],
+"v2|Via Eleonora d Este d Aragona|11.3,45.2,12.0,44.5": [
+44.8401229,
+11.6295676,
+false
+],
+"v2|Via Luigi Borsari|11.3,45.2,12.0,44.5": [
+44.8394163,
+11.6300293,
+false
+],
+"Via Giuseppe Lorenzo Gatteri": [
+45.6522476,
+13.7823811
+],
+"Colline per Livorno": [
+43.50105,
+10.4699428
+],
+"v2|Volpaia|10.1,43.9,10.8,43.2": [
+43.6013189,
+10.5644131,
+false
+],
+"v2|Pisa Nord A11 Firenze-Pisa Nord|11.9,42.3,12.6,41.6": null,
+"v2|Variante Di Viareggio|11.9,42.3,12.6,41.6": null,
+"v2|Gobba: Treviglio-Vimodrone|9.0,45.9,9.7,45.2": null,
+"v2|S.Benigno - SS460|7.3,45.6,8.0,44.8": [
+45.2254063,
+7.7459663,
+false
+],
+"v2|Viale Monte Ceneri incrocio Viale Certosa|8.8,46.1,10.8,45.1": null,
+"Del Centro Direzionale": [
+43.8674285,
+11.0986968
+],
+"v2|Pomigliano D arco/Svincolo Per A16 Napoli-Canosa|10.7,44.2,11.4,43.5": null,
+"v2|Caravita|10.7,44.2,11.4,43.5": null,
+"v2|Pescara N. Citta S.Angelo|12.9,43.8,14.3,42.0": [
+42.5237485,
+14.1328701,
+false
+],
+"SP46": [
+45.5835978,
+11.5049599
+],
+"v2|Strada Comunale dei Pragoni|11.2,45.9,11.9,45.2": null,
+"v2|Via Martiri|11.2,45.9,11.9,45.2": [
+45.5925325,
+11.2497533,
+false
+],
+"v2|Favazzina|15.3,40.4,16.0,39.7": null,
+"v2|Scilla/Svincolo Per A3 Salerno-Reggio C|15.3,40.4,16.0,39.7": null,
+"v2|Siracusa - SS114 Or.Sicula E SS124 Siracusana|14.9,37.4,15.6,36.7": null,
+"v2|Termoli-Molise|13.6,42.7,17.2,40.8": [
+41.9983273,
+14.9939366,
+false
+],
+"v2|Lucca-Viareggio|8.6,44.8,10.8,43.0": [
+43.8672392,
+10.2506055,
+false
+],
+"Piazza Vittoria": [
+45.5384167,
+10.2193705
+],
+"v2|Via Giuseppe Verdi|9.9,45.9,10.6,45.2": [
+45.5256392,
+10.1617874,
+false
+],
+"v2|Via IV Novembre|9.9,45.9,10.6,45.2": [
+45.4878901,
+10.2423346,
+false
+],
+"Settentrionale Sicula": [
+38.2627927,
+15.4702801
+],
+"v2|S.Agata Militello|15.1,38.6,15.8,37.9": null,
+"Via Giuseppe Verdi": [
+41.8806938,
+16.1685222
+],
+"v2|Via IV Novembre|15.8,42.2,16.5,41.5": [
+41.7048437,
+15.96413,
+false
+],
+"v2|Piazza Vittoria|15.8,42.2,16.5,41.5": null,
+"v2|Orfengo|7.5,45.5,8.2,44.8": null,
+"Piazza del Mercato": [
+44.0354394,
+10.1424621
+],
+"v2|Via Antonio Gramsci|9.8,44.4,10.5,43.7": [
+44.1037291,
+9.8196241,
+false
+],
+"v2|Via 4 Novembre|9.8,44.4,10.5,43.7": [
+43.7273572,
+10.3989841,
+false
+],
+"v2|Modica Sud - SS15|14.7,37.7,15.4,37.0": null,
+"v2|Pozzallo - Sp66|14.7,37.7,15.4,37.0": [
+37.0903149,
+15.2653026,
+false
+],
+"v2|Rotatoria Ferrara - SS64 Porrettana|11.7,45.4,12.4,44.7": null
 }
