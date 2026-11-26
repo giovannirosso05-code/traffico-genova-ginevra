@@ -3209,12 +3209,12 @@ false
 false
 ],
 "Settentrionale Sicula": [
-38.2305201,
-15.4803847
+38.2627927,
+15.4702801
 ],
 "Via Giuseppe Verdi": [
-41.8830069,
-16.1716672
+41.8806938,
+16.1685222
 ],
 "v2|Via IV Novembre|15.8,42.2,16.5,41.5": [
 41.7048437,
@@ -3241,8 +3241,8 @@ true
 10.1424621
 ],
 "v2|Via Antonio Gramsci|9.8,44.4,10.5,43.7": [
-44.1075101,
-9.8129928,
+44.1037291,
+9.8196241,
 false
 ],
 "v2|Via 4 Novembre|9.8,44.4,10.5,43.7": [
@@ -3499,10 +3499,6 @@ false
 11.6993695,
 false
 ],
-"da Firenze": [
-41.9271375,
-12.7340204
-],
 "Largo Don Francesco Bonifacio": [
 45.6514694,
 13.7779864
@@ -3666,7 +3662,6 @@ false
 7.7459663,
 false
 ],
-"v2|Viale Monte Ceneri incrocio Viale Certosa|8.8,46.1,10.8,45.1": null,
 "Del Centro Direzionale": [
 43.8674285,
 11.0986968
@@ -3678,36 +3673,11 @@ false
 14.1328701,
 false
 ],
-"SP46": [
-45.5835978,
-11.5049599
-],
-"v2|Strada Comunale dei Pragoni|11.2,45.9,11.9,45.2": null,
-"v2|Via Martiri|11.2,45.9,11.9,45.2": [
-45.5925325,
-11.2497533,
-false
-],
 "v2|Favazzina|15.3,40.4,16.0,39.7": null,
 "v2|Scilla/Svincolo Per A3 Salerno-Reggio C|15.3,40.4,16.0,39.7": null,
-"v2|Siracusa - SS114 Or.Sicula E SS124 Siracusana|14.9,37.4,15.6,36.7": null,
 "v2|Termoli-Molise|13.6,42.7,17.2,40.8": [
 41.9983273,
 14.9939366,
-false
-],
-"v2|Lucca-Viareggio|8.6,44.8,10.8,43.0": [
-43.8672392,
-10.2506055,
-false
-],
-"Piazza Vittoria": [
-45.5384167,
-10.2193705
-],
-"v2|Via Giuseppe Verdi|9.9,45.9,10.6,45.2": [
-45.5256392,
-10.1617874,
 false
 ],
 "v2|Via IV Novembre|9.9,45.9,10.6,45.2": [
@@ -3715,41 +3685,43 @@ false
 10.2423346,
 false
 ],
-"Settentrionale Sicula": [
-38.2627927,
-15.4702801
-],
 "v2|S.Agata Militello|15.1,38.6,15.8,37.9": null,
-"Via Giuseppe Verdi": [
-41.8806938,
-16.1685222
-],
-"v2|Via IV Novembre|15.8,42.2,16.5,41.5": [
-41.7048437,
-15.96413,
+"v2|Vignole Borbera|8.6,45.8,9.5,44.1": [
+44.7099475,
+8.8912621,
 false
 ],
-"v2|Piazza Vittoria|15.8,42.2,16.5,41.5": null,
-"v2|Orfengo|7.5,45.5,8.2,44.8": null,
-"Piazza del Mercato": [
-44.0354394,
-10.1424621
-],
-"v2|Via Antonio Gramsci|9.8,44.4,10.5,43.7": [
-44.1037291,
-9.8196241,
+"v2|Viale Maddalena|13.9,41.2,14.6,40.5": [
+40.9460592,
+14.2542587,
 false
 ],
-"v2|Via 4 Novembre|9.8,44.4,10.5,43.7": [
-43.7273572,
-10.3989841,
+"v2|Tangenziale Sud Di Torino - DirMoncalieri|7.3,45.4,8.6,43.9": null,
+"v2|Fuorni|15.3,40.4,16.0,39.7": null,
+"v2|Salerno - SS88 Dei Due Principati|15.3,40.4,16.0,39.7": null,
+"v2|7bis: Quinto De Stampi|8.7,45.9,9.4,45.2": [
+45.3945262,
+9.170027,
 false
 ],
-"v2|Modica Sud - SS15|14.7,37.7,15.4,37.0": null,
-"v2|Pozzallo - Sp66|14.7,37.7,15.4,37.0": [
-37.0903149,
-15.2653026,
+"v2|Bellizzi|15.3,40.4,16.0,39.7": null,
+"v2|Ciro|16.1,38.7,16.8,38.0": [
+38.4363891,
+16.0778244,
 false
 ],
-"v2|Rotatoria Ferrara - SS64 Porrettana|11.7,45.4,12.4,44.7": null
+"v2|Torretta|16.1,38.7,16.8,38.0": [
+38.5993184,
+16.2302378,
+false
+],
+"Incrocio Taranto": null,
+"Raccordo Torino": [
+45.1807381,
+7.6487951
+],
+"Aeroporto Caselle": [
+45.2009688,
+7.6489751
+]
 }
