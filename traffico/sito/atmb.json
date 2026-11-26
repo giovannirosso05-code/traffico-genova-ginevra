@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-26T09:00+00:00",
+ "aggiornato": "2026-11-26T09:21+00:00",
  "fonte": "ATMB e APRR (siti ufficiali)",
  "stato": "ok",
  "tunnel": "",
@@ -23,15 +23,6 @@
    "gestore": "ATMB",
    "lat": 46.1859095,
    "lon": 6.2041728
-  },
-  {
-   "titolo": "A40 · Ain · direzione MACON> GENEVE, nella zona di Bellegarde la notte del 25 novembre",
-   "testo": "",
-   "tipo": "lavori",
-   "url": "https://voyage.aprr.fr/a40-ain-direction-macon-geneve-dans-le-secteur-de-bellegarde-la-nuit-du-25-novembre",
-   "gestore": "APRR",
-   "lat": 46.1116515,
-   "lon": 5.8258037
   },
   {
    "titolo": "A43 · Savoie · percorso CHAMBERY<>LYON nella zona di galleria dell’Epine dal 23/11 al 27/11",
@@ -173,5 +164,5 @@
    "lon": 5.1022372
   }
  ],
- "aprr": "ok (19 lavori)"
+ "aprr": "ok (18 lavori)"
 }

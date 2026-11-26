@@ -2839,5 +2839,343 @@ false
 43.8520865,
 10.7928927,
 false
+],
+"v2|Cinisello B.-Robecco|8.9,45.9,9.6,45.2": [
+45.5593261,
+9.227222,
+false
+],
+"v2|Ferrara Sud|11.0,45.7,12.2,44.1": [
+44.7948234,
+11.5527831,
+true
+],
+"v2|Occhiobello|11.0,45.7,12.2,44.1": [
+44.9194006,
+11.602014,
+false
+],
+"v2|Ortona|13.6,42.7,17.2,40.8": [
+42.349643,
+14.403913,
+false
+],
+"v2|Vimercate Sud: Bg-Trezzo-Arcore|9.0,45.9,9.7,45.2": null,
+"Est (RM)": [
+45.4518289,
+11.0232656
+],
+"v2|Via Livorno-Piazza Bologna|10.7,45.8,11.4,45.1": null,
+"v2|Bellocchio|11.9,44.9,12.6,44.2": [
+44.6115862,
+12.2437891,
+false
+],
+"Incrocio Mestre Ovest/Svincolo Rotatoria Marghera A57": null,
+"v2|Variane Di Sardara|8.8,39.6,9.5,38.9": null,
+"v2|Ponte Cracaxia|8.8,39.6,9.5,38.9": null,
+"Briantea": [
+45.7166809,
+9.1805009
+],
+"v2|Nibionno - SS36|8.8,46.1,9.5,45.4": [
+45.7432877,
+9.2572306,
+false
+],
+"v2|Calco - SS342 Diramazione Briantea|8.8,46.1,9.5,45.4": null,
+"SS42 E SS671 Della Val Seriana": null,
+"v2|Prato Est|10.3,44.1,11.6,43.1": [
+43.8534213,
+11.117944,
+true
+],
+"v2|Chioggia|11.9,44.9,12.6,44.2": [
+44.3945267,
+12.2155006,
+false
+],
+"v2|Brescia Sud|7.3,46.1,10.8,44.7": [
+45.4674366,
+10.2197124,
+true
+],
+"v2|Manerbio|7.3,46.1,10.8,44.7": [
+45.3522237,
+10.1404663,
+false
+],
+"Galleria Castellon": [
+45.6916543,
+11.3653165
+],
+"v2|Via Ca Trenta|11.0,46.0,11.7,45.3": [
+45.692531,
+11.3682128,
+false
+],
+"v2|Via Pianezza|11.0,46.0,11.7,45.3": [
+45.6834765,
+11.3583442,
+false
+],
+"v2|Cologno Monzese: S.S.Giovanni Sud|9.0,45.9,9.7,45.2": [
+45.5316209,
+9.2625738,
+true
+],
+"v2|Linate: V.Le Forlanini-Sp14 Rivoltana|9.0,45.9,9.7,45.2": null,
+"v2|Monza|8.8,46.1,10.8,45.1": [
+45.5844865,
+9.2749057,
+false
+],
+"v2|Cormano|8.8,46.1,10.8,45.1": [
+45.5440234,
+9.1707872,
+false
+],
+"v2|Ferentino|12.1,42.2,14.6,40.5": [
+41.6922157,
+13.2533998,
+false
+],
+"v2|Anagni - Fiuggi|12.1,42.2,14.6,40.5": [
+41.7104102,
+13.096018,
+false
+],
+"v2|Paullo: SS415 Paullese-SS10 Padana Inferiore|9.0,45.9,9.7,45.2": null,
+"v2|Grottaminarda|10.1,44.9,14.6,40.5": [
+41.8914093,
+12.63108,
+false
+],
+"v2|Lavoria|10.1,44.0,10.8,43.3": [
+43.6256491,
+10.5283528,
+true
+],
+"v2|Gello - Allacciamento Diramazione per Pisa|10.1,44.0,10.8,43.3": null,
+"v2|Ravenna|11.8,44.8,12.5,44.1": [
+44.3640607,
+12.0590095,
+false
+],
+"Ravenna": [
+44.3640607,
+12.0590095
+],
+"v2|Pedaso|12.9,43.8,14.3,42.0": [
+43.099164,
+13.8407771,
+false
+],
+"v2|Grottammare|12.9,43.8,14.3,42.0": [
+42.9836864,
+13.8487843,
+false
+],
+"v2|Settimo Milanese-SS11: S.Siro-Fiera|8.7,45.9,9.4,45.2": null,
+"v2|Sesto S.Giovanni Sud: Cologno M|8.9,45.9,9.6,45.2": null,
+"v2|Bedizzole|7.5,45.5,8.2,44.8": null,
+"Roma Sud": [
+41.8025789,
+12.8210728
+],
+"v2|San Cesareo|12.5,42.2,13.2,41.5": [
+41.819196,
+12.8003335,
+false
+],
+"v2|Monteporzio|12.5,42.2,13.2,41.5": [
+41.8279369,
+12.7052671,
+true
+],
+"G.r.a": [
+41.8577092,
+12.3767694
+],
+"Della Val D esino": [
+43.4265401,
+13.0031194
+],
+"v2|Fabriano Ovest|12.7,43.8,13.4,43.1": [
+43.3104454,
+12.85571,
+true
+],
+"v2|Fabriano Est|12.7,43.8,13.4,43.1": [
+43.3421638,
+12.9489605,
+true
+],
+"v2|Carasco - SS586 Della Valle Dell aveto|8.9,44.8,9.6,44.1": null,
+"Raccordo Piazzale Corvetto": [
+45.4130128,
+9.2618322
+],
+"v2|Tangenziale Est Mi-Raccordo P.Le Corvetto|8.9,45.8,9.6,45.1": null,
+"v2|Fermo-Porto S.Giorgio|12.9,43.8,14.3,42.0": [
+43.1576009,
+13.8014971,
+true
+],
+"v2|Porto Sant Elpidio|12.9,43.8,14.3,42.0": [
+43.2586872,
+13.7584226,
+false
+],
+"v2|Fano - Raccordo Per Fossombrone|11.0,44.8,13.6,43.1": null,
+"v2|Pesaro-Urbino|11.0,44.8,13.6,43.1": [
+43.6941127,
+12.7014437,
+false
+],
+"v2|Montebello|10.1,46.1,12.2,45.0": [
+46.0739605,
+11.9908084,
+false
+],
+"v2|Brescia Est|10.1,46.1,12.2,45.0": [
+45.4818065,
+10.3241186,
+true
+],
+"Orientale Sarda": [
+40.0315971,
+9.6633811
+],
+"v2|Suaredda|9.3,40.4,10.0,39.7": null,
+"Bozen Via del Macello": [
+46.494956,
+11.3679575
+],
+"Schlachthofstraße": [
+46.4947324,
+11.3592519
+],
+"v2|Piazza Giuseppe Verdi|11.0,46.8,11.7,46.1": [
+46.4952295,
+11.3534346,
+false
+],
+"v2|Via Josef Mayr Nusser - Josef-Mayr-Nusser-Straße|11.0,46.8,11.7,46.1": null,
+"v2|Borghetto Santo Spirito|7.3,44.8,9.3,43.4": [
+44.1092512,
+8.2413691,
+false
+],
+"v2|Imperia Ovest|7.3,44.8,9.3,43.4": [
+43.8780543,
+7.9968867,
+true
+],
+"v2|Loreto-Porto Recanati|12.9,43.8,14.3,42.0": [
+43.4376274,
+13.6386932,
+true
+],
+"v2|Macerata|12.9,43.8,14.3,42.0": [
+43.1529781,
+13.1508822,
+false
+],
+"v2|Nuoro/Incrocio SS389 Del Correboi": null,
+"v2|Ponte Marreri": [
+40.3675262,
+9.3863576,
+false
+],
+"v2|Alessandria Est|7.3,46.1,10.8,44.7": [
+44.9243986,
+8.6978045,
+true
+],
+"v2|Alessandria Ovest|7.3,46.1,10.8,44.7": [
+44.9385714,
+8.5807107,
+true
+],
+"v2|Genova Voltri|7.3,44.8,9.3,43.4": [
+44.40726,
+8.9338624,
+false
+],
+"v2|Castiglioncello|11.9,42.3,12.6,41.6": [
+41.8544352,
+12.1975853,
+false
+],
+"Di Vignola": [
+44.4784141,
+11.0090928
+],
+"v2|Ponte Ronca|10.7,44.8,11.4,44.1": [
+44.5013503,
+11.1906621,
+false
+],
+"v2|Casalecchio Di Reno/Tangenziale Di Bologna|10.7,44.8,11.4,44.1": [
+44.4891036,
+11.2683212,
+true
+],
+"v2|Belluno|11.7,46.6,12.6,45.1": [
+46.2805407,
+12.0789137,
+false
+],
+"v2|Fadalto-Lago Di S.Croce|11.7,46.6,12.6,45.1": [
+46.0740572,
+12.3397433,
+true
+],
+"Dell appennino Abruzzese E Appulo": [
+42.2430506,
+13.7029834
+],
+"Sannitico": [
+41.337736,
+14.3929016
+],
+"v2|Staz. Cantalupo Nel Sannio - SS618 Molesana|13.4,42.6,14.7,41.0": null,
+"v2|Sp S.Nicolo Di Celle|11.9,44.5,12.6,43.8": null,
+"v2|Collevalenza|11.9,44.5,12.6,43.8": null,
+"v2|Ginestra Fiorentina|10.1,44.0,10.8,43.3": null,
+"v2|Genova Aeroporto|7.3,44.8,9.3,43.4": [
+44.4245824,
+8.8694625,
+true
+],
+"v2|Arda|8.8,45.8,11.7,44.1": [
+44.8796633,
+9.884442,
+false
+],
+"v2|Silandro|10.1,46.9,10.8,46.2": [
+46.6280688,
+10.7734765,
+false
+],
+"v2|Lasa|10.1,46.9,10.8,46.2": [
+46.616614,
+10.700159,
+false
+],
+"Del Lago Maggiore": [
+45.9510936,
+8.6341652
+],
+"v2|Oggebbio|8.3,46.3,9.0,45.6": [
+45.9961725,
+8.6527278,
+false
+],
+"v2|Cannero|8.3,46.3,9.0,45.6": [
+46.0219142,
+8.6790472,
+false
 ]
 }
