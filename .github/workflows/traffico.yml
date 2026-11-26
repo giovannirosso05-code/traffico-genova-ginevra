@@ -26,7 +26,7 @@ jobs:
         run: |
           git config user.name "aggiornamento-traffico"
           git config user.email "actions@users.noreply.github.com"
-          git add traffico/sito/*.json
+          git add traffico/sito/*.json traffico/svincoli.json 2>/dev/null; git add traffico/sito/*.json
           git diff --cached --quiet || (git commit -m "Dati traffico $(date -u +%FT%H:%M)" && git push)
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4

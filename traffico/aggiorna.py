@@ -1,5 +1,6 @@
 """Legge il feed CCISS (tutta Italia) e salva gli eventi con le coordinate, per il sito."""
 import json, re, sys, os, time, math, html, hashlib, datetime, urllib.request, urllib.parse
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import xml.etree.ElementTree as ET
 
 UA = {"User-Agent": "traffico-genova-ginevra/1.0 (GitHub Actions)"}
@@ -51,7 +52,13 @@ def cerca(q, box=None):
 
 PRIORITA = [("highway", "motorway_junction"), ("barrier", "toll_booth"), ("highway", "services"), ("amenity", "fuel"),
             ("highway", "rest_area"), ("highway", "motorway_link")]
+import svincoli as SV
 def cerca_svincolo(nome, box=None):
+    p = SV.trova(nome, box)              # 1) elenco degli svincoli veri di OpenStreetMap
+    if p: return p
+    return cerca_svincolo_nominatim(nome, box)
+
+def cerca_svincolo_nominatim(nome, box=None):
     """Prima cerco lo svincolo o il casello vero; se non c'è, il paese (posizione meno precisa).
     Restituisce [lat, lon, preciso]."""
     key = "v2|" + nome + ("|" + ",".join(f"{x:.1f}" for x in box) if box else "")
