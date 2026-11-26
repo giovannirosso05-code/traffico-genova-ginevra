@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-26T18:02+00:00",
+ "aggiornato": "2026-11-26T18:03+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -8,6 +8,98 @@
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "976d997f03bca938",
+   "strada": "A4 Milano-Brescia",
+   "testo": "code a tratti causa traffico intenso dalle 15:54 del 26 novembre 2026 tra Barriera Di Milano Est e Svincolo Viale Monte Ceneri incrocio Viale Certosa in direzione Torino",
+   "tipo": "code",
+   "quando": "2026-11-26T18:03:00Z",
+   "lat": 45.55581,
+   "lon": 9.26861,
+   "da": "Milano Est",
+   "dirlat": 45.0677551,
+   "dirlon": 7.6824892,
+   "dir": "Torino"
+  },
+  {
+   "id": "3a8ab3ec1a9bd164",
+   "strada": "A1 Firenze-Roma",
+   "testo": "personale su strada dalle 19:01 del 26 novembre 2026 tra Svincolo Ponzano Romano-Soratte e Allacciamento Diramazione Roma Nord",
+   "tipo": "altro",
+   "quando": "2026-11-26T18:03:00Z",
+   "lat": 42.27501,
+   "lon": 12.54327,
+   "da": "Ponzano Romano-Soratte",
+   "lat2": 42.16898,
+   "lon2": 12.61242,
+   "a": "Roma Nord",
+   "km": 15.7
+  },
+  {
+   "id": "35f369f40ae293d7",
+   "strada": "A27 Mestre-Belluno",
+   "testo": "veicolo fermo o in avaria dalle 19:01 del 26 novembre 2026 tra Allacciamento A28 Venezia-Belluno e Svincolo Treviso Nord in direzione Venezia",
+   "tipo": "altro",
+   "quando": "2026-11-26T18:03:00Z",
+   "lat2": 45.72494,
+   "lon2": 12.28581,
+   "a": "Treviso Nord",
+   "dirlat": 45.4371908,
+   "dirlon": 12.3345898,
+   "dir": "Venezia"
+  },
+  {
+   "id": "56162d36d9860b7d",
+   "strada": "A14 Bologna-Ancona",
+   "testo": "perdita di carico dalle 19:01 del 26 novembre 2026 tra Svincolo Castel S.Pietro e Svincolo Bologna San Lazzaro in direzione Bologna",
+   "tipo": "altro",
+   "quando": "2026-11-26T18:03:00Z",
+   "lat": 43.3197151,
+   "lon": 13.1301735,
+   "da": "Castel S.Pietro",
+   "lat2": 44.48067,
+   "lon2": 11.43326,
+   "a": "Bologna San Lazzaro",
+   "indicativo": true,
+   "km": 225.0,
+   "dirlat": 44.4938203,
+   "dirlon": 11.3426327,
+   "dir": "Bologna"
+  },
+  {
+   "id": "d079a5dbe0c89e27",
+   "strada": "A8 Milano-Varese",
+   "testo": "code a tratti causa traffico intenso dalle 17:29 del 26 novembre 2026 tra Svincolo Lainate e Svincolo Legnano in direzione Varese",
+   "tipo": "code",
+   "quando": "2026-11-26T18:02:00Z",
+   "lat": 45.5632,
+   "lon": 9.03173,
+   "da": "Lainate",
+   "lat2": 45.60094,
+   "lon2": 8.9504,
+   "a": "Legnano",
+   "km": 9.1,
+   "dirlat": 45.8399103,
+   "dirlon": 8.754179,
+   "dir": "Varese"
+  },
+  {
+   "id": "1abf5ad032abd217",
+   "strada": "A4 Milano-Brescia",
+   "testo": "code a tratti causa traffico intenso dalle 15:19 del 26 novembre 2026 tra Svincolo Cormano e Barriera Di Milano Est in direzione Brescia",
+   "tipo": "code",
+   "quando": "2026-11-26T18:02:00Z",
+   "lat": 45.5381,
+   "lon": 9.16661,
+   "da": "Cormano",
+   "lat2": 45.55581,
+   "lon2": 9.26861,
+   "a": "Milano Est",
+   "km": 9.8,
+   "dirlat": 45.7795805,
+   "dirlon": 10.425873,
+   "dir": "Brescia"
+  },
   {
    "id": "4464b1114eb940de",
    "strada": "A15 Parma-La Spezia",
@@ -276,23 +368,6 @@
    "dirlat": 45.391408,
    "dirlon": 11.8058487,
    "dir": "Padova"
-  },
-  {
-   "id": "e51b23a0425b2b29",
-   "strada": "A8 Milano-Varese",
-   "testo": "code a tratti causa traffico intenso dalle 18:45 del 26 novembre 2026 tra Svincolo Busto Arsizio e Svincolo Castellanza in direzione Milano",
-   "tipo": "code",
-   "quando": "2026-11-26T17:47:00Z",
-   "lat": 45.63928,
-   "lon": 8.85913,
-   "da": "Busto Arsizio",
-   "lat2": 45.60763,
-   "lon2": 8.93445,
-   "a": "Castellanza",
-   "km": 8.2,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
   },
   {
    "id": "0db144a08c647821",
@@ -614,23 +689,6 @@
    "da": "Ponte Nelle Alpi"
   },
   {
-   "id": "66d78927ee53ff45",
-   "strada": "A14 Ancona-Pescara",
-   "testo": "code causa incidente dalle 18:25 del 26 novembre 2026 tra Svincolo Roseto Degli Abruzzi e Svincolo Atri-Pineto in direzione Pescara",
-   "tipo": "incidente",
-   "quando": "2026-11-26T17:35:00Z",
-   "lat": 42.64946,
-   "lon": 13.97101,
-   "da": "Roseto Degli Abruzzi",
-   "lat2": 42.60722,
-   "lon2": 14.04496,
-   "a": "Atri-Pineto",
-   "km": 9.2,
-   "dirlat": 42.3097631,
-   "dirlon": 13.9579989,
-   "dir": "Pescara"
-  },
-  {
    "id": "f18dd3a3c2e34be8",
    "strada": "A12 Roma-Civitavecchia",
    "testo": "veicolo fermo o in avaria dalle 18:29 del 26 novembre 2026 tra Svincolo Torrimpietra e Svincolo Cerveteri-Ladispoli in direzione S.s. 1 Aurelia",
@@ -767,23 +825,6 @@
    "dir": "G.r.a"
   },
   {
-   "id": "a76a15fc885cfa84",
-   "strada": "A8 Milano-Varese",
-   "testo": "code a tratti causa traffico intenso dalle 17:29 del 26 novembre 2026 tra Svincolo Lainate e Svincolo Busto Arsizio in direzione Varese",
-   "tipo": "code",
-   "quando": "2026-11-26T17:25:00Z",
-   "lat": 45.5632,
-   "lon": 9.03173,
-   "da": "Lainate",
-   "lat2": 45.63928,
-   "lon2": 8.85913,
-   "a": "Busto Arsizio",
-   "km": 19.0,
-   "dirlat": 45.8399103,
-   "dirlon": 8.754179,
-   "dir": "Varese"
-  },
-  {
    "id": "df745e7945b1b6db",
    "strada": "SS47 Della Valsugana",
    "testo": "traffico rallentato causa lavori tra Incrocio Trento Est - Uscita 10 Tang. di TN dir. Trento e Incrocio Galleria dei Crozi in direzione Incrocio Padova - SS11 Padana Superiore",
@@ -819,13 +860,6 @@
    "dirlat": 44.40726,
    "dirlon": 8.9338624,
    "dir": "Genova"
-  },
-  {
-   "id": "314eadd275972ed2",
-   "strada": "A50 Tangenziale Ovest Di Milano",
-   "testo": "code per 2 km causa incidente tra Svincolo SS494 Vigevanese Nuova: Lorenteggio e Allacciamento A7 Milano-Genova in direzione Allacciamento A1 Milano-Napoli",
-   "tipo": "incidente",
-   "quando": "2026-11-26T17:24:00Z"
   },
   {
    "id": "f32c50367fb2a437",
@@ -1284,19 +1318,6 @@
    "dir": "Genova"
   },
   {
-   "id": "64aae95e01988aab",
-   "strada": "A8 Milano-Varese",
-   "testo": "code a tratti causa traffico intenso dalle 17:39 del 26 novembre 2026 tra Allacciamento Fiorenza-Allacciamento A4 (milano V.Le Certosa) e Svincolo Fiera Milano in direzione Varese",
-   "tipo": "code",
-   "quando": "2026-11-26T16:40:00Z",
-   "lat2": 45.53374,
-   "lon2": 9.08694,
-   "a": "Fiera Milano",
-   "dirlat": 45.8399103,
-   "dirlon": 8.754179,
-   "dir": "Varese"
-  },
-  {
    "id": "82b99923664c55cc",
    "strada": "Roma Via Cilicia",
    "testo": "traffico rallentato causa traffico intenso a Via Cilicia in direzione San Giovanni",
@@ -1331,19 +1352,6 @@
    "testo": "incidente traffico rallentato a Via del Casale delle Pantanelle",
    "tipo": "incidente",
    "quando": "2026-11-26T16:35:00Z"
-  },
-  {
-   "id": "c1a8fd88c2d848ea",
-   "strada": "A4 Milano-Brescia",
-   "testo": "code causa traffico intenso dalle 17:33 del 26 novembre 2026 a Svincolo Capriate in direzione da Milano",
-   "tipo": "code",
-   "quando": "2026-11-26T16:34:00Z",
-   "lat": 45.61165,
-   "lon": 9.54821,
-   "da": "Capriate",
-   "dirlat": 45.4641669,
-   "dirlon": 9.1916121,
-   "dir": "da Milano"
   },
   {
    "id": "aspi553903",
