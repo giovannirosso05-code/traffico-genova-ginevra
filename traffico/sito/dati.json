@@ -1,8 +1,8 @@
 {
- "aggiornato": "2026-11-27T11:00+00:00",
+ "aggiornato": "2026-11-27T11:15+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
-  "Italia": "ok (100 eventi)",
+  "Italia": "errore: TimeoutError, mostro i dati precedenti",
   "Autostrade (cantieri)": "ok (332 cantieri)",
   "Francia": "ok (447 eventi)",
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
