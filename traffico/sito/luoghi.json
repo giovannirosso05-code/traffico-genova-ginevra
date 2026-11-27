@@ -7728,5 +7728,32 @@ false
 37.3149801,
 13.6609621,
 false
+],
+"Via Papiria": [
+41.86383,
+12.5599959
+],
+"v2|Via Calpurnio Fiamma|12.2,42.2,12.9,41.5": [
+41.8597477,
+12.5599957,
+false
+],
+"v2|Viale Palmiro Togliatti|12.2,42.2,12.9,41.5": [
+41.8843513,
+12.573126,
+false
+],
+"Viale Palmiro Togliatti": [
+41.8774723,
+12.5719886
+],
+"v2|Tai Di Cadore - SS51 Bis Di Alemagna|14.8,37.9,15.5,37.2": null,
+"v2|Cortina D ampezzo - SS51racc Via Olimpia|14.8,37.9,15.5,37.2": null,
+"v2|Villetta Barrea|13.0,42.4,13.7,41.7": null,
+"v2|Suello - SS639 Dei Laghi Di Pusiano": null,
+"v2|Civate": [
+45.8268262,
+9.331658,
+false
 ]
 }
