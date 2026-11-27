@@ -5603,5 +5603,74 @@ false
 12.579363
 ],
 "v2|Ravenna/Allacciamento A14 Diramazione Per Ravenna - SS16|11.9,44.9,12.6,44.2": null,
-"v2|Pieve Di Teco - SS453 Della Valle Arroscia|7.5,44.4,8.2,43.7": null
+"v2|Pieve Di Teco - SS453 Della Valle Arroscia|7.5,44.4,8.2,43.7": null,
+"v2|Sestri Levante- SS370|11.9,42.3,12.6,41.6": null,
+"v2|Novate Mezzola": [
+46.2418007,
+9.492235,
+false
+],
+"v2|Ponte Verdura - SS386 Di Ribera|14.9,37.4,15.6,36.7": null,
+"v2|Villaseta|14.9,37.4,15.6,36.7": null,
+"Cavallermaggiore": [
+44.7095758,
+7.6930313
+],
+"Bra": [
+44.6976778,
+7.8542707
+],
+"v2|Cavallermaggiore|7.3,45.1,8.2,44.3": [
+44.7095758,
+7.6930313,
+false
+],
+"v2|Forlimpopoli|12.1,42.3,12.8,41.6": [
+41.7946103,
+12.4060507,
+false
+],
+"v2|Lova|11.9,44.9,12.6,44.2": null,
+"v2|Marghera/Incrocio SS11 Padana Superiore|11.9,44.9,12.6,44.2": null,
+"v2|Mercato Saraceno - S.G.C. Orte-Ravenna|11.5,43.7,12.2,43.0": null,
+"v2|Tarvisio Sud|13.0,46.9,13.9,45.6": [
+46.5049131,
+13.512443,
+true
+],
+"Di Val Di Foro E Di Bocca Di Valle": [
+42.264008,
+14.1958881
+],
+"v2|Miglianico/Ripa Teatina|13.8,42.6,14.5,41.9": null,
+"v2|Passovecchio - SS107 E SS107 Bis|16.1,38.7,16.8,38.0": null,
+"Stadio Olimpico (Piazzale degli Eroi)": null,
+"Di Alimena": [
+37.6934756,
+14.114651
+],
+"v2|Verdi|13.8,38.0,14.5,37.3": [
+37.7634417,
+14.1520411,
+false
+],
+"v2|Lavis Sud|10.8,46.3,11.5,45.6": [
+46.1543663,
+11.1062651,
+false
+],
+"Cagliaritana": [
+39.2588025,
+9.0838241
+],
+"v2|Monserrato - SS387 Del Gerrei|8.7,39.6,9.4,38.9": [
+39.4094049,
+9.1434445,
+false
+],
+"v2|Lentini Nord|14.7,37.7,15.4,37.0": [
+37.284685,
+14.9987779,
+false
+]
 }
