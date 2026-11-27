@@ -5215,5 +5215,101 @@ false
 "da Ventimiglia": [
 43.806517,
 7.5946255
+],
+"da Pescara": [
+40.6137857,
+15.0704184
+],
+"Via di Boccea": [
+41.9264112,
+12.3594735
+],
+"v2|Via Cornelia|12.0,42.3,12.7,41.6": [
+41.90786,
+12.3957771,
+false
+],
+"Piazza Irnerio": [
+41.898313,
+12.4300164
+],
+"v2|Via Salaria-Villa Ada|10.7,45.8,11.4,45.1": null,
+"v2|Trieste Lisert - Monfalcone Est|12.0,46.0,14.1,45.1": null,
+"Via Trionfale": [
+41.9656934,
+12.4090925
+],
+"v2|Via Ipogeo degli Ottavi|12.1,42.3,12.8,41.6": [
+41.9658174,
+12.4064075,
+false
+],
+"v2|Via Giuseppe Barellai|12.1,42.3,12.8,41.6": [
+41.9407755,
+12.4066256,
+false
+],
+"Largo Trionfale": [
+41.9105141,
+12.454685
+],
+"v2|Via Prenestina-Pigneto|10.7,45.8,11.4,45.1": null,
+"v2|Viale Castrense/Via Nola-Inizio Tangenziale|10.7,45.8,11.4,45.1": null,
+"v2|Via Pontina|12.1,42.2,12.8,41.5": [
+41.7301332,
+12.4334621,
+false
+],
+"v2|Piazzale 25 Marzo 1957|12.1,42.2,12.8,41.5": [
+41.8185197,
+12.4630336,
+false
+],
+"Largo Terme di Caracalla": [
+41.8814498,
+12.49138
+],
+"SS126 Sud Occidentale Sarda": [
+39.5857298,
+8.6649328
+],
+"v2|Via di Casal Bianco|12.3,42.3,13.0,41.6": [
+41.9434748,
+12.6341174,
+false
+],
+"Incrocio Viale Regina Margherita": null,
+"Picente": [
+42.5086282,
+13.2295081
+],
+"v2|Cermone - SS80 Del Gran Sasso D italia|12.9,42.9,13.6,42.2": [
+42.4050829,
+13.3104252,
+false
+],
+"v2|Configno|12.9,42.9,13.6,42.2": [
+42.6168934,
+13.2579607,
+false
+],
+"v2|Posada N SS125/131dir-C": null,
+"v2|Budoni - SS125 Orientale Sarda": [
+40.6925582,
+9.7177459,
+false
+],
+"v2|Siniscola Sud": [
+40.5731874,
+9.693975,
+false
+],
+"Piazzale Flaminio": [
+41.9119122,
+12.4762263
+],
+"Tangenziale": [
+45.5801845,
+11.5096396
 ]
 }
