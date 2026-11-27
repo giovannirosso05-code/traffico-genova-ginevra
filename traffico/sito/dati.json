@@ -1,13 +1,183 @@
 {
- "aggiornato": "2026-11-27T03:43+00:00",
+ "aggiornato": "2026-11-27T03:58+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
-  "Autostrade (cantieri)": "ok (448 cantieri)",
+  "Autostrade (cantieri)": "ok (438 cantieri)",
   "Francia": "ok (366 eventi)",
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "4bed6479465bec74",
+   "strada": "A12 Genova-Rosignano",
+   "testo": "personale su strada causa lavori dalle 04:55 alle 05:40 del 27 novembre 2026 tra Svincolo Recco e Svincolo Genova Nervi in direzione Genova",
+   "tipo": "lavori",
+   "quando": "2026-11-27T03:57:00Z",
+   "lat": 44.37668,
+   "lon": 9.14547,
+   "da": "Recco",
+   "lat2": 44.39564,
+   "lon2": 9.01026,
+   "a": "Genova Nervi",
+   "km": 13.1,
+   "dirlat": 44.40726,
+   "dirlon": 8.9338624,
+   "dir": "Genova"
+  },
+  {
+   "id": "7fc968bd621e1ac2",
+   "strada": "A4 Milano-Brescia",
+   "testo": "personale su strada causa lavori dalle 04:51 alle 05:36 del 27 novembre 2026 tra Barriera Di Milano Est e Svincolo Sesto San Giovanni-Viale Zara in direzione Torino",
+   "tipo": "lavori",
+   "quando": "2026-11-27T03:53:00Z",
+   "lat": 45.55581,
+   "lon": 9.26861,
+   "da": "Milano Est",
+   "dirlat": 45.0677551,
+   "dirlon": 7.6824892,
+   "dir": "Torino"
+  },
+  {
+   "id": "925d586449fb9685",
+   "strada": "A30 Caserta-Salerno",
+   "testo": "personale su strada causa lavori dalle 04:48 alle 05:33 del 27 novembre 2026 tra Allacciamento Salerno - Raccordo Salerno-Avellino e Svincolo Mercato S.Severino in direzione Caserta",
+   "tipo": "lavori",
+   "quando": "2026-11-27T03:50:00Z",
+   "lat": 40.7810263,
+   "lon": 14.7818498,
+   "da": "Salerno - Raccordo Salerno-Avellino",
+   "lat2": 40.7831498,
+   "lon2": 14.7557301,
+   "a": "Mercato S.Severino",
+   "indicativo": true,
+   "km": 2.7,
+   "dirlat": 41.2035193,
+   "dirlon": 14.1168624,
+   "dir": "Caserta"
+  },
+  {
+   "id": "dde7d880cd594118",
+   "strada": "SS52 Carnica",
+   "testo": "mezzi spargisale in azione tra Incrocio Passo Mauria e 250 m prima di Incrocio Lozzo Di Cadore - SS51 Bis Di Alemagna",
+   "tipo": "altro",
+   "quando": "2026-11-27T03:49:00Z"
+  },
+  {
+   "id": "26a0260d9e501267",
+   "strada": "A4 Milano-Brescia",
+   "testo": "personale su strada causa lavori dalle 04:46 alle 05:31 del 27 novembre 2026 tra Svincolo Cormano e Allacciamento Tangenziale Nord Di Milano in direzione Brescia",
+   "tipo": "lavori",
+   "quando": "2026-11-27T03:48:00Z",
+   "lat": 45.5381,
+   "lon": 9.16661,
+   "da": "Cormano",
+   "lat2": 45.56706,
+   "lon2": 9.2294133,
+   "a": "Tangenziale Nord Di Milano",
+   "indicativo": true,
+   "km": 7.0,
+   "dirlat": 45.7795805,
+   "dirlon": 10.425873,
+   "dir": "Brescia"
+  },
+  {
+   "id": "a1aa911c08003670",
+   "strada": "A1 Firenze-Roma",
+   "testo": "personale su strada causa lavori dalle 04:44 alle 05:29 del 27 novembre 2026 tra Svincolo Chiusi-Chianciano e Svincolo Fabro",
+   "tipo": "chiusura",
+   "quando": "2026-11-27T03:46:00Z",
+   "lat": 43.00708,
+   "lon": 11.91386,
+   "da": "Chiusi-Chianciano",
+   "lat2": 42.87944,
+   "lon2": 12.01636,
+   "a": "Fabro",
+   "km": 19.8
+  },
+  {
+   "id": "71dd8114e3bc5aa4",
+   "strada": "SS12 Dell abetone E Del Brennero",
+   "testo": "mezzi spargisale in azione tra 124 m prima di Incrocio La Lima - SS66 Pistoiese e 3,6 km dopo Incrocio Inizio Variante Di Ponte A Moriano in direzione Incrocio Pisa - SS1 Aurelia",
+   "tipo": "altro",
+   "quando": "2026-11-27T03:45:00Z"
+  },
+  {
+   "id": "331fde3acb140eca",
+   "strada": "A1 Firenze-Roma",
+   "testo": "personale su strada causa lavori dalle 04:43 alle 05:28 del 27 novembre 2026 tra Svincolo Fabro e Svincolo Orvieto in direzione Roma",
+   "tipo": "lavori",
+   "quando": "2026-11-27T03:45:00Z",
+   "lat": 42.87944,
+   "lon": 12.01636,
+   "da": "Fabro",
+   "lat2": 42.71551,
+   "lon2": 12.14887,
+   "a": "Orvieto",
+   "km": 25.4,
+   "dirlat": 41.8933203,
+   "dirlon": 12.4829321,
+   "dir": "Roma"
+  },
+  {
+   "id": "5f4c8a50dee0b11e",
+   "strada": "A1 Firenze-Roma",
+   "testo": "personale su strada causa lavori dalle 04:42 alle 05:27 del 27 novembre 2026 tra Svincolo Fabro e Svincolo Chiusi-Chianciano in direzione Firenze",
+   "tipo": "chiusura",
+   "quando": "2026-11-27T03:44:00Z",
+   "lat": 42.87944,
+   "lon": 12.01636,
+   "da": "Fabro",
+   "lat2": 43.00708,
+   "lon2": 11.91386,
+   "a": "Chiusi-Chianciano",
+   "km": 19.8,
+   "dirlat": 43.7697955,
+   "dirlon": 11.2556404,
+   "dir": "Firenze"
+  },
+  {
+   "id": "d5d5e57242e12b78",
+   "strada": "A30 Caserta-Salerno",
+   "testo": "personale su strada causa lavori dalle 04:42 alle 05:27 del 27 novembre 2026 tra Svincolo Palma Campania e Svincolo Castel S. Giorgio in direzione Salerno",
+   "tipo": "lavori",
+   "quando": "2026-11-27T03:44:00Z",
+   "lat": 40.8455,
+   "lon": 14.54639,
+   "da": "Palma Campania",
+   "lat2": 40.7844003,
+   "lon2": 14.6993869,
+   "a": "Castel S. Giorgio",
+   "indicativo": true,
+   "km": 17.5,
+   "dirlat": 40.4194416,
+   "dirlon": 15.3106085,
+   "dir": "Salerno"
+  },
+  {
+   "id": "88f467e583a64de8",
+   "strada": "A4 Milano-Brescia",
+   "testo": "personale su strada causa lavori dalle 04:42 alle 05:27 del 27 novembre 2026 tra Svincolo Trezzo e Allacciamento Tangenziale Est Di Milano in direzione Milano",
+   "tipo": "lavori",
+   "quando": "2026-11-27T03:44:00Z",
+   "lat": 45.59785,
+   "lon": 9.50707,
+   "da": "Trezzo",
+   "lat2": 45.33764,
+   "lon2": 9.33496,
+   "a": "Tangenziale Est Di Milano",
+   "km": 38.3,
+   "dirlat": 45.4641943,
+   "dirlon": 9.1896346,
+   "dir": "Milano"
+  },
+  {
+   "id": "ae639615cf26e1e8",
+   "strada": "SS52 Carnica",
+   "testo": "mezzi spargisale in azione tra 1,664 km dopo Incrocio Cima Gogna - SS48 Delle Dolomiti e Incrocio Passo Di Monte Croce Comelico",
+   "tipo": "altro",
+   "quando": "2026-11-27T03:43:00Z"
+  },
   {
    "id": "da0c54aec22a2490",
    "strada": "A56 Tangenziale Di Napoli",
@@ -76,20 +246,6 @@
    "dir": "Bologna"
   },
   {
-   "id": "b98b4064dde69b9e",
-   "strada": "SS36 Del Lago Di Como E Dello Spluga",
-   "testo": "carreggiata chiusa tra 17,26 km dopo Incrocio Abbadia Lariana e 171 m prima di Incrocio Piona in direzione Incrocio Passo Dello Spluga/Confine Con La Svizzera",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T03:39:00Z",
-   "lat": 45.89414,
-   "lon": 9.35024,
-   "da": "Abbadia Lariana",
-   "lat2": 46.11754,
-   "lon2": 9.3504,
-   "a": "Piona",
-   "km": 29.8
-  },
-  {
    "id": "f31503e7897c8beb",
    "strada": "A14 Bologna-Ancona",
    "testo": "personale su strada causa lavori dalle 04:38 alle 05:23 del 27 novembre 2026 tra Allacciamento Diramazione Per Ravenna e Svincolo Imola in direzione Bologna",
@@ -106,19 +262,6 @@
    "dirlat": 44.4938203,
    "dirlon": 11.3426327,
    "dir": "Bologna"
-  },
-  {
-   "id": "5d1312127d078c78",
-   "strada": "A12 Roma-Civitavecchia",
-   "testo": "rampa di accesso chiusa causa lavori dalle 23:08 del 26 alle 04:30 del 27 novembre 2026 a Svincolo Torrimpietra in direzione S.s. 1 Aurelia",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T03:38:00Z",
-   "lat": 41.92074,
-   "lon": 12.20253,
-   "da": "Torrimpietra",
-   "dirlat": 44.1125891,
-   "dirlon": 8.244297,
-   "dir": "S.s. 1 Aurelia"
   },
   {
    "id": "ab323f3cff89ef9d",
@@ -139,19 +282,6 @@
    "testo": "mezzi spargisale in azione tra 154,506 km dopo Incrocio Godega Di S.Urbano e Incrocio Thorl/Confine Con L austria",
    "tipo": "altro",
    "quando": "2026-11-27T03:37:00Z"
-  },
-  {
-   "id": "a19ef1ebad2a560e",
-   "strada": "A12 Roma-Civitavecchia",
-   "testo": "uscita chiusa causa lavori dalle 23:07 del 26 alle 04:30 del 27 novembre 2026 a Svincolo Torrimpietra in direzione da Roma",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T03:37:00Z",
-   "lat": 41.92074,
-   "lon": 12.20253,
-   "da": "Torrimpietra",
-   "dirlat": 41.4294261,
-   "dirlon": 13.2132272,
-   "dir": "da Roma"
   },
   {
    "id": "a23f0096012330d4",
@@ -246,21 +376,6 @@
    "dirlat": 44.1125891,
    "dirlon": 8.244297,
    "dir": "S.s. 1 Aurelia"
-  },
-  {
-   "id": "3af4f40a7a1d3845",
-   "strada": "A14 Ancona-Pescara",
-   "testo": "personale su strada causa lavori dalle 04:32 alle 05:17 del 27 novembre 2026 tra Svincolo Roseto Degli Abruzzi e Svincolo Pescara N. Citta S.Angelo",
-   "tipo": "lavori",
-   "quando": "2026-11-27T03:34:00Z",
-   "lat": 42.64946,
-   "lon": 13.97101,
-   "da": "Roseto Degli Abruzzi",
-   "lat2": 42.5237485,
-   "lon2": 14.1328701,
-   "a": "Pescara N. Citta S.Angelo",
-   "indicativo": true,
-   "km": 23.1
   },
   {
    "id": "b5195a50e6d16599",
@@ -453,19 +568,6 @@
    "indicativo": true
   },
   {
-   "id": "9ecca91bac7b269f",
-   "strada": "A10 Genova-Ventimiglia",
-   "testo": "personale su strada causa lavori dalle 04:20 alle 05:05 del 27 novembre 2026 tra Allacciamento A7 Milano-Genova e Svincolo Genova Aeroporto in direzione Ventimiglia",
-   "tipo": "lavori",
-   "quando": "2026-11-27T03:21:00Z",
-   "lat2": 44.42433,
-   "lon2": 8.86752,
-   "a": "Genova Aeroporto",
-   "dirlat": 43.7917623,
-   "dirlon": 7.6033131,
-   "dir": "Ventimiglia"
-  },
-  {
    "id": "3ccc3f1744b87cae",
    "strada": "A1 Firenze-Roma",
    "testo": "personale su strada causa lavori dalle 04:14 alle 04:59 del 27 novembre 2026 tra Svincolo Firenze Sud e Svincolo Firenze Impruneta in direzione Bologna",
@@ -481,46 +583,6 @@
    "dirlat": 44.4938203,
    "dirlon": 11.3426327,
    "dir": "Bologna"
-  },
-  {
-   "id": "a685860d56d0d1fc",
-   "strada": "A14 Bologna-Ancona",
-   "testo": "personale su strada causa lavori dalle 04:14 alle 04:59 del 27 novembre 2026 tra Allacciamento A13 Bologna-Padova e Allacciamento Ramo Casalecchio in direzione autostrada Milano-Napoli",
-   "tipo": "lavori",
-   "quando": "2026-11-27T03:16:00Z",
-   "lat2": 44.5106595,
-   "lon2": 11.2761027,
-   "a": "Ramo Casalecchio",
-   "indicativo": true,
-   "dirlat": 40.8358846,
-   "dirlon": 14.2487679,
-   "dir": "Napoli"
-  },
-  {
-   "id": "81c2ee1a74a0a067",
-   "strada": "A12 Roma-Civitavecchia",
-   "testo": "personale su strada causa lavori dalle 04:13 alle 04:58 del 27 novembre 2026 a Svincolo Torrimpietra in direzione S.s. 1 Aurelia",
-   "tipo": "lavori",
-   "quando": "2026-11-27T03:15:00Z",
-   "lat": 41.92074,
-   "lon": 12.20253,
-   "da": "Torrimpietra",
-   "dirlat": 44.1125891,
-   "dirlon": 8.244297,
-   "dir": "S.s. 1 Aurelia"
-  },
-  {
-   "id": "de9c98503aad001c",
-   "strada": "A12 Roma-Civitavecchia",
-   "testo": "personale su strada causa lavori dalle 04:13 alle 04:58 del 27 novembre 2026 a Svincolo Torrimpietra in direzione da Roma",
-   "tipo": "lavori",
-   "quando": "2026-11-27T03:15:00Z",
-   "lat": 41.92074,
-   "lon": 12.20253,
-   "da": "Torrimpietra",
-   "dirlat": 41.4294261,
-   "dirlon": 13.2132272,
-   "dir": "da Roma"
   },
   {
    "id": "6bb3a884827279e1",
@@ -578,19 +640,6 @@
    "lon2": 8.48516,
    "a": "Baveno",
    "km": 18.6
-  },
-  {
-   "id": "b75a52b2fa2023a0",
-   "strada": "A1 Roma-Napoli",
-   "testo": "personale su strada causa lavori dalle 04:06 alle 04:51 del 27 novembre 2026 tra Svincolo Centro Direzionale e Allacciamento A3 Napoli-Salerno in direzione Napoli",
-   "tipo": "lavori",
-   "quando": "2026-11-27T03:10:00Z",
-   "lat": 40.86983,
-   "lon": 14.32124,
-   "da": "Centro Direzionale",
-   "dirlat": 40.8358846,
-   "dirlon": 14.2487679,
-   "dir": "Napoli"
   },
   {
    "id": "4d1acea132684d06",
@@ -671,23 +720,6 @@
    "dirlat": 41.9668406,
    "dirlon": 12.440139,
    "dir": "SS2 Cassia"
-  },
-  {
-   "id": "1e25178842de6ed9",
-   "strada": "A1 Milano-Bologna",
-   "testo": "personale su strada causa lavori dalle 03:57 alle 04:42 del 27 novembre 2026 tra Svincolo Fidenza e Svincolo Parma in direzione Bologna",
-   "tipo": "lavori",
-   "quando": "2026-11-27T02:58:00Z",
-   "lat": 44.88795,
-   "lon": 10.09872,
-   "da": "Fidenza",
-   "lat2": 44.84133,
-   "lon2": 10.33258,
-   "a": "Parma",
-   "km": 23.0,
-   "dirlat": 44.4938203,
-   "dirlon": 11.3426327,
-   "dir": "Bologna"
   },
   {
    "id": "8ed5adf5715e988a",
@@ -785,16 +817,6 @@
    "dir": "Napoli"
   },
   {
-   "id": "12062bfb99bbf18d",
-   "strada": "A14 Ancona-Pescara",
-   "testo": "personale su strada causa lavori dalle 03:27 alle 04:12 del 27 novembre 2026 tra Incrocio Viale Gabriele D Annunzio incrocio ZTL Via Gaetano Ronzoni e Svincolo Ancona Sud",
-   "tipo": "lavori",
-   "quando": "2026-11-27T02:29:00Z",
-   "lat2": 43.52657,
-   "lon2": 13.51987,
-   "a": "Ancona Sud"
-  },
-  {
    "id": "4e76a9a0ee97ed4c",
    "strada": "A16 Napoli-Canosa",
    "testo": "personale su strada causa lavori dalle 03:27 alle 04:12 del 27 novembre 2026 tra Svincolo Grottaminarda e Svincolo Vallata",
@@ -822,23 +844,6 @@
    "a": "Tagliacozzo - SS5 Tiburtina Valeria",
    "indicativo": true,
    "km": 12.3
-  },
-  {
-   "id": "f3914ca5a090ba6a",
-   "strada": "A12 Genova-Rosignano",
-   "testo": "personale su strada causa lavori dalle 03:13 alle 03:58 del 27 novembre 2026 tra Svincolo Chiavari e Svincolo Recco in direzione Genova",
-   "tipo": "lavori",
-   "quando": "2026-11-27T02:14:00Z",
-   "lat": 44.32817,
-   "lon": 9.31866,
-   "da": "Chiavari",
-   "lat2": 44.37668,
-   "lon2": 9.14547,
-   "a": "Recco",
-   "km": 17.7,
-   "dirlat": 44.40726,
-   "dirlon": 8.9338624,
-   "dir": "Genova"
   },
   {
    "id": "ae330971f861e67d",
@@ -883,13 +888,6 @@
    "dir": "Brescia"
   },
   {
-   "id": "d4b97ec69125fd40",
-   "strada": "SS96 Barese",
-   "testo": "incidente a Incrocio Staz. Di Pescariello in direzione Incrocio Tricarico - SS7 Appia",
-   "tipo": "incidente",
-   "quando": "2026-11-27T01:59:00Z"
-  },
-  {
    "id": "540cc99e1278f522",
    "strada": "A23 Palmanova-Tarvisio",
    "testo": "mezzi spargisale in azione dalle 23:29 del 25 novembre 2026 tra Svincolo Pontebba e Svincolo Dogana Di Coccau-Confine Di Stato",
@@ -898,17 +896,6 @@
    "lat": 46.50919,
    "lon": 13.32345,
    "da": "Pontebba"
-  },
-  {
-   "id": "9bcf5bc443887659",
-   "strada": "SS67 Tosco Romagnola",
-   "testo": "traffico bloccato causa trasporti eccezionali tra Incrocio La Rotta e 38 m prima di Incrocio Ponte A Egola - S.G.C. Fi-Pi-Li",
-   "tipo": "altro",
-   "quando": "2026-11-27T01:55:00Z",
-   "lat": 43.6588804,
-   "lon": 10.6752469,
-   "da": "La Rotta",
-   "indicativo": true
   },
   {
    "id": "2b7eec664bbfb4a2",
@@ -1251,24 +1238,6 @@
    "dir": "Pescara"
   },
   {
-   "id": "b1134cf4ece99e77",
-   "strada": "A30 Caserta-Salerno",
-   "testo": "tratto chiuso causa lavori dalle 23:26 del 26 alle 06:00 del 27 novembre 2026 tra Svincolo Mercato S.Severino e Svincolo Castel S. Giorgio in direzione Caserta",
-   "tipo": "chiusura",
-   "quando": "2026-11-26T22:28:00Z",
-   "lat": 40.7831498,
-   "lon": 14.7557301,
-   "da": "Mercato S.Severino",
-   "lat2": 40.7844003,
-   "lon2": 14.6993869,
-   "a": "Castel S. Giorgio",
-   "indicativo": true,
-   "km": 5.7,
-   "dirlat": 41.2035193,
-   "dirlon": 14.1168624,
-   "dir": "Caserta"
-  },
-  {
    "id": "4b682b6ad4b3ab6f",
    "strada": "A10 Genova-Ventimiglia",
    "testo": "lavori tra 7,22 km prima di Svincolo Sanremo Ovest e 1,778 km dopo Svincolo Arma Di Taggia in direzione Genova",
@@ -1342,6 +1311,36 @@
    "testo": "nebbia dalle 22:44 del 26 novembre 2026 tra Allacciamento A26 Ge Voltri-Gravellona T. e Allacciamento A4 Torino-Trieste/Raccordo A4-A5",
    "tipo": "meteo",
    "quando": "2026-11-26T22:15:00Z"
+  },
+  {
+   "id": "8198d0cba4283f1f",
+   "strada": "SS45bis Bis Gardesana Occidentale",
+   "testo": "corsia chiusa tra 3,935 km dopo Incrocio Tignale e 1,487 km prima di Galleria Galleria Di Val Brasa",
+   "tipo": "chiusura",
+   "quando": "2026-11-26T22:13:00Z"
+  },
+  {
+   "id": "818dadac92068193",
+   "strada": "A56 Tangenziale Di Napoli",
+   "testo": "rampa di accesso chiusa causa lavori dalle 23:10 del 26 alle 06:00 del 27 novembre 2026 a Svincolo Agnano in direzione Pozzuoli",
+   "tipo": "chiusura",
+   "quando": "2026-11-26T22:12:00Z",
+   "lat": 40.8397,
+   "lon": 14.16648,
+   "da": "Agnano",
+   "dirlat": 40.822643,
+   "dirlon": 14.1219109,
+   "dir": "Pozzuoli"
+  },
+  {
+   "id": "43323f0e883808c2",
+   "strada": "A26 Genova-Gravellona Toce",
+   "testo": "nebbia dalle 21:54 del 26 novembre 2026 tra Allacciamento A21 Torino-Piacenza-Brescia e Svincolo Vercelli Est",
+   "tipo": "meteo",
+   "quando": "2026-11-26T22:08:00Z",
+   "lat2": 45.35968,
+   "lon2": 8.4837,
+   "a": "Vercelli Est"
   },
   {
    "id": "aspi553903",
@@ -6284,27 +6283,6 @@
    "dir": "Milano"
   },
   {
-   "id": "aspi494369",
-   "strada": "A1 Milano-Napoli (Autostrade)",
-   "testo": "cantiere tra Allac. Diramazione Roma Sud - Allac. A24 Roma-Teramo (dal km 569.3 al km 562.0) in direzione Milano: riduzione a 2 corsie (mor in s), limite 90 km/h · dal 26/11 22:00 al 27/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-26T21:00+00:00",
-   "fine": "2026-11-27T05:00+00:00",
-   "corsie": "riduzione a 2 corsie",
-   "lat": 41.8651090009845,
-   "lon": 12.77557902498,
-   "da": "Allac. Diramazione Roma Sud - Allac. A24 Roma-Teramo",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 41.9249898392038,
-   "lon2": 12.742178681307,
-   "km": 7.3,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
-  },
-  {
    "id": "aspi494125",
    "strada": "A1 Milano-Napoli (Autostrade)",
    "testo": "cantiere tra Frosinone - Frosinone (dal km 633.3 al km 631.5) in direzione Milano: corsia unica (pavimentazione risanamento), limite 60 km/h · dal 26/11 21:00 al 27/11 05:00",
@@ -6579,27 +6557,6 @@
    "lat2": 44.4208551363285,
    "lon2": 12.1419190616858,
    "km": 1.8
-  },
-  {
-   "id": "aspi752715",
-   "strada": "A30 Caserta-Salerno (Autostrade)",
-   "testo": "cantiere tra Maddaloni - Nola (dal km 5.0 al km 12.0) in direzione Salerno: corsia unica (altre cause), limite 60 km/h · dal 26/11 20:00 al 27/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-26T19:00+00:00",
-   "fine": "2026-11-27T05:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 41.0151924196313,
-   "lon": 14.3736518254599,
-   "da": "Maddaloni - Nola",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 40.9742009531401,
-   "lon2": 14.4289077393719,
-   "km": 7.0,
-   "dirlat": 40.4194416,
-   "dirlon": 15.3106085,
-   "dir": "Salerno"
   },
   {
    "id": "aspi752836",
@@ -7080,24 +7037,6 @@
    "dirlat": 40.5488156,
    "dirlon": 17.0805801,
    "dir": "Taranto"
-  },
-  {
-   "id": "aspi852759",
-   "strada": "T06 Complanare Di Bologna (Autostrade)",
-   "testo": "cantiere tra Sv.7 Bis Ss64 Ferrara - Sv.10 Zona Industriale Roveri (dal km 15.8 al km 17.593) in direzione Autostrada Bologna-Taranto: corsia unica (altre cause), limite 60 km/h · dal 27/11 00:00 al 27/11 05:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-26T23:00+00:00",
-   "fine": "2026-11-27T04:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 44.5184987887459,
-   "lon": 11.3718794478756,
-   "da": "Sv.7 Bis Ss64 Ferrara - Sv.10 Zona Industriale Roveri",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 44.5047629914314,
-   "lon2": 11.3815446578252,
-   "km": 1.8
   },
   {
    "id": "aspi559841",
@@ -7589,27 +7528,6 @@
    "dir": "Roma"
   },
   {
-   "id": "aspi965898",
-   "strada": "A8 Milano-Varese (Autostrade)",
-   "testo": "cantiere tra Svincolo Di Cavaria - Svincolo Di Solbiate Arno  Albizzate (dal km 33.9 al km 35.7) in direzione Varese: corsia unica (viadotto o ponte impalcato), limite 60 km/h · dal 26/11 22:00 al 27/11 05:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-26T21:00+00:00",
-   "fine": "2026-11-27T04:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 45.7025259275344,
-   "lon": 8.80766075251616,
-   "da": "Svincolo Di Cavaria - Svincolo Di Solbiate Arno  Albizzate",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 45.7180342959365,
-   "lon2": 8.80909854565427,
-   "km": 1.8,
-   "dirlat": 45.8399103,
-   "dirlon": 8.754179,
-   "dir": "Varese"
-  },
-  {
    "id": "aspi551635",
    "strada": "A14 Bologna-Taranto (Autostrade)",
    "testo": "cantiere tra Val Di Sangro - Lanciano (dal km 420.7 al km 414.9) in direzione Autostrada Milano-Napoli: corsia unica (viadotto o ponte pavimentaz.), limite 40 km/h · dal 03/11 20:00 al 30/11 06:00",
@@ -7890,27 +7808,6 @@
    "dirlat": 40.5488156,
    "dirlon": 17.0805801,
    "dir": "Taranto"
-  },
-  {
-   "id": "aspi752787",
-   "strada": "A1 Milano-Napoli (Autostrade)",
-   "testo": "cantiere tra Caianello - San Vittore (dal km 700.3 al km 698.6) in direzione Milano: corsia unica (cavalcavia), limite 60 km/h · dal 26/11 20:00 al 27/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-26T19:00+00:00",
-   "fine": "2026-11-27T05:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 41.3119875252575,
-   "lon": 14.0873612938298,
-   "da": "Caianello - San Vittore",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 41.3234739216089,
-   "lon2": 14.0807943171504,
-   "km": 1.7,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
   },
   {
    "id": "aspi1008507",
@@ -8217,27 +8114,6 @@
    "lat2": 42.0756702010103,
    "lon2": 12.542684738766,
    "km": 2.7
-  },
-  {
-   "id": "aspi493736",
-   "strada": "A1 Milano-Napoli (Autostrade)",
-   "testo": "cantiere tra Frosinone - Ceprano (dal km 624.6 al km 628.0) in direzione Napoli: corsia unica (pavimentazione risanamento), limite 60 km/h · dal 26/11 21:00 al 27/11 05:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-26T20:00+00:00",
-   "fine": "2026-11-27T04:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 41.6171764720655,
-   "lon": 13.3190249810197,
-   "da": "Frosinone - Ceprano",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 41.5955119387997,
-   "lon2": 13.3365148678861,
-   "km": 3.4,
-   "dirlat": 40.8358846,
-   "dirlon": 14.2487679,
-   "dir": "Napoli"
   },
   {
    "id": "aspi752800",
@@ -8744,27 +8620,6 @@
    "km": 1.2
   },
   {
-   "id": "aspi967173",
-   "strada": "A8 Milano-Varese (Autostrade)",
-   "testo": "cantiere tra Allacc. A9 Lainate-Como Chiasso - Allac. Tang. Ovest Di Milano (dal km 8.63 al km 6.0) in direzione Milano: riduzione a 4 corsie (ispezione opera d'arte), limite 110 km/h · dal 26/11 21:00 al 27/11 05:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-26T20:00+00:00",
-   "fine": "2026-11-27T04:00+00:00",
-   "corsie": "riduzione a 4 corsie",
-   "lat": 45.5634222510947,
-   "lon": 9.03148689583073,
-   "da": "Allacc. A9 Lainate-Como Chiasso - Allac. Tang. Ovest Di Milano",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 45.5506816919475,
-   "lon2": 9.05548969516946,
-   "km": 2.6,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
-  },
-  {
    "id": "aspi493997",
    "strada": "A12 Genova-Roma (Autostrade)",
    "testo": "cantiere tra Svincolo Di S.Severa-S.Marinella - Civitavecchia Sud (dal km 46.4 al km 47.5) in direzione Ss1 Aurelia: corsia unica (altre cause), limite 60 km/h · dal 27/11 06:00 al 27/11 21:00",
@@ -9230,27 +9085,6 @@
    "dir": "Napoli"
   },
   {
-   "id": "aspi1007988",
-   "strada": "A12 Genova-Roma (Autostrade)",
-   "testo": "cantiere tra Genova Nervi - Recco (dal km 20.4 al km 22.8) in direzione Rosignano: corsia unica (galleria altri interventi), limite 60 km/h · dal 26/11 21:00 al 27/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-26T20:00+00:00",
-   "fine": "2026-11-27T05:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 44.3794849292321,
-   "lon": 9.11592462306985,
-   "da": "Genova Nervi - Recco",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 44.3766946207489,
-   "lon2": 9.14511407791594,
-   "km": 2.4,
-   "dirlat": 43.3879184,
-   "dirlon": 10.4381133,
-   "dir": "Rosignano"
-  },
-  {
    "id": "aspi841221",
    "strada": "A14 Bologna-Taranto (Autostrade)",
    "testo": "cantiere tra Allac. A14 Bologna-Taranto - Bologna Casalecchio (dal km 5.0 al km 4.85) in direzione Autostrada Milano-Napoli: corsia unica (consolidamento scarpata), limite 60 km/h · dal 26/08 05:00 al 31/12 05:00",
@@ -9286,27 +9120,6 @@
    "dirlat": 45.4371908,
    "dirlon": 12.3345898,
    "dir": "Venezia"
-  },
-  {
-   "id": "aspi1007997",
-   "strada": "A12 Genova-Roma (Autostrade)",
-   "testo": "cantiere tra Recco - Chiavari (dal km 28.3 al km 32.4) in direzione Rosignano: bretella con 1 corsia deviata (galleria altri interventi), limite 40 km/h · dal 26/11 22:00 al 27/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-26T21:00+00:00",
-   "fine": "2026-11-27T05:00+00:00",
-   "corsie": "bretella con 1 corsia deviata",
-   "lat": 44.3588994925596,
-   "lon": 9.20890421744494,
-   "da": "Recco - Chiavari",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 44.3486856077194,
-   "lon2": 9.2522507124353,
-   "km": 4.1,
-   "dirlat": 43.3879184,
-   "dirlon": 10.4381133,
-   "dir": "Rosignano"
   },
   {
    "id": "aspi1008845",
@@ -9964,27 +9777,6 @@
    "dirlat": 45.4641943,
    "dirlon": 9.1896346,
    "dir": "Milano"
-  },
-  {
-   "id": "aspi100799700",
-   "strada": "A12 Genova-Roma (Autostrade)",
-   "testo": "cantiere tra Chiavari - Recco (dal km 31.95 al km 29.1) in direzione Genova: corsia unica (galleria altri interventi), limite 40 km/h · dal 26/11 22:00 al 27/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-26T21:00+00:00",
-   "fine": "2026-11-27T05:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 44.3505815164025,
-   "lon": 9.24710599298034,
-   "da": "Chiavari - Recco",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 44.3575961666588,
-   "lon2": 9.21754199096643,
-   "km": 2.8,
-   "dirlat": 44.40726,
-   "dirlon": 8.9338624,
-   "dir": "Genova"
   },
   {
    "id": "1dccf2d487b894d9",
