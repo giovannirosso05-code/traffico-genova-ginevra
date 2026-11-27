@@ -7474,5 +7474,33 @@ false
 9.4628795,
 false
 ],
-"v2|Casa Del Marchese|9.1,45.4,9.8,44.7": null
+"v2|Casa Del Marchese|9.1,45.4,9.8,44.7": null,
+"v2|Castel Bolognese - SS306 Casolana Riolese|12.1,42.3,12.8,41.6": null,
+"Piazza Gaetano Salvemini": [
+43.7715781,
+11.2623172
+],
+"v2|Via Giuseppe Verdi|10.9,44.1,11.6,43.4": [
+43.770961,
+11.2621831,
+false
+],
+"v2|Via Sant Egidio|10.9,44.1,11.6,43.4": [
+43.7720961,
+11.2613356,
+false
+],
+"v2|Piazza Gaetano Salvemini|10.9,44.1,11.6,43.4": [
+43.7715781,
+11.2623172,
+false
+],
+"Via Sant Egidio": [
+43.7730189,
+11.2597493
+],
+"Confine di Stato": [
+45.9263785,
+9.0368772
+]
 }
