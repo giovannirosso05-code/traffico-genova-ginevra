@@ -7860,5 +7860,24 @@ true
 ],
 "v2|Fiorenza-Allacciamento A8(milano V.Le Certosa)|8.8,46.1,10.8,45.1": null,
 "Incrocio Lungomare Di Cagliari": null,
-"v2|Bari Santa Fara|11.7,45.4,12.4,44.7": null
+"v2|Bari Santa Fara|11.7,45.4,12.4,44.7": null,
+"Di Bardonecchia": [
+45.078339,
+6.703205
+],
+"v2|Beaulard|6.4,45.4,7.1,44.7": [
+45.043609,
+6.7576651,
+false
+],
+"SS24 Del Monginevro": [
+45.5789133,
+10.232443
+],
+"Svincolo Genova": [
+44.4166065,
+8.9024812
+],
+"v2|11 Bis Castenaso-Ravenna|11.1,44.8,11.8,44.1": null,
+"v2|11 SS253 S.Vitale-Ravenna|11.1,44.8,11.8,44.1": null
 }
