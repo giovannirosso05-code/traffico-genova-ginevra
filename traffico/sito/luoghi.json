@@ -7144,5 +7144,63 @@ false
 "Via Raffaele De Cosa": [
 41.7376854,
 12.2844789
-]
+],
+"Via Salvore": [
+45.4871651,
+12.2145135
+],
+"v2|Via Duino|11.9,45.8,12.6,45.1": [
+45.4876147,
+12.2139511,
+false
+],
+"v2|Via Rio Cimetto|11.9,45.8,12.6,45.1": [
+45.4865224,
+12.2152222,
+false
+],
+"Viale del Muro Torto": [
+41.9092841,
+12.4872663
+],
+"v2|Viale del Galoppatoio|12.1,42.3,12.8,41.6": [
+41.9101943,
+12.4829435,
+false
+],
+"v2|Piazzale Flaminio|12.1,42.3,12.8,41.6": [
+41.9119122,
+12.4762263,
+false
+],
+"v2|Quagliano|14.3,41.4,15.0,40.7": null,
+"Via Sandro Gallo": [
+45.4069167,
+12.3651161
+],
+"v2|Via Andrea da Asola|12.0,45.8,12.7,45.1": [
+45.3937355,
+12.3538575,
+false
+],
+"v2|Via Cristoforo Colombo|12.0,45.8,12.7,45.1": [
+45.49239,
+12.245456,
+false
+],
+"Via Palazzuolo": [
+43.7745765,
+11.2445418
+],
+"v2|Via dell Albero|10.9,44.1,11.6,43.4": [
+43.7746623,
+11.2457554,
+false
+],
+"Di Ozieri": [
+40.5859373,
+9.0010431
+],
+"v2|Casa Cantoniera Carralzu|8.7,40.9,9.4,40.2": null,
+"v2|Chiaramonti/Incrocio SS672 SS-Tempio|8.7,40.9,9.4,40.2": null
 }
