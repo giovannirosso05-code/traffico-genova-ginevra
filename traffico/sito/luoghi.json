@@ -7890,5 +7890,18 @@ true
 11.4383019
 ],
 "v2|Variante Di Rho|8.2,46.3,8.9,45.6": null,
-"v2|Vergiate - SS394 Verbano Orientale|8.2,46.3,8.9,45.6": null
+"v2|Vergiate - SS394 Verbano Orientale|8.2,46.3,8.9,45.6": null,
+"da Ravenna": [
+41.9132469,
+12.5169679
+],
+"v2|S.Felice Circeo|12.1,42.2,12.8,41.5": [
+41.9650163,
+12.4476523,
+false
+],
+"Vigevanese": [
+45.4369177,
+9.1189271
+]
 }
