@@ -6218,5 +6218,63 @@ false
 "FR|Bourg-en-Bresse|Ain": [
 46.2051192,
 5.2250324
+],
+"v2|Quadrelli|10.3,46.9,11.0,46.2": null,
+"da Ancona": [
+43.6187776,
+13.5079218
+],
+"v2|Piazza di San Bernardo|12.1,42.3,12.8,41.6": [
+41.9035863,
+12.4945252,
+false
+],
+"Via Senese": [
+43.7507233,
+11.2367141
+],
+"v2|Viale Cardinal Leopoldo|10.9,44.1,11.6,43.4": null,
+"v2|Via di San Gaggio|10.9,44.1,11.6,43.4": [
+43.75248,
+11.2393959,
+false
+],
+"v2|Ferrara - Raccordo Ferrara-Porto Garibaldi|11.7,45.4,12.4,44.7": null,
+"v2|Piantedo - SS340 Diramazione Regina": null,
+"v2|Poggio Di Biagio - SS74 Maremmana|11.5,43.7,12.2,43.0": null,
+"v2|Variante Di Rivergaro|10.3,46.9,11.0,46.2": null,
+"Raccordo Tangenziale Di Bari": [
+41.0899249,
+16.8127169
+],
+"v2|Pontinia|12.1,42.2,12.8,41.5": [
+41.4763161,
+12.6560895,
+false
+],
+"v2|Sezze|12.1,42.2,12.8,41.5": [
+41.8442773,
+12.5475153,
+false
+],
+"Via Romania": [
+43.7575412,
+11.2978975
+],
+"v2|Valsavignone|11.9,44.5,12.6,43.8": null,
+"v2|Viale Papiniano incrocio ZTL Via Tullio Servio|8.9,45.8,9.6,45.1": null,
+"Largo Beata Maria De Mattias": [
+41.4696304,
+12.9107979
+],
+"v2|Via Virgilio|12.6,41.8,13.3,41.1": [
+41.4697806,
+12.9128779,
+false
+],
+"v2|Viale Ventiquattro Maggio|12.6,41.8,13.3,41.1": [
+41.4703507,
+12.9090393,
+false
 ]
 }
