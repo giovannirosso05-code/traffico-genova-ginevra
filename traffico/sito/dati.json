@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-27T01:34+00:00",
+ "aggiornato": "2026-11-27T01:42+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -8,6 +8,46 @@
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "2d3dfc3061c1d150",
+   "strada": "A12 Roma-Civitavecchia",
+   "testo": "personale su strada causa lavori dalle 02:39 alle 03:24 del 27 novembre 2026 tra Svincolo Civitavecchia Sud e Svincolo S.Severa-S.Marinella in direzione Roma",
+   "tipo": "lavori",
+   "quando": "2026-11-27T01:40:00Z",
+   "lat": 42.05639,
+   "lon": 11.82524,
+   "da": "Civitavecchia Sud",
+   "lat2": 42.03539,
+   "lon2": 11.94533,
+   "a": "S.Severa-S.Marinella",
+   "km": 12.2,
+   "dirlat": 41.8933203,
+   "dirlon": 12.4829321,
+   "dir": "Roma"
+  },
+  {
+   "id": "77664e810eeebb8c",
+   "strada": "A1 Roma-Napoli",
+   "testo": "personale su strada causa lavori dalle 02:35 alle 03:20 del 27 novembre 2026 tra Svincolo Centro Direzionale e Allacciamento A3 Napoli-Salerno in direzione Napoli",
+   "tipo": "lavori",
+   "quando": "2026-11-27T01:37:00Z",
+   "lat": 40.86983,
+   "lon": 14.32124,
+   "da": "Centro Direzionale",
+   "dirlat": 40.8358846,
+   "dirlon": 14.2487679,
+   "dir": "Napoli"
+  },
+  {
+   "id": "3f8e36088e468112",
+   "strada": "A2 Autostrada del Mediterraneo",
+   "testo": "veicolo in avaria a Svincolo Pizzo Calabro in direzione Svincolo A2 Raccordo di Reggio Calabria",
+   "tipo": "altro",
+   "quando": "2026-11-27T01:35:00Z",
+   "lat": 38.77271,
+   "lon": 16.21395,
+   "da": "Pizzo Calabro"
+  },
   {
    "id": "f33d266977930ecb",
    "strada": "A1 Complanare di Piacenza",
@@ -193,16 +233,6 @@
    "dir": "Napoli"
   },
   {
-   "id": "fd840caa13e77a08",
-   "strada": "A4 Milano-Brescia",
-   "testo": "perdita di carico causa perdita accidentale dalle 02:13 del 27 novembre 2026 a Svincolo Dalmine",
-   "tipo": "altro",
-   "quando": "2026-11-27T01:14:00Z",
-   "lat": 45.6476,
-   "lon": 9.62611,
-   "da": "Dalmine"
-  },
-  {
    "id": "2b650f7222373739",
    "strada": "A24 Tratto Urbano",
    "testo": "pedoni dalle 02:12 del 27 novembre 2026 tra Svincolo Portonaccio - Galla Placidia e Svincolo Via Fiorentini in direzione G.r.a.",
@@ -256,23 +286,6 @@
    "dirlat": 45.4641943,
    "dirlon": 9.1896346,
    "dir": "Milano"
-  },
-  {
-   "id": "97f56ebf798e4ae3",
-   "strada": "A1 Firenze-Roma",
-   "testo": "personale su strada causa lavori dalle 02:01 alle 02:46 del 27 novembre 2026 tra Svincolo Orte e Svincolo Magliano Sabina in direzione Roma",
-   "tipo": "lavori",
-   "quando": "2026-11-27T01:03:00Z",
-   "lat": 42.44882,
-   "lon": 12.34699,
-   "da": "Orte",
-   "lat2": 42.38209,
-   "lon2": 12.47111,
-   "a": "Magliano Sabina",
-   "km": 15.1,
-   "dirlat": 41.8933203,
-   "dirlon": 12.4829321,
-   "dir": "Roma"
   },
   {
    "id": "58833b9138be20dd",
@@ -338,23 +351,6 @@
    "testo": "chiusura notturna, entrata chiusa causa lavori dalle 01:41 alle 05:00 del 27 novembre 2026 a Svincolo SS494 Vigevanese Nuova: Lorenteggio in direzione A1 da SS494 Milano",
    "tipo": "chiusura",
    "quando": "2026-11-27T00:53:00Z"
-  },
-  {
-   "id": "8452199767f51341",
-   "strada": "A8 Milano-Varese",
-   "testo": "personale su strada causa lavori dalle 01:50 alle 02:35 del 27 novembre 2026 tra Svincolo Busto Arsizio e Svincolo Legnano in direzione Milano",
-   "tipo": "lavori",
-   "quando": "2026-11-27T00:52:00Z",
-   "lat": 45.63928,
-   "lon": 8.85913,
-   "da": "Busto Arsizio",
-   "lat2": 45.60094,
-   "lon2": 8.9504,
-   "a": "Legnano",
-   "km": 9.9,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
   },
   {
    "id": "aac4d462b2844661",
@@ -489,19 +485,6 @@
    "km": 17.1
   },
   {
-   "id": "973c5b73e3525594",
-   "strada": "S01 Strada Grande Comunicazione Fi-Pi-Li (per Livorno)",
-   "testo": "personale su strada causa rimozione ostacolo dalle 01:20 del 27 novembre 2026 tra Svincolo Montelupo Fiorentino e Svincolo Ginestra Fiorentina in direzione Firenze",
-   "tipo": "altro",
-   "quando": "2026-11-27T00:23:00Z",
-   "lat2": 43.71198,
-   "lon2": 11.05685,
-   "a": "Ginestra Fiorentina",
-   "dirlat": 43.7697955,
-   "dirlon": 11.2556404,
-   "dir": "Firenze"
-  },
-  {
    "id": "d96b98a2b4762bae",
    "strada": "A14 Ancona-Pescara",
    "testo": "pioggia dalle 18:18 del 26 novembre 2026 tra Svincolo Cattolica e Svincolo Ancona Sud",
@@ -514,19 +497,6 @@
    "lon2": 13.51987,
    "a": "Ancona Sud",
    "km": 94.9
-  },
-  {
-   "id": "3979aaaf8d45a470",
-   "strada": "S01 Strada Grande Comunicazione Fi-Pi-Li (per Livorno)",
-   "testo": "perdita di carico dalle 01:20 del 27 novembre 2026 tra Svincolo Montelupo Fiorentino e Svincolo Ginestra Fiorentina in direzione Firenze",
-   "tipo": "altro",
-   "quando": "2026-11-27T00:22:00Z",
-   "lat2": 43.71198,
-   "lon2": 11.05685,
-   "a": "Ginestra Fiorentina",
-   "dirlat": 43.7697955,
-   "dirlon": 11.2556404,
-   "dir": "Firenze"
   },
   {
    "id": "7988a8db893b4b06",
@@ -550,19 +520,6 @@
    "lat": 44.34516,
    "lon": 8.32298,
    "da": "Altare"
-  },
-  {
-   "id": "74dd641fc4225e16",
-   "strada": "A35Var BreBeMi",
-   "testo": "chiusura notturna, tratto chiuso causa lavori dalle 00:57 del 26 alle 05:00 del 27 novembre 2026 tra Svincolo Vignate - Liscate e Barriera A35 - Liscate in direzione Barriera A35 - Liscate",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T00:21:00Z",
-   "lat": 45.47858,
-   "lon": 9.38634,
-   "da": "Vignate - Liscate",
-   "dirlat": 45.4815487,
-   "dirlon": 9.4090115,
-   "dir": "Liscate"
   },
   {
    "id": "90c164e31ceb540b",
@@ -1264,28 +1221,45 @@
    "dir": "Salaria"
   },
   {
-   "id": "9db5a1ca3e8e0bb7",
-   "strada": "A12 Genova-Rosignano",
-   "testo": "lavori tra 5,03 km dopo Svincolo Deiva Marina e 3,09 km prima di Svincolo Carrodano in direzione Rosignano",
-   "tipo": "lavori",
-   "quando": "2026-11-26T21:56:00Z",
-   "lat": 44.2435,
-   "lon": 9.54622,
-   "da": "Deiva Marina",
-   "lat2": 44.23585,
-   "lon2": 9.65235,
-   "a": "Carrodano",
-   "km": 10.2,
-   "dirlat": 43.3879184,
-   "dirlon": 10.4381133,
-   "dir": "Rosignano"
-  },
-  {
    "id": "756388b413cb4b0b",
    "strada": "SS16 Adriatica",
    "testo": "trasporti eccezionali tra 300 m prima di Incrocio Montesilvano Marina e 4,331 km dopo Incrocio Scerne Di Pineto in direzione Incrocio Padova",
    "tipo": "altro",
    "quando": "2026-11-26T21:55:00Z"
+  },
+  {
+   "id": "456a748bc2a3768f",
+   "strada": "A52 Tangenziale Nord Di Milano",
+   "testo": "lavori a Svincolo Sesto S.Giovanni Sud: Cologno M. in direzione Svincolo SP44 Milano-Meda: Lentate-Bruzzano",
+   "tipo": "lavori",
+   "quando": "2026-11-26T21:52:00Z"
+  },
+  {
+   "id": "b5b1f9a7fb857d9d",
+   "strada": "SS1 Via Aurelia",
+   "testo": "lavori di manutenzione a Incrocio Vallecrosia",
+   "tipo": "lavori",
+   "quando": "2026-11-26T21:51:00Z"
+  },
+  {
+   "id": "ae0c7bbb7c5c9e5a",
+   "strada": "A90-GRA Aurelia-Salaria",
+   "testo": "corsia chiusa tra 2,001 km dopo Area di servizio selva Candida e 2,203 km prima di Svincolo 4: Ospedale S.Andrea in direzione Salaria",
+   "tipo": "chiusura",
+   "quando": "2026-11-26T21:49:00Z",
+   "lat": 41.92924,
+   "lon": 12.38088,
+   "da": "selva Candida",
+   "dirlat": 42.9126816,
+   "dirlon": 13.8853522,
+   "dir": "Salaria"
+  },
+  {
+   "id": "4922fa586c5f84a2",
+   "strada": "A50 Tangenziale Ovest Di Milano",
+   "testo": "chiusura notturna, tratto chiuso causa lavori tra Allacciamento A8 Milano-Varese e Svincolo SS33 Del Sempione: Rho-Pero in direzione Allacciamento A1 Milano-Napoli",
+   "tipo": "chiusura",
+   "quando": "2026-11-26T21:44:00Z"
   },
   {
    "id": "aspi553903",
