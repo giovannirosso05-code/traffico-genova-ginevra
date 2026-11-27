@@ -1,13 +1,118 @@
 {
- "aggiornato": "2026-11-27T10:59+00:00",
+ "aggiornato": "2026-11-27T11:00+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
-  "Autostrade (cantieri)": "ok (333 cantieri)",
-  "Francia": "ok (448 eventi)",
+  "Autostrade (cantieri)": "ok (332 cantieri)",
+  "Francia": "ok (447 eventi)",
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "232c27a6bf2e2422",
+   "strada": "SS1 Via Aurelia",
+   "testo": "corsia chiusa causa lavori tra 10,206 km dopo Incrocio Cavallo Di Albenga - SS582 Colle S. Bernardo e 5,363 km prima di Incrocio Andora",
+   "tipo": "chiusura",
+   "quando": "2026-11-27T10:59:00Z",
+   "lat2": 43.97101,
+   "lon2": 8.14374,
+   "a": "Andora"
+  },
+  {
+   "id": "2c93d7d4aefcf069",
+   "strada": "SS3 Via Flaminia",
+   "testo": "corsia chiusa causa lavori tra 1,619 km dopo Incrocio Valico Della Somma e 7,008 km prima di Incrocio Variante Di Spoleto",
+   "tipo": "chiusura",
+   "quando": "2026-11-27T10:59:00Z"
+  },
+  {
+   "id": "18ee39dd5b68c5b6",
+   "strada": "A12 Genova-Rosignano",
+   "testo": "veicolo fermo o in avaria dalle 11:57 del 27 novembre 2026 tra Svincolo Livorno - Raccordo Per Livorno e Svincolo Pisa Centro in direzione -",
+   "tipo": "altro",
+   "quando": "2026-11-27T10:59:00Z",
+   "lat2": 43.6875,
+   "lon2": 10.35434,
+   "a": "Pisa Centro"
+  },
+  {
+   "id": "7c53655a7aa3c79e",
+   "strada": "A7 Milano-Genova",
+   "testo": "incidente dalle 11:32 del 27 novembre 2026 tra Allacciamento A10 Genova-Ventimiglia e Allacciamento A12 Genova-Rosignano in direzione Milano",
+   "tipo": "incidente",
+   "quando": "2026-11-27T10:59:00Z"
+  },
+  {
+   "id": "dce8c645ef530e2a",
+   "strada": "Firenze Via dei Pecori",
+   "testo": "transito temporaneamente sospeso causa corsa podistica dalle 00:00 alle 23:59 del 29 novembre 2026 tra Via de Brunelleschi e Via dei Vecchietti",
+   "tipo": "altro",
+   "quando": "2026-11-27T10:59:00Z",
+   "lat": 43.7719315,
+   "lon": 11.253592,
+   "da": "Via de Brunelleschi",
+   "lat2": 43.7730519,
+   "lon2": 11.2527706,
+   "a": "Via dei Vecchietti",
+   "indicativo": true,
+   "km": 0.2
+  },
+  {
+   "id": "f3bcdb757d6cfa47",
+   "strada": "Genova Via Gian Battista Monti",
+   "testo": "incidente possibili rallentamenti a Via Gian Battista Monti",
+   "tipo": "incidente",
+   "quando": "2026-11-27T10:59:00Z"
+  },
+  {
+   "id": "cbd5496a9e94c4c7",
+   "strada": "Genova Passo a Via di Francia",
+   "testo": "incidente traffico rallentato a Passo a Via di Francia",
+   "tipo": "incidente",
+   "quando": "2026-11-27T10:58:00Z"
+  },
+  {
+   "id": "14eeaafc8b7954d0",
+   "strada": "T4-TRF Fre Traforo Del Frejus",
+   "testo": "chiusura notturna, tratto chiuso causa lavori dalle 22:30 alle 23:15 del 4 dicembre 2026 tra Galleria Inzio Traforo - versante Italiano e Galleria Inzio Traforo - versante Francese",
+   "tipo": "chiusura",
+   "quando": "2026-11-27T10:58:00Z"
+  },
+  {
+   "id": "26d8e1b1171d2195",
+   "strada": "A1 Roma-Napoli",
+   "testo": "code causa incidente dalle 10:17 del 27 novembre 2026 tra Svincolo Asse Supporto e Svincolo Caserta Sud in direzione Roma",
+   "tipo": "incidente",
+   "quando": "2026-11-27T10:58:00Z",
+   "lat": 40.953738,
+   "lon": 14.4888929,
+   "da": "Asse Supporto",
+   "lat2": 41.03222,
+   "lon2": 14.32228,
+   "a": "Caserta Sud",
+   "indicativo": true,
+   "km": 19.8,
+   "dirlat": 41.8933203,
+   "dirlon": 12.4829321,
+   "dir": "Roma"
+  },
+  {
+   "id": "e3310edb60339bf5",
+   "strada": "A14 Ancona-Pescara",
+   "testo": "perdita di carico dalle 11:56 del 27 novembre 2026 tra Svincolo Grottammare e Svincolo Pedaso in direzione Ancona",
+   "tipo": "altro",
+   "quando": "2026-11-27T10:58:00Z",
+   "lat": 42.9823,
+   "lon": 13.8621,
+   "da": "Grottammare",
+   "lat2": 43.0948,
+   "lon2": 13.83754,
+   "a": "Pedaso",
+   "km": 15.2,
+   "dirlat": 43.4801189,
+   "dirlon": 13.2187279,
+   "dir": "Ancona"
+  },
   {
    "id": "5b9963450edf0b70",
    "strada": "A5 Torino-Courmayeur",
@@ -75,23 +180,6 @@
    "dir": "Milano"
   },
   {
-   "id": "5a9a8aef5122a6ad",
-   "strada": "A10 Genova-Ventimiglia",
-   "testo": "perdita di carico dalle 11:51 del 27 novembre 2026 tra Svincolo Albisola e Svincolo Celle Ligure in direzione Genova",
-   "tipo": "altro",
-   "quando": "2026-11-27T10:57:00Z",
-   "lat": 44.33489,
-   "lon": 8.50747,
-   "da": "Albisola",
-   "lat2": 44.34923,
-   "lon2": 8.55365,
-   "a": "Celle Ligure",
-   "km": 4.8,
-   "dirlat": 44.40726,
-   "dirlon": 8.9338624,
-   "dir": "Genova"
-  },
-  {
    "id": "17938dbafb7fe842",
    "strada": "A26 Genova-Gravellona Toce",
    "testo": "veicolo fermo o in avaria dalle 11:53 del 27 novembre 2026 tra Svincolo Alessandria Sud e Allacciamento A21 Torino-Piacenza-Brescia in direzione Gravellona Toce",
@@ -153,13 +241,6 @@
    "dirlat": 45.8316548,
    "dirlon": 6.9461565,
    "dir": "Courmayeur"
-  },
-  {
-   "id": "7c53655a7aa3c79e",
-   "strada": "A7 Milano-Genova",
-   "testo": "incidente dalle 11:32 del 27 novembre 2026 tra Allacciamento A10 Genova-Ventimiglia e Allacciamento A12 Genova-Rosignano in direzione Milano",
-   "tipo": "incidente",
-   "quando": "2026-11-27T10:56:00Z"
   },
   {
    "id": "a4538a27a77c6666",
@@ -475,23 +556,6 @@
    "km": 2.6
   },
   {
-   "id": "9c307b86181c7069",
-   "strada": "A1 Firenze-Roma",
-   "testo": "code causa incidente dalle 10:39 del 27 novembre 2026 tra Svincolo Ponzano Romano-Soratte e Svincolo Magliano Sabina in direzione Firenze",
-   "tipo": "incidente",
-   "quando": "2026-11-27T10:44:00Z",
-   "lat": 42.27501,
-   "lon": 12.54327,
-   "da": "Ponzano Romano-Soratte",
-   "lat2": 42.38209,
-   "lon2": 12.47111,
-   "a": "Magliano Sabina",
-   "km": 16.0,
-   "dirlat": 43.7697955,
-   "dirlon": 11.2556404,
-   "dir": "Firenze"
-  },
-  {
    "id": "65f4f5fa4fabab78",
    "strada": "SP2(TO) di Germagnano",
    "testo": "chiusura notturna, tratto chiuso causa lavori dalle 21:00 del 27 alle 05:00 del 28 novembre 2026 tra Incrocio Germagnano e Incrocio SP1-Lanzo Torinese",
@@ -535,19 +599,6 @@
    "dirlat": 43.7697955,
    "dirlon": 11.2556404,
    "dir": "Firenze"
-  },
-  {
-   "id": "38e6fe858cc6ee25",
-   "strada": "A12 Genova-Rosignano",
-   "testo": "materiali dispersi a Svincolo Versilia in direzione Genova",
-   "tipo": "altro",
-   "quando": "2026-11-27T10:41:00Z",
-   "lat": 43.95547,
-   "lon": 10.2006,
-   "da": "Versilia",
-   "dirlat": 44.40726,
-   "dirlon": 8.9338624,
-   "dir": "Genova"
   },
   {
    "id": "176b3a5528d4c298",
@@ -1140,76 +1191,11 @@
    "dir": "Bologna"
   },
   {
-   "id": "70822c441762e289",
-   "strada": "A14 Pescara-Bari",
-   "testo": "personale su strada causa lavori dalle 11:16 alle 12:01 del 27 novembre 2026 tra Svincolo Termoli-Molise e Svincolo Vasto Sud in direzione Pescara",
-   "tipo": "lavori",
-   "quando": "2026-11-27T10:18:00Z",
-   "lat": 41.9983273,
-   "lon": 14.9939366,
-   "da": "Termoli-Molise",
-   "lat2": 42.05791,
-   "lon2": 14.77133,
-   "a": "Vasto Sud",
-   "indicativo": true,
-   "km": 23.5,
-   "dirlat": 42.3097631,
-   "dirlon": 13.9579989,
-   "dir": "Pescara"
-  },
-  {
-   "id": "950648353cb66382",
-   "strada": "SP14(GE) di Davagna",
-   "testo": "senso unico alternato causa lavori dalle 08:00 del 16 novembre 2026 alle 18:00 del 15 dicembre 2026 tra Incrocio SS45-Cavassolo e Incrocio Meco",
-   "tipo": "lavori",
-   "quando": "2026-11-27T10:18:00Z",
-   "lat2": 44.4462809,
-   "lon2": 9.0599303,
-   "a": "Meco",
-   "indicativo": true
-  },
-  {
    "id": "3e9976752089e526",
    "strada": "SS346 Del Passo Di S. Pellegrino",
    "testo": "tratto chiuso causa lavori dalle 08:00 del 5 alle 12:00 del 27 novembre 2026 tra Incrocio Confine TN-BL e Incrocio Falcade Alto",
    "tipo": "chiusura",
    "quando": "2026-11-27T10:17:00Z"
-  },
-  {
-   "id": "c97b6c31eed16fc5",
-   "strada": "Lungotevere (RM)",
-   "testo": "traffico rallentato causa traffico intenso tra Incrocio Ponte Giuseppe Mazzini e Incrocio Ponte Umberto I in direzione Incrocio Ponte Umberto I",
-   "tipo": "code",
-   "quando": "2026-11-27T10:16:00Z",
-   "lat": 41.8960606,
-   "lon": 12.4659984,
-   "da": "Ponte Giuseppe Mazzini",
-   "lat2": 41.9026576,
-   "lon2": 12.4713291,
-   "a": "Ponte Umberto I",
-   "indicativo": true,
-   "km": 1.0
-  },
-  {
-   "id": "12ea8db5f30b291a",
-   "strada": "Vaglia Via Europa",
-   "testo": "strada chiusa causa lavori dalle 00:00 del 27 alle 23:59 del 30 novembre 2026 a Via Roma",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T10:14:00Z"
-  },
-  {
-   "id": "18b632ac10418c4e",
-   "strada": "Firenze Via del Pozzino",
-   "testo": "riduzione di carreggiata dalle 11:12 del 27 novembre 2026 alle 23:59 del 23 dicembre 2026 a Via del Ronco Corto",
-   "tipo": "altro",
-   "quando": "2026-11-27T10:13:00Z"
-  },
-  {
-   "id": "8fa35eade087ea62",
-   "strada": "SS693 SSV693 dei Laghi di Lesina e Varano",
-   "testo": "chiusura per mezzi pesanti che trasporta materiale esplosivo dalle 00:01 del 7 agosto 2025 alle 23:59 del 17 dicembre 2026 tra Incrocio SS89 Garganica - Lodi Garganico e Allacciamento SP52 - Vico del Garganico",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T10:12:00Z"
   },
   {
    "id": "aspi553903",
@@ -7210,27 +7196,6 @@
    "dirlat": 45.4371908,
    "dirlon": 12.3345898,
    "dir": "Venezia"
-  },
-  {
-   "id": "aspi1008845",
-   "strada": "A26 Ge-Voltri-Gravell.Toce (Autostrade)",
-   "testo": "cantiere tra Vercelli Est - Allac. A4 Torino-Trieste (dal km 123.0 al km 124.0) in direzione Gravellona Toce: riduzione a 2 corsie (ripristino urgente x incidente), limite 90 km/h · dal 24/11 11:26 al 27/11 12:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-24T10:26+00:00",
-   "fine": "2026-11-27T11:00+00:00",
-   "corsie": "riduzione a 2 corsie",
-   "lat": 45.4171494214463,
-   "lon": 8.46893708937956,
-   "da": "Vercelli Est - Allac. A4 Torino-Trieste",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 45.4256037449651,
-   "lon2": 8.4646607326822,
-   "km": 1.0,
-   "dirlat": 45.930175,
-   "dirlon": 8.431222,
-   "dir": "Gravellona Toce"
   },
   {
    "id": "aspi236991",
@@ -13704,19 +13669,6 @@
    "fine": "",
    "lat": 48.57673,
    "lon": 6.17943,
-   "paese": "Francia"
-  },
-  {
-   "id": "db7a0c12b97290d6",
-   "strada": "N57 (Francia)",
-   "testo": "incidente dalle 10:48 del 27 novembre 2026 alle 12:00 del 27 novembre 2026 · Dir-Est en protection. Prudence · 5011 m a sud di 43278 · Direzione Metz (da Suisse - Lausanne)",
-   "tipo": "incidente",
-   "quando": "2026-11-27T11:06:10.242+01:00",
-   "corsie": "",
-   "inizio": "2026-11-27T10:48:00+01:00",
-   "fine": "2026-11-27T12:00:00+01:00",
-   "lat": 47.19532,
-   "lon": 6.16504,
    "paese": "Francia"
   },
   {
