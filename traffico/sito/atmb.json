@@ -1,8 +1,8 @@
 {
- "aggiornato": "2026-11-27T15:59+00:00",
+ "aggiornato": "2026-11-27T16:14+00:00",
  "fonte": "ATMB e APRR (siti ufficiali)",
  "stato": "ok",
- "tunnel": "",
+ "tunnel": "Traffico scorrevole",
  "eventi": [
   {
    "titolo": "🔔 del 1 novembre a 31 marzo: velocità ridotta di 130 km/h a 110 km/h",
@@ -21,15 +21,6 @@
    "gestore": "APRR",
    "lat": 48.6531178,
    "lon": 2.6380188
-  },
-  {
-   "titolo": "A5b · Seine e Marne · direzione Marne-la-vallée > Provins, uscita all'altezza di Moissy-Cramayel n. 12b",
-   "testo": "",
-   "tipo": "lavori",
-   "url": "https://voyage.aprr.fr/a5b-seine-et-marne-direction-marne-la-vallee-provins-sortie-au-niveau-de-moissy-cramayel-ndeg12b-0",
-   "gestore": "APRR",
-   "lat": 48.6272298,
-   "lon": 2.5937073
   },
   {
    "titolo": "A41N · Haute-Savoie- direzione Genève >Annecy dal 16/11 al 02/12",
@@ -117,5 +108,5 @@
    "lon": 5.2072863
   }
  ],
- "aprr": "ok (11 lavori)"
+ "aprr": "ok (10 lavori)"
 }
