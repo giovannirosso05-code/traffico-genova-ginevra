@@ -7796,5 +7796,27 @@ false
 8.6758677,
 false
 ],
-"v2|Fara Novarese|8.5,45.5,9.2,44.8": null
+"v2|Fara Novarese|8.5,45.5,9.2,44.8": null,
+"v2|Monte Castello|11.9,44.5,12.6,43.8": [
+43.809959,
+12.1339077,
+false
+],
+"v2|S.Damiano|11.9,44.5,12.6,43.8": [
+43.9643838,
+12.1936507,
+false
+],
+"SGC Grosseto": null,
+"v2|S.Zeno - SS73 Senese Aretina|12.7,44.2,13.4,43.5": null,
+"Arezzo": [
+43.5171442,
+11.7639282
+],
+"v2|Scopeti|10.3,44.0,11.0,43.3": null,
+"SS73 Senese Aretina": [
+43.3411591,
+11.5998182
+],
+"v2|Borgo A Mozzano|10.8,46.3,11.5,45.6": null
 }
