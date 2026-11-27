@@ -6843,5 +6843,128 @@ false
 43.7735895,
 11.2587747,
 false
-]
+],
+"Del Lago D orta": [
+45.8193244,
+8.394268
+],
+"v2|Pettenasco|8.0,46.2,8.7,45.5": [
+45.8171622,
+8.4087011,
+false
+],
+"SS33 E SS34": [
+46.0556311,
+8.2725266
+],
+"Via dei Sassetti": [
+43.7710457,
+11.2527889
+],
+"v2|Viale Papiniano incrocio ZTL Via Tullio Servio|11.0,44.8,13.6,43.1": null,
+"v2|Via Paolo Paruta|11.9,45.8,12.6,45.1": [
+45.402904,
+12.3618294,
+false
+],
+"v2|Via Andrea Costa|11.9,45.8,12.6,45.1": [
+45.489279,
+12.2455896,
+false
+],
+"Piazza dei Davanzati": [
+43.7704288,
+11.2527123
+],
+"v2|Via Porta Rossa|10.9,44.1,11.6,43.4": [
+43.7702112,
+11.254868,
+false
+],
+"v2|Via dei Sassetti|10.9,44.1,11.6,43.4": [
+43.7710457,
+11.2527889,
+false
+],
+"Via dei Grottoni": [
+41.8556257,
+12.4576893
+],
+"v2|Via Alberto Mancini|12.1,42.2,12.8,41.5": [
+41.8558752,
+12.4553204,
+false
+],
+"v2|Via Augusto Armellini|12.1,42.2,12.8,41.5": [
+41.8532446,
+12.4563748,
+false
+],
+"Imer": [
+46.1332913,
+11.7872951
+],
+"Castello Tesino": [
+46.1149869,
+11.6707408
+],
+"v2|Canal San Bovo|11.3,46.5,12.1,45.8": [
+46.1797216,
+11.7014481,
+false
+],
+"v2|Colle Di Tenda/Confine Con La Francia": null,
+"v2|Via della Condotta|10.9,44.1,11.6,43.4": [
+43.7702109,
+11.2565026,
+false
+],
+"v2|Termine Di Roverano|11.9,42.3,12.6,41.6": null,
+"Via Giulio Aristide Sartorio": [
+41.8536999,
+12.5117805
+],
+"v2|Via Giacinto Gigante|12.2,42.2,12.9,41.5": [
+41.8547964,
+12.5091867,
+false
+],
+"v2|Piazza Federico Marcello Lante|12.2,42.2,12.9,41.5": [
+41.852339,
+12.5030643,
+false
+],
+"Monterosso al Mare": [
+44.1465216,
+9.6555583
+],
+"Pian di Barca": [
+44.1708087,
+9.7552253
+],
+"v2|Monterosso al Mare|9.3,44.5,10.1,43.8": [
+44.1465216,
+9.6555583,
+false
+],
+"v2|Chiesa Nuova|9.3,44.5,10.1,43.8": [
+44.3717946,
+9.3123421,
+false
+],
+"Via della Condotta": [
+43.7702109,
+11.2565026
+],
+"Fratellanza": [
+45.4028236,
+10.9881279
+],
+"v2|Pradipaldo|10.6,45.8,11.3,45.1": null,
+"v2|Bressani-Fodati-Pozza|10.6,45.8,11.3,45.1": null,
+"Piazza di San Firenze": [
+43.7695171,
+11.2574393
+],
+"v2|Roncanova|10.8,46.3,11.5,45.6": null
 }
