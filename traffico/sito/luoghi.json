@@ -7932,5 +7932,35 @@ true
 41.8577092,
 12.3767694,
 false
+],
+"Del Gran Sasso D italia": [
+42.4728013,
+13.5742466
+],
+"v2|Porcinari - SS577 Del Lago Di Campotosto|13.2,42.8,13.9,42.1": null,
+"v2|Aprati|13.2,42.8,13.9,42.1": [
+42.5526561,
+13.4773503,
+false
+],
+"v2|Melito Di Napoli - SS7 Bis|14.3,41.4,15.0,40.7": null,
+"Salto Cicolana": [
+42.3951794,
+12.8753208
+],
+"v2|Corso Di Fiamignano|12.5,42.7,13.2,42.0": [
+42.2644925,
+13.1532161,
+false
+],
+"Dei Monti Lepini": [
+41.4562853,
+12.9306255
+],
+"v2|Ponte Maruzzo - SS609 Carpinetana|12.6,41.8,13.3,41.1": null,
+"v2|Sezze Scalo|12.6,41.8,13.3,41.1": [
+41.4965432,
+13.0430497,
+false
 ]
 }
