@@ -6557,13 +6557,18 @@ false
 7.4694832,
 false
 ],
+"v2|Argenta|11.7,45.4,12.4,44.7": [
+44.7371344,
+11.6802416,
+false
+],
 "Via Ferdinando Zannetti": [
 43.7738284,
 11.2535318
 ],
 "v2|Via dei Cerretani|10.9,44.1,11.6,43.4": [
-43.7734277,
-11.2528874,
+43.7734428,
+11.253431,
 false
 ],
 "v2|Via dei Conti|10.9,44.1,11.6,43.4": [
@@ -6600,8 +6605,8 @@ false
 false
 ],
 "v2|Viale dell Oceano Pacifico|12.1,42.2,12.8,41.5": [
-41.8201032,
-12.4609005,
+41.8261839,
+12.4553416,
 false
 ],
 "di Reggio Calabria": [
@@ -6627,8 +6632,8 @@ false
 ],
 "Inizio Tangenziale": null,
 "SS163 Amalfitana": [
-40.6252309,
-14.5838834
+40.6200857,
+14.5779343
 ],
 "v2|Via delle Tartarughe|12.3,41.8,13.0,41.1": [
 41.7733382,

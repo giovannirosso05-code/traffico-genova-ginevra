@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-27T11:29+00:00",
+ "aggiornato": "2026-11-27T11:32+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -9,11 +9,63 @@
  },
  "eventi": [
   {
+   "id": "759b66e7e4ffd027",
+   "strada": "SS16 Adriatica",
+   "testo": "lavori a Incrocio Argenta",
+   "tipo": "lavori",
+   "quando": "2026-11-27T11:29:00Z",
+   "lat": 44.7371344,
+   "lon": 11.6802416,
+   "da": "Argenta",
+   "indicativo": true
+  },
+  {
+   "id": "4e1770f5694ea43a",
+   "strada": "A7 Milano-Genova",
+   "testo": "personale su strada causa lavori dalle 12:27 alle 13:12 del 27 novembre 2026 tra Svincolo Busalla e Svincolo Genova Bolzaneto in direzione Genova",
+   "tipo": "lavori",
+   "quando": "2026-11-27T11:29:00Z",
+   "lat": 44.5683,
+   "lon": 8.95061,
+   "da": "Busalla",
+   "lat2": 44.47016,
+   "lon2": 8.90954,
+   "a": "Genova Bolzaneto",
+   "km": 13.7,
+   "dirlat": 44.40726,
+   "dirlon": 8.9338624,
+   "dir": "Genova"
+  },
+  {
+   "id": "521acfcdf5f5ddb2",
+   "strada": "T4-TRF Fre Traforo Del Frejus",
+   "testo": "chiusura notturna, tratto chiuso causa lavori dalle 22:30 del 21 alle 23:15 del 22 dicembre 2026 tra Galleria Inzio Traforo - versante Italiano e Galleria Inzio Traforo - versante Francese",
+   "tipo": "chiusura",
+   "quando": "2026-11-27T11:29:00Z"
+  },
+  {
+   "id": "7d5eace1ba9542e1",
+   "strada": "A14 Bologna-Ancona",
+   "testo": "veicolo fermo o in avaria dalle 12:27 del 27 novembre 2026 tra Svincolo Riccione e Svincolo Rimini Sud in direzione Bologna",
+   "tipo": "altro",
+   "quando": "2026-11-27T11:28:00Z",
+   "lat": 43.98734,
+   "lon": 12.6355,
+   "da": "Riccione",
+   "lat2": 44.03793,
+   "lon2": 12.5659,
+   "a": "Rimini Sud",
+   "km": 9.5,
+   "dirlat": 44.4938203,
+   "dirlon": 11.3426327,
+   "dir": "Bologna"
+  },
+  {
    "id": "5d586807b50f3f4d",
    "strada": "A1 Firenze-Roma",
    "testo": "incidente dalle 12:11 del 27 novembre 2026 tra Svincolo Firenze Impruneta e Svincolo Firenze Sud in direzione Roma",
    "tipo": "incidente",
-   "quando": "2026-11-27T11:27:00Z",
+   "quando": "2026-11-27T11:28:00Z",
    "lat": 43.72306,
    "lon": 11.22488,
    "da": "Firenze Impruneta",
@@ -24,6 +76,23 @@
    "dirlat": 41.8933203,
    "dirlon": 12.4829321,
    "dir": "Roma"
+  },
+  {
+   "id": "3511b931cc6aa0e8",
+   "strada": "A16 Napoli-Canosa",
+   "testo": "veicolo fermo o in avaria dalle 12:27 del 27 novembre 2026 tra Svincolo Baiano e Svincolo Avellino Ovest in direzione Canosa",
+   "tipo": "altro",
+   "quando": "2026-11-27T11:28:00Z",
+   "lat": 40.94132,
+   "lon": 14.6156,
+   "da": "Baiano",
+   "lat2": 40.91423,
+   "lon2": 14.74741,
+   "a": "Avellino Ovest",
+   "km": 13.8,
+   "dirlat": 44.5535604,
+   "dirlon": 10.4119138,
+   "dir": "Canosa"
   },
   {
    "id": "06b3299be6a56b4f",
@@ -48,8 +117,8 @@
    "testo": "transito temporaneamente sospeso causa corsa podistica dalle 02:00 alle 07:00 del 29 novembre 2026 tra Via dei Cerretani e Via dei Conti",
    "tipo": "altro",
    "quando": "2026-11-27T11:27:00Z",
-   "lat": 43.7734277,
-   "lon": 11.2528874,
+   "lat": 43.7734428,
+   "lon": 11.253431,
    "da": "Via dei Cerretani",
    "lat2": 43.7744638,
    "lon2": 11.2530604,
@@ -194,8 +263,8 @@
    "lat": 43.7730519,
    "lon": 11.2527706,
    "da": "Via dei Vecchietti",
-   "lat2": 43.7734277,
-   "lon2": 11.2528874,
+   "lat2": 43.7734428,
+   "lon2": 11.253431,
    "a": "Via dei Cerretani",
    "indicativo": true,
    "km": 0.1
@@ -311,11 +380,11 @@
    "lat": 41.8193998,
    "lon": 12.4541652,
    "da": "Via Bilbao",
-   "lat2": 41.8201032,
-   "lon2": 12.4609005,
+   "lat2": 41.8261839,
+   "lon2": 12.4553416,
    "a": "Viale dell Oceano Pacifico",
    "indicativo": true,
-   "km": 0.7
+   "km": 0.9
   },
   {
    "id": "a5752a574fe24414",
@@ -383,20 +452,6 @@
    "a": "Tivoli",
    "indicativo": true,
    "km": 39.9
-  },
-  {
-   "id": "620e47fd4727107c",
-   "strada": "A14 Pescara-Bari",
-   "testo": "personale su strada causa lavori dalle 12:15 alle 13:00 del 27 novembre 2026 tra Svincolo Lanciano e Svincolo Val Di Sangro",
-   "tipo": "lavori",
-   "quando": "2026-11-27T11:17:00Z",
-   "lat": 42.2668,
-   "lon": 14.43697,
-   "da": "Lanciano",
-   "lat2": 42.20968,
-   "lon2": 14.49438,
-   "a": "Val Di Sangro",
-   "km": 9.5
   },
   {
    "id": "bdcec6b0a5cc7074",
@@ -492,36 +547,6 @@
    "quando": "2026-11-27T11:14:00Z"
   },
   {
-   "id": "dd40cbc2ea71853a",
-   "strada": "A10 Genova-Ventimiglia",
-   "testo": "veicolo in avaria a Svincolo Orco Feglino in direzione Genova",
-   "tipo": "altro",
-   "quando": "2026-11-27T11:13:00Z",
-   "lat": 44.21392,
-   "lon": 8.32199,
-   "da": "Orco Feglino",
-   "dirlat": 44.40726,
-   "dirlon": 8.9338624,
-   "dir": "Genova"
-  },
-  {
-   "id": "c3900e5f1cb655bc",
-   "strada": "A14 Bologna-Ancona",
-   "testo": "perdita di carico causa perdita accidentale dalle 12:00 del 27 novembre 2026 tra Svincolo Forli e Svincolo Faenza in direzione Bologna",
-   "tipo": "altro",
-   "quando": "2026-11-27T11:12:00Z",
-   "lat": 44.2508,
-   "lon": 12.09554,
-   "da": "Forli",
-   "lat2": 44.32394,
-   "lon2": 11.90469,
-   "a": "Faenza",
-   "km": 20.7,
-   "dirlat": 44.4938203,
-   "dirlon": 11.3426327,
-   "dir": "Bologna"
-  },
-  {
    "id": "e22e2097c4173019",
    "strada": "A13 Bologna-Padova",
    "testo": "veicoli scortati per maltempo causa perdita di carico dalle 12:09 del 27 novembre 2026 tra Svincolo Altedo e Svincolo Ferrara Nord in direzione Padova",
@@ -584,11 +609,11 @@
    "lat": 43.7727779,
    "lon": 11.2542061,
    "da": "Via dei Pecori",
-   "lat2": 43.7734277,
-   "lon2": 11.2528874,
+   "lat2": 43.7734428,
+   "lon2": 11.253431,
    "a": "Via dei Cerretani",
    "indicativo": true,
-   "km": 0.2
+   "km": 0.1
   },
   {
    "id": "efc8eca8b5f69003",
@@ -692,8 +717,8 @@
    "lon": 14.4695178,
    "da": "Vico Equense - SS269 Del Faito",
    "indicativo": true,
-   "dirlat": 40.6252309,
-   "dirlon": 14.5838834,
+   "dirlat": 40.6200857,
+   "dirlon": 14.5779343,
    "dir": "SS163 Amalfitana"
   },
   {
@@ -1028,19 +1053,6 @@
    "dir": "Milano"
   },
   {
-   "id": "17938dbafb7fe842",
-   "strada": "A26 Genova-Gravellona Toce",
-   "testo": "veicolo fermo o in avaria dalle 11:53 del 27 novembre 2026 tra Svincolo Alessandria Sud e Allacciamento A21 Torino-Piacenza-Brescia in direzione Gravellona Toce",
-   "tipo": "altro",
-   "quando": "2026-11-27T10:57:00Z",
-   "lat": 44.87699,
-   "lon": 8.57041,
-   "da": "Alessandria Sud",
-   "dirlat": 45.930175,
-   "dirlon": 8.431222,
-   "dir": "Gravellona Toce"
-  },
-  {
    "id": "853ce31c9dff1139",
    "strada": "Firenze Via Porta Rossa",
    "testo": "transito temporaneamente sospeso causa corsa podistica dalle 00:00 alle 23:59 del 29 novembre 2026 tra Via Pellicceria e Piazza dei Davanzati",
@@ -1174,24 +1186,6 @@
    "testo": "incidente traffico rallentato a Via Teresio Mario Canepari",
    "tipo": "incidente",
    "quando": "2026-11-27T10:50:00Z"
-  },
-  {
-   "id": "f1c9d64eaceae468",
-   "strada": "A14 Pescara-Bari",
-   "testo": "personale su strada causa lavori dalle 11:47 alle 12:32 del 27 novembre 2026 tra Svincolo Termoli-Molise e Svincolo Vasto Sud in direzione Pescara",
-   "tipo": "lavori",
-   "quando": "2026-11-27T10:48:00Z",
-   "lat": 41.9983273,
-   "lon": 14.9939366,
-   "da": "Termoli-Molise",
-   "lat2": 42.05791,
-   "lon2": 14.77133,
-   "a": "Vasto Sud",
-   "indicativo": true,
-   "km": 23.5,
-   "dirlat": 42.3097631,
-   "dirlon": 13.9579989,
-   "dir": "Pescara"
   },
   {
    "id": "3ae18254a7fbc641",
@@ -6425,11 +6419,11 @@
   {
    "id": "aspi551635",
    "strada": "A14 Bologna-Taranto (Autostrade)",
-   "testo": "cantiere tra Val Di Sangro - Lanciano (dal km 420.7 al km 414.9) in direzione Autostrada Milano-Napoli: corsia unica (viadotto o ponte pavimentaz.), limite 40 km/h · dal 03/11 20:00 al 30/11 06:00",
+   "testo": "cantiere tra Val Di Sangro - Lanciano (dal km 420.7 al km 414.9) in direzione Autostrada Milano-Napoli: deviazione a 1 corsia (viadotto o ponte pavimentaz.), limite 40 km/h · dal 03/11 20:00 al 30/11 06:00",
    "tipo": "lavori",
    "inizio": "2026-11-03T19:00+00:00",
    "fine": "2026-11-30T05:00+00:00",
-   "corsie": "corsia unica",
+   "corsie": "deviazione a 1 corsia",
    "lat": 42.2202388602355,
    "lon": 14.4850686888646,
    "da": "Val Di Sangro - Lanciano",
