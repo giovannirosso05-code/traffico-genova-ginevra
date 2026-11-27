@@ -5068,5 +5068,12 @@ false
 13.3901736,
 false
 ],
-"v2|Ponte Zittola - SS17 Dell app. Abruzzese|13.0,42.4,13.7,41.7": null
+"v2|Ponte Zittola - SS17 Dell app. Abruzzese|13.0,42.4,13.7,41.7": null,
+"v2|Laigueglia|11.9,42.3,12.6,41.6": [
+41.8610645,
+12.2000286,
+false
+],
+"v2|Gello - Allacciamento Fi-Pi-Li per Livorno|10.1,44.0,10.8,43.3": null,
+"v2|Pisa Centro - A12 Genova-Rosignano|10.1,44.0,10.8,43.3": null
 }
