@@ -6063,5 +6063,89 @@ false
 "FR|ISLE D'ABEAU|Isère": [
 45.6278116,
 5.2072863
+],
+"Di Grado": [
+45.6781065,
+13.3979091
+],
+"v2|S.Stefano Udinese|13.0,46.0,13.7,45.3": [
+45.9546116,
+13.2834155,
+false
+],
+"v2|S.Maria La Longa|13.0,46.0,13.7,45.3": [
+45.9330523,
+13.2880233,
+false
+],
+"Di S.Vittoria": [
+40.7730019,
+8.6712183
+],
+"v2|Molini D isola - SS456 Del Turchino|8.3,41.1,9.0,40.4": null,
+"v2|Canove|8.3,41.1,9.0,40.4": null,
+"v2|Via Ludovico il Moro corrispondenza Cavalcavia Don Lorenzo Milani|10.1,44.9,14.6,40.5": null,
+"v2|Ponte Orcia - SS323 Di Monte Amiata|12.0,42.4,12.7,41.7": null,
+"Dorf": [
+46.4653657,
+12.7087174
+],
+"Paese": [
+45.6999302,
+12.1491918
+],
+"v2|Rosengartenstraße - Via Catinaccio|11.8,46.8,13.1,45.3": null,
+"v2|Schwimmbadweg - via della Piscina|11.8,46.8,13.1,45.3": null,
+"v2|Acqui Terme": [
+44.6743287,
+8.4684633,
+false
+],
+"v2|Piana Crixia - SS29 Del Colle Di Cadibona": null,
+"v2|Ozzano Dell emilia|12.1,42.3,12.8,41.6": null,
+"Della Valle Brembana": [
+45.8855418,
+9.6531381
+],
+"v2|Zogno|9.3,46.2,10.0,45.5": [
+45.7965457,
+9.678722,
+false
+],
+"SS47": [
+45.4456328,
+11.8624909
+],
+"San Cristoforo al Lago": [
+46.0390092,
+11.2351165
+],
+"SP228": [
+44.3993079,
+7.5449109
+],
+"Levico Terme": [
+46.0091259,
+11.3017774
+],
+"v2|Valcanover|7.2,46.4,12.2,44.0": [
+46.0299415,
+11.2282289,
+false
+],
+"Fiorentini": [
+42.1395808,
+14.2902834
+],
+"v2|Barchi|13.9,42.5,14.6,41.8": null,
+"v2|5 Bologna Quartiere Lame|11.1,44.8,11.8,44.1": [
+44.5204686,
+11.3228727,
+false
+],
+"v2|6 Castelmaggiore|11.1,44.8,11.8,44.1": [
+44.5475091,
+11.3374335,
+false
 ]
 }
