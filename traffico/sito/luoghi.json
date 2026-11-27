@@ -8001,5 +8001,24 @@ true
 45.2521518,
 7.7417354,
 false
-]
+],
+"v2|13 SS9 Via Emilia|11.1,44.8,11.8,44.1": [
+44.5333726,
+11.2302935,
+false
+],
+"v2|Aeroporto Caselle|7.3,45.6,8.0,44.8": [
+45.2009688,
+7.6489751,
+false
+],
+"v2|Caselle Torinese|7.3,45.6,8.0,44.8": [
+45.1774901,
+7.6463671,
+false
+],
+"v2|Casello Settimo Torinese A4 Torino-Trieste|7.5,45.5,8.2,44.8": null,
+"v2|Ponte Ribellasca/Confine Con La Svizzera|8.1,46.5,8.8,45.8": null,
+"v2|Variante Di St. Vincent|7.3,46.3,8.0,45.6": null,
+"v2|Mont Jovet|7.3,46.3,8.0,45.6": null
 }
