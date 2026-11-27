@@ -255,7 +255,7 @@ function drawEvents(list,line){
    .bindPopup(popup(e),{maxWidth:290}).bindTooltip(e.tipo+' · '+e.strada).addTo(lyrEv);
  });
 }
-let PAESE='tutti',ULTIMA=null;
+let PAESE='tutti',ULTIMA=null,TUTTI=false;
 const paeseDi=e=>fr(e)?'FR':ch(e)?'CH':'IT';
 function listEvents(list,title){
  ULTIMA=[list,title];
@@ -265,7 +265,9 @@ function listEvents(list,title){
  $('evsum').textContent=`${title} (${list.length})`;
  $('evfiltro').innerHTML=[['tutti','Tutti',list.length],['IT','<span class="frb itb">IT</span> Italia',n.IT],['FR','<span class="frb">FR</span> Francia',n.FR],['CH','<span class="frb chb">CH</span> Svizzera',n.CH]]
   .filter(x=>x[0]==='tutti'||x[2]).map(x=>`<button type="button" class="ghost ${PAESE===x[0]?'on':''}" data-p="${x[0]}">${x[1]} (${x[2]})</button>`).join('');
- $('evfiltro').querySelectorAll('button').forEach(b=>b.onclick=()=>{PAESE=b.dataset.p;listEvents(...ULTIMA)});
+ if(ROUTES.length)$('evfiltro').innerHTML+=TUTTI?`<button type="button" class="ghost" data-x="r">← Solo il mio percorso</button>`:`<button type="button" class="ghost" data-x="t">Vedi tutti, anche fuori percorso (Francia compresa)</button>`;
+ $('evfiltro').querySelectorAll('button[data-p]').forEach(b=>b.onclick=()=>{PAESE=b.dataset.p;listEvents(...ULTIMA)});
+ $('evfiltro').querySelectorAll('button[data-x]').forEach(b=>b.onclick=()=>{TUTTI=b.dataset.x==='t';if(TUTTI){const lv=EV.filter(e=>fase(e)!=='terminato');listEvents(lv,'Tutti i problemi segnalati');$('evbox').open=true}else showRoutes(false)});
  $('evlist').innerHTML=L2.length?L2.map(e=>`<div class="ev" data-id="${esc(e.id)}" role="button" tabindex="0" style="cursor:pointer"><div><span class="pill ${grave(e)?'ko':'mid'}">${esc(etichetta(e))}</span>${bandiera(e)} <b>${esc(e.strada)}</b></div><div>${hl(e.testo)}</div><div class="muted">${typeof e.lat==='number'?'📍 Tocca per vederlo sulla mappa':'Posizione non disponibile per questo avviso'}</div></div>`).join(''):'<div class="ev muted">Nessun problema segnalato.</div>';
  $('evlist').querySelectorAll('.ev[data-id]').forEach(d=>{const vai=()=>{const m=MK[d.dataset.id];if(!m)return;
   $('map').scrollIntoView({behavior:'smooth',block:'center'});
@@ -361,7 +363,7 @@ function showRoutes(fit){
  $('routes').innerHTML=ROUTES.map((x,i)=>`<button type="button" class="rt ${i===SEL?'on':''}" data-i="${i}"><span class="pill ${x.bad?'ko':x.ev.length?'mid':'ok'}">${x.bad?x.bad+' chius.':x.ev.length?x.ev.length+(x.ev.length===1?' avviso':' avvisi'):'libero'}</span><span><b class="num">${hm(x.min)}</b> <span class="muted num">· ${Math.round(x.km)} km</span><br><span class="muted">${i===0?'Percorso più rapido':'Alternativa '+i} · tempo senza traffico</span></span><span class="muted">${i===SEL?'scelto':'scegli'}</span></button>`).join('');
  $('routes').querySelectorAll('.rt').forEach(b=>b.onclick=()=>{SEL=+b.dataset.i;showRoutes()});
  $('res').hidden=false;
- listEvents(R.ev,'Chiusure e lavori sul percorso');
+ TUTTI=false;listEvents(R.ev,'Chiusure e lavori sul percorso');
  $('evbox').open=R.ev.length>0;
  when();
 }
