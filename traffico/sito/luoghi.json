@@ -7553,5 +7553,91 @@ false
 false
 ],
 "v2|Piazza Santa Croce|15.8,42.2,16.5,41.5": null,
-"v2|Tangenziale Est di Forli|12.1,42.3,12.8,41.6": null
+"v2|Tangenziale Est di Forli|12.1,42.3,12.8,41.6": null,
+"Viale della Serenissima": [
+41.8948764,
+12.5592128
+],
+"v2|Via delle Rondini|12.3,42.2,13.0,41.5": [
+41.8585593,
+12.5966924,
+false
+],
+"v2|Via dei Giardinetti|12.3,42.2,13.0,41.5": [
+42.1630103,
+12.7805894,
+false
+],
+"Via dei Giardinetti": [
+42.1630103,
+12.7805894
+],
+"Lungarno degli Acciaioli": [
+43.7689567,
+11.2520286
+],
+"v2|Piazza dei Pesce|10.9,44.1,11.6,43.4": null,
+"v2|Lungarno Corsini|10.9,44.1,11.6,43.4": [
+43.7701688,
+11.2492072,
+false
+],
+"v2|S.Giacomo Di Veglia|14.8,37.9,15.5,37.2": null,
+"v2|Casello Fadalto A27 Mestre-Belluno|14.8,37.9,15.5,37.2": null,
+"v2|Via Emilio Longoni|12.6,42.2,13.3,41.5": [
+41.896669,
+12.6040026,
+false
+],
+"v2|Via di Torrenova|12.6,42.2,13.3,41.5": [
+41.8778021,
+12.6184234,
+false
+],
+"Siracusa": [
+37.0315752,
+15.2124277
+],
+"v2|Augusta - SS114|14.7,37.9,15.6,36.7": [
+37.2029363,
+15.1490101,
+false
+],
+"v2|Lentini-Carlentini-Ragusa|14.7,37.9,15.6,36.7": null,
+"Svincolo Tangenziale di Catania": null,
+"Piazza dei Pesce": null,
+"v2|Lungarno degli Archibusieri": [
+43.7679276,
+11.2548302,
+false
+],
+"v2|Lungarno degli Acciaioli": [
+43.7689567,
+11.2520286,
+false
+],
+"Lungarno degli Archibusieri": [
+43.7679276,
+11.2548302
+],
+"v2|Conca Dei Marini - SS366 Di Agerola|8.9,45.8,9.6,45.1": null,
+"Lungarno Anna Maria Luisa de  Medici": [
+43.7676524,
+11.2555835
+],
+"v2|Lungarno degli Archibusieri|10.9,44.1,11.6,43.4": [
+43.7679276,
+11.2548302,
+false
+],
+"v2|Piazzale Prenestino|12.6,42.2,13.3,41.5": null,
+"v2|Largo Preneste|12.6,42.2,13.3,41.5": [
+41.8311822,
+12.9002795,
+false
+],
+"Largo Preneste": [
+41.8927175,
+12.5412798
+]
 }
