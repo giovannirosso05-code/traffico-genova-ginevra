@@ -5197,5 +5197,23 @@ false
 "SS62 Della Cisa": [
 44.4671182,
 9.9204001
+],
+"Casilina": [
+41.3618588,
+14.0373771
+],
+"v2|14: Allacciamento A24 Roma-Teramo|13.5,43.3,14.4,41.0": null,
+"v2|La Storta - SS493 Claudia Braccianese|12.0,42.4,12.7,41.7": null,
+"Incrocio Via Flaminia": null,
+"v2|Variante Di Bojano|13.4,42.6,14.7,41.0": null,
+"v2|Sacrofanese-Malborghetto|12.1,42.3,12.8,41.6": [
+42.0558975,
+12.4840252,
+false
+],
+"Incrocio P.le Flaminio": null,
+"da Ventimiglia": [
+43.806517,
+7.5946255
 ]
 }
