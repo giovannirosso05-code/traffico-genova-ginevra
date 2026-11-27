@@ -5426,5 +5426,48 @@ false
 39.746644,
 8.770131,
 false
+],
+"Radd Jonica": null,
+"v2|Staz. Sibari - SS106 Jonica": null,
+"v2|Carpane|8.9,45.9,9.6,45.2": null,
+"v2|Solagna|8.9,45.9,9.6,45.2": null,
+"da Svizzera": [
+41.9266649,
+12.4850139
+],
+"v2|Falcone A20 Messina-Palermo|15.1,38.6,15.8,37.9": null,
+"v2|Marina Di Patti|15.1,38.6,15.8,37.9": null,
+"v2|Palazzolo Acreide|14.9,37.4,15.6,36.7": [
+37.0606277,
+14.9194788,
+false
+],
+"SS117 Bis Centrale Sicula": null,
+"v2|Pozzo-S.G.Lupatoto|10.7,45.7,11.4,45.0": null,
+"v2|Ca Di Ferro E Ca Degli Oppi|10.7,45.7,11.4,45.0": null,
+"v2|Viale Gabriele D Annunzio incrocio ZTL Via Gaetano Ronzoni|11.0,44.8,13.6,43.1": null,
+"v2|Cecina Sud - SS1 Var|11.9,42.3,12.6,41.6": null,
+"v2|Collesalvetti/Sgc Fi-Pi-Li|8.6,44.8,10.8,43.0": null,
+"v2|Livorno - Raccordo Per Livorno|8.6,44.8,10.8,43.0": null,
+"v2|Viale del Pattinaggio|12.1,42.2,12.8,41.5": [
+41.8420455,
+12.4707523,
+false
+],
+"Viale del Pattinaggio": [
+41.841888,
+12.4725874
+],
+"v2|Variante Di Torre A Mare|11.7,45.4,12.4,44.7": null,
+"v2|Variante Di Mola Di Bari|11.7,45.4,12.4,44.7": null,
+"v2|Cesio|7.5,44.4,8.2,43.7": [
+44.0072964,
+7.9735359,
+false
+],
+"v2|Chiusavecchia|7.5,44.4,8.2,43.7": [
+43.9676459,
+7.9841386,
+false
 ]
 }
