@@ -36,6 +36,7 @@ button:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{o
 #map{height:58vh;min-height:340px;border-radius:12px;border:1px solid var(--line)}
 .mapwrap{position:relative;isolation:isolate;z-index:0}
 .leaflet-top,.leaflet-bottom{z-index:400!important}
+.frb{display:inline-block;font-size:.7rem;font-weight:700;padding:1px 6px;border-radius:4px;color:#17201b;background:linear-gradient(90deg,#0055a4 0 33%,#fff 33% 66%,#ef4135 66%);text-shadow:0 0 2px #fff,0 0 2px #fff;border:1px solid #c9cfd6;vertical-align:1px}
 .legend{position:absolute;top:10px;right:10px;z-index:500;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:7px 9px;font-size:.75rem;display:grid;gap:3px;box-shadow:0 2px 8px rgb(0 0 0/.15)}
 .dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px;vertical-align:-1px;border:2px solid #fff;box-shadow:0 0 0 1px rgb(0 0 0/.2)}
 .locbtn{position:absolute;left:10px;bottom:22px;z-index:500;box-shadow:0 2px 8px rgb(0 0 0/.25)}
@@ -180,6 +181,7 @@ function etichetta(e){
  if(/programmato|inizia/.test(f)){const w=finestra(e);if(w&&w[0])x+=' · dal '+w[0].toLocaleString('it-IT',{day:'numeric',month:'numeric',hour:'2-digit',minute:'2-digit'})}
  return x;
 }
+const fr=e=>e.paese==='Francia'||/\((Francia|ATMB|APRR)\)/.test(e.strada||'');
 const carrTxt=e=>{const c=carr(e);return c?c:(e.tipo==='lavori'?'non indicato dalla fonte':'')};
 // mostro solo ciò che rallenta o blocca: niente avvisi generici né veicoli in avaria
 const utile=e=>e.tipo!=='altro'&&!/avaria|veicolo fermo|en panne|panne/i.test(e.testo||'');
@@ -204,7 +206,7 @@ function fase(e){
 }
 function popup(e){
  return `<div style="display:grid;gap:5px;max-width:270px">
-  <div><span class="pill ${grave(e)?'ko':'mid'}">${esc(etichetta(e))}</span></div>
+  <div><span class="pill ${grave(e)?'ko':'mid'}">${esc(etichetta(e))}</span>${fr(e)?' <span class="frb" title="Francia">FR</span>':''}</div>
   <div><b>${esc(e.strada)}</b></div>
   <div>${hl(e.testo)}</div>
   ${carrTxt(e)?`<div><b>Carreggiata:</b> <span class="${/chiusa/.test(carr(e))?'ko':''}">${esc(carrTxt(e))}</span></div>`:''}
@@ -252,7 +254,7 @@ function drawEvents(list,line){
 function listEvents(list,title){
  const L2=[...list].sort((a,b)=>grave(b)-grave(a));
  $('evsum').textContent=`${title} (${L2.length})`;
- $('evlist').innerHTML=L2.length?L2.map(e=>`<div class="ev" data-id="${esc(e.id)}" role="button" tabindex="0" style="cursor:pointer"><div><span class="pill ${grave(e)?'ko':'mid'}">${esc(etichetta(e))}</span> <b>${esc(e.strada)}</b></div><div>${hl(e.testo)}</div><div class="muted">${typeof e.lat==='number'?'📍 Tocca per vederlo sulla mappa':'Posizione non disponibile per questo avviso'}</div></div>`).join(''):'<div class="ev muted">Nessun problema segnalato.</div>';
+ $('evlist').innerHTML=L2.length?L2.map(e=>`<div class="ev" data-id="${esc(e.id)}" role="button" tabindex="0" style="cursor:pointer"><div><span class="pill ${grave(e)?'ko':'mid'}">${esc(etichetta(e))}</span>${fr(e)?' <span class="frb" title="Francia">FR</span>':''} <b>${esc(e.strada)}</b></div><div>${hl(e.testo)}</div><div class="muted">${typeof e.lat==='number'?'📍 Tocca per vederlo sulla mappa':'Posizione non disponibile per questo avviso'}</div></div>`).join(''):'<div class="ev muted">Nessun problema segnalato.</div>';
  $('evlist').querySelectorAll('.ev[data-id]').forEach(d=>{const vai=()=>{const m=MK[d.dataset.id];if(!m)return;
   $('map').scrollIntoView({behavior:'smooth',block:'center'});
   setTimeout(()=>{map.setView(m.getLatLng(),13);m.openPopup()},350)};
