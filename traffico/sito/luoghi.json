@@ -5469,5 +5469,66 @@ false
 43.9676459,
 7.9841386,
 false
-]
+],
+"v2|S.Pietro - SS10 Padana Inferiore|10.7,45.7,11.4,45.0": [
+45.1874265,
+11.2829991,
+false
+],
+"v2|Castagnaro E Mena|10.7,45.7,11.4,45.0": null,
+"v2|Villasanta - SS131 E SS197 Di Villacidro|17.2,40.9,17.9,40.2": null,
+"v2|Samassi - SS196Diramazione Di Villacidro|17.2,40.9,17.9,40.2": null,
+"v2|Strongoli|16.1,38.7,16.8,38.0": null,
+"Via delle Pappe": [
+43.9351464,
+10.9171216
+],
+"v2|Piazza del Carmine|10.6,44.3,11.3,43.6": [
+43.7686247,
+11.2440171,
+false
+],
+"v2|Ripa delle Stinche|10.6,44.3,11.3,43.6": [
+43.9348842,
+10.9172067,
+false
+],
+"v2|Lentini Sud|14.7,37.7,15.4,37.0": [
+37.284685,
+14.9987779,
+false
+],
+"v2|Francofonte|14.7,37.7,15.4,37.0": [
+37.2307167,
+14.8802768,
+false
+],
+"Diramazione Alcamo": [
+37.9785665,
+12.9158108
+],
+"v2|Capaci A29 Palermo-Mazara Del Vallo|15.1,38.6,15.8,37.9": null,
+"Del Turchino": [
+45.1318008,
+8.4698422
+],
+"v2|Mele|8.1,45.5,8.8,44.8": null,
+"da Varese": [
+45.6332771,
+8.7217679
+],
+"Picena": [
+43.366409,
+13.620695
+],
+"v2|Fano-Madonna del Ponte|11.7,45.4,12.4,44.7": null,
+"v2|Caprigliola - SS330 Di Buonviaggio|10.6,46.3,11.3,45.6": null,
+"v2|Aulla - SS63 Del Valico Del Cerreto|10.6,46.3,11.3,45.6": null,
+"Via Appia": [
+41.2998978,
+13.223987
+],
+"v2|Variante Di Benevento|12.9,41.6,13.6,40.9": null,
+"v2|Borgo Faiti/Incrocio SS156 Dei Monti Lepini|12.9,41.6,13.6,40.9": null,
+"v2|Le Castella|12.9,41.6,13.6,40.9": null
 }
