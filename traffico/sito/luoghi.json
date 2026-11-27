@@ -6496,5 +6496,56 @@ false
 14.8320615
 ],
 "v2|St. Vaglio Basilicata - SS7 E SS407 Basentana|14.5,41.3,16.2,40.2": null,
-"v2|Tiera/Tratto In Comune Con SS93 Appulo-Lucana|14.5,41.3,16.2,40.2": null
+"v2|Tiera/Tratto In Comune Con SS93 Appulo-Lucana|14.5,41.3,16.2,40.2": null,
+"SS88 Dei Due Principati": [
+40.9238861,
+14.7702029
+],
+"Via Porta Rossa": [
+43.7702082,
+11.2531781
+],
+"v2|Via Pellicceria|10.9,44.1,11.6,43.4": [
+43.7888792,
+11.255177,
+false
+],
+"v2|Piazza dei Davanzati|10.9,44.1,11.6,43.4": [
+43.7704288,
+11.2527123,
+false
+],
+"Via de  Brunelleschi": [
+43.7719315,
+11.253592
+],
+"v2|Via de Tosinghi|10.9,44.1,11.6,43.4": null,
+"v2|Piazza della Repubblica|10.9,44.1,11.6,43.4": [
+43.7715188,
+11.2540114,
+false
+],
+"Garganica": [
+41.5124975,
+15.5970422
+],
+"v2|Lagolo|8.4,46.4,11.5,44.6": [
+46.0380138,
+11.0044542,
+false
+],
+"v2|Lasino|8.4,46.4,11.5,44.6": [
+46.025101,
+10.983077,
+false
+],
+"di Germagnano": [
+45.2638716,
+7.4694832
+],
+"v2|Germagnano|7.1,45.6,7.8,44.9": [
+45.2638716,
+7.4694832,
+false
+]
 }
