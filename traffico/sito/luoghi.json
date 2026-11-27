@@ -5530,5 +5530,78 @@ false
 ],
 "v2|Variante Di Benevento|12.9,41.6,13.6,40.9": null,
 "v2|Borgo Faiti/Incrocio SS156 Dei Monti Lepini|12.9,41.6,13.6,40.9": null,
-"v2|Le Castella|12.9,41.6,13.6,40.9": null
+"v2|Le Castella|12.9,41.6,13.6,40.9": null,
+"Di Chiaramonte": [
+37.3149801,
+13.6609621
+],
+"v2|Case Rizza|13.3,37.7,14.0,37.0": null,
+"v2|Licodia Eubea|13.3,37.7,14.0,37.0": null,
+"Di Fondo Valle D agri": [
+40.3107072,
+15.8931634
+],
+"v2|Missanello - SS92 Dell app. Merid.Le|15.5,40.7,16.2,40.0": null,
+"v2|Ventimiglia A10 Ge-Ventimiglia": null,
+"Via Carlo Emanuele I": [
+41.8909028,
+12.5095946
+],
+"v2|Via Francesco Querini|12.2,42.2,12.9,41.5": null,
+"v2|Via Vittorio Veneto|12.2,42.2,12.9,41.5": [
+41.9084633,
+12.4890518,
+false
+],
+"v2|Ponte Carrodano - SS566 Diramazione Di Val Di Vara|11.9,42.3,12.6,41.6": null,
+"v2|Mattarana|11.9,42.3,12.6,41.6": null,
+"Via Vittorio Veneto": [
+45.9300422,
+8.5687601
+],
+"v2|Via Felice Cavallotti|8.2,46.3,8.9,45.6": [
+45.8210771,
+8.8264053,
+false
+],
+"v2|Via Duca degli Abruzzi|8.2,46.3,8.9,45.6": [
+45.8142328,
+8.7641725,
+false
+],
+"Dei Trulli": [
+40.8013862,
+17.2509426
+],
+"v2|Putignano - SS377 Delle Grotte|16.9,41.2,17.6,40.5": null,
+"Viale delle Milizie": [
+41.9123,
+12.4619981
+],
+"v2|Via Silvio Pellico|12.1,42.3,12.8,41.6": [
+41.9128021,
+12.4596502,
+false
+],
+"v2|Viale Angelico|12.1,42.3,12.8,41.6": [
+41.9199197,
+12.4584847,
+false
+],
+"Via Assisi": [
+41.8813876,
+12.5290051
+],
+"v2|Via Stradone|12.2,42.2,12.9,41.5": [
+41.6546585,
+12.7243309,
+false
+],
+"v2|Via Destra Topino|12.2,42.2,12.9,41.5": null,
+"Cannara": [
+42.994742,
+12.579363
+],
+"v2|Ravenna/Allacciamento A14 Diramazione Per Ravenna - SS16|11.9,44.9,12.6,44.2": null,
+"v2|Pieve Di Teco - SS453 Della Valle Arroscia|7.5,44.4,8.2,43.7": null
 }
