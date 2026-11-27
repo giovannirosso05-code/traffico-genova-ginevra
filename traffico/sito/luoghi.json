@@ -6348,5 +6348,33 @@ false
 43.206274,
 11.804331
 ],
-"v2|Bettolle-A1-Raccordo Bettolle-Pg-SS327|11.4,43.6,12.2,42.9": null
+"v2|Bettolle-A1-Raccordo Bettolle-Pg-SS327|11.4,43.6,12.2,42.9": null,
+"v2|S.Angelo In Vado|12.7,44.2,13.4,43.5": null,
+"v2|Sesto S.Giovanni (Diramazione Nord)|8.9,45.9,9.6,45.2": null,
+"Via Giuseppe Mazzini": [
+45.4634905,
+9.1885191
+],
+"v2|Via A. Maffei|8.8,45.8,9.5,45.1": null,
+"v2|Via Ezio Vanoni|8.8,45.8,9.5,45.1": [
+45.5267481,
+9.0823286,
+false
+],
+"di Davagna": [
+44.4672076,
+9.0906193
+],
+"v2|Meco|8.7,44.8,9.4,44.1": [
+44.4462809,
+9.0599303,
+false
+],
+"Del Passo Di S. Pellegrino": [
+44.201156,
+10.4879901
+],
+"v2|Confine TN-BL|10.1,44.6,10.8,43.9": null,
+"v2|Falcade Alto|10.1,44.6,10.8,43.9": null,
+"Incrocio Ponte Umberto I": null
 }
