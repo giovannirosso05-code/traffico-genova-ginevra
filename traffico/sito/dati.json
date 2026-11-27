@@ -1,13 +1,320 @@
 {
- "aggiornato": "2026-11-27T16:33+00:00",
+ "aggiornato": "2026-11-27T16:49+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
-  "Autostrade (cantieri)": "ok (388 cantieri)",
-  "Francia": "ok (408 eventi)",
+  "Autostrade (cantieri)": "ok (390 cantieri)",
+  "Francia": "ok (407 eventi)",
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "78a587c10978f219",
+   "strada": "A50 Tangenziale Ovest Di Milano",
+   "testo": "code a tratti causa traffico intenso tra Allacciamento A4 Torino-Trieste: V.Le Certosa e Svincolo Uscita 7bis: Quinto De Stampi in direzione Allacciamento A1 Milano-Napoli",
+   "tipo": "code",
+   "quando": "2026-11-27T16:48:00Z",
+   "lat2": 45.3945262,
+   "lon2": 9.170027,
+   "a": "7bis: Quinto De Stampi",
+   "indicativo": true,
+   "dirlat": 40.8358846,
+   "dirlon": 14.2487679,
+   "dir": "Napoli"
+  },
+  {
+   "id": "695651b414a87ce4",
+   "strada": "Roma Piazzale Eugenio Morelli",
+   "testo": "incidente a Viale dei Colli Portuensi",
+   "tipo": "incidente",
+   "quando": "2026-11-27T16:47:00Z"
+  },
+  {
+   "id": "72413fbf8246cb8f",
+   "strada": "Lungotevere (RM)",
+   "testo": "traffico rallentato causa traffico intenso tra Incrocio Ponte Garibaldi e Incrocio Ponte Umberto I in direzione Incrocio Ponte Umberto I",
+   "tipo": "code",
+   "quando": "2026-11-27T16:47:00Z",
+   "lat": 41.8910715,
+   "lon": 12.4745225,
+   "da": "Ponte Garibaldi",
+   "lat2": 41.9026576,
+   "lon2": 12.4713291,
+   "a": "Ponte Umberto I",
+   "indicativo": true,
+   "km": 1.6
+  },
+  {
+   "id": "7c1c95d974d454bf",
+   "strada": "S03 Strada Grande Comunicazione Fi-Pi-Li (diramazione per Pisa)",
+   "testo": "code dalle 17:44 del 27 novembre 2026 a Svincolo Cascina in direzione da Pisa",
+   "tipo": "code",
+   "quando": "2026-11-27T16:46:00Z",
+   "lat": 43.66684,
+   "lon": 10.52943,
+   "da": "Cascina",
+   "dirlat": 41.8774661,
+   "dirlon": 12.537525,
+   "dir": "da Pisa"
+  },
+  {
+   "id": "d7836b0004c761af",
+   "strada": "A52 Tangenziale Nord Di Milano",
+   "testo": "code a tratti causa traffico intenso tra Svincolo Monza-S.Alessandro e Svincolo SP44 Milano-Meda: Lentate-Bruzzano in direzione Svincolo SP44 Milano-Meda: Lentate-Bruzzano",
+   "tipo": "code",
+   "quando": "2026-11-27T16:46:00Z",
+   "lat": 45.5895331,
+   "lon": 9.268338,
+   "da": "Monza-S.Alessandro",
+   "indicativo": true,
+   "dirlat": 45.5286902,
+   "dirlon": 9.1735008,
+   "dir": "Bruzzano"
+  },
+  {
+   "id": "28860accfcc5a022",
+   "strada": "A1 Milano-Bologna",
+   "testo": "code a tratti causa traffico intenso dalle 17:41 del 27 novembre 2026 tra Svincolo Reggio Emilia e Svincolo Modena Sud in direzione Bologna",
+   "tipo": "code",
+   "quando": "2026-11-27T16:45:00Z",
+   "lat": 44.72938,
+   "lon": 10.62759,
+   "da": "Reggio Emilia",
+   "lat2": 44.57894,
+   "lon2": 10.98035,
+   "a": "Modena Sud",
+   "km": 39.0,
+   "dirlat": 44.4938203,
+   "dirlon": 11.3426327,
+   "dir": "Bologna"
+  },
+  {
+   "id": "aceec8ff9540e6ba",
+   "strada": "Via Cristoforo Colombo (RM)",
+   "testo": "traffico rallentato causa traffico intenso tra Incrocio G.R.A. e Incrocio Via di Malafede in direzione Incrocio Piazzale Cristoforo Colombo-Lido di Castel Fusano",
+   "tipo": "code",
+   "quando": "2026-11-27T16:44:00Z",
+   "lat": 41.8577092,
+   "lon": 12.3767694,
+   "da": "G.R.A",
+   "lat2": 41.7877407,
+   "lon2": 12.3901381,
+   "a": "Via di Malafede",
+   "indicativo": true,
+   "km": 9.4,
+   "dirlat": 41.7165,
+   "dirlon": 12.3237095,
+   "dir": "Lido di Castel Fusano"
+  },
+  {
+   "id": "bf0254ec7bd0c6e1",
+   "strada": "A10 Genova-Ventimiglia",
+   "testo": "traffico rallentato causa traffico intenso dalle 17:42 del 27 novembre 2026 tra Svincolo Genova Pegli e Allacciamento A7 Milano-Genova in direzione Genova",
+   "tipo": "code",
+   "quando": "2026-11-27T16:44:00Z",
+   "lat": 44.42974,
+   "lon": 8.8215,
+   "da": "Genova Pegli",
+   "dirlat": 44.40726,
+   "dirlon": 8.9338624,
+   "dir": "Genova"
+  },
+  {
+   "id": "cc32fedff3bb66f7",
+   "strada": "Tangenziale Est (RM)",
+   "testo": "traffico rallentato causa traffico intenso tra Incrocio Viale Castrense/Via Nola-Inizio Tangenziale e Incrocio Uscita A24 in direzione Incrocio Piazzale degli Eroi",
+   "tipo": "code",
+   "quando": "2026-11-27T16:43:00Z"
+  },
+  {
+   "id": "45aec4678da459ca",
+   "strada": "A21 Torino-Brescia",
+   "testo": "entrata chiusa causa lavori dalle 08:00 alle 14:00 del 28 novembre 2026 a Svincolo Cremona in direzione Torino",
+   "tipo": "chiusura",
+   "quando": "2026-11-27T16:43:00Z",
+   "lat": 45.14423,
+   "lon": 10.07207,
+   "da": "Cremona",
+   "dirlat": 45.0677551,
+   "dirlon": 7.6824892,
+   "dir": "Torino"
+  },
+  {
+   "id": "ebdd45fc76469a79",
+   "strada": "A14 Pescara-Bari",
+   "testo": "incidente dalle 17:41 del 27 novembre 2026 tra Svincolo Canosa e Svincolo Andria-Barletta in direzione Bari",
+   "tipo": "incidente",
+   "quando": "2026-11-27T16:43:00Z",
+   "lat": 41.24041,
+   "lon": 16.10341,
+   "da": "Canosa",
+   "lat2": 41.25478,
+   "lon2": 16.2882,
+   "a": "Andria-Barletta",
+   "km": 18.6,
+   "dirlat": 41.1257843,
+   "dirlon": 16.8620293,
+   "dir": "Bari"
+  },
+  {
+   "id": "0aea1cc0c101fac4",
+   "strada": "S03 Strada Grande Comunicazione Fi-Pi-Li (diramazione per Pisa)",
+   "testo": "veicolo fermo o in avaria dalle 17:39 del 27 novembre 2026 tra Svincolo Pisa Aeroporto-SS 1 Aurelia e Svincolo Pisa Nord Est in direzione Sgc Firenze-Livorno",
+   "tipo": "altro",
+   "quando": "2026-11-27T16:41:00Z",
+   "lat2": 43.68697,
+   "lon2": 10.44023,
+   "a": "Pisa Nord Est",
+   "dirlat": 42.7902379,
+   "dirlon": 10.3402239,
+   "dir": "Livorno"
+  },
+  {
+   "id": "afd741a71ca0ffec",
+   "strada": "Tangenziale Est (RM)",
+   "testo": "traffico rallentato causa riduzione di carreggiata tra Incrocio Uscita Viale Tor di Quinto e Incrocio Galleria Giovanni XXIII in direzione Incrocio Piazzale degli Eroi",
+   "tipo": "code",
+   "quando": "2026-11-27T16:41:00Z",
+   "lat": 41.94025,
+   "lon": 12.48106,
+   "da": "Viale Tor di Quinto"
+  },
+  {
+   "id": "aa3047a73df749bc",
+   "strada": "A1 Milano-Bologna",
+   "testo": "incidente dalle 17:16 del 27 novembre 2026 tra Svincolo Modena Sud e Svincolo Modena Nord in direzione Milano",
+   "tipo": "incidente",
+   "quando": "2026-11-27T16:40:00Z",
+   "lat": 44.57894,
+   "lon": 10.98035,
+   "da": "Modena Sud",
+   "lat2": 44.65823,
+   "lon2": 10.86015,
+   "a": "Modena Nord",
+   "km": 15.6,
+   "dirlat": 45.4641943,
+   "dirlon": 9.1896346,
+   "dir": "Milano"
+  },
+  {
+   "id": "a6368540748bc3f2",
+   "strada": "Tangenziale Est (RM)",
+   "testo": "traffico rallentato causa traffico intenso tra Incrocio Galleria Giovanni XXIII e Incrocio Uscita Via dei Campi Sportivi in direzione Incrocio Viale Castrense/Via Nola-Inizio Tangenziale",
+   "tipo": "code",
+   "quando": "2026-11-27T16:40:00Z",
+   "lat2": 41.93927,
+   "lon2": 12.4892,
+   "a": "Via dei Campi Sportivi"
+  },
+  {
+   "id": "885263c62fece300",
+   "strada": "SS106 Jonica",
+   "testo": "traffico rallentato causa incidente a Incrocio Bova Marina",
+   "tipo": "incidente",
+   "quando": "2026-11-27T16:38:00Z"
+  },
+  {
+   "id": "59c175c9b18e1a80",
+   "strada": "Roma Largo Cervinia",
+   "testo": "incidente traffico rallentato a Via Igea",
+   "tipo": "incidente",
+   "quando": "2026-11-27T16:37:00Z"
+  },
+  {
+   "id": "2fb1b4ec6830c71e",
+   "strada": "SS114 Orientale Sicula",
+   "testo": "traffico rallentato causa incidente a Incrocio Marina D itala in direzione Incrocio Siracusa - SS115 e SS124 Ragusana",
+   "tipo": "incidente",
+   "quando": "2026-11-27T16:37:00Z"
+  },
+  {
+   "id": "eabb763dae601e86",
+   "strada": "Roma Via Fanny Tacchinardi",
+   "testo": "incidente traffico rallentato a Via Tommaso Zigliara",
+   "tipo": "incidente",
+   "quando": "2026-11-27T16:37:00Z"
+  },
+  {
+   "id": "7f5a9b6e998372b0",
+   "strada": "Roma Piazza Apollodoro",
+   "testo": "incidente traffico rallentato a Via Flaminia",
+   "tipo": "incidente",
+   "quando": "2026-11-27T16:37:00Z"
+  },
+  {
+   "id": "5b3609de6cd75a0b",
+   "strada": "Roma Via di Tor Pagnotta",
+   "testo": "incidente traffico rallentato a Via Arturo D Aspro",
+   "tipo": "incidente",
+   "quando": "2026-11-27T16:37:00Z"
+  },
+  {
+   "id": "d6c01ec3106f06d3",
+   "strada": "A10 Genova-Ventimiglia",
+   "testo": "perdita di carico dalle 17:35 del 27 novembre 2026 tra Svincolo Varazze e Svincolo Celle Ligure in direzione Ventimiglia",
+   "tipo": "altro",
+   "quando": "2026-11-27T16:36:00Z",
+   "lat": 44.36659,
+   "lon": 8.60075,
+   "da": "Varazze",
+   "lat2": 44.34923,
+   "lon2": 8.55365,
+   "a": "Celle Ligure",
+   "km": 5.1,
+   "dirlat": 43.7917623,
+   "dirlon": 7.6033131,
+   "dir": "Ventimiglia"
+  },
+  {
+   "id": "a4fbc9d7f1d4de4c",
+   "strada": "A14 Diramazione Per Ravenna",
+   "testo": "traffico rallentato causa incidente dalle 17:35 del 27 novembre 2026 tra Svincolo Ravenna e Allacciamento A14 Bologna-Taranto in direzione autostrada Bologna-Taranto",
+   "tipo": "incidente",
+   "quando": "2026-11-27T16:36:00Z",
+   "lat": 44.35218,
+   "lon": 11.82146,
+   "da": "Ravenna",
+   "dirlat": 40.5488156,
+   "dirlon": 17.0805801,
+   "dir": "Taranto"
+  },
+  {
+   "id": "8e38d01400fcb381",
+   "strada": "A26 Diramazione Predosa-Bettole",
+   "testo": "veicolo fermo o in avaria dalle 17:34 del 27 novembre 2026 tra Allacciamento A26 Ge Voltri-Gravellona T. e Svincolo Novi Ligure in direzione autostrada Milano-Genova",
+   "tipo": "altro",
+   "quando": "2026-11-27T16:35:00Z",
+   "lat2": 44.79256,
+   "lon2": 8.7352,
+   "a": "Novi Ligure",
+   "dirlat": 44.40726,
+   "dirlon": 8.9338624,
+   "dir": "Genova"
+  },
+  {
+   "id": "1d69664a770ce917",
+   "strada": "A11 Firenze-Pisa",
+   "testo": "veicolo fermo o in avaria dalle 17:34 del 27 novembre 2026 tra Svincolo Montecatini e Svincolo Chiesina Uzzanese in direzione Pisa",
+   "tipo": "altro",
+   "quando": "2026-11-27T16:35:00Z",
+   "lat": 43.87653,
+   "lon": 10.79764,
+   "da": "Montecatini",
+   "lat2": 43.84222,
+   "lon2": 10.71857,
+   "a": "Chiesina Uzzanese",
+   "km": 8.9,
+   "dirlat": 43.4714722,
+   "dirlon": 10.6797912,
+   "dir": "Pisa"
+  },
+  {
+   "id": "a013a52efca16d06",
+   "strada": "Roma Via Cristoforo Colombo",
+   "testo": "veicolo in avaria traffico rallentato causa veicolo in avaria a Piazza dei Navigatori in direzione ostia",
+   "tipo": "code",
+   "quando": "2026-11-27T16:35:00Z"
+  },
   {
    "id": "ca28e5219b90afed",
    "strada": "A3 Napoli-Salerno",
@@ -31,6 +338,13 @@
    "dirlat": 40.8358846,
    "dirlon": 14.2487679,
    "dir": "Napoli"
+  },
+  {
+   "id": "45461f2ddb3d61a8",
+   "strada": "A55 Tangenziale Sud Di Torino",
+   "testo": "traffico rallentato con code a tratti causa traffico intenso tra Svincolo Autoporto S.I.T.O. e Allacciamento Interconnessione Tangenziale Nord in direzione Allacciamento Interconnessione Tangenziale Nord",
+   "tipo": "code",
+   "quando": "2026-11-27T16:33:00Z"
   },
   {
    "id": "66f6b5c54158bb20",
@@ -110,53 +424,6 @@
    "dir": "Roma"
   },
   {
-   "id": "bd1d85a68d5f6e3e",
-   "strada": "Roma Via Fanny Tacchinardi",
-   "testo": "incidente a Via Tommaso Zigliara",
-   "tipo": "incidente",
-   "quando": "2026-11-27T16:29:00Z"
-  },
-  {
-   "id": "5b17fba823f933f0",
-   "strada": "A1 Milano-Bologna",
-   "testo": "code causa traffico congestionato dalle 15:41 del 27 novembre 2026 tra Svincolo Reggio Emilia e Allacciamento A22 Modena-Brennero in direzione Bologna",
-   "tipo": "code",
-   "quando": "2026-11-27T16:29:00Z",
-   "lat": 44.72938,
-   "lon": 10.62759,
-   "da": "Reggio Emilia",
-   "dirlat": 44.4938203,
-   "dirlon": 11.3426327,
-   "dir": "Bologna"
-  },
-  {
-   "id": "42671c35cc3f7a36",
-   "strada": "A1 Firenze-Roma",
-   "testo": "personale su strada dalle 17:28 del 27 novembre 2026 a Svincolo Firenze Impruneta in direzione Bologna",
-   "tipo": "altro",
-   "quando": "2026-11-27T16:29:00Z",
-   "lat": 43.72306,
-   "lon": 11.22488,
-   "da": "Firenze Impruneta",
-   "dirlat": 44.4938203,
-   "dirlon": 11.3426327,
-   "dir": "Bologna"
-  },
-  {
-   "id": "3610def2b929fa04",
-   "strada": "Roma Piazza Apollodoro",
-   "testo": "incidente a Via Flaminia",
-   "tipo": "incidente",
-   "quando": "2026-11-27T16:29:00Z"
-  },
-  {
-   "id": "fdcfb2a7acb6bab0",
-   "strada": "Roma Largo Cervinia",
-   "testo": "incidente a Via Igea",
-   "tipo": "incidente",
-   "quando": "2026-11-27T16:28:00Z"
-  },
-  {
    "id": "344a44ab3b1c782e",
    "strada": "A21 Torino-Brescia",
    "testo": "code a tratti per 2 km tra 6,12 km prima di Svincolo Alessandria Est e 2,148 km dopo Svincolo Alessandria Ovest in direzione Torino",
@@ -222,24 +489,6 @@
    "dir": "Livorno"
   },
   {
-   "id": "1ece57a12b982cfa",
-   "strada": "A11 Firenze-Pisa",
-   "testo": "code causa viabilità esterna non riceve dalle 17:27 del 27 novembre 2026 tra Svincolo Sesto Fiorentino e Svincolo Firenze-Peretola in direzione Firenze",
-   "tipo": "code",
-   "quando": "2026-11-27T16:28:00Z",
-   "lat": 43.81529,
-   "lon": 11.17867,
-   "da": "Sesto Fiorentino",
-   "lat2": 43.7973619,
-   "lon2": 11.1966117,
-   "a": "Firenze-Peretola",
-   "indicativo": true,
-   "km": 3.0,
-   "dirlat": 43.7697955,
-   "dirlon": 11.2556404,
-   "dir": "Firenze"
-  },
-  {
    "id": "57ffed4a90ce2a18",
    "strada": "A56 Tangenziale Di Napoli",
    "testo": "code causa traffico intenso dalle 15:30 del 27 novembre 2026 tra Svincolo Doganella e Svincolo Corso Malta in direzione Pozzuoli",
@@ -257,19 +506,6 @@
    "dir": "Pozzuoli"
   },
   {
-   "id": "0d0923828e8930f2",
-   "strada": "A1 Milano-Bologna",
-   "testo": "traffico rallentato causa traffico intenso dalle 17:25 del 27 novembre 2026 tra Allacciamento A22 Modena-Brennero e Svincolo Modena Sud in direzione Bologna",
-   "tipo": "code",
-   "quando": "2026-11-27T16:27:00Z",
-   "lat2": 44.57894,
-   "lon2": 10.98035,
-   "a": "Modena Sud",
-   "dirlat": 44.4938203,
-   "dirlon": 11.3426327,
-   "dir": "Bologna"
-  },
-  {
    "id": "e45db51c8c4064bf",
    "strada": "A51 Tangenziale Est Di Milano",
    "testo": "veicolo in avaria tra Svincolo Gobba: Treviglio-Vimodrone e Allacciamento Tangenziale Nord Milano in direzione Svincolo Lecco",
@@ -281,23 +517,6 @@
    "dirlat": 45.8494152,
    "dirlon": 9.4155496,
    "dir": "Svincolo Lecco"
-  },
-  {
-   "id": "397a332aaafb133a",
-   "strada": "A14 Ancona-Pescara",
-   "testo": "veicoli scortati per maltempo causa perdita di carico dalle 17:24 del 27 novembre 2026 tra Svincolo Teramo-Giulianova-Mosciano e Svincolo Val Vibrata in direzione Ancona",
-   "tipo": "altro",
-   "quando": "2026-11-27T16:26:00Z",
-   "lat": 42.71665,
-   "lon": 13.91362,
-   "da": "Teramo-Giulianova-Mosciano",
-   "lat2": 42.84195,
-   "lon2": 13.90283,
-   "a": "Val Vibrata",
-   "km": 16.8,
-   "dirlat": 43.4801189,
-   "dirlon": 13.2187279,
-   "dir": "Ancona"
   },
   {
    "id": "e18265181f2a8b2a",
@@ -342,19 +561,6 @@
    "dirlat": 41.8577092,
    "dirlon": 12.3767694,
    "dir": "G.r.a"
-  },
-  {
-   "id": "bf9735b574f9f876",
-   "strada": "A10 Genova-Ventimiglia",
-   "testo": "code causa traffico intenso dalle 17:21 del 27 novembre 2026 tra Svincolo Genova Pegli e Allacciamento A7 Milano-Genova in direzione Genova",
-   "tipo": "code",
-   "quando": "2026-11-27T16:23:00Z",
-   "lat": 44.42974,
-   "lon": 8.8215,
-   "da": "Genova Pegli",
-   "dirlat": 44.40726,
-   "dirlon": 8.9338624,
-   "dir": "Genova"
   },
   {
    "id": "92872acc5d66b588",
@@ -462,23 +668,6 @@
    "dir": "Varese"
   },
   {
-   "id": "aa3047a73df749bc",
-   "strada": "A1 Milano-Bologna",
-   "testo": "incidente dalle 17:16 del 27 novembre 2026 tra Svincolo Modena Sud e Svincolo Modena Nord in direzione Milano",
-   "tipo": "incidente",
-   "quando": "2026-11-27T16:19:00Z",
-   "lat": 44.57894,
-   "lon": 10.98035,
-   "da": "Modena Sud",
-   "lat2": 44.65823,
-   "lon2": 10.86015,
-   "a": "Modena Nord",
-   "km": 15.6,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
-  },
-  {
    "id": "4e69fa8da6b3ef48",
    "strada": "A10 Genova-Ventimiglia",
    "testo": "traffico rallentato con code a tratti tra 1,035 km dopo Svincolo Spotorno e 4,656 km prima di Svincolo Orco Feglino in direzione Ventimiglia",
@@ -528,23 +717,6 @@
    "dirlat": 43.7917623,
    "dirlon": 7.6033131,
    "dir": "Ventimiglia"
-  },
-  {
-   "id": "619037d1aed2602b",
-   "strada": "A24 Roma-Teramo",
-   "testo": "personale su strada causa lavori dalle 17:15 alle 18:00 del 27 novembre 2026 tra Svincolo Assergi e Svincolo Colledara-San Gabriele in direzione Teramo",
-   "tipo": "lavori",
-   "quando": "2026-11-27T16:16:00Z",
-   "lat": 42.4195,
-   "lon": 13.50895,
-   "da": "Assergi",
-   "lat2": 42.5303,
-   "lon2": 13.65995,
-   "a": "Colledara-San Gabriele",
-   "km": 21.0,
-   "dirlat": 42.6581008,
-   "dirlon": 13.6980117,
-   "dir": "Teramo"
   },
   {
    "id": "49feb90416976bdb",
@@ -653,23 +825,6 @@
    "da": "Bologna Casalecchio"
   },
   {
-   "id": "365866e2e6575c0d",
-   "strada": "A14 Ancona-Pescara",
-   "testo": "perdita di carico causa perdita accidentale dalle 17:03 del 27 novembre 2026 tra Svincolo Teramo-Giulianova-Mosciano e Svincolo Val Vibrata in direzione Ancona",
-   "tipo": "altro",
-   "quando": "2026-11-27T16:15:00Z",
-   "lat": 42.71665,
-   "lon": 13.91362,
-   "da": "Teramo-Giulianova-Mosciano",
-   "lat2": 42.84195,
-   "lon2": 13.90283,
-   "a": "Val Vibrata",
-   "km": 16.8,
-   "dirlat": 43.4801189,
-   "dirlon": 13.2187279,
-   "dir": "Ancona"
-  },
-  {
    "id": "dd57dfd6a0c03ebe",
    "strada": "A15 Parma-La Spezia",
    "testo": "veicolo in avaria a Svincolo Borgotaro in direzione Parma",
@@ -770,23 +925,6 @@
    "quando": "2026-11-27T16:10:00Z"
   },
   {
-   "id": "1e314f3c477a7217",
-   "strada": "A4 Milano-Brescia",
-   "testo": "malore dalle 17:07 del 27 novembre 2026 tra Allacciamento Tangenziale Est Di Milano e Svincolo Agrate in direzione Brescia",
-   "tipo": "altro",
-   "quando": "2026-11-27T16:09:00Z",
-   "lat": 45.33764,
-   "lon": 9.33496,
-   "da": "Tangenziale Est Di Milano",
-   "lat2": 45.57027,
-   "lon2": 9.36353,
-   "a": "Agrate",
-   "km": 31.2,
-   "dirlat": 45.7795805,
-   "dirlon": 10.425873,
-   "dir": "Brescia"
-  },
-  {
    "id": "92e602066258cc42",
    "strada": "SS1 Via Aurelia",
    "testo": "presenza di alberi sulla carreggiata tra 1,499 km dopo Incrocio S.Lorenzo Al Mare e 2,205 km prima di Incrocio S.Stefano Al Mare",
@@ -816,23 +954,6 @@
    "testo": "incidente a Via per Appiano",
    "tipo": "incidente",
    "quando": "2026-11-27T16:05:00Z"
-  },
-  {
-   "id": "35d19344485ab6c9",
-   "strada": "A14 Pescara-Bari",
-   "testo": "veicolo fermo o in avaria dalle 17:02 del 27 novembre 2026 tra Svincolo Molfetta e Svincolo Trani in direzione Pescara",
-   "tipo": "altro",
-   "quando": "2026-11-27T16:04:00Z",
-   "lat": 41.17653,
-   "lon": 16.57049,
-   "da": "Molfetta",
-   "lat2": 41.21921,
-   "lon2": 16.41196,
-   "a": "Trani",
-   "km": 16.9,
-   "dirlat": 42.3097631,
-   "dirlon": 13.9579989,
-   "dir": "Pescara"
   },
   {
    "id": "2b6da1ea64d3821b",
@@ -894,29 +1015,6 @@
    "lat": 40.91634,
    "lon": 14.47086,
    "da": "Napoli Est"
-  },
-  {
-   "id": "5be33bb7b36d5205",
-   "strada": "A1 Firenze-Roma",
-   "testo": "veicolo fermo o in avaria dalle 16:55 del 27 novembre 2026 a Svincolo Orvieto",
-   "tipo": "altro",
-   "quando": "2026-11-27T15:57:00Z",
-   "lat": 42.71551,
-   "lon": 12.14887,
-   "da": "Orvieto"
-  },
-  {
-   "id": "997867235b6ba6f3",
-   "strada": "A14 Diramazione Per Ravenna",
-   "testo": "code causa incidente dalle 16:53 del 27 novembre 2026 tra Svincolo Ravenna e Allacciamento A14 Bologna-Taranto in direzione autostrada Bologna-Taranto",
-   "tipo": "incidente",
-   "quando": "2026-11-27T15:56:00Z",
-   "lat": 44.35218,
-   "lon": 11.82146,
-   "da": "Ravenna",
-   "dirlat": 40.5488156,
-   "dirlon": 17.0805801,
-   "dir": "Taranto"
   },
   {
    "id": "74e50a75b4a42787",
@@ -1140,19 +1238,6 @@
    "dir": "Roma"
   },
   {
-   "id": "9bc20e86b4c9ec77",
-   "strada": "A5 Torino-Courmayeur",
-   "testo": "veicolo in avaria a Barriera Di Torino Nord in direzione Torino",
-   "tipo": "altro",
-   "quando": "2026-11-27T15:43:00Z",
-   "lat": 45.14531,
-   "lon": 7.7345,
-   "da": "Torino Nord",
-   "dirlat": 45.0677551,
-   "dirlon": 7.6824892,
-   "dir": "Torino"
-  },
-  {
    "id": "4f857a253750a5fe",
    "strada": "SS36 Del Lago Di Como E Dello Spluga",
    "testo": "chiusura notturna, tratto chiuso causa lavori dalle 21:00 del 11 alle 05:00 del 12 dicembre 2026 tra Incrocio Bellano e Incrocio Abbadia Lariana in direzione Incrocio Monza - SS527 Bustese",
@@ -1168,20 +1253,6 @@
    "dirlat": 45.602631,
    "dirlon": 8.8117939,
    "dir": "SS527 Bustese"
-  },
-  {
-   "id": "68a827d36c8cb1fc",
-   "strada": "Roma Via Casilina",
-   "testo": "incidente traffico rallentato a Via Raffaele De Ferrari in direzione fuori città",
-   "tipo": "incidente",
-   "quando": "2026-11-27T15:42:00Z"
-  },
-  {
-   "id": "cd70cd92274a9394",
-   "strada": "Roma Via Alberto Burri",
-   "testo": "incidente traffico rallentato a Via Sante Monachesi",
-   "tipo": "incidente",
-   "quando": "2026-11-27T15:42:00Z"
   },
   {
    "id": "2de8f52f3caba0aa",
@@ -1201,40 +1272,6 @@
    "dir": "SS527 Bustese"
   },
   {
-   "id": "f8fc75c4d30e1109",
-   "strada": "A25 Torano-Pescara",
-   "testo": "veicolo fermo o in avaria dalle 16:38 del 27 novembre 2026 tra Svincolo Cocullo e Svincolo Pescina in direzione autostrada Roma-Teramo",
-   "tipo": "altro",
-   "quando": "2026-11-27T15:40:00Z",
-   "lat": 42.02332,
-   "lon": 13.78707,
-   "da": "Cocullo",
-   "lat2": 42.04025,
-   "lon2": 13.6581,
-   "a": "Pescina",
-   "km": 13.0,
-   "dirlat": 42.6581008,
-   "dirlon": 13.6980117,
-   "dir": "Teramo"
-  },
-  {
-   "id": "3a50a87a8ed3ae3c",
-   "strada": "A14 Ancona-Pescara",
-   "testo": "code causa lavori dalle 09:52 del 27 novembre 2026 tra Svincolo Pedaso e Svincolo Grottammare in direzione Pescara",
-   "tipo": "lavori",
-   "quando": "2026-11-27T15:40:00Z",
-   "lat": 43.0948,
-   "lon": 13.83754,
-   "da": "Pedaso",
-   "lat2": 42.9823,
-   "lon2": 13.8621,
-   "a": "Grottammare",
-   "km": 15.2,
-   "dirlat": 42.3097631,
-   "dirlon": 13.9579989,
-   "dir": "Pescara"
-  },
-  {
    "id": "10445944429988bf",
    "strada": "SS185 Di Sella Mandrazzi",
    "testo": "senso unico alternato causa lavori dalle 07:00 del 30 novembre 2026 alle 23:59 del 30 marzo 2027 tra Incrocio Mazzara S.Andrea e Incrocio Novara Di Sicilia",
@@ -1243,73 +1280,6 @@
    "lat2": 38.0161849,
    "lon2": 15.131956,
    "a": "Novara Di Sicilia",
-   "indicativo": true
-  },
-  {
-   "id": "9ced4254436f3f90",
-   "strada": "SS36 Del Lago Di Como E Dello Spluga",
-   "testo": "riduzione di carreggiata causa lavori dalle 18:00 del 30 novembre 2026 alle 05:00 del 1 dicembre 2026 tra Incrocio Piona e Incrocio Colico/Trivio Fuentes/S.Agata/SS38",
-   "tipo": "lavori",
-   "quando": "2026-11-27T15:38:00Z",
-   "lat": 46.11754,
-   "lon": 9.3504,
-   "da": "Piona",
-   "lat2": 46.141461,
-   "lon2": 9.4114177,
-   "a": "Colico/Trivio Fuentes/S.Agata/SS38",
-   "indicativo": true,
-   "km": 6.5
-  },
-  {
-   "id": "bc16a53dd5ea7b03",
-   "strada": "A7 Milano-Genova",
-   "testo": "veicolo in avaria tra Svincolo Casei Gerola e Svincolo Gropello Cairoli in direzione Milano",
-   "tipo": "altro",
-   "quando": "2026-11-27T15:37:00Z",
-   "lat": 45.01638,
-   "lon": 8.92525,
-   "da": "Casei Gerola",
-   "lat2": 45.173,
-   "lon2": 9.00385,
-   "a": "Gropello Cairoli",
-   "km": 22.2,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
-  },
-  {
-   "id": "728ed06f5006cf3f",
-   "strada": "Grezzago Via Lazio",
-   "testo": "incidente a Via Lazio",
-   "tipo": "incidente",
-   "quando": "2026-11-27T15:36:00Z"
-  },
-  {
-   "id": "2ce60ef28b881c98",
-   "strada": "A50 Tangenziale Ovest Di Milano",
-   "testo": "code a tratti causa traffico intenso tra Allacciamento A4 Torino-Trieste: V.Le Certosa e Allacciamento A7 Milano-Genova in direzione Allacciamento A1 Milano-Napoli",
-   "tipo": "code",
-   "quando": "2026-11-27T15:35:00Z"
-  },
-  {
-   "id": "5dec3db8356a7040",
-   "strada": "SS36 Del Lago Di Como E Dello Spluga",
-   "testo": "riduzione di carreggiata causa lavori dalle 22:00 del 30 novembre 2026 alle 06:00 del 5 dicembre 2026 a Incrocio Briosco in direzione Incrocio Passo Dello Spluga/Confine Con La Svizzera",
-   "tipo": "lavori",
-   "quando": "2026-11-27T15:35:00Z",
-   "lat": 45.72057,
-   "lon": 9.23723,
-   "da": "Briosco"
-  },
-  {
-   "id": "70bcddca146cf768",
-   "strada": "SS39 Del Passo Di Aprica",
-   "testo": "senso unico alternato causa lavori dalle 07:00 del 30 novembre 2026 alle 18:00 del 18 dicembre 2026 tra Incrocio Motta - SS550 Di Villa Di Tirano e Incrocio Passo Dell aprica",
-   "tipo": "lavori",
-   "quando": "2026-11-27T15:32:00Z",
-   "lat2": 46.1543295,
-   "lon2": 10.1541791,
-   "a": "Passo Dell aprica",
    "indicativo": true
   },
   {
@@ -7655,6 +7625,27 @@
    "dir": "Napoli"
   },
   {
+   "id": "aspi559643",
+   "strada": "A1 Milano-Napoli (Autostrade)",
+   "testo": "cantiere tra Arezzo - Valdichiana (dal km 370.3 al km 376.2) in direzione Napoli: deviazione a 1 corsia (pavimentazione risanamento), limite 40 km/h · dal 27/11 20:30 al 28/11 06:00",
+   "tipo": "lavori",
+   "inizio": "2026-11-27T19:30+00:00",
+   "fine": "2026-11-28T05:00+00:00",
+   "corsie": "deviazione a 1 corsia",
+   "lat": 43.3330979768145,
+   "lon": 11.762598602626,
+   "da": "Arezzo - Valdichiana",
+   "paese": "Italia",
+   "fonte": "Autostrade per l'Italia",
+   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
+   "lat2": 43.2854003869162,
+   "lon2": 11.7649191603124,
+   "km": 5.9,
+   "dirlat": 40.8358846,
+   "dirlon": 14.2487679,
+   "dir": "Napoli"
+  },
+  {
    "id": "aspi753072",
    "strada": "A1 Milano-Napoli (Autostrade)",
    "testo": "cantiere tra Caianello - Capua (dal km 704.0 al km 705.0) in direzione Napoli: corsia unica (viadotto o ponte giunti), limite 60 km/h · dal 27/11 20:00 al 28/11 06:00",
@@ -7882,20 +7873,20 @@
   {
    "id": "aspi853451",
    "strada": "T06 Complanare Di Bologna (Autostrade)",
-   "testo": "cantiere tra Svincolo S.Giovanni In Persiceto - Allac. Tangenziale Di Bologna (dal km 1.5 al km 3.3) in direzione Complanare Di Bologna: corsia unica (opere in verde), limite 60 km/h · dal 27/11 20:00 al 28/11 05:00",
+   "testo": "cantiere tra Svincolo Ss 9 Via Emilia - Allac. Tangenziale Di Bologna (dal km 0.9 al km 3.3) in direzione Complanare Di Bologna: corsia unica (opere in verde), limite 60 km/h · dal 27/11 20:00 al 28/11 05:00",
    "tipo": "lavori",
    "inizio": "2026-11-27T19:00+00:00",
    "fine": "2026-11-28T04:00+00:00",
    "corsie": "corsia unica",
-   "lat": 44.5263929042832,
-   "lon": 11.2638106756033,
-   "da": "Svincolo S.Giovanni In Persiceto - Allac. Tangenziale Di Bologna",
+   "lat": 44.5281176854314,
+   "lon": 11.257171203533,
+   "da": "Svincolo Ss 9 Via Emilia - Allac. Tangenziale Di Bologna",
    "paese": "Italia",
    "fonte": "Autostrade per l'Italia",
    "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
    "lat2": 44.5179577978511,
    "lon2": 11.2826925770118,
-   "km": 1.8,
+   "km": 2.4,
    "dirlat": 44.4804098,
    "dirlon": 11.4383019,
    "dir": "Complanare Di Bologna"
@@ -8638,6 +8629,27 @@
    "dirlat": 40.5488156,
    "dirlon": 17.0805801,
    "dir": "Taranto"
+  },
+  {
+   "id": "aspi55964300",
+   "strada": "A1 Milano-Napoli (Autostrade)",
+   "testo": "cantiere tra Valdichiana - Arezzo (dal km 375.2 al km 372.6) in direzione Milano: corsia unica (pavimentazione risanamento), limite 40 km/h · dal 27/11 20:30 al 28/11 06:00",
+   "tipo": "lavori",
+   "inizio": "2026-11-27T19:30+00:00",
+   "fine": "2026-11-28T05:00+00:00",
+   "corsie": "corsia unica",
+   "lat": 43.2956365373,
+   "lon": 11.7633231320811,
+   "da": "Valdichiana - Arezzo",
+   "paese": "Italia",
+   "fonte": "Autostrade per l'Italia",
+   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
+   "lat2": 43.3168978179441,
+   "lon2": 11.7613526150724,
+   "km": 2.6,
+   "dirlat": 45.4641943,
+   "dirlon": 9.1896346,
+   "dir": "Milano"
   },
   {
    "id": "aspi55553400",
@@ -13232,19 +13244,6 @@
    "paese": "Francia",
    "lat2": 48.12549,
    "lon2": -1.71584
-  },
-  {
-   "id": "397a3a888af9f510",
-   "strada": "N19 (Francia)",
-   "testo": "segnalazione dalle 16:31 del 27 novembre 2026 alle 17:45 del 27 novembre 2026 · Cônes su carreggiata. Ralentissez · 599 m a est di La Verrerie · Direzione Paris (da Delle - Suisse)",
-   "tipo": "altro",
-   "quando": "2026-11-27T16:33:56.850+01:00",
-   "corsie": "",
-   "inizio": "2026-11-27T16:31:00+01:00",
-   "fine": "2026-11-27T17:45:00+01:00",
-   "lat": 47.67397,
-   "lon": 6.52065,
-   "paese": "Francia"
   },
   {
    "id": "ef41e2195de63293",
