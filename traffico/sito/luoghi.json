@@ -5385,5 +5385,46 @@ false
 41.8900427,
 12.4354536,
 false
+],
+"v2|Cologno M. Est|9.0,45.9,9.7,45.2": [
+45.3630724,
+9.3687443,
+false
+],
+"v2|Raddusa/Agira St|14.1,37.9,14.8,37.2": [
+37.5515273,
+14.5299056,
+false
+],
+"v2|Bressanone|10.6,47.3,11.7,44.2": [
+46.716413,
+11.657792,
+false
+],
+"Di Val Sarentino E Del Passo Di Vizze": null,
+"v2|Passo Di Pennes": [
+46.818775,
+11.441254,
+false
+],
+"v2|Simeto - SS114|14.7,37.8,15.4,37.1": null,
+"Siracusana": [
+37.0872014,
+15.2545409
+],
+"v2|Vizzini - SS194 Ragusana|14.9,37.4,15.6,36.7": null,
+"Di Laconi E Di Uras": [
+39.835633,
+9.0091037
+],
+"v2|Zeppara|8.7,40.2,9.4,39.5": [
+39.7742345,
+8.8295039,
+false
+],
+"v2|Morgongiori|8.7,40.2,9.4,39.5": [
+39.746644,
+8.770131,
+false
 ]
 }
