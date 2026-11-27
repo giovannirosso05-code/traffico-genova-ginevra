@@ -5019,5 +5019,12 @@ false
 false
 ],
 "v2|Stagno - SS555 Delle Colline|11.9,42.3,12.6,41.6": null,
-"v2|Livorno Zona Industriale|11.9,42.3,12.6,41.6": null
+"v2|Livorno Zona Industriale|11.9,42.3,12.6,41.6": null,
+"v2|San Donato (Direzione Firenze)|10.9,44.1,12.1,42.9": null,
+"v2|Staz. Di Pescariello|16.4,41.5,17.1,40.8": null,
+"v2|V. Rubattino: Segrate-Citta Studi|9.0,45.9,9.7,45.2": [
+45.4805211,
+9.264691,
+false
+]
 }
