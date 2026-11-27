@@ -5075,5 +5075,22 @@ false
 false
 ],
 "v2|Gello - Allacciamento Fi-Pi-Li per Livorno|10.1,44.0,10.8,43.3": null,
-"v2|Pisa Centro - A12 Genova-Rosignano|10.1,44.0,10.8,43.3": null
+"v2|Pisa Centro - A12 Genova-Rosignano|10.1,44.0,10.8,43.3": null,
+"v2|Cesana Torinese - SS23 Colle Di Sestriere|6.4,45.3,7.1,44.6": [
+44.9407517,
+6.8212041,
+false
+],
+"v2|Colle Di Monginevro/Confine Con La Francia|6.4,45.3,7.1,44.6": null,
+"via Valeria variante Tiburtina": null,
+"v2|Carsoli - SS5 Tiburtina Valeria": [
+42.0993757,
+13.1496036,
+false
+],
+"v2|Tagliacozzo - SS5 Tiburtina Valeria": [
+42.067977,
+13.2669058,
+false
+]
 }
