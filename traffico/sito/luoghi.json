@@ -7202,5 +7202,78 @@ false
 9.0010431
 ],
 "v2|Casa Cantoniera Carralzu|8.7,40.9,9.4,40.2": null,
-"v2|Chiaramonti/Incrocio SS672 SS-Tempio|8.7,40.9,9.4,40.2": null
+"v2|Chiaramonti/Incrocio SS672 SS-Tempio|8.7,40.9,9.4,40.2": null,
+"v2|Cesena - S.G.C. Orte-Ravenna (e45)|12.1,42.3,12.8,41.6": null,
+"Del Passo Brasa": null,
+"v2|Zocca": [
+44.3462404,
+10.9938171,
+false
+],
+"Via Sant Antonino": [
+43.7758592,
+11.2526861
+],
+"v2|Piazza dell Unità d Italia|10.9,44.1,11.6,43.4": [
+43.6415413,
+11.507381,
+false
+],
+"v2|Via dell Ariento|10.9,44.1,11.6,43.4": [
+43.7763886,
+11.2527769,
+false
+],
+"Piazza dell Unità Italiana": [
+43.7748668,
+11.2504991
+],
+"v2|Via Sant Antonino|10.9,44.1,11.6,43.4": [
+43.7758592,
+11.2526861,
+false
+],
+"v2|S.G.C. per Giulianova|12.1,43.0,14.0,41.5": null,
+"Piazza della Stazione": [
+43.7758734,
+11.2489345
+],
+"v2|Via Santa Caterina da Siena|10.9,44.1,11.6,43.4": [
+43.7752128,
+11.24654,
+false
+],
+"Via Santa Caterina da Siena": [
+43.7752128,
+11.24654
+],
+"v2|S.Stefano Di Magra-La Spezia-Allacciamento A15 Pr-Sp|8.6,44.8,10.8,43.0": null,
+"Via Eugenio Bacchion": [
+45.519772,
+12.2270166
+],
+"v2|Via Don Luigi Peron|11.9,45.9,12.6,45.2": [
+45.5140413,
+12.2312687,
+false
+],
+"v2|Via Papa Giovanni Paolo II|11.9,45.9,12.6,45.2": [
+45.5166067,
+12.2216467,
+false
+],
+"Di Villacidro": [
+39.4501505,
+8.6764193
+],
+"v2|Ponte Di Aletzia|8.3,39.8,9.0,39.1": null,
+"v2|Via Manfredi Azzarita|12.0,42.4,12.7,41.7": [
+41.9621684,
+12.4464387,
+false
+],
+"Via dell Albero": [
+43.7746623,
+11.2457554
+]
 }
