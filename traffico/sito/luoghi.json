@@ -7833,5 +7833,16 @@ false
 "v2|Oschiri - SS597 Di Logudoro|7.0,45.6,7.7,44.9": null,
 "v2|Viale Gabriele D Annunzio incrocio ZTL Via Gaetano Ronzoni|13.6,42.7,17.2,40.8": null,
 "v2|Lidarno|11.9,44.5,12.6,43.8": null,
-"v2|Ponte Felcino|11.9,44.5,12.6,43.8": null
+"v2|Ponte Felcino|11.9,44.5,12.6,43.8": null,
+"v2|S. Angelo Possidente|14.5,41.3,16.2,40.2": [
+40.7743362,
+15.7902056,
+true
+],
+"Frentana": [
+41.8259378,
+15.1678603
+],
+"v2|Valico Della Forchetta|14.8,42.2,15.5,41.5": null,
+"v2|Lama Dei Peligni|14.8,42.2,15.5,41.5": null
 }
