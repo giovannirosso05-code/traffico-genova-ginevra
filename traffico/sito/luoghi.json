@@ -7502,5 +7502,56 @@ false
 "Confine di Stato": [
 45.9263785,
 9.0368772
-]
+],
+"v2|Staz. Oniferi/Incrocio SS129 TraSvincolo Sarda": null,
+"Piazza dei Giudici": [
+43.7676375,
+11.2562618
+],
+"v2|Lungarno Generale Diaz|10.9,44.1,11.6,43.4": [
+43.7673075,
+11.2569547,
+false
+],
+"v2|Lungarno Anna Maria Luisa de Medici|10.9,44.1,11.6,43.4": [
+43.7676524,
+11.2555835,
+false
+],
+"Lungarno Generale Diaz": [
+43.7673075,
+11.2569547
+],
+"v2|Via dei Benci|10.9,44.1,11.6,43.4": [
+43.7670932,
+11.2591418,
+false
+],
+"v2|Piazza dei Giudici|10.9,44.1,11.6,43.4": [
+43.7676375,
+11.2562618,
+false
+],
+"v2|SP1dir-Calceranica al Lago|7.2,46.4,12.2,44.0": [
+46.005471,
+11.2392072,
+false
+],
+"Piazza Santa Croce": [
+39.2195105,
+9.1149483
+],
+"v2|Via Giuseppe Verdi|8.8,39.6,9.5,38.9": [
+39.2207505,
+9.1270698,
+false
+],
+"v2|Via dei Benci|8.8,39.6,9.5,38.9": null,
+"v2|Piazza Gaetano Salvemini|15.8,42.2,16.5,41.5": [
+41.6382297,
+15.9245715,
+false
+],
+"v2|Piazza Santa Croce|15.8,42.2,16.5,41.5": null,
+"v2|Tangenziale Est di Forli|12.1,42.3,12.8,41.6": null
 }
