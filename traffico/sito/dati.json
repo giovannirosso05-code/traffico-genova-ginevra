@@ -1,13 +1,95 @@
 {
- "aggiornato": "2026-11-27T00:34+00:00",
+ "aggiornato": "2026-11-27T00:49+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
-  "Autostrade (cantieri)": "ok (441 cantieri)",
+  "Autostrade (cantieri)": "ok (439 cantieri)",
   "Francia": "ok (423 eventi)",
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "c79cf3d2cae5bec4",
+   "strada": "A2 Autostrada del Mediterraneo",
+   "testo": "materiali dispersi a Svincolo Morano-Castrovillari in direzione Allacciamento Fisciano - A30-RA02",
+   "tipo": "altro",
+   "quando": "2026-11-27T00:45:00Z",
+   "lat": 39.8092272,
+   "lon": 16.2479106,
+   "da": "Morano-Castrovillari",
+   "indicativo": true
+  },
+  {
+   "id": "6347274509e09621",
+   "strada": "A14 Pescara-Bari",
+   "testo": "personale su strada causa lavori dalle 01:41 alle 02:26 del 27 novembre 2026 tra Svincolo Atri-Pineto e Allacciamento A25 Torano-Pescara in direzione Bari",
+   "tipo": "lavori",
+   "quando": "2026-11-27T00:43:00Z",
+   "lat": 42.6059,
+   "lon": 14.05046,
+   "da": "Atri-Pineto",
+   "dirlat": 41.1257843,
+   "dirlon": 16.8620293,
+   "dir": "Bari"
+  },
+  {
+   "id": "d6584d15f9d0366a",
+   "strada": "A12 Roma-Civitavecchia",
+   "testo": "veicolo fermo o in avaria dalle 01:39 del 27 novembre 2026 tra Allacciamento A91 Roma-Fiumicino e Svincolo Maccarese-Fregene in direzione S.s. 1 Aurelia",
+   "tipo": "altro",
+   "quando": "2026-11-27T00:41:00Z",
+   "lat2": 41.89515,
+   "lon2": 12.22258,
+   "a": "Maccarese-Fregene",
+   "dirlat": 44.1125891,
+   "dirlon": 8.244297,
+   "dir": "S.s. 1 Aurelia"
+  },
+  {
+   "id": "33e48342a350b473",
+   "strada": "A1 Firenze-Roma",
+   "testo": "pioggia dalle 17:14 del 24 novembre 2026 tra Svincolo Sasso Marconi e Svincolo Fabro",
+   "tipo": "meteo",
+   "quando": "2026-11-27T00:40:00Z",
+   "lat": 44.35801,
+   "lon": 11.26224,
+   "da": "Sasso Marconi",
+   "lat2": 42.87944,
+   "lon2": 12.01636,
+   "a": "Fabro",
+   "km": 210.3
+  },
+  {
+   "id": "2e0082880361e849",
+   "strada": "A1 Roma-Napoli",
+   "testo": "nebbia a banchi dalle 23:36 del 26 novembre 2026 tra Svincolo Frosinone e Svincolo San Vittore",
+   "tipo": "meteo",
+   "quando": "2026-11-27T00:38:00Z",
+   "lat": 41.6187,
+   "lon": 13.31508,
+   "da": "Frosinone",
+   "lat2": 41.43389,
+   "lon2": 13.89468,
+   "a": "San Vittore",
+   "km": 62.9
+  },
+  {
+   "id": "3d45d4fe9a72fd4f",
+   "strada": "A1 Firenze-Roma",
+   "testo": "personale su strada causa lavori dalle 01:32 alle 02:17 del 27 novembre 2026 tra Svincolo Ponzano Romano-Soratte e Svincolo Magliano Sabina in direzione Firenze",
+   "tipo": "lavori",
+   "quando": "2026-11-27T00:34:00Z",
+   "lat": 42.27501,
+   "lon": 12.54327,
+   "da": "Ponzano Romano-Soratte",
+   "lat2": 42.38209,
+   "lon2": 12.47111,
+   "a": "Magliano Sabina",
+   "km": 16.0,
+   "dirlat": 43.7697955,
+   "dirlon": 11.2556404,
+   "dir": "Firenze"
+  },
   {
    "id": "335cf887b18c50d6",
    "strada": "A30 Caserta-Salerno",
@@ -370,23 +452,6 @@
    "quando": "2026-11-26T23:59:00Z"
   },
   {
-   "id": "e0837469c9d32a04",
-   "strada": "A12 Roma-Civitavecchia",
-   "testo": "personale su strada causa lavori dalle 00:57 alle 01:42 del 27 novembre 2026 tra Svincolo Civitavecchia Sud e Svincolo S.Severa-S.Marinella in direzione Roma",
-   "tipo": "lavori",
-   "quando": "2026-11-26T23:59:00Z",
-   "lat": 42.05639,
-   "lon": 11.82524,
-   "da": "Civitavecchia Sud",
-   "lat2": 42.03539,
-   "lon2": 11.94533,
-   "a": "S.Severa-S.Marinella",
-   "km": 12.2,
-   "dirlat": 41.8933203,
-   "dirlon": 12.4829321,
-   "dir": "Roma"
-  },
-  {
    "id": "56c4910de3b27db9",
    "strada": "A1 Roma-Napoli",
    "testo": "nebbia a banchi dalle 00:37 del 27 novembre 2026 tra Allacciamento Diramazione Roma Sud e Svincolo Ceprano",
@@ -450,13 +515,6 @@
    "dir": "Aosta"
   },
   {
-   "id": "046eea4e44faf862",
-   "strada": "SS1 Via Aurelia",
-   "testo": "fondo stradale dissestato tra 1,474 km prima di Incrocio Stagno - SS555 Delle Colline e 1,017 km dopo Livorno Zona Industriale in direzione Incrocio Roma",
-   "tipo": "altro",
-   "quando": "2026-11-26T23:41:00Z"
-  },
-  {
    "id": "773d1f9c84b696eb",
    "strada": "A1 Roma-Napoli",
    "testo": "veicolo fermo o in avaria dalle 00:38 del 27 novembre 2026 tra Svincolo Ferentino e Svincolo Frosinone in direzione Napoli",
@@ -507,20 +565,6 @@
    "testo": "chiusura notturna, chiusura nodo causa lavori dalle 21:00 del 27 alle 05:00 del 28 novembre 2026 a Svincolo SP19(BS) in direzione Ospitaletto provenendo da A58",
    "tipo": "chiusura",
    "quando": "2026-11-26T23:22:00Z"
-  },
-  {
-   "id": "d9f63b2630fdd44e",
-   "strada": "A1 Roma-Napoli",
-   "testo": "nebbia a banchi dalle 23:36 del 26 novembre 2026 tra Svincolo Pontecorvo e Svincolo Caianello",
-   "tipo": "meteo",
-   "quando": "2026-11-26T23:21:00Z",
-   "lat": 41.5008,
-   "lon": 13.67471,
-   "da": "Pontecorvo",
-   "lat2": 41.30548,
-   "lon2": 14.08971,
-   "a": "Caianello",
-   "km": 49.0
   },
   {
    "id": "86c2affb2d0cbeb0",
@@ -761,13 +805,6 @@
    "dir": "Pescara"
   },
   {
-   "id": "ae6c06cd321413af",
-   "strada": "A50 Tangenziale Ovest Di Milano",
-   "testo": "lavori tra Allacciamento A8 Milano-Varese e Svincolo SS33 Del Sempione: Rho-Pero in direzione Allacciamento A1 Milano-Napoli",
-   "tipo": "lavori",
-   "quando": "2026-11-26T22:29:00Z"
-  },
-  {
    "id": "b1134cf4ece99e77",
    "strada": "A30 Caserta-Salerno",
    "testo": "tratto chiuso causa lavori dalle 23:26 del 26 alle 06:00 del 27 novembre 2026 tra Svincolo Mercato S.Severino e Svincolo Castel S. Giorgio in direzione Caserta",
@@ -872,13 +909,6 @@
    "dirlat": 45.8399103,
    "dirlon": 8.754179,
    "dir": "Varese"
-  },
-  {
-   "id": "3636067571057a81",
-   "strada": "A50 Tangenziale Ovest Di Milano",
-   "testo": "chiusura notturna, entrata chiusa causa lavori dalle 23:04 del 26 alle 03:00 del 27 novembre 2026 a Svincolo SS494 Vigevanese Nuova: Lorenteggio in direzione A8 da Vigevano",
-   "tipo": "chiusura",
-   "quando": "2026-11-26T22:16:00Z"
   },
   {
    "id": "850f897453915af9",
@@ -1061,41 +1091,11 @@
    "dir": "Varese"
   },
   {
-   "id": "2c55c24da59fafd1",
-   "strada": "A8 Diramazione Per Gallarate-Gattico",
-   "testo": "rampa di accesso chiusa causa lavori dalle 23:04 del 26 alle 05:00 del 27 novembre 2026 a Svincolo Besnate",
-   "tipo": "chiusura",
-   "quando": "2026-11-26T22:06:00Z",
-   "lat": 45.69393,
-   "lon": 8.75616,
-   "da": "Besnate"
-  },
-  {
    "id": "940b23d11775f199",
    "strada": "A52 Tangenziale Nord Di Milano",
    "testo": "chiusura notturna, uscita chiusa causa lavori a Svincolo Sesto S.Giovanni Sud: Cologno M. in direzione Svincolo SP44 Milano-Meda: Lentate-Bruzzano",
    "tipo": "chiusura",
    "quando": "2026-11-26T22:06:00Z"
-  },
-  {
-   "id": "39cae900a6545017",
-   "strada": "A8 Diramazione Per Gallarate-Gattico",
-   "testo": "tratto chiuso causa lavori dalle 23:03 del 26 alle 05:00 del 27 novembre 2026 tra Svincolo Besnate e Allacciamento A8 Milano-Varese in direzione autostrada Milano-Varese",
-   "tipo": "chiusura",
-   "quando": "2026-11-26T22:05:00Z",
-   "lat": 45.69393,
-   "lon": 8.75616,
-   "da": "Besnate",
-   "dirlat": 45.8399103,
-   "dirlon": 8.754179,
-   "dir": "Varese"
-  },
-  {
-   "id": "17832fdd769389c2",
-   "strada": "A50 Tangenziale Ovest Di Milano",
-   "testo": "chiusura notturna, uscita chiusa causa lavori dalle 23:02 del 26 alle 03:00 del 27 novembre 2026 a Svincolo SS494 Vigevanese Nuova: Lorenteggio in direzione A1 per Lorenteggio",
-   "tipo": "chiusura",
-   "quando": "2026-11-26T22:04:00Z"
   },
   {
    "id": "b564f2cff35ebca0",
@@ -1262,29 +1262,38 @@
    "quando": "2026-11-26T21:55:00Z"
   },
   {
-   "id": "f89c4e7d18740495",
-   "strada": "A14 Bologna-Ancona",
-   "testo": "personale su strada causa lavori dalle 22:49 alle 23:34 del 26 novembre 2026 tra Allacciamento Diramazione Per Ravenna e Svincolo Imola in direzione Bologna",
-   "tipo": "lavori",
-   "quando": "2026-11-26T21:52:00Z",
-   "lat": 44.4107202,
-   "lon": 12.1078116,
-   "da": "Per Ravenna",
-   "lat2": 44.37922,
-   "lon2": 11.74643,
-   "a": "Imola",
-   "indicativo": true,
-   "km": 34.7,
-   "dirlat": 44.4938203,
-   "dirlon": 11.3426327,
-   "dir": "Bologna"
-  },
-  {
    "id": "456a748bc2a3768f",
    "strada": "A52 Tangenziale Nord Di Milano",
    "testo": "lavori a Svincolo Sesto S.Giovanni Sud: Cologno M. in direzione Svincolo SP44 Milano-Meda: Lentate-Bruzzano",
    "tipo": "lavori",
    "quando": "2026-11-26T21:52:00Z"
+  },
+  {
+   "id": "b5b1f9a7fb857d9d",
+   "strada": "SS1 Via Aurelia",
+   "testo": "lavori di manutenzione a Incrocio Vallecrosia",
+   "tipo": "lavori",
+   "quando": "2026-11-26T21:51:00Z"
+  },
+  {
+   "id": "ae0c7bbb7c5c9e5a",
+   "strada": "A90-GRA Aurelia-Salaria",
+   "testo": "corsia chiusa tra 2,001 km dopo Area di servizio selva Candida e 2,203 km prima di Svincolo 4: Ospedale S.Andrea in direzione Salaria",
+   "tipo": "chiusura",
+   "quando": "2026-11-26T21:49:00Z",
+   "lat": 41.92924,
+   "lon": 12.38088,
+   "da": "selva Candida",
+   "dirlat": 42.9126816,
+   "dirlon": 13.8853522,
+   "dir": "Salaria"
+  },
+  {
+   "id": "4922fa586c5f84a2",
+   "strada": "A50 Tangenziale Ovest Di Milano",
+   "testo": "chiusura notturna, tratto chiuso causa lavori tra Allacciamento A8 Milano-Varese e Svincolo SS33 Del Sempione: Rho-Pero in direzione Allacciamento A1 Milano-Napoli",
+   "tipo": "chiusura",
+   "quando": "2026-11-26T21:44:00Z"
   },
   {
    "id": "aspi553903",
@@ -6245,24 +6254,6 @@
    "dir": "Genova"
   },
   {
-   "id": "aspi1009207",
-   "strada": "A26 Ge-Voltri-Ss 33 Semp.-Gravell.Toce (Autostrade)",
-   "testo": "cantiere tra Allac. A4 Torino-Trieste/Racc.A4-A5 - Vercelli Ovest (dal km 9.2 al km 8.0) in direzione Autostrada Dei Trafori: corsia unica (segnaletica orizzontale), limite 60 km/h · dal 26/11 21:00 al 27/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-26T20:00+00:00",
-   "fine": "2026-11-27T05:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 45.2957251248609,
-   "lon": 8.3752208369456,
-   "da": "Allac. A4 Torino-Trieste/Racc.A4-A5 - Vercelli Ovest",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 45.2910321867675,
-   "lon2": 8.38829832490056,
-   "km": 1.2
-  },
-  {
    "id": "aspi959914",
    "strada": "A9 Lainate-Como Chiasso (Autostrade)",
    "testo": "cantiere tra Chiasso-Dogana Di Brogeda - Como Centro (dal km 41.63 al km 37.0) in direzione Lainate: corsia unica (transito te), limite 60 km/h · dal 26/11 20:00 al 27/11 02:00",
@@ -7863,24 +7854,6 @@
    "dirlat": 44.40726,
    "dirlon": 8.9338624,
    "dir": "Genova"
-  },
-  {
-   "id": "aspi555882",
-   "strada": "A14 Bologna-Taranto (Autostrade)",
-   "testo": "cantiere tra Ortona - Pescara Sud-Francavilla (dal km 402.0 al km 398.2) in direzione Autostrada Milano-Napoli: corsia unica (barriera di sicurezza), limite 60 km/h · dal 26/11 22:00 al 27/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-26T21:00+00:00",
-   "fine": "2026-11-27T05:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 42.3374872970959,
-   "lon": 14.3620231278187,
-   "da": "Ortona - Pescara Sud-Francavilla",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 42.3610780133126,
-   "lon2": 14.3358372336934,
-   "km": 3.8
   },
   {
    "id": "aspi966604",
