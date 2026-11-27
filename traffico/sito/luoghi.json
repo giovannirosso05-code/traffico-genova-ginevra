@@ -7060,5 +7060,89 @@ false
 44.6764749,
 7.4206687,
 false
+],
+"v2|Via Antonio Vivaldi|12.1,42.2,12.8,41.5": [
+41.9359312,
+12.5117765,
+false
+],
+"v2|Lungomare Guglielmo Marconi|12.1,42.2,12.8,41.5": null,
+"Via del Porcellana": [
+43.772794,
+11.2473189
+],
+"v2|Borgo Ognissanti|10.9,44.1,11.6,43.4": [
+43.7727704,
+11.2452085,
+false
+],
+"v2|Via Palazzuolo|10.9,44.1,11.6,43.4": [
+43.7745765,
+11.2445418,
+false
+],
+"sopra Ticino  Gallarate": [
+45.6983572,
+8.6223675
+],
+"v2|Gallarate-Gattico|8.2,46.1,9.0,45.3": [
+45.6764848,
+8.7995852,
+false
+],
+"Del Lago Del Coghinas": [
+40.8784262,
+9.1279738
+],
+"v2|Passo Limbara|8.8,41.2,9.5,40.5": [
+40.8426701,
+9.1031119,
+false
+],
+"Via Paolo Paruta": [
+41.8755679,
+12.5184741
+],
+"v2|Corso del Popolo|12.2,42.2,12.9,41.5": [
+41.7878377,
+12.6683131,
+false
+],
+"v2|Via Giacomo Leopardi|12.2,42.2,12.9,41.5": [
+41.9424318,
+12.6495697,
+false
+],
+"Borgo Ognissanti": [
+43.7716965,
+11.2467536
+],
+"v2|Piazza Carlo Goldoni|10.9,44.1,11.6,43.4": [
+43.7709548,
+11.2478157,
+false
+],
+"v2|Via del Porcellana|10.9,44.1,11.6,43.4": [
+43.772794,
+11.2473189,
+false
+],
+"Viale Ammiraglio Del Bono": [
+41.736296,
+12.2860936
+],
+"v2|Via Capo Spartivento|11.9,42.1,12.6,41.4": [
+41.7378619,
+12.2861514,
+false
+],
+"v2|Via Raffaele De Cosa|11.9,42.1,12.6,41.4": [
+41.7376854,
+12.2844789,
+false
+],
+"Via Raffaele De Cosa": [
+41.7376854,
+12.2844789
 ]
 }
