@@ -6276,5 +6276,77 @@ false
 41.4703507,
 12.9090393,
 false
-]
+],
+"Raccordo Firenze Nord": [
+43.4294403,
+11.1444119
+],
+"Via Giusto D Andrea": [
+43.768883,
+11.2096593
+],
+"v2|Via del Ronco Corto|10.9,44.1,11.6,43.4": [
+43.7673674,
+11.2082258,
+false
+],
+"v2|Via del Pozzino|10.9,44.1,11.6,43.4": [
+43.7680286,
+11.2069349,
+false
+],
+"Via delle Brache": [
+43.7682689,
+11.2592799
+],
+"v2|Piazza dei Peruzzi|10.9,44.1,11.6,43.4": [
+43.7687347,
+11.2594368,
+false
+],
+"v2|Via dei Neri|10.9,44.1,11.6,43.4": [
+43.7680825,
+11.2581365,
+false
+],
+"Francesca": [
+44.2128893,
+11.8999766
+],
+"v2|S.Miniato - S.G.C. Fi-Pi-Li|11.5,44.6,12.2,43.9": null,
+"v2|S.Pierino|11.5,44.6,12.2,43.9": [
+44.3166031,
+11.7941087,
+false
+],
+"v2|Via San Gaggio|10.9,44.1,11.6,43.4": [
+43.7510448,
+11.2383418,
+false
+],
+"v2|Via del Gelsomino|10.9,44.1,11.6,43.4": [
+43.7503164,
+11.2364574,
+false
+],
+"v2|Maiorisi - SS608 Di Teano|12.9,41.6,13.6,40.9": null,
+"v2|Torre Melissa|16.1,38.7,16.8,38.0": null,
+"Bradanica": [
+40.656673,
+16.5658659
+],
+"v2|Masseria Trentangeli|16.2,41.0,16.9,40.3": null,
+"v2|Palazzo S.Gervasio|16.2,41.0,16.9,40.3": null,
+"Via del Gelsomino": [
+41.8973251,
+12.4497238
+],
+"v2|Via di San Gaggio|12.1,42.2,12.8,41.5": null,
+"v2|Via Senese|12.1,42.2,12.8,41.5": null,
+"NSA3": null,
+"Bettolle": [
+43.206274,
+11.804331
+],
+"v2|Bettolle-A1-Raccordo Bettolle-Pg-SS327|11.4,43.6,12.2,42.9": null
 }
