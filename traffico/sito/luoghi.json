@@ -6041,5 +6041,27 @@ false
 45.608031,
 9.309328,
 false
+],
+"Di Moncalvo": [
+45.050205,
+8.2650382
+],
+"v2|Moncalvo|7.9,45.4,8.6,44.7": [
+45.050205,
+8.2650382,
+false
+],
+"v2|SS.412 Della Val Tidone: Pavia-Opera|8.7,45.9,9.4,45.2": null,
+"v2|Rotatoria Castel S.Giovanni/Incrocio SS412 Della Val Tidone|9.4,45.4,10.1,44.7": null,
+"v2|Le Mose|9.4,45.4,10.1,44.7": [
+45.0398947,
+9.7525371,
+false
+],
+"v2|Atripalda Nord|12.9,41.6,13.6,40.9": null,
+"v2|Volturara Irpina|12.9,41.6,13.6,40.9": null,
+"FR|ISLE D'ABEAU|Isère": [
+45.6278116,
+5.2072863
 ]
 }

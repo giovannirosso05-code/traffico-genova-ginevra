@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-27T09:01+00:00",
+ "aggiornato": "2026-11-27T09:14+00:00",
  "fonte": "ATMB e APRR (siti ufficiali)",
  "stato": "ok",
  "tunnel": "Traffico scorrevole",
@@ -12,15 +12,6 @@
    "gestore": "ATMB",
    "lat": 46.1859095,
    "lon": 6.2041728
-  },
-  {
-   "titolo": "A43 · Savoie · percorso CHAMBERY<>LYON nella zona di galleria dell’Epine dal 23/11 al 27/11",
-   "testo": "",
-   "tipo": "lavori",
-   "url": "https://voyage.aprr.fr/a43-savoie-itineraires-chamberylyon-dans-le-secteur-du-tunnel-de-lepine-du-2311-au-2711",
-   "gestore": "APRR",
-   "lat": 45.5340649,
-   "lon": 5.8396718
   },
   {
    "titolo": "A5b (A105) · Seine e Marne · direzione Melun > Marne-la-Vallée, entrata all'altezza diEvry-Grégy n. 11",
@@ -99,15 +90,6 @@
    "lon": 5.7109699
   },
   {
-   "titolo": "A480 · Isère · direzione Lyon > Sisteron, all'altezza di Rondeau",
-   "testo": "",
-   "tipo": "lavori",
-   "url": "https://voyage.aprr.fr/a480-isere-direction-lyon-sisteron-au-niveau-du-rondeau-0",
-   "gestore": "APRR",
-   "lat": 45.1648259,
-   "lon": 5.7109699
-  },
-  {
    "titolo": "A43 · Isère · direzione Chesnes <> Lyon, all'altezza di Chesnes",
    "testo": "",
    "tipo": "lavori",
@@ -115,7 +97,16 @@
    "gestore": "APRR",
    "lat": 45.6663133,
    "lon": 5.1022372
+  },
+  {
+   "titolo": "A43 · Isère · percorso zona dell’ISLE di ABEAU",
+   "testo": "",
+   "tipo": "lavori",
+   "url": "https://voyage.aprr.fr/a43-isere-itineraires-secteur-de-lisle-dabeau",
+   "gestore": "APRR",
+   "lat": 45.6278116,
+   "lon": 5.2072863
   }
  ],
- "aprr": "ok (11 lavori)"
+ "aprr": "ok (10 lavori)"
 }
