@@ -5930,5 +5930,116 @@ true
 45.1344019,
 7.1711724,
 true
+],
+"v2|Rionero Sannitico - SS17|13.8,42.1,14.5,41.4": [
+41.717726,
+14.1243377,
+false
+],
+"v2|Passo Cavalli|13.8,42.1,14.5,41.4": null,
+"v2|Sassari/Ippodromo|8.8,39.6,9.5,38.9": null,
+"v2|Scala Di Giocca - SS127 Sett. Sarda|8.8,39.6,9.5,38.9": null,
+"v2|Torre Di Ramitelli|11.7,45.4,12.4,44.7": null,
+"v2|Torriglia|10.3,46.9,11.0,46.2": null,
+"v2|Cevo - Capodiponte|10.9,46.8,11.6,46.1": null,
+"v2|Forno Allione - SS294 Della Val Di Sclave|10.9,46.8,11.6,46.1": null,
+"v2|Passo Dell aprica|9.8,46.5,10.5,45.8": [
+46.1543295,
+10.1541791,
+false
+],
+"SS42 Del Tonale E Della Mendola": [
+46.4401942,
+11.2588673
+],
+"v2|Tremezzo|15.8,39.8,16.5,39.1": null,
+"v2|Griante|15.8,39.8,16.5,39.1": null,
+"v2|Variante S.Eraclio E Foligno|12.1,42.3,12.8,41.6": null,
+"v2|Arsoli - SS411 Sublacense|12.3,42.3,13.0,41.6": null,
+"v2|Levaldigi": [
+44.5565115,
+7.6216901,
+false
+],
+"Di Correggio": [
+44.7557102,
+10.762808
+],
+"v2|Massa Finalese|10.4,45.1,11.1,44.4": null,
+"Via Aurelia Antica": [
+41.8900758,
+12.4256812
+],
+"v2|Largo Tommaso Perassi|12.1,42.2,12.8,41.5": [
+41.8893302,
+12.4109686,
+false
+],
+"v2|Largo Don Luigi Guanella|12.1,42.2,12.8,41.5": [
+41.8883587,
+12.4216775,
+false
+],
+"Borgo San Dalmazzo": [
+44.3269526,
+7.4695328
+],
+"Pradleves": [
+44.4123696,
+7.2732387
+],
+"v2|Cervasca|6.9,44.8,7.8,44.0": [
+44.3911311,
+7.4856503,
+false
+],
+"v2|Bernezzo|6.9,44.8,7.8,44.0": [
+44.3864806,
+7.4196242,
+false
+],
+"v2|Piazzale Corvetto|8.8,45.8,11.7,44.1": [
+45.4450954,
+9.2235656,
+false
+],
+"Via della Costituente": [
+41.1022978,
+16.8736292
+],
+"v2|Viale Luigi Sturzo|16.5,41.5,17.2,40.8": [
+41.1069554,
+16.8726979,
+false
+],
+"v2|Largo 2 Giugno|16.5,41.5,17.2,40.8": [
+41.1070868,
+16.8746798,
+false
+],
+"Quater Via Domiziana": null,
+"v2|S. Vito - SS430 Valle Del Garigliano": null,
+"Via Torino": [
+41.9014947,
+12.4955946
+],
+"v2|Via del Viminale|12.1,42.3,12.8,41.6": [
+41.9003127,
+12.4958366,
+false
+],
+"Viale Luigi Sturzo": [
+45.483066,
+9.1930324
+],
+"v2|Viale Papa Giovanni XXIII|8.8,45.8,9.5,45.1": [
+45.3038148,
+9.4979294,
+false
+],
+"v2|Via della Costituente|8.8,45.8,9.5,45.1": [
+45.608031,
+9.309328,
+false
 ]
 }
