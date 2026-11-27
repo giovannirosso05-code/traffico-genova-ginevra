@@ -7985,5 +7985,21 @@ false
 "v2|Variante di S.Severo - SS16 Ter Adriatica|11.7,45.4,12.4,44.7": null,
 "v2|Valle Di Cadore|14.8,37.9,15.5,37.2": null,
 "v2|Ivrea - SS565 Di Castellamonte|7.3,46.3,8.0,45.6": null,
-"v2|Pont St. Martin|7.3,46.3,8.0,45.6": null
+"v2|Pont St. Martin|7.3,46.3,8.0,45.6": null,
+"v2|Villafranca D asti|9.4,45.4,10.1,44.7": null,
+"v2|Baldichieri D asti|9.4,45.4,10.1,44.7": null,
+"Di Castellamonte": [
+45.381955,
+7.712117
+],
+"v2|Ivrea - SS26 Della Val D aosta|7.4,45.7,8.1,45.0": [
+45.446058,
+7.8500699,
+true
+],
+"v2|Rivarolo Canavese - SS460 Di Ceresole|7.4,45.7,8.1,45.0": [
+45.2521518,
+7.7417354,
+false
+]
 }
