@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-27T13:20+00:00",
+ "aggiornato": "2026-11-27T13:22+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -8,6 +8,56 @@
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "0f1e914dd4ff725c",
+   "strada": "SS125 Orientale Sarda",
+   "testo": "senso unico alternato causa lavori dalle 18:40 del 3 novembre 2026 alle 00:00 del 14 dicembre 2026 tra Incrocio Suaredda e Incrocio Monte Petrosu",
+   "tipo": "lavori",
+   "quando": "2026-11-27T13:20:00Z"
+  },
+  {
+   "id": "38c51b73ff1d3a7a",
+   "strada": "A24 Roma-Teramo",
+   "testo": "veicolo fermo o in avaria dalle 14:18 del 27 novembre 2026 tra Allacciamento A1 Milano Napoli e Barriera Di Roma Est in direzione Roma",
+   "tipo": "altro",
+   "quando": "2026-11-27T13:20:00Z",
+   "lat2": 41.92567,
+   "lon2": 12.70465,
+   "a": "Roma Est",
+   "dirlat": 41.8933203,
+   "dirlon": 12.4829321,
+   "dir": "Roma"
+  },
+  {
+   "id": "d7e7ea0442457a3c",
+   "strada": "A13 Bologna-Padova",
+   "testo": "veicolo fermo o in avaria dalle 13:47 del 27 novembre 2026 tra Svincolo Altedo e Svincolo Ferrara Sud in direzione Padova",
+   "tipo": "altro",
+   "quando": "2026-11-27T13:20:00Z",
+   "lat": 44.69033,
+   "lon": 11.48172,
+   "da": "Altedo",
+   "lat2": 44.79482,
+   "lon2": 11.55278,
+   "a": "Ferrara Sud",
+   "km": 15.5,
+   "dirlat": 45.391408,
+   "dirlon": 11.8058487,
+   "dir": "Padova"
+  },
+  {
+   "id": "16fe04b7b88fc63b",
+   "strada": "A14 Bologna-Ancona",
+   "testo": "personale su strada causa lavori dalle 14:18 alle 15:03 del 27 novembre 2026 tra Svincolo Pesaro-Urbino e Allacciamento Fano - Raccordo Per Fossombrone in direzione Ancona",
+   "tipo": "lavori",
+   "quando": "2026-11-27T13:20:00Z",
+   "lat": 43.89912,
+   "lon": 12.84169,
+   "da": "Pesaro-Urbino",
+   "dirlat": 43.4801189,
+   "dirlon": 13.2187279,
+   "dir": "Ancona"
+  },
   {
    "id": "598a42724620a11c",
    "strada": "Venezia Via Cristoforo Colombo",
@@ -25,6 +75,23 @@
    "testo": "code per 6 km causa incidente mezzi pesanti tra Svincolo Linate: V.Le Forlanini-Sp14 Rivoltana e Svincolo Gobba: Treviglio-Vimodrone in direzione Svincolo Lecco",
    "tipo": "incidente",
    "quando": "2026-11-27T13:19:00Z"
+  },
+  {
+   "id": "3cabf79135d72fe7",
+   "strada": "A24 Roma-Teramo",
+   "testo": "personale su strada causa lavori dalle 14:17 alle 15:02 del 27 novembre 2026 tra Svincolo Tagliacozzo e Svincolo Carsoli-Oricola in direzione Roma",
+   "tipo": "lavori",
+   "quando": "2026-11-27T13:19:00Z",
+   "lat": 42.13652,
+   "lon": 13.14214,
+   "da": "Tagliacozzo",
+   "lat2": 42.08735,
+   "lon2": 13.05826,
+   "a": "Carsoli-Oricola",
+   "km": 10.6,
+   "dirlat": 41.8933203,
+   "dirlon": 12.4829321,
+   "dir": "Roma"
   },
   {
    "id": "44f22a60ab9b1db5",
@@ -223,11 +290,11 @@
    "lat": 41.7878377,
    "lon": 12.6683131,
    "da": "Corso del Popolo",
-   "lat2": 41.9424318,
-   "lon2": 12.6495697,
+   "lat2": 41.9442403,
+   "lon2": 12.6490429,
    "a": "Via Giacomo Leopardi",
    "indicativo": true,
-   "km": 20.7
+   "km": 21.0
   },
   {
    "id": "17c2185562250657",
@@ -398,23 +465,6 @@
    "dirlat": 43.7697955,
    "dirlon": 11.2556404,
    "dir": "Firenze"
-  },
-  {
-   "id": "a6a56a981bda1d22",
-   "strada": "A13 Bologna-Padova",
-   "testo": "veicolo fermo o in avaria dalle 13:47 del 27 novembre 2026 tra Svincolo Ferrara Sud e Svincolo Altedo in direzione Bologna",
-   "tipo": "altro",
-   "quando": "2026-11-27T13:10:00Z",
-   "lat": 44.79482,
-   "lon": 11.55278,
-   "da": "Ferrara Sud",
-   "lat2": 44.69033,
-   "lon2": 11.48172,
-   "a": "Altedo",
-   "km": 15.5,
-   "dirlat": 44.4938203,
-   "dirlon": 11.3426327,
-   "dir": "Bologna"
   },
   {
    "id": "86b75042e5c18c4e",
@@ -851,23 +901,6 @@
    "dir": "Torino"
   },
   {
-   "id": "4b5bcb9cf22f8d57",
-   "strada": "A24 Roma-Teramo",
-   "testo": "personale su strada causa lavori dalle 13:53 alle 14:37 del 27 novembre 2026 tra Svincolo Carsoli-Oricola e Svincolo Tagliacozzo in direzione Teramo",
-   "tipo": "lavori",
-   "quando": "2026-11-27T12:54:00Z",
-   "lat": 42.08735,
-   "lon": 13.05826,
-   "da": "Carsoli-Oricola",
-   "lat2": 42.13652,
-   "lon2": 13.14214,
-   "a": "Tagliacozzo",
-   "km": 10.6,
-   "dirlat": 42.6581008,
-   "dirlon": 13.6980117,
-   "dir": "Teramo"
-  },
-  {
    "id": "d0ab449c271c2c52",
    "strada": "SP31(PV) Copiano-SP11-Costa de  Nobili",
    "testo": "SP31(PV) Copiano-SP11-Costa de Nobili senso unico alternato causa lavori dalle 00:01 del 7 alle 23:59 del 18 dicembre 2026 tra Incrocio SP34-Genzone e Incrocio SS234-Corteolona",
@@ -1076,23 +1109,6 @@
    "dir": "Genova"
   },
   {
-   "id": "ca91d93c8771625b",
-   "strada": "A26 Genova-Gravellona Toce",
-   "testo": "personale su strada causa lavori dalle 13:38 alle 14:23 del 27 novembre 2026 tra Svincolo Vercelli Est e Svincolo Casale Monferrato Nord in direzione Genova Voltri",
-   "tipo": "lavori",
-   "quando": "2026-11-27T12:39:00Z",
-   "lat": 45.35968,
-   "lon": 8.4837,
-   "da": "Vercelli Est",
-   "lat2": 45.16878,
-   "lon2": 8.49052,
-   "a": "Casale Monferrato Nord",
-   "km": 25.5,
-   "dirlat": 44.40726,
-   "dirlon": 8.9338624,
-   "dir": "Genova"
-  },
-  {
    "id": "ead064fc9574f2b9",
    "strada": "Castelletto Sopra Ticino",
    "testo": "senso unico alternato causa lavori dalle 08:00 del 2 alle 18:00 del 3 dicembre 2026 a SP30",
@@ -1111,17 +1127,6 @@
    "indicativo": true
   },
   {
-   "id": "c80432ff3aa813bf",
-   "strada": "SS1 Via Aurelia",
-   "testo": "lavori di manutenzione a Incrocio Zoagli",
-   "tipo": "lavori",
-   "quando": "2026-11-27T12:37:00Z",
-   "lat": 41.8563338,
-   "lon": 12.4883094,
-   "da": "Zoagli",
-   "indicativo": true
-  },
-  {
    "id": "d0b718d24cf8d9c8",
    "strada": "SS34 Del Lago Maggiore",
    "testo": "corsia chiusa a Incrocio Piaggio Valmara/Confine Con La Svizzera",
@@ -1134,23 +1139,6 @@
    "testo": "transito temporaneamente sospeso causa corsa podistica dalle 07:00 alle 15:00 del 29 novembre 2026 a Borgo Ognissanti",
    "tipo": "altro",
    "quando": "2026-11-27T12:37:00Z"
-  },
-  {
-   "id": "b244f82062b0e2b9",
-   "strada": "A1 Roma-Napoli",
-   "testo": "personale su strada causa lavori dalle 13:34 alle 14:19 del 27 novembre 2026 tra Svincolo Capua e Svincolo Caianello in direzione Roma",
-   "tipo": "lavori",
-   "quando": "2026-11-27T12:36:00Z",
-   "lat": 41.16377,
-   "lon": 14.17859,
-   "da": "Capua",
-   "lat2": 41.30548,
-   "lon2": 14.08971,
-   "a": "Caianello",
-   "km": 20.9,
-   "dirlat": 41.8933203,
-   "dirlon": 12.4829321,
-   "dir": "Roma"
   },
   {
    "id": "aspi553903",
