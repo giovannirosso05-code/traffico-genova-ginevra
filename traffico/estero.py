@@ -78,6 +78,13 @@ FRASI = [
     (r"\blundi\b", "lunedì"), (r"\bmardi\b", "martedì"), (r"\bmercredi\b", "mercoledì"), (r"\bjeudi\b", "giovedì"), (r"\bvendredi\b", "venerdì"), (r"\bsamedi\b", "sabato"), (r"\bdimanche\b", "domenica"),
     (r"\bjanvier\b", "gennaio"), (r"\bf[ée]vrier\b", "febbraio"), (r"\bmars\b", "marzo"), (r"\bavril\b", "aprile"), (r"\bmai\b", "maggio"), (r"\bjuin\b", "giugno"),
     (r"\bjuillet\b", "luglio"), (r"\bao[ûu]t\b", "agosto"), (r"\bseptembre\b", "settembre"), (r"\boctobre\b", "ottobre"), (r"\bnovembre\b", "novembre"), (r"\bd[ée]cembre\b", "dicembre"),
+    # ritocchi sul testo già tradotto (frasi che uscivano a metà tra francese e italiano)
+    (r"\b(?:le|la) (passo|colle)\b", r"il \1"), (r"\best (chius[oa]|aperto|aperta)\b", r"è \1"), (r"\bper la periodo\b", "per il periodo"),
+    (r"\b(\d)\s?[èe]me\b", r"\1°"), (r"\b(\d) (lunedì|martedì|mercoledì|giovedì|venerdì|sabato|domenica)", r"\1° \2"),
+    (r"\bhors (?:corsia|voie) di (?:traffico|circulation)\b", "fuori dalle corsie di marcia"), (r"\bVille di Paris\b", "Città di Parigi"),
+    (r"\bmesures di police\b", "provvedimenti di polizia"), (r"\bmessa en traffico provisoire\b", "apertura provvisoria al traffico"),
+    (r"\br[ée]fection d[’']un\b", "rifacimento di un"), (r"\btron[çc]on\b", "tratto"), (r"\blignes [ée]lectriques a[ée]riennes\b", "linee elettriche aeree"),
+    (r"\bsurplombant\b", "sopra"), (r"\bd[’']gestione\b", "di gestione"), (r"\bdi rimozione di\b", "di rimozione delle"), (r"\bdi solito le\b", "di solito il"), (r"\bdel (\d°) ", r"dal \1 "), (r" a (\d°) ", r" al \1 "), (r"\bgestion\b", "gestione"),
 ]
 def traduci(t):
     t = re.sub(r"(?<=\w)-(?=\w)", "QXQ", t)   # protegge i nomi composti (Saint-Félix-de-Lodez)

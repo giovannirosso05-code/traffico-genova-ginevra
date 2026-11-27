@@ -174,6 +174,8 @@ function etichetta(e){
  else if(e.tipo==='chiusura')x=/uscita|svincolo/.test(t)&&!/tratto|carreggiata/.test(t)?'uscita chiusa':'strada chiusa';
  else if(e.tipo==='meteo')x=(t.match(/neve|ghiaccio|nebbia|pioggia|vento|frana|allagament\w*/)||['meteo'])[0];
  else x=c&&!/personale/.test(c)?c:(/personale su strada/.test(t)?'operai sul bordo':'lavori');
+ if(/\b(passo|colle)\b.*(invernal|inverno)/.test(t))x='passo chiuso per l\'inverno';
+ else if(/fuori dalle corsie|personale su strada/.test(t)&&e.tipo==='lavori'&&!c)x='lavori a bordo strada';
  const f=fase(e);
  if(/programmato|inizia/.test(f)){const w=finestra(e);if(w&&w[0])x+=' · dal '+w[0].toLocaleString('it-IT',{day:'numeric',month:'numeric',hour:'2-digit',minute:'2-digit'})}
  return x;
