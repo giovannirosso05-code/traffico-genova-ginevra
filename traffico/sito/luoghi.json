@@ -5118,5 +5118,24 @@ false
 "SS2 Cassia": [
 41.9668406,
 12.440139
-]
+],
+"v2|Ponte Della Venturina - SS632 Pracchia|10.9,44.8,11.6,44.1": [
+44.1285958,
+10.9907273,
+false
+],
+"Incrocio Ferrara": [
+44.7480847,
+11.9162379
+],
+"Bis Di Alemagna": [
+46.4347151,
+12.3785927
+],
+"v2|Tai Di Cadore - SS51 Di Alemagna|12.0,46.8,12.7,46.1": [
+46.4234797,
+12.3622246,
+false
+],
+"v2|Lozzo Di Cadore - SS52 Carnica|12.0,46.8,12.7,46.1": null
 }
