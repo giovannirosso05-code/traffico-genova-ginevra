@@ -6676,5 +6676,60 @@ false
 40.7836511,
 15.2446227,
 false
+],
+"v2|Desenzano Garda - SS567 Del Benaco|7.5,45.5,8.2,44.8": null,
+"v2|Strambino|7.3,46.3,8.0,45.6": null,
+"di Front": [
+45.280852,
+7.663618
+],
+"v2|Front|7.3,45.6,8.0,44.9": [
+45.280852,
+7.663618,
+false
+],
+"Via dei Gori": [
+43.7749233,
+11.2554288
+],
+"v2|Piazza di San Lorenzo|10.9,44.1,11.6,43.4": [
+43.7748004,
+11.255054,
+false
+],
+"v2|Via dei Pucci|10.9,44.1,11.6,43.4": [
+43.7743013,
+11.2573237,
+false
+],
+"Piazza di San Lorenzo": [
+46.0901482,
+11.0042032
+],
+"v2|Via del Canto de Nelli|10.7,46.4,11.4,45.7": null,
+"v2|Via de Gori|10.7,46.4,11.4,45.7": null,
+"v2|Casello Mandela A24 Roma-Teramo|12.3,42.3,13.0,41.6": null,
+"Via del Canto de  Nelli": [
+43.7753061,
+11.2532999
+],
+"v2|Piazza di Madonna degli Aldobrandini|10.9,44.1,11.6,43.4": [
+43.7749444,
+11.2526762,
+false
+],
+"v2|Ponti": [
+44.6274764,
+8.3653896,
+false
+],
+"v2|Strevi": [
+44.698146,
+8.521847,
+false
+],
+"SS10 Padana Inferiore": [
+45.0395291,
+9.7568197
 ]
 }
