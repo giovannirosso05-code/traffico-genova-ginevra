@@ -7639,5 +7639,94 @@ false
 "Largo Preneste": [
 41.8927175,
 12.5412798
+],
+"v2|Interconnessione A21|8.8,46.1,10.8,45.1": null,
+"Di Sella Mandrazzi": [
+37.9757758,
+15.1380051
+],
+"v2|Mazzara S.Andrea|14.8,38.3,15.5,37.6": null,
+"v2|Novara Di Sicilia|14.8,38.3,15.5,37.6": [
+38.0161849,
+15.131956,
+false
+],
+"v2|Via Mecenate: Ponte Lambro|9.0,45.9,9.7,45.2": [
+45.4418416,
+9.2576927,
+true
+],
+"v2|Cagliari Nord - SS554 Cagliaritana|8.3,39.5,9.0,38.8": null,
+"Piazza San Marco": [
+45.4342571,
+12.3386717
+],
+"v2|Via Cavour|12.0,45.8,12.7,45.1": [
+45.5192168,
+12.1809852,
+false
+],
+"v2|Via Cesare Battisti|12.0,45.8,12.7,45.1": [
+45.4931711,
+12.2399899,
+false
+],
+"Della Val Cosizza": null,
+"v2|Grimacco": [
+46.1674491,
+13.5811814,
+false
+],
+"v2|Lombai": [
+46.1586241,
+13.6360203,
+false
+],
+"v2|Motta - SS550 Di Villa Di Tirano|9.8,46.5,10.5,45.8": null,
+"Via Tor de  Schiavi": [
+41.8750335,
+12.5644803
+],
+"v2|Viale della Primavera|12.2,42.2,12.9,41.5": [
+41.8796592,
+12.5595873,
+false
+],
+"Via di Casal del Marmo": [
+41.9599996,
+12.4083438
+],
+"v2|Via Monte del Marmo|12.1,42.3,12.8,41.6": [
+41.9311203,
+12.3924344,
+false
+],
+"v2|Via della Palmarola|12.1,42.3,12.8,41.6": [
+41.941341,
+12.3859238,
+false
+],
+"Via della Palmarola": [
+41.9442797,
+12.3841316
+],
+"v2|Ponte Cerasaro": null,
+"v2|Ponte Olivo - SS190 Delle Solfare": null,
+"v2|Bagnara Calabra|15.9,40.0,16.6,39.3": null,
+"Via Nomentana": [
+41.9148129,
+12.5091904
+],
+"v2|Piazza Sempione|12.2,42.3,12.9,41.6": [
+41.935782,
+12.5353058,
+false
+],
+"v2|Siracusa - SS115 e SS124 Ragusana|14.7,37.7,15.4,37.0": null,
+"v2|Ragusa - SS115 Sud Occidentale Sicula|13.3,37.7,14.0,37.0": null,
+"v2|Chiaramonte|13.3,37.7,14.0,37.0": [
+37.3149801,
+13.6609621,
+false
 ]
 }
