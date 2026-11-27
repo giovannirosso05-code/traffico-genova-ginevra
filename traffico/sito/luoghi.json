@@ -7879,5 +7879,10 @@ false
 8.9024812
 ],
 "v2|11 Bis Castenaso-Ravenna|11.1,44.8,11.8,44.1": null,
-"v2|11 SS253 S.Vitale-Ravenna|11.1,44.8,11.8,44.1": null
+"v2|11 SS253 S.Vitale-Ravenna|11.1,44.8,11.8,44.1": null,
+"v2|Pian Di Vedoia Ovest|11.7,46.6,12.6,45.1": [
+46.2018726,
+12.2883467,
+true
+]
 }
