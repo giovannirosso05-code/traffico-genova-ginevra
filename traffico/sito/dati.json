@@ -1,13 +1,174 @@
 {
- "aggiornato": "2026-11-27T22:34+00:00",
+ "aggiornato": "2026-11-27T22:50+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
-  "Autostrade (cantieri)": "ok (436 cantieri)",
+  "Autostrade (cantieri)": "ok (433 cantieri)",
   "Francia": "ok (286 eventi)",
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "b210538c902003ea",
+   "strada": "SS231 Di S.Vittoria",
+   "testo": "riduzione di carreggiata causa lavori dalle 09:00 del 30 novembre 2026 alle 17:00 del 4 dicembre 2026 tra Incrocio Alba - SS29 Del Colle Di Cadibona e Incrocio Guarene in direzione Asti",
+   "tipo": "lavori",
+   "quando": "2026-11-27T22:43:00Z"
+  },
+  {
+   "id": "42d65a5a4b29f817",
+   "strada": "A12 Genova-Rosignano",
+   "testo": "veicolo fermo o in avaria dalle 21:00 del 27 novembre 2026 a Area di servizio Riviera in direzione Livorno",
+   "tipo": "altro",
+   "quando": "2026-11-27T22:41:00Z",
+   "lat": 44.27515,
+   "lon": 9.42086,
+   "da": "Riviera",
+   "dirlat": 42.7902379,
+   "dirlon": 10.3402239,
+   "dir": "Livorno"
+  },
+  {
+   "id": "952fb2748305c318",
+   "strada": "A1 Roma-Napoli",
+   "testo": "veicolo fermo o in avaria dalle 23:30 del 27 novembre 2026 tra Svincolo Caianello e Svincolo Capua in direzione Napoli",
+   "tipo": "altro",
+   "quando": "2026-11-27T22:39:00Z",
+   "lat": 41.30548,
+   "lon": 14.08971,
+   "da": "Caianello",
+   "lat2": 41.16377,
+   "lon2": 14.17859,
+   "a": "Capua",
+   "km": 20.9,
+   "dirlat": 40.8358846,
+   "dirlon": 14.2487679,
+   "dir": "Napoli"
+  },
+  {
+   "id": "763cfd76c272f562",
+   "strada": "A2 Autostrada del Mediterraneo",
+   "testo": "riduzione di carreggiata causa lavori dalle 07:00 del 16 ottobre 2026 alle 23:59 del 27 novembre 2026 tra Svincolo Morano-Castrovillari e Area di servizio Frascineto in direzione nord",
+   "tipo": "lavori",
+   "quando": "2026-11-27T22:39:00Z",
+   "lat": 39.8092272,
+   "lon": 16.2479106,
+   "da": "Morano-Castrovillari",
+   "lat2": 39.83477,
+   "lon2": 16.25635,
+   "a": "Frascineto",
+   "indicativo": true,
+   "km": 3.5,
+   "dirlat": 46.0487586,
+   "dirlon": 10.0613499,
+   "dir": "nord"
+  },
+  {
+   "id": "aad86bd5d32f0e65",
+   "strada": "SS79 Ternana",
+   "testo": "senso unico alternato causa lavori di manutenzione dalle 00:00 del 6 ottobre alle 23:59 del 27 novembre 2026 tra Incrocio S.Gemini - SS3 Ter Tiberina e Incrocio Marmore",
+   "tipo": "lavori",
+   "quando": "2026-11-27T22:39:00Z",
+   "lat2": 42.52126,
+   "lon2": 12.7389,
+   "a": "Marmore"
+  },
+  {
+   "id": "19b5cceec336aade",
+   "strada": "R06 Raccordo Bettolle-Perugia",
+   "testo": "riduzione di carreggiata causa lavori dalle 08:00 del 7 luglio 2026 alle 23:59 del 27 novembre 2026 tra Svincolo Foiano della Chiana e Svincolo A1 in direzione Raccordo Bettolle",
+   "tipo": "lavori",
+   "quando": "2026-11-27T22:38:00Z",
+   "lat": 43.2524545,
+   "lon": 11.8187597,
+   "da": "Foiano della Chiana",
+   "indicativo": true,
+   "dirlat": 43.2215417,
+   "dirlon": 11.7810273,
+   "dir": "Raccordo Bettolle"
+  },
+  {
+   "id": "ac7e5696b86480bb",
+   "strada": "A2 Autostrada del Mediterraneo",
+   "testo": "riduzione di carreggiata causa lavori dalle 07:00 del 28 settembre 2026 alle 23:59 del 27 novembre 2026 tra Svincolo Morano-Castrovillari e Area di servizio Frascineto",
+   "tipo": "lavori",
+   "quando": "2026-11-27T22:38:00Z",
+   "lat": 39.8092272,
+   "lon": 16.2479106,
+   "da": "Morano-Castrovillari",
+   "lat2": 39.83477,
+   "lon2": 16.25635,
+   "a": "Frascineto",
+   "indicativo": true,
+   "km": 3.5
+  },
+  {
+   "id": "5a6c96a9018a35e3",
+   "strada": "A1 Milano-Bologna",
+   "testo": "personale su strada causa lavori dalle 23:35 del 27 alle 00:20 del 28 novembre 2026 tra Svincolo Terre di Canossa - Campegine e Svincolo Reggio Emilia in direzione Bologna",
+   "tipo": "lavori",
+   "quando": "2026-11-27T22:37:00Z",
+   "lat": 44.78276,
+   "lon": 10.48831,
+   "da": "Terre di Canossa - Campegine",
+   "lat2": 44.72938,
+   "lon2": 10.62759,
+   "a": "Reggio Emilia",
+   "km": 15.0,
+   "dirlat": 44.4938203,
+   "dirlon": 11.3426327,
+   "dir": "Bologna"
+  },
+  {
+   "id": "41f7c94ca557b595",
+   "strada": "A29 Palermo-Mazara Del Vallo",
+   "testo": "riduzione di carreggiata causa lavori dalle 07:00 del 12 alle 23:59 del 27 novembre 2026 tra Svincolo Castelvetrano e Svincolo Campobello Di Mazara",
+   "tipo": "lavori",
+   "quando": "2026-11-27T22:37:00Z",
+   "lat": 37.66706,
+   "lon": 12.81773,
+   "da": "Castelvetrano",
+   "lat2": 37.65414,
+   "lon2": 12.7721,
+   "a": "Campobello Di Mazara",
+   "km": 5.1
+  },
+  {
+   "id": "df3753824281be2b",
+   "strada": "SS26 Della Valle D aosta",
+   "testo": "senso unico alternato causa lavori dalle 00:01 del 12 ottobre alle 23:59 del 27 novembre 2026 a Incrocio Villeneuve",
+   "tipo": "lavori",
+   "quando": "2026-11-27T22:37:00Z"
+  },
+  {
+   "id": "1f3e033229a66481",
+   "strada": "SS3bis Bis tiberina (e45)",
+   "testo": "riduzione di carreggiata causa lavori dalle 06:00 del 23 alle 23:59 del 27 novembre 2026 tra Incrocio Pieve S.Stefano Sud e Incrocio Pieve S.Stefano Nord",
+   "tipo": "lavori",
+   "quando": "2026-11-27T22:35:00Z",
+   "lat": 44.2426274,
+   "lon": 12.2736423,
+   "da": "Pieve S.Stefano Sud",
+   "lat2": 44.2426274,
+   "lon2": 12.2736423,
+   "a": "Pieve S.Stefano Nord",
+   "indicativo": true,
+   "km": 0.0
+  },
+  {
+   "id": "fe4a49db83ff0e09",
+   "strada": "SS16 Adriatica",
+   "testo": "senso unico alternato causa lavori dalle 06:00 del 23 alle 23:59 del 27 novembre 2026 a Incrocio Variante di S.Severo - SS16 Ter Adriatica",
+   "tipo": "lavori",
+   "quando": "2026-11-27T22:35:00Z"
+  },
+  {
+   "id": "d19fe3bf13acc400",
+   "strada": "SS51 Di Alemagna",
+   "testo": "senso unico alternato causa lavori di manutenzione dalle 00:00 del 23 alle 23:59 del 27 novembre 2026 tra Incrocio Tai Di Cadore - SS51 Bis Di Alemagna e Incrocio Valle Di Cadore",
+   "tipo": "lavori",
+   "quando": "2026-11-27T22:34:00Z"
+  },
   {
    "id": "74838e07ad8751ad",
    "strada": "A14 Pescara-Bari",
@@ -23,34 +184,11 @@
    "km": 40.4
   },
   {
-   "id": "fdd8fb8da6c0adc2",
-   "strada": "A14 Bari-Taranto",
-   "testo": "personale su strada dalle 23:30 del 27 novembre 2026 a Svincolo Mottola-Castellaneta in direzione da Bari",
-   "tipo": "altro",
-   "quando": "2026-11-27T22:31:00Z",
-   "lat": 40.68281,
-   "lon": 16.95251,
-   "da": "Mottola-Castellaneta",
-   "dirlat": 42.4185593,
-   "dirlon": 12.2340471,
-   "dir": "da Bari"
-  },
-  {
-   "id": "952fb2748305c318",
-   "strada": "A1 Roma-Napoli",
-   "testo": "veicolo fermo o in avaria dalle 23:30 del 27 novembre 2026 tra Svincolo Caianello e Svincolo Capua in direzione Napoli",
-   "tipo": "altro",
-   "quando": "2026-11-27T22:31:00Z",
-   "lat": 41.30548,
-   "lon": 14.08971,
-   "da": "Caianello",
-   "lat2": 41.16377,
-   "lon2": 14.17859,
-   "a": "Capua",
-   "km": 20.9,
-   "dirlat": 40.8358846,
-   "dirlon": 14.2487679,
-   "dir": "Napoli"
+   "id": "f6badc99379794dc",
+   "strada": "SS26 Della Valle D aosta",
+   "testo": "senso unico alternato causa lavori dalle 07:00 del 1 alle 18:00 del 15 dicembre 2026 tra Incrocio Ivrea - SS565 Di Castellamonte e Incrocio Pont St. Martin",
+   "tipo": "lavori",
+   "quando": "2026-11-27T22:33:00Z"
   },
   {
    "id": "f4579d5fa2b76556",
@@ -105,19 +243,6 @@
    "dir": "Salerno"
   },
   {
-   "id": "9e40ec94cd6a3015",
-   "strada": "A24 Tratto Urbano",
-   "testo": "veicolo fermo o in avaria dalle 23:27 del 27 novembre 2026 tra Svincolo Via Fiorentini e Svincolo Portonaccio - Galla Placidia in direzione tangenziale Est",
-   "tipo": "altro",
-   "quando": "2026-11-27T22:28:00Z",
-   "lat": 41.90389,
-   "lon": 12.56183,
-   "da": "Via Fiorentini",
-   "dirlat": 45.5801845,
-   "dirlon": 11.5096396,
-   "dir": "tangenziale"
-  },
-  {
    "id": "e553ad894d71dbcf",
    "strada": "A14 Ancona-Pescara",
    "testo": "personale su strada causa lavori dalle 23:27 del 27 alle 00:12 del 28 novembre 2026 tra Svincolo Loreto-Porto Recanati e Svincolo Macerata in direzione Pescara",
@@ -148,19 +273,6 @@
    "a": "Druogno",
    "indicativo": true,
    "km": 11.6
-  },
-  {
-   "id": "b635e32c7512cdb0",
-   "strada": "A5 Torino-Courmayeur",
-   "testo": "veicolo in avaria a Svincolo Volpiano in direzione Torino",
-   "tipo": "altro",
-   "quando": "2026-11-27T22:27:00Z",
-   "lat": 45.197,
-   "lon": 7.79256,
-   "da": "Volpiano",
-   "dirlat": 45.0677551,
-   "dirlon": 7.6824892,
-   "dir": "Torino"
   },
   {
    "id": "7874a5ff0c5af0e3",
@@ -600,24 +712,6 @@
    "km": 76.1
   },
   {
-   "id": "1f70c3eec63dd9b7",
-   "strada": "A30 Caserta-Salerno",
-   "testo": "personale su strada causa lavori dalle 22:44 del 27 novembre 2026 tra Svincolo Castel S. Giorgio e Svincolo Nocera Pagani in direzione Caserta",
-   "tipo": "lavori",
-   "quando": "2026-11-27T21:46:00Z",
-   "lat": 40.7844003,
-   "lon": 14.6993869,
-   "da": "Castel S. Giorgio",
-   "lat2": 40.78479,
-   "lon2": 14.61874,
-   "a": "Nocera Pagani",
-   "indicativo": true,
-   "km": 8.1,
-   "dirlat": 41.2035193,
-   "dirlon": 14.1168624,
-   "dir": "Caserta"
-  },
-  {
    "id": "0078edbc3b27e223",
    "strada": "A11 Firenze-Pisa",
    "testo": "uscita chiusa causa lavori dalle 22:44 del 27 alle 06:00 del 28 novembre 2026 a Svincolo Chiesina Uzzanese in direzione da Pisa",
@@ -710,16 +804,6 @@
    "lon2": 15.3598,
    "a": "Poggio Imperiale",
    "km": 380.1
-  },
-  {
-   "id": "471c5a43153ce430",
-   "strada": "A35 BreBeMi",
-   "testo": "chiusura notturna, uscita chiusa causa lavori dalle 22:37 del 27 alle 05:00 del 28 novembre 2026 a Svincolo Caravaggio in direzione Allacciamento SP11 (BS)",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T21:37:00Z",
-   "lat": 45.50957,
-   "lon": 9.62693,
-   "da": "Caravaggio"
   },
   {
    "id": "29c30ff206df2ec4",
@@ -890,17 +974,6 @@
    "dirlat": 45.4641943,
    "dirlon": 9.1896346,
    "dir": "Milano"
-  },
-  {
-   "id": "dbad79e49c8b4566",
-   "strada": "SS39 Del Passo Di Aprica",
-   "testo": "traffico rallentato causa mezzi spargisale in azione tra Incrocio Tresenda - SS38 Dello Stelvio e 6,613 km prima di Incrocio Cortenedolo",
-   "tipo": "code",
-   "quando": "2026-11-27T21:27:00Z",
-   "lat2": 46.1741543,
-   "lon2": 10.2773573,
-   "a": "Cortenedolo",
-   "indicativo": true
   },
   {
    "id": "a5e112ad24f87494",
@@ -1204,13 +1277,6 @@
    "dir": "Gravellona Toce"
   },
   {
-   "id": "f354648dac4ca4d8",
-   "strada": "A26 Genova-Gravellona Toce",
-   "testo": "chiusura nodo causa lavori dalle 22:08 del 27 alle 06:00 del 28 novembre 2026 a Allacciamento A21 Torino-Piacenza-Brescia",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T21:12:00Z"
-  },
-  {
    "id": "d4f23456ceb84837",
    "strada": "A13 Bologna-Padova",
    "testo": "uscita chiusa causa lavori dalle 22:10 del 27 alle 06:00 del 28 novembre 2026 a Svincolo Ferrara Nord in direzione da Padova",
@@ -1222,82 +1288,6 @@
    "dirlat": 41.8888473,
    "dirlon": 12.5042207,
    "dir": "da Padova"
-  },
-  {
-   "id": "11e89971df7624c9",
-   "strada": "A1 Bologna-Firenze",
-   "testo": "rampa di accesso chiusa causa lavori dalle 22:10 del 27 alle 06:00 del 28 novembre 2026 a Svincolo Firenze Nord in direzione Firenze",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T21:11:00Z",
-   "lat": 43.84388,
-   "lon": 11.16636,
-   "da": "Firenze Nord",
-   "dirlat": 43.7697955,
-   "dirlon": 11.2556404,
-   "dir": "Firenze"
-  },
-  {
-   "id": "bac0e314141d4b86",
-   "strada": "A12 Genova-Rosignano",
-   "testo": "chiusura nodo causa lavori dalle 22:10 del 27 alle 06:00 del 28 novembre 2026 a Allacciamento A7 Milano-Genova in direzione Rosignano",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T21:11:00Z"
-  },
-  {
-   "id": "661b3192c8da40b1",
-   "strada": "A12 Roma-Civitavecchia",
-   "testo": "area di servizio chiusa causa lavori dalle 22:08 del 27 alle 06:00 del 28 novembre 2026 a Area di servizio Arrone in direzione S.s. 1 Aurelia",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T21:10:00Z",
-   "lat": 41.87499,
-   "lon": 12.25137,
-   "da": "Arrone",
-   "dirlat": 44.1125891,
-   "dirlon": 8.244297,
-   "dir": "S.s. 1 Aurelia"
-  },
-  {
-   "id": "fefd1083bede7ca1",
-   "strada": "A14 Diramazione Per Ravenna",
-   "testo": "tratto chiuso causa lavori dalle 22:06 del 27 alle 06:00 del 28 novembre 2026 tra Svincolo Bagnacavallo e Svincolo SS 309 Diramazione Ravenna in direzione Ravenna",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T21:08:00Z",
-   "lat": 44.40268,
-   "lon": 11.97038,
-   "da": "Bagnacavallo",
-   "dirlat": 44.3640607,
-   "dirlon": 12.0590095,
-   "dir": "Ravenna"
-  },
-  {
-   "id": "9757e1f85a8c9fb8",
-   "strada": "A24 Roma-Teramo",
-   "testo": "tratto chiuso causa lavori dalle 22:04 del 27 alle 06:00 del 28 novembre 2026 tra Svincolo Colledara-San Gabriele e Svincolo Assergi in direzione Roma",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T21:08:00Z",
-   "lat": 42.5303,
-   "lon": 13.65995,
-   "da": "Colledara-San Gabriele",
-   "lat2": 42.4195,
-   "lon2": 13.50895,
-   "a": "Assergi",
-   "km": 21.0,
-   "dirlat": 41.8933203,
-   "dirlon": 12.4829321,
-   "dir": "Roma"
-  },
-  {
-   "id": "fd34ab4cb5c80cf2",
-   "strada": "A14 Diramazione Per Ravenna",
-   "testo": "area di servizio chiusa causa tratto chiuso dalle 22:07 del 27 alle 06:00 del 28 novembre 2026 a Area di servizio Sant eufemia in direzione Ravenna",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T21:08:00Z",
-   "lat": 44.4018198,
-   "lon": 12.0460362,
-   "da": "Sant eufemia",
-   "dirlat": 44.3640607,
-   "dirlon": 12.0590095,
-   "dir": "Ravenna"
   },
   {
    "id": "aspi553903",
@@ -5680,27 +5670,6 @@
    "dir": "Ss51 Alemagna"
   },
   {
-   "id": "aspi753136",
-   "strada": "A30 Caserta-Salerno (Autostrade)",
-   "testo": "cantiere tra Castel S. Giorgio - Nocera Pagani (dal km 41.0 al km 40.0) in direzione Caserta: riduzione a 2 corsie (ripristino a seguito incidente), limite 90 km/h · dal 27/11 20:00 al 28/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-27T19:00+00:00",
-   "fine": "2026-11-28T05:00+00:00",
-   "corsie": "riduzione a 2 corsie",
-   "lat": 40.7785270724028,
-   "lon": 14.6288562415738,
-   "da": "Castel S. Giorgio - Nocera Pagani",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 40.7841624884142,
-   "lon2": 14.61946311201,
-   "km": 1.0,
-   "dirlat": 41.2035193,
-   "dirlon": 14.1168624,
-   "dir": "Caserta"
-  },
-  {
    "id": "aspi556355",
    "strada": "A14 Bologna-Taranto (Autostrade)",
    "testo": "cantiere tra Fermo-Porto S.Giorgio - Pedaso (dal km 279.1 al km 280.5) in direzione Taranto: corsia unica (ripristino urgente x incidente), limite 60 km/h · dal 27/11 21:36 al 28/11 05:36",
@@ -6609,27 +6578,6 @@
    "lat2": 44.0199524253465,
    "lon2": 11.224149108536,
    "km": 0.7,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
-  },
-  {
-   "id": "aspi966158",
-   "strada": "A1 Milano-Napoli (Autostrade)",
-   "testo": "cantiere tra Allac. A15 Parma-La Spezia - Fiorenzuola (dal km 95.7 al km 90.0) in direzione Milano: corsia unica (ispezione opera d'arte), limite 60 km/h · dal 27/11 21:00 al 28/11 05:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-27T20:00+00:00",
-   "fine": "2026-11-28T04:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 44.8791280539198,
-   "lon": 10.1553950713751,
-   "da": "Allac. A15 Parma-La Spezia - Fiorenzuola",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 44.8896319715426,
-   "lon2": 10.0875378471265,
-   "km": 5.7,
    "dirlat": 45.4641943,
    "dirlon": 9.1896346,
    "dir": "Milano"
@@ -9195,27 +9143,6 @@
    "dirlat": 44.428369,
    "dirlon": 8.7586939,
    "dir": "Genova Voltri"
-  },
-  {
-   "id": "aspi494979",
-   "strada": "A12 Genova-Roma (Autostrade)",
-   "testo": "cantiere tra Svincolo Di Cerveteri-Ladispoli - Svincolo Di S.Severa-S.Marinella (dal km 29.05 al km 30.8) in direzione Ss1 Aurelia: corsia unica (consolidamento scarpata), limite 60 km/h · dal 27/11 21:00 al 28/11 00:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-27T20:00+00:00",
-   "fine": "2026-11-27T23:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 41.9871388433227,
-   "lon": 12.0670297894604,
-   "da": "Svincolo Di Cerveteri-Ladispoli - Svincolo Di S.Severa-S.Marinella",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 41.9921895969988,
-   "lon2": 12.0578286851192,
-   "km": 1.8,
-   "dirlat": 42.0387539,
-   "dirlon": 11.917814,
-   "dir": "Ss1 Aurelia"
   },
   {
    "id": "aspi493766",
