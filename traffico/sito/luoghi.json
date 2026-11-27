@@ -7909,5 +7909,28 @@ false
 44.4018198,
 12.0460362,
 true
+],
+"Maria E Isola Casamari": [
+41.6665101,
+13.2914673
+],
+"v2|Giglio Abbazia Di Casamari - Veroli|12.9,42.0,13.6,41.3": null,
+"Asti": [
+44.8260126,
+8.2026863
+],
+"Cuneo": [
+44.4580704,
+7.5581367
+],
+"v2|11: Via Nomentana|13.5,43.3,14.4,41.0": null,
+"Autostrada Aeroporto Di Fiumicino": [
+41.8007846,
+12.2923787
+],
+"v2|G.R.A|11.9,42.2,12.6,41.5": [
+41.8577092,
+12.3767694,
+false
 ]
 }
