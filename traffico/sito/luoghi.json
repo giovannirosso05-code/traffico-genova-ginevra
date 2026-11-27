@@ -6731,5 +6731,117 @@ false
 "SS10 Padana Inferiore": [
 45.0395291,
 9.7568197
+],
+"v2|Staz. Di Cropani - SS180 Di Cropani|16.1,38.7,16.8,38.0": null,
+"Via del Proconsolo": [
+43.7704135,
+11.2577951
+],
+"v2|Via dell Oriuolo|10.9,44.1,11.6,43.4": [
+43.7720177,
+11.260805,
+false
+],
+"v2|Piazza di San Firenze|10.9,44.1,11.6,43.4": [
+43.7695171,
+11.2574393,
+false
+],
+"Via Bosso": [
+45.4808472,
+12.1977698
+],
+"v2|Via Fratelli Cavanis|11.8,45.8,12.5,45.1": [
+45.4811664,
+12.1990686,
+false
+],
+"v2|Via Miranese|11.8,45.8,12.5,45.1": [
+45.4849951,
+12.2093717,
+false
+],
+"v2|Punta Raisi/Diramazione Aeroporto Falcone E Borsellino|12.2,38.5,13.7,37.3": null,
+"Via dell Oriuolo": [
+43.7725186,
+11.2584139
+],
+"v2|Via Folco Portinari|10.9,44.1,11.6,43.4": [
+43.7727935,
+11.259261,
+false
+],
+"v2|Via del Proconsolo|10.9,44.1,11.6,43.4": [
+43.7704135,
+11.2577951,
+false
+],
+"Via Selvanese": [
+45.5161392,
+12.1960761
+],
+"v2|Via delle Driadi|11.8,45.9,12.5,45.2": [
+45.5103889,
+12.204041,
+false
+],
+"v2|Via Pitica|11.8,45.9,12.5,45.2": [
+45.5086049,
+12.2032263,
+false
+],
+"Via Folco Portinari": [
+41.8686993,
+12.4492541
+],
+"v2|Via Maurizio Bufalini|12.1,42.2,12.8,41.5": [
+41.9126926,
+12.5081419,
+false
+],
+"v2|Via dell Oriuolo|12.1,42.2,12.8,41.5": null,
+"v2|Per Trapani|12.2,38.5,13.7,37.3": [
+37.9629991,
+12.6316809,
+true
+],
+"v2|Casa Cantoniera Acquacotta/Incrocio SS196 Di Villacidro|17.2,40.9,17.9,40.2": null,
+"v2|Variante Di Guardamiglio|12.1,42.3,12.8,41.6": null,
+"Laimburg": [
+46.3835841,
+11.2850518
+],
+"v2|Piccolungo|10.9,46.7,11.6,46.0": null,
+"Via Maurizio Bufalini": [
+43.7735895,
+11.2587747
+],
+"v2|Mules|10.8,46.3,11.5,45.6": null,
+"v2|Campo Di Trens|10.8,46.3,11.5,45.6": null,
+"v2|15: La Rustica|13.5,43.3,14.4,41.0": null,
+"Di Aidone": [
+37.4159859,
+14.4477043
+],
+"v2|Masseria Tenutella|14.1,37.8,14.8,37.1": null,
+"v2|Giumarra|14.1,37.8,14.8,37.1": [
+37.476528,
+14.6520167,
+false
+],
+"SS117bis Centr. Sicula": null,
+"Via dei Pucci": [
+43.7743013,
+11.2573237
+],
+"v2|Via dei Gori|10.9,44.1,11.6,43.4": [
+43.7749233,
+11.2554288,
+false
+],
+"v2|Via Maurizio Bufalini|10.9,44.1,11.6,43.4": [
+43.7735895,
+11.2587747,
+false
 ]
 }
