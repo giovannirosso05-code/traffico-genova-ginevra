@@ -5792,5 +5792,72 @@ false
 12.5887302,
 false
 ],
-"v2|Via Giulio Petroni|12.2,42.2,12.9,41.5": null
+"v2|Via Giulio Petroni|12.2,42.2,12.9,41.5": null,
+"Dei Bastioni(MI)": [
+45.4744943,
+9.2030916
+],
+"v2|Viale Gabriele D Annunzio incrocio ZTL Via Gaetano Ronzoni|8.9,45.8,9.6,45.1": null,
+"v2|Urzulei|9.3,40.4,10.0,39.7": [
+40.0933379,
+9.5080494,
+false
+],
+"v2|Orosei - SS129 Trasversale Sarda|9.3,40.4,10.0,39.7": null,
+"SS4 Salaria": [
+42.9104804,
+13.8853206
+],
+"v2|Mirabilandia|11.7,45.4,12.4,44.7": null,
+"v2|Variante Di Nus|7.3,46.3,8.0,45.6": null,
+"v2|Villafranca In Lunigiana|10.6,46.3,11.3,45.6": null,
+"v2|Incudine|10.9,46.8,11.6,46.1": null,
+"Raccordo Per Benevento": null,
+"v2|Benevento Centro - SS90 Bis Delle Puglie": null,
+"v2|Porto Tolle|11.9,44.9,12.6,44.2": [
+44.8625465,
+12.4654712,
+false
+],
+"v2|Castelnuovo Calcea|8.1,45.5,8.8,44.8": [
+44.7881057,
+8.2852996,
+false
+],
+"v2|Salere|8.1,45.5,8.8,44.8": null,
+"SS231 Di S.Vittoria": [
+44.6950808,
+7.9447413
+],
+"Via del Badile": [
+41.9125549,
+12.562442
+],
+"v2|Piazza di Santa Maria del Soccorso|12.2,42.3,12.9,41.6": [
+41.9151647,
+12.5614785,
+false
+],
+"v2|Via del Frantoio|12.2,42.3,12.9,41.6": [
+41.9130039,
+12.5615621,
+false
+],
+"Via del Frantoio": [
+41.9130039,
+12.5615621
+],
+"v2|Pontedera Est|10.1,44.0,10.8,43.3": [
+43.6634536,
+10.6354851,
+false
+],
+"v2|Abbasanta/Ghilarza|8.8,39.6,9.5,38.9": null,
+"A Fondo Valle Del Biferno": [
+41.70134,
+14.6681616
+],
+"v2|Campo Aperto - SS647 Fondo V. Del Biferno|14.3,42.1,15.0,41.4": null,
+"v2|Valico Della Somma|12.1,42.3,12.8,41.6": null,
+"v2|Variante Di Spoleto|12.1,42.3,12.8,41.6": null
 }
