@@ -5311,5 +5311,79 @@ false
 "Tangenziale": [
 45.5801845,
 11.5096396
+],
+"Senese Aretina": [
+43.4414731,
+11.9827886
+],
+"v2|Colonna Di Grillo - SS540 Di Valdambra|11.6,43.8,12.3,43.1": null,
+"SS1 Aurelia": [
+42.1383604,
+11.7819199
+],
+"v2|Pescolanciano - SS651 Di Pescolanciano|14.4,42.4,15.1,41.7": null,
+"v2|Bagnoli Del Trigno Ovest|14.4,42.4,15.1,41.7": [
+41.703029,
+14.456523,
+false
+],
+"v2|Primosole - SS194 Ragusana|14.7,37.7,15.4,37.0": [
+37.3784446,
+15.0455616,
+false
+],
+"SS115 e SS124 Ragusana": null,
+"di Vico Cavese": null,
+"v2|Brosso": [
+45.4925019,
+7.8032885,
+false
+],
+"Via di Tor Boacciana": [
+41.7500144,
+12.2830333
+],
+"v2|Via Guido Calza|11.9,42.1,12.6,41.4": [
+41.752807,
+12.2930293,
+false
+],
+"v2|Ponte di Tor Boacciana|11.9,42.1,12.6,41.4": [
+41.752658,
+12.2777461,
+false
+],
+"Ponte di Tor Boacciana": [
+41.752658,
+12.2777461
+],
+"v2|Via di Ciampino|12.3,42.1,13.0,41.4": [
+41.8094727,
+12.5845036,
+false
+],
+"v2|Via delle Capannelle|12.3,42.1,13.0,41.4": [
+41.8441727,
+12.5690455,
+false
+],
+"Piazza Re di Roma": [
+41.8818844,
+12.5140745
+],
+"v2|Centuripe|14.5,37.2,15.2,36.5": [
+36.9539298,
+14.6915187,
+false
+],
+"v2|Regalbuto|14.5,37.2,15.2,36.5": [
+37.0598684,
+14.8975036,
+false
+],
+"v2|Via Aurelia Antica|11.9,42.3,12.6,41.6": [
+41.8900427,
+12.4354536,
+false
 ]
 }
