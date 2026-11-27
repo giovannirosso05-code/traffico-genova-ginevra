@@ -6147,5 +6147,76 @@ false
 44.5475091,
 11.3374335,
 false
+],
+"Incrocio Porto Torres": null,
+"Via Guglielmo degli Adelardi": [
+44.8356648,
+11.6208092
+],
+"v2|Corso Martiri della Libertà|11.3,45.2,12.0,44.5": [
+44.8367144,
+11.6197663,
+false
+],
+"v2|Via Canonica|11.3,45.2,12.0,44.5": [
+44.4953327,
+11.347043,
+false
+],
+"v2|Pieve S.Stefano Nord|11.9,44.5,12.6,43.8": [
+44.2426274,
+12.2736423,
+false
+],
+"v2|Pieve S.Stefano Sud|11.9,44.5,12.6,43.8": [
+44.2426274,
+12.2736423,
+false
+],
+"v2|S.Casciano Nord|10.9,44.1,12.1,42.9": [
+43.649673,
+11.1860616,
+false
+],
+"v2|Firenze Certosa-A1 Milano-Napoli|10.9,44.1,12.1,42.9": null,
+"Via delle Bonifiche": [
+44.8701252,
+11.5982177
+],
+"v2|Via Padova|11.2,45.2,11.9,44.5": [
+44.8772735,
+11.605075,
+false
+],
+"v2|Via Santa Lucia|11.2,45.2,11.9,44.5": [
+44.8976601,
+11.5786277,
+false
+],
+"Via Giuoco del Pallone": [
+44.8318937,
+11.6218127
+],
+"v2|Via dè Romiti|11.3,45.2,12.0,44.5": [
+44.8319544,
+11.620516,
+false
+],
+"v2|Via delle Scienze|11.3,45.2,12.0,44.5": [
+44.8328662,
+11.6208718,
+false
+],
+"v2|La Staz. Di Marconia|16.1,38.7,16.8,38.0": null,
+"Via San Pio X": [
+41.9020143,
+12.4632005
+],
+"v2|Piazzale Generale Enrico Cialdini|12.1,42.3,12.8,41.6": null,
+"v2|Piazzetta Giordano Bruno|12.1,42.3,12.8,41.6": null,
+"v2|Foligno - SS77 Della Val Di Chienti|12.1,42.3,12.8,41.6": null,
+"FR|Bourg-en-Bresse|Ain": [
+46.2051192,
+5.2250324
 ]
 }

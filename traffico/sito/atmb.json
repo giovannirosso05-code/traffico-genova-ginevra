@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-27T09:30+00:00",
+ "aggiornato": "2026-11-27T09:44+00:00",
  "fonte": "ATMB e APRR (siti ufficiali)",
  "stato": "ok",
  "tunnel": "Traffico scorrevole",
@@ -81,6 +81,15 @@
    "lon": 5.0009242
   },
   {
+   "titolo": "A40 · Ain · direzione Lyon<> Paris, zona di Bourg-en-Bresse",
+   "testo": "",
+   "tipo": "lavori",
+   "url": "https://voyage.aprr.fr/a40-ain-direction-lyon-paris-secteur-de-bourg-en-bresse",
+   "gestore": "APRR",
+   "lat": 46.2051192,
+   "lon": 5.2250324
+  },
+  {
    "titolo": "A480 · Isère · direzione Sisteron > Lyon, all'altezza di Rondeau",
    "testo": "",
    "tipo": "lavori",
@@ -108,5 +117,5 @@
    "lon": 5.2072863
   }
  ],
- "aprr": "ok (10 lavori)"
+ "aprr": "ok (11 lavori)"
 }
