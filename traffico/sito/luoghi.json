@@ -7362,5 +7362,70 @@ false
 43.7787476,
 11.2519322,
 false
+],
+"Conca della Campania": [
+41.3334084,
+13.9896332
+],
+"San Felice": [
+45.0142372,
+7.7819114
+],
+"v2|Via del Cappellaccio|12.1,42.2,12.8,41.5": [
+41.8373273,
+12.4581342,
+false
+],
+"Via del Cappellaccio": [
+41.8358474,
+12.4575379
+],
+"Cristoforo Colombo (RM)": [
+41.7145146,
+12.3219552
+],
+"v2|Via di Mezzocammino|12.0,42.1,12.7,41.4": [
+41.7894595,
+12.4371481,
+false
+],
+"v2|Via di Malafede|12.0,42.1,12.7,41.4": [
+41.7877407,
+12.3901381,
+false
+],
+"Lido di Castel Fusano": [
+41.7165,
+12.3237095
+],
+"Via degli Alfani": [
+43.7760283,
+11.258963
+],
+"v2|Via dei Servi|10.9,44.1,11.6,43.4": [
+43.7751126,
+11.259036,
+false
+],
+"v2|Via Cassia|12.1,42.3,12.8,41.6": [
+42.1408137,
+12.3515249,
+false
+],
+"Incrocio Grottarossa": null,
+"v2|Marina Di Davoli|16.1,38.7,16.8,38.0": [
+38.6640519,
+16.5493517,
+false
+],
+"Del Lago Ampollino": [
+39.2006817,
+16.6784756
+],
+"v2|Torre Spineto - SS179 Del Lago Ampollino|16.3,39.6,17.0,38.9": null,
+"v2|Villaggio Racise|16.3,39.6,17.0,38.9": [
+39.0925105,
+16.5412221,
+false
 ]
 }
