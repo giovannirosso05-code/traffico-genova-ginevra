@@ -1,13 +1,144 @@
 {
- "aggiornato": "2026-11-27T01:42+00:00",
+ "aggiornato": "2026-11-27T01:58+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
-  "Autostrade (cantieri)": "ok (430 cantieri)",
+  "Autostrade (cantieri)": "ok (429 cantieri)",
   "Francia": "ok (404 eventi)",
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "9bcf5bc443887659",
+   "strada": "SS67 Tosco Romagnola",
+   "testo": "traffico bloccato causa trasporti eccezionali tra Incrocio La Rotta e 38 m prima di Incrocio Ponte A Egola - S.G.C. Fi-Pi-Li",
+   "tipo": "altro",
+   "quando": "2026-11-27T01:55:00Z",
+   "lat": 43.6588804,
+   "lon": 10.6752469,
+   "da": "La Rotta",
+   "indicativo": true
+  },
+  {
+   "id": "903c05a3484516d3",
+   "strada": "T4-TRF Fre Traforo Del Frejus",
+   "testo": "chiusura notturna, galleria chiusa causa veicolo in panne tra Galleria Inzio Traforo - versante Italiano e Galleria Inzio Traforo - versante Francese in direzione Galleria Inzio Traforo - versante Francese",
+   "tipo": "chiusura",
+   "quando": "2026-11-27T01:53:00Z"
+  },
+  {
+   "id": "5eb60484e20b037c",
+   "strada": "A90-GRA Aurelia-Salaria",
+   "testo": "incidente a Svincolo 7: Castel Giubileo in direzione Salaria",
+   "tipo": "incidente",
+   "quando": "2026-11-27T01:53:00Z"
+  },
+  {
+   "id": "3e8ab23934146e3a",
+   "strada": "SS5 Via Tiburtina Valeria",
+   "testo": "mezzi spargisale in azione tra 741 m dopo Incrocio Cerchio - SS83 Marsicana e 565 m prima di Incrocio Raiano - SS5 Diramazione Tiburtina Valeria",
+   "tipo": "altro",
+   "quando": "2026-11-27T01:53:00Z"
+  },
+  {
+   "id": "2b7eec664bbfb4a2",
+   "strada": "A21 Torino-Brescia",
+   "testo": "nebbia tra Svincolo Alessandria Est e Svincolo Voghera",
+   "tipo": "meteo",
+   "quando": "2026-11-27T01:53:00Z",
+   "lat": 44.92421,
+   "lon": 8.69971,
+   "da": "Alessandria Est",
+   "lat2": 45.00098,
+   "lon2": 8.97321,
+   "a": "Voghera",
+   "km": 27.8
+  },
+  {
+   "id": "b324650c129c777b",
+   "strada": "A13 Bologna-Padova",
+   "testo": "personale su strada causa lavori dalle 02:48 alle 03:33 del 27 novembre 2026 tra Svincolo Ferrara Nord e Svincolo Altedo in direzione Bologna",
+   "tipo": "lavori",
+   "quando": "2026-11-27T01:50:00Z",
+   "lat": 44.86831,
+   "lon": 11.56993,
+   "da": "Ferrara Nord",
+   "lat2": 44.69033,
+   "lon2": 11.48172,
+   "a": "Altedo",
+   "km": 25.2,
+   "dirlat": 44.4938203,
+   "dirlon": 11.3426327,
+   "dir": "Bologna"
+  },
+  {
+   "id": "05947c096f2bdc61",
+   "strada": "A1 Roma-Napoli",
+   "testo": "personale su strada causa lavori dalle 02:43 alle 03:28 del 27 novembre 2026 tra Svincolo Valmontone e Allacciamento Diramazione Roma Sud in direzione Firenze",
+   "tipo": "lavori",
+   "quando": "2026-11-27T01:46:00Z",
+   "lat": 41.76583,
+   "lon": 12.92644,
+   "da": "Valmontone",
+   "lat2": 41.80258,
+   "lon2": 12.82107,
+   "a": "Roma Sud",
+   "km": 11.6,
+   "dirlat": 43.7697955,
+   "dirlon": 11.2556404,
+   "dir": "Firenze"
+  },
+  {
+   "id": "c821bf279937cbc5",
+   "strada": "SS83 Marsicana",
+   "testo": "mezzi spargisale in azione tra 1,139 km dopo Incrocio Gioia Dei Marsi e 5,185 km prima di Incrocio Ponte Zittola - SS17 Dell app. Abruzzese",
+   "tipo": "altro",
+   "quando": "2026-11-27T01:43:00Z",
+   "lat": 42.3550585,
+   "lon": 13.3901736,
+   "da": "Gioia Dei Marsi",
+   "indicativo": true
+  },
+  {
+   "id": "4cc5b8b030fa7c1c",
+   "strada": "A51 Tangenziale Est Di Milano",
+   "testo": "lavori tra Svincolo V. Rubattino: Segrate-Citta Studi e Svincolo Gobba: Treviglio-Vimodrone in direzione Svincolo Lecco",
+   "tipo": "lavori",
+   "quando": "2026-11-27T01:43:00Z",
+   "lat": 45.4805211,
+   "lon": 9.264691,
+   "da": "V. Rubattino: Segrate-Citta Studi",
+   "indicativo": true,
+   "dirlat": 45.8494152,
+   "dirlon": 9.4155496,
+   "dir": "Svincolo Lecco"
+  },
+  {
+   "id": "54beedfae9d0c254",
+   "strada": "A12 Roma-Civitavecchia",
+   "testo": "rampa di accesso chiusa causa lavori dalle 23:08 del 26 alle 03:00 del 27 novembre 2026 a Svincolo Torrimpietra in direzione S.s. 1 Aurelia",
+   "tipo": "chiusura",
+   "quando": "2026-11-27T01:42:00Z",
+   "lat": 41.92074,
+   "lon": 12.20253,
+   "da": "Torrimpietra",
+   "dirlat": 44.1125891,
+   "dirlon": 8.244297,
+   "dir": "S.s. 1 Aurelia"
+  },
+  {
+   "id": "18b307766833da55",
+   "strada": "A12 Roma-Civitavecchia",
+   "testo": "uscita chiusa causa lavori dalle 23:07 del 26 alle 03:00 del 27 novembre 2026 a Svincolo Torrimpietra in direzione da Roma",
+   "tipo": "chiusura",
+   "quando": "2026-11-27T01:42:00Z",
+   "lat": 41.92074,
+   "lon": 12.20253,
+   "da": "Torrimpietra",
+   "dirlat": 41.4294261,
+   "dirlon": 13.2132272,
+   "dir": "da Roma"
+  },
   {
    "id": "2d3dfc3061c1d150",
    "strada": "A12 Roma-Civitavecchia",
@@ -56,32 +187,6 @@
    "quando": "2026-11-27T01:32:00Z"
   },
   {
-   "id": "dcc4abbf574518c3",
-   "strada": "A12 Roma-Civitavecchia",
-   "testo": "uscita chiusa causa lavori dalle 23:07 del 26 alle 02:00 del 27 novembre 2026 a Svincolo Torrimpietra in direzione da Roma",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T01:30:00Z",
-   "lat": 41.92074,
-   "lon": 12.20253,
-   "da": "Torrimpietra",
-   "dirlat": 41.4294261,
-   "dirlon": 13.2132272,
-   "dir": "da Roma"
-  },
-  {
-   "id": "b9a3744b50a3bff5",
-   "strada": "A12 Roma-Civitavecchia",
-   "testo": "rampa di accesso chiusa causa lavori dalle 23:08 del 26 alle 02:00 del 27 novembre 2026 a Svincolo Torrimpietra in direzione S.s. 1 Aurelia",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T01:29:00Z",
-   "lat": 41.92074,
-   "lon": 12.20253,
-   "da": "Torrimpietra",
-   "dirlat": 44.1125891,
-   "dirlon": 8.244297,
-   "dir": "S.s. 1 Aurelia"
-  },
-  {
    "id": "5330a83b5ee627bf",
    "strada": "A23 Palmanova-Tarvisio",
    "testo": "perdita di carico dalle 01:29 del 27 novembre 2026 tra Svincolo Dogana Di Coccau-Confine Di Stato e Svincolo Tarvisio Nord in direzione Tarvisio",
@@ -93,23 +198,6 @@
    "dirlat": 46.5052624,
    "dirlon": 13.5783734,
    "dir": "Tarvisio"
-  },
-  {
-   "id": "be713bb4e716db53",
-   "strada": "A13 Bologna-Padova",
-   "testo": "personale su strada causa lavori dalle 02:23 alle 03:08 del 27 novembre 2026 tra Svincolo Ferrara Nord e Svincolo Ferrara Sud in direzione Bologna",
-   "tipo": "lavori",
-   "quando": "2026-11-27T01:25:00Z",
-   "lat": 44.86831,
-   "lon": 11.56993,
-   "da": "Ferrara Nord",
-   "lat2": 44.79482,
-   "lon2": 11.55278,
-   "a": "Ferrara Sud",
-   "km": 9.9,
-   "dirlat": 44.4938203,
-   "dirlon": 11.3426327,
-   "dir": "Bologna"
   },
   {
    "id": "e7c79fa3e8cb7e3c",
@@ -133,16 +221,6 @@
    "dirlat": 45.391408,
    "dirlon": 11.8058487,
    "dir": "Padova"
-  },
-  {
-   "id": "960a9268f6bbd5fd",
-   "strada": "S01 Strada Grande Comunicazione Fi-Pi-Li (per Livorno)",
-   "testo": "nebbia a banchi dalle 02:23 del 27 novembre 2026 tra Svincolo Montelupo Fiorentino e Svincolo Empoli Est",
-   "tipo": "meteo",
-   "quando": "2026-11-27T01:24:00Z",
-   "lat2": 43.71832,
-   "lon2": 10.98087,
-   "a": "Empoli Est"
   },
   {
    "id": "f361c6e4b613c9bd",
@@ -293,57 +371,6 @@
    "testo": "chiusura notturna, uscita chiusa causa lavori dalle 01:41 alle 05:00 del 27 novembre 2026 a Svincolo SS494 Vigevanese Nuova: Lorenteggio in direzione A8 per Vigevano",
    "tipo": "chiusura",
    "quando": "2026-11-27T01:00:00Z"
-  },
-  {
-   "id": "419e55f0dcc89608",
-   "strada": "A14 Bari-Taranto",
-   "testo": "personale su strada causa lavori dalle 01:54 alle 02:39 del 27 novembre 2026 tra Svincolo Acquaviva Delle Fonti e Svincolo Gioia Del Colle in direzione Taranto",
-   "tipo": "lavori",
-   "quando": "2026-11-27T00:55:00Z",
-   "lat": 40.89296,
-   "lon": 16.87404,
-   "da": "Acquaviva Delle Fonti",
-   "lat2": 40.80151,
-   "lon2": 16.94111,
-   "a": "Gioia Del Colle",
-   "km": 14.0,
-   "dirlat": 40.5488156,
-   "dirlon": 17.0805801,
-   "dir": "Taranto"
-  },
-  {
-   "id": "feed67e284862bbf",
-   "strada": "A14 Ancona-Pescara",
-   "testo": "personale su strada causa lavori dalle 01:50 alle 02:35 del 27 novembre 2026 tra Svincolo Loreto-Porto Recanati e Svincolo Macerata in direzione Pescara",
-   "tipo": "lavori",
-   "quando": "2026-11-27T00:53:00Z",
-   "lat": 43.43227,
-   "lon": 13.64533,
-   "da": "Loreto-Porto Recanati",
-   "lat2": 43.26612,
-   "lon2": 13.48932,
-   "a": "Macerata",
-   "km": 26.8,
-   "dirlat": 42.3097631,
-   "dirlon": 13.9579989,
-   "dir": "Pescara"
-  },
-  {
-   "id": "6e763157855d05fe",
-   "strada": "A1 Roma-Napoli",
-   "testo": "personale su strada causa lavori dalle 01:52 alle 02:37 del 27 novembre 2026 tra Svincolo Anagni - Fiuggi e Svincolo Ferentino in direzione Napoli",
-   "tipo": "lavori",
-   "quando": "2026-11-27T00:53:00Z",
-   "lat": 41.72172,
-   "lon": 13.11652,
-   "da": "Anagni - Fiuggi",
-   "lat2": 41.64453,
-   "lon2": 13.25583,
-   "a": "Ferentino",
-   "km": 17.3,
-   "dirlat": 40.8358846,
-   "dirlon": 14.2487679,
-   "dir": "Napoli"
   },
   {
    "id": "6287841cb844f3c8",
@@ -1226,40 +1253,6 @@
    "testo": "trasporti eccezionali tra 300 m prima di Incrocio Montesilvano Marina e 4,331 km dopo Incrocio Scerne Di Pineto in direzione Incrocio Padova",
    "tipo": "altro",
    "quando": "2026-11-26T21:55:00Z"
-  },
-  {
-   "id": "456a748bc2a3768f",
-   "strada": "A52 Tangenziale Nord Di Milano",
-   "testo": "lavori a Svincolo Sesto S.Giovanni Sud: Cologno M. in direzione Svincolo SP44 Milano-Meda: Lentate-Bruzzano",
-   "tipo": "lavori",
-   "quando": "2026-11-26T21:52:00Z"
-  },
-  {
-   "id": "b5b1f9a7fb857d9d",
-   "strada": "SS1 Via Aurelia",
-   "testo": "lavori di manutenzione a Incrocio Vallecrosia",
-   "tipo": "lavori",
-   "quando": "2026-11-26T21:51:00Z"
-  },
-  {
-   "id": "ae0c7bbb7c5c9e5a",
-   "strada": "A90-GRA Aurelia-Salaria",
-   "testo": "corsia chiusa tra 2,001 km dopo Area di servizio selva Candida e 2,203 km prima di Svincolo 4: Ospedale S.Andrea in direzione Salaria",
-   "tipo": "chiusura",
-   "quando": "2026-11-26T21:49:00Z",
-   "lat": 41.92924,
-   "lon": 12.38088,
-   "da": "selva Candida",
-   "dirlat": 42.9126816,
-   "dirlon": 13.8853522,
-   "dir": "Salaria"
-  },
-  {
-   "id": "4922fa586c5f84a2",
-   "strada": "A50 Tangenziale Ovest Di Milano",
-   "testo": "chiusura notturna, tratto chiuso causa lavori tra Allacciamento A8 Milano-Varese e Svincolo SS33 Del Sempione: Rho-Pero in direzione Allacciamento A1 Milano-Napoli",
-   "tipo": "chiusura",
-   "quando": "2026-11-26T21:44:00Z"
   },
   {
    "id": "aspi553903",
@@ -6346,6 +6339,27 @@
    "dir": "Milano"
   },
   {
+   "id": "aspi752716",
+   "strada": "A1 Milano-Napoli (Autostrade)",
+   "testo": "cantiere tra Napoli Centro Direzionale - Allacc. A3 Napoli-Salerno (dal km 758.0 al km 759.4) in direzione Napoli: riduzione a 2 corsie (ripristino a seguito incidente), limite 90 km/h · dal 26/11 20:00 al 27/11 06:00",
+   "tipo": "lavori",
+   "inizio": "2026-11-26T19:00+00:00",
+   "fine": "2026-11-27T05:00+00:00",
+   "corsie": "riduzione a 2 corsie",
+   "lat": 40.866051335737,
+   "lon": 14.3207117252312,
+   "da": "Napoli Centro Direzionale - Allacc. A3 Napoli-Salerno",
+   "paese": "Italia",
+   "fonte": "Autostrade per l'Italia",
+   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
+   "lat2": 40.8549494574082,
+   "lon2": 14.3183083478164,
+   "km": 1.4,
+   "dirlat": 40.8358846,
+   "dirlon": 14.2487679,
+   "dir": "Napoli"
+  },
+  {
    "id": "aspi752959",
    "strada": "A30 Caserta-Salerno (Autostrade)",
    "testo": "cantiere tra Palma Campania - Castel S. Giorgio (dal km 34.0 al km 42.7) in direzione Salerno: corsia unica (opere in verde), limite 60 km/h · dal 26/11 21:30 al 27/11 05:30",
@@ -7540,27 +7554,6 @@
    "dir": "Taranto"
   },
   {
-   "id": "aspi494887",
-   "strada": "A1 Milano-Napoli (Autostrade)",
-   "testo": "cantiere tra Anagni - Fiuggi - Ferentino (dal km 605.7 al km 607.9) in direzione Napoli: riduzione a 2 corsie (barriera di sicurezza), limite 90 km/h · dal 26/11 22:00 al 27/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-26T21:00+00:00",
-   "fine": "2026-11-27T05:00+00:00",
-   "corsie": "riduzione a 2 corsie",
-   "lat": 41.7140412983997,
-   "lon": 13.1319176909883,
-   "da": "Anagni - Fiuggi - Ferentino",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 41.7083151911247,
-   "lon2": 13.1436471674771,
-   "km": 2.2,
-   "dirlat": 40.8358846,
-   "dirlon": 14.2487679,
-   "dir": "Napoli"
-  },
-  {
    "id": "aspi752787",
    "strada": "A1 Milano-Napoli (Autostrade)",
    "testo": "cantiere tra Caianello - San Vittore (dal km 700.3 al km 698.6) in direzione Milano: corsia unica (cavalcavia), limite 60 km/h · dal 26/11 20:00 al 27/11 06:00",
@@ -7766,27 +7759,6 @@
    "dirlat": 40.5488156,
    "dirlon": 17.0805801,
    "dir": "Taranto"
-  },
-  {
-   "id": "aspi966614",
-   "strada": "A8 Milano-Varese (Autostrade)",
-   "testo": "cantiere tra Svincolo Di Busto Arsizio - Svincolo Di Legnano (dal km 23.6 al km 16.9) in direzione Milano: riduzione a 2 corsie (barriera antirumore), limite 90 km/h · dal 26/11 22:00 al 27/11 05:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-26T21:00+00:00",
-   "fine": "2026-11-27T04:00+00:00",
-   "corsie": "riduzione a 2 corsie",
-   "lat": 45.6333931146366,
-   "lon": 8.87286471049581,
-   "da": "Svincolo Di Busto Arsizio - Svincolo Di Legnano",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 45.6056117402846,
-   "lon2": 8.93896399147137,
-   "km": 6.7,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
   },
   {
    "id": "aspi559307",

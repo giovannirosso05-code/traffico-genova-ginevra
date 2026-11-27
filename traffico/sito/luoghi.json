@@ -5049,5 +5049,24 @@ true
 ],
 "Complanare di Piacenza": null,
 "v2|Nodo A21/A1 Torino": null,
-"v2|Nodo A21/A1 Brescia": null
+"v2|Nodo A21/A1 Brescia": null,
+"Tosco Romagnola": [
+43.66651,
+10.6502865
+],
+"v2|La Rotta|10.3,44.0,11.0,43.3": [
+43.6588804,
+10.6752469,
+false
+],
+"v2|Ponte A Egola - S.G.C. Fi-Pi-Li|10.3,44.0,11.0,43.3": null,
+"v2|7: Castel Giubileo|11.6,45.9,14.2,42.6": null,
+"v2|Cerchio - SS83 Marsicana|12.3,42.3,13.0,41.6": null,
+"v2|Raiano - SS5 Diramazione Tiburtina Valeria|12.3,42.3,13.0,41.6": null,
+"v2|Gioia Dei Marsi|13.0,42.4,13.7,41.7": [
+42.3550585,
+13.3901736,
+false
+],
+"v2|Ponte Zittola - SS17 Dell app. Abruzzese|13.0,42.4,13.7,41.7": null
 }
