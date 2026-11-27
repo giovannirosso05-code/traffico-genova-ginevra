@@ -7012,5 +7012,53 @@ false
 ],
 "v2|Via Aposazza|11.9,45.8,12.6,45.1": null,
 "v2|La Berzigala|10.8,46.3,11.5,45.6": null,
-"v2|Maranello|10.8,46.3,11.5,45.6": null
+"v2|Maranello|10.8,46.3,11.5,45.6": null,
+"Revello": [
+44.6764749,
+7.4206687
+],
+"Staffarda": [
+44.7209382,
+7.4374904
+],
+"v2|Revello|7.1,45.1,7.8,44.3": [
+44.6764749,
+7.4206687,
+false
+],
+"v2|Piglionasso|7.1,45.1,7.8,44.3": [
+44.6810577,
+7.4124326,
+false
+],
+"Viale Algeria": [
+41.8207627,
+12.4646632
+],
+"v2|Viale dell Oceano Atlantico|12.1,42.2,12.8,41.5": [
+41.8188334,
+12.4655395,
+false
+],
+"v2|Viale dell Umanesimo|12.1,42.2,12.8,41.5": [
+41.8204092,
+12.4800594,
+false
+],
+"Viale dell Umanesimo": [
+41.8201605,
+12.4808351
+],
+"v2|Variante Di Lucera Est|13.4,42.6,14.7,41.0": null,
+"v2|Foggia - SS16 Adriatica|13.4,42.6,14.7,41.0": null,
+"v2|Bologna Arcoveggio-Raccordo Per La Tangenziale|11.0,45.7,12.2,44.1": null,
+"di Valle Po": [
+44.6786606,
+7.274428
+],
+"v2|Revello|6.9,45.0,7.6,44.3": [
+44.6764749,
+7.4206687,
+false
+]
 }
