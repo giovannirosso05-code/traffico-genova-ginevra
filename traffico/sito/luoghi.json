@@ -6376,5 +6376,125 @@ false
 ],
 "v2|Confine TN-BL|10.1,44.6,10.8,43.9": null,
 "v2|Falcade Alto|10.1,44.6,10.8,43.9": null,
-"Incrocio Ponte Umberto I": null
+"Incrocio Ponte Umberto I": null,
+"v2|Casello Parma A1 Milano-Napoli|10.0,45.6,10.7,44.9": null,
+"v2|Casalmaggiore - SS358 Di Castelnovo E SS420|10.0,45.6,10.7,44.9": null,
+"Via de  Pecori": [
+43.7727527,
+11.2537859
+],
+"v2|Via de Brunelleschi|10.9,44.1,11.6,43.4": [
+43.7719315,
+11.253592,
+false
+],
+"Piazza dei Cavallari": [
+43.7730382,
+11.2536089
+],
+"v2|Vicolo dei Cavallari|10.9,44.1,11.6,43.4": [
+43.773053,
+11.2538808,
+false
+],
+"v2|Via de Pecori|10.9,44.1,11.6,43.4": [
+43.7727779,
+11.2542061,
+false
+],
+"Vicolo dei Cavallari": [
+43.7730627,
+11.2537433
+],
+"v2|Via de Cerretani|10.9,44.1,11.6,43.4": [
+43.7734277,
+11.2528874,
+false
+],
+"v2|Piazza dei Cavallari|10.9,44.1,11.6,43.4": [
+43.7730382,
+11.2536089,
+false
+],
+"Raccordo Sicignano": [
+40.6024093,
+15.3275952
+],
+"Potenza": [
+40.517312,
+15.8216088
+],
+"Via dei Cerretani": [
+43.7734277,
+11.2528874
+],
+"v2|Piazza dell Olio|10.9,44.1,11.6,43.4": [
+43.773109,
+11.2539714,
+false
+],
+"v2|Via Ferdinando Zannetti|10.9,44.1,11.6,43.4": [
+43.7738284,
+11.2535318,
+false
+],
+"v2|Gallarate - SS336 Dell Aeroporto Della Malpensa|8.8,45.8,9.5,45.1": null,
+"v2|Pieve Del Cairo|8.2,45.5,8.9,44.8": [
+45.049957,
+8.804146,
+false
+],
+"Via al Santuario": [
+44.3720584,
+7.8702732
+],
+"Strada Urbana": [
+41.0569723,
+16.8319041
+],
+"Madonna della Guardia": [
+45.6072717,
+7.8011802
+],
+"v2|Madonna della Guardia|7.5,46.0,17.2,40.7": [
+45.6072717,
+7.8011802,
+false
+],
+"Raccordo Porto Garibaldi": [
+44.6986629,
+12.2119611
+],
+"v2|Ferrara-SS 16 Adriatica|11.9,45.0,12.6,44.3": null,
+"Porto Garibaldi": [
+44.6784293,
+12.2398703
+],
+"v2|Toscanella|12.1,42.3,12.8,41.6": null,
+"Incrocio Cagliari": null,
+"v2|Staz. Di Guglionesi - SS87 Sannitica|14.6,42.3,15.3,41.6": [
+41.9320153,
+14.9861424,
+false
+],
+"v2|Staz. Di Albinia - SS74 Maremmana|11.9,42.3,12.6,41.6": null,
+"v2|S.Martino Di Valdisotto/Fine Var. A Scorr.Veloce|10.1,46.9,10.8,46.2": null,
+"SS12 Dell abetone E Del Brennero": [
+46.2254158,
+11.1620732
+],
+"v2|Taverna - SS430 Valle Del Garigliano|12.3,42.2,13.0,41.5": null,
+"v2|Capua - A1 Milano-Napoli - SS7 Via Appia|12.3,42.2,13.0,41.5": null,
+"Piazza dell Olio": [
+43.773109,
+11.2539714
+],
+"v2|Variante Di Mottola|16.6,41.1,17.3,40.4": null,
+"v2|Staz. Palagiano - SS7 Appia|16.6,41.1,17.3,40.4": null,
+"S.S.V. Melfi": [
+40.9194975,
+14.8320615
+],
+"v2|St. Vaglio Basilicata - SS7 E SS407 Basentana|14.5,41.3,16.2,40.2": null,
+"v2|Tiera/Tratto In Comune Con SS93 Appulo-Lucana|14.5,41.3,16.2,40.2": null
 }
