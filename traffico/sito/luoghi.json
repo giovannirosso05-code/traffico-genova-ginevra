@@ -5150,5 +5150,20 @@ false
 "v2|La Lima - SS66 Pistoiese|10.8,46.3,11.5,45.6": null,
 "v2|Inizio Variante Di Ponte A Moriano|10.8,46.3,11.5,45.6": null,
 "v2|Cima Gogna - SS48 Delle Dolomiti|13.2,46.5,13.9,45.8": null,
-"v2|Passo Di Monte Croce Comelico|13.2,46.5,13.9,45.8": null
+"v2|Passo Di Monte Croce Comelico|13.2,46.5,13.9,45.8": null,
+"v2|Santena - A21 Torino-Brescia|7.3,45.4,8.0,44.7": null,
+"v2|S.Vito Di Cadore|14.8,37.9,15.5,37.2": null,
+"v2|Carbonin - SS48 Bis Delle Dolomiti|14.8,37.9,15.5,37.2": null,
+"Del Gran San Bernardo": [
+41.7819284,
+12.8355981
+],
+"v2|Variney - Raccordo G.S. Bernardo|12.5,42.1,13.2,41.4": null,
+"v2|Gran S.Bernardo/Confine Con La Svizzera|12.5,42.1,13.2,41.4": null,
+"v2|Piano Delle Cinquemiglia|13.4,42.6,14.7,41.0": null,
+"v2|Rionero Sannitico - SS652|13.4,42.6,14.7,41.0": [
+41.716479,
+14.1253519,
+false
+]
 }
