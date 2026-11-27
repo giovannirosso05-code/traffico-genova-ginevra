@@ -5172,5 +5172,30 @@ false
 44.5256586,
 9.3906373,
 false
+],
+"v2|Perugia Ovest-Ferro Di Cavallo|11.4,43.6,12.8,42.8": null,
+"v2|Perugia Est-Piscille|11.4,43.6,12.8,42.8": null,
+"v2|G.R.A|12.1,43.0,14.0,41.5": [
+41.8577092,
+12.3767694,
+false
+],
+"Del Valico Del Cerreto": [
+44.3039446,
+10.216893
+],
+"v2|Fivizzano|9.9,44.7,10.6,44.0": [
+44.23835,
+10.12599,
+false
+],
+"v2|Valico Del Cerreto|9.9,44.7,10.6,44.0": [
+44.3074062,
+10.2247601,
+false
+],
+"SS62 Della Cisa": [
+44.4671182,
+9.9204001
 ]
 }
