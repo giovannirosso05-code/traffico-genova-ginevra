@@ -5728,5 +5728,69 @@ false
 15.8024077,
 false
 ],
-"v2|Casello Caserta Nord A1 Milano-Napoli|12.9,41.6,13.6,40.9": null
+"v2|Casello Caserta Nord A1 Milano-Napoli|12.9,41.6,13.6,40.9": null,
+"Bis Trasversale Sarda": [
+40.2923211,
+8.4868995
+],
+"Incrocio Bosa Marina": null,
+"v2|Centallo": [
+44.4860164,
+7.5948102,
+false
+],
+"v2|Ba-Villa De Lilla|11.7,45.4,12.4,44.7": null,
+"v2|Via Cortona|12.2,42.4,12.9,41.7": [
+41.9674131,
+12.5067769,
+false
+],
+"Di Fondo Valle Sangro": [
+41.7873447,
+14.1349792
+],
+"v2|Val Di Sangro A14 Bologna-Taranto|13.8,42.1,14.5,41.4": null,
+"v2|Lorenzago Di Cadore|13.2,46.5,13.9,45.8": null,
+"Via Giulio Petroni": [
+41.0889166,
+16.8656294
+],
+"v2|Viale John Fitzgerald Kennedy|16.5,41.4,17.2,40.7": [
+41.1015514,
+16.8580901,
+false
+],
+"v2|Viale Papa Giovanni XXIII|16.5,41.4,17.2,40.7": [
+41.1071952,
+16.8697577,
+false
+],
+"Della Scafa": [
+42.2534779,
+14.0074888
+],
+"v2|Ostia Scavi - SS8 Via Del Mare|13.7,42.6,14.4,41.9": null,
+"Fiumicino": [
+41.7712145,
+12.2278855
+],
+"Di Mongrando": [
+45.5277315,
+8.0105832
+],
+"v2|Zubiena|7.7,45.9,8.4,45.2": [
+45.4927522,
+7.9977124,
+false
+],
+"Viale John Fitzgerald Kennedy": [
+41.8180286,
+12.5862672
+],
+"v2|Via Luigi Einaudi|12.2,42.2,12.9,41.5": [
+41.8185722,
+12.5887302,
+false
+],
+"v2|Via Giulio Petroni|12.2,42.2,12.9,41.5": null
 }
