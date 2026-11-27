@@ -5672,5 +5672,61 @@ false
 37.284685,
 14.9987779,
 false
-]
+],
+"v2|S. Antonio|10.8,46.3,11.5,45.6": [
+45.8751812,
+11.0338449,
+false
+],
+"Incrocio Passo Del Brennero/Confine Con L austria": null,
+"Settentrionale Sarda": [
+40.704286,
+8.5902236
+],
+"v2|Tempio Pausania - SS133 Di Palau|8.2,41.1,8.9,40.4": null,
+"v2|Bettolino Di Pogliano|8.2,46.3,8.9,45.6": null,
+"v2|La Loggia-SS20 Del Colle Di Tenda|7.3,45.4,8.0,44.7": null,
+"Svincolo S.R. 23": [
+43.0609009,
+11.6022184
+],
+"v2|Padriciano - SS202|13.3,46.1,14.1,45.3": [
+45.6595854,
+13.8320809,
+true
+],
+"v2|Torretta|14.7,37.7,15.4,37.0": [
+37.1399495,
+14.7485224,
+false
+],
+"v2|Monterosso Almo|14.7,37.7,15.4,37.0": [
+37.0888742,
+14.7627081,
+false
+],
+"v2|Cortina D ampezzo - SS48 Delle Dolomiti|14.8,37.9,15.5,37.2": null,
+"Della Valle Del Ferro": [
+46.270731,
+9.6263339
+],
+"v2|Cersosimo|9.3,46.6,10.0,45.9": null,
+"v2|Amendolara|9.3,46.6,10.0,45.9": null,
+"da allacciamento diramazione Capodichino": null,
+"v2|Finale Ligure - SS490 Del Colle Del Melogno|11.9,42.3,12.6,41.6": null,
+"Delle Gambarie": [
+38.1663702,
+15.8327357
+],
+"v2|Laganadi|15.5,38.5,16.2,37.8": [
+38.173369,
+15.741395,
+false
+],
+"v2|Mannoli|15.5,38.5,16.2,37.8": [
+38.1755414,
+15.8024077,
+false
+],
+"v2|Casello Caserta Nord A1 Milano-Napoli|12.9,41.6,13.6,40.9": null
 }
