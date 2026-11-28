@@ -8526,5 +8526,20 @@ false
 14.0300602,
 false
 ],
-"v2|Ansedonia Sud|11.9,42.3,12.6,41.6": null
+"v2|Ansedonia Sud|11.9,42.3,12.6,41.6": null,
+"v2|Roccaraso - SS17 Dell app. Abr. E App. Sann|14.8,42.2,15.5,41.5": null,
+"v2|Palena|14.8,42.2,15.5,41.5": null,
+"v2|Sulmona/Incrocio SS487 Di Caramanico Terme|13.4,42.6,14.7,41.0": null,
+"v2|Variante Di Roccaraso|13.4,42.6,14.7,41.0": null,
+"v2|Castelnuovo Ne Monti - SS513 Di Val D enza|9.9,44.7,10.6,44.0": null,
+"v2|Ponte Sisto|12.3,42.2,13.0,41.5": [
+41.8923415,
+12.4707478,
+false
+],
+"v2|Ponte S.Quirino|12.9,46.4,13.6,45.7": [
+46.1121476,
+13.4767228,
+false
+]
 }
