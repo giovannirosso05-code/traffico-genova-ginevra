@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-28T18:50+00:00",
+ "aggiornato": "2026-11-28T18:56+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -8,6 +8,26 @@
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "7d0bae226c986f9c",
+   "strada": "A14 Pescara-Bari",
+   "testo": "personale su strada causa lavori dalle 19:49 alle 20:34 del 28 novembre 2026 tra Svincolo Atri-Pineto e Allacciamento A25 Torano-Pescara in direzione Bari",
+   "tipo": "lavori",
+   "quando": "2026-11-28T18:51:00Z",
+   "lat": 42.6059,
+   "lon": 14.05046,
+   "da": "Atri-Pineto",
+   "dirlat": 41.1257843,
+   "dirlon": 16.8620293,
+   "dir": "Bari"
+  },
+  {
+   "id": "d3e99fe89ac7cde8",
+   "strada": "Roma Piazza della Repubblica",
+   "testo": "manifestazione con corteo, strada chiusa dalle 14:31 alle 20:00 del 28 novembre 2026 a Piazza della Repubblica",
+   "tipo": "chiusura",
+   "quando": "2026-11-28T18:51:00Z"
+  },
   {
    "id": "9afdb952805da18a",
    "strada": "SS685 NSA27 - Delle Tre Valli Umbre",
@@ -114,23 +134,6 @@
    "quando": "2026-11-28T18:43:00Z"
   },
   {
-   "id": "6bc7b73924795dc5",
-   "strada": "A14 Pescara-Bari",
-   "testo": "personale su strada causa ripristino urgente fondo stradale dalle 19:39 del 28 novembre 2026 tra Svincolo Ortona e Svincolo Pescara Sud-Francavilla in direzione Pescara",
-   "tipo": "altro",
-   "quando": "2026-11-28T18:41:00Z",
-   "lat": 42.32894,
-   "lon": 14.38399,
-   "da": "Ortona",
-   "lat2": 42.39452,
-   "lon2": 14.28882,
-   "a": "Pescara Sud-Francavilla",
-   "km": 12.8,
-   "dirlat": 42.3097631,
-   "dirlon": 13.9579989,
-   "dir": "Pescara"
-  },
-  {
    "id": "eaf570dfa99b3671",
    "strada": "A1 Diramazione Roma Sud",
    "testo": "veicolo fermo o in avaria dalle 19:38 del 28 novembre 2026 tra Svincolo Monteporzio e Svincolo San Cesareo in direzione autostrada Milano-Napoli",
@@ -181,13 +184,6 @@
    "strada": "A2 Autostrada del Mediterraneo",
    "testo": "incidente tra 8,117 km prima di Svincolo S.Mango D aquino e 191 m dopo Svincolo Rogliano-Grimaldi in direzione Allacciamento Fisciano - A30-RA02",
    "tipo": "incidente",
-   "quando": "2026-11-28T18:37:00Z"
-  },
-  {
-   "id": "d3e99fe89ac7cde8",
-   "strada": "Roma Piazza della Repubblica",
-   "testo": "manifestazione con corteo, strada chiusa dalle 14:31 alle 20:00 del 28 novembre 2026 a Piazza della Repubblica",
-   "tipo": "chiusura",
    "quando": "2026-11-28T18:37:00Z"
   },
   {
@@ -445,13 +441,6 @@
    "quando": "2026-11-28T18:07:00Z"
   },
   {
-   "id": "55ad0258f6cc7e13",
-   "strada": "Tangenziale Est (RM)",
-   "testo": "traffico rallentato causa traffico intenso tra Incrocio Viale Castrense/Via Nola-Inizio Tangenziale e Incrocio Uscita Via Prenestina-Pigneto in direzione Incrocio Piazzale degli Eroi",
-   "tipo": "code",
-   "quando": "2026-11-28T18:06:00Z"
-  },
-  {
    "id": "868eb9177d8e54f0",
    "strada": "A9 Lainate-Chiasso",
    "testo": "veicolo fermo o in avaria dalle 18:58 del 28 novembre 2026 tra Svincolo Uboldo e Allacciamento A8 Milano-Varese in direzione Lainate",
@@ -552,24 +541,6 @@
    "testo": "mezzi spargisale in azione tra 1,829 km dopo Incrocio Gignod e 13,91 km prima di Incrocio Gran S.Bernardo/Confine Con La Svizzera",
    "tipo": "altro",
    "quando": "2026-11-28T17:49:00Z"
-  },
-  {
-   "id": "20b21ecf874fdd41",
-   "strada": "A14 Pescara-Bari",
-   "testo": "personale su strada causa ripristino urgente fondo stradale dalle 18:48 del 28 novembre 2026 tra Svincolo Termoli-Molise e Svincolo Vasto Sud in direzione Pescara",
-   "tipo": "altro",
-   "quando": "2026-11-28T17:49:00Z",
-   "lat": 41.9983273,
-   "lon": 14.9939366,
-   "da": "Termoli-Molise",
-   "lat2": 42.05791,
-   "lon2": 14.77133,
-   "a": "Vasto Sud",
-   "indicativo": true,
-   "km": 23.5,
-   "dirlat": 42.3097631,
-   "dirlon": 13.9579989,
-   "dir": "Pescara"
   },
   {
    "id": "3fcf93023ea571c8",
@@ -1019,18 +990,38 @@
    "quando": "2026-11-28T16:17:00Z"
   },
   {
-   "id": "85f278db0bc3b151",
-   "strada": "Genova Piazza Giovanni Antonio Aprosio",
-   "testo": "incidente a Piazza Giovanni Antonio Aprosio",
-   "tipo": "incidente",
-   "quando": "2026-11-28T16:16:00Z"
-  },
-  {
    "id": "922d11f5c5e85f98",
    "strada": "A50 Tangenziale Ovest Di Milano",
    "testo": "chiusura notturna, entrata chiusa causa lavori dalle 22:00 del 3 alle 02:00 del 4 dicembre 2026 a Svincolo SP59 Vigevanese Vecchia: Trezzano in direzione Allacciamento A1 Milano-Napoli",
    "tipo": "chiusura",
    "quando": "2026-11-28T16:16:00Z"
+  },
+  {
+   "id": "3b19c1e1152b0674",
+   "strada": "A50 Tangenziale Ovest Di Milano",
+   "testo": "chiusura notturna, tratto chiuso causa lavori dalle 00:00 del 3 alle 03:00 del 4 dicembre 2026 tra Allacciamento A7 Milano-Genova e Svincolo SS494 Vigevanese Nuova: Lorenteggio in direzione Allacciamento A8 Milano-Varese",
+   "tipo": "chiusura",
+   "quando": "2026-11-28T16:03:00Z"
+  },
+  {
+   "id": "f6b2c10371772f26",
+   "strada": "A50 Tangenziale Ovest Di Milano",
+   "testo": "chiusura notturna, chiusura area di servizio causa tratto chiuso dalle 00:00 del 3 alle 03:00 del 4 dicembre 2026 a Area di servizio Assago Ovest in direzione Allacciamento A1 Milano-Napoli",
+   "tipo": "chiusura",
+   "quando": "2026-11-28T15:58:00Z",
+   "lat": 45.40309,
+   "lon": 9.11949,
+   "da": "Assago Ovest",
+   "dirlat": 40.8358846,
+   "dirlon": 14.2487679,
+   "dir": "Napoli"
+  },
+  {
+   "id": "18ec2f08a9a2c242",
+   "strada": "A50 Tangenziale Ovest Di Milano",
+   "testo": "chiusura notturna, tratto chiuso causa lavori dalle 00:00 del 3 alle 03:00 del 4 dicembre 2026 tra Svincolo SS494 Vigevanese Nuova: Lorenteggio e Allacciamento A7 Milano-Genova in direzione Allacciamento A1 Milano-Napoli",
+   "tipo": "chiusura",
+   "quando": "2026-11-28T15:56:00Z"
   },
   {
    "id": "aspi553903",
