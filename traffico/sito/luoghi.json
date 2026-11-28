@@ -8267,5 +8267,25 @@ false
 42.0571544,
 14.0311142,
 false
-]
+],
+"v2|Torre Beretti|8.8,45.8,9.5,45.1": [
+45.1300598,
+8.8114598,
+false
+],
+"Incrocio Corsico": null,
+"Sannitica": [
+41.4150605,
+14.6424793
+],
+"v2|Campobasso - SS375 Gildonese - SS647dir/B|14.3,41.8,15.0,41.1": null,
+"v2|Benevento Sud - SS7 Appia": null,
+"v2|Benevento-A16 Napoli-Canosa-Castello Del Lago": null,
+"v2|Via dei Casali Molinario|12.1,42.3,12.8,41.6": [
+41.9649687,
+12.4877535,
+false
+],
+"v2|Brindisi - SS7 Via Appia|11.7,45.4,12.4,44.7": null,
+"v2|Brindisi - SS379 Egnazia|11.7,45.4,12.4,44.7": null
 }
