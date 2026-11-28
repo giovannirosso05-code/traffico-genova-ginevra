@@ -8541,5 +8541,23 @@ false
 46.1121476,
 13.4767228,
 false
+],
+"Ter Dell appennino Abruzzese": [
+42.3533574,
+13.4254023
+],
+"v2|Bazzano - SS17 Dell appennino Abruzzese|13.1,42.7,13.8,42.0": [
+42.3383724,
+13.4437673,
+true
+],
+"v2|S.Veronica - SS17 Bis|13.1,42.7,13.8,42.0": null,
+"v2|Casello L aquila Ovest A24 Rm-Te - SS80|13.4,42.6,14.7,41.0": null,
+"v2|Pratola Peligna - SS5 Diramazione Tiburtina Valeria|13.4,42.6,14.7,41.0": null,
+"v2|Picciame Di Posta|12.2,42.4,12.9,41.7": null,
+"v2|Arquata Del Tronto|12.2,42.4,12.9,41.7": [
+41.9404555,
+12.585901,
+false
 ]
 }
