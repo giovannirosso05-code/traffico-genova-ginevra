@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-28T14:42+00:00",
+ "aggiornato": "2026-11-28T14:57+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -9,11 +9,18 @@
  },
  "eventi": [
   {
-   "id": "9e1ec44e4fbf80df",
+   "id": "e05e86b1a46fa98d",
+   "strada": "SS45bis Bis Gardesana Occidentale",
+   "testo": "materiali dispersi tra 1,835 km dopo Incrocio Gargnano e 65 m prima di Incrocio Tignale",
+   "tipo": "altro",
+   "quando": "2026-11-28T14:57:00Z"
+  },
+  {
+   "id": "9987a9e7a8ee67c1",
    "strada": "A4 Milano-Brescia",
-   "testo": "incidente dalle 15:39 del 28 novembre 2026 tra Svincolo Palazzolo e Svincolo Rovato in direzione Brescia",
-   "tipo": "incidente",
-   "quando": "2026-11-28T14:41:00Z",
+   "testo": "veicolo fermo o in avaria dalle 15:53 del 28 novembre 2026 tra Svincolo Palazzolo e Svincolo Rovato in direzione Brescia",
+   "tipo": "altro",
+   "quando": "2026-11-28T14:55:00Z",
    "lat": 45.61921,
    "lon": 9.91786,
    "da": "Palazzolo",
@@ -24,6 +31,115 @@
    "dirlat": 45.7795805,
    "dirlon": 10.425873,
    "dir": "Brescia"
+  },
+  {
+   "id": "6e251dfd77821bc2",
+   "strada": "A1 Firenze-Roma",
+   "testo": "veicolo fermo o in avaria dalle 15:51 del 28 novembre 2026 a Svincolo Firenze Scandicci in direzione da Bologna",
+   "tipo": "altro",
+   "quando": "2026-11-28T14:55:00Z",
+   "lat": 43.77666,
+   "lon": 11.1617,
+   "da": "Firenze Scandicci",
+   "dirlat": 41.913637,
+   "dirlon": 12.5208131,
+   "dir": "da Bologna"
+  },
+  {
+   "id": "86828da2238ea12b",
+   "strada": "A14 Pescara-Bari",
+   "testo": "veicolo fermo o in avaria dalle 15:52 del 28 novembre 2026 tra Svincolo Termoli-Molise e Svincolo Poggio Imperiale in direzione Bari",
+   "tipo": "altro",
+   "quando": "2026-11-28T14:54:00Z",
+   "lat": 41.9983273,
+   "lon": 14.9939366,
+   "da": "Termoli-Molise",
+   "lat2": 41.85226,
+   "lon2": 15.3598,
+   "a": "Poggio Imperiale",
+   "indicativo": true,
+   "km": 41.2,
+   "dirlat": 41.1257843,
+   "dirlon": 16.8620293,
+   "dir": "Bari"
+  },
+  {
+   "id": "19fc0885b7cd703f",
+   "strada": "A9 Lainate-Chiasso",
+   "testo": "code causa veicolo fermo o in avaria dalle 15:47 del 28 novembre 2026 tra Svincolo Como Centro e Svincolo Como Monte Olimpino in direzione Svizzera",
+   "tipo": "code",
+   "quando": "2026-11-28T14:51:00Z",
+   "lat": 45.7799,
+   "lon": 9.05094,
+   "da": "Como Centro",
+   "lat2": 45.82569,
+   "lon2": 9.0454,
+   "a": "Como Monte Olimpino",
+   "km": 6.1,
+   "dirlat": 44.1590056,
+   "dirlon": 11.075407,
+   "dir": "Svizzera"
+  },
+  {
+   "id": "e5d4f5c31de4e9fe",
+   "strada": "A14 Pescara-Bari",
+   "testo": "personale su strada causa lavori dalle 15:49 alle 16:34 del 28 novembre 2026 tra Svincolo Ortona e Svincolo Lanciano",
+   "tipo": "lavori",
+   "quando": "2026-11-28T14:51:00Z",
+   "lat": 42.32894,
+   "lon": 14.38399,
+   "da": "Ortona",
+   "lat2": 42.2668,
+   "lon2": 14.43697,
+   "a": "Lanciano",
+   "km": 9.8
+  },
+  {
+   "id": "8b492be9a84ce727",
+   "strada": "A11 Firenze-Pisa",
+   "testo": "veicolo fermo o in avaria dalle 15:44 del 28 novembre 2026 tra Svincolo Prato Est e Svincolo Prato Ovest in direzione Pisa",
+   "tipo": "altro",
+   "quando": "2026-11-28T14:46:00Z",
+   "lat": 43.85342,
+   "lon": 11.11794,
+   "da": "Prato Est",
+   "lat2": 43.87863,
+   "lon2": 11.03288,
+   "a": "Prato Ovest",
+   "km": 8.8,
+   "dirlat": 43.4714722,
+   "dirlon": 10.6797912,
+   "dir": "Pisa"
+  },
+  {
+   "id": "d41ca1c870b9cdfc",
+   "strada": "A9 Lainate-Chiasso",
+   "testo": "veicolo fermo o in avaria dalle 15:45 del 28 novembre 2026 tra Svincolo Como Centro e Svincolo Como Monte Olimpino in direzione Svizzera",
+   "tipo": "altro",
+   "quando": "2026-11-28T14:46:00Z",
+   "lat": 45.7799,
+   "lon": 9.05094,
+   "da": "Como Centro",
+   "lat2": 45.82569,
+   "lon2": 9.0454,
+   "a": "Como Monte Olimpino",
+   "km": 6.1,
+   "dirlat": 44.1590056,
+   "dirlon": 11.075407,
+   "dir": "Svizzera"
+  },
+  {
+   "id": "371aceef00805b81",
+   "strada": "A24 Roma-Teramo",
+   "testo": "veicolo fermo o in avaria dalle 14:55 del 28 novembre 2026 tra Allacciamento A25 Torano-Pescara e Svincolo Valle Del Salto in direzione Teramo",
+   "tipo": "altro",
+   "quando": "2026-11-28T14:44:00Z",
+   "lat2": 42.17292,
+   "lon2": 13.28013,
+   "a": "Valle Del Salto",
+   "dirlat": 42.6581008,
+   "dirlon": 13.6980117,
+   "dir": "Teramo"
   },
   {
    "id": "d22f7316a4df86ef",
@@ -42,23 +158,6 @@
    "dirlat": 45.930175,
    "dirlon": 8.431222,
    "dir": "Gravellona Toce"
-  },
-  {
-   "id": "aec99298c2d0d5b8",
-   "strada": "A4 Milano-Brescia",
-   "testo": "code causa incidente dalle 15:40 del 28 novembre 2026 tra Svincolo Palazzolo e Svincolo Rovato in direzione Brescia",
-   "tipo": "incidente",
-   "quando": "2026-11-28T14:41:00Z",
-   "lat": 45.61921,
-   "lon": 9.91786,
-   "da": "Palazzolo",
-   "lat2": 45.57748,
-   "lon2": 10.00474,
-   "a": "Rovato",
-   "km": 9.8,
-   "dirlat": 45.7795805,
-   "dirlon": 10.425873,
-   "dir": "Brescia"
   },
   {
    "id": "e361d400552b5170",
@@ -176,19 +275,6 @@
    "dir": "Roma"
   },
   {
-   "id": "3b0ed345805b5aa0",
-   "strada": "A12 Genova-Rosignano",
-   "testo": "veicolo fermo o in avaria dalle 15:14 del 28 novembre 2026 tra Svincolo Rosignano Marittimo e Svincolo Collesalvetti/Sgc Fi-Pi-Li in direzione Livorno",
-   "tipo": "altro",
-   "quando": "2026-11-28T14:38:00Z",
-   "lat": 43.39538,
-   "lon": 10.46829,
-   "da": "Rosignano Marittimo",
-   "dirlat": 42.7902379,
-   "dirlon": 10.3402239,
-   "dir": "Livorno"
-  },
-  {
    "id": "0971d58b285aca56",
    "strada": "Genova Via 16 Giugno 1944",
    "testo": "incidente possibili rallentamenti a Via 16 Giugno 1944",
@@ -283,13 +369,6 @@
    "quando": "2026-11-28T14:36:00Z"
   },
   {
-   "id": "1f26cb3348acdcdb",
-   "strada": "A52 Tangenziale Nord Di Milano",
-   "testo": "chiusura nodo causa incidente a Allacciamento A4 Torino-Trieste in direzione Venezia provenendo da A51",
-   "tipo": "chiusura",
-   "quando": "2026-11-28T14:35:00Z"
-  },
-  {
    "id": "128ecc15fe742ac5",
    "strada": "A1 Firenze-Roma",
    "testo": "veicolo fermo o in avaria dalle 15:29 del 28 novembre 2026 tra Svincolo Chiusi-Chianciano e Svincolo Valdichiana in direzione Firenze",
@@ -322,24 +401,6 @@
    "dirlat": 42.6581008,
    "dirlon": 13.6980117,
    "dir": "Teramo"
-  },
-  {
-   "id": "466b87a97f5befd2",
-   "strada": "TG-BO Tangenziale Di Bologna",
-   "testo": "veicolo fermo o in avaria dalle 15:33 del 28 novembre 2026 tra Svincolo 4 Aeroporto Bologna Borgo Panigale e Svincolo Via Triumvirato in direzione autostrada Milano-Napoli",
-   "tipo": "altro",
-   "quando": "2026-11-28T14:34:00Z",
-   "lat": 44.5279219,
-   "lon": 11.2868595,
-   "da": "4 Aeroporto Bologna Borgo Panigale",
-   "lat2": 44.5245,
-   "lon2": 11.29631,
-   "a": "Via Triumvirato",
-   "indicativo": true,
-   "km": 1.0,
-   "dirlat": 40.8358846,
-   "dirlon": 14.2487679,
-   "dir": "Napoli"
   },
   {
    "id": "a5e9e21112410721",
@@ -498,19 +559,6 @@
    "quando": "2026-11-28T14:21:00Z"
   },
   {
-   "id": "371aceef00805b81",
-   "strada": "A24 Roma-Teramo",
-   "testo": "veicolo fermo o in avaria dalle 14:55 del 28 novembre 2026 tra Allacciamento A25 Torano-Pescara e Svincolo Valle Del Salto in direzione Teramo",
-   "tipo": "altro",
-   "quando": "2026-11-28T14:21:00Z",
-   "lat2": 42.17292,
-   "lon2": 13.28013,
-   "a": "Valle Del Salto",
-   "dirlat": 42.6581008,
-   "dirlon": 13.6980117,
-   "dir": "Teramo"
-  },
-  {
    "id": "8bd80680af8ad7f5",
    "strada": "A16 Napoli-Canosa",
    "testo": "vento forte dalle 12:36 del 28 novembre 2026 tra Allacciamento A1 Milano-Napoli e Svincolo Candela",
@@ -540,30 +588,6 @@
    "testo": "incidente, guidare con attenzione a Strada delle Cattane",
    "tipo": "incidente",
    "quando": "2026-11-28T14:17:00Z"
-  },
-  {
-   "id": "2b70cbab4bac3f07",
-   "strada": "A52 Tangenziale Nord Di Milano",
-   "testo": "incidente a Allacciamento A4 Torino-Trieste in direzione Svincolo SP44 Milano-Meda: Lentate-Bruzzano",
-   "tipo": "incidente",
-   "quando": "2026-11-28T14:16:00Z"
-  },
-  {
-   "id": "6831d8e8a2a0b9c7",
-   "strada": "A11 Firenze-Pisa",
-   "testo": "veicolo fermo o in avaria dalle 15:12 del 28 novembre 2026 tra Svincolo Prato Ovest e Svincolo Pistoia in direzione Pisa",
-   "tipo": "altro",
-   "quando": "2026-11-28T14:14:00Z",
-   "lat": 43.87863,
-   "lon": 11.03288,
-   "da": "Prato Ovest",
-   "lat2": 43.91443,
-   "lon2": 10.91479,
-   "a": "Pistoia",
-   "km": 12.3,
-   "dirlat": 43.4714722,
-   "dirlon": 10.6797912,
-   "dir": "Pisa"
   },
   {
    "id": "124032ec1391c33c",
@@ -665,20 +689,6 @@
    "dirlat": 46.5052624,
    "dirlon": 13.5783734,
    "dir": "Tarvisio"
-  },
-  {
-   "id": "5b8e285fcf28574f",
-   "strada": "A12 Genova-Rosignano",
-   "testo": "veicolo in avaria a Svincolo Diramazione Lucca-Viareggio in direzione Rosignano",
-   "tipo": "altro",
-   "quando": "2026-11-28T14:02:00Z",
-   "lat": 43.8672392,
-   "lon": 10.2506055,
-   "da": "Lucca-Viareggio",
-   "indicativo": true,
-   "dirlat": 43.3879184,
-   "dirlon": 10.4381133,
-   "dir": "Rosignano"
   },
   {
    "id": "1b5e56bd7faa0c23",
@@ -892,13 +902,6 @@
    "testo": "chiusura notturna, entrata chiusa causa lavori dalle 22:00 del 30 novembre 2026 alle 05:00 del 2 dicembre 2026 a Allacciamento A21 Torino-Piacenza-Brescia in direzione Genova",
    "tipo": "chiusura",
    "quando": "2026-11-28T12:48:00Z"
-  },
-  {
-   "id": "2c3019cf4e9ff6b5",
-   "strada": "SS90 Bis Delle Puglie",
-   "testo": "traffico rallentato causa incidente a Incrocio Ponte Macchia",
-   "tipo": "incidente",
-   "quando": "2026-11-28T12:45:00Z"
   },
   {
    "id": "290cfefe72067fb3",
@@ -1170,6 +1173,23 @@
    "lon": 8.5698914,
    "da": "Cabras",
    "indicativo": true
+  },
+  {
+   "id": "b879cea0884f0230",
+   "strada": "A14 Pescara-Bari",
+   "testo": "veicolo fermo o in avaria dalle 11:58 del 28 novembre 2026 tra Svincolo Poggio Imperiale e Svincolo San Severo in direzione Bari",
+   "tipo": "altro",
+   "quando": "2026-11-28T11:01:00Z",
+   "lat": 41.85226,
+   "lon": 15.3598,
+   "da": "Poggio Imperiale",
+   "lat2": 41.69199,
+   "lon2": 15.40778,
+   "a": "San Severo",
+   "km": 21.9,
+   "dirlat": 41.1257843,
+   "dirlon": 16.8620293,
+   "dir": "Bari"
   },
   {
    "id": "aspi553903",
