@@ -8425,5 +8425,12 @@ false
 10.999408,
 false
 ],
-"v2|Ghisolfa Ovest inizio Tangenziale Ovest|7.3,45.8,9.5,44.7": null
+"v2|Ghisolfa Ovest inizio Tangenziale Ovest|7.3,45.8,9.5,44.7": null,
+"v2|Rossiglione|8.1,45.5,8.8,44.8": null,
+"v2|Campoligure|8.1,45.5,8.8,44.8": null,
+"v2|Riva": [
+44.8929848,
+7.3833725,
+false
+]
 }
