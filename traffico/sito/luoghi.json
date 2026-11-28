@@ -8469,5 +8469,15 @@ false
 14.0368889,
 false
 ],
-"v2|Alessandria - SS31 Del Monferrato|9.4,45.4,10.1,44.7": null
+"v2|Alessandria - SS31 Del Monferrato|9.4,45.4,10.1,44.7": null,
+"Septempedana": [
+43.5382731,
+13.5092076
+],
+"v2|S.Severino Marche - SS502 Di Cingoli|13.2,43.9,13.9,43.2": [
+43.236107,
+13.1890397,
+false
+],
+"v2|Castelraimondo - SS256 Muccese|13.2,43.9,13.9,43.2": null
 }
