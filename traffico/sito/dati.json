@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-28T13:27+00:00",
+ "aggiornato": "2026-11-28T13:42+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -9,11 +9,176 @@
  },
  "eventi": [
   {
-   "id": "77de1d341fd149c7",
-   "strada": "SS163 Amalfitana",
-   "testo": "incidente a Incrocio Vietri Sul Mare - SS18 Tirrena Inferiore",
+   "id": "58c6d497fee50ddf",
+   "strada": "A7 Milano-Genova",
+   "testo": "chiusura notturna, tratto chiuso causa lavori dalle 00:00 del 3 alle 03:00 del 4 dicembre 2026 tra Svincolo Binasco e Allacciamento Tangenziale Ovest Di Milano in direzione Milano",
+   "tipo": "chiusura",
+   "quando": "2026-11-28T13:37:00Z",
+   "lat": 45.3386,
+   "lon": 9.09763,
+   "da": "Binasco",
+   "lat2": 45.502787,
+   "lon2": 9.066088,
+   "a": "Tangenziale Ovest Di Milano",
+   "indicativo": true,
+   "km": 22.1,
+   "dirlat": 45.4641943,
+   "dirlon": 9.1896346,
+   "dir": "Milano"
+  },
+  {
+   "id": "c862874f88bb0049",
+   "strada": "Genova Via Paolo Mantovani",
+   "testo": "incidente possibili rallentamenti a Via Paolo Mantovani",
    "tipo": "incidente",
-   "quando": "2026-11-28T13:27:00Z"
+   "quando": "2026-11-28T13:36:00Z"
+  },
+  {
+   "id": "fd62c942e17edee9",
+   "strada": "A51 Tangenziale Est Di Milano",
+   "testo": "incidente a Svincolo Agrate B.: Sp13 Melzo-Monza-Dogana in direzione Allacciamento A1 Milano-Napoli",
+   "tipo": "incidente",
+   "quando": "2026-11-28T13:35:00Z"
+  },
+  {
+   "id": "1264a01e3c3e12e6",
+   "strada": "SS10 Padana Inferiore",
+   "testo": "uscita chiusa causa lavori dalle 09:00 del 30 novembre 2026 alle 18:00 del 1 dicembre 2026 a Incrocio Alessandria - SS31 Del Monferrato",
+   "tipo": "chiusura",
+   "quando": "2026-11-28T13:35:00Z"
+  },
+  {
+   "id": "20f6539fa342779f",
+   "strada": "A26 Genova-Gravellona Toce",
+   "testo": "veicolo fermo o in avaria dalle 14:32 del 28 novembre 2026 tra Svincolo Vercelli Est e Allacciamento A4 Torino-Trieste in direzione Gravellona Toce",
+   "tipo": "altro",
+   "quando": "2026-11-28T13:34:00Z",
+   "lat": 45.35968,
+   "lon": 8.4837,
+   "da": "Vercelli Est",
+   "dirlat": 45.930175,
+   "dirlon": 8.431222,
+   "dir": "Gravellona Toce"
+  },
+  {
+   "id": "d8ad7f692f628818",
+   "strada": "Roma Viale del Galoppatoio",
+   "testo": "manifestazione dalle 00:01 del 28 novembre 2026 alle 23:59 del 10 gennaio 2027 a Viale del Galoppatoio",
+   "tipo": "altro",
+   "quando": "2026-11-28T13:34:00Z"
+  },
+  {
+   "id": "6d8cb3e54bc7f5af",
+   "strada": "A7 Milano-Genova",
+   "testo": "chiusura notturna, tratto chiuso causa lavori dalle 00:00 del 3 alle 03:00 del 4 dicembre 2026 tra Allacciamento Tangenziale Ovest Di Milano e Svincolo Binasco in direzione Genova",
+   "tipo": "chiusura",
+   "quando": "2026-11-28T13:31:00Z",
+   "lat": 45.502787,
+   "lon": 9.066088,
+   "da": "Tangenziale Ovest Di Milano",
+   "lat2": 45.3386,
+   "lon2": 9.09763,
+   "a": "Binasco",
+   "indicativo": true,
+   "km": 22.1,
+   "dirlat": 44.40726,
+   "dirlon": 8.9338624,
+   "dir": "Genova"
+  },
+  {
+   "id": "7a4e236810c82025",
+   "strada": "A4 Venezia-Trieste",
+   "testo": "chiusura area di servizio nell area di sosta causa lavori in corso a Area di servizio Gonars in direzione Trieste",
+   "tipo": "chiusura",
+   "quando": "2026-11-28T13:31:00Z",
+   "lat": 45.88129,
+   "lon": 13.25759,
+   "da": "Gonars",
+   "dirlat": 45.6496485,
+   "dirlon": 13.7772781,
+   "dir": "Trieste"
+  },
+  {
+   "id": "08e73c8184ea6c5a",
+   "strada": "A56 Tangenziale Di Napoli",
+   "testo": "traffico rallentato causa veicolo fermo o in avaria dalle 14:29 del 28 novembre 2026 tra Svincolo Zona Ospedaliera e Svincolo Camaldoli in direzione Pozzuoli",
+   "tipo": "code",
+   "quando": "2026-11-28T13:30:00Z",
+   "lat": 40.86186,
+   "lon": 14.23335,
+   "da": "Zona Ospedaliera",
+   "lat2": 40.8562,
+   "lon2": 14.22056,
+   "a": "Camaldoli",
+   "km": 1.5,
+   "dirlat": 40.822643,
+   "dirlon": 14.1219109,
+   "dir": "Pozzuoli"
+  },
+  {
+   "id": "b91475938c525302",
+   "strada": "A14 Bologna-Ancona",
+   "testo": "veicolo fermo o in avaria dalle 14:29 del 28 novembre 2026 tra Svincolo Senigallia e Svincolo Marotta-Mondolfo in direzione Bologna",
+   "tipo": "altro",
+   "quando": "2026-11-28T13:30:00Z",
+   "lat": 43.70285,
+   "lon": 13.21112,
+   "da": "Senigallia",
+   "lat2": 43.76419,
+   "lon2": 13.1277,
+   "a": "Marotta-Mondolfo",
+   "km": 11.5,
+   "dirlat": 44.4938203,
+   "dirlon": 11.3426327,
+   "dir": "Bologna"
+  },
+  {
+   "id": "ad271d57f9a6b84a",
+   "strada": "A7 Milano-Genova",
+   "testo": "code causa veicolo fermo o in avaria dalle 14:29 del 28 novembre 2026 tra Svincolo Genova Bolzaneto e Allacciamento A12 Genova-Rosignano in direzione Genova",
+   "tipo": "code",
+   "quando": "2026-11-28T13:30:00Z",
+   "lat": 44.47016,
+   "lon": 8.90954,
+   "da": "Genova Bolzaneto",
+   "dirlat": 44.40726,
+   "dirlon": 8.9338624,
+   "dir": "Genova"
+  },
+  {
+   "id": "d3e99fe89ac7cde8",
+   "strada": "Roma Piazza della Repubblica",
+   "testo": "manifestazione con corteo, strada chiusa dalle 14:31 alle 20:00 del 28 novembre 2026 a Piazza della Repubblica",
+   "tipo": "chiusura",
+   "quando": "2026-11-28T13:30:00Z"
+  },
+  {
+   "id": "574518908b2ecd9b",
+   "strada": "Roma Via Cassia",
+   "testo": "traffico rallentato causa traffico intenso tra Via Manfredi Azzarita e Via di Grottarossa in direzione GRA",
+   "tipo": "code",
+   "quando": "2026-11-28T13:29:00Z",
+   "lat": 41.9621684,
+   "lon": 12.4464387,
+   "da": "Via Manfredi Azzarita",
+   "lat2": 41.96658,
+   "lon2": 12.49029,
+   "a": "Via di Grottarossa",
+   "indicativo": true,
+   "km": 4.4,
+   "dirlat": 41.8856873,
+   "dirlon": 12.3839852,
+   "dir": "GRA"
+  },
+  {
+   "id": "7fd90969b0dae2a3",
+   "strada": "Tangenziale Est (RM)",
+   "testo": "traffico rallentato, riduzione di carreggiata tra Incrocio Uscita Viale Tor di Quinto e Incrocio Galleria Giovanni XXIII in direzione Incrocio Piazzale degli Eroi",
+   "tipo": "code",
+   "quando": "2026-11-28T13:28:00Z",
+   "lat": 41.94025,
+   "lon": 12.48106,
+   "da": "Viale Tor di Quinto"
   },
   {
    "id": "09e072b9c430a8cd",
@@ -38,37 +203,6 @@
    "dirlat": 44.40726,
    "dirlon": 8.9338624,
    "dir": "Genova"
-  },
-  {
-   "id": "89335f0fce486e1c",
-   "strada": "A56 Tangenziale Di Napoli",
-   "testo": "code causa veicolo fermo o in avaria dalle 14:20 del 28 novembre 2026 tra Svincolo Zona Ospedaliera e Svincolo Camaldoli in direzione Pozzuoli",
-   "tipo": "code",
-   "quando": "2026-11-28T13:23:00Z",
-   "lat": 40.86186,
-   "lon": 14.23335,
-   "da": "Zona Ospedaliera",
-   "lat2": 40.8562,
-   "lon2": 14.22056,
-   "a": "Camaldoli",
-   "km": 1.5,
-   "dirlat": 40.822643,
-   "dirlon": 14.1219109,
-   "dir": "Pozzuoli"
-  },
-  {
-   "id": "3ab08ddb0cadfde9",
-   "strada": "A50 Tangenziale Ovest Di Milano",
-   "testo": "veicolo in panne tra Svincolo SS.35 Dei Giovi: Pavia-Rozzano-Assago e Svincolo Uscita 7bis: Quinto De Stampi in direzione Allacciamento A1 Milano-Napoli",
-   "tipo": "altro",
-   "quando": "2026-11-28T13:22:00Z",
-   "lat2": 45.3945262,
-   "lon2": 9.170027,
-   "a": "7bis: Quinto De Stampi",
-   "indicativo": true,
-   "dirlat": 40.8358846,
-   "dirlon": 14.2487679,
-   "dir": "Napoli"
   },
   {
    "id": "e6ab733a8ca80b83",
@@ -105,23 +239,6 @@
    "km": 9.1
   },
   {
-   "id": "924a2455236cc26e",
-   "strada": "A14 Bologna-Ancona",
-   "testo": "perdita di carico causa perdita accidentale dalle 14:16 del 28 novembre 2026 tra Svincolo Forli e Svincolo Faenza in direzione Bologna",
-   "tipo": "altro",
-   "quando": "2026-11-28T13:17:00Z",
-   "lat": 44.2508,
-   "lon": 12.09554,
-   "da": "Forli",
-   "lat2": 44.32394,
-   "lon2": 11.90469,
-   "a": "Faenza",
-   "km": 20.7,
-   "dirlat": 44.4938203,
-   "dirlon": 11.3426327,
-   "dir": "Bologna"
-  },
-  {
    "id": "62ddd53a0ccecb92",
    "strada": "Genova Via Pasquale Berghini",
    "testo": "fondo stradale dissestato a Via Pasquale Berghini",
@@ -140,40 +257,6 @@
    "dirlat": 44.4938203,
    "dirlon": 11.3426327,
    "dir": "Bologna"
-  },
-  {
-   "id": "9249ca40af95ff40",
-   "strada": "A56 Tangenziale Di Napoli",
-   "testo": "veicolo fermo o in avaria dalle 14:12 del 28 novembre 2026 tra Svincolo Zona Ospedaliera e Svincolo Camaldoli in direzione Pozzuoli",
-   "tipo": "altro",
-   "quando": "2026-11-28T13:13:00Z",
-   "lat": 40.86186,
-   "lon": 14.23335,
-   "da": "Zona Ospedaliera",
-   "lat2": 40.8562,
-   "lon2": 14.22056,
-   "a": "Camaldoli",
-   "km": 1.5,
-   "dirlat": 40.822643,
-   "dirlon": 14.1219109,
-   "dir": "Pozzuoli"
-  },
-  {
-   "id": "17e352f8df605fb7",
-   "strada": "A23 Palmanova-Tarvisio",
-   "testo": "veicolo fermo o in avaria dalle 14:11 del 28 novembre 2026 tra Svincolo Pontebba e Svincolo Carnia in direzione autostrada Torino-Trieste",
-   "tipo": "altro",
-   "quando": "2026-11-28T13:12:00Z",
-   "lat": 46.50919,
-   "lon": 13.32345,
-   "da": "Pontebba",
-   "lat2": 46.36698,
-   "lon2": 13.08116,
-   "a": "Carnia",
-   "km": 29.3,
-   "dirlat": 45.6496485,
-   "dirlon": 13.7772781,
-   "dir": "Trieste"
   },
   {
    "id": "48ee0efcac72129e",
@@ -268,13 +351,6 @@
    "dir": "Gravellona Toce"
   },
   {
-   "id": "19fbbe5cae09a40f",
-   "strada": "A50 Tangenziale Ovest Di Milano",
-   "testo": "incidente a Svincolo SS494 Vigevanese Nuova: Lorenteggio in direzione Allacciamento A8 Milano-Varese",
-   "tipo": "incidente",
-   "quando": "2026-11-28T13:02:00Z"
-  },
-  {
    "id": "cd85bfa342e26a59",
    "strada": "A16 Napoli-Canosa",
    "testo": "veicolo fermo o in avaria dalle 14:01 del 28 novembre 2026 tra Svincolo Cerignola e Allacciamento A14 Bologna-Taranto in direzione Canosa",
@@ -291,13 +367,6 @@
    "id": "6269b7b8b14683d7",
    "strada": "Roma Via Cristoforo Colombo",
    "testo": "incidente traffico rallentato a Piazzale delle Nazioni Unite",
-   "tipo": "incidente",
-   "quando": "2026-11-28T13:02:00Z"
-  },
-  {
-   "id": "784465a2aff3b33f",
-   "strada": "A50 Tangenziale Ovest Di Milano",
-   "testo": "incidente a Svincolo SS494 Vigevanese Nuova: Lorenteggio in direzione Allacciamento A1 Milano-Napoli",
    "tipo": "incidente",
    "quando": "2026-11-28T13:02:00Z"
   },
@@ -339,24 +408,6 @@
    "testo": "incidente traffico rallentato a Via Fabrizio Luscino",
    "tipo": "incidente",
    "quando": "2026-11-28T12:57:00Z"
-  },
-  {
-   "id": "5c1db929420c7b9f",
-   "strada": "A19 Palermo-Catania",
-   "testo": "lavori di manutenzione tra 536 m dopo Svincolo Caltanissetta-Imera e 13,893 km prima di Svincolo Enna in direzione Catania",
-   "tipo": "lavori",
-   "quando": "2026-11-28T12:57:00Z",
-   "lat": 37.7213905,
-   "lon": 14.0368889,
-   "da": "Caltanissetta-Imera",
-   "lat2": 37.57858,
-   "lon2": 14.29783,
-   "a": "Enna",
-   "indicativo": true,
-   "km": 33.5,
-   "dirlat": 37.5023612,
-   "dirlon": 15.0873718,
-   "dir": "Catania"
   },
   {
    "id": "b03535a84fe254be",
@@ -446,13 +497,6 @@
    "dir": "Milano"
   },
   {
-   "id": "b3d95dfef5045a2b",
-   "strada": "Perugia Largo Cacciatori delle Alpi",
-   "testo": "olio sull asfalto a Largo Cacciatori delle Alpi",
-   "tipo": "altro",
-   "quando": "2026-11-28T12:39:00Z"
-  },
-  {
    "id": "6670597b5107f4a1",
    "strada": "SS163 Amalfitana",
    "testo": "traffico rallentato causa fondo stradale dissestato a Incrocio Minori",
@@ -462,13 +506,6 @@
    "lon": 9.1746295,
    "da": "Minori",
    "indicativo": true
-  },
-  {
-   "id": "c63c84505fbec8e8",
-   "strada": "Genova Via Tomaso Campanella",
-   "testo": "incidente a Corso Italia",
-   "tipo": "incidente",
-   "quando": "2026-11-28T12:36:00Z"
   },
   {
    "id": "8eaef37c7d70e949",
@@ -557,13 +594,6 @@
    "testo": "fondo stradale dissestato a Rotonda Romano Paradisi",
    "tipo": "altro",
    "quando": "2026-11-28T12:20:00Z"
-  },
-  {
-   "id": "a5c27bbe41652005",
-   "strada": "Roma Via Cassia",
-   "testo": "traffico rallentato causa traffico intenso a Via di Grottarossa",
-   "tipo": "code",
-   "quando": "2026-11-28T12:17:00Z"
   },
   {
    "id": "6c3df31f0b755bd0",
@@ -716,16 +746,6 @@
    "lat": 40.67215,
    "lon": 8.98819,
    "da": "Tula"
-  },
-  {
-   "id": "2d983d75fc8d07e6",
-   "strada": "Tangenziale Est (RM)",
-   "testo": "traffico rallentato causa traffico intenso tra Incrocio Uscita Via dei Campi Sportivi e Incrocio Galleria Giovanni XXIII in direzione Incrocio Piazzale degli Eroi",
-   "tipo": "code",
-   "quando": "2026-11-28T11:43:00Z",
-   "lat": 41.93927,
-   "lon": 12.4892,
-   "da": "Via dei Campi Sportivi"
   },
   {
    "id": "47edda276d43fa75",
@@ -1119,13 +1139,6 @@
    "lon2": 14.72651,
    "a": "Vietri",
    "km": 67.3
-  },
-  {
-   "id": "9f80c99cb3707b98",
-   "strada": "Genova Corso Sardegna",
-   "testo": "incidente a Corso Sardegna",
-   "tipo": "incidente",
-   "quando": "2026-11-28T08:31:00Z"
   },
   {
    "id": "10f4e55a42fe27c8",
