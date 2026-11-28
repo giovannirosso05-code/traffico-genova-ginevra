@@ -8486,5 +8486,12 @@ false
 ],
 "v2|Piazza dell Esquilino|12.6,42.2,13.3,41.5": null,
 "v2|Piazza dei Cinquecento|12.6,42.2,13.3,41.5": null,
-"v2|Gargnano|9.7,45.5,10.4,44.8": null
+"v2|Gargnano|9.7,45.5,10.4,44.8": null,
+"v2|Rutino|15.3,40.4,16.0,39.7": null,
+"v2|Torrita Di Siena|11.5,43.4,12.2,42.7": [
+43.1667601,
+11.7716466,
+false
+],
+"v2|Bari Nord - Allacciamento A14 Bo-Ta|16.5,41.4,17.2,40.7": null
 }
