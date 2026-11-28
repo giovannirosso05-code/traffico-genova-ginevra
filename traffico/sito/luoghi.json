@@ -8458,5 +8458,15 @@ false
 14.4272407,
 true
 ],
-"v2|Quercianella - SS1 Var|11.9,42.3,12.6,41.6": null
+"v2|Quercianella - SS1 Var|11.9,42.3,12.6,41.6": null,
+"v2|Sarnano|13.3,43.7,14.0,43.0": [
+43.0353798,
+13.2983099,
+false
+],
+"v2|Caltanissetta-Imera|13.0,38.5,15.4,37.2": [
+37.7213905,
+14.0368889,
+false
+]
 }
