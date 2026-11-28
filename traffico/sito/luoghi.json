@@ -8433,5 +8433,29 @@ false
 7.3833725,
 false
 ],
-"v2|Gemonio|7.6,46.3,8.3,45.6": null
+"v2|Gemonio|7.6,46.3,8.3,45.6": null,
+"Bis Delle Puglie": [
+41.1419521,
+14.8348003
+],
+"v2|Ponte Macchia|14.5,41.5,15.2,40.8": null,
+"Raccordo Bereguardo": [
+45.1966972,
+9.1277734
+],
+"Pavia": [
+45.0368546,
+9.1378251
+],
+"v2|Minori|8.9,45.8,9.6,45.1": [
+45.4169784,
+9.1746295,
+false
+],
+"v2|Vietri Sul Mare - SS18 Tirrena Inferiore|8.9,45.8,9.6,45.1": null,
+"v2|Torre Annunziata Nord|13.9,41.2,15.7,40.1": [
+40.7673495,
+14.4272407,
+true
+]
 }
