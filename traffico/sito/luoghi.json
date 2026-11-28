@@ -8573,5 +8573,11 @@ false
 ],
 "v2|Usmate-Velate Sud: Carnate-Paderno|9.0,45.9,9.7,45.2": null,
 "v2|Ponte Di Valenza|8.8,45.8,9.5,45.1": null,
-"v2|Cagliari - SS131 Diramazione Carlo Felice|8.7,39.6,9.4,38.9": null
+"v2|Cagliari - SS131 Diramazione Carlo Felice|8.7,39.6,9.4,38.9": null,
+"v2|Corpi Santi - SS263 V. Di Foro E Bocca Di Valle|14.8,42.2,15.5,41.5": null,
+"v2|S.Samuele|11.7,45.4,12.4,44.7": [
+45.0693569,
+11.7879201,
+false
+]
 }

@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-28T17:56+00:00",
+ "aggiornato": "2026-11-28T18:11+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -8,6 +8,193 @@
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "ee7c26492f127fc7",
+   "strada": "A55 Tangenziale Nord Di Torino",
+   "testo": "pedoni a Svincolo Venaria-Stadio in direzione Allacciamento A32 Torino-Bardonecchia",
+   "tipo": "altro",
+   "quando": "2026-11-28T18:10:00Z",
+   "lat": 45.1176314,
+   "lon": 7.6479644,
+   "da": "Venaria-Stadio",
+   "indicativo": true,
+   "dirlat": 45.078339,
+   "dirlon": 6.703205,
+   "dir": "Bardonecchia"
+  },
+  {
+   "id": "4e71daa8ac9a8d94",
+   "strada": "A16 Napoli-Canosa",
+   "testo": "incidente dalle 19:06 del 28 novembre 2026 tra Svincolo Vallata e Svincolo Lacedonia in direzione Canosa",
+   "tipo": "incidente",
+   "quando": "2026-11-28T18:08:00Z",
+   "lat": 41.06067,
+   "lon": 15.28744,
+   "da": "Vallata",
+   "lat2": 41.08162,
+   "lon2": 15.3585,
+   "a": "Lacedonia",
+   "km": 7.7,
+   "dirlat": 44.5535604,
+   "dirlon": 10.4119138,
+   "dir": "Canosa"
+  },
+  {
+   "id": "f834f88b02e8e5a1",
+   "strada": "SS84 Frentana",
+   "testo": "mezzi spargisale in azione tra 280 m dopo Incrocio Valico Della Forchetta e 2,224 km prima di Incrocio Corpi Santi - SS263 V. Di Foro E Bocca Di Valle",
+   "tipo": "altro",
+   "quando": "2026-11-28T18:07:00Z"
+  },
+  {
+   "id": "55ad0258f6cc7e13",
+   "strada": "Tangenziale Est (RM)",
+   "testo": "traffico rallentato causa traffico intenso tra Incrocio Viale Castrense/Via Nola-Inizio Tangenziale e Incrocio Uscita Via Prenestina-Pigneto in direzione Incrocio Piazzale degli Eroi",
+   "tipo": "code",
+   "quando": "2026-11-28T18:06:00Z"
+  },
+  {
+   "id": "05084d1a41fca63c",
+   "strada": "A30 Caserta-Salerno",
+   "testo": "veicolo fermo o in avaria dalle 19:04 del 28 novembre 2026 tra Allacciamento A16 Napoli-Canosa e Svincolo Palma Campania in direzione Salerno",
+   "tipo": "altro",
+   "quando": "2026-11-28T18:05:00Z",
+   "lat2": 40.8455,
+   "lon2": 14.54639,
+   "a": "Palma Campania",
+   "dirlat": 40.4194416,
+   "dirlon": 15.3106085,
+   "dir": "Salerno"
+  },
+  {
+   "id": "868eb9177d8e54f0",
+   "strada": "A9 Lainate-Chiasso",
+   "testo": "veicolo fermo o in avaria dalle 18:58 del 28 novembre 2026 tra Svincolo Uboldo e Allacciamento A8 Milano-Varese in direzione Lainate",
+   "tipo": "altro",
+   "quando": "2026-11-28T18:02:00Z",
+   "lat": 45.6069,
+   "lon": 9.01261,
+   "da": "Uboldo",
+   "dirlat": 45.57093,
+   "dirlon": 9.0270637,
+   "dir": "Lainate"
+  },
+  {
+   "id": "7fc1d3baca277c2d",
+   "strada": "A51 Tangenziale Est Di Milano",
+   "testo": "code a tratti causa traffico intenso tra Svincolo Gobba: Treviglio-Vimodrone e Svincolo Paullo: SS415 Paullese-SS10 Padana Inferiore in direzione Allacciamento A1 Milano-Napoli",
+   "tipo": "code",
+   "quando": "2026-11-28T18:02:00Z"
+  },
+  {
+   "id": "22ce7f92e5513d27",
+   "strada": "A51 Tangenziale Est Di Milano",
+   "testo": "chiusura notturna, chiusura notturna causa lavori dalle 22:00 del 1 alle 06:00 del 2 dicembre 2026 a Svincolo Usmate-Velate Sud: Carnate-Paderno in direzione Lecco-Ramo da Usmate",
+   "tipo": "chiusura",
+   "quando": "2026-11-28T18:01:00Z"
+  },
+  {
+   "id": "46c664cb5208e4cc",
+   "strada": "SS16 Adriatica",
+   "testo": "traffico rallentato causa perdita di liquido sull asfalto tra 2,983 km dopo Incrocio S.Samuele e 1,457 km prima di Incrocio Canosa in direzione Incrocio Otranto - SS173 Delle Terme Salentine",
+   "tipo": "code",
+   "quando": "2026-11-28T18:01:00Z",
+   "lat": 45.0693569,
+   "lon": 11.7879201,
+   "da": "S.Samuele",
+   "lat2": 41.24041,
+   "lon2": 16.10341,
+   "a": "Canosa",
+   "indicativo": true,
+   "km": 661.2
+  },
+  {
+   "id": "9614cc7d341134a2",
+   "strada": "A5 Torino-Courmayeur",
+   "testo": "mezzi spargisale in azione dalle 18:59 del 28 novembre 2026 tra Incrocio Controllo Merci AO / A5 e Svincolo A05-SS26DIR",
+   "tipo": "altro",
+   "quando": "2026-11-28T18:01:00Z"
+  },
+  {
+   "id": "c8332a3bb1b159b2",
+   "strada": "A27 Mestre-Belluno",
+   "testo": "mezzi spargisale in azione dalle 18:59 del 28 novembre 2026 tra Svincolo Vittorio Veneto Nord e Svincolo Pian Di Vedoia-SS51 Di Alemagna",
+   "tipo": "altro",
+   "quando": "2026-11-28T18:00:00Z",
+   "lat": 46.01662,
+   "lon": 12.28511,
+   "da": "Vittorio Veneto Nord",
+   "lat2": 46.1987776,
+   "lon2": 12.2865915,
+   "a": "Pian Di Vedoia-SS51 Di Alemagna",
+   "indicativo": true,
+   "km": 24.3
+  },
+  {
+   "id": "0acd9d02e5df53c7",
+   "strada": "A1 Milano-Bologna",
+   "testo": "veicolo fermo o in avaria dalle 18:58 del 28 novembre 2026 tra Svincolo Reggio Emilia e Svincolo Terre di Canossa - Campegine in direzione Milano",
+   "tipo": "altro",
+   "quando": "2026-11-28T17:59:00Z",
+   "lat": 44.72938,
+   "lon": 10.62759,
+   "da": "Reggio Emilia",
+   "lat2": 44.78276,
+   "lon2": 10.48831,
+   "a": "Terre di Canossa - Campegine",
+   "km": 15.0,
+   "dirlat": 45.4641943,
+   "dirlon": 9.1896346,
+   "dir": "Milano"
+  },
+  {
+   "id": "2495c91862593e40",
+   "strada": "A51 Tangenziale Est Di Milano",
+   "testo": "chiusura notturna, uscita chiusa causa lavori dalle 22:00 del 1 alle 06:00 del 2 dicembre 2026 a Svincolo Usmate-Velate Sud: Carnate-Paderno in direzione Lecco Ramo per Usmate",
+   "tipo": "chiusura",
+   "quando": "2026-11-28T17:58:00Z"
+  },
+  {
+   "id": "f15035c5a072c4bf",
+   "strada": "A1 Firenze-Roma",
+   "testo": "veicolo fermo o in avaria dalle 18:57 del 28 novembre 2026 tra Svincolo Arezzo e Svincolo Valdarno in direzione Firenze",
+   "tipo": "altro",
+   "quando": "2026-11-28T17:58:00Z",
+   "lat": 43.42591,
+   "lon": 11.95163,
+   "da": "Arezzo",
+   "lat2": 43.54707,
+   "lon2": 11.55982,
+   "a": "Valdarno",
+   "km": 41.2,
+   "dirlat": 43.7697955,
+   "dirlon": 11.2556404,
+   "dir": "Firenze"
+  },
+  {
+   "id": "d24eb8340a6f5d3f",
+   "strada": "A26 Genova-Gravellona Toce",
+   "testo": "perdita di carico dalle 18:54 del 28 novembre 2026 tra Svincolo Ovada e Allacciamento Diram. Predosa-Bettole in direzione Gravellona Toce",
+   "tipo": "altro",
+   "quando": "2026-11-28T17:56:00Z",
+   "lat": 44.63081,
+   "lon": 8.66101,
+   "da": "Ovada",
+   "lat2": 44.7632379,
+   "lon2": 8.647828,
+   "a": "Predosa-Bettole",
+   "km": 17.7,
+   "dirlat": 45.930175,
+   "dirlon": 8.431222,
+   "dir": "Gravellona Toce"
+  },
+  {
+   "id": "3eefddf86471c291",
+   "strada": "Genova Via Rivarolo",
+   "testo": "impianto semaforico fuori servizio a Via Teglia",
+   "tipo": "altro",
+   "quando": "2026-11-28T17:56:00Z"
+  },
   {
    "id": "ae0e52209aa9c1f4",
    "strada": "A14 Bologna-Ancona",
@@ -48,23 +235,6 @@
    "testo": "chiusura notturna, entrata chiusa causa lavori dalle 22:00 del 1 alle 06:00 del 2 dicembre 2026 a Svincolo Gobba: Treviglio-Vimodrone in direzione Lecco-Ramo da MI-Via Palmanova",
    "tipo": "chiusura",
    "quando": "2026-11-28T17:54:00Z"
-  },
-  {
-   "id": "4ef36f620ccac3b3",
-   "strada": "S01 Strada Grande Comunicazione Fi-Pi-Li (per Livorno)",
-   "testo": "traffico rallentato causa traffico intenso dalle 18:52 del 28 novembre 2026 tra Svincolo Empoli e Svincolo Empoli Ovest in direzione Livorno",
-   "tipo": "code",
-   "quando": "2026-11-28T17:54:00Z",
-   "lat": 43.70819,
-   "lon": 10.91773,
-   "da": "Empoli",
-   "lat2": 43.70695,
-   "lon2": 10.89284,
-   "a": "Empoli Ovest",
-   "km": 2.4,
-   "dirlat": 42.7902379,
-   "dirlon": 10.3402239,
-   "dir": "Livorno"
   },
   {
    "id": "d078852677e01f4d",
@@ -114,32 +284,6 @@
    "dir": "Teramo"
   },
   {
-   "id": "7a6c0015b8ed5a66",
-   "strada": "A14 Ramo Casalecchio",
-   "testo": "veicoli scortati per maltempo dalle 18:52 del 28 novembre 2026 tra Svincolo Bologna Casalecchio e Allacciamento A14 Bologna-Taranto in direzione autostrada Bologna-Taranto",
-   "tipo": "altro",
-   "quando": "2026-11-28T17:53:00Z",
-   "lat": 44.48958,
-   "lon": 11.26905,
-   "da": "Bologna Casalecchio",
-   "dirlat": 40.5488156,
-   "dirlon": 17.0805801,
-   "dir": "Taranto"
-  },
-  {
-   "id": "3aea2919fe212773",
-   "strada": "A14 Bologna-Ancona",
-   "testo": "veicoli scortati per maltempo dalle 18:51 del 28 novembre 2026 tra Svincolo Bologna Borgo Panigale e Allacciamento A13 Bologna-Padova in direzione Ancona",
-   "tipo": "altro",
-   "quando": "2026-11-28T17:52:00Z",
-   "lat": 44.52535,
-   "lon": 11.24702,
-   "da": "Bologna Borgo Panigale",
-   "dirlat": 43.4801189,
-   "dirlon": 13.2187279,
-   "dir": "Ancona"
-  },
-  {
    "id": "039d0584eeaa59b2",
    "strada": "A51 Tangenziale Est Di Milano",
    "testo": "code a tratti causa traffico intenso tra Svincolo C.A.M.M.: Monlue e Allacciamento Tangenziale Nord Milano in direzione Svincolo Lecco",
@@ -179,13 +323,6 @@
    "dirlat": 43.7697955,
    "dirlon": 11.2556404,
    "dir": "Firenze"
-  },
-  {
-   "id": "d30f87e1beb0cdf6",
-   "strada": "A51 Tangenziale Est Di Milano",
-   "testo": "code a tratti causa traffico intenso tra Svincolo Lambrate: Melzo - Dogana Segrate e Svincolo Paullo: SS415 Paullese-SS10 Padana Inferiore in direzione Allacciamento A1 Milano-Napoli",
-   "tipo": "code",
-   "quando": "2026-11-28T17:51:00Z"
   },
   {
    "id": "a34addd7412e44e2",
@@ -434,19 +571,6 @@
    "dir": "Raccordo Sicignano"
   },
   {
-   "id": "e0f08c0bd3100ee9",
-   "strada": "A16 Napoli-Canosa",
-   "testo": "veicolo fermo o in avaria dalle 18:22 del 28 novembre 2026 tra Svincolo Benevento - Raccordo Di Benevento e Svincolo Grottaminarda in direzione Canosa",
-   "tipo": "meteo",
-   "quando": "2026-11-28T17:25:00Z",
-   "lat2": 41.06379,
-   "lon2": 15.0608,
-   "a": "Grottaminarda",
-   "dirlat": 44.5535604,
-   "dirlon": 10.4119138,
-   "dir": "Canosa"
-  },
-  {
    "id": "bc8dd0d52f8fbae4",
    "strada": "A4 Brescia-Padova",
    "testo": "code causa incidente tra Svincolo Soave e Svincolo Verona Est in direzione Brescia",
@@ -504,23 +628,6 @@
    "testo": "mezzi spargisale in azione tra 154,506 km dopo Incrocio Godega Di S.Urbano e Incrocio Thorl/Confine Con L austria",
    "tipo": "altro",
    "quando": "2026-11-28T17:15:00Z"
-  },
-  {
-   "id": "9deb7b2e5d36227b",
-   "strada": "A14 Ancona-Pescara",
-   "testo": "personale su strada causa lavori dalle 18:14 alle 18:59 del 28 novembre 2026 tra Svincolo Grottammare e Svincolo San Benedetto Del Tronto in direzione Pescara",
-   "tipo": "lavori",
-   "quando": "2026-11-28T17:15:00Z",
-   "lat": 42.9823,
-   "lon": 13.8621,
-   "da": "Grottammare",
-   "lat2": 42.89536,
-   "lon2": 13.89621,
-   "a": "San Benedetto Del Tronto",
-   "km": 12.1,
-   "dirlat": 42.3097631,
-   "dirlon": 13.9579989,
-   "dir": "Pescara"
   },
   {
    "id": "6d23ab30ed334270",
@@ -758,13 +865,6 @@
    "quando": "2026-11-28T16:36:00Z"
   },
   {
-   "id": "194ccd32867c8f2e",
-   "strada": "Genova Via Pasquale Berghini",
-   "testo": "fondo stradale dissestato dalle 14:15 del 28 novembre 2026 a Via Pasquale Berghini",
-   "tipo": "altro",
-   "quando": "2026-11-28T16:31:00Z"
-  },
-  {
    "id": "c46a84e3af0b2e44",
    "strada": "Genova Via Paolo Mantovani",
    "testo": "fondo stradale dissestato dalle 16:12 del 28 novembre 2026 a Via Paolo Mantovani",
@@ -806,13 +906,6 @@
    "id": "76c6b9ee52593fc0",
    "strada": "A52 Tangenziale Nord Di Milano",
    "testo": "code causa traffico intenso a Svincolo SS36 Del Lago Di Como: Lecco-Monza in direzione Svincolo SP44 Milano-Meda: Lentate-Bruzzano",
-   "tipo": "code",
-   "quando": "2026-11-28T16:23:00Z"
-  },
-  {
-   "id": "b0c45fe67a4fde37",
-   "strada": "A51 Tangenziale Est Di Milano",
-   "testo": "code causa traffico intenso a Svincolo SP208 Carugate: Brugherio Nord",
    "tipo": "code",
    "quando": "2026-11-28T16:23:00Z"
   },
@@ -933,62 +1026,6 @@
    "testo": "code a tratti causa traffico intenso dalle 16:34 del 28 novembre 2026 tra Svincolo Sesto San Giovanni-Viale Zara e Svincolo Viale Monte Ceneri incrocio Viale Certosa in direzione Torino",
    "tipo": "code",
    "quando": "2026-11-28T15:35:00Z"
-  },
-  {
-   "id": "84bff0ccc3783d4e",
-   "strada": "Genova Piazza Giusti",
-   "testo": "incidente possibili rallentamenti a Piazza Giusti",
-   "tipo": "incidente",
-   "quando": "2026-11-28T15:30:00Z"
-  },
-  {
-   "id": "f63fa44a49d74ce1",
-   "strada": "Genova Via Giulio Tanini",
-   "testo": "incidente, guidare con attenzione a Via Giulio Tanini",
-   "tipo": "incidente",
-   "quando": "2026-11-28T15:29:00Z"
-  },
-  {
-   "id": "a060c9676b62cc04",
-   "strada": "A28 Portogruaro-Sacile",
-   "testo": "chiusura nodo a Allacciamento A27 Mestre-Belluno in direzione Sacile",
-   "tipo": "chiusura",
-   "quando": "2026-11-28T15:15:00Z"
-  },
-  {
-   "id": "85a6f0157d2602bc",
-   "strada": "A50 Tangenziale Ovest Di Milano",
-   "testo": "chiusura notturna, uscita chiusa causa lavori dalle 23:00 del 2 alle 03:00 del 3 dicembre 2026 a Svincolo SS11 Padana Superiore E SS33: Molino Dorino in direzione A1-Ramo per MI-Gallaratese",
-   "tipo": "chiusura",
-   "quando": "2026-11-28T15:10:00Z"
-  },
-  {
-   "id": "f5378a5f40d43c54",
-   "strada": "Genova Via Piacenza",
-   "testo": "incidente possibili rallentamenti a Via Piacenza",
-   "tipo": "incidente",
-   "quando": "2026-11-28T15:08:00Z"
-  },
-  {
-   "id": "4f3d4a26fc32b8fa",
-   "strada": "A50 Tangenziale Ovest Di Milano",
-   "testo": "chiusura notturna, entrata chiusa causa lavori dalle 23:00 del 2 alle 03:00 del 3 dicembre 2026 a Svincolo SS11 Padana Superiore E SS33: Molino Dorino in direzione A1- Ramo da MI-Gallaratese",
-   "tipo": "chiusura",
-   "quando": "2026-11-28T15:07:00Z"
-  },
-  {
-   "id": "c91b086a547617d8",
-   "strada": "A14 Raccordo Tangenziale Di Bari",
-   "testo": "pioggia dalle 15:59 del 28 novembre 2026 tra Svincolo Bari Nord - Allacciamento A14 Bo-Ta e Svincolo SS16-Tangenziale Di Bari",
-   "tipo": "meteo",
-   "quando": "2026-11-28T15:01:00Z"
-  },
-  {
-   "id": "e05e86b1a46fa98d",
-   "strada": "SS45bis Bis Gardesana Occidentale",
-   "testo": "materiali dispersi tra 1,835 km dopo Incrocio Gargnano e 65 m prima di Incrocio Tignale",
-   "tipo": "altro",
-   "quando": "2026-11-28T14:57:00Z"
   },
   {
    "id": "aspi553903",
