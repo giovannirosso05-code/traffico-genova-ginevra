@@ -8247,5 +8247,25 @@ false
 "v2|Ripalta - SP41bis|11.7,45.4,12.4,44.7": null,
 "v2|Falconara Alta - SS76 Var Della Val D esino|11.7,45.4,12.4,44.7": null,
 "v2|Palombina Nuova|11.7,45.4,12.4,44.7": null,
-"v2|16: Via Prenestina|13.5,43.3,14.4,41.0": null
+"v2|16: Via Prenestina|13.5,43.3,14.4,41.0": null,
+"v2|S.Eufemia Lamezia - SS280 Dei Due Mari|15.3,40.4,16.0,39.7": null,
+"Dell etna E Delle Madonie": [
+37.8744342,
+14.9999991
+],
+"v2|Randazzo|14.6,38.2,15.3,37.5": [
+37.8779338,
+14.9462478,
+false
+],
+"v2|S.Eufemia A Maiella|13.7,42.5,14.4,41.8": [
+42.1257347,
+14.0274076,
+false
+],
+"v2|Pacentro|13.7,42.5,14.4,41.8": [
+42.0571544,
+14.0311142,
+false
+]
 }
