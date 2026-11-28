@@ -8355,5 +8355,36 @@ false
 45.695998,
 9.5968423
 ],
-"alternativamente in entrambe": null
+"alternativamente in entrambe": null,
+"v2|Ardore Marina|16.1,38.7,16.8,38.0": [
+38.1770797,
+16.2067387,
+false
+],
+"SS18 Tirrena Inferiore": [
+40.2305702,
+15.252
+],
+"v2|Vimercate Centro: Oreno|9.0,45.9,9.7,45.2": [
+45.6215817,
+9.360596,
+true
+],
+"v2|Vimercate Nord: Frazione Velasca|9.0,45.9,9.7,45.2": null,
+"v2|Montorio Al V. - SS150 Valle Del Vomano|13.2,42.8,13.9,42.1": null,
+"Svincolo SS35 Dei Giovi (direzione Milano)": null,
+"v2|Pianello Lario|15.8,39.8,16.5,39.1": null,
+"v2|Dongo|15.8,39.8,16.5,39.1": null,
+"v2|Modena - SS623|10.8,46.3,11.5,45.6": null,
+"v2|Poggio Rusco - SS496 Virgiliana|10.8,46.3,11.5,45.6": null,
+"Tangenziale Di Piacenza": [
+45.0288483,
+9.7035632
+],
+"v2|Casello Piacenza Sud A1 Mi-Na|9.4,45.4,10.1,44.7": null,
+"v2|Verza - SS45|9.4,45.4,10.1,44.7": [
+45.0213353,
+9.6784031,
+false
+]
 }
