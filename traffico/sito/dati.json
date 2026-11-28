@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-28T08:27+00:00",
+ "aggiornato": "2026-11-28T08:42+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -8,6 +8,269 @@
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "ecb2dc1ba07bff16",
+   "strada": "SS20 Del Colle Di Tenda E Di Valle Roja",
+   "testo": "tratto chiuso tra 6,465 km dopo Incrocio Limone e 22,679 km prima di Incrocio Fanghetto/Confine Con La Francia",
+   "tipo": "chiusura",
+   "quando": "2026-11-28T08:41:00Z",
+   "lat": 45.5745375,
+   "lon": 10.4550721,
+   "da": "Limone",
+   "indicativo": true
+  },
+  {
+   "id": "b8bdd1687e3acf2b",
+   "strada": "A3 Napoli-Salerno",
+   "testo": "veicolo fermo o in avaria dalle 09:40 del 28 novembre 2026 a Svincolo Nocera in direzione Napoli",
+   "tipo": "altro",
+   "quando": "2026-11-28T08:41:00Z",
+   "lat": 40.73674,
+   "lon": 14.64147,
+   "da": "Nocera",
+   "dirlat": 40.8358846,
+   "dirlon": 14.2487679,
+   "dir": "Napoli"
+  },
+  {
+   "id": "1f6a935742fcbbba",
+   "strada": "A1 Milano-Bologna",
+   "testo": "veicolo fermo o in avaria dalle 09:32 del 28 novembre 2026 tra Svincolo Reggio Emilia e Allacciamento A22 Modena-Brennero in direzione Bologna",
+   "tipo": "altro",
+   "quando": "2026-11-28T08:41:00Z",
+   "lat": 44.72938,
+   "lon": 10.62759,
+   "da": "Reggio Emilia",
+   "dirlat": 44.4938203,
+   "dirlon": 11.3426327,
+   "dir": "Bologna"
+  },
+  {
+   "id": "e452a5d592127eb3",
+   "strada": "A1 Milano-Bologna",
+   "testo": "code causa veicolo fermo o in avaria dalle 09:38 del 28 novembre 2026 tra Svincolo Reggio Emilia e Allacciamento A22 Modena-Brennero in direzione Bologna",
+   "tipo": "code",
+   "quando": "2026-11-28T08:41:00Z",
+   "lat": 44.72938,
+   "lon": 10.62759,
+   "da": "Reggio Emilia",
+   "dirlat": 44.4938203,
+   "dirlon": 11.3426327,
+   "dir": "Bologna"
+  },
+  {
+   "id": "4df759495c2f557a",
+   "strada": "A21 Torino-Brescia",
+   "testo": "nebbia tra Allacciamento A7 Milano-Genova e Svincolo Castel S.Giovanni",
+   "tipo": "meteo",
+   "quando": "2026-11-28T08:40:00Z",
+   "lat2": 45.0590671,
+   "lon2": 9.4341783,
+   "a": "Castel S.Giovanni",
+   "indicativo": true
+  },
+  {
+   "id": "3efc84174d0c299e",
+   "strada": "A16 Napoli-Canosa",
+   "testo": "veicolo fermo o in avaria dalle 09:39 del 28 novembre 2026 tra Svincolo Grottaminarda e Svincolo Vallata in direzione Canosa",
+   "tipo": "altro",
+   "quando": "2026-11-28T08:40:00Z",
+   "lat": 41.06379,
+   "lon": 15.0608,
+   "da": "Grottaminarda",
+   "lat2": 41.06067,
+   "lon2": 15.28744,
+   "a": "Vallata",
+   "km": 22.8,
+   "dirlat": 44.5535604,
+   "dirlon": 10.4119138,
+   "dir": "Canosa"
+  },
+  {
+   "id": "18fc6cac988f3cf3",
+   "strada": "A7 Milano-Genova",
+   "testo": "veicolo fermo o in avaria dalle 09:39 del 28 novembre 2026 tra Svincolo Busalla e Svincolo Genova Bolzaneto in direzione Genova",
+   "tipo": "altro",
+   "quando": "2026-11-28T08:40:00Z",
+   "lat": 44.5683,
+   "lon": 8.95061,
+   "da": "Busalla",
+   "lat2": 44.47016,
+   "lon2": 8.90954,
+   "a": "Genova Bolzaneto",
+   "km": 13.7,
+   "dirlat": 44.40726,
+   "dirlon": 8.9338624,
+   "dir": "Genova"
+  },
+  {
+   "id": "3a0cc0f89995a93f",
+   "strada": "A55 Tangenziale Nord Di Torino",
+   "testo": "traffico rallentato con code a tratti tra Svincolo Pianezza-Collegno - SS24 Del Monginevro e 220 m dopo Allacciamento Interconnessione Tangenziale Sud in direzione Allacciamento A32 Torino-Bardonecchia",
+   "tipo": "code",
+   "quando": "2026-11-28T08:40:00Z"
+  },
+  {
+   "id": "5d294cfb35ef3360",
+   "strada": "A55 Tangenziale Sud Di Torino",
+   "testo": "veicolo in avaria a Svincolo Corso Allamano in direzione Allacciamento Interconnessione Tangenziale Nord",
+   "tipo": "altro",
+   "quando": "2026-11-28T08:40:00Z",
+   "lat": 45.06225,
+   "lon": 7.5435,
+   "da": "Corso Allamano"
+  },
+  {
+   "id": "e182f31b21972432",
+   "strada": "A55 Tangenziale Nord Di Torino",
+   "testo": "incidente causa imprecisate a Allacciamento Interconnessione Tangenziale Sud in direzione Allacciamento A32 Torino-Bardonecchia",
+   "tipo": "incidente",
+   "quando": "2026-11-28T08:40:00Z"
+  },
+  {
+   "id": "1803e76e836aeaa7",
+   "strada": "A23 Palmanova-Tarvisio",
+   "testo": "veicolo fermo o in avaria dalle 09:36 del 28 novembre 2026 tra Svincolo Udine Nord e Svincolo Gemona-Osoppo in direzione Tarvisio",
+   "tipo": "altro",
+   "quando": "2026-11-28T08:39:00Z",
+   "lat": 46.11451,
+   "lon": 13.20508,
+   "da": "Udine Nord",
+   "lat2": 46.25239,
+   "lon2": 13.10112,
+   "a": "Gemona-Osoppo",
+   "km": 20.8,
+   "dirlat": 46.5052624,
+   "dirlon": 13.5783734,
+   "dir": "Tarvisio"
+  },
+  {
+   "id": "c4b0ebe60fbda756",
+   "strada": "A1 Firenze-Roma",
+   "testo": "veicolo fermo o in avaria dalle 09:36 del 28 novembre 2026 tra Svincolo Orte e Svincolo Attigliano in direzione Firenze",
+   "tipo": "altro",
+   "quando": "2026-11-28T08:39:00Z",
+   "lat": 42.44882,
+   "lon": 12.34699,
+   "da": "Orte",
+   "lat2": 42.50959,
+   "lon2": 12.29278,
+   "a": "Attigliano",
+   "km": 9.7,
+   "dirlat": 43.7697955,
+   "dirlon": 11.2556404,
+   "dir": "Firenze"
+  },
+  {
+   "id": "0370382bf31531d9",
+   "strada": "SS18 Tirrena Inferiore",
+   "testo": "traffico rallentato causa lavori di manutenzione tra 4,839 km dopo Incrocio Fiumefreddo Bruzio e 19,991 km prima di Incrocio Falerna Marina",
+   "tipo": "lavori",
+   "quando": "2026-11-28T08:37:00Z"
+  },
+  {
+   "id": "3e65ee7508614d18",
+   "strada": "SS211 Della Lomellina",
+   "testo": "lavori di manutenzione tra 11,571 km dopo Incrocio Pozzolo Formigaro e 938 m prima di Incrocio Pieve Del Cairo",
+   "tipo": "lavori",
+   "quando": "2026-11-28T08:37:00Z",
+   "lat2": 45.049957,
+   "lon2": 8.804146,
+   "a": "Pieve Del Cairo",
+   "indicativo": true
+  },
+  {
+   "id": "20a650bf9c0b5113",
+   "strada": "Genova Corso Europa",
+   "testo": "semaforo non funzionante correttamente a Via Santorre De Rossi di Santarosa",
+   "tipo": "altro",
+   "quando": "2026-11-28T08:35:00Z"
+  },
+  {
+   "id": "1ec3379da01e8468",
+   "strada": "S03 Strada Grande Comunicazione Fi-Pi-Li (diramazione per Pisa)",
+   "testo": "personale su strada dalle 09:32 del 28 novembre 2026 tra Svincolo Pisa Nord Est e Svincolo Pisa Centro - A12 Genova-Rosignano in direzione Pisa",
+   "tipo": "altro",
+   "quando": "2026-11-28T08:34:00Z",
+   "lat": 43.68697,
+   "lon": 10.44023,
+   "da": "Pisa Nord Est",
+   "dirlat": 43.4714722,
+   "dirlon": 10.6797912,
+   "dir": "Pisa"
+  },
+  {
+   "id": "ffabe244aeff0e94",
+   "strada": "A14 Bologna-Ancona",
+   "testo": "veicoli scortati per maltempo causa fondo stradale dissestato dalle 09:33 del 28 novembre 2026 tra Allacciamento A13 Bologna-Padova e Svincolo Bologna Borgo Panigale in direzione autostrada Milano-Napoli",
+   "tipo": "altro",
+   "quando": "2026-11-28T08:34:00Z",
+   "lat2": 44.52535,
+   "lon2": 11.24702,
+   "a": "Bologna Borgo Panigale",
+   "dirlat": 40.8358846,
+   "dirlon": 14.2487679,
+   "dir": "Napoli"
+  },
+  {
+   "id": "36890d1bb55f881b",
+   "strada": "A11 Firenze-Pisa",
+   "testo": "personale su strada dalle 08:16 del 28 novembre 2026 tra Svincolo Prato Est e Svincolo Prato Ovest in direzione Pisa",
+   "tipo": "altro",
+   "quando": "2026-11-28T08:34:00Z",
+   "lat": 43.85342,
+   "lon": 11.11794,
+   "da": "Prato Est",
+   "lat2": 43.87863,
+   "lon2": 11.03288,
+   "a": "Prato Ovest",
+   "km": 8.8,
+   "dirlat": 43.4714722,
+   "dirlon": 10.6797912,
+   "dir": "Pisa"
+  },
+  {
+   "id": "9f80c99cb3707b98",
+   "strada": "Genova Corso Sardegna",
+   "testo": "incidente a Corso Sardegna",
+   "tipo": "incidente",
+   "quando": "2026-11-28T08:31:00Z"
+  },
+  {
+   "id": "bae15d57981ae4a0",
+   "strada": "S01 Strada Grande Comunicazione Fi-Pi-Li (per Livorno)",
+   "testo": "animali sulla strada dalle 09:30 del 28 novembre 2026 tra Svincolo Santa Croce Sull arno e Svincolo Montopoli In Val D arno in direzione Livorno",
+   "tipo": "altro",
+   "quando": "2026-11-28T08:31:00Z",
+   "lat": 43.69245,
+   "lon": 10.78633,
+   "da": "Santa Croce Sull arno",
+   "lat2": 43.6702986,
+   "lon2": 10.7608316,
+   "a": "Montopoli In Val D arno",
+   "indicativo": true,
+   "km": 3.8,
+   "dirlat": 42.7902379,
+   "dirlon": 10.3402239,
+   "dir": "Livorno"
+  },
+  {
+   "id": "02ae739f389dd764",
+   "strada": "A13 Bologna-Padova",
+   "testo": "personale su strada dalle 09:26 del 28 novembre 2026 tra Svincolo Ferrara Sud e Svincolo Occhiobello in direzione Padova",
+   "tipo": "altro",
+   "quando": "2026-11-28T08:28:00Z",
+   "lat": 44.79482,
+   "lon": 11.55278,
+   "da": "Ferrara Sud",
+   "lat2": 44.92331,
+   "lon2": 11.59147,
+   "a": "Occhiobello",
+   "km": 17.5,
+   "dirlat": 45.391408,
+   "dirlon": 11.8058487,
+   "dir": "Padova"
+  },
   {
    "id": "9c85a2ee269958d4",
    "strada": "A14 Ancona-Pescara",
@@ -39,48 +302,9 @@
    "dir": "Ventimiglia"
   },
   {
-   "id": "2c4b72767a20376e",
-   "strada": "A21 Torino-Brescia",
-   "testo": "nebbia tra Svincolo Casteggio e Svincolo Castel S.Giovanni",
-   "tipo": "meteo",
-   "quando": "2026-11-28T08:24:00Z",
-   "lat": 45.03879,
-   "lon": 9.13709,
-   "da": "Casteggio",
-   "lat2": 45.0590671,
-   "lon2": 9.4341783,
-   "a": "Castel S.Giovanni",
-   "indicativo": true,
-   "km": 28.1
-  },
-  {
-   "id": "b9a1609d214046ff",
-   "strada": "A11 Firenze-Pisa",
-   "testo": "personale su strada dalle 08:16 del 28 novembre 2026 tra Svincolo Sesto Fiorentino e Svincolo Firenze Nord in direzione Pisa",
-   "tipo": "altro",
-   "quando": "2026-11-28T08:24:00Z",
-   "lat": 43.81529,
-   "lon": 11.17867,
-   "da": "Sesto Fiorentino",
-   "lat2": 43.82428,
-   "lon2": 11.15164,
-   "a": "Firenze Nord",
-   "km": 2.9,
-   "dirlat": 43.4714722,
-   "dirlon": 10.6797912,
-   "dir": "Pisa"
-  },
-  {
    "id": "fcd186917c6e66a6",
    "strada": "Milano Via Enrico Cosenz",
    "testo": "incidente che coinvolge motociclette a Via Bovisasca",
-   "tipo": "incidente",
-   "quando": "2026-11-28T08:23:00Z"
-  },
-  {
-   "id": "e182f31b21972432",
-   "strada": "A55 Tangenziale Nord Di Torino",
-   "testo": "incidente causa imprecisate a Allacciamento Interconnessione Tangenziale Sud in direzione Allacciamento A32 Torino-Bardonecchia",
    "tipo": "incidente",
    "quando": "2026-11-28T08:23:00Z"
   },
@@ -92,24 +316,10 @@
    "quando": "2026-11-28T08:22:00Z"
   },
   {
-   "id": "9d5e1b564352f6fe",
-   "strada": "A90-GRA Appia-Aurelia",
-   "testo": "traffico rallentato causa veicolo in avaria a Svincolo 28: SS8 Via Del Mare-V.Ostiense in direzione Aurelia",
-   "tipo": "code",
-   "quando": "2026-11-28T08:21:00Z"
-  },
-  {
    "id": "2415ec9bd74a800d",
    "strada": "SS301 Del Foscagno",
    "testo": "traffico rallentato causa ghiaccio tra 4,806 km dopo Incrocio Arnoga e 2,572 km prima di Incrocio Trepalle",
    "tipo": "code",
-   "quando": "2026-11-28T08:21:00Z"
-  },
-  {
-   "id": "0f157c68673addbe",
-   "strada": "A50 Tangenziale Ovest Di Milano",
-   "testo": "veicolo in avaria tra Svincolo SP59 Vigevanese Vecchia: Trezzano e Svincolo SS.35 Dei Giovi: Pavia-Rozzano-Assago in direzione Allacciamento A1 Milano-Napoli",
-   "tipo": "altro",
    "quando": "2026-11-28T08:21:00Z"
   },
   {
@@ -126,40 +336,6 @@
    "dir": "Pescara"
   },
   {
-   "id": "0f248e5de6b7b947",
-   "strada": "A50 Tangenziale Ovest Di Milano",
-   "testo": "veicolo in avaria a Svincolo Baggio-Cusago: Via Zurigo-Zona Ind. in direzione Allacciamento A1 Milano-Napoli",
-   "tipo": "altro",
-   "quando": "2026-11-28T08:20:00Z"
-  },
-  {
-   "id": "9216741ee832dd99",
-   "strada": "A14 Pescara-Bari",
-   "testo": "veicolo fermo o in avaria dalle 09:16 del 28 novembre 2026 a Svincolo Andria-Barletta",
-   "tipo": "altro",
-   "quando": "2026-11-28T08:19:00Z",
-   "lat": 41.25478,
-   "lon": 16.2882,
-   "da": "Andria-Barletta"
-  },
-  {
-   "id": "20f479dd0dc78ff9",
-   "strada": "A56 Tangenziale Di Napoli",
-   "testo": "veicolo fermo o in avaria dalle 09:16 del 28 novembre 2026 tra Svincolo Corso Malta e Svincolo Capodimonte in direzione Pozzuoli",
-   "tipo": "altro",
-   "quando": "2026-11-28T08:19:00Z",
-   "lat": 40.87229,
-   "lon": 14.28002,
-   "da": "Corso Malta",
-   "lat2": 40.86684,
-   "lon2": 14.24429,
-   "a": "Capodimonte",
-   "km": 3.7,
-   "dirlat": 40.822643,
-   "dirlon": 14.1219109,
-   "dir": "Pozzuoli"
-  },
-  {
    "id": "835c94d6b0d631ea",
    "strada": "Vicenza Piazzale della Vittoria",
    "testo": "manifestazione a Piazzale della Vittoria",
@@ -172,37 +348,6 @@
    "testo": "neve tra 6 km dopo Incrocio A24 - Tornimparte e 870 m prima di Incrocio SP38 - Rocca Di Mezzo",
    "tipo": "meteo",
    "quando": "2026-11-28T08:17:00Z"
-  },
-  {
-   "id": "e43aadc4bf1ae08e",
-   "strada": "A24 Roma-Teramo",
-   "testo": "veicolo fermo o in avaria dalle 09:13 del 28 novembre 2026 tra Svincolo L aquila Ovest e Svincolo Tornimparte in direzione Roma",
-   "tipo": "altro",
-   "quando": "2026-11-28T08:17:00Z",
-   "lat": 42.35923,
-   "lon": 13.36226,
-   "da": "L aquila Ovest",
-   "lat2": 42.25046,
-   "lon2": 13.32116,
-   "a": "Tornimparte",
-   "km": 15.1,
-   "dirlat": 41.8933203,
-   "dirlon": 12.4829321,
-   "dir": "Roma"
-  },
-  {
-   "id": "51b6f375f90ab9a6",
-   "strada": "A23 Palmanova-Tarvisio",
-   "testo": "veicoli lenti dalle 09:15 del 28 novembre 2026 tra Barriera Di Ugovizza-Tarvisio e Svincolo Dogana Di Coccau-Confine Di Stato in direzione Confine di Stato",
-   "tipo": "altro",
-   "quando": "2026-11-28T08:17:00Z",
-   "lat": 46.502968,
-   "lon": 13.4951477,
-   "da": "Ugovizza-Tarvisio",
-   "indicativo": true,
-   "dirlat": 45.9263785,
-   "dirlon": 9.0368772,
-   "dir": "Confine di Stato"
   },
   {
    "id": "10f4e55a42fe27c8",
@@ -309,30 +454,6 @@
    "dir": "Ancona"
   },
   {
-   "id": "2d0989448a91208e",
-   "strada": "A14 Bologna-Ancona",
-   "testo": "veicolo fermo o in avaria dalle 09:07 del 28 novembre 2026 tra Svincolo Senigallia e Svincolo Marotta-Mondolfo in direzione Bologna",
-   "tipo": "altro",
-   "quando": "2026-11-28T08:11:00Z",
-   "lat": 43.70285,
-   "lon": 13.21112,
-   "da": "Senigallia",
-   "lat2": 43.76419,
-   "lon2": 13.1277,
-   "a": "Marotta-Mondolfo",
-   "km": 11.5,
-   "dirlat": 44.4938203,
-   "dirlon": 11.3426327,
-   "dir": "Bologna"
-  },
-  {
-   "id": "690b0bb9f31daf9d",
-   "strada": "A56 Tangenziale Di Napoli",
-   "testo": "veicolo fermo o in avaria dalle 09:09 del 28 novembre 2026 a Svincolo Italia 90 Comune Di Napoli",
-   "tipo": "altro",
-   "quando": "2026-11-28T08:10:00Z"
-  },
-  {
    "id": "6ad45a5be2194e9c",
    "strada": "SS292 Nord Occidentale Sarda",
    "testo": "traffico rallentato causa lavori di manutenzione tra 2,659 km dopo Incrocio Tresnuraghes e 1,087 km prima di Incrocio Sennariolo in direzione Incrocio S.Giusta - SS131 Carlo Felice",
@@ -359,20 +480,6 @@
    "lat": 45.17915,
    "lon": 11.27852,
    "da": "S.Pietro"
-  },
-  {
-   "id": "c64f9c82ebf474b2",
-   "strada": "A14 Pescara-Bari",
-   "testo": "personale su strada causa lavori dalle 09:07 alle 09:52 del 28 novembre 2026 tra Svincolo Pescara Sud-Francavilla e Svincolo Lanciano",
-   "tipo": "lavori",
-   "quando": "2026-11-28T08:09:00Z",
-   "lat": 42.39452,
-   "lon": 14.28882,
-   "da": "Pescara Sud-Francavilla",
-   "lat2": 42.2668,
-   "lon2": 14.43697,
-   "a": "Lanciano",
-   "km": 22.5
   },
   {
    "id": "a4e66cae1590da4a",
@@ -465,32 +572,6 @@
    "indicativo": true
   },
   {
-   "id": "10e4ebc6aaff516e",
-   "strada": "A1 Roma-Napoli",
-   "testo": "veicolo fermo o in avaria dalle 09:02 del 28 novembre 2026 tra Allacciamento A24 Roma-Teramo e Allacciamento Diramazione Roma Sud in direzione Napoli",
-   "tipo": "altro",
-   "quando": "2026-11-28T08:04:00Z",
-   "lat2": 41.80258,
-   "lon2": 12.82107,
-   "a": "Roma Sud",
-   "dirlat": 40.8358846,
-   "dirlon": 14.2487679,
-   "dir": "Napoli"
-  },
-  {
-   "id": "a987ec627f43a80f",
-   "strada": "S03 Strada Grande Comunicazione Fi-Pi-Li (diramazione per Pisa)",
-   "testo": "personale su strada dalle 09:02 del 28 novembre 2026 tra Svincolo Pisa Centro - A12 Genova-Rosignano e Svincolo Pisa Nord Est in direzione Sgc Firenze-Livorno",
-   "tipo": "altro",
-   "quando": "2026-11-28T08:03:00Z",
-   "lat2": 43.68697,
-   "lon2": 10.44023,
-   "a": "Pisa Nord Est",
-   "dirlat": 42.7902379,
-   "dirlon": 10.3402239,
-   "dir": "Livorno"
-  },
-  {
    "id": "e60807f4406fa274",
    "strada": "A16 Napoli-Canosa",
    "testo": "animali sulla strada dalle 09:00 del 28 novembre 2026 tra Svincolo Grottaminarda e Svincolo Vallata in direzione Canosa",
@@ -532,19 +613,6 @@
    "quando": "2026-11-28T07:55:00Z"
   },
   {
-   "id": "a00e3de4dcb0c5a7",
-   "strada": "SS613 Brindisi-Lecce",
-   "testo": "traffico rallentato a Incrocio Trepuzzi - Surbo in direzione Lecce",
-   "tipo": "code",
-   "quando": "2026-11-28T07:53:00Z",
-   "lat": 40.3989489,
-   "lon": 18.113515,
-   "da": "Trepuzzi - Surbo",
-   "dirlat": 40.1522173,
-   "dirlon": 18.2260628,
-   "dir": "Lecce"
-  },
-  {
    "id": "e05a1b17a7766f51",
    "strada": "SS671 Della Val Seriana",
    "testo": "lavori di manutenzione a Incrocio SS470 Val Brembana/SS342 Lecco-Como in direzione Incrocio A4 To-Ts/SS525/Dalmine",
@@ -571,16 +639,6 @@
    "lon2": 7.92465,
    "a": "Chivasso Est",
    "km": 17.4
-  },
-  {
-   "id": "24b7337a46448027",
-   "strada": "A4 Torino-Milano",
-   "testo": "pedoni a Area di servizio Settimo Torinese",
-   "tipo": "altro",
-   "quando": "2026-11-28T07:50:00Z",
-   "lat": 45.15257,
-   "lon": 7.77003,
-   "da": "Settimo Torinese"
   },
   {
    "id": "babc06bd4a7ebc2a",
@@ -616,23 +674,6 @@
    "a": "Lenna",
    "indicativo": true,
    "km": 12.2
-  },
-  {
-   "id": "53e8c2a438260633",
-   "strada": "A7 Milano-Genova",
-   "testo": "veicolo fermo o in avaria dalle 08:30 del 28 novembre 2026 tra Svincolo Genova Bolzaneto e Svincolo Busalla in direzione Milano",
-   "tipo": "altro",
-   "quando": "2026-11-28T07:37:00Z",
-   "lat": 44.47016,
-   "lon": 8.90954,
-   "da": "Genova Bolzaneto",
-   "lat2": 44.5683,
-   "lon2": 8.95061,
-   "a": "Busalla",
-   "km": 13.7,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
   },
   {
    "id": "9cbf34a9498309d8",
@@ -787,24 +828,6 @@
    "testo": "nebbia a banchi tra Allacciamento Tangenziale Sud Di Torino - DirMoncalieri e Svincolo Marene - Interconnessione A33",
    "tipo": "meteo",
    "quando": "2026-11-28T07:09:00Z"
-  },
-  {
-   "id": "7d74035fa2315dc8",
-   "strada": "A1 Milano-Bologna",
-   "testo": "veicolo fermo o in avaria dalle 08:05 del 28 novembre 2026 tra Allacciamento Tangenziale Ovest Di Milano e Svincolo S. Giuliano in direzione Milano",
-   "tipo": "altro",
-   "quando": "2026-11-28T07:07:00Z",
-   "lat": 45.502787,
-   "lon": 9.066088,
-   "da": "Tangenziale Ovest Di Milano",
-   "lat2": 45.8124517,
-   "lon2": 9.0903732,
-   "a": "S. Giuliano",
-   "indicativo": true,
-   "km": 41.4,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
   },
   {
    "id": "91b7546b0af6c8da",
@@ -1063,16 +1086,6 @@
    "km": 131.2
   },
   {
-   "id": "97b50f296e6b1bd0",
-   "strada": "A1 Diramazione Roma Nord",
-   "testo": "pioggia dalle 01:10 del 28 novembre 2026 tra Allacciamento A1 Milano-Napoli e Svincolo Castelnuovo di Porto",
-   "tipo": "meteo",
-   "quando": "2026-11-28T00:23:00Z",
-   "lat2": 42.0931,
-   "lon2": 12.5725,
-   "a": "Castelnuovo di Porto"
-  },
-  {
    "id": "c50a44bd61cbcee2",
    "strada": "A15 Parma-La Spezia",
    "testo": "lavori tra 850 m prima di Svincolo Pontremoli e 21,1 km dopo Svincolo Berceto in direzione Parma",
@@ -1190,21 +1203,6 @@
    "testo": "senso unico alternato causa lavori dalle 08:00 del 30 novembre 2026 alle 17:00 del 11 dicembre 2026 tra Incrocio Variante Di St. Vincent e Incrocio Mont Jovet",
    "tipo": "lavori",
    "quando": "2026-11-27T23:01:00Z"
-  },
-  {
-   "id": "f616e11fa962478c",
-   "strada": "SS565 Di Castellamonte",
-   "testo": "senso unico alternato causa lavori dalle 07:00 del 1 alle 18:00 del 15 dicembre 2026 tra Incrocio Ivrea - SS26 Della Val D aosta e Incrocio Rivarolo Canavese - SS460 Di Ceresole",
-   "tipo": "lavori",
-   "quando": "2026-11-27T22:53:00Z",
-   "lat": 45.446058,
-   "lon": 7.8500699,
-   "da": "Ivrea - SS26 Della Val D aosta",
-   "lat2": 45.2521518,
-   "lon2": 7.7417354,
-   "a": "Rivarolo Canavese - SS460 Di Ceresole",
-   "indicativo": true,
-   "km": 27.8
   },
   {
    "id": "aspi553903",
