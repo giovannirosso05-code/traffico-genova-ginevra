@@ -1,13 +1,76 @@
 {
- "aggiornato": "2026-11-28T02:41+00:00",
+ "aggiornato": "2026-11-28T02:48+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
-  "Autostrade (cantieri)": "ok (384 cantieri)",
+  "Autostrade (cantieri)": "ok (379 cantieri)",
   "Francia": "ok (276 eventi)",
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "25857bf0d35be582",
+   "strada": "A4 Milano-Brescia",
+   "testo": "veicolo fermo o in avaria dalle 03:44 del 28 novembre 2026 tra Svincolo Viale Monte Ceneri incrocio Viale Certosa e Svincolo Cormano in direzione Brescia",
+   "tipo": "altro",
+   "quando": "2026-11-28T02:45:00Z",
+   "lat2": 45.5381,
+   "lon2": 9.16661,
+   "a": "Cormano",
+   "dirlat": 45.7795805,
+   "dirlon": 10.425873,
+   "dir": "Brescia"
+  },
+  {
+   "id": "567003e7bdc3947d",
+   "strada": "A1 Milano-Bologna",
+   "testo": "personale su strada causa lavori dalle 03:43 alle 04:28 del 28 novembre 2026 tra Svincolo Casalpusterlengo - Ospedaletto Lodigiano e Allacciamento A21 Torino-Brescia in direzione Bologna",
+   "tipo": "lavori",
+   "quando": "2026-11-28T02:44:00Z",
+   "lat": 45.1799711,
+   "lon": 9.5793471,
+   "da": "Casalpusterlengo - Ospedaletto Lodigiano",
+   "dirlat": 44.4938203,
+   "dirlon": 11.3426327,
+   "dir": "Bologna"
+  },
+  {
+   "id": "bf059eb718812936",
+   "strada": "A1 Roma-Napoli",
+   "testo": "incidente dalle 02:23 del 28 novembre 2026 tra Allacciamento A16 Napoli-Canosa e Svincolo Asse Mediano in direzione Roma",
+   "tipo": "incidente",
+   "quando": "2026-11-28T02:43:00Z",
+   "lat2": 40.93162,
+   "lon2": 14.05343,
+   "a": "Asse Mediano",
+   "dirlat": 41.8933203,
+   "dirlon": 12.4829321,
+   "dir": "Roma"
+  },
+  {
+   "id": "3986e2819086d917",
+   "strada": "A26 Diramazione Predosa-Bettole",
+   "testo": "veicolo fermo o in avaria dalle 03:31 del 28 novembre 2026 tra Allacciamento A7 Milano-Genova e Svincolo Novi Ligure in direzione A26 Genova Voltri-Gravellona Toce",
+   "tipo": "altro",
+   "quando": "2026-11-28T02:42:00Z",
+   "lat2": 44.79256,
+   "lon2": 8.7352,
+   "a": "Novi Ligure",
+   "dirlat": 45.930175,
+   "dirlon": 8.431222,
+   "dir": "Gravellona Toce"
+  },
+  {
+   "id": "c8a823c5dc55855c",
+   "strada": "SS24 Del Monginevro",
+   "testo": "mezzi spargisale in azione tra 2,882 km dopo Incrocio Chiomonte e Incrocio Colle Di Monginevro/Confine Con La Francia",
+   "tipo": "altro",
+   "quando": "2026-11-28T02:41:00Z",
+   "lat": 45.119542,
+   "lon": 6.985306,
+   "da": "Chiomonte",
+   "indicativo": true
+  },
   {
    "id": "ccd07698fa79561e",
    "strada": "A8 Milano-Varese",
@@ -134,19 +197,6 @@
    "dirlat": 44.4938203,
    "dirlon": 11.3426327,
    "dir": "Bologna"
-  },
-  {
-   "id": "3986e2819086d917",
-   "strada": "A26 Diramazione Predosa-Bettole",
-   "testo": "veicolo fermo o in avaria dalle 03:31 del 28 novembre 2026 tra Allacciamento A7 Milano-Genova e Svincolo Novi Ligure in direzione A26 Genova Voltri-Gravellona Toce",
-   "tipo": "altro",
-   "quando": "2026-11-28T02:33:00Z",
-   "lat2": 44.79256,
-   "lon2": 8.7352,
-   "a": "Novi Ligure",
-   "dirlat": 45.930175,
-   "dirlon": 8.431222,
-   "dir": "Gravellona Toce"
   },
   {
    "id": "6eeba7d1e3b86d8d",
@@ -370,36 +420,6 @@
    "a": "Andora"
   },
   {
-   "id": "d03c0a0bb8e26e36",
-   "strada": "A10 Genova-Ventimiglia",
-   "testo": "personale su strada causa lavori dalle 02:53 alle 03:38 del 28 novembre 2026 tra Svincolo A10 - A06 al Km 44 e Svincolo Celle Ligure in direzione Genova",
-   "tipo": "lavori",
-   "quando": "2026-11-28T01:54:00Z",
-   "lat2": 44.34923,
-   "lon2": 8.55365,
-   "a": "Celle Ligure",
-   "dirlat": 44.40726,
-   "dirlon": 8.9338624,
-   "dir": "Genova"
-  },
-  {
-   "id": "73c0463dff1777cf",
-   "strada": "A11 Firenze-Pisa",
-   "testo": "traffico rallentato causa veicolo fermo o in avaria dalle 02:52 del 28 novembre 2026 tra Svincolo Altopascio e Svincolo Capannori in direzione Pisa",
-   "tipo": "code",
-   "quando": "2026-11-28T01:53:00Z",
-   "lat": 43.82479,
-   "lon": 10.69117,
-   "da": "Altopascio",
-   "lat2": 43.82223,
-   "lon2": 10.60021,
-   "a": "Capannori",
-   "km": 8.8,
-   "dirlat": 43.4714722,
-   "dirlon": 10.6797912,
-   "dir": "Pisa"
-  },
-  {
    "id": "cfd4aed113c6ac29",
    "strada": "A1 Roma-Napoli",
    "testo": "personale su strada causa lavori dalle 02:51 del 28 novembre 2026 tra Svincolo Caianello e Svincolo Capua in direzione Napoli",
@@ -467,19 +487,6 @@
    "dirlat": 43.7917623,
    "dirlon": 7.6033131,
    "dir": "Ventimiglia"
-  },
-  {
-   "id": "bf059eb718812936",
-   "strada": "A1 Roma-Napoli",
-   "testo": "incidente dalle 02:23 del 28 novembre 2026 tra Allacciamento A16 Napoli-Canosa e Svincolo Asse Mediano in direzione Roma",
-   "tipo": "incidente",
-   "quando": "2026-11-28T01:41:00Z",
-   "lat2": 40.93162,
-   "lon2": 14.05343,
-   "a": "Asse Mediano",
-   "dirlat": 41.8933203,
-   "dirlon": 12.4829321,
-   "dir": "Roma"
   },
   {
    "id": "a9b8d03d96190363",
@@ -1335,13 +1342,6 @@
    "lon2": 11.7466767,
    "a": "27: Via C.Colombo",
    "indicativo": true
-  },
-  {
-   "id": "e27e34e89a8e2d02",
-   "strada": "A4 Milano-Brescia",
-   "testo": "rampa di accesso chiusa causa lavori dalle 23:02 del 27 alle 06:00 del 28 novembre 2026 a Svincolo Sesto San Giovanni-Viale Zara",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T22:04:00Z"
   },
   {
    "id": "aspi553903",
@@ -5907,27 +5907,6 @@
    "dir": "Taranto"
   },
   {
-   "id": "aspi752973",
-   "strada": "A1 Milano-Napoli (Autostrade)",
-   "testo": "cantiere tra Capua - Caianello (dal km 717.5 al km 714.5) in direzione Milano: corsia unica (barriera di sicurezza), limite 60 km/h · dal 27/11 20:00 al 28/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-27T19:00+00:00",
-   "fine": "2026-11-28T05:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 41.1843118647311,
-   "lon": 14.159953401397,
-   "da": "Capua - Caianello",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 41.199043157383,
-   "lon2": 14.1391109349658,
-   "km": 3.0,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
-  },
-  {
    "id": "aspi555150",
    "strada": "A14 Bologna-Taranto (Autostrade)",
    "testo": "cantiere tra Fano - Raccordo Per Fossombrone - Cattolica (dal km 157.1 al km 155.6) in direzione Autostrada Milano-Napoli: riduzione a 2 corsie (pavimentazione risanamento), limite 90 km/h · dal 27/11 20:00 al 28/11 06:00",
@@ -6372,27 +6351,6 @@
    "dir": "Torino"
   },
   {
-   "id": "aspi753172",
-   "strada": "A16 Napoli-Canosa (Autostrade)",
-   "testo": "cantiere tra Benevento - Racc. Di Benevento - Grottaminarda (dal km 76.0 al km 77.1) in direzione Canosa: corsia unica (ripristino a seguito incidente), limite 60 km/h · dal 27/11 20:00 al 28/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-27T19:00+00:00",
-   "fine": "2026-11-28T05:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 41.068947739506,
-   "lon": 15.004250661295,
-   "da": "Benevento - Racc. Di Benevento - Grottaminarda",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 41.0611622847325,
-   "lon2": 15.011208288342,
-   "km": 1.1,
-   "dirlat": 44.5535604,
-   "dirlon": 10.4119138,
-   "dir": "Canosa"
-  },
-  {
    "id": "aspi558966",
    "strada": "A1 Milano-Napoli (Autostrade)",
    "testo": "cantiere tra Barberino - Loc.Aglio Km 255 (dal km 257.5 al km 256.8) in direzione Milano: corsia unica (ispezione opera d'arte), limite 60 km/h · dal 27/11 22:00 al 28/11 06:00",
@@ -6663,27 +6621,6 @@
    "dir": "Genova Voltri"
   },
   {
-   "id": "aspi1008558",
-   "strada": "A12 Genova-Roma (Autostrade)",
-   "testo": "cantiere tra Genova Nervi - Recco (dal km 16.4 al km 17.2) in direzione Rosignano: corsia unica (regolazione idraulica), limite 60 km/h · dal 27/11 21:00 al 28/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-27T20:00+00:00",
-   "fine": "2026-11-28T05:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 44.3887565658579,
-   "lon": 9.07059257596795,
-   "da": "Genova Nervi - Recco",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 44.3890875758643,
-   "lon2": 9.07735370732632,
-   "km": 0.8,
-   "dirlat": 43.3879184,
-   "dirlon": 10.4381133,
-   "dir": "Rosignano"
-  },
-  {
    "id": "aspi1009520",
    "strada": "A26 Ge-Voltri-Gravell.Toce (Autostrade)",
    "testo": "cantiere tra Allac. A21 Torino-Piacenza-Brescia in direzione Gravellona Toce: corsia unica (cavalcavia), limite 60 km/h · dal 27/11 21:00 al 28/11 06:00",
@@ -6925,27 +6862,6 @@
    "dirlat": 45.57093,
    "dirlon": 9.0270637,
    "dir": "Lainate"
-  },
-  {
-   "id": "aspi494187",
-   "strada": "A1 Milano-Napoli (Autostrade)",
-   "testo": "cantiere tra Colleferro - Allac. Diramazione Roma Sud (dal km 588.6 al km 586.8) in direzione Milano: corsia unica (cavalcavia), limite 60 km/h · dal 27/11 22:00 al 28/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-27T21:00+00:00",
-   "fine": "2026-11-28T05:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 41.7638322814954,
-   "lon": 12.9355411962324,
-   "da": "Colleferro - Allac. Diramazione Roma Sud",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 41.766559164161,
-   "lon2": 12.9231731514256,
-   "km": 1.8,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
   },
   {
    "id": "aspi560055",
@@ -7528,27 +7444,6 @@
    "dirlat": 44.4938203,
    "dirlon": 11.3426327,
    "dir": "Bologna"
-  },
-  {
-   "id": "aspi559072",
-   "strada": "A1 Milano-Napoli (Autostrade)",
-   "testo": "cantiere tra Chiusi-Chianciano Terme - Chiusi-Chianciano (dal km 413.8 al km 410.0) in direzione Milano: corsia unica (barriera di sicurezza), limite 60 km/h · dal 27/11 21:00 al 28/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-27T20:00+00:00",
-   "fine": "2026-11-28T05:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 42.9797769689096,
-   "lon": 11.9279477792961,
-   "da": "Chiusi-Chianciano Terme - Chiusi-Chianciano",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 43.0100904952453,
-   "lon2": 11.9112482683951,
-   "km": 3.8,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
   },
   {
    "id": "aspi1008764",
