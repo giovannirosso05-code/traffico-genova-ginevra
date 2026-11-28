@@ -8165,5 +8165,23 @@ false
 12.4858485,
 false
 ],
-"v2|S. Nicola D avigliano - SS169 E SS93|14.5,41.3,16.2,40.2": null
+"v2|S. Nicola D avigliano - SS169 E SS93|14.5,41.3,16.2,40.2": null,
+"Brindisi": [
+40.6358599,
+17.6884975
+],
+"Lecce": [
+40.1522173,
+18.2260628
+],
+"v2|Trepuzzi - Surbo|17.3,41.0,18.6,39.8": [
+40.3989489,
+18.113515,
+true
+],
+"v2|S.Pellegrino Terme|9.3,46.2,10.0,45.5": [
+45.8386307,
+9.6647313,
+false
+]
 }
