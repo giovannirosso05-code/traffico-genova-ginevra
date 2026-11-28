@@ -8149,5 +8149,21 @@ false
 16.4182189,
 false
 ],
-"v2|Vicolo del Tram|15.9,41.4,16.6,40.7": null
+"v2|Vicolo del Tram|15.9,41.4,16.6,40.7": null,
+"v2|Castel Boglione|8.1,45.5,8.8,44.8": null,
+"v2|Gnocchetto|8.1,45.5,8.8,44.8": null,
+"Ticinese": [
+45.452138,
+9.1784013
+],
+"v2|Campagnola - SS32 Ticinese|8.8,45.8,9.5,45.1": null,
+"v2|Gattico|8.8,45.8,9.5,45.1": null,
+"v2|Pescate - SS583 Lariana": null,
+"SS324 Del Passo Delle Radici": null,
+"v2|Noli|11.9,42.3,12.6,41.6": [
+41.8694591,
+12.4858485,
+false
+],
+"v2|S. Nicola D avigliano - SS169 E SS93|14.5,41.3,16.2,40.2": null
 }
