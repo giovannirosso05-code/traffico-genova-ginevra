@@ -8289,5 +8289,33 @@ false
 "v2|Brindisi - SS7 Via Appia|11.7,45.4,12.4,44.7": null,
 "v2|Brindisi - SS379 Egnazia|11.7,45.4,12.4,44.7": null,
 "v2|Casello Varazze A10 Genova-Ventimiglia|11.9,42.3,12.6,41.6": null,
-"v2|Albisola Superiore|11.9,42.3,12.6,41.6": null
+"v2|Albisola Superiore|11.9,42.3,12.6,41.6": null,
+"v2|Borgo Trevi|12.1,42.3,12.8,41.6": null,
+"v2|S.Stefano Di Magra|10.6,46.3,11.3,45.6": null,
+"v2|Riano Flaminio|12.1,42.3,12.8,41.6": [
+42.1466086,
+12.481836,
+false
+],
+"v2|S.Giovanni Bianco|9.3,46.2,10.0,45.5": [
+45.8740752,
+9.653022,
+false
+],
+"Di Buonviaggio": [
+42.7036418,
+12.0808616
+],
+"v2|Bottagna|11.7,43.1,12.4,42.4": null,
+"v2|9: Via Di Settebagni-Bel Poggio|13.5,43.3,14.4,41.0": null,
+"Sud": [
+45.3895321,
+10.9818382
+],
+"v2|Albiano Magra|11.7,43.1,12.4,42.4": null,
+"v2|Sp. Melfi-Ofanto|14.5,41.3,16.2,40.2": [
+41.0990568,
+15.744905,
+false
+]
 }
