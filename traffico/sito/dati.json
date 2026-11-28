@@ -1,13 +1,135 @@
 {
- "aggiornato": "2026-11-28T18:41+00:00",
+ "aggiornato": "2026-11-28T18:50+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
   "Autostrade (cantieri)": "ok (332 cantieri)",
-  "Francia": "ok (324 eventi)",
+  "Francia": "ok (322 eventi)",
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "9afdb952805da18a",
+   "strada": "SS685 NSA27 - Delle Tre Valli Umbre",
+   "testo": "mezzi spargisale in azione tra 2,032 km dopo Incrocio Capodacqua e 8,537 km prima di Incrocio Piedipaterno - SS395",
+   "tipo": "altro",
+   "quando": "2026-11-28T18:49:00Z",
+   "lat": 42.74031,
+   "lon": 13.24159,
+   "da": "Capodacqua",
+   "lat2": 42.7679828,
+   "lon2": 12.8614022,
+   "a": "Piedipaterno - SS395",
+   "indicativo": true,
+   "km": 37.4
+  },
+  {
+   "id": "16d8a73accd6706d",
+   "strada": "A26 Genova-Gravellona Toce",
+   "testo": "veicolo fermo o in avaria dalle 19:43 del 28 novembre 2026 tra Svincolo Vercelli Est e Allacciamento A4 Torino-Trieste in direzione Gravellona Toce",
+   "tipo": "altro",
+   "quando": "2026-11-28T18:49:00Z",
+   "lat": 45.35968,
+   "lon": 8.4837,
+   "da": "Vercelli Est",
+   "dirlat": 45.930175,
+   "dirlon": 8.431222,
+   "dir": "Gravellona Toce"
+  },
+  {
+   "id": "fcf920a1bcbc941d",
+   "strada": "A25 Torano-Pescara",
+   "testo": "pioggia dalle 19:25 del 28 novembre 2026 tra Svincolo Sulmona-Pratola Peligna e Allacciamento A14 Bologna-Taranto",
+   "tipo": "meteo",
+   "quando": "2026-11-28T18:48:00Z",
+   "lat": 42.10791,
+   "lon": 13.86504,
+   "da": "Sulmona-Pratola Peligna"
+  },
+  {
+   "id": "99372b83ef4e4ffc",
+   "strada": "SS3 Via Flaminia",
+   "testo": "mezzi spargisale in azione tra 1,259 km dopo Incrocio Nocera Scalo e 1,872 km prima di Incrocio Pontericcioli - SS452 Della Contessa",
+   "tipo": "altro",
+   "quando": "2026-11-28T18:47:00Z",
+   "lat": 43.08975,
+   "lon": 12.76297,
+   "da": "Nocera Scalo"
+  },
+  {
+   "id": "fddf4a924e14a547",
+   "strada": "Genova Via Pisa",
+   "testo": "animali sulla strada a Via Camilla",
+   "tipo": "altro",
+   "quando": "2026-11-28T18:45:00Z"
+  },
+  {
+   "id": "c635439f03ca6fe1",
+   "strada": "A52 Tangenziale Nord Di Milano",
+   "testo": "incidente tra Svincolo Sesto S.Giovanni Sud: Cologno M. e Svincolo Sesto S.Giovanni (Diramazione Nord) in direzione Svincolo SP44 Milano-Meda: Lentate-Bruzzano",
+   "tipo": "incidente",
+   "quando": "2026-11-28T18:45:00Z"
+  },
+  {
+   "id": "ce36bca89eb901e3",
+   "strada": "SS16 Adriatica",
+   "testo": "corsia chiusa causa incidente a Incrocio Variante Di Rimini in direzione Incrocio Padova",
+   "tipo": "chiusura",
+   "quando": "2026-11-28T18:45:00Z"
+  },
+  {
+   "id": "8e6ce4a49de3f0ad",
+   "strada": "A14 Ancona-Pescara",
+   "testo": "personale su strada causa lavori dalle 19:42 alle 20:27 del 28 novembre 2026 tra Svincolo Val Vibrata e Svincolo Roseto Degli Abruzzi",
+   "tipo": "lavori",
+   "quando": "2026-11-28T18:44:00Z",
+   "lat": 42.84195,
+   "lon": 13.90283,
+   "da": "Val Vibrata",
+   "lat2": 42.64946,
+   "lon2": 13.97101,
+   "a": "Roseto Degli Abruzzi",
+   "km": 26.5
+  },
+  {
+   "id": "94d69ece21c19d69",
+   "strada": "SS471 Di Leonessa",
+   "testo": "mezzi spargisale in azione tra Incrocio Cascia - SS320 Di Cascia e 2,477 km prima di Incrocio Gizzi",
+   "tipo": "altro",
+   "quando": "2026-11-28T18:43:00Z",
+   "lat": 42.721741,
+   "lon": 13.0210506,
+   "da": "Cascia - SS320 Di Cascia",
+   "lat2": 42.5996705,
+   "lon2": 12.9527815,
+   "a": "Gizzi",
+   "indicativo": true,
+   "km": 17.6
+  },
+  {
+   "id": "0938cec2e4c519ce",
+   "strada": "A51 Tangenziale Est Di Milano",
+   "testo": "chiusura notturna, uscita chiusa causa lavori dalle 22:00 del 3 alle 06:00 del 4 dicembre 2026 a Svincolo Gobba: Treviglio-Vimodrone in direzione A1-Ramo per MI-Via Palmanova",
+   "tipo": "chiusura",
+   "quando": "2026-11-28T18:43:00Z"
+  },
+  {
+   "id": "6bc7b73924795dc5",
+   "strada": "A14 Pescara-Bari",
+   "testo": "personale su strada causa ripristino urgente fondo stradale dalle 19:39 del 28 novembre 2026 tra Svincolo Ortona e Svincolo Pescara Sud-Francavilla in direzione Pescara",
+   "tipo": "altro",
+   "quando": "2026-11-28T18:41:00Z",
+   "lat": 42.32894,
+   "lon": 14.38399,
+   "da": "Ortona",
+   "lat2": 42.39452,
+   "lon2": 14.28882,
+   "a": "Pescara Sud-Francavilla",
+   "km": 12.8,
+   "dirlat": 42.3097631,
+   "dirlon": 13.9579989,
+   "dir": "Pescara"
+  },
   {
    "id": "eaf570dfa99b3671",
    "strada": "A1 Diramazione Roma Sud",
@@ -282,23 +404,6 @@
    "dir": "Raccordo Sicignano"
   },
   {
-   "id": "f4c769189c4e682a",
-   "strada": "A25 Torano-Pescara",
-   "testo": "veicolo fermo o in avaria dalle 19:16 del 28 novembre 2026 tra Svincolo Sulmona-Pratola Peligna e Svincolo Bussi-Popoli in direzione Pescara",
-   "tipo": "altro",
-   "quando": "2026-11-28T18:20:00Z",
-   "lat": 42.10791,
-   "lon": 13.86504,
-   "da": "Sulmona-Pratola Peligna",
-   "lat2": 42.19734,
-   "lon2": 13.85764,
-   "a": "Bussi-Popoli",
-   "km": 12.0,
-   "dirlat": 42.3097631,
-   "dirlon": 13.9579989,
-   "dir": "Pescara"
-  },
-  {
    "id": "5770a8d4945ae1e2",
    "strada": "A51 Tangenziale Est Di Milano",
    "testo": "chiusura notturna, uscita chiusa causa lavori dalle 22:00 del 2 alle 06:00 del 3 dicembre 2026 a Svincolo Usmate-Velate Sud: Carnate-Paderno in direzione A1-Ramo per Usmate",
@@ -317,19 +422,6 @@
    "dirlat": 43.3879184,
    "dirlon": 10.4381133,
    "dir": "Rosignano"
-  },
-  {
-   "id": "0d87689a1a52e640",
-   "strada": "A30 Caserta-Salerno",
-   "testo": "veicolo fermo o in avaria dalle 19:04 del 28 novembre 2026 tra Svincolo Palma Campania e Allacciamento A16 Napoli-Canosa in direzione Caserta",
-   "tipo": "altro",
-   "quando": "2026-11-28T18:13:00Z",
-   "lat": 40.8455,
-   "lon": 14.54639,
-   "da": "Palma Campania",
-   "dirlat": 41.2035193,
-   "dirlon": 14.1168624,
-   "dir": "Caserta"
   },
   {
    "id": "ee7c26492f127fc7",
@@ -455,30 +547,6 @@
    "quando": "2026-11-28T17:54:00Z"
   },
   {
-   "id": "d078852677e01f4d",
-   "strada": "A24 Roma-Teramo",
-   "testo": "veicolo fermo o in avaria dalle 18:39 del 28 novembre 2026 tra Svincolo L aquila Ovest e Svincolo Tornimparte in direzione Roma",
-   "tipo": "altro",
-   "quando": "2026-11-28T17:54:00Z",
-   "lat": 42.35923,
-   "lon": 13.36226,
-   "da": "L aquila Ovest",
-   "lat2": 42.25046,
-   "lon2": 13.32116,
-   "a": "Tornimparte",
-   "km": 15.1,
-   "dirlat": 41.8933203,
-   "dirlon": 12.4829321,
-   "dir": "Roma"
-  },
-  {
-   "id": "ae639615cf26e1e8",
-   "strada": "SS52 Carnica",
-   "testo": "mezzi spargisale in azione tra 1,664 km dopo Incrocio Cima Gogna - SS48 Delle Dolomiti e Incrocio Passo Di Monte Croce Comelico",
-   "tipo": "altro",
-   "quando": "2026-11-28T17:51:00Z"
-  },
-  {
    "id": "a34addd7412e44e2",
    "strada": "SS27 Del Gran San Bernardo",
    "testo": "mezzi spargisale in azione tra 1,829 km dopo Incrocio Gignod e 13,91 km prima di Incrocio Gran S.Bernardo/Confine Con La Svizzera",
@@ -529,17 +597,6 @@
    "dirlat": 40.8358846,
    "dirlon": 14.2487679,
    "dir": "Napoli"
-  },
-  {
-   "id": "2beb09103309bce5",
-   "strada": "SS39 Del Passo Di Aprica",
-   "testo": "traffico rallentato causa mezzi spargisale in azione tra Incrocio Tresenda - SS38 Dello Stelvio e 85 m prima di Incrocio Passo Dell aprica",
-   "tipo": "code",
-   "quando": "2026-11-28T17:45:00Z",
-   "lat2": 46.1543295,
-   "lon2": 10.1541791,
-   "a": "Passo Dell aprica",
-   "indicativo": true
   },
   {
    "id": "0933a24e2979d6c7",
@@ -668,19 +725,6 @@
    "quando": "2026-11-28T17:28:00Z"
   },
   {
-   "id": "c14897932782ecbc",
-   "strada": "A16 Napoli-Canosa",
-   "testo": "veicolo fermo o in avaria dalle 18:13 del 28 novembre 2026 tra Svincolo Benevento - Raccordo Di Benevento e Svincolo Avellino Est in direzione Napoli",
-   "tipo": "meteo",
-   "quando": "2026-11-28T17:28:00Z",
-   "lat2": 40.94849,
-   "lon2": 14.83345,
-   "a": "Avellino Est",
-   "dirlat": 40.8358846,
-   "dirlon": 14.2487679,
-   "dir": "Napoli"
-  },
-  {
    "id": "177065b5d491c925",
    "strada": "SS125 Orientale Sarda",
    "testo": "traffico rallentato a Incrocio Lotzorai",
@@ -805,20 +849,6 @@
    "testo": "incidente traffico rallentato a Via Polense",
    "tipo": "incidente",
    "quando": "2026-11-28T17:04:00Z"
-  },
-  {
-   "id": "4b5214d1476621a7",
-   "strada": "Roma Via Cilicia",
-   "testo": "traffico rallentato causa traffico intenso a Via Cilicia in direzione Piazza Tuscolo",
-   "tipo": "code",
-   "quando": "2026-11-28T17:04:00Z"
-  },
-  {
-   "id": "8c23d7989f8f0cd2",
-   "strada": "Roma Via Prenestina",
-   "testo": "incidente traffico rallentato a Largo Nicolò De Lapi",
-   "tipo": "incidente",
-   "quando": "2026-11-28T17:03:00Z"
   },
   {
    "id": "74f7ef65efbb8c60",
@@ -1001,33 +1031,6 @@
    "testo": "chiusura notturna, entrata chiusa causa lavori dalle 22:00 del 3 alle 02:00 del 4 dicembre 2026 a Svincolo SP59 Vigevanese Vecchia: Trezzano in direzione Allacciamento A1 Milano-Napoli",
    "tipo": "chiusura",
    "quando": "2026-11-28T16:16:00Z"
-  },
-  {
-   "id": "825c6d31c0c55b28",
-   "strada": "Genova Via Felice Cavallotti",
-   "testo": "incidente possibili rallentamenti a Via Felice Cavallotti",
-   "tipo": "incidente",
-   "quando": "2026-11-28T16:13:00Z"
-  },
-  {
-   "id": "3b19c1e1152b0674",
-   "strada": "A50 Tangenziale Ovest Di Milano",
-   "testo": "chiusura notturna, tratto chiuso causa lavori dalle 00:00 del 3 alle 03:00 del 4 dicembre 2026 tra Allacciamento A7 Milano-Genova e Svincolo SS494 Vigevanese Nuova: Lorenteggio in direzione Allacciamento A8 Milano-Varese",
-   "tipo": "chiusura",
-   "quando": "2026-11-28T16:03:00Z"
-  },
-  {
-   "id": "f6b2c10371772f26",
-   "strada": "A50 Tangenziale Ovest Di Milano",
-   "testo": "chiusura notturna, chiusura area di servizio causa tratto chiuso dalle 00:00 del 3 alle 03:00 del 4 dicembre 2026 a Area di servizio Assago Ovest in direzione Allacciamento A1 Milano-Napoli",
-   "tipo": "chiusura",
-   "quando": "2026-11-28T15:58:00Z",
-   "lat": 45.40309,
-   "lon": 9.11949,
-   "da": "Assago Ovest",
-   "dirlat": 40.8358846,
-   "dirlon": 14.2487679,
-   "dir": "Napoli"
   },
   {
    "id": "aspi553903",
@@ -6177,20 +6180,20 @@
   {
    "id": "aspi555451",
    "strada": "A14 Bologna-Taranto (Autostrade)",
-   "testo": "cantiere tra Roseto Degli Abruzzi - Val Vibrata (dal km 335.4 al km 327.7) in direzione Autostrada Milano-Napoli: deviazione a 1 corsia (riqualifica spartitraffico), limite 40 km/h · dal 28/11 20:00 al 29/11 06:00",
+   "testo": "cantiere tra Roseto Degli Abruzzi - Val Vibrata (dal km 335.9 al km 327.7) in direzione Autostrada Milano-Napoli: corsia unica (riqualifica spartitraffico), limite 40 km/h · dal 28/11 20:00 al 29/11 06:00",
    "tipo": "lavori",
    "inizio": "2026-11-28T19:00+00:00",
    "fine": "2026-11-29T05:00+00:00",
-   "corsie": "deviazione a 1 corsia",
-   "lat": 42.7033227458132,
-   "lon": 13.9163449829004,
+   "corsie": "corsia unica",
+   "lat": 42.6978682548156,
+   "lon": 13.9193889431053,
    "da": "Roseto Degli Abruzzi - Val Vibrata",
    "paese": "Italia",
    "fonte": "Autostrade per l'Italia",
    "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
    "lat2": 42.7657233596962,
    "lon2": 13.9320462728322,
-   "km": 7.7
+   "km": 8.2
   },
   {
    "id": "aspi966740",
@@ -11834,34 +11837,6 @@
    "fine": "",
    "lat": 44.79797,
    "lon": -0.65307,
-   "paese": "Francia"
-  },
-  {
-   "id": "205173d184c8d644",
-   "strada": "N57 (Francia)",
-   "testo": "segnalazione dalle 18:32 del 28 novembre 2026 alle 19:45 del 28 novembre 2026 · Da 6423 m a sud di 43278 fino a 6950 m a nord di Étalans · Direzione Suisse - Lausanne (da Metz)",
-   "tipo": "altro",
-   "quando": "2026-11-28T19:16:25.770+01:00",
-   "corsie": "corsie ridotte",
-   "inizio": "2026-11-28T18:32:00+01:00",
-   "fine": "2026-11-28T19:45:00+01:00",
-   "lat": 47.19598,
-   "lon": 6.18509,
-   "paese": "Francia",
-   "lat2": 47.19647,
-   "lon2": 6.18284
-  },
-  {
-   "id": "1b69a09a1719a922",
-   "strada": "N57 (Francia)",
-   "testo": "incidente dalle 18:09 del 28 novembre 2026 alle 19:45 del 28 novembre 2026 · Prudence · 6950 m a nord di Étalans · Direzione Suisse - Lausanne (da Metz)",
-   "tipo": "incidente",
-   "quando": "2026-11-28T19:16:25.770+01:00",
-   "corsie": "",
-   "inizio": "2026-11-28T18:09:00+01:00",
-   "fine": "2026-11-28T19:45:00+01:00",
-   "lat": 47.19598,
-   "lon": 6.18509,
    "paese": "Francia"
   },
   {
