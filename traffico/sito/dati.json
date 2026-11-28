@@ -1,13 +1,131 @@
 {
- "aggiornato": "2026-11-28T01:04+00:00",
+ "aggiornato": "2026-11-28T01:19+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
-  "Autostrade (cantieri)": "ok (408 cantieri)",
+  "Autostrade (cantieri)": "ok (405 cantieri)",
   "Francia": "ok (280 eventi)",
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "ac7eb746afb8cc38",
+   "strada": "A11 Firenze-Pisa",
+   "testo": "personale su strada causa lavori dalle 02:17 alle 03:02 del 28 novembre 2026 tra Svincolo Altopascio e Svincolo Montecatini in direzione Firenze",
+   "tipo": "lavori",
+   "quando": "2026-11-28T01:19:00Z",
+   "lat": 43.82479,
+   "lon": 10.69117,
+   "da": "Altopascio",
+   "lat2": 43.87653,
+   "lon2": 10.79764,
+   "a": "Montecatini",
+   "km": 12.4,
+   "dirlat": 43.7697955,
+   "dirlon": 11.2556404,
+   "dir": "Firenze"
+  },
+  {
+   "id": "bd7f05a1bc30eac6",
+   "strada": "A9 Lainate-Chiasso",
+   "testo": "personale su strada causa lavori dalle 02:17 alle 03:02 del 28 novembre 2026 tra Svincolo Lomazzo e Svincolo Saronno in direzione Lainate",
+   "tipo": "lavori",
+   "quando": "2026-11-28T01:18:00Z",
+   "lat": 45.69141,
+   "lon": 9.01773,
+   "da": "Lomazzo",
+   "lat2": 45.62147,
+   "lon2": 9.01345,
+   "a": "Saronno",
+   "km": 9.3,
+   "dirlat": 45.57093,
+   "dirlon": 9.0270637,
+   "dir": "Lainate"
+  },
+  {
+   "id": "112b5948c1b97adc",
+   "strada": "A19 Palermo-Catania",
+   "testo": "traffico rallentato causa veicolo in avaria a Svincolo Dittano in direzione Catania",
+   "tipo": "code",
+   "quando": "2026-11-28T01:17:00Z"
+  },
+  {
+   "id": "c5c83dc0a3a6984c",
+   "strada": "A14 Bologna-Ancona",
+   "testo": "personale su strada causa lavori dalle 02:15 alle 03:00 del 28 novembre 2026 tra Svincolo Rimini Sud e Svincolo Rimini Nord in direzione Bologna",
+   "tipo": "lavori",
+   "quando": "2026-11-28T01:16:00Z",
+   "lat": 44.03793,
+   "lon": 12.5659,
+   "da": "Rimini Sud",
+   "lat2": 44.08676,
+   "lon2": 12.46875,
+   "a": "Rimini Nord",
+   "km": 11.4,
+   "dirlat": 44.4938203,
+   "dirlon": 11.3426327,
+   "dir": "Bologna"
+  },
+  {
+   "id": "ab92097235b0e5f4",
+   "strada": "A55 Diramazione Per Pinerolo",
+   "testo": "lavori a Svincolo Orbassano",
+   "tipo": "lavori",
+   "quando": "2026-11-28T01:15:00Z",
+   "lat": 45.00531,
+   "lon": 7.56608,
+   "da": "Orbassano"
+  },
+  {
+   "id": "6eafadaa3439dc57",
+   "strada": "A13 Bologna-Padova",
+   "testo": "personale su strada causa lavori dalle 02:13 alle 02:58 del 28 novembre 2026 tra Svincolo Occhiobello e Svincolo Ferrara Nord in direzione Bologna",
+   "tipo": "lavori",
+   "quando": "2026-11-28T01:15:00Z",
+   "lat": 44.92331,
+   "lon": 11.59147,
+   "da": "Occhiobello",
+   "lat2": 44.86831,
+   "lon2": 11.56993,
+   "a": "Ferrara Nord",
+   "km": 7.6,
+   "dirlat": 44.4938203,
+   "dirlon": 11.3426327,
+   "dir": "Bologna"
+  },
+  {
+   "id": "55dd32ebd5373c4c",
+   "strada": "A1 Roma-Napoli",
+   "testo": "code causa veicolo in fiamme dalle 01:56 del 28 novembre 2026 tra Allacciamento A16 Napoli-Canosa e Svincolo Asse Mediano in direzione Roma",
+   "tipo": "code",
+   "quando": "2026-11-28T01:08:00Z",
+   "lat2": 40.93162,
+   "lon2": 14.05343,
+   "a": "Asse Mediano",
+   "dirlat": 41.8933203,
+   "dirlon": 12.4829321,
+   "dir": "Roma"
+  },
+  {
+   "id": "c0ce468aebec74d8",
+   "strada": "A1 Roma-Napoli",
+   "testo": "veicolo in fiamme dalle 01:55 del 28 novembre 2026 tra Allacciamento A16 Napoli-Canosa e Svincolo Asse Mediano in direzione Roma",
+   "tipo": "altro",
+   "quando": "2026-11-28T01:08:00Z",
+   "lat2": 40.93162,
+   "lon2": 14.05343,
+   "a": "Asse Mediano",
+   "dirlat": 41.8933203,
+   "dirlon": 12.4829321,
+   "dir": "Roma"
+  },
+  {
+   "id": "8bf037d092087eb3",
+   "strada": "A5 Torino-Courmayeur",
+   "testo": "mezzi spargisale in azione dalle 02:04 del 28 novembre 2026 tra Incrocio Controllo Merci AO / A5 e Svincolo A05-SS26DIR",
+   "tipo": "altro",
+   "quando": "2026-11-28T01:06:00Z"
+  },
   {
    "id": "40550d924461f502",
    "strada": "A1 Firenze-Roma",
@@ -70,19 +188,6 @@
    "dir": "Genova"
   },
   {
-   "id": "55dd32ebd5373c4c",
-   "strada": "A1 Roma-Napoli",
-   "testo": "code causa veicolo in fiamme dalle 01:56 del 28 novembre 2026 tra Allacciamento A16 Napoli-Canosa e Svincolo Asse Mediano in direzione Roma",
-   "tipo": "code",
-   "quando": "2026-11-28T00:59:00Z",
-   "lat2": 40.93162,
-   "lon2": 14.05343,
-   "a": "Asse Mediano",
-   "dirlat": 41.8933203,
-   "dirlon": 12.4829321,
-   "dir": "Roma"
-  },
-  {
    "id": "68c72a8cdea18130",
    "strada": "A10 Genova-Ventimiglia",
    "testo": "veicolo in avaria in uscita a Svincolo Arma Di Taggia in direzione In Uscita",
@@ -94,19 +199,6 @@
    "dirlat": 40.8804425,
    "dirlon": 14.0917508,
    "dir": "In Uscita"
-  },
-  {
-   "id": "c0ce468aebec74d8",
-   "strada": "A1 Roma-Napoli",
-   "testo": "veicolo in fiamme dalle 01:55 del 28 novembre 2026 tra Allacciamento A16 Napoli-Canosa e Svincolo Asse Mediano in direzione Roma",
-   "tipo": "altro",
-   "quando": "2026-11-28T00:57:00Z",
-   "lat2": 40.93162,
-   "lon2": 14.05343,
-   "a": "Asse Mediano",
-   "dirlat": 41.8933203,
-   "dirlon": 12.4829321,
-   "dir": "Roma"
   },
   {
    "id": "b62b91c75879e147",
@@ -126,23 +218,6 @@
    "dir": "Firenze"
   },
   {
-   "id": "d844911d098b623f",
-   "strada": "A4 Torino-Milano",
-   "testo": "lavori, tratto chiuso causa lavori tra Svincolo Carisio e Svincolo Balocco in direzione Milano",
-   "tipo": "chiusura",
-   "quando": "2026-11-28T00:55:00Z",
-   "lat": 45.43945,
-   "lon": 8.24006,
-   "da": "Carisio",
-   "lat2": 45.45039,
-   "lon2": 8.30619,
-   "a": "Balocco",
-   "km": 6.4,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
-  },
-  {
    "id": "116f7ca60e2ec007",
    "strada": "A14 Diramazione Per Ravenna",
    "testo": "personale su strada causa lavori dalle 01:52 alle 02:37 del 28 novembre 2026 tra Svincolo Lugo e Svincolo Bagnacavallo in direzione Ravenna",
@@ -158,24 +233,6 @@
    "dirlat": 44.3640607,
    "dirlon": 12.0590095,
    "dir": "Ravenna"
-  },
-  {
-   "id": "fd249d659f0eacd5",
-   "strada": "A1 Milano-Bologna",
-   "testo": "personale su strada causa lavori dalle 01:52 alle 02:37 del 28 novembre 2026 tra Svincolo S. Giuliano e Allacciamento Milano-Tangenziale Est in direzione Milano",
-   "tipo": "lavori",
-   "quando": "2026-11-28T00:53:00Z",
-   "lat": 45.8124517,
-   "lon": 9.0903732,
-   "da": "S. Giuliano",
-   "lat2": 45.33764,
-   "lon2": 9.33496,
-   "a": "Milano-Tangenziale Est",
-   "indicativo": true,
-   "km": 67.3,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
   },
   {
    "id": "0ff93adb0cec8db4",
@@ -269,23 +326,6 @@
    "lat2": 44.06612,
    "lon2": 8.17497,
    "a": "Albenga"
-  },
-  {
-   "id": "b9f175f4c88dacf5",
-   "strada": "A1 Roma-Napoli",
-   "testo": "personale su strada causa lavori dalle 01:38 alle 02:23 del 28 novembre 2026 tra Svincolo Ceprano e Svincolo Frosinone in direzione Roma",
-   "tipo": "lavori",
-   "quando": "2026-11-28T00:39:00Z",
-   "lat": 41.54494,
-   "lon": 13.48605,
-   "da": "Ceprano",
-   "lat2": 41.6187,
-   "lon2": 13.31508,
-   "a": "Frosinone",
-   "km": 19.7,
-   "dirlat": 41.8933203,
-   "dirlon": 12.4829321,
-   "dir": "Roma"
   },
   {
    "id": "4226f406aa2f1c05",
@@ -439,19 +479,6 @@
    "da": "Sulmona-Pratola Peligna"
   },
   {
-   "id": "70fc61e8aba40bbd",
-   "strada": "R01 Ramo Verde Tangenziale Di Bologna",
-   "testo": "personale su strada causa lavori dalle 01:10 alle 01:55 del 28 novembre 2026 tra Svincolo SS 9 Via Emilia e Allacciamento Tangenziale Di Bologna in direzione Complanare di Bologna",
-   "tipo": "lavori",
-   "quando": "2026-11-28T00:23:00Z",
-   "lat2": 44.48599,
-   "lon2": 11.26376,
-   "a": "Tangenziale Di Bologna",
-   "dirlat": 44.4804098,
-   "dirlon": 11.4383019,
-   "dir": "Complanare di Bologna"
-  },
-  {
    "id": "8176c1f5ff2cadaa",
    "strada": "A14 Bologna-Ancona",
    "testo": "pioggia dalle 01:19 del 28 novembre 2026 tra Svincolo Bologna Borgo Panigale e Svincolo Castel S.Pietro",
@@ -475,23 +502,6 @@
    "lat2": 42.0931,
    "lon2": 12.5725,
    "a": "Castelnuovo di Porto"
-  },
-  {
-   "id": "c6df22598a1f61a7",
-   "strada": "A1 Firenze-Roma",
-   "testo": "personale su strada causa lavori dalle 01:21 alle 02:06 del 28 novembre 2026 tra Svincolo Fabro e Svincolo Orvieto in direzione Roma",
-   "tipo": "lavori",
-   "quando": "2026-11-28T00:23:00Z",
-   "lat": 42.87944,
-   "lon": 12.01636,
-   "da": "Fabro",
-   "lat2": 42.71551,
-   "lon2": 12.14887,
-   "a": "Orvieto",
-   "km": 25.4,
-   "dirlat": 41.8933203,
-   "dirlon": 12.4829321,
-   "dir": "Roma"
   },
   {
    "id": "aedef2ccc4d7f911",
@@ -929,20 +939,6 @@
    "dir": "Livorno"
   },
   {
-   "id": "e452bcbf9f0e3466",
-   "strada": "A1 Firenze-Roma",
-   "testo": "personale su strada causa lavori dalle 23:56 del 27 alle 00:41 del 28 novembre 2026 tra Svincolo Arezzo e Svincolo Valdichiana",
-   "tipo": "lavori",
-   "quando": "2026-11-27T22:58:00Z",
-   "lat": 43.42591,
-   "lon": 11.95163,
-   "da": "Arezzo",
-   "lat2": 43.21152,
-   "lon2": 11.8068,
-   "a": "Valdichiana",
-   "km": 31.9
-  },
-  {
    "id": "5cafad616d6495be",
    "strada": "A14 Pescara-Bari",
    "testo": "personale su strada causa lavori dalle 21:06 del 27 novembre 2026 tra Svincolo Lanciano e Svincolo Val Di Sangro",
@@ -1207,19 +1203,6 @@
    "quando": "2026-11-27T22:04:00Z"
   },
   {
-   "id": "fb34c2c781684ac9",
-   "strada": "A11 Firenze-Pisa",
-   "testo": "rampa di accesso chiusa causa lavori dalle 23:02 del 27 alle 06:00 del 28 novembre 2026 a Svincolo Chiesina Uzzanese in direzione Firenze",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T22:04:00Z",
-   "lat": 43.84222,
-   "lon": 10.71857,
-   "da": "Chiesina Uzzanese",
-   "dirlat": 43.7697955,
-   "dirlon": 11.2556404,
-   "dir": "Firenze"
-  },
-  {
    "id": "92591a98fec2eac4",
    "strada": "A90-GRA Aurelia-Salaria",
    "testo": "traffico rallentato causa lavori di manutenzione tra 99 m prima di Area di servizio selva Candida e 1,178 km dopo Svincolo 2a: Casal Del Marmo in direzione Aurelia",
@@ -1320,16 +1303,6 @@
    "km": 21.0
   },
   {
-   "id": "a0a065d5b5fcee8a",
-   "strada": "A24 Roma-Teramo",
-   "testo": "animali sulla strada dalle 22:49 del 27 novembre 2026 a Svincolo Assergi",
-   "tipo": "altro",
-   "quando": "2026-11-27T21:51:00Z",
-   "lat": 42.4195,
-   "lon": 13.50895,
-   "da": "Assergi"
-  },
-  {
    "id": "0078edbc3b27e223",
    "strada": "A11 Firenze-Pisa",
    "testo": "uscita chiusa causa lavori dalle 22:44 del 27 alle 06:00 del 28 novembre 2026 a Svincolo Chiesina Uzzanese in direzione da Pisa",
@@ -1341,6 +1314,21 @@
    "dirlat": 41.8774661,
    "dirlon": 12.537525,
    "dir": "da Pisa"
+  },
+  {
+   "id": "a717776eafdfed3b",
+   "strada": "A7 Milano-Genova",
+   "testo": "lavori dalle 22:39 del 27 alle 06:00 del 28 novembre 2026 tra Svincolo Serravalle Scrivia e Svincolo Tortona",
+   "tipo": "lavori",
+   "quando": "2026-11-27T21:40:00Z",
+   "lat": 44.7255798,
+   "lon": 8.8547001,
+   "da": "Serravalle Scrivia",
+   "lat2": 44.90977,
+   "lon2": 8.8437,
+   "a": "Tortona",
+   "indicativo": true,
+   "km": 24.6
   },
   {
    "id": "aspi553903",
@@ -6785,9 +6773,9 @@
    "dir": "Genova Voltri"
   },
   {
-   "id": "aspi1008556",
+   "id": "aspi1008558",
    "strada": "A12 Genova-Roma (Autostrade)",
-   "testo": "cantiere tra Genova Nervi - Recco (dal km 16.4 al km 19.0) in direzione Rosignano: corsia unica (regolazione idraulica), limite 60 km/h · dal 27/11 21:00 al 28/11 06:00",
+   "testo": "cantiere tra Genova Nervi - Recco (dal km 16.4 al km 17.2) in direzione Rosignano: corsia unica (regolazione idraulica), limite 60 km/h · dal 27/11 21:00 al 28/11 06:00",
    "tipo": "lavori",
    "inizio": "2026-11-27T20:00+00:00",
    "fine": "2026-11-28T05:00+00:00",
@@ -6798,9 +6786,9 @@
    "paese": "Italia",
    "fonte": "Autostrade per l'Italia",
    "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 44.3848334921268,
-   "lon2": 9.1005895479825,
-   "km": 2.6,
+   "lat2": 44.3890875758643,
+   "lon2": 9.07735370732632,
+   "km": 0.8,
    "dirlat": 43.3879184,
    "dirlon": 10.4381133,
    "dir": "Rosignano"
@@ -7754,27 +7742,6 @@
    "dir": "Milano"
   },
   {
-   "id": "aspi495053",
-   "strada": "A1 Milano-Napoli (Autostrade)",
-   "testo": "cantiere tra Fabro - Orvieto (dal km 448.4 al km 450.8) in direzione Napoli: corsia unica (ripristino a seguito incidente), limite 60 km/h · dal 27/11 22:00 al 28/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-27T21:00+00:00",
-   "fine": "2026-11-28T05:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 42.7270051264843,
-   "lon": 12.1254725797,
-   "da": "Fabro - Orvieto",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 42.7177137905811,
-   "lon2": 12.1462926866146,
-   "km": 2.4,
-   "dirlat": 40.8358846,
-   "dirlon": 14.2487679,
-   "dir": "Napoli"
-  },
-  {
    "id": "aspi1008193",
    "strada": "A10 Genova-Ventimiglia (Autostrade)",
    "testo": "cantiere tra Varazze - Albisola (dal km 31.7 al km 35.0) in direzione Ventimiglia: corsia unica (segnaletica verticale), limite 60 km/h · dal 27/11 21:00 al 28/11 06:00",
@@ -8103,27 +8070,6 @@
    "dirlat": 40.822643,
    "dirlon": 14.1219109,
    "dir": "Pozzuoli"
-  },
-  {
-   "id": "aspi853451",
-   "strada": "T06 Complanare Di Bologna (Autostrade)",
-   "testo": "cantiere tra Svincolo Ss 9 Via Emilia - Allac. Tangenziale Di Bologna (dal km 0.9 al km 3.3) in direzione Complanare Di Bologna: corsia unica (opere in verde), limite 60 km/h · dal 27/11 20:00 al 28/11 05:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-27T19:00+00:00",
-   "fine": "2026-11-28T04:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 44.5281176854314,
-   "lon": 11.257171203533,
-   "da": "Svincolo Ss 9 Via Emilia - Allac. Tangenziale Di Bologna",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 44.5179577978511,
-   "lon2": 11.2826925770118,
-   "km": 2.4,
-   "dirlat": 44.4804098,
-   "dirlon": 11.4383019,
-   "dir": "Complanare Di Bologna"
   },
   {
    "id": "aspi752938",
@@ -8589,27 +8535,6 @@
    "lat2": 41.9958170572176,
    "lon2": 14.9802167375775,
    "km": 4.0
-  },
-  {
-   "id": "aspi494042",
-   "strada": "A1 Milano-Napoli (Autostrade)",
-   "testo": "cantiere tra Frosinone - Frosinone (dal km 627.4 al km 625.2) in direzione Milano: corsia unica (barriera antirumore), limite 60 km/h · dal 27/11 22:00 al 28/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-27T21:00+00:00",
-   "fine": "2026-11-28T05:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 41.6040206815004,
-   "lon": 13.3329425972337,
-   "da": "Frosinone - Frosinone",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 41.6161330360668,
-   "lon2": 13.3223957303586,
-   "km": 2.2,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
   },
   {
    "id": "aspi1007183",
