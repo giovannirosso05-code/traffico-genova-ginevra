@@ -8497,5 +8497,28 @@ false
 "v2|Gignod|12.5,42.1,13.2,41.4": null,
 "v2|Inizio Variante Di Etroubles|12.5,42.1,13.2,41.4": null,
 "v2|Variante Di Praia A Mare Sud|15.3,40.4,16.0,39.7": null,
-"v2|Giugliano In Campania - SS265 Ponti D. Valle|14.3,41.4,15.0,40.7": null
+"v2|Giugliano In Campania - SS265 Ponti D. Valle|14.3,41.4,15.0,40.7": null,
+"Viale delle Terme di Caracalla": [
+41.8749184,
+12.4962857
+],
+"v2|Viale Guido Baccelli|12.1,42.2,12.8,41.5": [
+41.8777262,
+12.4914294,
+false
+],
+"v2|Piazzale Numa Pompilio|12.1,42.2,12.8,41.5": [
+41.8799017,
+12.4962184,
+false
+],
+"San Giovanni": [
+45.7880182,
+12.6140857
+],
+"v2|Lotzorai|9.3,40.4,10.0,39.7": [
+39.9691548,
+9.6637148,
+false
+]
 }
