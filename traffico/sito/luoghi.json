@@ -8137,5 +8137,17 @@ false
 10.3238908,
 false
 ],
-"v2|12 Quartiere Mazzini - SS 65 Delle Futa|11.1,44.8,11.8,44.1": null
+"v2|12 Quartiere Mazzini - SS 65 Delle Futa|11.1,44.8,11.8,44.1": null,
+"v2|Cagli - SS424 Della Val Cesano|12.1,42.3,12.8,41.6": null,
+"v2|Badia Polesine - SS482 Alto Polesana|10.7,45.7,11.4,45.0": null,
+"SP7": [
+41.0410047,
+16.2178159
+],
+"v2|Via Fosse Ardeatine|15.9,41.4,16.6,40.7": [
+40.8094121,
+16.4182189,
+false
+],
+"v2|Vicolo del Tram|15.9,41.4,16.6,40.7": null
 }
