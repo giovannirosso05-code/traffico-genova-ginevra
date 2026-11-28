@@ -8183,5 +8183,46 @@ true
 45.8386307,
 9.6647313,
 false
+],
+"Raccordo Ascoli P.": [
+42.8800021,
+13.8171247
+],
+"Porto D ascoli": [
+42.9122341,
+13.89145
+],
+"Nord Occidentale Sarda": [
+40.5369853,
+8.3690403
+],
+"v2|Tresnuraghes|8.0,40.9,8.7,40.2": [
+40.2521042,
+8.5199603,
+false
+],
+"v2|Sennariolo|8.0,40.9,8.7,40.2": [
+40.2126731,
+8.5551782,
+false
+],
+"SS131 Carlo Felice": [
+39.2710685,
+9.0791182
+],
+"v2|Sarmato|9.4,45.4,10.1,44.7": [
+45.0597632,
+9.4913135,
+false
+],
+"Di Val Cecina": [
+43.3586321,
+10.7845657
+],
+"v2|Roncolla - SS439 Diramazione Sarzanese Valdera|10.4,43.7,11.1,43.0": null,
+"v2|Castel S.Gimignano|10.4,43.7,11.1,43.0": [
+43.404373,
+11.0190769,
+false
 ]
 }
