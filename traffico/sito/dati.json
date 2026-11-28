@@ -1,13 +1,43 @@
 {
- "aggiornato": "2026-11-28T00:04+00:00",
+ "aggiornato": "2026-11-28T00:19+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
-  "Autostrade (cantieri)": "ok (427 cantieri)",
+  "Autostrade (cantieri)": "ok (421 cantieri)",
   "Francia": "ok (272 eventi)",
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "3e02f74ea2e9eb92",
+   "strada": "SS394 Del Verbano Orientale",
+   "testo": "traffico rallentato causa perdita di liquido sull asfalto a Incrocio Germignaga",
+   "tipo": "code",
+   "quando": "2026-11-28T00:11:00Z"
+  },
+  {
+   "id": "86a6b8999f95ec03",
+   "strada": "A6 Torino-Savona",
+   "testo": "vento forte tra Svincolo Altare e Allacciamento Savona-Zinola-Vado-Allacciamento A10 Ge-Ventimiglia",
+   "tipo": "meteo",
+   "quando": "2026-11-28T00:06:00Z",
+   "lat": 44.34516,
+   "lon": 8.32298,
+   "da": "Altare"
+  },
+  {
+   "id": "a5897d03a4b13de6",
+   "strada": "A15 Parma-La Spezia",
+   "testo": "veicolo in avaria a Svincolo Berceto in direzione Parma",
+   "tipo": "altro",
+   "quando": "2026-11-28T00:04:00Z",
+   "lat": 44.50691,
+   "lon": 9.9492,
+   "da": "Berceto",
+   "dirlat": 44.6952006,
+   "dirlon": 10.0979869,
+   "dir": "Parma"
+  },
   {
    "id": "6f87776dd1def19f",
    "strada": "SS284 Occidentale Etnea",
@@ -59,19 +89,6 @@
    "dirlat": 45.2009688,
    "dirlon": 7.6489751,
    "dir": "Caselle"
-  },
-  {
-   "id": "0d37977e44d3df39",
-   "strada": "A55 Tangenziale Nord Di Torino",
-   "testo": "incidente causa imprecisate a Allacciamento Caselle in direzione Torino Nord - A5 To-Aosta",
-   "tipo": "incidente",
-   "quando": "2026-11-27T23:34:00Z",
-   "lat": 45.13048,
-   "lon": 7.69903,
-   "da": "Caselle",
-   "dirlat": 45.7373075,
-   "dirlon": 7.3204025,
-   "dir": "Aosta"
   },
   {
    "id": "27da761313ca35f2",
@@ -214,19 +231,6 @@
    "dirlat": 43.7917623,
    "dirlon": 7.6033131,
    "dir": "Ventimiglia"
-  },
-  {
-   "id": "6bbd345ed402d423",
-   "strada": "A5 Torino-Courmayeur",
-   "testo": "incidente a Svincolo Chatillon-Saint Vincent in direzione Courmayeur",
-   "tipo": "incidente",
-   "quando": "2026-11-27T23:15:00Z",
-   "lat": 45.74757,
-   "lon": 7.62028,
-   "da": "Chatillon-Saint Vincent",
-   "dirlat": 45.8316548,
-   "dirlon": 6.9461565,
-   "dir": "Courmayeur"
   },
   {
    "id": "955155023d9f5500",
@@ -1275,13 +1279,6 @@
    "dirlat": 45.8494152,
    "dirlon": 9.4155496,
    "dir": "Svincolo Lecco"
-  },
-  {
-   "id": "a057826ae798a6e0",
-   "strada": "A55 Diramazione Per Pinerolo",
-   "testo": "chiusura nodo causa lavori a Allacciamento Drosso - Allacciamento Tangenziale Sud Di Torino in direzione Svincolo Torino - Corso Orbassano",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T21:19:00Z"
   },
   {
    "id": "aspi553903",
@@ -5847,27 +5844,6 @@
    "dir": "Napoli"
   },
   {
-   "id": "aspi966352",
-   "strada": "A4 Torino-Trieste (Autostrade)",
-   "testo": "cantiere tra Palazzolo - Ospitaletto (dal km 199.2 al km 201.5) in direzione Trieste: riduzione a 3 corsie (barriera di sicurezza), limite 110 km/h · dal 27/11 21:00 al 28/11 05:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-27T20:00+00:00",
-   "fine": "2026-11-28T04:00+00:00",
-   "corsie": "riduzione a 3 corsie",
-   "lat": 45.5830430692231,
-   "lon": 9.98426427645103,
-   "da": "Palazzolo - Ospitaletto",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 45.5768147910136,
-   "lon2": 10.0083722478483,
-   "km": 2.3,
-   "dirlat": 45.6496485,
-   "dirlon": 13.7772781,
-   "dir": "Trieste"
-  },
-  {
    "id": "aspi966473",
    "strada": "A9 Lainate-Como Chiasso (Autostrade)",
    "testo": "cantiere tra Svincolo Di Turate - Svincolo Di Fino Mornasco (dal km 22.0 al km 29.2) in direzione Svizzera: corsia unica (pavimentazione risanamento), limite 60 km/h · dal 27/11 20:00 al 28/11 06:00",
@@ -6948,27 +6924,6 @@
    "km": 3.2
   },
   {
-   "id": "aspi753150",
-   "strada": "A30 Caserta-Salerno (Autostrade)",
-   "testo": "cantiere tra Allac. A16 Napoli-Canosa - Sarno (dal km 28.5 al km 35.3) in direzione Salerno: corsia unica (altre cause), limite 60 km/h · dal 27/11 20:00 al 28/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-27T19:00+00:00",
-   "fine": "2026-11-28T05:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 40.8595660612854,
-   "lon": 14.5387708088384,
-   "da": "Allac. A16 Napoli-Canosa - Sarno",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 40.8169999441011,
-   "lon2": 14.5855205290618,
-   "km": 6.8,
-   "dirlat": 40.4194416,
-   "dirlon": 15.3106085,
-   "dir": "Salerno"
-  },
-  {
    "id": "aspi853396",
    "strada": "A1 Milano-Napoli (Autostrade)",
    "testo": "cantiere tra Modena Sud - Valsamoggia (dal km 176.9 al km 179.0) in direzione Napoli: riduzione a 3 corsie (ripristino a seguito incidente), limite 110 km/h · dal 27/11 21:00 al 28/11 05:00",
@@ -7115,11 +7070,11 @@
   {
    "id": "aspi555337",
    "strada": "A14 Bologna-Taranto (Autostrade)",
-   "testo": "cantiere tra Pescara Sud-Francavilla - Allac. A25 Torano-Pescara (dal km 382.4 al km 378.5) in direzione Autostrada Milano-Napoli: corsia unica (pavimentazione altri lavori), limite 40 km/h · dal 27/11 20:00 al 28/11 06:00",
+   "testo": "cantiere tra Pescara Sud-Francavilla - Allac. A25 Torano-Pescara (dal km 382.4 al km 378.5) in direzione Autostrada Milano-Napoli: deviazione a 1 corsia (pavimentazione altri lavori), limite 40 km/h · dal 27/11 20:00 al 28/11 06:00",
    "tipo": "lavori",
    "inizio": "2026-11-27T19:00+00:00",
    "fine": "2026-11-28T05:00+00:00",
-   "corsie": "corsia unica",
+   "corsie": "deviazione a 1 corsia",
    "lat": 42.3984782088866,
    "lon": 14.188932523355,
    "da": "Pescara Sud-Francavilla - Allac. A25 Torano-Pescara",
@@ -8028,27 +7983,6 @@
    "dir": "Genova"
   },
   {
-   "id": "aspi752673",
-   "strada": "A1 Milano-Napoli (Autostrade)",
-   "testo": "cantiere tra Pontecorvo - Ceprano (dal km 646.3 al km 643.7) in direzione Milano: corsia unica (segnaletica orizzontale), limite 60 km/h · dal 27/11 20:00 al 28/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-27T19:00+00:00",
-   "fine": "2026-11-28T05:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 41.5436744976589,
-   "lon": 13.537149138586,
-   "da": "Pontecorvo - Ceprano",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 41.5428648301969,
-   "lon2": 13.5109533131361,
-   "km": 2.6,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
-  },
-  {
    "id": "aspi559992",
    "strada": "A11 Firenze-Pisa Nord (Autostrade)",
    "testo": "cantiere tra Pistoia - Prato Ovest (dal km 20.0 al km 16.8) in direzione Firenze: corsia unica (regolazione idraulica), limite 60 km/h · dal 27/11 21:00 al 28/11 06:00",
@@ -8091,24 +8025,6 @@
    "dir": "Pisa"
   },
   {
-   "id": "aspi853517",
-   "strada": "T06 Complanare Di Bologna (Autostrade)",
-   "testo": "cantiere tra Sv.10 Zona Industriale Roveri - Sv.7 Bis Ss64 Ferrara (dal km 17.36 al km 15.6) in direzione Autostrada Milano-Napoli: corsia unica (ispezione opera d'arte), limite 60 km/h · dal 28/11 00:00 al 28/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-27T23:00+00:00",
-   "fine": "2026-11-28T05:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 44.5072857013896,
-   "lon": 11.3816776286993,
-   "da": "Sv.10 Zona Industriale Roveri - Sv.7 Bis Ss64 Ferrara",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 44.5200729278553,
-   "lon2": 11.3707991563728,
-   "km": 1.8
-  },
-  {
    "id": "aspi1009173",
    "strada": "A12 Genova-Roma (Autostrade)",
    "testo": "cantiere tra Rapallo - Chiavari (dal km 35.95 al km 38.0) in direzione Rosignano: corsia unica (viadotto o ponte impalcato), limite 60 km/h · dal 27/11 22:00 al 28/11 06:00",
@@ -8128,27 +8044,6 @@
    "dirlat": 43.3879184,
    "dirlon": 10.4381133,
    "dir": "Rosignano"
-  },
-  {
-   "id": "aspi559307",
-   "strada": "A1 Milano-Napoli (Autostrade)",
-   "testo": "cantiere tra Bivio A1/Variante Di Valico - Pian Del Voglio (dal km 221.7 al km 223.0) in direzione Napoli: corsia unica (pali luce), limite 60 km/h · dal 28/11 00:00 al 28/11 04:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-27T23:00+00:00",
-   "fine": "2026-11-28T03:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 44.286058752735,
-   "lon": 11.2068763705249,
-   "da": "Bivio A1/Variante Di Valico - Pian Del Voglio",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 44.2766246826628,
-   "lon2": 11.2015447300748,
-   "km": 1.3,
-   "dirlat": 40.8358846,
-   "dirlon": 14.2487679,
-   "dir": "Napoli"
   },
   {
    "id": "aspi493970",
@@ -8212,27 +8107,6 @@
    "dirlat": 40.5488156,
    "dirlon": 17.0805801,
    "dir": "Taranto"
-  },
-  {
-   "id": "aspi494143",
-   "strada": "A12 Genova-Roma (Autostrade)",
-   "testo": "cantiere tra Civitavecchia Sud - Svincolo Di Cerveteri-Ladispoli (dal km 42.1 al km 41.0) in direzione Roma: corsia unica (barriera di sicurezza), limite 60 km/h · dal 25/11 22:00 al 28/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-25T21:00+00:00",
-   "fine": "2026-11-28T05:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 42.0406785866034,
-   "lon": 11.9326823333822,
-   "da": "Civitavecchia Sud - Svincolo Di Cerveteri-Ladispoli",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 42.0362315608488,
-   "lon2": 11.9431523026724,
-   "km": 1.1,
-   "dirlat": 41.8933203,
-   "dirlon": 12.4829321,
-   "dir": "Roma"
   },
   {
    "id": "aspi852497",
