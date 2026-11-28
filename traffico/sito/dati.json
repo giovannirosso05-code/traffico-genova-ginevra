@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-28T10:57+00:00",
+ "aggiornato": "2026-11-28T10:58+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -8,6 +8,13 @@
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "58711b66e10a463c",
+   "strada": "SS7 Via Appia",
+   "testo": "code causa incidente a Incrocio Ciampino - SS217 Via Dei Laghi in direzione Incrocio Brindisi - SS16 Adriatica",
+   "tipo": "incidente",
+   "quando": "2026-11-28T10:57:00Z"
+  },
   {
    "id": "b9b817ca8bde0d67",
    "strada": "A26 Genova-Gravellona Toce",
@@ -1205,13 +1212,6 @@
    "dirlat": 42.262098,
    "dirlon": 14.5002315,
    "dir": "SS16 Adriatica"
-  },
-  {
-   "id": "5dc13c4ca2483c62",
-   "strada": "Genova Via Coronata",
-   "testo": "presenza di alberi sulla carreggiata a Via Coronata",
-   "tipo": "altro",
-   "quando": "2026-11-28T08:47:00Z"
   },
   {
    "id": "aspi553903",
