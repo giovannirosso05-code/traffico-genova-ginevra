@@ -1,13 +1,78 @@
 {
- "aggiornato": "2026-11-27T23:51+00:00",
+ "aggiornato": "2026-11-28T00:04+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
-  "Italia": "errore: URLError, mostro i dati precedenti",
+  "Italia": "ok (100 eventi)",
   "Autostrade (cantieri)": "ok (427 cantieri)",
   "Francia": "ok (272 eventi)",
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "6f87776dd1def19f",
+   "strada": "SS284 Occidentale Etnea",
+   "testo": "traffico rallentato causa incidente a Incrocio Biancavilla",
+   "tipo": "incidente",
+   "quando": "2026-11-27T23:53:00Z",
+   "lat": 37.6462764,
+   "lon": 14.8614108,
+   "da": "Biancavilla",
+   "indicativo": true
+  },
+  {
+   "id": "e426fd0d3cc22efd",
+   "strada": "SS16 Adriatica",
+   "testo": "traffico rallentato a Incrocio Trani Sud in direzione Incrocio Otranto - SS173 Delle Terme Salentine",
+   "tipo": "code",
+   "quando": "2026-11-27T23:45:00Z",
+   "lat": 41.26024,
+   "lon": 16.42991,
+   "da": "Trani Sud"
+  },
+  {
+   "id": "0bcc99228a037953",
+   "strada": "A6 Torino-Savona",
+   "testo": "lavori tra 1,7 km dopo Svincolo Altare e 11,084 km prima di Allacciamento Savona-Zinola-Vado-Allacciamento A10 Ge-Ventimiglia in direzione Savona",
+   "tipo": "lavori",
+   "quando": "2026-11-27T23:40:00Z",
+   "lat": 44.34516,
+   "lon": 8.32298,
+   "da": "Altare",
+   "dirlat": 44.2334238,
+   "dirlon": 8.2525727,
+   "dir": "Savona"
+  },
+  {
+   "id": "e54f4895127e97d2",
+   "strada": "R24 Raccordo Torino-Aeroporto Caselle",
+   "testo": "riduzione di carreggiata causa lavori dalle 22:00 del 2 alle 06:00 del 11 dicembre 2026 tra Svincolo Aeroporto Caselle e Svincolo Caselle Torinese in direzione Caselle",
+   "tipo": "lavori",
+   "quando": "2026-11-27T23:37:00Z",
+   "lat": 45.2009688,
+   "lon": 7.6489751,
+   "da": "Aeroporto Caselle",
+   "lat2": 45.1774901,
+   "lon2": 7.6463671,
+   "a": "Caselle Torinese",
+   "indicativo": true,
+   "km": 3.1,
+   "dirlat": 45.2009688,
+   "dirlon": 7.6489751,
+   "dir": "Caselle"
+  },
+  {
+   "id": "0d37977e44d3df39",
+   "strada": "A55 Tangenziale Nord Di Torino",
+   "testo": "incidente causa imprecisate a Allacciamento Caselle in direzione Torino Nord - A5 To-Aosta",
+   "tipo": "incidente",
+   "quando": "2026-11-27T23:34:00Z",
+   "lat": 45.13048,
+   "lon": 7.69903,
+   "da": "Caselle",
+   "dirlat": 45.7373075,
+   "dirlon": 7.3204025,
+   "dir": "Aosta"
+  },
   {
    "id": "27da761313ca35f2",
    "strada": "A90-GRA Appia-Aurelia",
@@ -496,19 +561,6 @@
    "km": 26.5
   },
   {
-   "id": "ff6aa8c5852b1067",
-   "strada": "A6 Torino-Savona",
-   "testo": "veicolo in avaria a Svincolo Fossano in direzione Torino",
-   "tipo": "altro",
-   "quando": "2026-11-27T22:58:00Z",
-   "lat": 44.53687,
-   "lon": 7.78883,
-   "da": "Fossano",
-   "dirlat": 45.0677551,
-   "dirlon": 7.6824892,
-   "dir": "Torino"
-  },
-  {
    "id": "91d3534272319127",
    "strada": "SS343 Asolana",
    "testo": "animali morti a Incrocio Colorno in direzione Incrocio Parma - Tangenziale Di Parma",
@@ -969,13 +1021,6 @@
    "dir": "Padova"
   },
   {
-   "id": "f0f30f581c1e9aee",
-   "strada": "SS162 Della Valle Caudina",
-   "testo": "traffico rallentato causa incidente a Incrocio Melito Di Napoli - SS7 Bis in direzione Incrocio Lago Di Patria - SS7 Quater Via Domiziana",
-   "tipo": "incidente",
-   "quando": "2026-11-27T21:41:00Z"
-  },
-  {
    "id": "a717776eafdfed3b",
    "strada": "A7 Milano-Genova",
    "testo": "lavori dalle 22:39 del 27 alle 06:00 del 28 novembre 2026 tra Svincolo Serravalle Scrivia e Svincolo Tortona",
@@ -1232,43 +1277,11 @@
    "dir": "Svincolo Lecco"
   },
   {
-   "id": "6f19ef73314bb150",
-   "strada": "A10 Genova-Ventimiglia",
-   "testo": "lavori tra 6,438 km dopo Svincolo Arma Di Taggia e 270 m prima di Svincolo Sanremo Ovest in direzione Ventimiglia",
-   "tipo": "lavori",
-   "quando": "2026-11-27T21:19:00Z",
-   "lat": 43.85035,
-   "lon": 7.83905,
-   "da": "Arma Di Taggia",
-   "lat2": 43.8170397,
-   "lon2": 7.7750646,
-   "a": "Sanremo Ovest",
-   "indicativo": true,
-   "km": 7.6,
-   "dirlat": 43.7917623,
-   "dirlon": 7.6033131,
-   "dir": "Ventimiglia"
-  },
-  {
    "id": "a057826ae798a6e0",
    "strada": "A55 Diramazione Per Pinerolo",
    "testo": "chiusura nodo causa lavori a Allacciamento Drosso - Allacciamento Tangenziale Sud Di Torino in direzione Svincolo Torino - Corso Orbassano",
    "tipo": "chiusura",
    "quando": "2026-11-27T21:19:00Z"
-  },
-  {
-   "id": "e1f0431ae4257132",
-   "strada": "SS394 Del Verbano Orientale",
-   "testo": "tratto chiuso causa lavori di manutenzione tra 2,627 km dopo Incrocio Mercallo e 2,292 km prima di Incrocio Travedona-Monate",
-   "tipo": "chiusura",
-   "quando": "2026-11-27T21:17:00Z"
-  },
-  {
-   "id": "ca6562d42181421d",
-   "strada": "SS7 Via Appia",
-   "testo": "riduzione di carreggiata causa lavori dalle 22:00 del 30 novembre 2026 alle 06:00 del 3 dicembre 2026 a Incrocio Terracina - SR148 Pontina",
-   "tipo": "lavori",
-   "quando": "2026-11-27T21:14:00Z"
   },
   {
    "id": "aspi553903",
@@ -6482,6 +6495,27 @@
    "dir": "Torino"
   },
   {
+   "id": "aspi753172",
+   "strada": "A16 Napoli-Canosa (Autostrade)",
+   "testo": "cantiere tra Benevento - Racc. Di Benevento - Grottaminarda (dal km 76.0 al km 77.1) in direzione Canosa: corsia unica (ripristino a seguito incidente), limite 60 km/h · dal 27/11 20:00 al 28/11 06:00",
+   "tipo": "lavori",
+   "inizio": "2026-11-27T19:00+00:00",
+   "fine": "2026-11-28T05:00+00:00",
+   "corsie": "corsia unica",
+   "lat": 41.068947739506,
+   "lon": 15.004250661295,
+   "da": "Benevento - Racc. Di Benevento - Grottaminarda",
+   "paese": "Italia",
+   "fonte": "Autostrade per l'Italia",
+   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
+   "lat2": 41.0611622847325,
+   "lon2": 15.011208288342,
+   "km": 1.1,
+   "dirlat": 44.5535604,
+   "dirlon": 10.4119138,
+   "dir": "Canosa"
+  },
+  {
    "id": "aspi558966",
    "strada": "A1 Milano-Napoli (Autostrade)",
    "testo": "cantiere tra Barberino - Loc.Aglio Km 255 (dal km 257.5 al km 256.8) in direzione Milano: corsia unica (ispezione opera d'arte), limite 60 km/h · dal 27/11 22:00 al 28/11 06:00",
@@ -8199,27 +8233,6 @@
    "dirlat": 41.8933203,
    "dirlon": 12.4829321,
    "dir": "Roma"
-  },
-  {
-   "id": "aspi82148",
-   "strada": "A56 Tangenziale Di Napoli (Autostrade)",
-   "testo": "cantiere tra Capodichino - Doganella (dal km 19.8 al km 19.6) in direzione Pozzuoli: corsia unica (cavalcavia), limite 60 km/h · dal 27/11 23:59 al 28/11 06:00",
-   "tipo": "lavori",
-   "inizio": "2026-11-27T22:59+00:00",
-   "fine": "2026-11-28T05:00+00:00",
-   "corsie": "corsia unica",
-   "lat": 40.8720070322509,
-   "lon": 14.2835397150063,
-   "da": "Capodichino - Doganella",
-   "paese": "Italia",
-   "fonte": "Autostrade per l'Italia",
-   "url": "https://www.autostrade.it/it/infoviabilita/cantieri-previsti",
-   "lat2": 40.8719728419411,
-   "lon2": 14.2817829745774,
-   "km": 0.2,
-   "dirlat": 40.822643,
-   "dirlon": 14.1219109,
-   "dir": "Pozzuoli"
   },
   {
    "id": "aspi852497",
