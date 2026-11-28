@@ -8317,5 +8317,43 @@ false
 41.0990568,
 15.744905,
 false
-]
+],
+"v2|Anzola Dell emilia|12.1,42.3,12.8,41.6": null,
+"v2|Campodolcino": [
+46.4043271,
+9.3497395,
+false
+],
+"Via dei Villini": [
+41.910729,
+12.5063597
+],
+"v2|Via Roncate|12.2,42.3,12.9,41.6": null,
+"v2|Via Bignanico|12.2,42.3,12.9,41.6": null,
+"v2|Argegno|15.8,39.8,16.5,39.1": null,
+"v2|Ortonovo|11.9,42.3,12.6,41.6": [
+41.9131997,
+12.4063783,
+false
+],
+"v2|Termo|11.9,42.3,12.6,41.6": [
+41.7294045,
+12.2908052,
+true
+],
+"Della Bocca Di Magra": [
+44.0420898,
+9.9840348
+],
+"v2|Romito Magra - SS331 Di Lerici|9.6,44.4,10.3,43.7": null,
+"v2|Nibionno - SS342 Briantea": [
+45.7485492,
+9.2622934,
+false
+],
+"SS342 Briantea": [
+45.695998,
+9.5968423
+],
+"alternativamente in entrambe": null
 }
