@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-28T02:48+00:00",
+ "aggiornato": "2026-11-28T02:56+00:00",
  "fonte": "CCISS, Autostrade per l'Italia, Bison Futé, opentransportdata.swiss",
  "fonti": {
   "Italia": "ok (100 eventi)",
@@ -8,6 +8,67 @@
   "Svizzera": "errore: HTTPError 403 { \"error\": \"Access to this API has been disallowed\" }"
  },
  "eventi": [
+  {
+   "id": "ed8d2e3362270ee2",
+   "strada": "A10 Genova-Ventimiglia",
+   "testo": "personale su strada causa lavori dalle 03:51 alle 04:36 del 28 novembre 2026 tra Svincolo Genova Aeroporto e Svincolo Genova Pegli in direzione Ventimiglia",
+   "tipo": "lavori",
+   "quando": "2026-11-28T02:52:00Z",
+   "lat": 44.42433,
+   "lon": 8.86752,
+   "da": "Genova Aeroporto",
+   "lat2": 44.42974,
+   "lon2": 8.8215,
+   "a": "Genova Pegli",
+   "km": 4.4,
+   "dirlat": 43.7917623,
+   "dirlon": 7.6033131,
+   "dir": "Ventimiglia"
+  },
+  {
+   "id": "40e10a428c819fc0",
+   "strada": "A1 Roma-Napoli",
+   "testo": "veicolo fermo o in avaria dalle 03:49 del 28 novembre 2026 tra Allacciamento A1 Nord/Diramazione Capodichino e Svincolo Centro Direzionale in direzione Napoli",
+   "tipo": "altro",
+   "quando": "2026-11-28T02:51:00Z",
+   "lat2": 40.86983,
+   "lon2": 14.32124,
+   "a": "Centro Direzionale",
+   "dirlat": 40.8358846,
+   "dirlon": 14.2487679,
+   "dir": "Napoli"
+  },
+  {
+   "id": "d8f8d2231a19b6e9",
+   "strada": "A1 Milano-Bologna",
+   "testo": "personale su strada causa lavori dalle 03:48 alle 04:33 del 28 novembre 2026 tra Svincolo Sasso Marconi e Allacciamento Ramo Casalecchio in direzione Bologna",
+   "tipo": "lavori",
+   "quando": "2026-11-28T02:49:00Z",
+   "lat": 44.36512,
+   "lon": 11.25883,
+   "da": "Sasso Marconi",
+   "lat2": 44.5106595,
+   "lon2": 11.2761027,
+   "a": "Ramo Casalecchio",
+   "indicativo": true,
+   "km": 19.5,
+   "dirlat": 44.4938203,
+   "dirlon": 11.3426327,
+   "dir": "Bologna"
+  },
+  {
+   "id": "878220858c4297f0",
+   "strada": "A4 Torino-Milano",
+   "testo": "pedoni a Svincolo Arluno in direzione Torino",
+   "tipo": "altro",
+   "quando": "2026-11-28T02:48:00Z",
+   "lat": 45.49865,
+   "lon": 8.91925,
+   "da": "Arluno",
+   "dirlat": 45.0677551,
+   "dirlon": 7.6824892,
+   "dir": "Torino"
+  },
   {
    "id": "25857bf0d35be582",
    "strada": "A4 Milano-Brescia",
@@ -148,23 +209,6 @@
    "dir": "tangenziale"
   },
   {
-   "id": "1752d12000a14c68",
-   "strada": "A1 Firenze-Roma",
-   "testo": "veicoli lenti dalle 03:35 del 28 novembre 2026 tra Svincolo Valdarno e Svincolo Arezzo in direzione Roma",
-   "tipo": "altro",
-   "quando": "2026-11-28T02:36:00Z",
-   "lat": 43.54707,
-   "lon": 11.55982,
-   "da": "Valdarno",
-   "lat2": 43.42591,
-   "lon2": 11.95163,
-   "a": "Arezzo",
-   "km": 41.2,
-   "dirlat": 41.8933203,
-   "dirlon": 12.4829321,
-   "dir": "Roma"
-  },
-  {
    "id": "8cd71f4af44ff8a9",
    "strada": "A1 Roma-Napoli",
    "testo": "personale su strada causa lavori dalle 03:33 del 28 novembre 2026 tra Svincolo Caianello e Svincolo San Vittore in direzione Roma",
@@ -197,23 +241,6 @@
    "dirlat": 44.4938203,
    "dirlon": 11.3426327,
    "dir": "Bologna"
-  },
-  {
-   "id": "6eeba7d1e3b86d8d",
-   "strada": "A16 Napoli-Canosa",
-   "testo": "perdita di carico dalle 03:30 del 28 novembre 2026 tra Svincolo Cerignola e Svincolo Candela in direzione Napoli",
-   "tipo": "altro",
-   "quando": "2026-11-28T02:32:00Z",
-   "lat": 41.27554,
-   "lon": 15.86966,
-   "da": "Cerignola",
-   "lat2": 41.15044,
-   "lon2": 15.52224,
-   "a": "Candela",
-   "km": 38.7,
-   "dirlat": 40.8358846,
-   "dirlon": 14.2487679,
-   "dir": "Napoli"
   },
   {
    "id": "4c952615e65a081b",
@@ -339,23 +366,6 @@
    "dirlat": 41.8933203,
    "dirlon": 12.4829321,
    "dir": "Roma"
-  },
-  {
-   "id": "6da86d51f2e23117",
-   "strada": "A4 Milano-Brescia",
-   "testo": "personale su strada causa lavori dalle 03:13 alle 03:58 del 28 novembre 2026 tra Svincolo Palazzolo e Svincolo Seriate in direzione Milano",
-   "tipo": "lavori",
-   "quando": "2026-11-28T02:15:00Z",
-   "lat": 45.61921,
-   "lon": 9.91786,
-   "da": "Palazzolo",
-   "lat2": 45.65439,
-   "lon2": 9.75478,
-   "a": "Seriate",
-   "km": 15.9,
-   "dirlat": 45.4641943,
-   "dirlon": 9.1896346,
-   "dir": "Milano"
   },
   {
    "id": "247ed0b67928c3ef",
@@ -554,23 +564,6 @@
    "lon2": 13.65995,
    "a": "Colledara-San Gabriele",
    "km": 21.0
-  },
-  {
-   "id": "8b1e07416bad878e",
-   "strada": "A1 Milano-Bologna",
-   "testo": "personale su strada causa lavori dalle 02:21 alle 03:06 del 28 novembre 2026 tra Svincolo Fidenza e Svincolo Parma in direzione Bologna",
-   "tipo": "lavori",
-   "quando": "2026-11-28T01:23:00Z",
-   "lat": 44.88795,
-   "lon": 10.09872,
-   "da": "Fidenza",
-   "lat2": 44.84133,
-   "lon2": 10.33258,
-   "a": "Parma",
-   "km": 23.0,
-   "dirlat": 44.4938203,
-   "dirlon": 11.3426327,
-   "dir": "Bologna"
   },
   {
    "id": "112b5948c1b97adc",
